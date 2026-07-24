@@ -1,135 +1,119 @@
 ---
+date: 2026-07-17
 tags:
-link:
+  - zapret
+  - zapret2
+  - nfqws2
+  - payload
+  - filter
+  - l7
+  - protocol-detection
+link: https://github.com/bol-van/zapret2/blob/master/docs/manual.md
 aliases:
-img:
+  - Тип payload
+  - --payload
+  - l7payload
+  - Распознавание протоколов
+  - Типы пейлоада
 ---
+# 🧩 Тип payload и распознавание протоколов
 
-## Типы `--payload` в zapret2
+> [!info] О чём заметка
+> Что такое «тип payload» в [[Zapret2/Zapret2|Zapret 2]], чем он отличается от протокола потока, как `nfqws2` распознаёт протоколы по сигнатурам, какие типы бывают и как работает фильтр `--payload`. Также — как объявить **свой** детектор протокола на Lua. Фильтр `--payload` — одно из полей [[profile|профиля]] рядом с [[filter|`--filter-*`]]; где поля `l7payload`/`l7proto` лежат в данных пакета — см. [[структура desync и диссекта]].
 
-Параметр `--payload` определяет **тип содержимого пакета** (payload type), к которому будут применяться последующие LUA-функции desync.
+## TL;DR
 
-### 📋 **Полный список типов payload:**
-
-#### 🔹 **Специальные типы**
-
-1. **`all`** - все пакеты (любой payload)
-2. **`unknown`** - неопознанный тип данных
-3. **`empty`** - пустой пакет (без данных)
-4. **`known`** - любой известный тип (все кроме `unknown` и `empty`)
-
-#### 🔹 **HTTP**
-
-5. **`http_req`** - HTTP запрос (GET, POST и т.д.)
-6. **`http_reply`** - HTTP ответ сервера
-
-#### 🔹 **TLS/SSL**
-
-7. **`tls_client_hello`** - TLS Client Hello (начало TLS handshake от клиента)
-8. **`tls_server_hello`** - TLS Server Hello (ответ сервера)
-
-#### 🔹 **QUIC**
-
-9. **`quic_initial`** - QUIC Initial пакет
-
-#### 🔹 **WireGuard VPN**
-
-10. **`wireguard_initiation`** - WireGuard инициация соединения
-11. **`wireguard_response`** - WireGuard ответ
-12. **`wireguard_cookie`** - WireGuard cookie пакет
-13. **`wireguard_keepalive`** - WireGuard keepalive
-14. **`wireguard_data`** - WireGuard данные
-
-#### 🔹 **P2P и мессенджеры**
-
-15. **`dht`** - DHT (Distributed Hash Table, используется в BitTorrent)
-16. **`discord_ip_discovery`** - Discord IP discovery пакет
-17. **`stun`** - STUN протокол (используется для NAT traversal)
-
-#### 🔹 **XMPP (Jabber)**
-
-18. **`xmpp_stream`** - XMPP stream
-19. **`xmpp_starttls`** - XMPP STARTTLS команда
-20. **`xmpp_proceed`** - XMPP proceed ответ
-21. **`xmpp_features`** - XMPP features
-
-#### 🔹 **DNS**
-
-22. **`dns_query`** - DNS запрос
-23. **`dns_response`** - DNS ответ
-
-#### 🔹 **Telegram**
-
-24. **`mtproto_initial`** - MTProto initial пакет (протокол Telegram)
+- **Тип payload** (`l7payload`) — это распознанное содержимое **одного пакета**: `tls_client_hello`, `http_req`, `quic_initial` и т. д. Пустой пакет — `empty`, нераспознанный — `unknown`.
+- **Протокол потока** (`l7proto`) — ярлык на **всё соединение**; ставится по первому известному пейлоаду и держится до конца, даже если дальше идут `unknown`-пакеты.
+- Фильтр **`--payload`** ограничивает, к каким пакетам применится последующий [[desync|`--lua-desync`]]. По умолчанию `known` (всё, кроме `empty` и `unknown`).
+- Спецзначения фильтра: **`all`** — любой пейлоад, **`known`** — не `empty` и не `unknown`. Префикс **`~`** — инверсия.
+- Распознавание **сигнатурное** и живёт в C-ядре. Свой тип можно назначить Lua-детектором (`detect_payload_str`), но такой тип **не виден** C-фильтру `--payload` — только payload-фильтрам самих desync-функций.
 
 ---
 
-### 💡 **Синтаксис использования:**
+## Что такое тип payload (и чем он отличается от протокола потока)
+
+Это два разных понятия, и их постоянно путают.
+
+**Тип payload** (в данных пакета — поле `desync.l7payload`) — это распознанный тип содержимого **одного конкретного пакета**. Например, в TLS-соединении первый пакет от клиента имеет тип `tls_client_hello`, ответ сервера — `tls_server_hello`, а дальше идут уже зашифрованные пакеты, которые распознать нельзя, — их тип `unknown`.
+
+**Протокол потока** (поле `desync.l7proto`, а в фильтрах профиля — [[filter|`--filter-l7`]]) — это ярлык на **всё соединение целиком**. Он присваивается, как только в потоке встретился первый известный пейлоад, и остаётся с потоком **до конца его существования** — даже если последующие пакеты имеют тип `unknown`.
+
+> [!note] Проще говоря
+> Протокол потока — как табличка на двери всего «разговора»: повесили один раз («это TLS») и не меняем. Тип payload — как ярлык на каждой отдельной реплике внутри разговора: у первой реплики `tls_client_hello`, у следующих может быть `unknown`. Одно соединение (`tls`) → много пакетов с разными типами payload.
+
+Два особых типа payload есть всегда:
+
+- **`empty`** — пакет без прикладных данных (например, «пустой» ACK).
+- **`unknown`** — данные есть, но их тип не распознан (зашифрованная середина соединения, неизвестный протокол).
+
+Полное описание, где именно поля `l7payload` и `l7proto` лежат в таблице пакета, — в [[структура desync и диссекта]].
+
+---
+
+## Как `nfqws2` распознаёт протоколы
+
+Распознавание **сигнатурное**: C-ядро `nfqws2` смотрит на характерные байты в начале пейлоада (или группы пакетов) и по ним определяет тип. Это происходит на быстрой стороне C-кода ещё до вызова Lua (см. [[схема обработки трафика]]).
+
+В фильтрах по типу payload и по протоколу потока доступны два спецзначения:
+
+- **`all`** — совпадает с любым пейлоадом (в том числе `empty` и `unknown`);
+- **`known`** — совпадает со всем, что **не** `empty` и **не** `unknown` (то есть только с реально распознанными типами).
+
+### Таблица распознаваемых типов
+
+Ниже — какие протоколы потока `nfqws2` умеет распознавать, на каком транспорте (L4) они работают и какие типы payload внутри них бывают.
+
+| Протокол потока | L4 | Типы payload внутри |
+|:----------------|:---|:--------------------|
+| `http` | TCP | `http_req`, `http_reply` |
+| `tls` | TCP | `tls_client_hello`, `tls_server_hello` |
+| `xmpp` | TCP | `xmpp_stream`, `xmpp_starttls`, `xmpp_proceed`, `xmpp_features` |
+| `mtproto` | TCP | `mtproto_initial` |
+| `bt` | TCP | `bt_handshake` |
+| `quic` | UDP | `quic_initial` |
+| `wireguard` | UDP | `wireguard_initiation`, `wireguard_response`, `wireguard_cookie`, `wireguard_keepalive` |
+| `dht` | UDP | `dht` |
+| `utp_bt` | UDP | `utp_bt_handshake` |
+| `discord` | UDP | `discord_ip_discovery` |
+| `stun` | UDP | `stun` |
+| `dns` | UDP | `dns_query`, `dns_response` |
+| `dtls` | UDP | `dtls_client_hello`, `dtls_server_hello` |
+| *(любой)* | ICMP | `ipv4`, `ipv6`, `icmp` |
+
+> [!note] Особые типы `ipv4` / `ipv6` / `icmp`
+> Это типы payload для ICMP-пакетов. `ipv4` и `ipv6` генерируются, когда ICMP несёт **прикреплённый исходный пакет** (например, ICMP «destination unreachable» с куском исходного соединения). Во всех остальных случаях ICMP получает тип payload `icmp`. Подробнее про обработку ICMP — [[структура desync и диссекта]].
+
+---
+
+## Фильтр `--payload`
+
+`--payload` — поле [[profile|профиля]], которое ограничивает, к каким пакетам применятся **последующие** `--lua-desync`-инстансы. Пока `--payload` не переопределён, он действует на все идущие за ним инстансы (как и другие внутрипрофильные фильтры, см. [[схема обработки трафика]]).
+
+### Синтаксис
 
 ```bash
 # Один тип
 --payload=tls_client_hello
 
-# Несколько типов (через запятую)
+# Несколько типов через запятую
 --payload=http_req,http_reply
 
-# Все известные типы
+# Все известные типы (не empty и не unknown) — это же значение по умолчанию
 --payload=known
 
-# Все пакеты
+# Вообще все пакеты, включая empty и unknown
 --payload=all
 
-# Отрицание (все КРОМЕ указанных)
+# Инверсия: всё, КРОМЕ указанного
 --payload=~empty
 ```
 
-### 📝 **Важные особенности:**
+### Значение по умолчанию — `known`
 
-1. **По умолчанию**: если `--payload` не указан, используется `known` (только известные непустые типы)
-   
-2. **Отрицание**: префикс `~` означает инверсию
-   - `--payload=~empty` - все кроме пустых пакетов
-   - `--payload=~unknown` - все кроме неопознанных
+Если `--payload` не указан, используется `known`. Вот реальный код фильтра (`lua/zapret-lib.lua`):
 
-3. **Множественные фильтры**: можно использовать несколько раз в одном профиле
-   ```bash
-   --payload=tls_client_hello --lua-desync=fake \
-   --payload=http_req --lua-desync=split
-   ```
-
-4. **Связь с протоколом**: 
-   - Протокол соединения (`--filter-l7`) определяется для всего соединения
-   - Payload type определяется для каждого пакета отдельно
-   - Пример: протокол `tls`, но payload может быть `tls_client_hello` или `tls_server_hello`
-
-### 📖 **Примеры использования:**
-
-```bash
-# Только для TLS Client Hello
---filter-l7=tls --payload=tls_client_hello --lua-desync=fake
-
-# Для HTTP запросов и ответов
---payload=http_req,http_reply --lua-desync=multisplit
-
-# Для всех известных типов (по умолчанию)
---payload=known --lua-desync=fake
-
-# Для всех пакетов включая пустые
---payload=all --lua-desync=send
-
-# Исключить пустые пакеты
---payload=~empty --lua-desync=fake
-
-# Комбинация: разные стратегии для разных payload
---payload=tls_client_hello --lua-desync=fake:ip_ttl=1 \
---payload=http_req --lua-desync=split:pos=method+2
-```
-
-Типы payload позволяют **точно таргетировать** desync-стратегии на конкретные типы данных в пакетах, что делает обход DPI более эффективным и избирательным!
-
-## Фильтр payload по умолчанию
-
-```1074:1079:lua/zapret-lib.lua
+```lua
 function payload_match_filter(l7payload, l7payload_filter, def)
 	local argpl = l7payload_filter or def or "known"
 	local neg = string.sub(argpl,1,1)=="~"
@@ -138,56 +122,89 @@ function payload_match_filter(l7payload, l7payload_filter, def)
 end
 ```
 
-**По умолчанию фильтр = "known"**, что означает:
-- ✅ Пропускает любой известный payload (`mtproto_initial`, `tls_client_hello`, и т.д.)
-- ❌ **НЕ пропускает `unknown`**
-- ❌ **НЕ пропускает `empty`**
+По умолчанию (`known`) фильтр:
 
-## Для MTProto
+- ✅ пропускает любой распознанный payload (`tls_client_hello`, `mtproto_initial`, `http_req`, …);
+- ❌ **не** пропускает `unknown`;
+- ❌ **не** пропускает `empty`.
 
-| Пакет | l7payload | Пройдёт "known"? |
-|-------|-----------|------------------|
+Инверсия через `~` означает «всё, кроме»: `--payload=~empty` — любой непустой пакет, `--payload=~unknown` — всё, кроме нераспознанного.
+
+> [!important] `--payload` (C-уровень) vs payload-фильтр инстанса (Lua)
+> `--payload` на уровне профиля обрабатывается быстрым C-кодом. У многих desync-функций есть **свой** аргумент `payload=` — это дополнительный фильтр уже на стороне Lua. Практика: держите основной фильтр на `--payload` профиля (быстрее), а `payload=` инстанса используйте для тонкой донастройки. Разница станет важной ниже, в разделе про кастомные детекторы.
+
+---
+
+## Свой детектор протокола на Lua (`detect_payload_str`)
+
+Иногда нужного протокола нет в списке распознаваемых, но у его пакетов есть характерная подстрока. Тогда тип payload можно назначить самому — простейшим Lua-детектором. В комплекте есть пример-функция `detect_payload_str`:
+
+```lua
+function detect_payload_str(ctx, desync)
+    -- arg: pattern    — подстрока для поиска в desync.dis.payload
+    -- arg: payload    — какое значение присвоить desync.l7payload, если подстрока найдена
+    -- arg: undetected — какое значение присвоить, если подстрока НЕ найдена (необязательно)
+end
+```
+
+Логика простая: функция ищет подстроку `pattern` в пейлоаде текущего пакета (`desync.dis.payload`); если находит — присваивает `desync.l7payload = desync.arg.payload`; иначе, если задан `undetected`, присваивает `desync.l7payload = desync.arg.undetected`.
+
+> [!warning] Кастомный тип не виден C-коду и фильтру `--payload`
+> Такие Lua-детекторы **не имеют силы для C-кода**: ядро ничего не знает о вашем протоколе и вашем типе payload. Поэтому ваше значение **нельзя** указать в `--payload` (это C-уровневый фильтр). Но его **можно** использовать в payload-фильтрах (`payload=`) многих desync-функций — они работают уже на стороне Lua, после того как ваш детектор отработал. Схема такая: сначала инстанс `detect_payload_str` проставляет `l7payload`, а следующий инстанс с `payload=ваш_тип` на него реагирует.
+
+---
+
+## Практика: MTProto (Telegram)
+
+Хороший пример, где важна разница «пакет vs поток». В соединении MTProto распознаётся только первый пакет:
+
+| Пакет | `l7payload` | Пройдёт фильтр `known`? |
+|:------|:------------|:------------------------|
 | Первый пакет с данными | `mtproto_initial` | ✅ Да |
-| Последующие пакеты | `unknown` | ❌ **Нет** |
+| Последующие пакеты | `unknown` | ❌ Нет |
 
-## Нужно ли указывать `payload=unknown`?
+Нужно ли добавлять `payload=unknown`? Обычно **нет**. Для обхода блокировки Telegram, как правило, достаточно обработать только `mtproto_initial`, потому что:
 
-**Зависит от цели:**
-
-### Если нужен только initial (обычный случай):
-```bash
-# Достаточно - unknown пакеты игнорируются автоматически
-nfqws2 --filter-l7=mtproto \
-  --payload=mtproto_initial \
-  --lua-desync=fake:blob=0x00000000
-```
-
-### Если нужны ВСЕ пакеты MTProto:
-```bash
-# Вариант 1: явно указать unknown
-nfqws2 --filter-l7=mtproto \
-  --payload=mtproto_initial --lua-desync=fake:blob=... \
-  --payload=unknown --lua-desync=send:ip_ttl=3
-
-# Вариант 2: использовать all
-nfqws2 --filter-l7=mtproto \
-  --payload=all \
-  --lua-desync=fake:blob=...
-```
-
-## Практический совет
-
-Для обхода блокировки Telegram обычно **достаточно `mtproto_initial`**, потому что:
-
-1. DPI анализирует только начало соединения (сигнатуру MTProto)
-2. После initial все данные зашифрованы - DPI их не парсит
-3. Если initial прошёл - соединение установлено
+1. DPI анализирует только начало соединения (сигнатуру MTProto);
+2. после initial данные зашифрованы — DPI их не парсит;
+3. если initial прошёл — соединение установлено.
 
 ```bash
-# Рекомендуемый вариант
+# Рекомендуемый вариант — обрабатываем только initial
 nfqws2 --filter-l7=mtproto \
   --payload=mtproto_initial \
   --lua-desync=fake:blob=0x00000000:repeats=3
 ```
 
-**Ответ: Нет, обычно НЕ нужно указывать `payload=unknown`** для MTProto — достаточно обработать только `mtproto_initial`.
+Если же нужны **все** пакеты MTProto (initial + последующие), укажите `unknown` явно или используйте `all`:
+
+```bash
+# Явно добавить unknown-пакеты отдельным фильтром
+nfqws2 --filter-l7=mtproto \
+  --payload=mtproto_initial --lua-desync=fake:blob=... \
+  --payload=unknown --lua-desync=send:ip_ttl=3
+
+# Или разом все пакеты
+nfqws2 --filter-l7=mtproto \
+  --payload=all \
+  --lua-desync=fake:blob=...
+```
+
+Детальный разбор распознавания Telegram — в [[распознавание mtproto]].
+
+---
+
+## 📚 См. также
+
+- [[filter|Фильтры профиля]] — `--filter-l7` (протокол потока) и другие фильтры рядом с `--payload`
+- [[desync|Механизм --lua-desync]] — что за инстансы ограничивает `--payload`
+- [[структура desync и диссекта|Структура desync]] — где лежат поля `l7payload`/`l7proto` и как приходит собранный многопакетный пейлоад
+- [[схема обработки трафика|Схема обработки трафика]] — на какой стадии определяется тип payload и протокол потока
+- [[распознавание mtproto|Распознавание MTProto]] — разбор на примере Telegram
+- [[blob|Blob-данные]] — заготовки для `blob=…`, часто применяемые вместе с payload-фильтром
+- 🔗 [Официальная документация (docs/manual.md)](https://github.com/bol-van/zapret2/blob/master/docs/manual.md) — первоисточник
+
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/Zapret2/payload.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
