@@ -87,7 +87,7 @@ link: https://www.happ.su/main/ru
 > Десктопный проект `MatsuriDayo/nekoray` (NekoRay и NekoBox for PC) **архивирован автором 17 марта 2025** — обновлений и исправлений не будет. Если пользуетесь им, стоит перейти на HAPP или клиент на ядре Clash.Meta; живой форк-преемник — Throne. При этом **NekoBox for Android — отдельный проект и он активен** (его не путайте с архивным PC-вариантом).
 
 > [!note] Клиенты на ядре Clash.Meta (mihomo)
-> FlClash, Clash Verge Rev, Koala Clash (Clash Nyanpasu) — это графические оболочки на ядре **[[Clash/mihomo|Mihomo (Clash.Meta)]]**, которое нативно поддерживает VLESS и REALITY. Важно: поддержка работает только на **актуальном** ядре mihomo — на старом оригинальном Clash-ядре VLESS+REALITY нет (само оригинальное ядро не развивается с ноября 2023 года — см. [[Clash/clash-core|Ядро Clash]]). Разбор живых и мёртвых оболочек — в заметке [[Clash/clients|Клиенты на ядре Clash/mihomo]].
+> FlClash, Clash Verge Rev, Koala Clash (Clash Nyanpasu) — это графические оболочки на ядре **[[Clash/02-mihomo|Mihomo (Clash.Meta)]]**, которое нативно поддерживает VLESS и REALITY. Важно: поддержка работает только на **актуальном** ядре mihomo — на старом оригинальном Clash-ядре VLESS+REALITY нет (само оригинальное ядро не развивается с ноября 2023 года — см. [[Clash/01-clash-core|Ядро Clash]]). Разбор живых и мёртвых оболочек — в заметке [[Clash/07-clients|Клиенты на ядре Clash/mihomo]].
 
 ## Раздельная маршрутизация вручную (не HAPP)
 
@@ -134,6 +134,7 @@ link: https://www.happ.su/main/ru
 - [[xray/routing|Маршрутизация в Xray]] — как правила и geosite/geoip устроены изнутри
 - [[xray/project-x|Project X (Xray-core)]] — обзор проекта и экосистемы клиентов/панелей
 - [[Clash/00-overview|Clash и mihomo]] — соседняя экосистема клиентов: ядро mihomo, его оболочки и маршрутизация по правилам
+- [[subscriptions/hwid-client-lock|HWID-привязка и запрет «чужих» клиентов]] — почему подписка иногда работает только в одном конкретном приложении и как это проверить
 - [[VLESS/dpi-tls-june-2026|DPI TLS heuristics 2026]] — почему связку всё же иногда режут
 - 🔗 [happ.su](https://www.happ.su/main/ru) · [FAQ HAPP](https://www.happ.su/main/ru/faq) — официальная документация клиента
 - 🔗 [routing.happ.su](https://routing.happ.su/ru) — конструктор правил маршрутизации

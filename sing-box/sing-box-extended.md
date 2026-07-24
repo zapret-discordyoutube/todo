@@ -114,10 +114,10 @@ link: https://github.com/shtorm-7/sing-box-extended
 - [[sing-box/protocols-origin|Откуда код протоколов]] — sing-box vs Xray-core: независимые реимплементации, а не общий код
 - [[sing-box/hardcoded-defaults|Хардкод-константы и дефолты]] — порты по умолчанию, таймауты, магические числа
 - [[xray/project-x|Project X / Xray-core]] — главная альтернативная экосистема; сравнение ролей ядер
-- [[Clash/vs-sing-box|mihomo против sing-box и Xray]] — сравнение трёх универсальных ядер по осям: конфиг, маршрутизация, экосистема, роль в сети
+- [[Clash/08-vs-sing-box|mihomo против sing-box и Xray]] — сравнение трёх универсальных ядер по осям: конфиг, маршрутизация, экосистема, роль в сети
 - [[protocols/naiveproxy|NaiveProxy]] — протокол, который из трёх ядер поддерживает только sing-box
 - [[protocols/00-overview|Обзор протоколов]] — карта протоколов обхода и таблица поддержки в ядрах
-- [[Clash/mihomo|mihomo (Clash.Meta)]] — третье живое ядро; его YAML-подписки sing-box умеет разбирать как один из форматов провайдера
+- [[Clash/02-mihomo|mihomo (Clash.Meta)]] — третье живое ядро; его YAML-подписки sing-box умеет разбирать как один из форматов провайдера
 - [[xray/vless|Протокол VLESS]] — протокол, чьё шифрование форк переносит из Xray
 - [[xray/xhttp|XHTTP]] — транспорт через CDN, добавленный в форк
 - [[xray/clients-and-routing|Клиенты и маршрутизация]] — синтаксис маршрутизации sing-box на примере клиента NekoBox
