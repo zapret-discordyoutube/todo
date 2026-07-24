@@ -77,6 +77,8 @@ Hysteria 2 унаследовал почти все возможности ве�
 ## 📚 См. также
 
 - [[VLESS/dpi-tls-june-2026|VLESS + TLS: DPI-почерк]] — TCP-based альтернатива; полезно как запасной вариант, если UDP в сети зарезан.
+- [[protocols/tuic|TUIC]] — второй крупный QUIC-протокол: 0-RTT и честный UDP, но без маскировки под HTTP/3 и без серверной обвязки Hysteria.
+- [[protocols/00-overview|Обзор протоколов]] — карта протоколов обхода и таблица поддержки в ядрах.
 - [[VPS/BBR|Включение BBR на VPS]] — BBR как один из алгоритмов контроля перегрузки, который Hysteria тоже умеет использовать (когда Brutal не задействован).
 - 🔗 [Официальная документация Hysteria 2](https://v2.hysteria.network/) — первоисточник всех настроек.
 - 🔗 [github.com/apernet/hysteria](https://github.com/apernet/hysteria) — исходники, релизы, issue tracker.

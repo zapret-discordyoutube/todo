@@ -59,6 +59,7 @@ link: https://wiki.metacubex.one/
 
 ## 📚 См. также
 
+- [[protocols/00-overview|Обзор протоколов]] — что такое Shadowsocks, VMess, Trojan, TUIC, AnyTLS, ShadowTLS, NaiveProxy и какое ядро их поддерживает.
 - [[xray/project-x|Project X (Xray-core)]] — соседнее ядро и центр серверной экосистемы (панели 3x-ui, Marzban).
 - [[sing-box/sing-box-extended|sing-box-extended]] — третья универсальная платформа и её расширенный форк.
 - [[Hysteria/00-overview|Hysteria 2]] — специализированный QUIC-протокол, который mihomo поддерживает как один из outbound.
