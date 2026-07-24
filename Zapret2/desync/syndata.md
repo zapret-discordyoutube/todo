@@ -22,7 +22,7 @@ aliases:
 
 `syndata` --- стратегия "нулевой фазы" в zapret2. Она добавляет произвольный payload в TCP SYN-пакет, применяет модификации (fooling, tls_mod) и отправляет его **вместо** оригинального SYN. Оригинальный пакет дропается (`VERDICT_DROP`). Работает **до** установления TCP-соединения --- на этапе, когда клиент ещё только отправляет SYN.
 
-Родственные/сопутствующие функции: [[fake]] (фейковый пакет после SYN), [[multisplit]] (TCP-сегментация), [[wssize]] (управление размером окна), [[multidisorder]], [[fakedsplit]], [[fakeddisorder]].
+Родственные/сопутствующие функции: [[fake]] (фейковый пакет после SYN), [[multisplit]] (TCP-сегментация), [[Zapret2/desync|wssize]] (управление размером окна), [[multidisorder]], [[fakedsplit]], [[fakeddisorder]].
 
 Общий для всех техник дурения порядок работы — восемь стадий от отсева чужого транспорта до вердикта — разобран в [[жизненный цикл desync-функции]]; здесь описано только то, чем `syndata` от этого скелета отличается.
 
@@ -128,7 +128,7 @@ DPI же может:
 
 | Фаза | Когда | Что доступно | Примеры функций |
 |:-----|:------|:-------------|:----------------|
-| **Фаза 0 (SYN)** | До TCP handshake | Только SYN-пакет. Нет payload от приложения | `syndata`, [[wssize]] |
+| **Фаза 0 (SYN)** | До TCP handshake | Только SYN-пакет. Нет payload от приложения | `syndata`, [[Zapret2/desync|wssize]] |
 | **Фаза 1 (данные)** | После handshake, первые данные | Реальный payload (TLS ClientHello, HTTP request и т.д.) | [[fake]], [[multisplit]], [[fakedsplit]] |
 
 Следствия нулевой фазы:
@@ -427,7 +427,7 @@ end
 
 - DPI начинает трекинг с SYN и не реагирует на фейки после handshake
 - Нужно "отравить" DPI ложными данными **до** того, как пойдёт реальный трафик
-- В комбинации с [[wssize]] и [[multisplit]] для многоуровневой атаки
+- В комбинации с [[Zapret2/desync|wssize]] и [[multisplit]] для многоуровневой атаки
 
 ---
 
@@ -477,7 +477,7 @@ nfqws2 --ipcache-hostname \
    - `syndata` делает `instance_cutoff` (пакет не SYN)
    - `multisplit` нарезает payload по позиции `midsld`
 
-**Почему wssize перед syndata:** [[wssize]] модифицирует TCP Window Size в SYN-пакете. Если поставить после syndata, wssize увидит `VERDICT_DROP` и не получит SYN. Если перед --- wssize модифицирует dissect, затем syndata использует `deepcopy` этого (уже модифицированного) dissect.
+**Почему wssize перед syndata:** [[Zapret2/desync|wssize]] модифицирует TCP Window Size в SYN-пакете. Если поставить после syndata, wssize увидит `VERDICT_DROP` и не получит SYN. Если перед --- wssize модифицирует dissect, затем syndata использует `deepcopy` этого (уже модифицированного) dissect.
 
 ### Цепочка: syndata + fake + multisplit
 

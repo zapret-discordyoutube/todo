@@ -175,11 +175,11 @@ Flowseal лично опубликовал зеркала последних р�
 Альтернативы, не зависящие от аккаунта Flowseal:
 
 - оригинальное ядро от bol-van — `github.com/bol-van/zapret2` (подробнее о репозиториях автора — в разделе про экосистему выше);
-- сборка [[Zapret2/Zapret2|Zapret2]] от youtubediscord (`github.com/youtubediscord/zapret2-youtube-discord`) — [[Privacy/Zapret/download|официальные способы скачивания описаны здесь]];
+- сборка [[Zapret2/Zapret2|Zapret2]] от youtubediscord (`github.com/youtubediscord/zapret2-youtube-discord`) — [[Zapret/download|официальные способы скачивания описаны здесь]];
 - официальные Telegram-каналы [[Zapret GUI]]: [t.me/bypassblock](https://t.me/bypassblock) (основной, установщик и новости), [t.me/zapretnetdiscordyoutube](https://t.me/zapretnetdiscordyoutube) (обновления), [t.me/zapretbypass_bot](https://t.me/zapretbypass_bot) (бот со сборкой), [t.me/runetvpnyoutubediscord](https://t.me/runetvpnyoutubediscord) (Android, macOS и другие системы).
 
 > [!danger] Главная опасность — фейковые «перезаливы Flowseal»
-> Как только популярный репозиторий пропадает, мошенники массово создают «запасные зеркала» с малварью в расчёте на тех, кто побежит искать сборку где попало. Сеть таких клонов с накрученными звёздами и пачкой неизвестных `.exe` уже разбиралась в июне 2026 — см. [[discord-cdn-fix-fake-repos-june-2026|Bypass Ultimate / discord-cdn-fix]] и общий [[virus|чек-лист проверки сборок на вирусы]]. Уже 10 июля 2026 задокументирован живой пример: [[flowseal-fake-youtube-salatstealer-july-2026|фейковый YouTube-канал «Flowseal» (@Dey-K) раздаёт стилер SalatStealer]] под видом сборки. Качайте только по ссылкам от самого Flowseal (SourceForge выше) или из [[Privacy/Zapret/download|официальных источников]].
+> Как только популярный репозиторий пропадает, мошенники массово создают «запасные зеркала» с малварью в расчёте на тех, кто побежит искать сборку где попало. Сеть таких клонов с накрученными звёздами и пачкой неизвестных `.exe` уже разбиралась в июне 2026 — см. [[discord-cdn-fix-fake-repos-june-2026|Bypass Ultimate / discord-cdn-fix]] и общий [[virus|чек-лист проверки сборок на вирусы]]. Уже 10 июля 2026 задокументирован живой пример: [[flowseal-fake-youtube-salatstealer-july-2026|фейковый YouTube-канал «Flowseal» (@Dey-K) раздаёт стилер SalatStealer]] под видом сборки. Качайте только по ссылкам от самого Flowseal (SourceForge выше) или из [[Zapret/download|официальных источников]].
 
 ## Прецеденты: подобное уже случалось
 
@@ -192,7 +192,7 @@ Flowseal лично опубликовал зеркала последних р�
 - [[virus|👾 О вирусах в Zapret и ложных срабатываниях антивирусов]] — почему «репозиторий пропал» ≠ «это был вирус»
 - [[flowseal-fake-youtube-salatstealer-july-2026|🥗 Фейковый «Flowseal» на YouTube раздаёт SalatStealer]] — конкретный вирусный фейк, паразитирующий на имени Flowseal
 - [[discord-cdn-fix-fake-repos-june-2026|🪪 Сеть фейковых клонов Bypass Ultimate / discord-cdn-fix]] — как выглядят вредоносные «зеркала», которых сейчас станет больше
-- [[Privacy/Zapret/download|Как скачать Zapret из официальных источников]]
+- [[Zapret/download|Как скачать Zapret из официальных источников]]
 - [[Zapret2/Zapret2|Zapret2]] — независимая от аккаунта Flowseal сборка
 - 🔗 [Репозиторий Flowseal/zapret-discord-youtube](https://github.com/Flowseal/zapret-discord-youtube) — оригинальная страница (недоступна с 10 июля 2026, ссылка оживёт после восстановления)
 - 🔗 [Официальный комментарий Flowseal в Telegram от 10 июля 2026](https://t.me/telemtrs/599/118313) — первоисточник цитаты «приостановили, не забанили»
