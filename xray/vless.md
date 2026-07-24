@@ -158,6 +158,8 @@ vless://<uuid>@<host>:<port>?<параметры>#<название>
 - [[xray/xhttp|XHTTP]] — транспорт через CDN
 - [[xray/clients-and-routing|Клиенты и маршрутизация]] — как подключиться клиентом и развести трафик
 - [[VLESS/dpi-tls-june-2026|DPI TLS heuristics 2026]] — как DPI детектит VLESS+REALITY поведенчески
+- [[protocols/vmess|VMess]] — предшественник VLESS: `alterId`, режим AEAD и почему от собственного шифрования отказались
+- [[protocols/00-overview|Обзор протоколов]] — карта: какой протокол какую задачу решает и какое ядро его поддерживает
 - [[VLESS-SOCKS5-vulnerability]] и [[VLESS-localhost-protection-guide]] — риски неправильной настройки
 - 🔗 [Спецификация VLESS (dev docs)](https://xtls.github.io/en/development/protocols/vless.html) — первоисточник формата
 - 🔗 [config: inbounds/vless](https://xtls.github.io/en/config/inbounds/vless.html) · [outbounds/vless](https://xtls.github.io/en/config/outbounds/vless.html) — справка по конфигу

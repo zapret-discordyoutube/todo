@@ -11,6 +11,7 @@ Zapret полностью бесплатная программа. И такой
 ### [[premium/premium|Что такое Zapret Premium?]]
 ### [[premium/zapret_premium|Как активировать Zapret Premium?]]
 ### [[premium/discord|Как настроить Discord через VPN правильно]]
+### [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот и почему он не ограничивает выбор клиента]]
 
 ----
 # 2. Как пользоваться Zapret VPN (KVN) и получить VPN ключ

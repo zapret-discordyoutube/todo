@@ -163,6 +163,7 @@ Xray-core — открытый проект на Go, весь код досту�
 - [[xray/reality|REALITY]] — как прокси прикрывается настоящим чужим сайтом
 - [[xray/xhttp|XHTTP]] — транспорт через CDN, режимы packet-up/stream-up/stream-one
 - [[xray/clients-and-routing|Клиенты и маршрутизация]] — как подключиться (HAPP и др.) и развести трафик
+- [[Clash/08-vs-sing-box|mihomo против sing-box и Xray]] — чем экосистема Xray отличается от Clash/mihomo и sing-box, и когда что выбирать
 - [[xray/routing|Маршрутизация в Xray]] — правила, geosite/geoip, балансировщики изнутри
 - [[VLESS/dpi-tls-june-2026|DPI TLS heuristics 2026]] — как DPI детектит VLESS+REALITY поведенчески
 - [[VLESS-SOCKS5-vulnerability]] и [[VLESS-localhost-protection-guide]] — риски неправильной настройки
