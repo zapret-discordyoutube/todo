@@ -25,6 +25,7 @@ link: https://v2.hysteria.network/
 - Для установки на VPS нужен **домен** (для TLS-сертификата через ACME) и публичный IP. Есть официальный [[Hysteria/install-server|bash-скрипт установки]], разворачивающий systemd-сервис.
 - Hysteria 2 **несовместим** с Hysteria 1.x — версии протокола разные, клиент и сервер должны быть оба на 2.x.
 - Актуальная версия на момент написания — **v2.9.3** (июль 2026), проект живёт на [github.com/apernet/hysteria](https://github.com/apernet/hysteria).
+- Подключаться к серверу Hysteria 2 умеет не только официальный клиент: протокол поддерживают универсальные ядра [[Clash/02-mihomo|mihomo]], [[sing-box/sing-box-extended|sing-box]], а с января 2026 (релиз v26.1.23) — и [[xray/project-x|Xray-core]], где он настраивается как `hysteria` с `version: 2`.
 
 ## Что такое Hysteria 2 и зачем он нужен
 

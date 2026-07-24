@@ -21,7 +21,7 @@ link: https://github.com/MetaCubeX/mihomo
 
 ## TL;DR
 
-- **Список протоколов проверять обязательно — но смотреть надо на край списка, а не на середину.** Базовый набор (VLESS с REALITY, Hysteria2, TUIC, WireGuard, Shadowsocks, Trojan) есть у всех трёх, и по нему ядра неразличимы. Расходятся они на «редких» позициях, и там расхождение жёсткое: NaiveProxy есть в sing-box, но его нет ни в mihomo, ни в Xray-core; Snell и ShadowTLS есть в mihomo, но не в Xray; XHTTP и VLESS encryption первыми появляются в Xray.
+- **Список протоколов проверять обязательно — но смотреть надо на край списка, а не на середину.** Базовый набор (VLESS с REALITY, Hysteria 2, WireGuard, Shadowsocks, Trojan, VMess) есть у всех трёх, и по нему ядра неразличимы. Расходятся они на «редких» позициях, и там расхождение жёсткое: NaiveProxy есть в sing-box, но его нет ни в mihomo, ни в Xray-core; TUIC, Snell и ShadowTLS есть в mihomo и sing-box, но не в Xray; XHTTP и VLESS encryption первыми появляются в Xray.
 - **mihomo** — сильнее всех в клиентской маршрутизации и в живом интерфейсе: YAML-конфиг, группы политик, готовые подписки, Clash API и десяток графических оболочек поверх.
 - **sing-box** — строгий JSON, продуманная модель правил и rule-set, аккуратные официальные приложения на всех платформах; консервативнее в добавлении экзотики.
 - **Xray-core** — центр серверной экосистемы: панели 3x-ui и Marzban, самые свежие возможности VLESS ([[xray/xhttp|XHTTP]], XTLS Vision, VLESS encryption) появляются здесь первыми.
@@ -31,7 +31,7 @@ link: https://github.com/MetaCubeX/mihomo
 
 ## Список протоколов решает — но на краю, а не в середине
 
-Первое, что делает человек при выборе, — сравнивает таблички поддержки протоколов. Мысль «это всё равно, у всех одно и то же» здесь неверна, и вот почему. **В середине списка ядра действительно неразличимы**: VLESS с [[xray/reality|REALITY]], Hysteria2, TUIC, WireGuard, Shadowsocks, Trojan, VMess есть у всех трёх, и по этим позициям выбирать не из чего.
+Первое, что делает человек при выборе, — сравнивает таблички поддержки протоколов. Мысль «это всё равно, у всех одно и то же» здесь неверна, и вот почему. **В середине списка ядра действительно неразличимы**: VLESS с [[xray/reality|REALITY]], [[Hysteria/00-overview|Hysteria 2]], WireGuard, Shadowsocks, Trojan, VMess есть у всех трёх, и по этим позициям выбирать не из чего. Даже Hysteria 2, которой в Xray-core долго не было, появилась там в январе 2026 (релиз v26.1.23) — и это хорошая иллюстрация того, что «край списка» со временем переезжает в середину.
 
 **А на краю списка расхождения жёсткие, и обойти их нечем.** Самый наглядный пример — **[[protocols/naiveproxy|NaiveProxy]]**: он реализован в sing-box (и как входящий, и как исходящий, со свежими доработками вроде QUIC и ECH), а в Xray-core и mihomo его нет вовсе. Если сервер выдаёт вам naive, то вопрос «какое ядро удобнее» просто не стоит: подойдёт только то, где протокол реализован. Точно так же работают и обратные примеры: Snell и ShadowTLS есть в mihomo, но не в Xray-core; [[xray/xhttp|XHTTP]] и VLESS encryption рождаются в Xray и доезжают до соседей позже; OpenVPN, Tailscale и MTProxy встречаются лишь в отдельных ядрах и форках (см. [[sing-box/sing-box-extended|sing-box-extended]]).
 
@@ -73,8 +73,8 @@ link: https://github.com/MetaCubeX/mihomo
 
 | Ось | mihomo | sing-box | Xray-core |
 |---|---|---|---|
-| Базовый набор протоколов | VLESS/REALITY, Hysteria2, TUIC, WireGuard, SS, Trojan, VMess | то же | то же |
-| Протоколы «на краю списка» | Snell, ShadowTLS, AnyTLS, OpenVPN, Tailscale, GOST; NaiveProxy — нет | NaiveProxy (in/out), AnyTLS, ShadowTLS; экзотика — в форке | XHTTP и VLESS encryption раньше всех; NaiveProxy и Snell — нет |
+| Базовый набор протоколов | VLESS/REALITY, Hysteria 2, WireGuard, SS, Trojan, VMess | то же | то же (Hysteria 2 — с января 2026) |
+| Протоколы «на краю списка» | TUIC, Snell, ShadowTLS, AnyTLS, SSH, OpenVPN, Tailscale, Mieru, GOST-реле; NaiveProxy — нет | NaiveProxy (in/out), TUIC, AnyTLS, ShadowTLS, Snell, SSH, Tailscale и OpenVPN (endpoint); экзотика вроде Mieru — в форке | XHTTP и VLESS encryption раньше всех; TUIC, NaiveProxy, Snell, ShadowTLS, AnyTLS, SSH — нет |
 | Формат конфига | YAML, читается без документации | JSON со строгой схемой | JSON, унаследованный от v2ray (внутри — protobuf) |
 | Основная роль | Клиент и шлюз; сервер — как дополнение | Полноценно и клиент, и сервер | Сервер как основной сценарий, клиент — тоже |
 | Маршрутизация | Группы политик + правила + провайдеры правил | Правила и rule-set в бинарном формате `.srs` | Правила роутинга, ориентированные на серверные сценарии |
