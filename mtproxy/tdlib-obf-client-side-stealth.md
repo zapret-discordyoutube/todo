@@ -124,6 +124,7 @@ link: https://github.com/telemt/tdlib-obf
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — родственный клиентский подход, но в виде готового приложения (форк Telegram-Android), а не библиотеки
 - [[Zapret/mtproto/10-telemt-logs-dpi|Чтение логов telemt и #30733]] — протухший JA4-почерк официального клиента, который tdlib-obf лечит PQ-профилями
 - [[mtproxy/mtproto-zig|MTProxy и mtproto.zig]] — серверная сторона FakeTLS-прокси, к которой подключается клиент
+- [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика FakeTLS]] — как проверить снаружи, чей ClientHello релей не принимает, и какие требования он к нему предъявляет
 - [[Zapret/mtproto/00-overview|MTProto Proxy — полный гайд]] — общий обзор экосистемы telemt
 - [[VLESS/dpi-tls-june-2026|Сибирская схема: подсеть + фингерпринт + частота]] — та же логика «И трёх условий» и про свежесть почерка/ML-KEM
 - 🔗 [tdlib-obf на GitHub](https://github.com/telemt/tdlib-obf) — исходники и документация (ветка `master`)
