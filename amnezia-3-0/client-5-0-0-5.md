@@ -109,6 +109,7 @@ link: https://github.com/amnezia-vpn/amnezia-client/releases/tag/5.0.0.5
 ## 📚 См. также
 
 - [[amnezia-3-0/reference|AmneziaWG 3.0]] — протокол, ради которого выпущен этот релиз: шифрование заголовков, новые параметры, совместимость.
+- [[amnezia-3-0/internals|Внутреннее устройство AmneziaWG 3.0]] — что именно шифруется в пакете и какие следы протокол оставляет в сети.
 - [[amnezia-2-0/reference|AmneziaWG 2.0: справочник параметров]] — что означают `Jc`, `S1`–`S4`, `H1`–`H4` и `I1`–`I5` в конфигурациях.
 - [[protocols/00-overview|Карта протоколов обхода блокировок]] — чем заменить выпавшие Cloak и Shadowsocks.
 - [[mtproxy/faketls-relay-diagnosis|Диагностика FakeTLS-реле]] — как устроен режим маскировки, который приносит контейнер Telemt.

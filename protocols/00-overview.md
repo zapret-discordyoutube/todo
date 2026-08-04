@@ -85,7 +85,7 @@ aliases:
 - [[xray/vless|VLESS]], [[xray/reality|REALITY]], [[xray/xtls-vision|XTLS Vision]], [[xray/xhttp|XHTTP]] — сегодняшний мейнстрим и его составные части.
 - [[mtproxy/mtproto-zig|MTProto-прокси]] — специализированный протокол для Telegram.
 - [[amnezia-2-0/reference|AmneziaWG 2.0]] — обфускация WireGuard: мусорные пакеты, подменяемые заголовки, мимикрия под QUIC и DNS.
-- [[amnezia-3-0/reference|AmneziaWG 3.0]] — третье поколение (июль 2026): шифрование заголовков пакетов; вышло вместе с [[amnezia-3-0/client-5-0-0-5|приложением AmneziaVPN 5.0.0.5]].
+- [[amnezia-3-0/reference|AmneziaWG 3.0]] — третье поколение (июль 2026): шифрование заголовков пакетов; вышло вместе с [[amnezia-3-0/client-5-0-0-5|приложением AmneziaVPN 5.0.0.5]], побайтовая механика — в [[amnezia-3-0/internals|разборе внутреннего устройства]].
 
 ## Как выбирать протокол под задачу
 
