@@ -1,3 +1,22 @@
+---
+date: 2026-03-25
+tags:
+  - amneziawg
+  - wireguard
+  - обфускация
+  - обход-блокировок
+aliases:
+  - AmneziaWG 2.0
+  - AWG 2.0
+  - Амнезия 2.0
+  - АмнезияВГ 2.0
+  - Амнезия ВПН параметры конфига
+  - Что означают Jc Jmin Jmax в конфиге
+  - Что такое S1 S2 S3 S4 и H1 H2 H3 H4
+  - Сигнатурные пакеты I1-I5 и язык CPS
+link: https://github.com/amnezia-vpn/amneziawg-go
+---
+
 # AmneziaWG 2.0 — полный справочник параметров
 
 > Составлен на основе анализа исходного кода [amneziawg-go](https://github.com/amnezia-vpn/amneziawg-go)
