@@ -1,0 +1,28 @@
+name: Published content check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: linux
+    timeout-minutes: 10
+    steps:
+      - name: Checkout committed files only
+        uses: https://data.forgejo.org/actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Validate static content
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          test -f index.html
+          if git grep -nE 'github\.com/youtubediscord|api\.github\.com/repos/youtubediscord'; then
+            echo 'Committed page still contains a project link tied to GitHub.' >&2
+            exit 1
+          fi
