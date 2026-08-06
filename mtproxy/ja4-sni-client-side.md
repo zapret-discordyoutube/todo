@@ -178,6 +178,7 @@ teleproxy — **серверный** прокси (язык C), запускае
 
 - [[mtproxy/tdlib-obf-client-side-stealth|tdlib-obf — клиентский TDLib с маскировкой JA4]] — готовое клиентское воплощение этого тезиса: форк библиотеки клиента строит свежий браузерный ClientHello (PQ-профили) внутри себя, без отдельного relay
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — то же воплощение в виде **готового приложения** (форк официального Telegram-Android): меняет JA4 на Firefox-подобный и разносит коннекты джиттером
+- [[mtproxy/telegram-wss-transport|WSS: MTProto внутри WebSocket]] — третий путь мимо спора о почерке: соединение уходит не на адрес датацентра, а на веб-релей Telegram по 443, где TLS-рукопожатие уже настоящее
 - [[mtproxy/mtproto-zig|MTProxy и mtproto.zig]] — как устроен FakeTLS-прокси, почему почерк фиксирован и узнаваем
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика FakeTLS]] — измеренные требования релеев к ClientHello (длина, метка времени, повторы) и как проверить их снаружи
 - [[mtproxy/mtproto-zig-setup|Настройка mtproto.zig (runbook)]] — серверные меры (TCPMSS, SYN-ACK, домен)

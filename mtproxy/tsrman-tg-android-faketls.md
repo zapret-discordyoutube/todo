@@ -106,6 +106,7 @@ link: https://github.com/tsrman/tg
 - [[mtproxy/ja4-sni-client-side|Почему обход MTProxy клиентский (JA4/SNI)]] — тезис, который этот форк воплощает; разбор детекции из трёх условий
 - [[mtproxy/tdlib-obf-client-side-stealth|tdlib-obf — клиентский TDLib с маскировкой JA4]] — родственный клиентский подход на уровне библиотеки (а не готового приложения)
 - [[Zapret/mtproto/10-telemt-logs-dpi|Чтение логов telemt и #30733]] — протухший JA4 официального клиента, который этот форк обновляет
+- [[mtproxy/telegram-wss-transport|WSS: MTProto внутри WebSocket]] — другой форк Telegram для Android (ZaStoGram) решает ту же задачу иначе: не меняет TLS-почерк, а уводит соединение на веб-релеи Telegram
 - [[mtproxy/mtproto-zig|MTProxy и mtproto.zig]] — серверная сторона FakeTLS-прокси, к которой подключается клиент
 - [[Zapret/mtproto/00-overview|MTProto Proxy — полный гайд]] — общий обзор экосистемы
 - 🔗 [tsrman/tg на GitHub](https://github.com/tsrman/tg) — исходники форка

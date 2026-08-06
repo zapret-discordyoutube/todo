@@ -51,3 +51,5 @@ MTProto Proxy (MTProxy) — специализированный прокси-с
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4/SNI]] — детекция июнь 2026; почему чистый обход (смена JA4/ротация SNI) только клиентский
 - [[mtproxy/tdlib-obf-client-side-stealth|tdlib-obf — клиентский TDLib с маскировкой JA4]] — форк официальной библиотеки клиента, который строит свежий браузерный ClientHello (PQ-профили, лечит #30733)
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — готовый GUI-клиент: форк официального приложения, меняет JA4 на Firefox-подобный + джиттер коннектов (проверен на безопасность)
+- [[mtproxy/telegram-wss-transport|WSS: MTProto внутри WebSocket]] — другой транспорт вместо MTProxy: подключение к веб-релеям Telegram (`kws2/kws4.web.telegram.org/apiws`) без своего сервера; мосты (tg-ws-proxy, ZapretGUI) и нативная поддержка в форках клиентов
+- [[mtproxy/telegram-wss-limits|Ограничения WSS: что не работает и почему]] — датацентры без релея, медиа и стикеры через CDN, звонки, лимиты Cloudflare, типичные диагнозы
