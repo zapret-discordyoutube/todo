@@ -20,6 +20,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git diff --check
+          git show --check --format= HEAD
           test -f index.html
           test -s index.html
