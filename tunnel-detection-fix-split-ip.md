@@ -529,7 +529,7 @@ DNS over VLESS:
         "tag": "geosite-category-ru",
         "type": "remote",
         "format": "binary",
-        "url": "https://git.zapret.moe/zapretdiscordyoutube/russia-v2ray-rules-upstream/raw/branch/main/sing-box/rule-set-geosite/geosite-category-ru.srs"
+        "url": "https://raw.githubusercontent.com/runetfreedom/russia-v2ray-rules-dat/release/sing-box/rule-set-geosite/geosite-category-ru.srs"
       }
     ]
   }

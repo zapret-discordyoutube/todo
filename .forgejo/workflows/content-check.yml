@@ -40,3 +40,7 @@ jobs:
             echo 'Found a legacy link to our deleted GitHub account; use git.zapret.moe instead.' >&2
             exit 1
           fi
+          if git grep -n -I -E -- 'git\.zapret\.moe/(api/v1/repos/)?zapretdiscordyoutube/[A-Za-z0-9._-]+-upstream' -- . ':!.forgejo/workflows/content-check.yml'; then
+            echo 'Found our mirror of a third-party project; use its official source instead.' >&2
+            exit 1
+          fi

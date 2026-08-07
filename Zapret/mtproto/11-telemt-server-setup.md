@@ -75,7 +75,7 @@ chown -R telemt:telemt /opt/telemt /etc/telemt
 ```bash
 cd /tmp
 TELEMT_VERSION=3.4.25
-wget -qO- "https://git.zapret.moe/zapretdiscordyoutube/telemt-upstream/releases/download/${TELEMT_VERSION}/telemt-x86_64-linux-gnu.tar.gz" | tar -xz
+wget -qO- "https://github.com/telemt/telemt/releases/download/${TELEMT_VERSION}/telemt-x86_64-linux-gnu.tar.gz" | tar -xz
 mv /tmp/telemt /bin/telemt
 chmod +x /bin/telemt
 /bin/telemt --version    # должно вывести: telemt 3.4.15 (или новее)
@@ -343,7 +343,7 @@ curl -s http://127.0.0.1:9091/v1/stats/summary | jq '.data'
 # обновление telemt (с остановкой инстансов)
 cd /tmp
 TELEMT_VERSION=3.4.25
-wget -qO- "https://git.zapret.moe/zapretdiscordyoutube/telemt-upstream/releases/download/${TELEMT_VERSION}/telemt-x86_64-linux-gnu.tar.gz" | tar -xz
+wget -qO- "https://github.com/telemt/telemt/releases/download/${TELEMT_VERSION}/telemt-x86_64-linux-gnu.tar.gz" | tar -xz
 systemctl stop  telemt1 telemt2 telemt3
 mv /tmp/telemt /bin/telemt && chmod +x /bin/telemt
 systemctl start telemt1 telemt2 telemt3
