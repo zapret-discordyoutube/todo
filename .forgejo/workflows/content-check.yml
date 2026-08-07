@@ -28,3 +28,15 @@ jobs:
           fi
           test -f index.html
           test -s index.html
+          test -f wizard.html
+          test -s wizard.html
+
+      - name: Reject legacy links to our GitHub account
+        shell: bash
+        run: |
+          set -euo pipefail
+          legacy_pattern='github\.com/(youtubediscord|zapretdiscordyoutube)(/|$)|raw\.githubusercontent\.com/(youtubediscord|zapretdiscordyoutube)(/|$)|gist\.github(usercontent)?\.com/loop-uh(/|$)|api\.github\.com/repos/(youtubediscord|zapretdiscordyoutube)(/|$)|youtubediscord\.github\.io(/|$)|img\.shields\.io/github/[^[:space:]]*youtubediscord|git@github\.com:youtubediscord'
+          if git grep -n -I -i -E -- "$legacy_pattern" -- . ':!.forgejo/workflows/content-check.yml'; then
+            echo 'Found a legacy link to our deleted GitHub account; use git.zapret.moe instead.' >&2
+            exit 1
+          fi

@@ -243,9 +243,8 @@ aliases:
 - [[changelog-21.0.0-dev-june-2026|Changelog 21.0.0]] — пользовательские профили в `settings.json`, редактор списков
 
 <iframe
-  src="https://youtubediscord.github.io/todo?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Fsandbox&t=sandbox&i=sandbox"
+  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Fsandbox&t=sandbox&i=sandbox"
   title="Комментарии"
   style="width:100%;min-height:560px;border:0"
   loading="lazy">
 </iframe>
-

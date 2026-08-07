@@ -19,14 +19,14 @@ img:
   <a href="https://discord.com/invite/kkcBDG2uws"><img alt="Discord" src="https://img.shields.io/badge/Discord-сообщество-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
   <a href="https://telegram.me/zapretvpns_bot"><img alt="Поддержать донатами" src="https://img.shields.io/badge/Поддержать-донат-FF424D?style=for-the-badge&logo=telegram&logoColor=white"></a>
   <a href="https://publish.obsidian.md/zapret/Privacy/Zapret/home"><img alt="Вики" src="https://img.shields.io/badge/Вики-публичная-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new/choose"><img alt="Вопросы и баги" src="https://img.shields.io/badge/Вопросы_и_баги-GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new/choose"><img alt="Вопросы и баги в Forgejo" src="https://img.shields.io/badge/Вопросы_и_баги-Forgejo-FB923C?style=for-the-badge&logo=forgejo&logoColor=white"></a>
 </p>
 
 <p align="center">
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/stars"><img alt="Звёзды на GitHub" src="https://img.shields.io/github/stars/youtubediscord/zapret?style=for-the-badge&logo=github&color=FFD700&label=Звёзды"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases"><img alt="Всего скачиваний" src="https://img.shields.io/github/downloads/youtubediscord/zapret/total?style=for-the-badge&logo=github&color=2EA043&label=Скачиваний"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases/latest"><img alt="Последний релиз" src="https://img.shields.io/github/v/release/youtubediscord/zapret?style=for-the-badge&logo=github&color=0969DA&label=Релиз"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/commits"><img alt="Последний коммит" src="https://img.shields.io/github/last-commit/youtubediscord/zapret?style=for-the-badge&logo=github&color=8250DF&label=Обновлено"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/stars"><img alt="Звёзды в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/stars.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases"><img alt="Последний релиз в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/release.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues"><img alt="Открытые задачи в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/issues.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/actions"><img alt="Проверка исходников в Forgejo Actions" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/actions/workflows/source-guards.yml/badge.svg"></a>
 </p>
 
 Эта вики по одному из самых популярных GUI лаунчеров для программы [[Zapret2|Zapret 2]]. А также всему что с ним связано и вообще по теме обхода блокировок в сети интернет (*особенно рунета*).
@@ -42,7 +42,7 @@ img:
 
 <!-- Мастер-диагностик «Что у вас не работает?» — пока скрыт, раскомментировать при необходимости
 <iframe
-  src="https://youtubediscord.github.io/todo/wizard.html"
+  src="https://git.zapret.moe/pages/todo/wizard.html"
   title="Что у вас не работает?"
   style="width:100%;min-height:420px;border:0"
   loading="lazy">
@@ -73,7 +73,7 @@ img:
 ### Другие полезные сервисы и VPN https://github.com/awesome-windows11/CensorNet
 
 <iframe
-  src="https://youtubediscord.github.io/todo?u=https%3A%2F%2Fpublish.obsidian.md"
+  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fpublish.obsidian.md"
   title="Комментарии"
   style="width:100%;min-height:560px;border:0"
   loading="lazy">

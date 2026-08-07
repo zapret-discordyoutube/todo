@@ -589,4 +589,4 @@ Home-страница полностью удалена.
 - [[download|⬇️ Как скачать и установить из официального источника]]
 - [[Zapret/about|🔐 Что такое Zapret]]
 - [[discord-cdn-fix-fake-repos-june-2026|👾 Фейковые клоны Zapret с малварью]] — почему важно качать только из официального репозитория
-- 🔗 [Страница релизов на GitHub](https://git.zapret.moe/zapretdiscordyoutube/zapret/releases) — первоисточник changelog
+- 🔗 [Страница релизов в Forgejo](https://git.zapret.moe/zapretdiscordyoutube/zapret/releases) — первоисточник changelog

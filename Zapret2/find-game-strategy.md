@@ -219,7 +219,7 @@ aliases:
 > При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-game-strategy.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
 
 <iframe
-  src="https://youtubediscord.github.io/todo?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Ffind-game-strategy&t=find-game-strategy&i=find-game-strategy"
+  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Ffind-game-strategy&t=find-game-strategy&i=find-game-strategy"
   title="Комментарии"
   style="width:100%;min-height:560px;border:0"
   loading="lazy">
