@@ -205,6 +205,8 @@ REALITY готов к эпохе квантовых компьютеров на 
 
 - [[xray/vless|Протокол VLESS]] — протокол, поверх которого работает REALITY
 - [[xray/xtls-vision|XTLS и Vision]] — flow-режим, который обычно идёт в паре с REALITY
+- [[xray/vless-encryption|VLESS Encryption]] — внутреннее шифрование протокола: чем оно отличается от маскировки REALITY и когда нужно вдобавок к ней
+- [[xray/vless-stack-map|Слои VLESS-стека]] — матрица совместимости всех пяти осей конфига
 - [[xray/project-x|Project X (Xray-core)]] — обзор проекта и всех технологий
 - [[xray/xhttp|XHTTP]] — альтернативный транспорт, тоже умеет работать поверх REALITY
 - [[xray/clients-and-routing|Клиенты и маршрутизация]] — как подключиться к VLESS+REALITY-серверу
