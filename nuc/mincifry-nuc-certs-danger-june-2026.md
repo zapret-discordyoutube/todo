@@ -209,4 +209,4 @@ link: https://community.letsencrypt.org/t/why-issue-certificate-for-max-ru-forbi
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/nuc/mincifry-nuc-certs-danger-june-2026.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/nuc/mincifry-nuc-certs-danger-june-2026.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

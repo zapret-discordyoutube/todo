@@ -69,4 +69,4 @@ TLS-соединение начинается с рукопожатия: кли�
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/nuc/gost-tls.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/nuc/gost-tls.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

@@ -13,7 +13,7 @@ img:
 > Для того чтобы поставить zapret на телефон андроид требуются рут права (так как zapret работает напрямую с инструментом linux — iptables)!
 > А также установленное приложение [Magisk](https://github.com/topjohnwu/Magisk/releases). (для работы с IPTABLES)
 
-### Способ 1. [Zapret 2 (Magisk модуль)](https://github.com/youtubediscord/magisk-zapret2)
+### Способ 1. [Zapret 2 (Magisk модуль)](https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2)
 Самый передовой модуль для обхода блокировок YouTube, Discord и других сайтов на Android. Подробный разбор — что это, почему нужен root, установка, стратегии, раздача через hotspot и ограничения — в отдельной заметке: **[[Zapret/magisk-zapret2|Zapret2 как Magisk-модуль — системный обход DPI на Android]]**.
 
 ![[Pasted image 20260131162343.png|800]]

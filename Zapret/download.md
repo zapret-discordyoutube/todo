@@ -53,7 +53,7 @@ height: 2500
 
 ## Способ 4. Через Github
 
-Пройдите по [ссылке](https://github.com/youtubediscord/zapret/releases/latest) и скачать файл установщика (*пример ниже для версии `20.4.0.4`, у Вас может быть другая версия*):
+Пройдите по [ссылке](https://git.zapret.moe/zapretdiscordyoutube/zapret/releases/latest) и скачать файл установщика (*пример ниже для версии `20.4.0.4`, у Вас может быть другая версия*):
 
 ![[Pasted image 20260223220919.png]]
 
@@ -61,7 +61,7 @@ height: 2500
 
 ## Способ 5. Собрать Zapret самостоятельно
 
-Пройдите по ссылке: https://github.com/youtubediscord/zapret/blob/main/docs/build.md
+Пройдите по ссылке: https://git.zapret.moe/zapretdiscordyoutube/zapret/src/branch/main/docs/build.md
 
 ---
 

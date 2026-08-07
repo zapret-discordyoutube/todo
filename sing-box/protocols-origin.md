@@ -89,4 +89,4 @@ sing-box написан с нуля автором nekohasekai (SagerNet) пов
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/sing-box/protocols-origin.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/sing-box/protocols-origin.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

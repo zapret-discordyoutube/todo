@@ -87,7 +87,7 @@ aliases:
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/Zapret2/profile-independence.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/profile-independence.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
 
 <iframe
   src="https://youtubediscord.github.io/todo?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Fprofile-independence&t=profile-independence&i=profile-independence"

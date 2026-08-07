@@ -168,7 +168,7 @@ User-Agent: Mozilla/5.0 ... Chrome/131.0.0.0 ...
 
 ### Мост, встроенный в GUI: ZapretGUI
 
-В [ZapretGUI](https://github.com/youtubediscord/zapret) есть отдельный раздел «Telegram Proxy» — модуль `src/telegram_proxy/` (по состоянию на коммит `a3056476`, ветка релизов 21.1.5.x). Подход к WSS взят у `tg-ws-proxy` — на это прямо указано в комментарии к коду, — но реализация своя: Python-модуль, работающий в том же процессе, что и GUI, без отдельного бинарника. Слушает `127.0.0.1:1353`, умеет два режима входа — SOCKS5 и MTProxy — и подставляет пользователю готовую ссылку `tg://socks?…` или `tg://proxy?…`, которую Telegram открывает по нажатию кнопки.
+В [ZapretGUI](https://git.zapret.moe/zapretdiscordyoutube/zapret) есть отдельный раздел «Telegram Proxy» — модуль `src/telegram_proxy/` (по состоянию на коммит `a3056476`, ветка релизов 21.1.5.x). Подход к WSS взят у `tg-ws-proxy` — на это прямо указано в комментарии к коду, — но реализация своя: Python-модуль, работающий в том же процессе, что и GUI, без отдельного бинарника. Слушает `127.0.0.1:1353`, умеет два режима входа — SOCKS5 и MTProxy — и подставляет пользователю готовую ссылку `tg://socks?…` или `tg://proxy?…`, которую Telegram открывает по нажатию кнопки.
 
 Ключевое архитектурное отличие от предыдущего проекта — **внешний SOCKS5 как штатный запасной маршрут**. Когда у датацентра нет своего рабочего релея (а это все, кроме DC2 и DC4), трафик уходит на внешние SOCKS5-серверы проекта, выбираемые пресетом по стране. Отсюда же взялась основная работа последних месяцев: логика переключения между серверами несколько раз переписывалась, потому что Telegram открывает соединения залпом, и короткая серия отказов ошибочно читалась как «сервер умер».
 
@@ -176,7 +176,7 @@ User-Agent: Mozilla/5.0 ... Chrome/131.0.0.0 ...
 
 ### Нативный транспорт: ZaStoGram для Android
 
-Форк официального Android-клиента ([youtubediscord/ZaStoGram](https://github.com/youtubediscord/ZaStoGram), база — Telegram 12.9.2, версия приложения 1.1.2, HEAD `ab53c8d0` от 6 августа 2026) несёт WSS прямо в нативном сетевом слое `tgnet`. Появились файлы `jni/tgnet/wss/WssSocket.cpp` (779 строк) и общий интерфейс транспорта `jni/tgnet/transport/TransportSocket.h`, которых в апстриме DrKLO нет вовсе. Реализация самодостаточная: собственная машина состояний `TcpConnecting → TlsHandshake → HttpWrite → HttpRead → Ready` поверх OpenSSL и неблокирующих сокетов, без Qt и без сторонних WebSocket-библиотек.
+Форк официального Android-клиента ([youtubediscord/ZaStoGram](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram), база — Telegram 12.9.2, версия приложения 1.1.2, HEAD `ab53c8d0` от 6 августа 2026) несёт WSS прямо в нативном сетевом слое `tgnet`. Появились файлы `jni/tgnet/wss/WssSocket.cpp` (779 строк) и общий интерфейс транспорта `jni/tgnet/transport/TransportSocket.h`, которых в апстриме DrKLO нет вовсе. Реализация самодостаточная: собственная машина состояний `TcpConnecting → TlsHandshake → HttpWrite → HttpRead → Ready` поверх OpenSSL и неблокирующих сокетов, без Qt и без сторонних WebSocket-библиотек.
 
 **Покрытие датацентров шире, чем у всех остальных реализаций**, — но это заявка, а не подтверждённый факт. Функция `OfficialRoute` строит маршрут для DC1–DC5, держа три зашитых адреса релеев:
 
@@ -205,7 +205,7 @@ User-Agent: Mozilla/5.0 ... Chrome/131.0.0.0 ...
 
 ### Нативный транспорт: ZaStoGram Desktop
 
-Форк Telegram Desktop ([youtubediscord/ZaStoGram_desktop](https://github.com/youtubediscord/ZaStoGram_desktop), версия 7.0.8 от 3 августа 2026, HEAD `729dfd39`) решает ту же задачу, но опирается на Qt. WSS живёт в `mtproto/proxy/wss/socket.cpp` поверх `QSslSocket`, а выбор сокета вынесен в фабрику: в зависимости от настроек и секрета создаётся `WssSocket`, `TlsSocket` (FakeTLS для MTProxy) или обычный `TcpSocket`. Протокольный слой при этом не знает, какой транспорт под ним, — поэтому обфускация для всех трёх одинаковая.
+Форк Telegram Desktop ([youtubediscord/ZaStoGram_desktop](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram_desktop), версия 7.0.8 от 3 августа 2026, HEAD `729dfd39`) решает ту же задачу, но опирается на Qt. WSS живёт в `mtproto/proxy/wss/socket.cpp` поверх `QSslSocket`, а выбор сокета вынесен в фабрику: в зависимости от настроек и секрета создаётся `WssSocket`, `TlsSocket` (FakeTLS для MTProxy) или обычный `TcpSocket`. Протокольный слой при этом не знает, какой транспорт под ним, — поэтому обфускация для всех трёх одинаковая.
 
 Первое отличие от Android-версии — **транспорт по умолчанию Wss**: без единой настройки соединения к DC2 и DC4 идут через веб-релеи, к остальным датацентрам — обычным TCP. Покрытие уже намеренно ограничено двумя датацентрами, с комментарием в коде, что публичные веб-сокеты существуют только для DC2/DC4.
 
@@ -287,11 +287,11 @@ WSS-транспорт не требует ничего своего: клиен
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика MTProxy]] — как понять, кто виноват, когда рабочий ключ не подключается
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — другой подход к тому же: не смена транспорта, а смена TLS-почерка
 - 🔗 [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) — исходники моста на Python, документация по Cloudflare Worker и FakeTLS
-- 🔗 [youtubediscord/ZaStoGram](https://github.com/youtubediscord/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://github.com/youtubediscord/ZaStoGram/releases)
-- 🔗 [youtubediscord/ZaStoGram_desktop](https://github.com/youtubediscord/ZaStoGram_desktop) — исходники Desktop-форка: WSS-транспорт в `Telegram/SourceFiles/mtproto/proxy/wss/`
+- 🔗 [youtubediscord/ZaStoGram](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram/releases)
+- 🔗 [youtubediscord/ZaStoGram_desktop](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram_desktop) — исходники Desktop-форка: WSS-транспорт в `Telegram/SourceFiles/mtproto/proxy/wss/`
 - 🔗 [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455) — спецификация WebSocket: рукопожатие, маскирование, формат кадров
 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/mtproxy/telegram-wss-transport.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/mtproxy/telegram-wss-transport.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

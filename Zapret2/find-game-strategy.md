@@ -95,7 +95,7 @@ aliases:
 
 ## Куда деть собранные адреса ещё
 
-Полный список IP и портов игры — ценность не только для вас: его можно [отправить разработчикам Zapret2 GUI](https://github.com/youtubediscord/zapret/issues/new?template=hostlist_ipset_request.yml), чтобы игру добавили в категории по умолчанию — правила оформления в [[Создание своей категории]]. Тогда следующим игрокам не придётся проходить этот путь.
+Полный список IP и портов игры — ценность не только для вас: его можно [отправить разработчикам Zapret2 GUI](https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new?template=hostlist_ipset_request.yml), чтобы игру добавили в категории по умолчанию — правила оформления в [[Создание своей категории]]. Тогда следующим игрокам не придётся проходить этот путь.
 
 ## Лобовой вариант: пресеты «ALL TCP & UDP» — и связка с TCPView
 
@@ -216,7 +216,7 @@ aliases:
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://github.com/youtubediscord/todo/blob/main/Zapret2/find-game-strategy.md) · [весь репозиторий](https://github.com/youtubediscord/todo/tree/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны на GitHub: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-game-strategy.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
 
 <iframe
   src="https://youtubediscord.github.io/todo?u=https%3A%2F%2Fpublish.obsidian.md%2Fzapret%2Ffind-game-strategy&t=find-game-strategy&i=find-game-strategy"

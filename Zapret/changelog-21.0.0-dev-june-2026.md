@@ -9,7 +9,7 @@ aliases:
   - Changelog Zapret 21
   - История версий Zapret 21.0.0
   - Что нового в Zapret с 21.0.0.6
-link: https://github.com/youtubediscord/zapret/releases
+link: https://git.zapret.moe/zapretdiscordyoutube/zapret/releases
 ---
 
 # 📜 Changelog ZapretGUI: от 21.0.0.6 до 21.0.0.181 (dev)
@@ -589,4 +589,4 @@ Home-страница полностью удалена.
 - [[download|⬇️ Как скачать и установить из официального источника]]
 - [[Zapret/about|🔐 Что такое Zapret]]
 - [[discord-cdn-fix-fake-repos-june-2026|👾 Фейковые клоны Zapret с малварью]] — почему важно качать только из официального репозитория
-- 🔗 [Страница релизов на GitHub](https://github.com/youtubediscord/zapret/releases) — первоисточник changelog
+- 🔗 [Страница релизов на GitHub](https://git.zapret.moe/zapretdiscordyoutube/zapret/releases) — первоисточник changelog
