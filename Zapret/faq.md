@@ -36,10 +36,10 @@ blockedsite.com
 
 Также проверьте что у вас выключен **ЛЮБОЙ VPN и прокси-сервер в Windows** - он также может ломать весь Запрет.
 
-![image](https://github.com/user-attachments/assets/94b0c35a-7899-4545-8d4b-8293560e0761)
+![Проверка отключения VPN и прокси в Windows](attachments/vpn-and-proxy-disabled.png)
 
 ## YouTube никак не хочет работать (все стратегии перепробовал)
-![image](https://github.com/user-attachments/assets/8f0cad33-96cf-4247-8df9-c61c920e94ec)
+![Окно браузерного расширения, мешающего YouTube](attachments/youtube-extension-interference.png)
 
 Для начала вам следует проверить свои расширения в браузере.
 
@@ -61,7 +61,7 @@ blockedsite.com
 > [!CAUTION]  
 > [Яндекс DNS](https://t.me/bypassblock/134) перестали открывать Discord и другие заблокированные сайты. Не пользуйтесь ими. Рекомендуем сменить их на [**Google DNS**](https://developers.google.com/speed/public-dns) или [**Quad9 DNS**](https://quad9.net/service/service-addresses-and-features).
 
-![image](https://github.com/user-attachments/assets/e8a11aa1-446c-40f4-b7d4-fc35b26ba9af)
+![Предупреждение о Яндекс DNS](attachments/yandex-dns-warning.png)
 
 Мы настоятельно **НЕ** рекомендуем использовать Яндекс Браузер! Он может нарушать работу Zapret. Например:
 - Подменять днс (меняется в настройках)
