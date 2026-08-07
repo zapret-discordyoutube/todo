@@ -15,11 +15,16 @@ jobs:
         uses: https://data.forgejo.org/actions/checkout@v6
         with:
           persist-credentials: false
+          fetch-depth: 2
 
       - name: Validate static content
         shell: bash
         run: |
           set -euo pipefail
-          git show --check --format= HEAD
+          if git rev-parse --verify HEAD^ >/dev/null 2>&1; then
+            git diff --check HEAD^ HEAD
+          else
+            git show --check --format= HEAD
+          fi
           test -f index.html
           test -s index.html

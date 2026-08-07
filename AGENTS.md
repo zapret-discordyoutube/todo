@@ -24,9 +24,9 @@ publish: false
 
 ## Forgejo Actions
 
-На каждый `push` в `main` срабатывает workflow `.forgejo/workflows/content-check.yml`. Он получает только закоммиченные файлы и проверяет:
+На каждый `push` в `main` срабатывает workflow `.forgejo/workflows/content-check.yml`. Он получает текущий commit и его непосредственного родителя, чтобы проверять именно новая правка, а не всю историю хранилища. Workflow проверяет:
 
-- что в последнем опубликованном commit нет проблем с пробелами и концами строк через `git show --check --format= HEAD`;
+- что в последнем опубликованном commit нет проблем с пробелами и концами строк через `git diff --check HEAD^ HEAD`;
 - что корневой `index.html` существует и не пуст.
 
 Публикацию на Obsidian Publish этот workflow не выполняет: сайт обновляется отдельно по инструкции ниже.
