@@ -43,7 +43,7 @@ link: https://github.com/sleep3r/mtproto.zig
 
 ```bash
 # 1. bootstrap mtbuddy (проверяет minisign-подпись + SHA-256)
-curl -fsSL https://raw.githubusercontent.com/sleep3r/mtproto.zig/main/deploy/bootstrap.sh | sudo bash
+curl -fsSL https://git.zapret.moe/zapretdiscordyoutube/mtproto-zig-upstream/raw/branch/main/deploy/bootstrap.sh | sudo bash
 
 # 2. установка прокси со всеми DPI-модулями
 sudo mtbuddy install --port 443 --domain rutube.ru --yes

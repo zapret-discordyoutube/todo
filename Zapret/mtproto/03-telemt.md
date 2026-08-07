@@ -105,7 +105,8 @@ docker compose logs -f
 
 ```bash
 # Скачать бинарник
-wget -qO- "https://github.com/telemt/telemt/releases/latest/download/telemt-$(uname -m)-unknown-linux-gnu.tar.gz" | tar xz
+TELEMT_VERSION=3.4.25
+wget -qO- "https://git.zapret.moe/zapretdiscordyoutube/telemt-upstream/releases/download/${TELEMT_VERSION}/telemt-x86_64-linux-gnu.tar.gz" | tar xz
 sudo mv telemt /bin/telemt
 sudo chmod +x /bin/telemt
 

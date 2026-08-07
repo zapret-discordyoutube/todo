@@ -977,19 +977,19 @@ bash warp-go.sh
         "tag": "geoip-ru",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-ru.srs"
+        "url": "https://git.zapret.moe/zapretdiscordyoutube/sing-geoip-upstream/raw/branch/main/geoip-ru.srs"
       },
       {
         "tag": "geosite-ru",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ru.srs"
+        "url": "https://git.zapret.moe/zapretdiscordyoutube/sing-geosite-upstream/raw/branch/main/geosite-category-ru.srs"
       },
       {
         "tag": "geoip-private",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-private.srs"
+        "url": "https://git.zapret.moe/zapretdiscordyoutube/sing-geoip-upstream/raw/branch/main/geoip-private.srs"
       }
     ],
     "final": "proxy"
