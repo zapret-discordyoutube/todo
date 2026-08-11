@@ -481,7 +481,7 @@ WSS-транспорт не требует ничего своего: клиен
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика MTProxy]] — как понять, кто виноват, когда рабочий ключ не подключается
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — другой подход к тому же: не смена транспорта, а смена TLS-почерка
 - 🔗 [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) — исходники моста на Python, документация по Cloudflare Worker и FakeTLS
-- [[Zapret/github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил]] — почему исходники ZaStoGram с 11 августа 2026 доступны только в Forgejo: GitHub-организация `youtubediscord` удалена
+- [[virus/github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил]] — почему исходники ZaStoGram с 11 августа 2026 доступны только в Forgejo: GitHub-организация `youtubediscord` удалена
 - 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://git.zapret.moe/zastogram/ZaStoGram/releases)
 - 🔗 [zastogram/ZaStoGram_desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop) — исходники Desktop-форка: WSS-транспорт в `Telegram/SourceFiles/mtproto/proxy/wss/`
 - 🔗 [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455) — спецификация WebSocket: рукопожатие, маскирование, формат кадров
