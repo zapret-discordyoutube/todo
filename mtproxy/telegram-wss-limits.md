@@ -248,8 +248,8 @@ ZapretGUI добавил для этого случая подсказку в и
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4 и SNI]] — про второй класс блокировок, по почерку соединения
 - [[Zapret2/Zapret2|zapret]] — обход DPI на уровне пакетов, который закрывает датацентры без веб-релея
 - 🔗 [Пользовательский FAQ проекта tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy/issues/389) — список известных ограничений, который ведёт сообщество
-- 🔗 [youtubediscord/ZaStoGram](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram) — Android-форк с нативным WSS, готовые сборки в [релизах](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram/releases)
-- 🔗 [youtubediscord/ZaStoGram_desktop](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram_desktop) — Desktop-форк с нативным WSS и кастомным релеем
+- 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — Android-форк с нативным WSS, готовые сборки в [релизах](https://git.zapret.moe/zastogram/ZaStoGram/releases)
+- 🔗 [zastogram/ZaStoGram_desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop) — Desktop-форк с нативным WSS и кастомным релеем
 
 ---
 

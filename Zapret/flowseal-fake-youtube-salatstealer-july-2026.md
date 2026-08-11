@@ -180,6 +180,7 @@ Microsoft Defender реагирует на файл именованными в�
 - [[flowseal-zapret-discord-youtube-block-july-2026|🚫 Приостановка аккаунта Flowseal на GitHub (июль 2026)]] — контекст, из-за которого фейки сейчас особенно опасны
 - [[virus|👾 О вирусах в Zapret: каталог подделок и разбор ложных срабатываний]] — как отличить эвристический «ложняк» от настоящего вируса
 - [[discord-cdn-fix-fake-repos-june-2026|🪪 Сеть фейковых клонов Bypass Ultimate / discord-cdn-fix]] — та же схема, но через GitHub-репозитории вместо YouTube
+- [[fixit-arcane-stealer-kaspersky-august-2026|🪤 Fixit — приманка для стилера Arcane]] — ещё одна раздача через ролики на YouTube, но под вымышленным продуктом, а не под чужим именем
 - [[download|Как скачать Zapret из официальных источников]]
 - 🔗 [Отчёт VirusTotal по файлу](https://www.virustotal.com/gui/file/fc125455b1e1f2a409699e89ef18bd6bb3b2959bb67ca7a131f470cca6f37858) — 55/72, trojan.salat/salatstealer
 

@@ -362,7 +362,7 @@ wss_disconnect reason=2 phase=post_handshake_no_appdata
 
 ### Нативный транспорт: ZaStoGram для Android
 
-Форк официального Android-клиента ([youtubediscord/ZaStoGram](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram), база — Telegram 12.9.2, версия приложения 1.1.2, HEAD `ab53c8d0` от 6 августа 2026) несёт WSS прямо в нативном сетевом слое `tgnet`. Появились файлы `jni/tgnet/wss/WssSocket.cpp` (779 строк) и общий интерфейс транспорта `jni/tgnet/transport/TransportSocket.h`, которых в апстриме DrKLO нет вовсе. Реализация самодостаточная: собственная машина состояний `TcpConnecting → TlsHandshake → HttpWrite → HttpRead → Ready` поверх OpenSSL и неблокирующих сокетов, без Qt и без сторонних WebSocket-библиотек.
+Форк официального Android-клиента ([zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram), база — Telegram 12.9.2, версия приложения 1.1.2, HEAD `ab53c8d0` от 6 августа 2026) несёт WSS прямо в нативном сетевом слое `tgnet`. Появились файлы `jni/tgnet/wss/WssSocket.cpp` (779 строк) и общий интерфейс транспорта `jni/tgnet/transport/TransportSocket.h`, которых в апстриме DrKLO нет вовсе. Реализация самодостаточная: собственная машина состояний `TcpConnecting → TlsHandshake → HttpWrite → HttpRead → Ready` поверх OpenSSL и неблокирующих сокетов, без Qt и без сторонних WebSocket-библиотек.
 
 **Покрытие датацентров шире, чем у всех остальных реализаций, и оно подтверждено.** Функция `OfficialRoute` строит маршрут для DC1–DC5, держа три зашитых адреса релеев — и проверка 8 августа 2026 показала, что все три действительно проксируют MTProto, включая медийные `kwsN-1`:
 
@@ -393,7 +393,7 @@ wss_disconnect reason=2 phase=post_handshake_no_appdata
 
 ### Нативный транспорт: ZaStoGram Desktop
 
-Форк Telegram Desktop ([youtubediscord/ZaStoGram_desktop](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram_desktop), версия 7.0.8 от 3 августа 2026, HEAD `729dfd39`) решает ту же задачу, но опирается на Qt. WSS живёт в `mtproto/proxy/wss/socket.cpp` поверх `QSslSocket`, а выбор сокета вынесен в фабрику: в зависимости от настроек и секрета создаётся `WssSocket`, `TlsSocket` (FakeTLS для MTProxy) или обычный `TcpSocket`. Протокольный слой при этом не знает, какой транспорт под ним, — поэтому обфускация для всех трёх одинаковая.
+Форк Telegram Desktop ([zastogram/ZaStoGram_desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop), версия 7.0.8 от 3 августа 2026, HEAD `729dfd39`) решает ту же задачу, но опирается на Qt. WSS живёт в `mtproto/proxy/wss/socket.cpp` поверх `QSslSocket`, а выбор сокета вынесен в фабрику: в зависимости от настроек и секрета создаётся `WssSocket`, `TlsSocket` (FakeTLS для MTProxy) или обычный `TcpSocket`. Протокольный слой при этом не знает, какой транспорт под ним, — поэтому обфускация для всех трёх одинаковая.
 
 Первое отличие от Android-версии — **транспорт по умолчанию Wss**: без единой настройки соединения идут через веб-релеи, а к непокрытым датацентрам — обычным TCP.
 
@@ -481,8 +481,9 @@ WSS-транспорт не требует ничего своего: клиен
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика MTProxy]] — как понять, кто виноват, когда рабочий ключ не подключается
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — другой подход к тому же: не смена транспорта, а смена TLS-почерка
 - 🔗 [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) — исходники моста на Python, документация по Cloudflare Worker и FakeTLS
-- 🔗 [youtubediscord/ZaStoGram](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram/releases)
-- 🔗 [youtubediscord/ZaStoGram_desktop](https://git.zapret.moe/zapretdiscordyoutube/ZaStoGram_desktop) — исходники Desktop-форка: WSS-транспорт в `Telegram/SourceFiles/mtproto/proxy/wss/`
+- [[Zapret/github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил]] — почему исходники ZaStoGram с 11 августа 2026 доступны только в Forgejo: GitHub-организация `youtubediscord` удалена
+- 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://git.zapret.moe/zastogram/ZaStoGram/releases)
+- 🔗 [zastogram/ZaStoGram_desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop) — исходники Desktop-форка: WSS-транспорт в `Telegram/SourceFiles/mtproto/proxy/wss/`
 - 🔗 [RFC 6455](https://datatracker.ietf.org/doc/html/rfc6455) — спецификация WebSocket: рукопожатие, маскирование, формат кадров
 
 ---
