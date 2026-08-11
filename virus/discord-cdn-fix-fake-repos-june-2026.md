@@ -126,6 +126,7 @@ github.com/StalkerLightning/telegram-lag-fix-2026
 
 ## 📚 См. также
 - [[github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил (11 августа 2026)]] — как эта схема развилась дальше: накрутка звёзд и коммитов плюс payload, зашитый прямо в `general.bat`
+- [[hidemydiscord-loader-august-2026|🎣 HideMyDiscord — загрузчик рядом с рабочим обходом]] — эволюция схемы: подделка перестала быть нерабочей
 - [[fixit-arcane-stealer-kaspersky-august-2026|🪤 Fixit — приманка для стилера Arcane]] — развитие приёма с файлами-пустышками: в репозитории нет даже вредоноса, только ссылка через сокращатель
 - [[virus|👾 Каталог вирусных сборок Zapret и как их проверять]] — этот клон-сеть стоит в одном ряду с PeekBot, SkyWinFo, Cactuz и Discord NewFix
 - [[download|Как установить настоящий Zapret из официального источника]]

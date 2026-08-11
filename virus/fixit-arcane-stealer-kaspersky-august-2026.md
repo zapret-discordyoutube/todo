@@ -194,6 +194,7 @@ Fixit раздаётся с собственного сайта, но у той 
 
 ## 📚 См. также
 - [[virus|👾 Каталог вирусных сборок Zapret, ложные срабатывания и чек-лист проверки]] — почему детект на `WinDivert` не равен вирусу
+- [[hidemydiscord-loader-august-2026|🎣 HideMyDiscord — рабочий обход с загрузчиком в комплекте]] — ещё один аккаунт той же фабрики, раздача спрятана в профильном репозитории GitHub
 - [[github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил]] — соседняя ветка той же экономики: накрутка звёзд и payload внутри `general.bat`
 - [[flowseal-fake-youtube-salatstealer-july-2026|🥗 Фейковый «Flowseal» на YouTube со стилером SalatStealer]] — та же схема раздачи через видеоролики
 - [[discord-cdn-fix-fake-repos-june-2026|🪪 Сеть клонов Bypass Ultimate / discord-cdn-fix]] — файлы-пустышки одинакового размера и накрученные звёзды
