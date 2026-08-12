@@ -134,6 +134,7 @@ link: https://github.com/C24Be/AS_Network_List
 ## 📚 См. также
 
 - [[DPI/browser-ja4-fingerprint-block|Блокировка сайта по JA4-отпечатку браузера]] — как и где на самом деле режется трафик (ТСПУ в канале, а не РФ-ASN на твоём сервере).
+- [[yabloko-boycotts-protest-2026|Снятие «Яблока» с выборов и бойкоты MAX и «Колобка» (лето 2026)]] — политический контекст: почему пользователи массово отказываются от MAX и что это говорит о протесте.
 - [[VLESS/dpi-tls-june-2026|Как DPI «замораживает» VLESS+REALITY: схема июня 2026]] — почему блок идёт по fingerprint + подсеть + поведение.
 - 🔗 [C24Be/AS_Network_List](https://github.com/C24Be/AS_Network_List) — генератор блоклистов РФ-подсетей (CIDR, конфиги под iptables/nft/nginx).
 - 🔗 [Issue #28 — расширение блоклиста РФ-ASN](https://github.com/C24Be/AS_Network_List/issues/28) — обсуждение, с которого начался разбор.
