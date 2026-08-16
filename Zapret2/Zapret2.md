@@ -58,6 +58,7 @@ img:
 - [[основные флаги]]
 - [[wf]]
 - [[filter]]
+- [[exclusions]]
 - [[out-range]]
 - [[payload]]
 - [[desync]]
