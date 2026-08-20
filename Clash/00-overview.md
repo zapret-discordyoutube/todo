@@ -1,4 +1,5 @@
 ---
+title: "🧭 Clash и mihomo — обзор и оглавление"
 date: 2026-07-25
 tags:
   - clash

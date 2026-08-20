@@ -1,4 +1,5 @@
 ---
+title: "🦎 Hysteria 2 — обзор и оглавление"
 date: 2026-07-11
 tags:
   - hysteria

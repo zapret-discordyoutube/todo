@@ -1,3 +1,7 @@
+---
+title: "✈️ MTProto Proxy — полный гайд"
+---
+
 # MTProto Proxy — Полный гайд
 
 ## Что это такое
