@@ -87,4 +87,13 @@ img:
 > 
 > Попробуйте наш новый VPN с безлимитной скоростью: https://telegram.me/zapretvpns_bot
 
+### 🤖 Вики дружит с ИИ
+
+Все статьи открыты — их можно скармливать ИИ-ассистентам и обучать на них модели:
+
+- у каждой страницы есть кнопка **«🤖 Скопировать как Markdown»** (под датой), а исходник доступен по адресу страницы с расширением `.md` — например, [Zapret2/guide.md](https://wiki.zapret.moe/Zapret2/guide.md);
+- [llms.txt](https://wiki.zapret.moe/llms.txt) — каталог всех статей вики со ссылками на Markdown-исходники (стандарт [llmstxt.org](https://llmstxt.org) для ИИ-краулеров);
+- [llms-full.txt](https://wiki.zapret.moe/llms-full.txt) — вся вики одним файлом (~5 МБ), удобно загрузить в контекст модели целиком;
+- [zip всего репозитория](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip) — исходники со всей историей в [Forgejo](https://git.zapret.moe/zapretdiscordyoutube/todo).
+
 ### Другие полезные сервисы и VPN https://github.com/awesome-windows11/CensorNet
