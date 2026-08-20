@@ -1,8 +1,14 @@
 ---
+title: Zapret 2 (Запрет GUI) — обход блокировок Discord и YouTube
 tags:
 link:
 aliases:
   - index
+  - Запрет ГУИ
+  - Zapret GUI
+  - Скачать Запрет
+  - Запрет 2 обход блокировок
+  - Обход блокировки Дискорда и Ютуба
 img:
 ---
 
