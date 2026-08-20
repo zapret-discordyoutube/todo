@@ -708,7 +708,7 @@ img:
 ```
 
 <iframe
-  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fwiki.zapret.moe%2Fsandbox&t=sandbox&i=sandbox"
+  src="https://wiki.zapret.moe/static/comments.html?u=https%3A%2F%2Fwiki.zapret.moe%2Fsandbox&t=sandbox&i=sandbox"
   title="Комментарии"
   style="width:100%;min-height:560px;border:0"
   loading="lazy">
