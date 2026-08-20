@@ -4,7 +4,7 @@ publish: false
 
 # AGENTS.md — правила работы с этим репозиторием
 
-Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git.zapret.moe`; материалы отдельно публикуются на сайт `publish.obsidian.md/zapret`. Forgejo и Obsidian Publish — **два независимых канала**: изменение в одном не попадает в другой автоматически.
+Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git.zapret.moe`; материалы публикуются на сайт `https://wiki.zapret.moe` (self-hosted Quartz 4, живёт на этом же хосте в `/srv/wiki-quartz`). Публикация привязана к Git: **каждый локальный коммит в vault автоматически пересобирает сайт** (systemd-юнит `wiki-rebuild.path` следит за `.git/logs/HEAD` и запускает `wiki-rebuild.service`). Отдельного шага «опубликовать» больше нет.
 
 ## Git-процесс: коммитим прямо в `main`
 
@@ -29,26 +29,21 @@ publish: false
 - что в последнем опубликованном commit нет проблем с пробелами и концами строк через `git diff --check HEAD^ HEAD`;
 - что корневой `index.html` существует и не пуст.
 
-Публикацию на Obsidian Publish этот workflow не выполняет: сайт обновляется отдельно по инструкции ниже.
+Публикацию на сайт этот workflow не выполняет — сайт собирается локальным systemd-юнитом, см. ниже.
 
-## Публикация на сайт
+## Публикация на сайт (wiki.zapret.moe)
 
-Публикация делается отдельно, через Obsidian CLI (в этом окружении — `"$HOME/.local/bin/obsidian"`, vault называется `Privacy`):
+Сайт — статический, собирается Quartz 4 прямо из этого vault (`npx quartz build -d /home/codex-pve/Privacy` в `/srv/wiki-quartz`). Запускать руками ничего не нужно: **любой коммит в vault триггерит пересборку** через `wiki-rebuild.path`. Принудительная пересборка без коммита: `sudo systemctl start wiki-rebuild.service` или `/usr/local/bin/wiki-rebuild`.
 
-```bash
-"$HOME/.local/bin/obsidian" vault="Privacy" publish:status
-"$HOME/.local/bin/obsidian" vault="Privacy" publish:add changed
-```
+URL заметки = путь в vault со слагами Quartz (пробелы → `-`, кириллица сохраняется): `Zapret/home.md` → `https://wiki.zapret.moe/Zapret/home`. Главная `/` — это alias `index` в frontmatter `Zapret/home.md`.
 
-Успешная синхронизация заканчивается `No changes.`.
+**Как исключить файл из публикации:** добавить в его frontmatter `publish: false` — фильтр `RemoveNoPublish` в Quartz не пропустит такую заметку на сайт, при этом она остаётся в Git. Так исключён сам `AGENTS.md`.
 
-**Публикуйте через скрипт `scripts/publish-safe.sh`**, а не `publish:add changed` напрямую: он публикует всю очередь, кроме закрытых разделов (список папок — в переменной `EXCLUDE_RE` внутри скрипта).
+**Закрытые разделы.** Папки `VPS/`, `scripts/`, `.obsidian/`, `.claude/`, `.agents/`, `.forgejo/` и корневые `index.html`, `AGENTS.md` вырезаются на уровне `ignorePatterns` в `/srv/wiki-quartz/quartz.config.ts` — в сборку не попадают ни заметки, ни вложения из них. В `VPS/` лежат IP, пароли и детали инфраструктуры — новые закрытые папки добавлять именно в `ignorePatterns`, а не полагаться только на `publish: false` (frontmatter не защищает вложения).
 
-**Как исключить служебный файл из публикации:** добавить в его frontmatter `publish: false` — такой файл перестаёт попадать в `publish:status` и в `publish:add changed`, оставаясь при этом в Git. Так исключён сам `AGENTS.md`; тот же приём применяйте к любым внутренним `.md`, которые нужны в репозитории, но не на сайте. Благодаря этому `publish:add changed` можно запускать не глядя.
+**При переименовании заметки** старый путь исчезает с сайта сам при следующей пересборке; чтобы старые внешние ссылки не ломались, можно добавить старый слаг в `aliases:` frontmatter — Quartz сделает редирект.
 
-**Закрытые разделы.** Папка `VPS/` целиком снята с публикации (25 июля 2026): в её заметках лежат IP, пароли и детали инфраструктуры. У всех `.md` внутри стоит `publish: false`, но **на вложения это свойство не действует** — 25 картинок из `VPS/Провайдеры/attachments/` навсегда висят в `publish:status` со статусом `new`. Публиковать их нельзя; именно поэтому существует `scripts/publish-safe.sh`. Если очередь показывает только пути из `VPS/` — считайте, что публиковать нечего.
-
-**При переименовании заметки** старый путь остаётся на сайте — его нужно снять через `publish:remove path=…`. Команда резолвит путь локально, поэтому для уже переименованного файла понадобится временная заглушка по старому пути (создать пустой файл → `publish:remove` → удалить заглушку).
+**Историческая справка:** до 20 августа 2026 сайт жил на Obsidian Publish (`publish.obsidian.md/zapret`) и публиковался через `scripts/publish-safe.sh` и Obsidian CLI (`publish:add`). Подписка закончилась, скрипт устарел и оставлен только как история; команды `publish:*` больше не используются.
 
 ## Проверка перед публикацией
 

@@ -2,10 +2,11 @@
 tags:
 link:
 aliases:
+  - index
 img:
 ---
 
-<h1 align="center"><img width="30" alt="image" src="1_honey_badger_5.png" /><a href="https://publish.obsidian.md/zapret/Zapret2/Zapret2">Zapret 2</a> (Запрет: обход блокировки Дискорда и Ютуба) </h1>
+<h1 align="center"><img width="30" alt="image" src="1_honey_badger_5.png" /><a href="https://wiki.zapret.moe/Zapret2/Zapret2">Zapret 2</a> (Запрет: обход блокировки Дискорда и Ютуба) </h1>
 
 ### ❗ [[download|Хочу быстро и просто. Как установить и использовать?]]
 ### [[Zapret/about|🔐 Что это такое?]] | [[guide|🚀 Как настроить под себя (гайд на настройку)]] | [[faq|❓ FAQ (часто задаваемые вопросы)]] | [[Манифест Zapret]]
@@ -18,7 +19,7 @@ img:
   <a href="https://www.youtube.com/channel/UCyEOuaB8EUwn1aU8a73_EWQ/"><img alt="YouTube" src="https://img.shields.io/badge/YouTube-канал-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
   <a href="https://discord.com/invite/kkcBDG2uws"><img alt="Discord" src="https://img.shields.io/badge/Discord-сообщество-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
   <a href="https://telegram.me/zapretvpns_bot"><img alt="Поддержать донатами" src="https://img.shields.io/badge/Поддержать-донат-FF424D?style=for-the-badge&logo=telegram&logoColor=white"></a>
-  <a href="https://publish.obsidian.md/zapret/Zapret/home"><img alt="Вики" src="https://img.shields.io/badge/Вики-публичная-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
+  <a href="https://wiki.zapret.moe/Zapret/home"><img alt="Вики" src="https://img.shields.io/badge/Вики-публичная-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
   <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new/choose"><img alt="Вопросы и баги в Forgejo" src="https://img.shields.io/badge/Вопросы_и_баги-Forgejo-FB923C?style=for-the-badge&logo=forgejo&logoColor=white"></a>
 </p>
 
@@ -83,7 +84,7 @@ img:
 ### Другие полезные сервисы и VPN https://github.com/awesome-windows11/CensorNet
 
 <iframe
-  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fpublish.obsidian.md"
+  src="https://git.zapret.moe/pages/todo/index.html?u=https%3A%2F%2Fwiki.zapret.moe&i=https%3A%2F%2Fpublish.obsidian.md"
   title="Комментарии"
   style="width:100%;min-height:560px;border:0"
   loading="lazy">

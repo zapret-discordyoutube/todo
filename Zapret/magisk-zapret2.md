@@ -49,7 +49,7 @@ Zapret2 применяет техники **desync** — рассылает сп
 - [ ] Иметь **root**: [[root/Magisk|Magisk]] (или KernelSU) и ядро с поддержкой **NFQUEUE** (модуль показывает статус `NFQueue support: Supported`).
 - [ ] Скачать `zapret2-magisk-v*.zip` из [релизов репозитория](https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2/releases).
 - [ ] Magisk → **Модули** → **Установить из хранилища** → выбрать zip → **перезагрузиться**.
-- [ ] *(Опционально, но удобно)* установить APK-менеджер `zapret2-control-v*.apk` — графическое управление стратегиями, хостлистами и логами.
+- [ ] *(Опционально, но удобно)* установить APK-менеджер `zapret2-control-v*.apk` — графическое управление стратегиями, хостлистами и логами. Проще всего ставить его из [F-Droid-репозитория Zapret Apps](https://git.zapret.moe/fdroid/repo) — клиент F-Droid сам предложит обновления и проверит подпись.
 - [ ] В менеджере запустить **DPI Bypass Service** и при желании включить **автозапуск (Start on boot)**.
 
 > [!note] Терминал вместо GUI
@@ -92,6 +92,7 @@ Zapret2 применяет техники **desync** — рассылает сп
 - [[Zapret/router|Роутер и раздача обхода]] — как раздавать разблокированный интернет дальше
 - [[Zapret/hostlist|Хостлисты]] — как формируются списки доменов для обхода
 - 🔗 [Репозиторий magisk-zapret2](https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2) — исходники, релизы, инструкции
+- 📦 [F-Droid-репозиторий Zapret Apps](https://git.zapret.moe/fdroid/repo) — подписанные APK (Zapret2 Control, Zapret KVN, ZaStoGram) с автообновлением через клиент F-Droid
 - 🔗 [zapret (bol-van)](https://github.com/bol-van/zapret) — родительский проект DPI-обхода
 
 ---
