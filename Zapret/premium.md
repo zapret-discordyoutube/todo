@@ -40,7 +40,7 @@ Zapret полностью бесплатная программа. И такой
 
 Далее подробнее как вставить ключ на разных системах и что делать если VPN не работает.
 
-# <img width=30px src="https://i.imgur.com/qyVBIHK.png"> 3. Windows
+# ![[windows-logo.png|30]] 3. Windows
 
 3.1. [Скачать](https://github.com/2dust/v2rayN/releases) vless клиент
 
