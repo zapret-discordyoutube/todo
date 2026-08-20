@@ -68,5 +68,5 @@ Zapret — [[Zapret/about#Обход DPI (система ТСПУ)|автоно�
 ![[hosts#Как обойти GEO-блокировку через Zapret GUI]]
 
 Устаревшая документация:
-[Главное меню](https://git.zapret.moe/zapretdiscordyoutube/zapret/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BC%D0%B5%D0%BD%D1%8E)
-[Меню стратегий](https://git.zapret.moe/zapretdiscordyoutube/zapret/wiki/%D0%9C%D0%B5%D0%BD%D1%8E-%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B9)
+[Главное меню](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BC%D0%B5%D0%BD%D1%8E)
+[Меню стратегий](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/wiki/%D0%9C%D0%B5%D0%BD%D1%8E-%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B9)

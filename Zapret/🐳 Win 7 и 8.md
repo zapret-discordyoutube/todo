@@ -20,6 +20,6 @@ img:
 ## Zapret 2
 Доступно здесь — https://git.zapret.moe/zapretdiscordyoutube/zapret2-youtube-discord
 ## Zapret 1
-Скачать файл можно [тут](https://t.me/bypassblock/666) или по [ссылке](https://git.zapret.moe/zapretdiscordyoutube/zapret/releases/tag/win7).
+Скачать файл можно [тут](https://t.me/bypassblock/666) или по [ссылке](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases/tag/win7).
 
 ![[Pasted image 20251220221441.png]]

@@ -34,7 +34,7 @@ link: https://github.com/ziad8727/ipvfoobarbaz
 > 3. Нажми на букву справа от нужного IP — откроется карточка адреса, где в поле **ASN/Company** написан владелец (например, `AS16625 — Akamai Technologies`).
 > 4. В настройке [[preset|пресета]] найди поиском [[profile|профиль]] этого CDN (например, «Akamai TCP») — и перебирай стратегии **для него**, проверяя каждую по правилам из [[verify-strategy]].
 > 5. Наполняя свой профиль, клади в него **IP-диапазон из поля Range в [[Zapret/ipset|ipset]]**, а не домены: блокируют давно по подсетям, и один диапазон накрывает и сайт, и его поддомены, и трафик без имени (игры, UDP).
-> 6. Собранные адреса и домены можно [отправить разработчикам](https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new?template=hostlist_ipset_request.yml) — они попадут в категории по умолчанию.
+> 6. Собранные адреса и домены можно [отправить разработчикам](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml) — они попадут в категории по умолчанию.
 
 ## Исходная ситуация: один сайт не открывается
 
@@ -172,7 +172,7 @@ ASN — `AS16509 — Amazon.com, Inc.`, диапазон (Range) — `2a05:d014:
 
 Если вы прошли путь до конца и собрали рабочий набор IP-диапазонов и доменов для какой-то игры или сайта — не держите его у себя. Разработчики [[Zapret2|Zapret 2]] принимают такие списки через готовую форму на GitHub и добавляют их в стандартные категории, чтобы следующим пользователям не пришлось повторять сбор заново:
 
-👉 **[Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new?template=hostlist_ipset_request.yml)**
+👉 **[Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml)**
 
 Это не теоретическая процедура — именно так обрабатываются реальные запросы пользователей. В Telegram-группе помощи Zapret есть топик «Запрос ресурсов», куда постоянно приходят просьбы добавить обход для конкретных сайтов и игр: за январь–февраль 2026 там просили, среди прочего, `autodesk.com`, `ubisoft.com`, `support-valorant.riotgames.com`, `bandlab.com`, `anitype.app`, наборы CDN-доменов твич-смайлов (`7tv.app`, `betterttv.net`, `frankerfacez.com`) и десятки других. Каждый такой запрос проверяется описанным в этой заметке методом: домены страницы → IP-адреса → владелец сети → диапазоны в [[Zapret/ipset|ipset]] нужной категории.
 
@@ -211,7 +211,7 @@ ASN — `AS16509 — Amazon.com, Inc.`, диапазон (Range) — `2a05:d014:
 - [[verify-strategy|Как проверить, заработала ли стратегия]] — честная проверка каждой попытки
 - [[symptom-not-cause|Почему «не работает» — это симптом]] — ложные выводы при переборе вслепую
 - [[Zapret/hosts|GEO-ограничения и файл hosts]] — когда сайт закрылся от региона сам и пресеты Zapret не помогут
-- 🔗 [Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new?template=hostlist_ipset_request.yml) — поделиться собранными адресами, чтобы они попали в категории по умолчанию
+- 🔗 [Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml) — поделиться собранными адресами, чтобы они попали в категории по умолчанию
 - 🔗 [ipvfoobarbaz на GitHub](https://github.com/ziad8727/ipvfoobarbaz) — исходники расширения
 - 🔗 [ipinfo.io](https://ipinfo.io) — карточки IP-адресов: ASN, владелец, диапазон
 

@@ -26,24 +26,24 @@ img:
   <a href="https://discord.com/invite/kkcBDG2uws"><img alt="Discord" src="https://img.shields.io/badge/Discord-сообщество-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
   <a href="https://telegram.me/zapretvpns_bot"><img alt="Поддержать донатами" src="https://img.shields.io/badge/Поддержать-донат-FF424D?style=for-the-badge&logo=telegram&logoColor=white"></a>
   <a href="https://wiki.zapret.moe/Zapret/home"><img alt="Вики" src="https://img.shields.io/badge/Вики-публичная-7C3AED?style=for-the-badge&logo=obsidian&logoColor=white"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new/choose"><img alt="Вопросы и баги в Forgejo" src="https://img.shields.io/badge/Вопросы_и_баги-Forgejo-FB923C?style=for-the-badge&logo=forgejo&logoColor=white"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new/choose"><img alt="Вопросы и баги в Forgejo" src="https://img.shields.io/badge/Вопросы_и_баги-Forgejo-FB923C?style=for-the-badge&logo=forgejo&logoColor=white"></a>
 </p>
 
 <p align="center">
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/stars"><img alt="Звёзды в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/stars.svg"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases"><img alt="Последний релиз в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/release.svg"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues"><img alt="Открытые задачи в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/badges/issues.svg"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/actions"><img alt="Проверка исходников в Forgejo Actions" src="https://git.zapret.moe/zapretdiscordyoutube/zapret/actions/workflows/source-guards.yml/badge.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/stars"><img alt="Звёзды в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/badges/stars.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases"><img alt="Последний релиз в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/badges/release.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues"><img alt="Открытые задачи в Forgejo" src="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/badges/issues.svg"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/actions"><img alt="Проверка исходников в Forgejo Actions" src="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/actions/workflows/source-guards.yml/badge.svg"></a>
 </p>
 
 <p align="center">
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases"><img alt="Загрузки последнего релиза" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgit.zapret.moe%2Fapi%2Fv1%2Frepos%2Fzapretdiscordyoutube%2Fzapret%2Freleases%3Flimit%3D1&query=%24%5B0%5D.assets%5B0%5D.download_count&label=загрузки%20релиза&color=45cfff"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/commits/branch/main"><img alt="Последний коммит" src="https://img.shields.io/gitea/last-commit/zapretdiscordyoutube/zapret?gitea_url=https%3A%2F%2Fgit.zapret.moe&label=последний%20коммит&color=2e7bff"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/src/branch/main/docs/LICENSE"><img alt="Лицензия MIT" src="https://img.shields.io/badge/лицензия-MIT-45cfff"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases"><img alt="Загрузки последнего релиза" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgit.zapret.moe%2Fapi%2Fv1%2Frepos%2Fzapretdiscordyoutube%2Fzapretgui%2Freleases%3Flimit%3D1&query=%24%5B0%5D.assets%5B0%5D.download_count&label=%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8%20%D1%80%D0%B5%D0%BB%D0%B8%D0%B7%D0%B0&color=45cfff"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/commits/branch/main"><img alt="Последний коммит" src="https://img.shields.io/gitea/last-commit/zapretdiscordyoutube/zapretgui?gitea_url=https%3A%2F%2Fgit.zapret.moe&label=последний%20коммит&color=2e7bff"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/src/branch/main/docs/LICENSE"><img alt="Лицензия MIT" src="https://img.shields.io/badge/лицензия-MIT-45cfff"></a>
   <img alt="Python 3" src="https://img.shields.io/badge/python-3-3776AB?logo=python&logoColor=white">
   <img alt="Windows 10 и 11" src="https://img.shields.io/badge/windows-10%20%C2%B7%2011-2e7bff">
   <a href="https://git.zapret.moe/"><img alt="Свой Git-сервер" src="https://img.shields.io/badge/self--hosted-git.zapret.moe-a980ff?logo=forgejo&logoColor=white"></a>
-  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/releases"><img alt="SHA256 в каждом релизе" src="https://img.shields.io/badge/sha256-в%20каждом%20релизе-2ea043"></a>
+  <a href="https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases"><img alt="SHA256 в каждом релизе" src="https://img.shields.io/badge/sha256-в%20каждом%20релизе-2ea043"></a>
 </p>
 
 Эта вики по одному из самых популярных GUI лаунчеров для программы [[Zapret2|Zapret 2]]. А также всему что с ним связано и вообще по теме обхода блокировок в сети интернет (*особенно рунета*).
@@ -80,7 +80,7 @@ img:
 Вы можете попробовать [[Blockcheck|блокчек]] если ни одна стратегия не сработала. [[Создание своей категории|Как собрать свои адреса]] для игр и других приложений или сайтов. [[profile|Что такое профиль]] и чем он отличается от пресета.
 
 > [!IMPORTANT]  
-> Есть вопросы? Задай их здесь: https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new или же в группе https://telegram.me/youtubenotwork или https://discord.gg/kkcBDG2uws
+> Есть вопросы? Задай их здесь: https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new или же в группе https://telegram.me/youtubenotwork или https://discord.gg/kkcBDG2uws
 
 > [!CAUTION]  
 > Совсем никак не работает Запрет?
