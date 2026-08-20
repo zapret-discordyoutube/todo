@@ -6,7 +6,7 @@ aliases:
 img:
 ---
 
-<h1 align="center"><img width="30" alt="image" src="1_honey_badger_5.png" /><a href="https://wiki.zapret.moe/Zapret2/Zapret2">Zapret 2</a> (Запрет: обход блокировки Дискорда и Ютуба) </h1>
+<h1 align="center"><img width="30" alt="" src="/Zapret/attachments/1_honey_badger_5.png" /><a href="https://wiki.zapret.moe/Zapret2/Zapret2">Zapret 2</a> (Запрет: обход блокировки Дискорда и Ютуба) </h1>
 
 ### ❗ [[download|Хочу быстро и просто. Как установить и использовать?]]
 ### [[Zapret/about|🔐 Что это такое?]] | [[guide|🚀 Как настроить под себя (гайд на настройку)]] | [[faq|❓ FAQ (часто задаваемые вопросы)]] | [[Манифест Zapret]]
