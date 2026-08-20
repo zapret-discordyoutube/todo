@@ -70,10 +70,3 @@ Zapret — [[Zapret/about#Обход DPI (система ТСПУ)|автоно�
 Устаревшая документация:
 [Главное меню](https://git.zapret.moe/zapretdiscordyoutube/zapret/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BC%D0%B5%D0%BD%D1%8E)
 [Меню стратегий](https://git.zapret.moe/zapretdiscordyoutube/zapret/wiki/%D0%9C%D0%B5%D0%BD%D1%8E-%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B9)
-
-<iframe
-  src="https://wiki.zapret.moe/static/comments.html?u=https%3A%2F%2Fwiki.zapret.moe&i=https%3A%2F%2Fpublish.obsidian.md"
-  title="Комментарии"
-  style="width:100%;min-height:560px;border:0"
-  loading="lazy">
-</iframe>

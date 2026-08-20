@@ -88,10 +88,3 @@ img:
 > Попробуйте наш новый VPN с безлимитной скоростью: https://telegram.me/zapretvpns_bot
 
 ### Другие полезные сервисы и VPN https://github.com/awesome-windows11/CensorNet
-
-<iframe
-  src="https://wiki.zapret.moe/static/comments.html?u=https%3A%2F%2Fwiki.zapret.moe&i=https%3A%2F%2Fpublish.obsidian.md"
-  title="Комментарии"
-  style="width:100%;min-height:560px;border:0"
-  loading="lazy">
-</iframe>

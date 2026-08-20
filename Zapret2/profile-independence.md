@@ -89,10 +89,3 @@ aliases:
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
 > При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/profile-independence.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
-
-<iframe
-  src="https://wiki.zapret.moe/static/comments.html?u=https%3A%2F%2Fwiki.zapret.moe%2FZapret2%2Fprofile-independence&t=profile-independence&i=profile-independence"
-  title="Комментарии"
-  style="width:100%;min-height:560px;border:0"
-  loading="lazy">
-</iframe>
