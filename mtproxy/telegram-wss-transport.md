@@ -480,6 +480,7 @@ WSS-транспорт не требует ничего своего: клиен
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4 и SNI]] — почему обход по «почерку» соединения делается на клиенте, а не на релее
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика MTProxy]] — как понять, кто виноват, когда рабочий ключ не подключается
 - [[mtproxy/tsrman-tg-android-faketls|tsrman/tg — Telegram для Android со сменой JA4]] — другой подход к тому же: не смена транспорта, а смена TLS-почерка
+- [[tproxy/tproxy|WEB-прокси Telegram: трафик внутри обычного сайта]] — развитие той же идеи в августе 2026, но со своим сервером: MTProto везёт встроенный браузер приложения, обращаясь к вашему домену, а не к веб-релеям Telegram
 - 🔗 [Flowseal/tg-ws-proxy](https://github.com/Flowseal/tg-ws-proxy) — исходники моста на Python, документация по Cloudflare Worker и FakeTLS
 - [[virus/github-removes-clean-zapret-keeps-malware-august-2026|🎭 GitHub снёс чистые сборки Zapret, а вирусные оставил]] — почему исходники ZaStoGram с 11 августа 2026 доступны только в Forgejo: GitHub-организация `youtubediscord` удалена
 - 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходники Android-форка: WSS-транспорт в `TMessagesProj/jni/tgnet/wss/`, готовые APK — в [релизах](https://git.zapret.moe/zastogram/ZaStoGram/releases)
