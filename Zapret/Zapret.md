@@ -24,6 +24,7 @@ views:
 [[windivert]]
 [[ZapretTeam]]
 [[Zapret flags]]
+[[wssize]]
 [[Ошибка запуска - Не удалось запустить DPI]]
 
 [[premium]]
