@@ -25,6 +25,7 @@ views:
 [[ZapretTeam]]
 [[Zapret flags]]
 [[wssize]]
+[[doh-cherez-zapret]]
 [[Ошибка запуска - Не удалось запустить DPI]]
 
 [[premium]]
