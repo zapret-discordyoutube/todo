@@ -46,7 +46,7 @@ aliases:
 ## 📚 См. также
 
 - [[DPI/DPI|Раздел DPI]] — как ТСПУ вообще анализирует соединения
-- [[ZaStoGram|ZaStoGram]] — Telegram-клиент проекта
+- 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — Telegram-клиент проекта: исходники Android-форка с WSS-транспортом и готовые сборки в релизах
 
 ---
 
