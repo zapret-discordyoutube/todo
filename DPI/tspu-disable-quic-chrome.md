@@ -14,7 +14,11 @@ aliases:
   - Почему сайт зависает на HTTP/3
   - QUIC HTTP/3 таймаут ТСПУ
 link: https://ebyebots.ru/blog/kak-tspu-roskomnadzora-lomaet-legitimnye-sajty-i-servery-v-iyune-2026-goda-tehnicheskij-razbor/
+description: "Сайт виснет по таймауту из-за ТСПУ: как отключить QUIC (HTTP/3) флагом chrome://flags/#enable-quic, перевести браузер на TCP и когда это не поможет."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-disable-quic-chrome](https://wiki.zapret.moe/DPI/tspu-disable-quic-chrome)
 
 # 🚫 Отключение QUIC (HTTP/3) в браузере как обход таймаутов ТСПУ
 

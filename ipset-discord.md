@@ -1,3 +1,10 @@
+---
+description: "Готовый ipset-discord.txt для Zapret: список IP-подсетей Discord (голосовые серверы, Cloudflare, Google Cloud) для фильтрации по --ipset."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/ipset-discord](https://wiki.zapret.moe/ipset-discord)
+
 
 ```txt
 95.101.173.0/24

@@ -3,7 +3,12 @@ tags:
 aliases:
 img:
 height: 400
+description: "ByeDPIAndroid — обход блокировок DPI на Android без root, аналог Zapret GUI: ссылки на GitHub, Telegram-группу, быстрый старт и полную инструкцию."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ByeByeDPI---Что-это-такое](https://wiki.zapret.moe/Zapret/ByeByeDPI---%D0%A7%D1%82%D0%BE-%D1%8D%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5)
+
 ByeDPIAndroid — это мобильная версия DPI-обхода для устройств Android, аналогичная Zapret GUI для Windows. 
 
 Особенности: 

@@ -1,6 +1,11 @@
 ---
 height: 2500
+description: "Пять способов скачать Zapret GUI для Windows 10+: Telegram-канал, бот, релизы Forgejo и сборка из исходников, плюс версии для Android и Linux."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/download](https://wiki.zapret.moe/Zapret/download)
+
 # Как скачать [[Zapret2]] GUI
 
 [[home|На главную]]

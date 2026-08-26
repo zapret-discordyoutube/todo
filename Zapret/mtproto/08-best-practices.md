@@ -1,3 +1,10 @@
+---
+description: "Best practices для своего MTProto-прокси: подбор домена маскировки в том же ASN через RealiTLScanner, выбор VPS, firewall, Docker hardening и чеклист."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/08-best-practices](https://wiki.zapret.moe/Zapret/mtproto/08-best-practices)
+
 # Best Practices — домен, VPS, безопасность
 
 ## 1. Выбор домена маскировки

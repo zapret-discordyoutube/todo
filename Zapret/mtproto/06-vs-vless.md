@@ -1,3 +1,10 @@
+---
+description: "Сравнение MTProto Proxy (FakeTLS) и VLESS+Reality: область действия, устойчивость к DPI, звонки Telegram и когда какой протокол выбирать."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/06-vs-vless](https://wiki.zapret.moe/Zapret/mtproto/06-vs-vless)
+
 # MTProxy vs VLESS — когда что использовать
 
 ## Сравнение

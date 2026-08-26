@@ -13,7 +13,11 @@ aliases:
   - Статистический морфинг
   - Behavioral mimicry concept
 img:
+description: "Разбор концепта адаптивной мимикрии: маскировка поведения трафика под живого пользователя против DPI, пределы идеи и проблема «мёртвого попугая»."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/statistical-morphing-concept](https://wiki.zapret.moe/DPI/statistical-morphing-concept)
 
 # 🦎 Адаптивная мимикрия: статистический морфинг трафика (концепт)
 

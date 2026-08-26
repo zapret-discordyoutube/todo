@@ -17,7 +17,11 @@ aliases:
   - Чем отличается encryption от security
   - Когда работает splice в Xray
 link: https://xtls.github.io/en/config/outbounds/vless.html
+description: "Карта слоёв VLESS-стека: type, security, flow, encryption — что с чем работает, матрица комбинаций Vision, REALITY, XHTTP и когда включается splice."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/vless-stack-map](https://wiki.zapret.moe/xray/vless-stack-map)
 
 # 🧩 Слои VLESS-стека: кто за что отвечает и что с чем работает
 

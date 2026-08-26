@@ -10,7 +10,11 @@ aliases:
   - Sing-box Extended
   - расширенный sing-box
 link: https://github.com/shtorm-7/sing-box-extended
+description: "Обзор sing-box-extended — форка sing-box с WARP, MASQUE, MTProxy, обфускацией AmneziaWG, лимитерами трафика и веб-панелью администратора."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/sing-box-extended](https://wiki.zapret.moe/sing-box/sing-box-extended)
 
 # 📦 sing-box-extended — форк sing-box с расширенными функциями
 

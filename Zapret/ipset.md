@@ -5,7 +5,12 @@ link:
 aliases:
   - айпсет
 img:
+description: "IP-фильтры Zapret: параметры --ipset, --ipset-ip, --ipset-exclude и --ipset-exclude-ip — синтаксис, формат файлов со списками IP/CIDR и примеры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ipset](https://wiki.zapret.moe/Zapret/ipset)
+
 # 🎯 **[[filter|Фильтры]] по IP адресам**
 
 ### 6. **`--ipset`** - Включающий IP фильтр

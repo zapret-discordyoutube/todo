@@ -13,7 +13,11 @@ aliases:
   - Почему Сбербанк не открывается в Chrome
   - TrustAsia отзыв 3 августа 2026
 link: https://zona.media/news/2026/08/03/tls
+description: "3 августа 2026 TrustAsia отозвала TLS-сертификаты у Сбербанка, ВТБ и других банков — сайты перешли на НУЦ и не открываются в Chrome. Что делать без установки корня."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/banks-nuc-certs-august-2026](https://wiki.zapret.moe/nuc/banks-nuc-certs-august-2026)
 
 # 🏦 3 августа 2026: TrustAsia отозвала сертификаты у российских банков — и те перешли на НУЦ
 

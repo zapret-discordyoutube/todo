@@ -1,3 +1,10 @@
+---
+description: "Официальные Telegram-каналы и чаты Zapret: где скачать стабильные и дев-версии, Blockcheck, помощь с настройкой, боты и дорожная карта."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Test](https://wiki.zapret.moe/Zapret/Test)
+
 
 ### 📂 Папка с нашими чатами: 
 ### https://t.me/addlist/xjPs164MI7AxZWE6

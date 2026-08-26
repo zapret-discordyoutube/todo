@@ -2,7 +2,11 @@
 tags:
   - game
   - inprogress
+description: "Стратегия zapret для Phasmophobia: параметры winws для UDP-портов 5056 и 27002 и обсуждения, если игра не подключается к серверам."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/Phasmophobia](https://wiki.zapret.moe/Zapret/ToDo/Phasmophobia)
 
 ```
 --filter-udp=5056,27002 --dpi-desync-any-protocol --dpi-desync=fake --dpi-desync-repeats=6 --dpi-desync-cutoff=n2 --dpi-desync-fake-unknown-udp=quic_initial_www_google_com.bin --new

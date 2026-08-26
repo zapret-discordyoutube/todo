@@ -14,7 +14,11 @@ aliases:
   - chrome_fix
   - Обход блокировки сайтов флагом Chrome
 link: https://habr.com/ru/articles/1045438/
+description: "Сайт не открывается только в Chrome? Флаг cryptography-compliance-cnsa меняет TLS-отпечаток JA3/JA4 и может снять блокировку: как включить и когда работает."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/chrome-cnsa-flag-bypass](https://wiki.zapret.moe/DPI/chrome-cnsa-flag-bypass)
 
 # 🧪 Обход блокировки сайтов флагом Chrome `cryptography-compliance-cnsa`
 

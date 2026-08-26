@@ -15,7 +15,11 @@ aliases:
   - Как работает FIDO2
   - Почему passkey защищает от фишинга
 link: https://www.w3.org/TR/webauthn-3/
+description: "Как работают U2F, FIDO2, WebAuthn и CTAP: путь запроса от сайта к аутентификатору, роли challenge, origin и RP ID, и почему passkey не боится фишинга."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/fido-protocols](https://wiki.zapret.moe/FIDO/fido-protocols)
 
 # ⚙️ Протоколы FIDO: U2F, FIDO2, WebAuthn, CTAP и passkeys
 

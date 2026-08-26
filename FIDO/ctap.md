@@ -13,7 +13,11 @@ aliases:
   - Команды CTAP2
   - CTAP 2.3
 link: https://fidoalliance.org/specs/fido-v2.3-ps-20260226/fido-client-to-authenticator-protocol-v2.3-ps-20260226.html
+description: "Как браузер общается с ключом безопасности по CTAP2: команды makeCredential и getAssertion, CBOR, PIN и биометрия, транспорты USB, NFC, BLE и hybrid."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/ctap](https://wiki.zapret.moe/FIDO/ctap)
 
 # 🔌 CTAP: как браузер разговаривает с аппаратным ключом
 

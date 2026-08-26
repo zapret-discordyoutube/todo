@@ -16,7 +16,11 @@ aliases:
   - Сколько профилей в profiles.json
   - Можно ли автоматизировать выдачу WEB-прокси
 link: https://github.com/telegramdesktop/tproxy-server
+description: "Как раздавать WEB-прокси Telegram (tproxy-server) из бота: формат ссылки t.me/webproxy, файл profiles.json, лимит профилей и проблема отзыва доступа."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-in-bot](https://wiki.zapret.moe/tproxy/tproxy-in-bot)
 
 # 🤖 Выдача WEB-прокси Telegram из своего бота
 

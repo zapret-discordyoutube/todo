@@ -17,7 +17,11 @@ aliases:
   - Загрузчик в сборке Zapret
   - Как найти репозиторий GitHub по ID
 link: https://hidemydiscord.com/
+description: "Разбор HideMyDiscord: «фикс дискорда» с hidemydiscord.com реально работает, но в сборке спрятан загрузчик StartWin.exe и пропатченный winws.exe."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/hidemydiscord-loader-august-2026](https://wiki.zapret.moe/virus/hidemydiscord-loader-august-2026)
 
 # 🎣 HideMyDiscord: рабочий обход блокировок с загрузчиком в комплекте
 

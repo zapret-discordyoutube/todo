@@ -12,7 +12,11 @@ aliases:
   - Релей или клиент
   - Почему рабочий ключ не подключается
   - Диагностика FakeTLS без сборки клиента
+description: "Как понять, релей MTProxy или клиент виноват, когда рабочий ключ не подключается: проба FakeTLS без пересборки, контракт ClientHello, отпечатки."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/faketls-relay-diagnosis](https://wiki.zapret.moe/mtproxy/faketls-relay-diagnosis)
 
 # 🔬 Релей или клиент: диагностика MTProxy, когда рабочий ключ не подключается
 

@@ -12,7 +12,11 @@ aliases:
   - Протокол VLESS
   - VLESS protocol
 link: https://xtls.github.io/en/development/protocols/vless.html
+description: "Устройство протокола VLESS: формат заголовка, поле flow и XTLS-Vision, fallbacks, XUDP и пост-квантовое шифрование в Xray-core."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/vless](https://wiki.zapret.moe/xray/vless)
 
 # 🔷 Протокол VLESS: устройство и возможности
 

@@ -1,3 +1,10 @@
+---
+description: "Защита VPN-клиентов xray/sing-box от localhost-атаки: SOCKS5-аутентификация, таблица уязвимых клиентов, гайды для v2rayNG, NekoBox, Clash и серверов."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS-localhost-protection-guide](https://wiki.zapret.moe/VLESS-localhost-protection-guide)
+
 # Практическое руководство: защита VPN от localhost-атаки
 
 **Дата:** 7 апреля 2026  

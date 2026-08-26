@@ -9,7 +9,11 @@ aliases:
   - Обзор протоколов
   - Протоколы обхода блокировок
   - Карта протоколов
+description: "Карта протоколов обхода блокировок: VLESS, Hysteria 2, TUIC, Shadowsocks; слои протокол-транспорт-маскировка и поддержка в mihomo, sing-box, Xray."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/00-overview](https://wiki.zapret.moe/protocols/00-overview)
 
 # 🗺️ Протоколы обхода блокировок: карта и оглавление
 

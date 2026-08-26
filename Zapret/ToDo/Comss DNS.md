@@ -1,3 +1,10 @@
+---
+description: "Comss.one DNS — бесплатный DNS-сервис: ссылка на комментарии, отзывы пользователей и ответы на частые вопросы на сайте Comss.ru."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/Comss-DNS](https://wiki.zapret.moe/Zapret/ToDo/Comss-DNS)
+
 
 ```embed
 title: "💬 Comss.one DNS - Комментарии и отзывы"

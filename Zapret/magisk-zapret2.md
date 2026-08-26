@@ -14,7 +14,11 @@ aliases:
   - Zapret на Android через root
   - DPI-обход на Android с root
 link: https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2
+description: "Zapret2 как Magisk-модуль: системный обход DPI на Android с root — без VPN, для всех приложений сразу. Установка, стратегии, раздача по Wi-Fi."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/magisk-zapret2](https://wiki.zapret.moe/Zapret/magisk-zapret2)
 
 # 📡 Zapret2 как Magisk-модуль — системный обход DPI на Android (зачем нужен root)
 

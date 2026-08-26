@@ -11,7 +11,11 @@ aliases:
   - AWG 3 что нового
   - Amnezia VPN третье поколение
   - шифрование заголовков AmneziaWG
+description: "Раздел про AmneziaWG 3.0 — WireGuard с шифрованием заголовков: что нового в протоколе, внутреннее устройство и разбор клиента AmneziaVPN 5.0.0.5."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/amnezia-3-0](https://wiki.zapret.moe/amnezia-3-0/amnezia-3-0)
 
 # 🛡️ AmneziaWG 3.0 — раздел
 

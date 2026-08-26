@@ -12,7 +12,11 @@ aliases:
   - Что такое Clash
   - Clash Premium
 link: https://en.clash.wiki/
+description: "Что такое ядро Clash: rule-based маршрутизация, YAML-конфиг, Clash API, чем отличался Premium и почему в ноябре 2023 исчезли репозитории."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/01-clash-core](https://wiki.zapret.moe/Clash/01-clash-core)
 
 # ⚙️ Ядро Clash: что это такое и как оно устроено
 

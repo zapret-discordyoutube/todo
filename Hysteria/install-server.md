@@ -10,7 +10,11 @@ aliases:
   - Hysteria install script
   - get.hy2.sh
 link: https://v2.hysteria.network/docs/getting-started/Installation/
+description: "Установка сервера Hysteria 2 на Linux-VPS: официальный скрипт get.hy2.sh, systemd-сервис, ручная установка бинарника и Docker, управление и логи."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/install-server](https://wiki.zapret.moe/Hysteria/install-server)
 
 # 🦎 Hysteria 2 — установка сервера
 

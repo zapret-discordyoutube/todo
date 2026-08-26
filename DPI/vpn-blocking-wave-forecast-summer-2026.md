@@ -18,7 +18,11 @@ aliases:
   - Удушение качества VPN
   - Блокировка VPN по таймингам
 link: https://www.gazeta.ru/social/news/2026/07/19/28927375.shtml
+description: "Фактчек прогноза новой волны блокировок VPN осенью 2026: как DPI распознаёт WireGuard, OpenVPN и TLS-туннели и что из заявленного подтверждено."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026](https://wiki.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026)
 
 # «Стабилизация временная»: насколько реален прогноз новой волны блокировок VPN
 

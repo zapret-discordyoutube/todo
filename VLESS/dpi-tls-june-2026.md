@@ -13,7 +13,11 @@ aliases:
   - Схема ограничений июнь 2026
   - DPI TLS heuristics 2026
 img:
+description: "Как DPI «замораживает» VLESS+REALITY в июне 2026: три сигнала — подсеть хостинга, TLS-фингерпринт, частота соединений — и как разорвать цепочку."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS/dpi-tls-june-2026](https://wiki.zapret.moe/VLESS/dpi-tls-june-2026)
 
 # 🧊 Как DPI «замораживает» VLESS+REALITY: разбор схемы ограничений (июнь 2026)
 

@@ -11,7 +11,11 @@ aliases:
   - naive
   - Naïve
 link: https://github.com/klzgrad/naiveproxy
+description: "NaiveProxy — прокси на сетевом стеке Chromium с TLS-отпечатком настоящего Chrome: схема с Caddy forwardproxy, набивка пакетов, поддержка в sing-box."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/naiveproxy](https://wiki.zapret.moe/protocols/naiveproxy)
 
 # 🥷 NaiveProxy: прокси, который копирует настоящий Chrome
 

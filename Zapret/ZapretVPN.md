@@ -1,3 +1,10 @@
+---
+description: "Развёртывание VPN-бота Telegram (vpnbot) на сервере: python3-venv, установка зависимостей pip и systemd-юнит vpnbot.service с автоперезапуском."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ZapretVPN](https://wiki.zapret.moe/Zapret/ZapretVPN)
+
 
 ```
 mkdir vpnbot

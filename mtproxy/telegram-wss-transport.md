@@ -19,7 +19,11 @@ aliases:
   - Что лучше ZaStoGram Android или Desktop
   - Почему WSS работает только для DC2 и DC4
 link: https://github.com/Flowseal/tg-ws-proxy
+description: "Как MTProto Telegram упаковывают в WebSocket (WSS) на kwsN.web.telegram.org: рукопожатие, правила фрейминга, tg-ws-proxy и форки ZaStoGram."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/telegram-wss-transport](https://wiki.zapret.moe/mtproxy/telegram-wss-transport)
 
 # 🕸️ WSS для Telegram: MTProto внутри WebSocket
 

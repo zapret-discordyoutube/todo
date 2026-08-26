@@ -16,7 +16,11 @@ aliases:
   - Четвёртый тип прокси Telegram
   - Прокси Телеграм внутри HTTPS
 link: https://github.com/telegramdesktop/tproxy-server
+description: "WEB-прокси Telegram (tproxy) — четвёртый тип прокси августа 2026: трафик MTProto едет внутри обычного сайта. Чем отличается от MTProxy и кому доступен."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy](https://wiki.zapret.moe/tproxy/tproxy)
 
 # 🌐 WEB-прокси Telegram: трафик, который едет внутри обычного сайта
 

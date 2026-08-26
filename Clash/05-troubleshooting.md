@@ -10,7 +10,11 @@ aliases:
   - Clash не работает
   - Диагностика mihomo
   - mihomo troubleshooting
+description: "Диагностика проблем Clash/mihomo: подписка не добавляется, узел не подключается, DNS-утечки, TUN и fake-ip. Метод сужения зоны поиска по шагам."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/05-troubleshooting](https://wiki.zapret.moe/Clash/05-troubleshooting)
 
 # 🩺 Типичные проблемы и как их диагностировать
 

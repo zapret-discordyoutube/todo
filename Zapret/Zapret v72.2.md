@@ -2,7 +2,11 @@
 tags:
 aliases:
 img:
+description: "Что нового в zapret v72.2: --wssize-forced-cutoff, манипуляции TCP-флагами (--dpi-desync-tcp-flags-set) и режимы --dup-ip-id против DPI."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-v72.2](https://wiki.zapret.moe/Zapret/Zapret-v72.2)
 
 # 🆕 Новое в zapret v72.2
 

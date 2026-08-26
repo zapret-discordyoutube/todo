@@ -1,3 +1,10 @@
+---
+description: "Какие данные Google собирает на Android: местоположение, поиск, Gmail, микрофон — и как ограничить слежку через VPN, microG и приватные браузеры."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Privacy-Google](https://wiki.zapret.moe/Privacy-Google)
+
 На обычном телефоне Android Google [соберет](https://www.reddit.com/r/CalyxOS/comments/l4jysu/what_data_is_google_services_collecting_without_a/) 
 1) все установленные приложения.
 2) данные о местоположении (если включено)

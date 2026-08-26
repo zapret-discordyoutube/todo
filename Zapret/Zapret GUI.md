@@ -1,3 +1,10 @@
+---
+description: "Подборка готовых .bat-стратегий winws.exe для Zapret: пресеты bolvan и Flowseal 1.6.1/1.8.0, Discord Voice, варианты для Билайн и Ростелеком."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-GUI](https://wiki.zapret.moe/Zapret/Zapret-GUI)
+
 
 --dpi-desync-fake-tls-mod=sni=www.google.com
 

@@ -12,7 +12,11 @@ tags:
   - tls_mod
 aliases:
   - syndata
+description: "Справочник стратегии syndata в Zapret 2 (nfqws2): payload в TCP SYN, аргументы blob и tls_mod, отличия от fake, комбинации и миграция с nfqws1."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/syndata](https://wiki.zapret.moe/Zapret2/desync/syndata)
 
 # `syndata` --- payload в TCP SYN (zapret2 / nfqws2)
 

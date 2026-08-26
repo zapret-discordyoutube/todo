@@ -13,7 +13,11 @@ aliases:
   - Как работает navigator.credentials.get
   - WebAuthn для новичков
 link: https://www.w3.org/TR/webauthn-3/
+description: "Как работает WebAuthn: регистрация и вход через navigator.credentials.create/get, RP ID и origin, discoverable credentials, ошибки API и версии стандарта."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/webauthn](https://wiki.zapret.moe/FIDO/webauthn)
 
 # 🌐 WebAuthn: браузерный API аутентификации FIDO2
 

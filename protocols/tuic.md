@@ -11,7 +11,11 @@ aliases:
   - TUIC v5
   - TUIC протокол
 link: https://github.com/tuic-protocol/tuic
+description: "Прокси-протокол TUIC поверх QUIC: 0-RTT переподключение, честный UDP с Full Cone NAT, режимы native/quic, отличия v4 и v5 и сравнение с Hysteria 2."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/tuic](https://wiki.zapret.moe/protocols/tuic)
 
 # 🚄 TUIC: QUIC-прокси с нулевой задержкой на переподключении
 

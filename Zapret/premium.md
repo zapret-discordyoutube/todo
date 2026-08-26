@@ -1,6 +1,11 @@
 ---
 height: 9500
+description: "Инструкция по Zapret Premium и Zapret VPN: получение VLESS-ключа в боте, настройка v2rayN на Windows, Android и iOS, смена порта и SNI, если VPN не работает."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/premium](https://wiki.zapret.moe/Zapret/premium)
+
 # Всё о Zapret Premium и Zapret VPN (подробная инструкция)
 [[home|На главную]]
 

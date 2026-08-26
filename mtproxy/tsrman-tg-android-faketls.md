@@ -15,7 +15,11 @@ aliases:
   - Форк Telegram с подменой JA4
   - tg android faketls
 link: https://github.com/tsrman/tg
+description: "tsrman/tg — форк Telegram для Android с Firefox-подобным JA4 в FakeTLS и джиттером коннектов к MTProxy: что меняет, проверка безопасности, сборка APK."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/tsrman-tg-android-faketls](https://wiki.zapret.moe/mtproxy/tsrman-tg-android-faketls)
 
 # 📱 tsrman/tg — форк Telegram для Android со сменой JA4 на клиенте
 

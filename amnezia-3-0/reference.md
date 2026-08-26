@@ -19,7 +19,11 @@ aliases:
   - AmneziaWG 3.1
   - RandomTrailers и DisableCookies что это
 link: https://github.com/amnezia-vpn/amneziawg-go
+description: "AmneziaWG 3.0 — обфусцированный WireGuard с шифрованием заголовков: отличия от 2.0, параметры RandomTrailers и DisableCookies, совместимость и мифы."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/reference](https://wiki.zapret.moe/amnezia-3-0/reference)
 
 # 🛡️ AmneziaWG 3.0 — шифрование заголовков поверх WireGuard
 

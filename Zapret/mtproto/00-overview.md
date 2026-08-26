@@ -1,6 +1,10 @@
 ---
 title: "✈️ MTProto Proxy — полный гайд"
+description: "MTProto Proxy для Telegram: зачем нужен при замедлении, FakeTLS, реализации telemt и mtg, обход ТСПУ и оглавление полного гайда по настройке."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/00-overview](https://wiki.zapret.moe/Zapret/mtproto/00-overview)
 
 # MTProto Proxy — Полный гайд
 

@@ -15,7 +15,11 @@ aliases:
   - Блоклист российских ASN/CIDR
   - Блокировка сетей MAX VK Госуслуги
 link: https://github.com/C24Be/AS_Network_List
+description: "Стоит ли блокировать российские ASN/CIDR (VK, MAX, Госуслуги): что это даёт для приватности и почему не спасает VPN от блокировки ТСПУ."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/ru-network-blocklists](https://wiki.zapret.moe/DPI/ru-network-blocklists)
 
 # 🧱 Блокировка российских сетей (ASN/CIDR): приватность vs «чтобы не блокировали VPN»
 

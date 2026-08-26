@@ -1,3 +1,10 @@
+---
+description: "Установка Zapret на Linux пятью способами: zapret-linux-easy, скрипт Sergeydigl3, zapret.installer и другие однокнопочные установщики с командами."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/linux](https://wiki.zapret.moe/Zapret/linux)
+
 # Установка Zapret на linux
 Всего существует несколько основных способов (в данном документе представлено 4):
 

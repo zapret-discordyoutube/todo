@@ -3,7 +3,12 @@ tags:
 link:
 aliases:
 img:
+description: "FAQ по Zapret: как добавить сайт в hostlist, почему не работают YouTube и Discord, чем мешают SaveFrom, AdGuard и Яндекс Браузер с Яндекс DNS."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/faq](https://wiki.zapret.moe/Zapret/faq)
+
 # ❓ FAQ (часто задаваемые вопросы)
 [[home|На главную]]
 

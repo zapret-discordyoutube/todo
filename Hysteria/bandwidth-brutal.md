@@ -11,7 +11,11 @@ aliases:
   - Hysteria bandwidth
   - Hysteria скорость
 link: https://v2.hysteria.network/docs/advanced/Full-Server-Config/#congestion-control-details
+description: "Как работает алгоритм Brutal в Hysteria 2: чем он отличается от BBR и Reno, когда включается bandwidth и как задать скорость, чтобы не сделать хуже."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/bandwidth-brutal](https://wiki.zapret.moe/Hysteria/bandwidth-brutal)
 
 # 🦎 Hysteria 2 — скорость и алгоритм Brutal
 

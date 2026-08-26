@@ -3,7 +3,11 @@ tags:
 link:
 aliases:
 img:
+description: "WinDivert-фильтры --wf-* в zapret2 (winws2): порядок фильтрации, синтаксис --wf-tcp/udp и --wf-raw-part, язык фильтров, примеры для QUIC, STUN и Discord."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/wf](https://wiki.zapret.moe/Zapret2/wf)
 
 ## WinDivert фильтры (`--wf-*`) в [[zapret2]] для Windows
 

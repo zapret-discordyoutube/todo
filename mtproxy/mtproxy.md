@@ -10,7 +10,11 @@ aliases:
   - Прокси для Телеграма обзор
   - FakeTLS что это
   - МТПрокси не работает
+description: "Раздел о прокси для Telegram: MTProxy и FakeTLS, детекция ТСПУ и обход, смена JA4/SNI на клиенте, WSS-транспорт и WEB-прокси внутри обычного сайта."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproxy](https://wiki.zapret.moe/mtproxy/mtproxy)
 
 # ✈️ MTProxy и Telegram-транспорты — раздел
 

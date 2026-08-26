@@ -18,7 +18,12 @@ aliases:
   - desync API
   - Структура track
   - Поля desync
+description: "Справочник по таблице desync в Zapret2: вердикты, диссект пакета (dis), track из conntrack, reasm/replay и работа с sequence numbers в Lua."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/структура-desync-и-диссекта](https://wiki.zapret.moe/Zapret2/%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0-desync-%D0%B8-%D0%B4%D0%B8%D1%81%D1%81%D0%B5%D0%BA%D1%82%D0%B0)
+
 # 🧬 Прототип desync-функции и структура таблицы `desync`
 
 > [!info] О чём заметка

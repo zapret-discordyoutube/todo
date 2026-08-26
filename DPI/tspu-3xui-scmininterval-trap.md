@@ -15,7 +15,11 @@ aliases:
   - scMinPostsIntervalMs триггерит ТСПУ
   - 3x-ui 3.x.x блокировка
 link: https://ebyebots.ru/blog/kak-tspu-roskomnadzora-lomaet-legitimnye-sajty-i-servery-v-iyune-2026-goda-tehnicheskij-razbor/
+description: "После обновления 3x-ui до 3.x.x отвалились VLESS/XHTTP-прокси: параметр scMinPostsIntervalMs: 30 триггерит ТСПУ. Как вырезать его или откатиться на 2.9.4."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-3xui-scmininterval-trap](https://wiki.zapret.moe/DPI/tspu-3xui-scmininterval-trap)
 
 # 🪤 Ловушка обновления 3x-ui: как `scMinPostsIntervalMs` триггерит ТСПУ
 

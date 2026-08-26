@@ -13,7 +13,11 @@ aliases:
   - xtls-rprx-vision
   - Vision
 link: https://github.com/XTLS/Xray-core/blob/main/proxy/proxy.go
+description: "Чем XTLS и Vision (xtls-rprx-vision) отличаются от VLESS и REALITY: паддинг против TLS-in-TLS, splice, история четырёх поколений и границы маскировки."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xtls-vision](https://wiki.zapret.moe/xray/xtls-vision)
 
 # 🎯 XTLS и Vision: что это и чем отличается от VLESS и REALITY
 

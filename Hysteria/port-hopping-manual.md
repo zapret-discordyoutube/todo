@@ -12,7 +12,11 @@ aliases:
   - Hysteria DNAT проброс портов
   - Hysteria ручной проброс диапазона
 link: https://v2.hysteria.network/docs/advanced/Port-Hopping/
+description: "Ручная настройка port hopping для сервера Hysteria 2: DNAT-правила iptables и nftables, перенаправление UDP-диапазона портов на один порт 443."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/port-hopping-manual](https://wiki.zapret.moe/Hysteria/port-hopping-manual)
 
 # 🦎 Hysteria 2 — port hopping вручную (DNAT)
 

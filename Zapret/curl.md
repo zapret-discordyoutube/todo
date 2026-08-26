@@ -4,7 +4,11 @@ tags:
 link:
 aliases:
 img:
+description: "Проверка блокировки сайта через curl.exe -v: как выглядит рабочий ответ сервера и на каком шаге зависает запрос при DPI-блокировке."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/curl](https://wiki.zapret.moe/Zapret/curl)
 
 Пример рабочий
 ```powershell

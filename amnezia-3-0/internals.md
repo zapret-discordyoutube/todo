@@ -18,7 +18,11 @@ aliases:
   - AmneziaWG рукопожатие каждые 15 секунд
   - unknown tag c AmneziaWG
 link: https://github.com/amnezia-vpn/amneziawg-go/tree/v3.0.3
+description: "AmneziaWG 3.0 по исходникам: защита заголовков ChaCha20, HeaderProtectionKey, почему S1–S4 ≥ 12, content padding и баг с рукопожатием каждые 15 секунд."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/internals](https://wiki.zapret.moe/amnezia-3-0/internals)
 
 # 🔬 AmneziaWG 3.0: внутреннее устройство протокола
 

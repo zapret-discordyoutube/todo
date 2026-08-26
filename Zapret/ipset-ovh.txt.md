@@ -1,3 +1,10 @@
+---
+description: "Готовый список подсетей хостинга OVH (ipset-ovh.txt) для ipset-фильтров zapret-discord-youtube: CIDR-диапазоны и ссылка на актуальный источник."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ipset-ovh.txt](https://wiki.zapret.moe/Zapret/ipset-ovh.txt)
+
 
 https://raw.githubusercontent.com/ekungurov/zapret-discord-youtube/refs/heads/update-lists-1/lists/ipsets/ipset-ovh.txt
 

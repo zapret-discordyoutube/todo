@@ -5,7 +5,12 @@ aliases:
   - blob
   - блоб
 img:
+description: "Блобы в Zapret2/nfqws2: стандартные fake_default_tls/http/quic, модификации tls_mod (rnd, sni, dupsid) и загрузка своих fake-пакетов через --blob."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/blob](https://wiki.zapret.moe/Zapret2/blob)
+
 # Блобы (Blobs) в [[Zapret2]]
 
 **Блоб (blob)** — это переменная Lua типа `string`, содержащая блок **двоичных данных** произвольной длины (от 1 байта до гигабайтов). Блобы используются для хранения fake-пакетов и других бинарных данных.

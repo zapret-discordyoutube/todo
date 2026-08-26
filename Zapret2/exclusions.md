@@ -19,7 +19,11 @@ aliases:
   - hostlist-exclude и ipset-exclude
   - Как исключить свой сайт из Zapret
   - Общий профиль для исключений доменов
+description: "Как исключить сайт из Zapret 2: профиль со стратегией pass или hostlist-exclude/ipset-exclude, порядок профилей и пошаговый пример в GUI."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/exclusions](https://wiki.zapret.moe/Zapret2/exclusions)
 
 # 🚫 Исключения в Zapret 2: почему такой кнопки нет и как они устроены на самом деле
 

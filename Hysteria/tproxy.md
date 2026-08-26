@@ -11,7 +11,11 @@ aliases:
   - Hysteria прозрачный прокси
   - Hysteria透明代理
 link: https://v2.hysteria.network/docs/advanced/TPROXY/
+description: "Настройка TPROXY для Hysteria 2 на Linux: tcpTProxy и udpTProxy в конфиге, policy routing, правила nftables и отдельный пользователь против петли."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/tproxy](https://wiki.zapret.moe/Hysteria/tproxy)
 
 # 🦎 Hysteria 2 — прозрачный прокси (TPROXY)
 

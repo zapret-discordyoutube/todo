@@ -2,7 +2,11 @@
 tags:
   - zapret
   - zapret/inprogress
+description: "Готовые cmd-конфиги winws (Zapret) для обхода блокировки YouTube и Discord на Windows: стратегии с fake, split2, QUIC-фейками и hostlist."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Youtube-+-Discord](https://wiki.zapret.moe/Zapret/Youtube-%2B-Discord)
 
 ```embed
 title: "🔴 Обход YouTube · Flowseal/zapret-discord-youtube · Discussion #251"

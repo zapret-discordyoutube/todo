@@ -12,7 +12,11 @@ aliases:
   - Hysteria маршрутизация трафика
   - Hysteria блокировка адресов
 link: https://v2.hysteria.network/docs/advanced/ACL/
+description: "Настройка ACL в Hysteria 2: блокировка адресов через reject, правила GeoIP/GeoSite, разводка трафика по outbounds и перехват соединений на сервере."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/acl-outbounds](https://wiki.zapret.moe/Hysteria/acl-outbounds)
 
 # 🦎 Hysteria 2 — ACL и маршрутизация трафика
 

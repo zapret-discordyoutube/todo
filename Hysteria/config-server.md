@@ -11,7 +11,11 @@ aliases:
   - Hysteria server config
   - Hysteria masquerade
 link: https://v2.hysteria.network/docs/getting-started/Server/
+description: "Рабочий config.yaml сервера Hysteria 2: сертификат через ACME или свой TLS, пароль auth, маскировка masquerade под настоящий сайт, запуск и проверка."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/config-server](https://wiki.zapret.moe/Hysteria/config-server)
 
 # 🦎 Hysteria 2 — конфиг сервера
 

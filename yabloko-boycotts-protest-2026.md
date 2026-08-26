@@ -18,7 +18,11 @@ aliases:
   - Причём тут Колобок
   - Новая протестная активность в России 2026
 link: https://meduza.io/feature/2026/08/10/verhovnyy-sud-snyal-yabloko-s-vyborov-v-gosdumu-po-trebovaniyu-konkurentov-partii-rodina-glavnoe
+description: "Лето 2026: снятие «Яблока» с выборов через суд, бойкоты мессенджера MAX и «Колобка» — как несогласие уходит в формы, за которые нет статьи."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/yabloko-boycotts-protest-2026](https://wiki.zapret.moe/yabloko-boycotts-protest-2026)
 
 # 🍏 Снятие «Яблока» с выборов, бойкоты MAX и «Колобка»: лето 2026 как начало новой протестной волны
 

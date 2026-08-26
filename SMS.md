@@ -4,7 +4,11 @@ tags:
 link:
 aliases:
 img:
+description: "Почему SMS угрожают приватности — оператор знает слишком много, — и где принимать коды на виртуальные номера: подборка ссылок (Habr, smspva, simdrop)."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/SMS](https://wiki.zapret.moe/SMS)
 
 ## SMS
 ```embed

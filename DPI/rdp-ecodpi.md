@@ -24,7 +24,11 @@ aliases:
   - EcoRouter
   - ДЦОА
 link: https://www.rdp.ru/en/products/service-gateway-engine/ecodpi/
+description: "Кто делает ТСПУ: РДП.РУ и платформа EcoDPI/EcoSGE — SNI-фильтрация, инъекция RST, белые списки и журналирование трафика по мануалам и исследованиям."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/rdp-ecodpi](https://wiki.zapret.moe/DPI/rdp-ecodpi)
 
 # 🏭 EcoDPI и компания РДП.РУ — «железо» российских ТСПУ
 

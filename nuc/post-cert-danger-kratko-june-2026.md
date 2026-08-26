@@ -12,7 +12,11 @@ aliases:
   - Замочек погас пост
   - Почему отзыв сертификата опасен для всех
 link: https://community.letsencrypt.org/t/why-issue-certificate-for-max-ru-forbidden-by-policy/248143
+description: "Отзыв TLS-сертификатов мессенджера MAX в июне 2026: почему красный экран браузера касается всех и чем опасен корневой сертификат Минцифры (НУЦ)."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/post-cert-danger-kratko-june-2026](https://wiki.zapret.moe/nuc/post-cert-danger-kratko-june-2026)
 
 # 📵 Замочек погас: что случилось с сертификатами и почему это касается каждого
 

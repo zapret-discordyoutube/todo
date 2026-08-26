@@ -1,3 +1,10 @@
+---
+description: "Как починить мультиплеер Battlefield 6 при работающем zapret: ошибка 1:85008S, готовый battlefield.bat и сборка zapret-bf с ALT7/ALT8."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Battlefield-6](https://wiki.zapret.moe/Zapret/Battlefield-6)
+
 
 ```embed
 title: "Battlefield 6 · Flowseal/zapret-discord-youtube · Discussion #5745"

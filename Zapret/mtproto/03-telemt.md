@@ -1,3 +1,10 @@
+---
+description: "Установка MTProxy Telemt (Rust) через Docker или systemd: конфиг telemt.toml, REST API для пользователей и лимитов, маскировка TCP Splice под сайт."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/03-telemt](https://wiki.zapret.moe/Zapret/mtproto/03-telemt)
+
 # Telemt (Rust) — установка и настройка
 
 **Репо:** https://github.com/telemt/telemt

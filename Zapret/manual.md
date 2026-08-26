@@ -8,7 +8,11 @@ aliases:
   - Учебник Zapret2
   - Zapret2 для новичков
   - Как изучить Zapret 2 с нуля
+description: "Учебник Zapret 2 для новичков: сетевой стек, TCP, перехват через NFQUEUE/WinDivert, desync, payload types и Lua pipeline — оглавление серии."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual](https://wiki.zapret.moe/Zapret/manual)
 
 ## Учебник (для новичков)
 [[zapret2_01|Zapret2 для новичков — 01: сетевой стек (L2–L7) простыми словами]]

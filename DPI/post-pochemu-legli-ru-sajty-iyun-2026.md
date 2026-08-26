@@ -10,7 +10,11 @@ aliases:
   - Пост почему легли ру-сайты июнь 2026
   - Опять виноват РКН пост
 link: https://ebyebots.ru/blog/kak-tspu-roskomnadzora-lomaet-legitimnye-sajty-i-servery-v-iyune-2026-goda-tehnicheskij-razbor/
+description: "Почему с июня 2026 сайты на Beget, Timeweb и Selectel висят с Connection timed out: ТСПУ целился в VPN, а задел легальные сайты. Что делать — внутри."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026](https://wiki.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026)
 
 # 📡 Почему с июня 2026 «легли» сайты на российских хостингах (спойлер: опять ТСПУ)
 

@@ -2,7 +2,11 @@
 tags:
 aliases:
 img:
+description: "Подборка ссылок по Zapret: обсуждения Flowseal zapret-discord-youtube на GitHub, YTDisBystro, Dronatar, ipset-ovh и звонки Telegram."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-ссылки](https://wiki.zapret.moe/Zapret/Zapret-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8)
 
 ```embed
 title: "Flowseal zapret-discord-youtube · Discussions"

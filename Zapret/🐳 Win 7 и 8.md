@@ -3,7 +3,12 @@ tags:
 link:
 aliases:
 img:
+description: "Zapret на Windows 7 и 8: консольные версии с bat-файлами стратегий вместо GUI, ссылки на сборки Zapret 1 и Zapret 2, stop.bat и ручной автозапуск."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/🐳-Win-7-и-8](https://wiki.zapret.moe/Zapret/%F0%9F%90%B3-Win-7-%D0%B8-8)
+
 [[home|На главную]]
 ## Консольные версии (без GUI, Win7)
 

@@ -3,7 +3,12 @@ tags:
 link:
 aliases:
 img:
+description: "Как обойти блокировку YouTube в Zapret: за что отвечают области YouTube TCP, YouTube QUIC и GoogleVideo и какую включать, если видео не грузятся."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/youtubeblockinrussia](https://wiki.zapret.moe/Zapret/youtubeblockinrussia)
+
 # Как обойти блокировку YouTube
 По умолчанию в запрете включено 3 области для обхода Ютуба:
 

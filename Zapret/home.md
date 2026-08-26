@@ -10,7 +10,11 @@ aliases:
   - Запрет 2 обход блокировок
   - Обход блокировки Дискорда и Ютуба
 img:
+description: "Zapret 2 (Запрет GUI) — бесплатный обход блокировок Discord и YouTube на Windows: скачивание, настройка, 200+ стратегий, FAQ и помощь сообщества."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/home](https://wiki.zapret.moe/Zapret/home)
 
 <h1 align="center"><img width="30" alt="" src="/Zapret/attachments/1_honey_badger_5.png" /><a href="https://wiki.zapret.moe/Zapret2/Zapret2">Zapret 2</a> (Запрет: обход блокировки Дискорда и Ютуба) </h1>
 

@@ -15,7 +15,11 @@ aliases:
   - Russian Trusted Root CA как найти и удалить
   - Стоит ли у меня российский сертификат безопасности
 link: https://www.gosuslugi.ru/crt
+description: "Как найти сертификат Russian Trusted Root CA (НУЦ Минцифры) на Windows, macOS, Linux, Android, iOS и в браузерах — и безопасно его удалить."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/check-remove](https://wiki.zapret.moe/nuc/check-remove)
 
 # 🔎 Как проверить, установлен ли корень НУЦ, и как его удалить
 

@@ -1,3 +1,10 @@
+---
+description: "Миграция Telegram-бота с SSH-управления MTProxy на REST API telemt: класс TelemetService на aiohttp, привязка к подпискам, гибрид с mtg, мониторинг."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/09-bot-integration](https://wiki.zapret.moe/Zapret/mtproto/09-bot-integration)
+
 # Интеграция MTProxy с Telegram-ботом
 
 ## Архитектура

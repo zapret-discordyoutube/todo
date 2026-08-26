@@ -13,7 +13,11 @@ aliases:
   - общий скелет desync-функций
   - конвейер desync-функции
   - стадии desync-функции
+description: "Общий скелет desync-функций zapret2 (nfqws2): восемь стадий от отсева транспорта до вердикта, выбор данных blob/reasm/payload и replay."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/жизненный-цикл-desync-функции](https://wiki.zapret.moe/Zapret2/%D0%B6%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D1%86%D0%B8%D0%BA%D0%BB-desync-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8)
 
 # ♻️ Жизненный цикл desync-функции: общий скелет всех техник дурения
 

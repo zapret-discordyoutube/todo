@@ -13,7 +13,11 @@ aliases:
   - Сайт не работает
   - Запрет не работает
 link:
+description: "Старый AdBlock ломает YouTube, ChatGPT, VK и подменяет поиск Google на Яндекс, маскируясь под вирус: симптомы, диагностика и замена на uBlock Origin."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/adblock-breaks-sites](https://wiki.zapret.moe/adblock-breaks-sites)
 
 # 🧩 AdBlock ломает сайты и маскируется под вирус
 

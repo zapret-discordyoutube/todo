@@ -16,7 +16,11 @@ aliases:
   - WEB-прокси на своём домене
   - tproxy-server порты и службы
 link: https://github.com/telegramdesktop/tproxy-server/blob/master/README.md
+description: "Развёртывание tproxy-server — WEB-прокси Telegram на своём домене: install.sh на чистом сервере, ручная интеграция за nginx, порты и диагностика."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-server-setup](https://wiki.zapret.moe/tproxy/tproxy-server-setup)
 
 # 🛠 Установка tproxy-server: свой WEB-прокси на своём домене
 

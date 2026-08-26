@@ -1,3 +1,10 @@
+---
+description: "Полный справочник флагов nfqws v72.2: --dpi-desync, fooling, hostlist, ipset, позиции split и готовые профили для HTTPS, HTTP, TCP и UDP."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-flags](https://wiki.zapret.moe/Zapret/Zapret-flags)
+
 
 ```bash
 @<config_file>|$<config_file>                             ; читать конфигурацию из файла. опция должна быть первой. остальные опции игнорируются.

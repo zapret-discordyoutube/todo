@@ -1,3 +1,10 @@
+---
+description: "Чтение логов telemt 3.4.x: ошибка expected_64_got_0, JA4-фингерпринты клиентов Telegram, детект блокировок ТСПУ и обход лимитом SYN-ACK."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi](https://wiki.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi)
+
 # telemt 3.4.x: чтение логов, TLS-фингерпринты и детект блокировок ТСПУ
 
 > [!info] О чём заметка

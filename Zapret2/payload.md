@@ -15,7 +15,12 @@ aliases:
   - l7payload
   - Распознавание протоколов
   - Типы пейлоада
+description: "Фильтр --payload в Zapret 2: чем тип payload отличается от протокола потока, таблица распознаваемых типов, known/all/~ и свой Lua-детектор."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/payload](https://wiki.zapret.moe/Zapret2/payload)
+
 # 🧩 Тип payload и распознавание протоколов
 
 > [!info] О чём заметка

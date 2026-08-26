@@ -10,7 +10,11 @@ aliases:
   - История версий Zapret 21.0.0
   - Что нового в Zapret с 21.0.0.6
 link: https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases
+description: "Changelog dev-сборок ZapretGUI 21.0.0.6–21.0.0.181 (апрель–июнь 2026): Telegram-прокси, профили, редактор списков, ускорения и фикс «краша интернета»."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/changelog-21.0.0-dev-june-2026](https://wiki.zapret.moe/Zapret/changelog-21.0.0-dev-june-2026)
 
 # 📜 Changelog ZapretGUI: от 21.0.0.6 до 21.0.0.181 (dev)
 

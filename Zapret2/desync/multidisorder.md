@@ -13,7 +13,11 @@ tags:
   - disorder
 aliases:
   - multidisorder
+description: "Разбор multidisorder в zapret2/nfqws2: TCP-сегменты в обратном порядке, маркеры pos, seqovl с перезаписью буфера и миграция с nfqws1."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multidisorder](https://wiki.zapret.moe/Zapret2/desync/multidisorder)
 
 # `multidisorder` — TCP-сегментация в обратном порядке (zapret2 / nfqws2)
 

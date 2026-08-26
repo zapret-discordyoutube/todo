@@ -10,7 +10,11 @@ aliases:
   - Двойная реализация протокола
   - Почему разные программы понимают друг друга
   - wire format простыми словами
+description: "Что такое wire-протокол простыми словами: почему sing-box и Xray-core совместимы по VLESS и Trojan без общего кода и откуда берутся спецификации."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/wire-protocol-explained](https://wiki.zapret.moe/sing-box/wire-protocol-explained)
 
 # 🧵 Что такое «wire-протокол» и почему один протокол реализуют дважды
 

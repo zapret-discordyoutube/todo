@@ -12,7 +12,11 @@ tags:
   - seqovl
 aliases:
   - tcpseg
+description: "Справочник по функции tcpseg в Zapret2/nfqws2: отправка TCP-сегмента из диапазона pos, seqovl без сегментации, связка с drop и примеры стратегий."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/tcpseg](https://wiki.zapret.moe/Zapret2/desync/tcpseg)
 
 # `tcpseg` -- отправка TCP-сегмента из диапазона (zapret2 / nfqws2)
 

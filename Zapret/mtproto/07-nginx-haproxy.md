@@ -1,3 +1,10 @@
+---
+description: "MTProxy FakeTLS и сайт на одном порту 443: SNI-маршрутизация через nginx stream или HAProxy без терминации TLS, Let's Encrypt и проверка openssl."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/07-nginx-haproxy](https://wiki.zapret.moe/Zapret/mtproto/07-nginx-haproxy)
+
 # SNI Routing — MTProxy + сайт на одном порту 443
 
 ## Архитектура

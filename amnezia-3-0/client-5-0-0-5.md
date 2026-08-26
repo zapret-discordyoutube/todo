@@ -15,7 +15,11 @@ aliases:
   - Куда пропал OpenVPN over Cloak в Amnezia
   - Амнезия не подключается после обновления
 link: https://github.com/amnezia-vpn/amnezia-client/releases/tag/5.0.0.5
+description: "Разбор AmneziaVPN 5.0.0.5: поддержка AWG 3, удаление OpenVPN over Cloak, ошибка «Parameter jc is undefined» на Android и стоит ли обновляться."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/client-5-0-0-5](https://wiki.zapret.moe/amnezia-3-0/client-5-0-0-5)
 
 # 📦 AmneziaVPN 5.0.0.5 — что даёт обновление и что оно ломает
 

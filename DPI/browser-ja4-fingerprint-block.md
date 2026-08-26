@@ -16,7 +16,11 @@ aliases:
   - Кейс wireflow.space
   - Почему сайт не открывается только в Chrome
 link: https://github.com/telegramdesktop/tdesktop/issues/30733
+description: "Почему сайт не открывается только в Chrome и Edge: разбор блокировки DPI по JA4-отпечатку TLS на примере wireflow.space и FakeTLS Telegram."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/browser-ja4-fingerprint-block](https://wiki.zapret.moe/DPI/browser-ja4-fingerprint-block)
 
 # 🕵️ Когда DPI блокирует сайт по JA4-отпечатку браузера: разбор кейса wireflow.space
 

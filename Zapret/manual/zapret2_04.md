@@ -8,7 +8,12 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 04
+description: "Урок 04 учебника Zapret2: объект desync в Lua, диссект пакетов (dis.ip, dis.tcp, payload), reconstruct, отладка через pktdebug и standard args."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_04](https://wiki.zapret.moe/Zapret/manual/zapret2_04)
+
 # Zapret2 для новичков — 04: dissect/reconstruct и что такое `desync`
 
 Цель: научиться “читать” то, что видит Lua‑функция, и понимать, откуда берутся поля.

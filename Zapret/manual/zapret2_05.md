@@ -8,7 +8,12 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 05
+description: "Учебник Zapret2, часть 5: типы payload (http_req, tls_client_hello), сборка reasm_data, replay и маркеры host/midsld для multisplit и multidisorder."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_05](https://wiki.zapret.moe/Zapret/manual/zapret2_05)
+
 # Zapret2 для новичков — 05: payload types, reasm/replay и маркеры
 
 Цель: понять, как zapret2 отличает `http_req` от `tls_client_hello`, зачем нужен `reasm_data` и почему “маркеры” (host/midsld/…) иногда не работают.

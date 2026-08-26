@@ -10,7 +10,11 @@ aliases:
   - VMess AEAD
   - alterId
 link: https://www.v2fly.org/en_US/developer/protocols/vmess.html
+description: "Разбор протокола VMess: как устроен, почему alterId должен быть 0 (режим AEAD), уязвимость к активному зондированию и стоит ли использовать в 2026."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/vmess](https://wiki.zapret.moe/protocols/vmess)
 
 # 📮 VMess: протокол V2Ray, который проиграл собственному наследнику
 

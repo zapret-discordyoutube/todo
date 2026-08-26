@@ -1,3 +1,10 @@
+---
+description: "Материалы о файлах preset_discord_media_stun в zapret: обсуждение bol-van #1733 и пример запуска winws с --filter-l7=discord,stun."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/preset_discord_media_stun](https://wiki.zapret.moe/Zapret/ToDo/preset_discord_media_stun)
+
 
 
 ```embed

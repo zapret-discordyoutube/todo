@@ -12,7 +12,11 @@ aliases:
   - mtproto.zig setup
   - MTProxy runbook
 link: https://github.com/sleep3r/mtproto.zig
+description: "Пошаговая настройка MTProxy на mtproto.zig: установка mtbuddy, config.toml, TCPMSS-дробление, nfqws-desync, диагностика блокировок ТСПУ по метрикам."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproto-zig-setup](https://wiki.zapret.moe/mtproxy/mtproto-zig-setup)
 
 # 🛠️ Настройка MTProxy на mtproto.zig — пошагово и «что происходит на проводе»
 

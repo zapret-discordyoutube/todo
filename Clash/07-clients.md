@@ -12,7 +12,11 @@ aliases:
   - FlClash
   - Mihomo Party
 link: https://github.com/MetaCubeX/mihomo
+description: "Какие клиенты на ядре mihomo живы в 2026 — Clash Verge Rev, FlClash, CMFA, что исчезло в ноябре 2023 и почему обновление GUI не обновляет ядро."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/07-clients](https://wiki.zapret.moe/Clash/07-clients)
 
 # 🖥️ Клиенты на ядре Clash/mihomo: что живо, а что мертво
 

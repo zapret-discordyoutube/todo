@@ -11,7 +11,11 @@ aliases:
   - Прошивка Magisk
   - патч boot Magisk
 link: https://topjohnwu.github.io/Magisk/install.html
+description: "Пошаговая установка Magisk: какой образ патчить по строке Ramdisk (boot, init_boot, recovery), прошивка fastboot, Samsung через Odin и root после OTA."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/Magisk-install](https://wiki.zapret.moe/root/Magisk-install)
 
 # 🛠️ Установка Magisk — патч boot/init_boot, Recovery, Samsung
 

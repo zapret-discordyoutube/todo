@@ -10,7 +10,11 @@ aliases:
   - Hysteria troubleshooting
   - Hysteria не подключается
 link: https://v2.hysteria.network/docs/advanced/Troubleshooting/
+description: "Ошибки Hysteria 2 и их решение: timeout no recent network activity, authentication error 404, certificate signed by unknown authority, bind на порт 443."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/troubleshooting](https://wiki.zapret.moe/Hysteria/troubleshooting)
 
 # 🦎 Hysteria 2 — решение проблем
 

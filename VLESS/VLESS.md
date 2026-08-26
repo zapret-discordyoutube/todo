@@ -8,7 +8,11 @@ aliases:
   - VLESS раздел
   - Блокировки VLESS обзор
   - VLESS и DPI
+description: "Раздел о противостоянии VLESS и DPI: по каким признакам цензор распознаёт VLESS+REALITY и как ограничивает соединения. Оглавление заметок по теме."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS/VLESS](https://wiki.zapret.moe/VLESS/VLESS)
 
 # 🔷 VLESS и DPI — раздел
 

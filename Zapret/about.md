@@ -1,3 +1,10 @@
+---
+description: "Три способа обхода блокировок в России простыми словами: VPN, Tor с мостами и обход DPI (Zapret, GoodbyeDPI) — и что будет при изоляции рунета."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/about](https://wiki.zapret.moe/Zapret/about)
+
 # 🔐 Что это такое?
 
 ### Как [[guide|пользоваться]] Zapret | Если у Вас [[zapret_not_working|не работает Zapret]].

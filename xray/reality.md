@@ -12,7 +12,11 @@ aliases:
   - Xray REALITY
   - REALITY handshake
 link: https://github.com/XTLS/REALITY
+description: "Как работает REALITY в Xray: маскировка прокси под чужой сайт без своего домена, метка в SessionId, X25519 и защита от active probing — разбор по коду."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/reality](https://wiki.zapret.moe/xray/reality)
 
 # 🎭 REALITY: как прокси прикрывается настоящим чужим сайтом
 

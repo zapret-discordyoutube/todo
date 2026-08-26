@@ -19,7 +19,11 @@ aliases:
   - Flowseal официальный телеграм канал
   - Flowseal github ОБХОД ДИСКОРД
 link: https://www.virustotal.com/gui/file/fc125455b1e1f2a409699e89ef18bd6bb3b2959bb67ca7a131f470cca6f37858
+description: "Фейковый Flowseal на YouTube и в Telegram (FlowsealObhod) раздаёт стилер SalatStealer в архиве FlowsealObhod1.8.1.rar: как отличить и что делать."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026](https://wiki.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026)
 
 # 🥗 [Фейковый «Flowseal» на YouTube (@Dey-K) раздаёт стилер SalatStealer — вирус под видом сборки флоусил (июль 2026)](https://www.youtube.com/watch?v=AR90YnDX77U&t=2s)
 

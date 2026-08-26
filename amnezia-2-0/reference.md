@@ -15,7 +15,11 @@ aliases:
   - Что такое S1 S2 S3 S4 и H1 H2 H3 H4
   - Сигнатурные пакеты I1-I5 и язык CPS
 link: https://github.com/amnezia-vpn/amneziawg-go
+description: "Справочник всех 17 параметров AmneziaWG 2.0 по исходному коду: Jc/Jmin/Jmax, padding S1–S4, заголовки H1–H4 и сигнатурные пакеты I1–I5."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-2-0/reference](https://wiki.zapret.moe/amnezia-2-0/reference)
 
 # AmneziaWG 2.0 — полный справочник параметров
 

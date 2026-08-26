@@ -16,7 +16,11 @@ aliases:
   - АСБИ
   - Курс на 2030
 link: https://www.svoboda.org/a/roskomnadzor-postavil-zadachu-zablokirovatj-92-vpn-k-2030-godu/33748690.html
+description: "Планы РКН и Минцифры до 2030: блокировка 92% VPN, фильтрация всего трафика через ТСПУ, единый интернет-ID — что запланировано и на какие деньги."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/rkn-vpn-2030-roadmap](https://wiki.zapret.moe/DPI/rkn-vpn-2030-roadmap)
 
 # 🎯 Курс на 2030: официальные планы по VPN, фильтрации всего трафика и деанонимизации
 

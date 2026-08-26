@@ -13,7 +13,11 @@ aliases:
   - MetaCubeX mihomo
   - Михомо
 link: https://github.com/MetaCubeX/mihomo
+description: "mihomo (Clash.Meta) — форк ядра Clash от MetaCubeX: история переименования, отличия от оригинала, поддержка VLESS/Hysteria2 и состояние в 2026."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/02-mihomo](https://wiki.zapret.moe/Clash/02-mihomo)
 
 # 🧩 mihomo (бывший Clash.Meta): как форк стал основным ядром
 

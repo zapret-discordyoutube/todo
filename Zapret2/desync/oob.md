@@ -12,7 +12,11 @@ tags:
   - urgent
 aliases:
   - oob
+description: "Техника oob в zapret2: вставка TCP Out-of-Band байта с флагом URG ломает сигнатуры DPI. Режимы urp, полный список аргументов, подводные камни, примеры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/oob](https://wiki.zapret.moe/Zapret2/desync/oob)
 
 # `oob` -- TCP Out-of-Band десинхронизация (zapret2 / nfqws2)
 

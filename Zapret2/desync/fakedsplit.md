@@ -13,7 +13,11 @@ tags:
   - seqovl
 aliases:
   - fakedsplit
+description: "Техника fakedsplit в zapret2/nfqws2: разрез TCP payload с фейковыми сегментами-«ретрансмиссиями», маркеры pos, seqovl, fooling и примеры команд."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/fakedsplit](https://wiki.zapret.moe/Zapret2/desync/fakedsplit)
 
 # `fakedsplit` — TCP-сегментация с замешиванием фейков (zapret2 / nfqws2)
 

@@ -10,7 +10,11 @@ aliases:
   - Амнезия 2.0 обзор
   - AWG 2 справочник
   - Amnezia VPN второе поколение
+description: "Раздел об AmneziaWG 2.0 — обфусцированном WireGuard от Amnezia: junk-пакеты и magic headers, справочник параметров, ссылка на поколение AWG 3.0."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-2-0/amnezia-2-0](https://wiki.zapret.moe/amnezia-2-0/amnezia-2-0)
 
 # 🛡️ AmneziaWG 2.0 — раздел
 

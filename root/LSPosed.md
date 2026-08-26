@@ -14,7 +14,11 @@ aliases:
   - LSPatch
   - что такое LSPosed
 link: https://github.com/LSPosed/LSPosed
+description: "Что такое LSPosed и Xposed: перехват методов через Zygisk, отличие от модулей Magisk, установка, scope, LSPatch без root и актуальный форк Vector."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/LSPosed](https://wiki.zapret.moe/root/LSPosed)
 
 # 🧩 LSPosed и Xposed — модификация приложений в рантайме
 

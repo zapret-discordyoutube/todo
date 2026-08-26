@@ -14,7 +14,11 @@ aliases:
   - JA4/SNI client-side
   - Детекция MTProto июнь 2026
 link: https://gist.github.com/Flowseal/de630dd9d9ddaa86cc6bed9b473fae0c
+description: "Почему смена JA4 и ротация SNI против детекции MTProxy работают только на стороне клиента Telegram, а серверный прокси изменить их не может."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/ja4-sni-client-side](https://wiki.zapret.moe/mtproxy/ja4-sni-client-side)
 
 # 🪪 Кто может менять JA4/SNI и почему обход MTProxy — клиентский
 

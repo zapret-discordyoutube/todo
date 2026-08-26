@@ -12,7 +12,11 @@ aliases:
   - Фейковые репозитории Zapret
   - Клоны discord-cdn-fix
 link: https://github.com/Flowseal/zapret-discord-youtube/issues/794
+description: "Bypass Ultimate / discord-cdn-fix — сеть фейковых GitHub-репозиториев с малварью под видом Zapret: накрученные звёзды, признаки и что делать после запуска."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026](https://wiki.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026)
 
 # 🪪 Bypass Ultimate / discord-cdn-fix — сеть клонов-репозиториев с малварью
 

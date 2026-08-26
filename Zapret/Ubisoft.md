@@ -1,3 +1,10 @@
+---
+description: "Не работает Ubisoft Connect с Zapret: подборка issue Flowseal/zapret-discord-youtube, где искать решения, если игры Ubisoft не запускаются."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Ubisoft](https://wiki.zapret.moe/Zapret/Ubisoft)
+
 
 ```embed
 title: "Flowseal/zapret-discord-youtube"

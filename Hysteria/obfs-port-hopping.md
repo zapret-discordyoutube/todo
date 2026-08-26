@@ -12,7 +12,11 @@ aliases:
   - Hysteria Salamander
   - Hysteria обход DPI
 link: https://v2.hysteria.network/docs/advanced/Port-Hopping/
+description: "Обфускация Salamander/Gecko и port hopping в Hysteria 2: когда провайдер режет QUIC или троттлит UDP-порт — конфиги для сервера и клиента."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/obfs-port-hopping](https://wiki.zapret.moe/Hysteria/obfs-port-hopping)
 
 # 🦎 Hysteria 2 — обфускация и port hopping
 

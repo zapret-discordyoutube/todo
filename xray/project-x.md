@@ -13,7 +13,11 @@ aliases:
   - Xray
   - XTLS
 link: https://github.com/XTLS/Xray-core
+description: "История Project X и Xray-core: форк V2Ray, автор RPRX, технологии XTLS-Vision, REALITY и XHTTP, отличия от v2fly и экосистема вокруг VLESS."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/project-x](https://wiki.zapret.moe/xray/project-x)
 
 # 🛰️ Project X (Xray-core): что это за проект и откуда он взялся
 

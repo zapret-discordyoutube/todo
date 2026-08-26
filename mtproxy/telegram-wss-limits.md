@@ -16,7 +16,11 @@ aliases:
   - Ошибка 429 Cloudflare Worker Telegram
   - The proxy you are using is not configured correctly
   - Ограничения WSS транспорта Telegram
+description: "Почему через WSS-прокси Telegram не грузятся стикеры и не работают звонки: закрытые релеи датацентров, лимиты Cloudflare 429 и баги клиентов."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/telegram-wss-limits](https://wiki.zapret.moe/mtproxy/telegram-wss-limits)
 
 # 🧯 Ограничения WSS для Telegram: что не работает и почему
 

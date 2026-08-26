@@ -1,3 +1,10 @@
+---
+description: "Ошибка «unknown player» в League of Legends на EUW/EUNE/PBE при блокировках: ссылка на решение из обсуждения Flowseal zapret-discord-youtube."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/League-of-Legends](https://wiki.zapret.moe/Zapret/League-of-Legends)
+
 
 ```embed
 title: "League of Legends EUW/EUNE/PBE <unknown player> · Flowseal zapret-discord-youtube · Discussion #3778"

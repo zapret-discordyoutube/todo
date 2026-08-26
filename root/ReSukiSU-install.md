@@ -12,7 +12,11 @@ aliases:
   - Прошивка ReSukiSU
   - LKM ReSukiSU
 link: https://resukisu.github.io/guide/install.html
+description: "Установка root ReSukiSU на Android: где взять менеджер из CI, LKM-патч init_boot, AnyKernel3, ручной magiskboot и диагностика «Not Installed» на LineageOS."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/ReSukiSU-install](https://wiki.zapret.moe/root/ReSukiSU-install)
 
 # 🛠️ Установка ReSukiSU — LKM, AnyKernel3 и ручной патч boot.img
 

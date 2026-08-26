@@ -12,7 +12,11 @@ aliases:
   - Hysteria без белого IP
   - Hysteria P2P
 link: https://v2.hysteria.network/docs/advanced/Realms/
+description: "Hysteria 2 Realms: сервер без белого IP за NAT и CGNAT через UDP hole punching — realm-URI, свой rendezvous, TLS с pinSHA256, ограничения NAT."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/realms-nat](https://wiki.zapret.moe/Hysteria/realms-nat)
 
 # 🦎 Hysteria 2 — Realms: сервер за NAT без белого IP
 

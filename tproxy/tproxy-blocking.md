@@ -15,7 +15,11 @@ aliases:
   - WEB-прокси и ТСПУ
   - Как палится WEB-прокси Telegram
 link: https://github.com/telegramdesktop/tproxy-server
+description: "Можно ли заблокировать WEB-прокси Telegram: блокировка по домену и IP, активное зондирование, форма трафика, CT-логи. Главный риск — публикация ссылки."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-blocking](https://wiki.zapret.moe/tproxy/tproxy-blocking)
 
 # 🛡 Можно ли заблокировать WEB-прокси Telegram и как именно
 

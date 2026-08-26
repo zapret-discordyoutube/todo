@@ -17,7 +17,11 @@ aliases:
   - encryption=none что это
   - VLESS постквантовое шифрование
 link: https://github.com/XTLS/Xray-core/pull/5067
+description: "VLESS Encryption (mlkem768x25519plus): постквантовое шифрование внутри VLESS — команда xray vlessenc, зачем оно при CDN и почему не обходит блокировки."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/vless-encryption](https://wiki.zapret.moe/xray/vless-encryption)
 
 # 🔐 VLESS Encryption: собственное постквантовое шифрование протокола
 

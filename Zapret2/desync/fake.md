@@ -12,7 +12,11 @@ tags:
   - fake
 aliases:
   - fake
+description: "Справочник по fake в zapret2/nfqws2: фейковый пакет перед оригиналом, blob, tls_mod, fooling (tcp_md5, ttl), миграция с nfqws1 и 20 примеров."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/fake](https://wiki.zapret.moe/Zapret2/desync/fake)
 
 # `fake` — прямой фейк (zapret2 / nfqws2)
 

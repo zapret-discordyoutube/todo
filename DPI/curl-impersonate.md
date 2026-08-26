@@ -14,7 +14,11 @@ aliases:
   - Проверка блокировки по JA3/JA4
   - Имитация TLS-отпечатка браузера через curl
 link: https://github.com/lwthiker/curl-impersonate
+description: "curl-impersonate имитирует TLS-отпечаток Chrome и Firefox (JA3/JA4): установка, wrapper-скрипты и проверка, режет ли DPI по отпечатку клиента."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/curl-impersonate](https://wiki.zapret.moe/DPI/curl-impersonate)
 
 # 🥷 curl-impersonate — curl, притворяющийся браузером (проверка блокировок по TLS-отпечатку)
 

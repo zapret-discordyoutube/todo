@@ -11,7 +11,11 @@ aliases:
   - ReSuki
   - Make SukiSU Great Again
 link: https://github.com/ReSukiSU/ReSukiSU
+description: "Обзор ReSukiSU — форка SukiSU/KernelSU для root через ядро Android: KPM, SUSFS, метамодули, сравнение с Magisk и требования GKI 2.0."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/ReSukiSU](https://wiki.zapret.moe/root/ReSukiSU)
 
 # 🦎 ReSukiSU — форк SukiSU для root-доступа на Android
 

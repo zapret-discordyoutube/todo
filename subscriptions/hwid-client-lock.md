@@ -12,7 +12,11 @@ aliases:
   - HWID device limit
   - Лимит устройств
 link: https://docs.rw/docs/features/hwid-device-limit/
+description: "Как продавцы VPN привязывают подписку к устройству: заголовок x-hwid в Remnawave, 404 без него, шифрованные подписки Happ и чем это грозит приватности."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/subscriptions/hwid-client-lock](https://wiki.zapret.moe/subscriptions/hwid-client-lock)
 
 # 🔒 HWID-привязка и запрет «чужих» клиентов: как продавцы ограничивают выбор
 

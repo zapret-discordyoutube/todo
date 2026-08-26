@@ -11,7 +11,11 @@ aliases:
   - Xray-core обзор
   - VLESS REALITY XTLS что это
   - Иксрей прокси
+description: "Раздел о Project X и ядре Xray-core: протоколы VLESS, XTLS/Vision, REALITY и XHTTP — от истории проекта до подключения клиентов и маршрутизации."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xray](https://wiki.zapret.moe/xray/xray)
 
 # 🛰️ Xray, VLESS и REALITY — раздел
 

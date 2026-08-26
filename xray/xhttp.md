@@ -12,7 +12,11 @@ aliases:
   - SplitHTTP
   - Xray XHTTP transport
 link: https://github.com/XTLS/Xray-core/tree/main/transport/internet/splithttp
+description: "Транспорт XHTTP (SplitHTTP) в Xray: прокси-трафик через CDN под видом HTTP, режимы packet-up, stream-up и stream-one, XMUX и параметры конфига."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xhttp](https://wiki.zapret.moe/xray/xhttp)
 
 # 📡 XHTTP: транспорт Xray, притворяющийся обычным веб-трафиком
 

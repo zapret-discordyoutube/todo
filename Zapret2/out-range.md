@@ -3,7 +3,11 @@ tags:
 link:
 aliases:
 img:
+description: "Формат --out-range и --in-range в zapret2: префиксы n/d/s/b, разделители, что такое data packet и почему --wf-tcp-empty=0 сбивает счёт n."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/out-range](https://wiki.zapret.moe/Zapret2/out-range)
 
 ## Формат `--out-range` / `--in-range`:
 

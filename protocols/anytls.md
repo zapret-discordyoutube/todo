@@ -11,7 +11,11 @@ aliases:
   - anytls-go
   - TLS in TLS
 link: https://github.com/anytls/anytls-go
+description: "Протокол AnyTLS против детекта «TLS внутри TLS»: настраиваемая набивка, пул сессий, отличия от XTLS Vision и REALITY, поддержка в sing-box и mihomo."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/anytls](https://wiki.zapret.moe/protocols/anytls)
 
 # 🧬 AnyTLS: протокол против детекта «TLS внутри TLS»
 

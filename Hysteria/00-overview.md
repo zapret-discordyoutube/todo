@@ -11,7 +11,11 @@ aliases:
   - Hysteria обзор
   - Hysteria 2 гайд
 link: https://v2.hysteria.network/
+description: "Hysteria 2 — прокси поверх QUIC с маскировкой под HTTP/3 и алгоритмом Brutal: кому подходит, как поставить сервер на VPS и в каком порядке читать раздел."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/00-overview](https://wiki.zapret.moe/Hysteria/00-overview)
 
 # 🦎 Hysteria 2 — обзор и оглавление
 

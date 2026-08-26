@@ -1,3 +1,10 @@
+---
+description: "Протокол MTProto Proxy: режимы Classic, dd и FakeTLS, формат ee-секрета, устройство FakeTLS-handshake, Middle Proxy с Ad Tag и проблема DC203/CDN."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/01-protocol](https://wiki.zapret.moe/Zapret/mtproto/01-protocol)
+
 # Протокол MTProto Proxy
 
 ## Официальная спецификация

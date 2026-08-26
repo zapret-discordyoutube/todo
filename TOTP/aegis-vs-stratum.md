@@ -16,7 +16,11 @@ aliases:
   - Буквенный код Яндекса
   - Лучшее приложение TOTP для Android
 link: https://github.com/beemdevelopment/Aegis
+description: "Сравнение Aegis и Stratum для TOTP на Android: шифрование базы, резервные копии, буквенный код Яндекса (Yandex OTP) и чем заменить Яндекс Ключ."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/TOTP/aegis-vs-stratum](https://wiki.zapret.moe/TOTP/aegis-vs-stratum)
 
 # 🔐 Aegis и Stratum: что выбрать для TOTP и Яндекса
 

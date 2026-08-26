@@ -9,7 +9,12 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 03
+description: "Как Zapret2 перехватывает пакеты через NFQUEUE и WinDivert и что значат вердикты PASS, MODIFY, DROP: урок 03 для новичков с мини-практикой в логах."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_03](https://wiki.zapret.moe/Zapret/manual/zapret2_03)
+
 # Zapret2 для новичков — 03: перехват пакетов и вердикты (NFQUEUE/WinDivert)
 
 Цель: понять “где” стоит zapret2 и что значит `PASS/MODIFY/DROP`.

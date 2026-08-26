@@ -14,7 +14,11 @@ aliases:
   - Zapret VPN бот
   - Mihomo-подписка Zapret
 link: https://t.me/zapretvpns_bot
+description: "Zapret VPN через бот @zapretvpns_bot: Mihomo-подписка и прямые конфиги VLESS+REALITY, Hysteria 2, WireGuard — без HWID и привязки к клиенту."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/zapret-vpn-bot](https://wiki.zapret.moe/premium/zapret-vpn-bot)
 
 # 🤖 Zapret VPN-бот: устройство, подписка и свобода выбора клиента
 

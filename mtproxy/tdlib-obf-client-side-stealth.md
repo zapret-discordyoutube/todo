@@ -15,7 +15,11 @@ aliases:
   - Stealth TDLib
   - Обфусцированный TDLib
 link: https://github.com/telemt/tdlib-obf
+description: "tdlib-obf — форк TDLib с маскировкой MTProto под браузерный HTTPS: свежие JA4-профили Chrome/Firefox, ECH по маршруту и traffic shaping."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/tdlib-obf-client-side-stealth](https://wiki.zapret.moe/mtproxy/tdlib-obf-client-side-stealth)
 
 # 🦎 tdlib-obf — клиентский TDLib с маскировкой TLS-почерка под браузер
 

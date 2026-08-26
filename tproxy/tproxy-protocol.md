@@ -15,7 +15,11 @@ aliases:
   - tproxy-server лимиты и окна
   - Как устроен WEB-прокси Telegram внутри
 link: https://github.com/telegramdesktop/tproxy-server/blob/master/PROTOCOL.md
+description: "Разбор протокола WEB-прокси Telegram (tproxy): bridge capability, кадры OPEN/DATA/WINDOW/CLOSE, кредитное управление потоком и 4 режима доставки."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-protocol](https://wiki.zapret.moe/tproxy/tproxy-protocol)
 
 # 🔬 Как устроен WEB-прокси Telegram изнутри: пропуск, кадры и четыре режима доставки
 

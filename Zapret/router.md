@@ -4,7 +4,12 @@ tags:
 link:
 aliases:
 img:
+description: "Zapret на роутере: пакеты OpenWRT от remittor, однокомандный zapret4rocket и nfqws-keenetic — обход блокировок YouTube и Discord для всей сети."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/router](https://wiki.zapret.moe/Zapret/router)
+
 # Zapret (Zapret2) для роутеров для прошивок OpenWRT и Keenetic
 *запрет для обхода блокировок discord и youtube, дискорда и ютуба, запретов нет, обход блокировки дискорд и ютуб*
 ![[Pasted image 20260214232919.png|400]]

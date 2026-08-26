@@ -16,7 +16,11 @@ aliases:
   - Туннель через WebRTC
   - Обход белых списков через видеозвонки
 link: https://github.com/openlibrecommunity/olcrtc
+description: "OlcRTC прячет трафик внутри WebRTC-звонка (Jitsi, Телемост) для обхода белых списков, когда VPN недоступен: схема, SOCKS5, установка, ограничения."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/olcrtc](https://wiki.zapret.moe/DPI/olcrtc)
 
 # 📞 OlcRTC — туннель через WebRTC-звонки для обхода белых списков
 

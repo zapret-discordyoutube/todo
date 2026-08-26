@@ -14,7 +14,11 @@ aliases:
   - Почему FIDO защищает от фишинга
   - Как появились passkeys
 link: https://fidoalliance.org/
+description: "Что такое FIDO и почему вход по подписи устройства защищает от фишинга: история альянса, стандарты U2F, FIDO2, WebAuthn и появление passkeys."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/fido-history](https://wiki.zapret.moe/FIDO/fido-history)
 
 # 🧬 Что такое FIDO: альянс, стандарты и их история
 

@@ -1,3 +1,10 @@
+---
+description: "Готовый bat-конфиг Dronator 4.2 для zapret-discord-youtube 1.8.0–1.8.4: стратегии winws для Discord, YouTube, WireGuard и игровых портов."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/Dronator-4.2](https://wiki.zapret.moe/Zapret/ToDo/Dronator-4.2)
+
 
 ```bat
 :: general (Dronatar)v4.2

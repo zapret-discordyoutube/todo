@@ -12,7 +12,11 @@ aliases:
   - --wssize 1:6 что делает
   - wssize и TLS 1.2
 link:
+description: "Что делает --wssize в zapret, почему он не работает с hostlist и l7-фильтром и почему blockcheck ставит wssize-стратегии в конец лога."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/wssize](https://wiki.zapret.moe/Zapret/wssize)
 
 # 🪟 wssize в zapret — крайняя мера: без хостлистов, без l7-фильтра, в конце лога blockcheck
 

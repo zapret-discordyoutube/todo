@@ -15,7 +15,11 @@ aliases:
   - Сертификаты Минцифры НУЦ
   - Splinternet и сертификаты 2026
 link: https://community.letsencrypt.org/t/why-issue-certificate-for-max-ru-forbidden-by-policy/248143
+description: "Чем опасны сертификаты Минцифры (НУЦ): корень в хранилище доверия открывает путь к перехвату HTTPS, а отзывы сертификатов приучают жать «продолжить»."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/mincifry-nuc-certs-danger-june-2026](https://wiki.zapret.moe/nuc/mincifry-nuc-certs-danger-june-2026)
 
 # 🔐 Почему сертификаты Минцифры (НУЦ) опасны — и почему отзыв сертификата хуже бана из App Store
 

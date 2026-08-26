@@ -16,7 +16,11 @@ aliases:
   - YubiKey или Nitrokey
   - Резервный аппаратный ключ
 link: https://fidoalliance.org/specifications/
+description: "Обзор аппаратных ключей FIDO2: линейки YubiKey, открытые Nitrokey, SoloKeys и OnlyKey, лимиты passkeys и чек-лист выбора с резервным ключом."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/hardware-security-keys](https://wiki.zapret.moe/FIDO/hardware-security-keys)
 
 # 🔑 Физические ключи безопасности: YubiKey, открытые ключи и другие типы
 

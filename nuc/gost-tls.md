@@ -13,7 +13,11 @@ aliases:
   - Кузнечик Магма Стрибог в HTTPS
   - Сертификат с шифрованием по ГОСТ
 link: https://digital.gov.ru/activity/kiberbezopasnost/sertifikaty-bezopasnosti
+description: "Что такое ГОСТ-TLS от НУЦ Минцифры: шифры «Кузнечик» и «Стрибог», зачем нужны КриптоПро CSP и Chromium-Gost и почему обычный браузер его не открывает."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/gost-tls](https://wiki.zapret.moe/nuc/gost-tls)
 
 # 🧬 ГОСТ-TLS и КриптоПро: чем «вариант с шифрованием по ГОСТ» глубже обычного корня НУЦ
 

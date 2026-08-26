@@ -17,7 +17,11 @@ aliases:
   - Почему не работают сайты на Beget Timeweb Selectel
   - Collateral damage борьбы РКН с VPN
 link: https://ebyebots.ru/blog/kak-tspu-roskomnadzora-lomaet-legitimnye-sajty-i-servery-v-iyune-2026-goda-tehnicheskij-razbor/
+description: "Почему в июне 2026 легли сайты на Beget, Timeweb, Selectel: триггер ТСПУ из трёх условий, диагностика и фиксы — Firefox, HTTP/2, смена подсети."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-false-blocks-june-2026](https://wiki.zapret.moe/DPI/tspu-false-blocks-june-2026)
 
 # 💥 Как ТСПУ ломает легитимные сайты: сопутствующий ущерб борьбы с VPN (июнь 2026)
 

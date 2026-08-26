@@ -11,7 +11,11 @@ aliases:
   - Hysteria client config
   - Hysteria SOCKS5 TUN
 link: https://v2.hysteria.network/docs/getting-started/Client/
+description: "Настройка клиента Hysteria 2: config.yaml с SOCKS5/HTTP-прокси, bandwidth для Brutal, самоподписанный сертификат и TUN-режим как системный VPN."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/config-client](https://wiki.zapret.moe/Hysteria/config-client)
 
 # 🦎 Hysteria 2 — конфиг клиента
 

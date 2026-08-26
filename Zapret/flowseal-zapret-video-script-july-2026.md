@@ -1,3 +1,10 @@
+---
+description: "Сценарий видео о пропаже аккаунта Flowseal с GitHub 10 июля 2026: почему это приостановка, а не «Zapret ВСЁ», фейки с трояном SalatStealer и зеркала."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026](https://wiki.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026)
+
 # Сценарий видео: Flowseal снесли с GitHub
 
 Десятого июля с GitHub пропал аккаунт Flowseal. Это автор самой популярной сборки Запрета — той самой, через которую у половины страны работают YouTube и Discord. Заходишь на страницу — а там пусто. Ни репозитория, ни профиля, ни одного проекта.

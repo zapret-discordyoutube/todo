@@ -12,7 +12,11 @@ aliases:
   - RPRX
   - Автор V2Ray девушка или нет
 link: https://en.wikipedia.org/wiki/V2Ray
+description: "Кто создал V2Ray и Xray: псевдонимы Victoria/Darien Raymond и RPRX, git-факты против мифа «автор — девушка» и исчезновение автора V2Ray в 2019."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/authors-v2ray-xray](https://wiki.zapret.moe/xray/authors-v2ray-xray)
 
 # 🕵️ Кто стоит за V2Ray и Xray: Victoria Raymond, Darien Raymond и RPRX
 

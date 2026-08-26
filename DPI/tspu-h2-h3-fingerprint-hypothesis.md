@@ -15,7 +15,11 @@ aliases:
   - xhttp h3 против блокировки REALITY
   - Alt-Svc HTTP/3 детект прокси
 link: https://ebyebots.ru/blog/kak-tspu-roskomnadzora-lomaet-legitimnye-sajty-i-servery-v-iyune-2026-goda-tehnicheskij-razbor/
+description: "Гипотеза: ТСПУ вычисляет прокси по «вечному HTTP/2» без перехода на HTTP/3. Что в ней верно, что спекуляция и почему XHTTP+h3 живёт дольше REALITY."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis](https://wiki.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis)
 
 # 🔬 Гипотеза: ТСПУ ловит прокси по «вечному HTTP/2» (отсутствию перехода на HTTP/3)
 

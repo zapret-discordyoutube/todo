@@ -1,3 +1,10 @@
+---
+description: "Готовые пресеты winws.exe для Launcher for Zapret v2.9.1: стратегии fake, multisplit и multidisorder с hostlist-ами для портов 80 и 443."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Launcher-zapret-2.9.1](https://wiki.zapret.moe/Zapret/Launcher-zapret-2.9.1)
+
 
 ```bash
 "C:\Privacy\AyuGram\tdata\temp_data\Launcher for Zapret v2.9.1\Win_10-11\zapret-x64\winws.exe"

@@ -8,7 +8,11 @@ aliases:
   - sing-box раздел
   - sing-box-extended обзор
   - синг-бокс что это
+description: "Раздел о прокси-платформе sing-box и форке sing-box-extended: обзор форка, архитектура, происхождение кода протоколов и хардкод-константы."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/sing-box](https://wiki.zapret.moe/sing-box/sing-box)
 
 # 📦 sing-box и sing-box-extended — раздел
 

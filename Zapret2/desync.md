@@ -14,7 +14,11 @@ aliases:
   - Десинхронизация
   - Механизм --lua-desync
 img:
+description: "Флаг --lua-desync в Zapret 2: как вызываются Lua-функции обхода DPI, каталог стратегий (fake, multisplit, syndata) и соответствие флагам nfqws1."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync](https://wiki.zapret.moe/Zapret2/desync)
 
 # 🧨 Десинхронизация: флаг `--lua-desync`
 

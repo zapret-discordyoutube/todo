@@ -12,7 +12,12 @@ aliases:
   - nfqws2
   - Что такое Zapret 2
 img:
+description: "Что такое Zapret 2 (nfqws2/winws2): пакетный манипулятор bol-van с Lua-стратегиями против DPI, отличия от старого Zapret и примеры tcpseg-стратегий."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/Zapret2](https://wiki.zapret.moe/Zapret2/Zapret2)
+
 # Что такое Zapret 2 (*nfqws2*)?
 
 > [!quote] Определение автора (bol-van)

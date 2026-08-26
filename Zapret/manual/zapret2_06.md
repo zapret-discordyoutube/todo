@@ -7,7 +7,11 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 06
+description: "Урок 06 по Zapret2: Lua pipeline — инстансы --lua-desync, синтаксис аргументов, вердикты PASS/DROP/MODIFY, cutoff и дебаг argdebug, posdebug."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_06](https://wiki.zapret.moe/Zapret/manual/zapret2_06)
 
 # Zapret2 для новичков — 06: Lua pipeline (инстансы, аргументы, дебаг)
 

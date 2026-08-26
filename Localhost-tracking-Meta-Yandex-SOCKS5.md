@@ -1,3 +1,10 @@
+---
+description: "Как Meta и Яндекс следят через localhost и почему SOCKS5 без пароля в VLESS-клиентах выдаёт VPN: разбор атак и защита в xray и sing-box."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5](https://wiki.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5)
+
 # Localhost-атака: как Meta, Яндекс и шпионское ПО эксплуатируют loopback-интерфейс
 
 **Дата:** 7 апреля 2026  

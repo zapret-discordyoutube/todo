@@ -12,7 +12,11 @@ tags:
   - seqovl
 aliases:
   - multisplit
+description: "Полный разбор multisplit в Zapret 2 (nfqws2): TCP-сегментация против DPI, маркеры pos (midsld, sniext), техника seqovl, все аргументы и примеры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multisplit](https://wiki.zapret.moe/Zapret2/desync/multisplit)
 
 # `multisplit` — последовательная TCP-сегментация (zapret2 / nfqws2)
 

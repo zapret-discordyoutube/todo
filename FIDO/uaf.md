@@ -12,7 +12,11 @@ aliases:
   - UAF и FIDO2 отличия
   - Беспарольная аутентификация до passkeys
 link: https://fidoalliance.org/specifications/download/
+description: "FIDO UAF — беспарольный вход по отпечатку или PIN до эпохи passkeys: архитектура с UAF Client и ASM, где применялся и почему уступил WebAuthn."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/uaf](https://wiki.zapret.moe/FIDO/uaf)
 
 # 📱 UAF: беспарольная ветка FIDO 1.0, которая не взлетела
 

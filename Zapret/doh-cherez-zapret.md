@@ -12,7 +12,11 @@ aliases:
   - Скрыть DoH от провайдера
   - Защищённый DNS не работает
   - dns.google не открывается
+description: "Поможет ли zapret при блокировке DoH: обход блока по SNI через хостлист, почему он бессилен при блоке по IP и как спрятать DNS в туннеле."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/doh-cherez-zapret](https://wiki.zapret.moe/Zapret/doh-cherez-zapret)
 
 # 🔐 Поможет ли zapret, если провайдер блокирует DoH (защищённый DNS)
 

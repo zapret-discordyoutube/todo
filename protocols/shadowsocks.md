@@ -11,7 +11,11 @@ aliases:
   - Shadowsocks 2022
   - SIP022
 link: https://shadowsocks.org/doc/sip022.html
+description: "Как устроен Shadowsocks: почему stream-шифры вроде aes-256-cfb сломаны, что исправила редакция Shadowsocks 2022 (SIP022) и когда протокол ещё уместен."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/shadowsocks](https://wiki.zapret.moe/protocols/shadowsocks)
 
 # 🧦 Shadowsocks: как устроен самый старый живой прокси обхода
 

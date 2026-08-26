@@ -12,7 +12,11 @@ aliases:
   - Какое ядро выбрать
   - mihomo vs Xray
 link: https://github.com/MetaCubeX/mihomo
+description: "Сравнение mihomo, sing-box и Xray-core: протоколы, форматы конфигов, маршрутизация, панели и клиенты — какое ядро выбрать для сервера и клиента."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/08-vs-sing-box](https://wiki.zapret.moe/Clash/08-vs-sing-box)
 
 # ⚖️ mihomo против sing-box, Xray и других ядер
 

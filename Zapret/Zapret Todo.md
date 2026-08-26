@@ -1,3 +1,10 @@
+---
+description: "Рабочий список задач проекта Zapret: перенос файлов на новый сайт, анонсы обновлений и бот техподдержки с уведомлениями о коммитах."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-Todo](https://wiki.zapret.moe/Zapret/Zapret-Todo)
+
 Кто нибудь знает, на айфон воркает?
 https://chromewebstore.google.com/detail/ttv-lol-pro/bpaoeijjlplfjbagceilcgbkcdjbomjd?pli=1
 

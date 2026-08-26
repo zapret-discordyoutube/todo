@@ -3,7 +3,12 @@ tags:
 link:
 aliases:
 img:
+description: "Пути установки Zapret 2 GUI на Windows: папки ZapretTwo в ProgramData, ветки реестра HKCU для stable и dev, удаление через unins000.exe."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/path](https://wiki.zapret.moe/Zapret/path)
+
 # Пути установки Zapret 2 GUI
 ## Stable ветка
 - Путь установочных файлов в проводнике — `C:\ProgramData\ZapretTwo`

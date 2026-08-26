@@ -15,7 +15,11 @@ aliases:
   - Как настроить Zapret для игры
   - TCPView для игры
   - Перебор стратегий для игры
+description: "Как подобрать стратегию Zapret 2 для игры: сбор IP через TCPView, свой профиль с ipset, честный перебор стратегий и отдельный UDP-профиль с payload=all."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/find-game-strategy](https://wiki.zapret.moe/Zapret2/find-game-strategy)
 
 # 🎮 Как найти и протестировать стратегию для игры (профиль + TCPView)
 

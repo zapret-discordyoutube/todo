@@ -1,3 +1,10 @@
+---
+description: "Как ТСПУ детектирует MTProto: сигнатуры, JA3/JA4, active probing, ML — статус блокировок протоколов на 2026 и почему приватный FakeTLS работает."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/05-censorship](https://wiki.zapret.moe/Zapret/mtproto/05-censorship)
+
 # ТСПУ и обход цензуры в России
 
 ## Как ТСПУ обнаруживает MTProto

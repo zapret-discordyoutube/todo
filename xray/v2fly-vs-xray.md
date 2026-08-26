@@ -12,7 +12,11 @@ aliases:
   - Чем отличается v2ray от xray
   - v2fly/v2ray-core
 link: https://github.com/v2fly/v2ray-core
+description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core по исходникам: общий предок, эксклюзивы REALITY и XHTTP против QUIC и Hysteria2, лицензии, управление."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/v2fly-vs-xray](https://wiki.zapret.moe/xray/v2fly-vs-xray)
 
 # ⚔️ v2fly/v2ray-core против XTLS/Xray-core: чем отличаются два ядра
 

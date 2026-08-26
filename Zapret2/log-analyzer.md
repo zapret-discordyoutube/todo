@@ -15,7 +15,11 @@ aliases:
   - Что блочится в логе
   - Какой профиль сработал
   - Почему drop в логе
+description: "Как читать debug-лог winws2 через «Анализ лога» в Zapret 2 GUI: какой профиль сработал, почему вердикт drop и как собрать IP-адреса и порты игры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/log-analyzer](https://wiki.zapret.moe/Zapret2/log-analyzer)
 
 # 🔬 Анализ лога winws2: как читать debug-лог через GUI
 

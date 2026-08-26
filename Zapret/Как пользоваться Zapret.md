@@ -1,7 +1,10 @@
 ---
 he: "3500"
+description: "Инструкция по Zapret GUI для Windows: перебор стратегий в bat-режиме и прямом запуске, вкладки YouTube и Discord, Blockcheck, починка пинга в играх."
 ---
 
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Как-пользоваться-Zapret](https://wiki.zapret.moe/Zapret/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F-Zapret)
 
 > [!danger] ВАЖНО!
 > Перед тем как начать им пользоваться, Вы должны скачать его. Подробнее о том как его скачать описано в [[download|файле]] (файл можно скачать [здесь](https://t.me/zaprethelp/3/1012))

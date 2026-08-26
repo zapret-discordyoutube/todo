@@ -13,7 +13,11 @@ aliases:
   - mtbuddy
   - Как работает MTProxy
 link: https://github.com/sleep3r/mtproto.zig
+description: "MTProxy для Telegram и mtproto.zig: как работает FakeTLS, по каким признакам его ловит ТСПУ и какие техники (TCPMSS, nfqws, mask) это обходят."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproto-zig](https://wiki.zapret.moe/mtproxy/mtproto-zig)
 
 # 🦎 MTProxy и mtproto.zig: что это, как работает и как пережить ТСПУ
 

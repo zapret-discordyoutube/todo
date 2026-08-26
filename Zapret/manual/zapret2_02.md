@@ -8,7 +8,12 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 02
+description: "TCP для пользователей zapret2 простым языком: seq/ack, окно, MSS, ретрансляции и почему multisplit и multidisorder работают по-разному."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_02](https://wiki.zapret.moe/Zapret/manual/zapret2_02)
+
 # Zapret2 для новичков — 02: TCP (seq/ack, окно, MSS) понятным языком
 
 Эта заметка объясняет те TCP‑механизмы, на которых “держится” большая часть логики zapret2.

@@ -7,7 +7,12 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 01
+description: "Сетевой стек L2–L7 простыми словами для изучения Zapret2: пакеты и payload, TCP против UDP, TTL, checksum, MSS и IP-фрагментация."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_01](https://wiki.zapret.moe/Zapret/manual/zapret2_01)
+
 # Zapret2 для новичков — 01: сетевой стек (L2–L7) простыми словами
 
 Эта заметка нужна, чтобы дальше было легко понимать код zapret2 (nfqws2/winws2) и термины вроде “raw packet”, “payload”, “TTL”, “checksum”, “MSS”.

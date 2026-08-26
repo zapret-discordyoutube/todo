@@ -9,7 +9,12 @@ tags:
 aliases:
   - Zapret2 start cutoff
   - Zapret2 n2 n3 clienthello
+description: "Почему в Zapret2 --out-range n2<n3 попадает на ClientHello, а не на ACK: счётчик n считает лишь перехваченные пакеты, wf-tcp-empty и отладка."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_start_cutoff](https://wiki.zapret.moe/Zapret/manual/zapret2_start_cutoff)
+
 # Zapret2: start/cutoff и почему `n2<n3` “вдруг” попадает на ClientHello
 
 Эта заметка — ответ на типичную ситуацию:

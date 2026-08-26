@@ -13,7 +13,11 @@ tags:
   - seqovl
 aliases:
   - multidisorder_legacy
+description: "Справочник multidisorder_legacy в Zapret2: попакетный обратный порядок TCP-сегментов, полная совместимость с nfqws1, маркеры pos, seqovl, примеры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multidisorder_legacy](https://wiki.zapret.moe/Zapret2/desync/multidisorder_legacy)
 
 # `multidisorder_legacy` --- попакетный обратный порядок TCP-сегментов (zapret2 / nfqws2)
 

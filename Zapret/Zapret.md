@@ -2,7 +2,11 @@
 tags:
   - zapret
 aliases:
+description: "Рабочий индекс раздела Zapret: ссылки на заметки, примеры стратегий winws (fake, multidisorder, fake-tls), сборки YTDisBystro и обсуждения NTC."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret](https://wiki.zapret.moe/Zapret/Zapret)
 
 ```base
 views:

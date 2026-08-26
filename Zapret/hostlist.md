@@ -5,7 +5,12 @@ link:
 aliases:
   - хостлист
 img:
+description: "Справочник фильтров по доменам в Zapret: --hostlist, --hostlist-exclude, --hostlist-domains и автоматический --hostlist-auto с порогами неудач."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/hostlist](https://wiki.zapret.moe/Zapret/hostlist)
+
 # 🌐 **[[filter|Фильтры]] по доменам (hostlist)**
 
 ### **`--hostlist`** - Включающий список доменов

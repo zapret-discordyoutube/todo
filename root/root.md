@@ -10,7 +10,11 @@ aliases:
   - Как получить рут на андроид
   - Magisk или KernelSU что выбрать
   - Рут-права обзор
+description: "Обзор раздела о root на Android: Magisk и KernelSU-форки (ReSukiSU), установка, LSPosed и зачем root для обхода DPI модулем Zapret2."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/root](https://wiki.zapret.moe/root/root)
 
 # 🔓 Root на Android — раздел
 

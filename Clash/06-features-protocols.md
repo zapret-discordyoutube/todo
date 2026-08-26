@@ -13,7 +13,11 @@ aliases:
   - Что умеет mihomo
   - mihomo features
 link: https://wiki.metacubex.one/
+description: "Что умеет ядро mihomo (Clash.Meta) в 2026: протоколы VLESS, REALITY, Hysteria2, TUIC, режим TUN, сниффер, правила GEOSITE и DNS-подсистема."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/06-features-protocols](https://wiki.zapret.moe/Clash/06-features-protocols)
 
 # 🚀 Возможности и протоколы mihomo: что ядро умеет в 2026 году
 

@@ -14,7 +14,12 @@ aliases:
   - filter-l7
   - Типы фильтров
 link: https://github.com/bol-van/zapret2/blob/master/docs/manual.md
+description: "Фильтры профиля в Zapret 2: --filter-tcp/udp, --filter-l3, --filter-l7, ipset и hostlist — как выбирается профиль для пакета и типичные комбинации."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/filter](https://wiki.zapret.moe/Zapret2/filter)
+
 # 🧯 Фильтры профиля в Zapret 2
 
 > [!info] О чём заметка

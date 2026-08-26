@@ -22,7 +22,11 @@ aliases:
   - TCP options
   - PAWS
 link: https://datatracker.ietf.org/doc/html/rfc7323
+description: "Fooling в Zapret: зачем fake-пакет должен «умереть» до сервера, как работает ts через TCP timestamps и PAWS и почему на Windows он опасен без netsh."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/ts-and-fooling](https://wiki.zapret.moe/Zapret2/ts-and-fooling)
 
 # 💀 `ts` и fooling: почему фейк должен умереть
 

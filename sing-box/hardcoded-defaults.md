@@ -9,7 +9,11 @@ aliases:
   - дефолты sing-box
   - sing-box defaults
 link: https://github.com/shtorm-7/sing-box-extended
+description: "Справочник зашитых констант sing-box-extended: почему у socks/http нет порта по умолчанию, таймауты ядра, дефолты форка и магические числа протоколов."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/hardcoded-defaults](https://wiki.zapret.moe/sing-box/hardcoded-defaults)
 
 # 🔩 Хардкод-константы и дефолты sing-box-extended
 

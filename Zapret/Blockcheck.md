@@ -3,7 +3,12 @@ tags:
 link:
 aliases:
 img:
+description: "Blockcheck — автоперебор всех стратегий Zapret, когда сайт не работает ни с одной стоковой: запуск blockcheck.cmd, час теста и куда прислать лог."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Blockcheck](https://wiki.zapret.moe/Zapret/Blockcheck)
+
 [[home|На главную]]
 ## Blocheck - автоподбор стратегий Запрета
 Полезно для тех у кого НЕ работает какой-то сайт со **ВСЕМИ** стоковыми стратегиями из Zapret GUI.

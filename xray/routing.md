@@ -14,7 +14,11 @@ aliases:
   - domainStrategy
   - Балансировщик Xray
 link: https://xtls.github.io/ru/config/routing.html
+description: "Маршрутизация Xray: правила RoutingObject, domainStrategy, geosite и geoip, балансировщики — как пустить .ru напрямую, а заблокированное через прокси."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/routing](https://wiki.zapret.moe/xray/routing)
 
 # 🧭 Маршрутизация в Xray: как трафик распределяется по outbound
 

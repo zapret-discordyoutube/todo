@@ -1,3 +1,10 @@
+---
+description: "Уровни подписки Zapret Premium и Zapret VPN: Запретик, MasterVless, MasterVless+ и VlessMAX — возможности, цены от 9 рублей и оплата через бота."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/premium](https://wiki.zapret.moe/premium/premium)
+
 # 1. Что такое Zapret Premium и Zapret VPN
 
 > [!tip] ВАЖНО!

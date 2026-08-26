@@ -2,7 +2,11 @@
 tags:
 aliases:
 img:
+description: "Bat-файл DiscordFix 5.1.7 для Zapret под Билайн, Ростелеком и Инфолинк: параметры winws.exe и варианты стратегий syndata, split2, disorder2."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/DiscordFix_5.1.7](https://wiki.zapret.moe/Zapret/DiscordFix_5.1.7)
 
 DiscordFix (для Билайн, Ростелеком, Инфолинк).bat
 ```bash

@@ -14,7 +14,11 @@ aliases:
   - Как работает U2F ключ
   - U2F и WebAuthn совместимость
 link: https://fidoalliance.org/specifications/download/
+description: "Как работает U2F-ключ: регистрация, вход, key handle, счётчик подписей, защита от фишинга и совместимость с FIDO2/WebAuthn в 2026 году."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/u2f](https://wiki.zapret.moe/FIDO/u2f)
 
 # ✌️ U2F (Universal 2nd Factor): что это, история, механика, плюсы и минусы
 

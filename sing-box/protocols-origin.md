@@ -10,7 +10,11 @@ aliases:
   - sing-box vs Xray-core
   - происхождение протоколов sing-box
 link: https://github.com/shtorm-7/sing-box-extended
+description: "Откуда в sing-box код VLESS, REALITY и Hysteria2: свои реализации wire-спецификаций или копии из Xray-core. Разбор исходников и мест дословного копирования."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/protocols-origin](https://wiki.zapret.moe/sing-box/protocols-origin)
 
 # 🧬 Откуда в sing-box код протоколов: своя реализация или копия Xray
 

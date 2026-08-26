@@ -1,3 +1,10 @@
+---
+description: "Сравнение 5 реализаций MTProto Proxy: telemt, mtg, mtprotoproxy, mtproto_proxy и mtproto.zig — маскировка, производительность, какой выбрать."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/02-implementations](https://wiki.zapret.moe/Zapret/mtproto/02-implementations)
+
 # 5 независимых реализаций MTProto Proxy
 
 Все пять проектов — **полностью разный код**, написанный с нуля на разных языках. Реализуют один и тот же протокол MTProto Proxy.

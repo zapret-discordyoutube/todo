@@ -11,7 +11,11 @@ aliases:
   - Shadow-TLS
   - Restls
 link: https://github.com/ihciah/shadow-tls
+description: "Как работает ShadowTLS и Restls: рукопожатие с чужим сайтом, отличия версий v1–v3 и почему v3 обнаружим инструментом Aparecium с мая 2025."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/shadowtls](https://wiki.zapret.moe/protocols/shadowtls)
 
 # 🎭 ShadowTLS и Restls: маскировка чужим TLS-рукопожатием
 

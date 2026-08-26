@@ -1,7 +1,11 @@
 ---
 tags:
   - zapret
+description: "Звонки в Telegram при работе zapret: ссылка на обсуждение проблемы в issue #4580 репозитория Flowseal/zapret-discord-youtube."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/telegram-calls](https://wiki.zapret.moe/Zapret/telegram-calls)
 
 ```embed
 title: "Fetching"

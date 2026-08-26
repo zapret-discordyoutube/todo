@@ -7,7 +7,11 @@ tags:
 aliases:
   - Черновики Zapret
   - ToDo раздел
+description: "Черновики раздела Zapret: незаконченные заметки Comss DNS, Dronator 4.2 и Phasmophobia — материал ещё собирается и может устареть."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/ToDo](https://wiki.zapret.moe/Zapret/ToDo/ToDo)
 
 # 📝 ToDo — черновики и задачи раздела Zapret
 

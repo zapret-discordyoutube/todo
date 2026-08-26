@@ -9,7 +9,11 @@ aliases:
   - Архитектура sing-box-extended
   - sing-box-extended internals
 link: https://github.com/shtorm-7/sing-box-extended
+description: "Устройство форка sing-box-extended изнутри: ядро box.New и registry-паттерн, свои протоколы и обёртки, лимитеры, подсистема manager + node и её слабые места."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/architecture](https://wiki.zapret.moe/sing-box/architecture)
 
 # 🏗️ Архитектура sing-box-extended: как форк устроен изнутри
 

@@ -10,7 +10,11 @@ aliases:
   - Trojan-GFW
   - Trojan-Go
 link: https://github.com/trojan-gfw/trojan
+description: "Протокол Trojan: прокси внутри настоящего TLS с fallback на реальный сайт. Как работает защита от зондирования, сравнение с VLESS и что добавил Trojan-Go."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/trojan](https://wiki.zapret.moe/protocols/trojan)
 
 # 🐴 Trojan: прокси, который притворяется обычным HTTPS-сайтом
 

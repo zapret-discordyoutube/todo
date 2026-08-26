@@ -15,7 +15,11 @@ aliases:
   - routing.help
   - Раздельная маршрутизация
 link: https://www.happ.su/main/ru
+description: "Как подключиться к VLESS+REALITY с телефона или ПК: клиент HAPP, импорт ключа, правила routing.help и раздельная маршрутизация (.ru напрямую)."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/clients-and-routing](https://wiki.zapret.moe/xray/clients-and-routing)
 
 # 📱 Клиенты и маршрутизация: как подключиться к VLESS-серверу
 

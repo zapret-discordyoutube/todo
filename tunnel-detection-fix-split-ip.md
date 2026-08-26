@@ -1,3 +1,10 @@
+---
+description: "Как скрыть входной IP VPN-сервера от шпионских модулей РФ-приложений: второй IPv4 на VPS, разделение ingress/egress в sing-box, WARP, Tor и DNS."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tunnel-detection-fix-split-ip](https://wiki.zapret.moe/tunnel-detection-fix-split-ip)
+
 # Фикс обнаружения и блокировки туннелей: разделение IP + маршрутизация sing-box
 
 **Дата:** 7 апреля 2026  

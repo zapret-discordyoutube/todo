@@ -1,3 +1,10 @@
+---
+description: "Установка MTProto-прокси mtg с FakeTLS через Docker и systemd: генерация секрета, domain fronting, Doppelganger, anti-replay и мониторинг."
+---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/04-mtg](https://wiki.zapret.moe/Zapret/mtproto/04-mtg)
+
 # MTG (Go) — установка и настройка
 
 **Репо:** https://github.com/9seconds/mtg

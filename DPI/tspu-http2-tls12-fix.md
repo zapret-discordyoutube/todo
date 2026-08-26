@@ -15,7 +15,11 @@ aliases:
   - Caddy reverse-proxy против Июньской блокировки
   - Почему TLS 1.2 проходит ТСПУ лучше TLS 1.3
 link: https://ebyebots.ru/blog/kak-spasti-svoj-sajt-ot-lozhnyh-blokirovok-tspu-rkn-2026-god/
+description: "Как вернуть сайт из-под ложной блокировки ТСПУ: reverse-proxy на Caddy с HTTP/2 Only и TLS 1.2 — почему это работает и когда не поможет."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-http2-tls12-fix](https://wiki.zapret.moe/DPI/tspu-http2-tls12-fix)
 
 # 🛠️ Как починить сайт под ложной блокировкой ТСПУ: HTTP/2 Only + TLS 1.2
 

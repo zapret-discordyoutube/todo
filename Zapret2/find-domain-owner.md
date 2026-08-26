@@ -16,7 +16,11 @@ aliases:
   - Профиль Akamai
   - ipvfoobarbaz
 link: https://github.com/ziad8727/ipvfoobarbaz
+description: "Как узнать, на каком CDN живёт сайт (Akamai, Cloudflare, Amazon), через расширение ipvfoobarbaz и ipinfo.io — и найти нужный профиль в Zapret 2."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/find-domain-owner](https://wiki.zapret.moe/Zapret2/find-domain-owner)
 
 # 🌐 Как узнать, какому CDN принадлежит домен (и какой профиль пресета за него отвечает)
 

@@ -13,7 +13,11 @@ tags:
   - hostname
 aliases:
   - hostfakesplit
+description: "Функция hostfakesplit в zapret2/nfqws2: разрез TCP-сегментов по границам hostname с фейковыми SNI, аргументы host, midhost, disorder_after, примеры."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/hostfakesplit](https://wiki.zapret.moe/Zapret2/desync/hostfakesplit)
 
 # `hostfakesplit` — TCP-сегментация с фейковым hostname (zapret2 / nfqws2)
 

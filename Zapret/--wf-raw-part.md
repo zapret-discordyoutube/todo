@@ -4,7 +4,12 @@ tags:
 link:
 aliases:
 img:
+description: "Raw-фильтры WinDivert в Zapret: --wf-raw-part и --wf-raw, отбор пакетов по портам и подсетям через диапазоны ip.DstAddr, примеры для /24 и /16."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/--wf-raw-part](https://wiki.zapret.moe/Zapret/--wf-raw-part)
+
 # Внутренние фильтры WinDivert
 В `zapret\windivert.filter\*.txt` лежат WinDivert raw-фильтры — они отбирают пакеты по L3/L4 (ip/ipv6, tcp/udp, порты, inbound/outbound) и иногда по «сигнатурам» в payload. Доменного имени в IP‑пакетах нет, поэтому напрямую “по домену” в WinDivert‑фильтре обычно не фильтруют.
 

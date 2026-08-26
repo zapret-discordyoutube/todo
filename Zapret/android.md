@@ -4,7 +4,12 @@ tags:
 link:
 aliases:
 img:
+description: "Обход блокировок YouTube и Discord на Android: Magisk-модули Zapret 2 и zaprett, ByeByeDPI без root, DNS для ChatGPT и вариант для Android TV."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/android](https://wiki.zapret.moe/Zapret/android)
+
 ![[Pasted image 20260131162140.png|900]]
 # 🤖 Дурилки трафика (DPI) для Android
 ## [[Zapret2]]

@@ -11,7 +11,11 @@ aliases:
   - Раздел Clash
   - Clash и mihomo
 link: https://wiki.metacubex.one/
+description: "Оглавление раздела о Clash и mihomo: что такое ядро, исчезновение Clash в 2023, форк mihomo, первый запуск, правила маршрутизации и клиенты."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/00-overview](https://wiki.zapret.moe/Clash/00-overview)
 
 # 🧭 Clash и mihomo — обзор и оглавление
 

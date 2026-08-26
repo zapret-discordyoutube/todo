@@ -10,7 +10,11 @@ aliases:
   - Hysteria API трафика
   - Hysteria kick пользователя
 link: https://v2.hysteria.network/docs/advanced/Traffic-Stats-API/
+description: "Traffic Stats API в Hysteria 2: включение через trafficStats, трафик по пользователям, кто онлайн и kick клиента — для тех, кто делит сервер с другими."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/traffic-stats-api](https://wiki.zapret.moe/Hysteria/traffic-stats-api)
 
 # 🦎 Hysteria 2 — Traffic Stats API
 

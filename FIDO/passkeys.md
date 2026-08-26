@@ -15,7 +15,11 @@ aliases:
   - TOTP или passkey
   - Можно ли украсть passkey
 link: https://fidoalliance.org/passkeys/
+description: "Как работают passkeys (ключи доступа) FIDO2: отличия от TOTP, синхронизация, device-bound ключи, атаки и фишинг, вход по QR-коду, восстановление."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/passkeys](https://wiki.zapret.moe/FIDO/passkeys)
 
 # 🗝️ Passkeys («ключи доступа»): беспарольный вход FIDO2
 

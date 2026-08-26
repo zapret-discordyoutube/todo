@@ -17,7 +17,11 @@ aliases:
   - telemt keepalive iOS
   - telemt gamma 5223 профиль
 link: https://assyoucandy.github.io/telemt-server-guide/
+description: "Продакшн-развёртывание telemt (Rust MTProxy) на Ubuntu: 3 инстанса, systemd, TLS-фронтинг, client_mss=tspu, UFW rate-limit и фикс зависаний iOS."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/11-telemt-server-setup](https://wiki.zapret.moe/Zapret/mtproto/11-telemt-server-setup)
 
 # 🚀 telemt — продакшн-развёртывание (3 инстанса + UFW + анти-DPI)
 

@@ -11,7 +11,11 @@ aliases:
   - Маршрутизация mihomo
   - rules Clash
   - Рецепты правил
+description: "Правила маршрутизации в Clash/mihomo: порядок rules, DIRECT/REJECT/PROXY, флаг no-resolve, rule-providers и отладка через вкладку соединений."
 ---
+
+> [!mirror] Резервное зеркало
+> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/04-rules](https://wiki.zapret.moe/Clash/04-rules)
 
 # 🧭 Правила маршрутизации: рецепты и отладка
 
