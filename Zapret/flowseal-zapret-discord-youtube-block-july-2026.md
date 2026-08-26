@@ -199,7 +199,7 @@ Flowseal лично опубликовал зеркала последних р�
 - [[discord-cdn-fix-fake-repos-june-2026|🪪 Сеть фейковых клонов Bypass Ultimate / discord-cdn-fix]] — как выглядят вредоносные «зеркала», которых сейчас станет больше
 - [[Zapret/download|Как скачать Zapret из официальных источников]]
 - [[Zapret2/Zapret2|Zapret2]] — независимая от аккаунта Flowseal сборка
-- 🔗 [Репозиторий Flowseal/zapret-discord-youtube](https://github.com/Flowseal/zapret-discord-youtube) — оригинальная страница (недоступна с 10 июля 2026, ссылка оживёт после восстановления)
+- 🔗 Репозиторий Flowseal/zapret-discord-youtube — оригинальная страница (недоступна с 10 июля 2026, ссылка оживёт после восстановления): https://github.com/Flowseal/zapret-discord-youtube
 - 🔗 [Официальный комментарий Flowseal в Telegram от 10 июля 2026](https://t.me/telemtrs/599/118313) — первоисточник цитаты «приостановили, не забанили»
 - 🔗 Теги [tg-ws-proxy](https://github.com/topics/tg-ws-proxy), [discord-fix](https://github.com/topics/discord-fix), [youtube-blocked](https://github.com/topics/youtube-blocked), [unblock-youtube](https://github.com/topics/unblock-youtube), [unblock-discord](https://github.com/topics/unblock-discord), [rkn-bypass](https://github.com/topics/rkn-bypass) и [dpi-bypass](https://github.com/topics/dpi-bypass) на GitHub — страницы тегов, по которым, по неподтверждённой версии, прошла массовая зачистка аккаунтов
 

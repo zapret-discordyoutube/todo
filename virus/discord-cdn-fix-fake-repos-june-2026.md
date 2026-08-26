@@ -131,5 +131,5 @@ github.com/StalkerLightning/telegram-lag-fix-2026
 - [[virus|👾 Каталог вирусных сборок Zapret и как их проверять]] — этот клон-сеть стоит в одном ряду с PeekBot, SkyWinFo, Cactuz и Discord NewFix
 - [[download|Как установить настоящий Zapret из официального источника]]
 - [[home|🏠 ZapretGUI — главная]] — легальный проект, к которому подделка не относится
-- 🔗 [Issue #1130 у Flowseal про вирусы под видом Zapret](https://github.com/Flowseal/zapret-discord-youtube/issues/1130) — предупреждение о фейковых репозиториях и аккаунтах
+- 🔗 Issue #1130 у Flowseal про вирусы под видом Zapret — предупреждение о фейковых репозиториях и аккаунтах: https://github.com/Flowseal/zapret-discord-youtube/issues/1130
 - 🔗 [VirusTotal](https://www.virustotal.com) и [ANY.RUN](https://any.run) — где проверить подозрительный файл самостоятельно

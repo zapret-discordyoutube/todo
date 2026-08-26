@@ -262,7 +262,7 @@ sha256sum bin/winws.exe
 - [[fixit-arcane-stealer-kaspersky-august-2026|🪤 Fixit — приманка для стилера Arcane]] — масштаб фабрики аккаунтов и приём «ссылка вместо файла»
 - [[discord-cdn-fix-fake-repos-june-2026|🪪 Сеть клонов Bypass Ultimate / discord-cdn-fix]] — что делать при заражении и как выглядят массовые подделки
 - [[Zapret/download|Как скачать Zapret из официальных источников]]
-- 🔗 [Flowseal/zapret-discord-youtube](https://github.com/Flowseal/zapret-discord-youtube) — оригинальная сборка, на базе которой сделана раздача
+- 🔗 Оригинальная сборка Flowseal/zapret-discord-youtube, на базе которой сделана раздача: https://github.com/Flowseal/zapret-discord-youtube
 - 🔗 [VirusTotal](https://www.virustotal.com) — куда отправлять распакованные файлы для проверки
 
 ---
