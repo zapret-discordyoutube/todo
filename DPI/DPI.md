@@ -35,6 +35,7 @@ description: "Раздел о DPI и ТСПУ: как устроена инсп�
 - [[DPI/tspu-whitelist-cloudflare-june-2026|Инцидент 23 июня 2026]] — не работает Discord, Twitch заблокирован: волна изменений в блокировках.
 - [[DPI/subnet-whitelist-blocking-2026|Блок подсетей Cloudflare и Amazon по белому списку]] — почему страдают целые диапазоны адресов.
 - [[DPI/google-dns-8888-block-july-2026|Инцидент 3 июля 2026: блокировка 8.8.8.8]] — DoH/DoT Google перестал отвечать, «умерли» многие VPN.
+- [[DPI/tspu-dns-nsdi-dnat-august-2026|Перехват DNS на ТСПУ (август 2026)]] — запросы к 8.8.8.8 и 1.1.1.1 заворачивают на резолверы НСДИ, ответ подменяется на NXDOMAIN.
 - [[DPI/twitch-block-2026|Блокировка Twitch в России]] — почему не грузится именно плеер и как чинить через [[Zapret2/Zapret2|Zapret]].
 - [[DPI/tspu-3xui-scmininterval-trap|Ловушка обновления 3x-ui]] — как параметр `scMinPostsIntervalMs` триггерит ТСПУ.
 - [[DPI/post-pochemu-legli-ru-sajty-iyun-2026|Почему «легли» сайты на российских хостингах]] — публицистический разбор июньской волны.
