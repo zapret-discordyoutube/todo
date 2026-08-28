@@ -14,13 +14,13 @@ tags:
 aliases:
   - Перехват DNS на ТСПУ август 2026
   - 8.8.8.8 возвращает NXDOMAIN
-  - Перехват DNS-запросов к 1.1.1.1
+  - Блокировка DNS Google и Cloudflare в России
   - Почему youtube.com не резолвится
   - 195.208.5.1 что это за адрес
   - НСДИ подменяет DNS запросы
   - Заблокировали DoH Google Cloudflare август 2026
   - whoami.akamai.net MSK-IX что это значит
-description: "Разбор наблюдений августа 2026: открытый DNS к 8.8.8.8 и 1.1.1.1 заворачивают на резолверы НСДИ. Как проверить подмену у себя и что помогает."
+description: "Как в России перехватывают DNS-запросы к 8.8.8.8 и 1.1.1.1: ТСПУ заворачивает их на резолверы НСДИ. Как проверить подмену у себя и что помогает."
 image: DPI/attachments/tspu-dns-nsdi-dnat-header.webp
 link: https://habr.com/ru/articles/1075272/
 ---
@@ -28,7 +28,7 @@ link: https://habr.com/ru/articles/1075272/
 > [!mirror] Резервное зеркало
 > Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026](https://wiki.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026)
 
-# 🎣 Перехват DNS на ТСПУ: запросы к 8.8.8.8 и 1.1.1.1 заворачивают на резолверы НСДИ (август 2026)
+# 🎣 Блокировка (перехват) DNS Google (8.8.8.8) и Cloudflare (1.1.1.1) через ТСПУ в России
 
 ![[tspu-dns-nsdi-dnat-header.webp]]
 
