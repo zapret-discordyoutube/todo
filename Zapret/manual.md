@@ -19,18 +19,18 @@ description: "Учебник Zapret 2 для новичков: сетевой с
 
 ## Учебник (для новичков)
 
-1. [[Zapret/manual/zapret2_01|Сетевой стек L2–L7 простыми словами]]
-2. [[Zapret/manual/zapret2_02|TCP: seq, ack, окно и MSS понятным языком]]
-3. [[Zapret/manual/zapret2_03|Перехват пакетов и вердикты NFQUEUE и WinDivert]]
-4. [[Zapret/manual/zapret2_04|Dissect, reconstruct и объект desync]]
-5. [[Zapret/manual/zapret2_05|Payload types, reasm, replay и маркеры]]
-6. [[Zapret/manual/zapret2_06|Lua pipeline: инстансы, аргументы и отладка]]
-7. [[Zapret/manual/zapret2_start_cutoff|Start, cutoff и счётчик перехваченных пакетов]]
+1. [Сетевой стек L2–L7 простыми словами](https://wiki.zapret.moe/Zapret/manual/zapret2_01)
+2. [TCP: seq, ack, окно и MSS понятным языком](https://wiki.zapret.moe/Zapret/manual/zapret2_02)
+3. [Перехват пакетов и вердикты NFQUEUE и WinDivert](https://wiki.zapret.moe/Zapret/manual/zapret2_03)
+4. [Dissect, reconstruct и объект desync](https://wiki.zapret.moe/Zapret/manual/zapret2_04)
+5. [Payload types, reasm, replay и маркеры](https://wiki.zapret.moe/Zapret/manual/zapret2_05)
+6. [Lua pipeline: инстансы, аргументы и отладка](https://wiki.zapret.moe/Zapret/manual/zapret2_06)
+7. [Start, cutoff и счётчик перехваченных пакетов](https://wiki.zapret.moe/Zapret/manual/zapret2_start_cutoff)
 
 ## 📚 См. также
 
-- [[Zapret2/Zapret2|Что такое Zapret 2]]
-- [[Zapret2/roadmap обучения|Полная дорожная карта обучения Zapret2]]
+- [Что такое Zapret 2](https://wiki.zapret.moe/Zapret2/Zapret2)
+- [Полная дорожная карта обучения Zapret2](https://wiki.zapret.moe/Zapret2/roadmap-%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)
 
 ---
 
