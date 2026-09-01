@@ -7,6 +7,10 @@ tags:
   - learning
 aliases:
   - Zapret2 учебник 01
+  - Сетевой стек для Zapret2
+  - Что такое L2 L3 L4 L7
+  - Пакеты TCP и UDP простыми словами
+  - MSS MTU и IP-фрагментация
 description: "Сетевой стек L2–L7 простыми словами для изучения Zapret2: пакеты и payload, TCP против UDP, TTL, checksum, MSS и IP-фрагментация."
 ---
 
@@ -104,7 +108,12 @@ IP может разбить **один IP пакет** на несколько 
 
 ## 8) Что читать дальше
 
-- `[[Zapret2 - 02 - TCP для новичков (seq/ack, окна, MSS)]]`
-- `[[Zapret2 - 03 - Перехват пакетов и вердикты (NFQUEUE/WinDivert)]]`
-- `[[Zapret2 - Roadmap обучения]]`
+- [[Zapret/manual/zapret2_02|Урок 02: TCP — seq, ack, окно и MSS]]
+- [[Zapret/manual/zapret2_03|Урок 03: перехват пакетов через NFQUEUE и WinDivert]]
+- [[Zapret2/roadmap обучения|Полная дорожная карта обучения Zapret2]]
+- [[Zapret/manual|Оглавление учебника Zapret2]]
 
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/manual/zapret2_01.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
