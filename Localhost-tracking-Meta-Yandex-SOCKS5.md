@@ -13,6 +13,7 @@ description: "Как Meta и Яндекс следят через localhost и �
 **Научная статья:** [Bridges to Self: Silent Web-to-App Tracking on Mobile via Localhost](https://localmess.github.io/assets/bridges-to-self-localmess-usenix-security-26.pdf) (USENIX Security 26)  
 **POC (Meta/Яндекс):** [github.com/localmess/localhost-abuse](https://github.com/localmess/localhost-abuse)  
 **POC (VLESS обход split tunneling):** [github.com/runetfreedom/per-app-split-bypass-poc](https://github.com/runetfreedom/per-app-split-bypass-poc)
+**Связанная заметка:** [[cloudflare-quick-tunnel|Quick Tunnel от Cloudflare]] — обратный случай: локальный порт выставляют в интернет намеренно, одной командой и без аутентификации
 
 ---
 
