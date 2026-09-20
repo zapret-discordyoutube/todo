@@ -43,7 +43,7 @@ description: "Раздел о DPI и ТСПУ: как устроена инсп�
 
 ## Диагностика: чем проверить свою сеть
 
-- [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ: шесть чекеров блокировок]] — разбор DPI Detector, dpi-checkers, rkn-block-checker, ByeByeVPN, tspu-checker и ТСПУ Probe: что каждый измеряет, где ошибается и в каком порядке их запускать.
+- [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ: семь чекеров блокировок]] — разбор DPI Detector, dpi-checkers, rkn-block-checker, cheburcheck, ByeByeVPN, tspu-checker и ТСПУ Probe: что каждый измеряет, где ошибается и в каком порядке их запускать.
 
 ## Клиентские приёмы
 
