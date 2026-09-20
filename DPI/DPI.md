@@ -41,6 +41,10 @@ description: "Раздел о DPI и ТСПУ: как устроена инсп�
 - [[DPI/tspu-3xui-scmininterval-trap|Ловушка обновления 3x-ui]] — как параметр `scMinPostsIntervalMs` триггерит ТСПУ.
 - [[DPI/post-pochemu-legli-ru-sajty-iyun-2026|Почему «легли» сайты на российских хостингах]] — публицистический разбор июньской волны.
 
+## Диагностика: чем проверить свою сеть
+
+- [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ: шесть чекеров блокировок]] — разбор DPI Detector, dpi-checkers, rkn-block-checker, ByeByeVPN, tspu-checker и ТСПУ Probe: что каждый измеряет, где ошибается и в каком порядке их запускать.
+
 ## Клиентские приёмы
 
 - [[DPI/chrome-cnsa-flag-bypass|Флаг Chrome cryptography-compliance-cnsa]] — смена TLS-почерка одним флагом браузера.

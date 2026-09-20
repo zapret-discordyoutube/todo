@@ -687,6 +687,7 @@ TLS-рукопожатие — это характерная **хореогра�
 - 🔗 **Первоисточник:** [habr.com/ru/articles/1044396](https://habr.com/ru/articles/1044396/) — Пётр Осетров (@hyperion_cs)
 - 🔗 [uTLS — refraction-networking/utls](https://github.com/refraction-networking/utls)
 - 🔗 [dpi-checkers — hyperion-cs/dpi-checkers](https://github.com/hyperion-cs/dpi-checkers)
+- 🔎 **Как это измерить:** [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ: шесть чекеров блокировок]] — в том числе проверка «сибирского» ограничения по числу одновременных рукопожатий в `dpi-ch`
 - 🔗 [xray-core — XTLS/Xray-core](https://github.com/XTLS/Xray-core)
 - 🔍 **Парная заметка:** [[dpi-analysis-pipeline|Как DPI анализирует соединение: воронка проверок (от SYN до ML)]] — общий конвейер, в который вписана эта схема
 - 🦎 **Парная заметка:** [[statistical-morphing-concept|Адаптивная мимикрия: статистический морфинг трафика]] — концепт, как *можно было бы* обойти поведенческий сигнал

@@ -144,6 +144,7 @@ LD_PRELOAD=/path/to/libcurl-impersonate.so \
 - [[DPI/browser-ja4-fingerprint-block|Блокировка по JA4-отпечатку браузера (кейс wireflow.space)]] — зачем вообще воспроизводить отпечаток: реальный случай, где Chromium резался, а `curl` проходил
 - [[DPI/dpi-analysis-pipeline|Как DPI анализирует соединение: воронка проверок]] — где в цепочке фильтрации стоит проверка отпечатка клиента
 - [[DPI/tspu-h2-h3-fingerprint-hypothesis|Гипотеза об отпечатке HTTP/2 и HTTP/3]] — второй уровень, который тоже имитирует curl-impersonate
+- [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ: шесть чекеров блокировок]] — готовые инструменты диагностики, когда ручного `curl` уже мало
 - 🔗 [curl-impersonate на GitHub](https://github.com/lwthiker/curl-impersonate) — исходники, релизы, `browsers.json`
 - 🔗 [Страница релизов](https://github.com/lwthiker/curl-impersonate/releases) — готовые бинарники и Docker-образы
 
