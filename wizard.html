@@ -72,41 +72,41 @@
     </div>
 
     <script>
-      const WIKI = 'https://publish.obsidian.md/zapret/Zapret/';
+      const WIKI = 'https://wiki.zapret.moe/';
 
       const link = (page, text) =>
-        `<a href="${WIKI + encodeURIComponent(page)}" target="_top">${text}</a>`;
+        `<a href="${WIKI + encodeURI(page.replace(/ /g, '-'))}" target="_top">${text}</a>`;
 
       const ANSWERS = {
         youtube: {
           label: '📺 YouTube',
           title: '📺 Не работает YouTube',
           html:
-            `<p>1. Установите лаунчер со страницы ${link('download', 'скачивания')} и запустите стандартную стратегию.</p>` +
-            `<p>2. Не помогло — включите оркестратор (автоперебор стратегий) или посмотрите разбор блокировки на странице ${link('youtube', 'YouTube')}.</p>` +
-            `<p>3. Всё ещё не работает — пройдите по чек-листу ${link('zapret_not_working', '«Не работает!»')}.</p>`
+            `<p>1. Установите лаунчер со страницы ${link('Zapret/download', 'скачивания')} и запустите стандартную стратегию.</p>` +
+            `<p>2. Не помогло — включите оркестратор (автоперебор стратегий) или посмотрите разбор блокировки на странице ${link('Zapret/youtube', 'YouTube')}.</p>` +
+            `<p>3. Всё ещё не работает — пройдите по чек-листу ${link('Zapret/zapret_not_working', '«Не работает!»')}.</p>`
         },
         discord: {
           label: '🎮 Discord',
           title: '🎮 Не работает Discord',
           html:
-            `<p>1. Установите лаунчер со страницы ${link('download', 'скачивания')}.</p>` +
-            `<p>2. Голос не подключается или не грузятся картинки — смотрите страницу ${link('discord', 'Discord')} и ${link('ipset-discord', 'ipset для Discord')}.</p>` +
-            `<p>3. Осталась проблема — чек-лист ${link('zapret_not_working', '«Не работает!»')}.</p>`
+            `<p>1. Установите лаунчер со страницы ${link('Zapret/download', 'скачивания')}.</p>` +
+            `<p>2. Голос не подключается или не грузятся картинки — смотрите страницу ${link('Zapret/discord', 'Discord')} и ${link('ipset-discord', 'ipset для Discord')}.</p>` +
+            `<p>3. Осталась проблема — чек-лист ${link('Zapret/zapret_not_working', '«Не работает!»')}.</p>`
         },
         site: {
           label: '🌐 Другой сайт',
           title: '🌐 Не открывается другой сайт (ChatGPT, Gemini, Notion…)',
           html:
-            `<p>1. Такие сайты чаще всего разблокируются через файл ${link('hosts', 'hosts')} — в лаунчере это делается в пару кликов.</p>` +
-            `<p>2. Для игр и нестандартных приложений соберите свои адреса: ${link('Создание своей категории', 'создание своей категории')}.</p>`
+            `<p>1. Такие сайты чаще всего разблокируются через файл ${link('Zapret/hosts', 'hosts')} — в лаунчере это делается в пару кликов.</p>` +
+            `<p>2. Для игр и нестандартных приложений соберите свои адреса: ${link('Zapret/Создание своей категории', 'создание своей категории')}.</p>`
         },
         nothing: {
           label: '⛔ Вообще всё',
           title: '⛔ Не работает вообще ничего',
           html:
-            `<p>1. Пройдите чек-лист ${link('zapret_not_working', '«Не работает!»')} — там разобраны конфликты с антивирусами и VPN.</p>` +
-            `<p>2. Запустите ${link('Blockcheck', 'блокчек')}, чтобы подобрать рабочую стратегию под вашего провайдера.</p>` +
+            `<p>1. Пройдите чек-лист ${link('Zapret/zapret_not_working', '«Не работает!»')} — там разобраны конфликты с антивирусами и VPN.</p>` +
+            `<p>2. Запустите ${link('Zapret/Blockcheck', 'блокчек')}, чтобы подобрать рабочую стратегию под вашего провайдера.</p>` +
             `<p>3. Ничего не помогло — задайте вопрос: <a href="https://git.zapret.moe/zapretdiscordyoutube/zapret/issues/new" target="_blank">Forgejo Issues</a>, <a href="https://t.me/youtubenotwork" target="_blank">Telegram</a> или <a href="https://discord.gg/kkcBDG2uws" target="_blank">Discord</a>.</p>`
         }
       };
