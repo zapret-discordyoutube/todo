@@ -86,11 +86,6 @@ description: "Zapret 2 (Запрет GUI) — бесплатный обход б
 > [!IMPORTANT]  
 > Есть вопросы? Задай их здесь: https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new или же в группе https://telegram.me/youtubenotwork или https://discord.gg/kkcBDG2uws
 
-> [!CAUTION]  
-> Совсем никак не работает Запрет?
-> 
-> Попробуйте наш новый VPN с безлимитной скоростью: https://telegram.me/zapretvpns_bot
-
 ### 🤖 Вики дружит с ИИ
 
 Все статьи открыты — их можно скармливать ИИ-ассистентам и обучать на них модели:
