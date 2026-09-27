@@ -154,7 +154,7 @@ Hostlist в Zapret [[Zapret/hostlist|сам применяется к поддо
 - [[find-game-strategy|Стратегия для игры]] — тот же подход для игр, где браузерной панели нет
 - [[Zapret/hostlist|hostlist]] · [[Zapret/ipset|ipset]] — списки доменов и IP-адресов профиля
 - [[verify-strategy|Как проверить, заработала ли стратегия]] — ловушки F5 и автоподбора
-- [[profile-independence|Один сайт — один профиль]] — почему домен должен попасть ровно в один подходящий профиль
+- [[profile-independence|Одно соединение — один профиль]] — почему домен должен попасть ровно в один подходящий профиль
 - [[Zapret2|Zapret 2: обзор раздела]] — карта всех заметок о настройке
 - 🔗 [Документация Chrome DevTools о вкладке Network](https://developer.chrome.com/docs/devtools/network/reference) — все колонки, фильтры и статусы (на английском)
 
