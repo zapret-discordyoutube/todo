@@ -1081,6 +1081,26 @@ seqovl-область заполнена данными, похожими на �
 
 Каждый сегмент отправляется 2 раза (бинарные повторы).
 
+### 16. Вариант из каталога GUI: fake + multidisorder с badseq
+
+В наборах стратегий [[guide|Zapret 2 GUI]] встречается такая связка (в черновике каталога она подписана как «original bol-van v2 (badsum)», хотя `badsum` в ней нет: используется `tcp_ack=-66000`, то есть badseq):
+
+```bash
+--payload=tls_client_hello --out-range=-d10 \
+  --lua-desync=fake:blob=fake_default_tls:repeats=6:tcp_ack=-66000 \
+  --lua-desync=multidisorder:pos=1,midsld:tcp_ack=-66000
+```
+
+Сначала шесть фейковых ClientHello со сдвинутым номером подтверждения ([[fake]]), затем настоящий ClientHello режется на три части по первому байту и середине домена второго уровня и уходит в обратном порядке.
+
+> [!warning] Fooling здесь попадает и на настоящие сегменты
+> У `multidisorder` fooling применяется ко всем отправляемым сегментам (нюанс 9). `tcp_ack=-66000` на настоящих частях ClientHello рассчитан на то, что сервер их отбросит, — а тогда до сервера не дойдут и сами данные. На практике Linux-серверы надёжно отбрасывают пакеты с неверным ACK только при `tcp_ts_up` (см. раздел про fooling выше), поэтому поведение такой стратегии зависит от сервера. Похожая связка с `tcp_ts_up` есть в «Примере 1» заметки [[preset]]. Прежде чем полагаться на этот вариант, проверьте его новым соединением по [[verify-strategy]]; более предсказуемый вариант — fooling только на `fake`, как в примерах 12 и 13.
+
 ---
 
 > **Источники:** `lua/zapret-antidpi.lua:546-629`, `lua/zapret-lib.lua`, `docs/manual.md:4067-4097`, `docs/readme.md` из репозитория zapret2.
+
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/desync/multidisorder.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

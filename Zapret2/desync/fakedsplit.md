@@ -1102,6 +1102,26 @@ Window size manipulation + SYN data + fakedsplit с seqovl. Многоуровн
 
 Разрез перед hostname в HTTP Host header. Ни один сегмент не содержит полный `Host: blocked.example.com`.
 
+### 17. Вариант из каталога GUI: fake + fakedsplit для порта 80
+
+В наборах стратегий [[guide|Zapret 2 GUI]] для HTTP встречается связка из фейкового запроса и `fakedsplit` с одинаковым fooling:
+
+```bash
+--payload=http_req --out-range=-d10 \
+  --lua-desync=fake:blob=fake_default_http:ip_autottl=2,3-20:ip6_autottl=2,3-20:tcp_ack=-66000:tcp_ts_up \
+  --lua-desync=fakedsplit:ip_autottl=2,3-20:ip6_autottl=2,3-20:tcp_ack=-66000:tcp_ts_up
+```
+
+Сначала уходит фейковый HTTP-запрос ([[fake]]), затем настоящий режется по позиции по умолчанию (`pos=2`, после второго байта) с фейками вокруг частей. У `fakedsplit` fooling применяется только к фейкам (см. таблицу «Отличия от других функций сегментации»), поэтому настоящие части доходят до сервера без изменений.
+
+> [!note] Положительный autottl не убивает фейки
+> `ip_autottl=2,3-20` означает «TTL на два хопа **больше** оценённого пути, но в пределах 3–20». С положительной дельтой фейк доходит до сервера, а не умирает по дороге, как при `ip_autottl=-2`. Отбрасывает его сервер уже по `tcp_ack=-66000` вместе с `tcp_ts_up`. Такая настройка гарантирует, что фейк увидят все узлы DPI на пути, но вся надежда на badseq; если сервер фейк не отбросит, он получит мусор. Механика autottl — в [[основные флаги]], зачем фейк должен «умереть» — в [[ts-and-fooling]].
+
 ---
 
 > **Источники:** `lua/zapret-antidpi.lua:803-906`, `lua/zapret-lib.lua:385-422`, `docs/manual.md:4122-4164` из репозитория zapret2.
+
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/desync/fakedsplit.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

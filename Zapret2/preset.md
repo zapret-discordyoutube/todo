@@ -5,7 +5,6 @@ link:
 aliases:
   - пресет
   - конфиги
-img:
 description: "Пресеты (конфиги) в Zapret2 GUI: как устроен txt-файл с флагами winws2, блобы, профили для YouTube и Discord и полные примеры, включая Gaming."
 ---
 
@@ -711,3 +710,77 @@ description: "Пресеты (конфиги) в Zapret2 GUI: как устро�
 --payload=all
 --lua-desync=fake:blob=quic_google:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:payload=all:repeats=10
 ```
+
+## Тот же пресет в виде .bat-файла
+
+Пресет — это те же самые флаги `winws2.exe`, только записанные в текстовый файл по одному на строку. Поэтому любой пресет можно превратить в обычный `.bat`-файл и запускать `winws2.exe` напрямую, без GUI, и наоборот: готовую командную строку из `.bat` можно разложить по строкам и загрузить в GUI как пресет. Меняется только обвязка, логика [[profile|профилей]] остаётся прежней.
+
+В `.bat` появляется несколько элементов, которых нет в `.txt`-пресете:
+
+- `start "zapret: http,https,quic" /min` запускает `winws2.exe` в отдельном свёрнутом окне с заголовком из кавычек;
+- `%~dp0` — папка, в которой лежит сам `.bat`. Через неё записываются пути к Lua-скриптам, блобам и спискам, чтобы файл работал из любого места;
+- `^` в конце строки переносит команду на следующую строку. Вся команда для Windows остаётся одной строкой, перенос нужен только для читаемости;
+- `@` перед путём в `--lua-init=@"…"` и `--blob=имя:@"…"` означает «прочитать содержимое из файла», а не использовать строку как есть.
+
+Ниже пример такого запуска с шестью профилями, разделёнными `--new`. Сначала идёт общая часть: [[wf|--wf-tcp-out и --wf-raw-part]] решают, какой трафик WinDivert вообще передаст в программу, `--lua-init` подключает библиотеки стратегий и перенастраивает [[blob|блоб]] `fake_default_tls` (`tls_mod` со случайными данными и случайным SNI), `--blob` загружает QUIC-фейк из файла. Затем каждый профиль выбирает свой трафик [[filter|фильтрами]] `--filter-tcp`/`--filter-udp`/`--filter-l7` и хостлистом, ограничивает момент срабатывания через [[payload|--payload]] и [[out-range|--out-range]] и задаёт технику через [[desync|--lua-desync]].
+
+```bash
+start "zapret: http,https,quic" /min "%~dp0winws2.exe" ^
+--wf-tcp-out=80,443 ^
+--lua-init=@"%~dp0lua\zapret-lib.lua" --lua-init=@"%~dp0lua\zapret-antidpi.lua" ^
+--lua-init="fake_default_tls = tls_mod(fake_default_tls,'rnd,rndsni')" ^
+--blob=quic_google:@"%~dp0files\quic_initial_www_google_com.bin" ^
+--wf-raw-part=@"%~dp0windivert.filter\windivert_part.discord_media.txt" ^
+--wf-raw-part=@"%~dp0windivert.filter\windivert_part.stun.txt" ^
+--wf-raw-part=@"%~dp0windivert.filter\windivert_part.wireguard.txt" ^
+--wf-raw-part=@"%~dp0windivert.filter\windivert_part.quic_initial_ietf.txt" ^
+--filter-tcp=80 --filter-l7=http ^
+  --out-range=-d10 ^
+  --payload=http_req ^
+   --lua-desync=fake:blob=fake_default_http:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:tcp_md5 ^
+   --lua-desync=fakedsplit:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:tcp_md5 ^
+  --new ^
+--filter-tcp=443 --filter-l7=tls --hostlist="%~dp0files\list-youtube.txt" ^
+  --out-range=-d10 ^
+  --payload=tls_client_hello ^
+   --lua-desync=fake:blob=fake_default_tls:tcp_md5:repeats=11:tls_mod=rnd,dupsid,sni=www.google.com ^
+   --lua-desync=multidisorder:pos=1,midsld ^
+  --new ^
+--filter-tcp=443 --filter-l7=tls ^
+  --out-range=-d10 ^
+  --payload=tls_client_hello ^
+   --lua-desync=fake:blob=fake_default_tls:tcp_md5:tcp_seq=-10000:repeats=6 ^
+   --lua-desync=multidisorder:pos=midsld ^
+  --new ^
+--filter-udp=443 --filter-l7=quic --hostlist="%~dp0files\list-youtube.txt" ^
+  --out-range=-d10 ^
+  --payload=quic_initial ^
+   --lua-desync=fake:blob=quic_google:repeats=11 ^
+  --new ^
+--filter-udp=443 --filter-l7=quic ^
+  --out-range=-d10 ^
+  --payload=quic_initial ^
+   --lua-desync=fake:blob=fake_default_quic:repeats=11 ^
+  --new ^
+--filter-l7=wireguard,stun,discord ^
+  --out-range=-d10 ^
+  --payload=wireguard_initiation,wireguard_cookie,stun,discord_ip_discovery ^
+   --lua-desync=fake:blob=0x00000000000000000000000000000000:repeats=2
+```
+
+Что делает каждый профиль, по порядку:
+
+1. **HTTP на порту 80.** Перед запросом отправляется фейковый HTTP-запрос ([[fake]]), затем настоящий режется с подмешиванием фейков ([[fakedsplit]]). Фейки «умирают» до сервера за счёт `ip_autottl=-2` (TTL на два хопа меньше пути) и `tcp_md5`, см. [[основные флаги]].
+2. **TLS для YouTube по хостлисту.** 11 фейковых ClientHello с подменённым SNI `www.google.com`, затем настоящий ClientHello режется на три части и отправляется в обратном порядке ([[multidisorder]]).
+3. **TLS для всего остального.** Шесть фейков с `tcp_md5` и сдвинутым номером последовательности и разрез по середине домена второго уровня. Профиль стоит после YouTube, поэтому ловит всё, что не попало в хостлист: выигрывает первый подходящий профиль, см. [[profile-independence]].
+4. **QUIC для YouTube.** 11 фейковых QUIC Initial из заранее записанного пакета к `www.google.com`.
+5. **QUIC для остальных сайтов.** То же со встроенным блобом `fake_default_quic`.
+6. **WireGuard, STUN и Discord.** Два пакета из нулей перед первым пакетом этих протоколов. Порты не указаны, потому что такой трафик распознаётся по содержимому, а до программы его доводят `--wf-raw-part`-фильтры из общей части.
+
+> [!warning] Устаревшее имя payload в старых копиях примера
+> В ранних копиях этого примера в последнем профиле стояло `--payload=…,stun_binding_req,…`. Такой тип был в первых версиях `nfqws2`, но в v0.4 его убрали и заменили общим `stun` (запись «remove stun_binding_req, replace to stun» в `docs/changes.txt` репозитория zapret2). Текущие версии на неизвестное имя в `--payload` отвечают `Invalid payload filter` и завершаются сразу при запуске, поэтому в примере выше уже стоит `stun`. Список допустимых типов — в [[payload]].
+
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/preset.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
