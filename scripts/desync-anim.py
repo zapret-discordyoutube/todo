@@ -1,525 +1,497 @@
 #!/usr/bin/env python3
-"""Генератор анимированных SVG-схем техник дурения DPI (Zapret2/desync/attachments/desync-anim-*.svg).
+"""Анимированные схемы техник дурения DPI: карта потока «время × seq».
 
-Сцена как в заставке главной wiki.zapret.moe: «ваш ПК → ТСПУ → сервер».
-Пакеты едут слева направо в порядке отправки; на ТСПУ появляется то, что
-увидел DPI, на сервере — то, что он собрал. Анимация — CSS внутри SVG
-(transform/opacity), один цикл на все элементы, работает в <img>.
+Запуск: python3 scripts/desync-anim.py [папка] [техника ...] — по умолчанию все
+техники в Zapret2/desync/attachments/desync-anim-*.svg.
+
+Строка — пакет в порядке отправки, подписанный как в статьях
+(`#1 FAKE1 seq=0 len=14`). По горизонтали — место пакета в TCP-потоке,
+в ячейках — его байты (фейковые, как в статьях, — X). Под картой —
+буфер сервера в тех же колонках: принятые куски встают на свои места.
+
+Цвета и шрифты — переменные темы Quartz (--dark, --secondary, --codeFont…):
+на wiki.zapret.moe SVG встраивается в страницу и следует теме сайта, а в
+<img> (Obsidian, зеркало, Forgejo) срабатывают запасные значения по
+prefers-color-scheme. Все селекторы и keyframes — под корневым классом.
 """
 import html
 import sys
 from pathlib import Path
 
-W, H = 960, 672
-LANE_Y = 292
-PC = (30, 150)          # x-границы блока «ваш ПК»
-SRV = (810, 930)        # x-границы блока «сервер»
-GATE_X = 480
-TRAVEL = 2.2            # примерное время пути от ПК до сервера
-SPEED = 250.0           # px/с — скорость всех пакетов
-GAP = 0.85              # пауза между отправками
-FS_PK = 21              # кегль подписи пакета
-CH = 0.62               # ширина моноширинного символа в em
-
-C = {
-    "bg": "#0b1020", "line": "#1f2a48", "ink": "#e8edff", "dim": "#8d99bd",
-    "mut": "#7d8bb0", "red": "#ff3b5c", "grn": "#37e39a", "amb": "#ffb020",
-    "cy": "#4fd1ff", "vio": "#9b7bff", "pink": "#ff6fa3", "pk": "#0e1630",
-}
-PART_COL = {1: C["cy"], 2: C["vio"], 3: C["amb"], 4: C["pink"]}
-CIRC = {1: "①", 2: "②", 3: "③", 4: "④"}
+W = 960
+CW = 22            # ширина ячейки по умолчанию (spec["cw"] переопределяет)
+CH = 26            # высота ячейки
+ROW = 36           # шаг строк
+LBL_X = 0          # колонка подписи пакета
+SRV_X = 826        # колонка сервера (x левого края)
+MAP_X = 240        # левый край карты потока
+STEP = 1.05        # секунд между пакетами
 
 
 def esc(s):
-    return html.escape(s, quote=True)
+    return html.escape(str(s), quote=True)
 
 
-def tw(text, fs):
-    return len(text) * fs * CH
-
-
-class Svg:
+class Diagram:
     def __init__(self, spec):
         self.s = spec
+        self.id = "dsa-" + spec["name"].replace("_", "-")
         self.css = []
         self.body = []
         self.n = 0
-        self.T = 1.0
 
-    # ── анимации ────────────────────────────────────────────────────
-    def kf(self, frames, cls="a"):
-        """frames: [(t, {'o':op, 'x':px, 'y':px})]; возвращает атрибуты."""
+    # ── анимация ────────────────────────────────────────────────────
+    def anim(self, frames):
+        """frames: [(t, css-декларации)] → имя класса элемента."""
         self.n += 1
-        name = f"k{self.n}"
+        cls = f"{self.id}-e{self.n}"
+        name = f"{self.id}-k{self.n}"
         pts = {}
-        for t, st in frames:
+        for t, decl in frames:
             t = max(0.0, min(self.T, t))
-            pts[round(t / self.T * 100, 3)] = st
+            pts[round(t / self.T * 100, 3)] = decl
         if 0 not in pts:
-            first = pts[min(pts)]
-            pts[0] = dict(first)
+            pts[0] = pts[min(pts)]
         if 100 not in pts:
-            pts[100] = dict(pts[max(pts)])
-        rules = []
-        for p in sorted(pts):
-            st = pts[p]
-            decl = []
-            if "o" in st:
-                decl.append(f"opacity:{st['o']}")
-            if "x" in st:
-                decl.append(f"transform:translate({st['x']:.1f}px,{st.get('y', 0):.1f}px)")
-            rules.append(f"{p}%{{{';'.join(decl)}}}")
-        self.css.append(f"@keyframes {name}{{{''.join(rules)}}}")
-        return f'class="{cls}" style="animation-name:{name}"'
+            pts[100] = pts[max(pts)]
+        body = "".join(f"{p}%{{{pts[p]}}}" for p in sorted(pts))
+        self.css.append(f"@keyframes {name}{{{body}}}")
+        self.css.append(f".{self.id} .{cls}{{animation-name:{name}}}")
+        return f"a {cls}"
 
-    def show_at(self, t, cls="a fin"):
-        """Появиться в t и держаться до конца цикла."""
-        return self.kf([(0, {"o": 0}), (t, {"o": 0}), (t + 0.3, {"o": 1}),
-                        (self.T - 0.7, {"o": 1}), (self.T - 0.25, {"o": 0})], cls)
+    def appear(self, t, extra_end=None, dx=0):
+        """Появление в t (с лёгким сдвигом по x), держится до конца цикла."""
+        hid = "opacity:0" + (f";transform:translateX({dx}px)" if dx else "")
+        shown = "opacity:1" + (";transform:translateX(0px)" if dx else "")
+        fr = [(0, hid), (t, hid), (t + 0.35, shown)]
+        if extra_end:
+            fr += extra_end
+        fr += [(self.T - 0.55, fr[-1][1]), (self.T - 0.15, hid)]
+        return self.anim(fr)
 
-    def pulses(self, times, peak=0.95, cls="a pk"):
-        fr = [(0, {"o": 0})]
-        for t in sorted(times):
-            fr += [(t - 0.06, {"o": 0}), (t + 0.06, {"o": peak}), (t + 0.5, {"o": 0})]
-        return self.kf(fr, cls)
-
-    # ── рисование ───────────────────────────────────────────────────
-    def add(self, s):
-        self.body.append(s)
-
-    def label(self, spans, x, y, fs, anchor="middle"):
-        out = [f'<text x="{x:.1f}" y="{y:.1f}" font-size="{fs}" text-anchor="{anchor}" class="mono">']
-        for text, col in spans:
-            fill = f' fill="{col}"' if col else ""
-            out.append(f"<tspan{fill}>{esc(text)}</tspan>")
-        out.append("</text>")
-        return "".join(out)
-
-    def box(self, w, h, kind, col, dash=False):
-        stroke = C["mut"] if kind == "fake" else col
-        d = ' stroke-dasharray="7 6"' if dash or kind == "fake" else ""
-        fill = "#161a2a" if kind == "fake" else C["pk"]
-        return (f'<rect x="{-w / 2:.1f}" y="{-h / 2:.1f}" width="{w:.1f}" height="{h}" rx="11" '
-                f'fill="{fill}" stroke="{stroke}" stroke-width="2.4"{d}/>')
+    # ── геометрия ───────────────────────────────────────────────────
+    def cx(self, pos):
+        return self.MX + pos * self.cw
 
     def build(self):
         s = self.s
-        ev = s["events"]
-        # ширина и путь каждого пакета; скорость у всех одна, иначе широкий догонит узкий
-        for e in ev:
-            e.setdefault("kind", "real")
-            text = "".join(x for x, _ in e["label"])
-            e["w"] = max(tw(text, FS_PK) + 30, 70)
-            if e.get("dir") == "back":
-                e["x0"] = SRV[0] - e["w"] / 2 - 8
-                e["x1"] = PC[1] + e["w"] / 2 + 8
-            else:
-                e["x0"] = PC[1] + e["w"] / 2 + 8
-                e["x1"] = SRV[0] - e["w"] / 2 - 8
-            e["tr"] = abs(e["x1"] - e["x0"]) / SPEED
-        # расписание: следующий стартует, когда предыдущий освободил место
-        t = 0.6
-        for i, e in enumerate(ev):
-            e["t0"] = t + e.get("delay", 0)
-            nxt = ev[i + 1]["w"] if i + 1 < len(ev) else 0
-            t = e["t0"] + max(e.get("gap", GAP), (nxt + 36) / SPEED)
-        gate_times, fake_hits = [], []
-        for e in ev:
-            e["tg"] = e["t0"] + abs(GATE_X - e["x0"]) / SPEED
-            e["ta"] = e["t0"] + e["tr"]
-            if e["kind"] != "dropped" and e.get("dir") != "back" and not e.get("nodpi"):
-                gate_times.append(e["tg"])
-            if e["kind"] == "fake":
-                fake_hits.append(e["ta"])
-        last = max(e["t0"] + (1.6 if e["kind"] == "dropped" else e["tr"]) for e in ev)
-        self.T = round(last + s.get("hold", 3.6), 2)
-        self.gate_times = gate_times
-        self.fake_hits = fake_hits
-        self.dpi_done = max(gate_times) + 0.35
-        self.srv_done = max(e["ta"] for e in ev if e["kind"] != "dropped") + 0.35
+        rows = s["rows"]
+        tape = s["tape"]
+        self.N = len(tape)
+        self.cw = s.get("cw", CW)
+        self.neg = s.get("neg", 0)                   # ячеек левее seq=0 (seqovl)
+        self.MX = MAP_X + self.neg * self.cw         # x колонки seq=0
+        self.BN = s.get("buf_len", self.N)           # длина буфера сервера
+        span = (self.N + self.neg) * self.cw
+        assert MAP_X + span <= SRV_X - 12, (s["name"], MAP_X + span)
+        for i, r in enumerate(rows):
+            r["t"] = 0.5 + i * STEP
+        last = rows[-1]["t"]
+        self.t_done = last + 0.9
+        self.T = round(last + s.get("hold", 4.8), 2)
 
-        self.scene()
-        self.payload_bar()
-        self.panels()
-        for e in ev:
-            self.packet(e)
+        y = 0
+        y = self.header(y)
+        y0 = y
+        for i, r in enumerate(rows):
+            self.row(r, y0 + i * ROW)
+        y = y0 + len(rows) * ROW
+        # разрезы — пунктир через все строки
+        for pos, lab in s.get("cuts", []):
+            x = self.cx(pos)
+            self.add(f'<line class="{self.id}-cut" x1="{x}" y1="{y0 - 30}" x2="{x}" y2="{y + 8}"/>')
+        if self.neg:
+            x = self.cx(0)
+            self.add(f'<line class="{self.id}-win" x1="{x}" y1="{y0 - 30}" x2="{x}" y2="{y + 52}"/>')
+        y = self.buffer(y + 16)
+        y = self.notes(y + 6)
+        self.H = y + 6
         return self.render()
 
-    def scene(self):
-        s = self.s
-        a = self.add
-        a(f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="26" fill="{C["bg"]}" stroke="{C["line"]}" stroke-width="2"/>')
-        a(f'<text x="36" y="58" class="mono" font-size="30" font-weight="700" fill="{C["cy"]}">{esc(s["name"])}</text>')
-        a(f'<text x="{36 + tw(s["name"], 30) + 18:.0f}" y="57" class="sans" font-size="19" fill="{C["dim"]}">{esc(s["subtitle"])}</text>')
-        a(f'<text x="36" y="90" class="mono" font-size="15" fill="{C["mut"]}">{esc(s["cmd"])}</text>')
-        # дорожка
-        a(f'<line x1="{PC[1]}" y1="{LANE_Y}" x2="{SRV[0]}" y2="{LANE_Y}" stroke="rgba(151,166,201,.4)" stroke-width="2" stroke-dasharray="6 10"/>')
-        for (x0, x1), lab, sub in ((PC, "ваш ПК", "Zapret 2"), (SRV, "сервер", s.get("server", "youtube.com"))):
-            cx = (x0 + x1) / 2
-            a(f'<rect x="{x0}" y="{LANE_Y - 44}" width="{x1 - x0}" height="88" rx="16" fill="#111a33" stroke="#2d3b66" stroke-width="2"/>')
-            a(f'<text x="{cx}" y="{LANE_Y - 4}" class="sans" font-size="20" font-weight="700" fill="{C["ink"]}" text-anchor="middle">{lab}</text>')
-            a(f'<text x="{cx}" y="{LANE_Y + 24}" class="mono" font-size="14" fill="{C["dim"]}" text-anchor="middle">{esc(sub)}</text>')
-        # ТСПУ
-        gy0, gy1 = LANE_Y - 66, LANE_Y + 66
-        a(f'<text x="{GATE_X}" y="{gy0 - 12}" class="sans" font-size="21" font-weight="800" letter-spacing="2" fill="{C["red"]}" text-anchor="middle">ТСПУ</text>')
-        a(f'<rect x="{GATE_X - 14}" y="{gy0}" width="28" height="{gy1 - gy0}" rx="8" fill="rgba(255,59,92,.14)" stroke="{C["red"]}" stroke-width="2"/>')
-        a(f'<g {self.pulses(self.gate_times)}><rect x="{GATE_X - 14}" y="{gy0}" width="28" height="{gy1 - gy0}" rx="8" fill="rgba(255,176,32,.55)" stroke="{C["amb"]}" stroke-width="5"/></g>')
-        # сервер отбрасывает фейк
-        if self.fake_hits and s.get("fake_flash", True):
-            cx = (SRV[0] + SRV[1]) / 2
-            a(f'<g {self.pulses(self.fake_hits)}><rect x="{SRV[0]}" y="{LANE_Y - 44}" width="{SRV[1] - SRV[0]}" height="88" rx="16" fill="rgba(255,59,92,.18)" stroke="{C["red"]}" stroke-width="4"/>'
-              f'<text x="{cx}" y="{LANE_Y - 56}" class="sans" font-size="18" font-weight="700" fill="{C["red"]}" text-anchor="middle">✕ фейк</text></g>')
-        # легенда
-        leg = s.get("legend")
-        if leg:
-            a(f'<text x="36" y="{LANE_Y + 92}" class="sans" font-size="15" fill="{C["dim"]}">{esc(leg)}</text>')
+    def add(self, s):
+        self.body.append(s)
 
-    def payload_bar(self):
-        s = self.s
+    def header(self, y):
+        s, i = self.s, self.id
         a = self.add
-        parts = s["parts"]
-        y, h = 118, 40
-        a(f'<text x="36" y="{y + 26}" class="sans" font-size="16" fill="{C["dim"]}">{esc(s.get("bar_title", "что отправляет браузер:"))}</text>')
-        x = 36 + len(s.get("bar_title", "что отправляет браузер:")) * 16 * 0.6 + 14
-        avail = W - 36 - x
-        ws = [tw(p["text"], 17) + 26 for p in parts]
-        k = min(1.0, avail / sum(ws))
-        for p, w in zip(parts, ws):
-            w *= k
-            col = PART_COL.get(p.get("n"), C["dim"])
-            a(f'<rect x="{x:.1f}" y="{y}" width="{w:.1f}" height="{h}" rx="6" fill="{col}" fill-opacity=".13" stroke="{col}" stroke-width="1.6"/>')
-            a(self.label([(p["text"], C["ink"])], x + w / 2, y + 26, 17))
-            x += w
-            if p.get("cut"):
-                a(f'<line x1="{x:.1f}" y1="{y - 8}" x2="{x:.1f}" y2="{y + h + 8}" stroke="{C["red"]}" stroke-width="2.4" stroke-dasharray="4 3"/>')
-                a(f'<text x="{x:.1f}" y="{y + h + 22}" class="mono" font-size="13" fill="{C["red"]}" text-anchor="middle">{esc(p["cut"])}</text>')
-            if p.get("pkt_edge"):
-                a(f'<line x1="{x:.1f}" y1="{y - 4}" x2="{x:.1f}" y2="{y + h + 4}" stroke="{C["ink"]}" stroke-width="3"/>')
+        a(f'<text class="{i}-cap" x="{LBL_X}" y="{y + 14}">пакет в порядке отправки</text>')
+        a(f'<text class="{i}-cap" x="{self.cx(0)}" y="{y + 14}">место в потоке (seq) →</text>')
+        a(f'<text class="{i}-cap" x="{SRV_X}" y="{y + 14}">сервер</text>')
+        # линейка: подписи позиций и скобка над именем сайта
+        ry = y + 44
+        a(f'<line class="{i}-rule" x1="{self.cx(-self.neg)}" y1="{ry}" x2="{self.cx(self.N)}" y2="{ry}"/>')
+        marks = {0: "0", self.N: str(s.get("len", self.N))}
+        if self.neg:
+            marks[-self.neg] = f"−{self.neg}"
+        for pos, lab in s.get("cuts", []) + s.get("marks", []):
+            marks[pos] = lab
+        for pos, lab in sorted(marks.items()):
+            x = self.cx(pos)
+            a(f'<line class="{i}-rule" x1="{x}" y1="{ry - 5}" x2="{x}" y2="{ry}"/>')
+            anchor = ("end" if self.neg else "start") if pos == -self.neg else ("end" if pos == self.N else "middle")
+            a(f'<text class="{i}-tick" x="{x}" y="{ry - 9}" text-anchor="{anchor}">{esc(lab)}</text>')
+        if s.get("name_span"):
+            h0, h1 = s["name_span"]
+            x0, x1 = self.cx(h0) + 2, self.cx(h1) - 2
+            a(f'<path class="{i}-brace" d="M{x0} {ry + 10}v-4H{x1}v4"/>')
+        return ry + 26
 
-    def panels(self):
-        s = self.s
+    def cells(self, pos, chars, cls, y, name=None):
+        """Кусок потока: одна рамка, внутри байты с шагом ячейки.
+        Байты имени сайта — основным цветом, служебные — приглушённо."""
+        i = self.id
+        x0 = self.cx(pos)
+        out = [f'<rect class="{i}-{cls}" x="{x0 + 1}" y="{y}" width="{len(chars) * self.cw - 2}" height="{CH}" rx="4"/>']
+        h0, h1 = name or self.s.get("name_span") or (0, 0)
+        for k, ch in enumerate(chars):
+            if cls == "fk":
+                c = "ch-fk"
+            elif h0 <= pos + k < h1 and ch not in "·X":
+                c = "ch"
+            else:
+                c = "ch-mu"
+            out.append(f'<text class="{i}-{c}" x="{self.cx(pos + k) + self.cw / 2}" y="{y + 18}">{esc(ch)}</text>')
+        return "".join(out)
+
+    def row(self, r, y):
+        i, t = self.id, r["t"]
         a = self.add
-        y0, y1 = 420, 652
-        for x0, x1, title, col in ((30, 470, "что видит ТСПУ", C["red"]), (490, 930, "что собирает сервер", C["grn"])):
-            a(f'<rect x="{x0}" y="{y0}" width="{x1 - x0}" height="{y1 - y0}" rx="18" fill="#0f1730" stroke="#243056" stroke-width="1.6"/>')
-            a(f'<text x="{x0 + 20}" y="{y0 + 32}" class="sans" font-size="18" font-weight="700" fill="{col}">{title}</text>')
-        # чипы DPI
-        x, y = 50, y0 + 52
-        for e in self.s["events"]:
-            if e["kind"] == "dropped" or e.get("dir") == "back" or e.get("nodpi"):
-                continue
-            chip = e.get("chip", e["label"])
-            text = "".join(t for t, _ in chip)
-            w = tw(text, 18) + 22
-            if x + w > 452:
-                x, y = 50, y + 50
-            kind = "fake" if (e["kind"] == "fake" and not s.get("dpi_blind")) else "real"
-            col = C["ink"] if s.get("dpi_blind") else PART_COL.get(e.get("part"), C["ink"])
-            a(f'<g {self.show_at(e["tg"])}><g transform="translate({x + w / 2:.1f},{y + 20})">{self.box(w, 40, kind, col)}{self.label(chip, 0, 7, 18)}</g></g>')
-            x += w + 10
-        vy = y + 76
-        for i, line in enumerate(s["dpi_verdict"]):
-            col = C["amb"] if i == 0 else C["ink"]
-            a(f'<g {self.show_at(self.dpi_done + 0.2 * i)}><text x="50" y="{vy + i * 27}" class="sans" font-size="18" font-weight="{700 if i == 0 else 400}" fill="{col}">{esc(line)}</text></g>')
-        # слоты сервера
-        slots = s.get("slots", [])
-        x, y = 510, y0 + 52
-        for sl in slots:
-            text = sl["text"]
-            w = tw(text, 18) + 24
-            col = PART_COL.get(sl.get("n"), C["grn"])
-            a(f'<g transform="translate({x + w / 2:.1f},{y + 20})"><rect x="{-w / 2:.1f}" y="-20" width="{w:.1f}" height="40" rx="10" fill="none" stroke="#33406a" stroke-width="1.6" stroke-dasharray="4 4"/></g>')
-            t_fill = min(e["ta"] for e in s["events"] if e.get("fills") == sl["n"])
-            a(f'<g {self.show_at(t_fill)}><g transform="translate({x + w / 2:.1f},{y + 20})">{self.box(w, 40, "real", col)}{self.label([(text, C["ink"])], 0, 7, 18)}</g></g>')
-            x += w + 8
-        ny = y + 80
-        for i, (t_key, line, col) in enumerate(self.srv_notes()):
-            a(f'<g {self.show_at(t_key)}><text x="510" y="{ny + i * 27}" class="sans" font-size="17" fill="{col}">{esc(line)}</text></g>')
-        a(f'<g {self.show_at(self.srv_done + 0.3)}><text x="510" y="{y1 - 24}" class="sans" font-size="20" font-weight="700" fill="{C["grn"]}">{esc(s["result"])}</text></g>')
+        kind = r.get("kind", "real")
+        lab = r["label"]
+        # подпись: «#1  FAKE1  seq=0  len=14» — как в таблицах статей
+        a(f'<g class="{self.appear(t)}"><text class="{i}-lbl" x="{LBL_X}" y="{y + 18}">'
+          f'<tspan class="{i}-no">{esc(r["no"])}</tspan> '
+          f'<tspan class="{i}-{"kfk" if kind == "fake" else "k"}">{esc(lab)}</tspan>'
+          f'<tspan class="{i}-meta"> {esc(r.get("meta", ""))}</tspan></text></g>')
+        if r.get("range") is not None:
+            p0 = r["range"][0]
+            chars = r.get("chars")
+            if chars is None:
+                chars = self.s["tape"][r["range"][0]:r["range"][1]] if kind != "fake" else "X" * (r["range"][1] - r["range"][0])
+            r["range"] = (p0, p0 + len(chars))
+            cls = "fk" if kind == "fake" else ("dim" if kind == "dropped" else "rl")
+            x0, x1 = self.cx(p0), self.cx(p0 + len(chars))
+            gone = r.get("rejected") or kind == "dropped"
+            dimmed = [(t + 0.9, "opacity:.55;transform:translateX(0px)")] if gone else None
+            a(f'<g class="{self.appear(t, dimmed, dx=-14)}">{self.cells(p0, chars, cls, y)}'
+              f'{self.extra_cells(r, y)}</g>')
+            if gone:
+                # отброшенный или выброшенный пакет перечёркивается
+                a(f'<line class="{i}-strike {self.anim([(0, "transform:scaleX(0)"), (t + 0.7, "transform:scaleX(0)"), (t + 1.0, "transform:scaleX(1)"), (self.T - 0.55, "transform:scaleX(1);opacity:1"), (self.T - 0.15, "transform:scaleX(1);opacity:0")])}" '
+                  f'x1="{x0 - 3}" y1="{y + CH / 2}" x2="{x1 + 3}" y2="{y + CH / 2}"/>')
+        elif r.get("arrow"):
+            a(f'<g class="{self.appear(t, dx=-14)}"><text class="{i}-arrow" x="{self.cx(0)}" y="{y + 18}">{esc(r["arrow"])}</text></g>')
+        srv = r.get("server", "")
+        if srv:
+            cls = "srv-no" if r.get("rejected") or kind == "dropped" else "srv"
+            a(f'<g class="{self.appear(t + 0.55)}"><text class="{i}-{cls}" x="{SRV_X}" y="{y + 18}">{esc(srv)}</text></g>')
 
-    def srv_notes(self):
+    def extra_cells(self, r, y):
+        """Особые ячейки внутри пакета (байт OOB, байт seqovl) — акцентом."""
         out = []
-        for n in self.s.get("srv_notes", []):
-            t_key = n.get("t")
-            if t_key == "fake":
-                t_key = min(self.fake_hits)
-            elif isinstance(t_key, int):
-                t_key = self.s["events"][t_key]["ta"]
-            out.append((t_key, n["text"], n.get("col", C["dim"])))
-        return out
+        for pos in r.get("mark", []):
+            x = self.cx(pos)
+            out.append(f'<rect class="{self.id}-mk" x="{x + 2}" y="{y + 1}" width="{self.cw - 4}" height="{CH - 2}" rx="3"/>')
+        return "".join(out)
 
-    def packet(self, e):
+    def buffer(self, y):
+        s, i = self.s, self.id
         a = self.add
-        w, h = e["w"], 46
-        col = PART_COL.get(e.get("part"), C["ink"])
-        inner = self.box(w, h, e["kind"] if e["kind"] != "dropped" else "real", col) + self.label(e["label"], 0, 7, FS_PK)
-        t0, x0, x1 = e["t0"], e["x0"], e["x1"]
-        y = LANE_Y
-        if e["kind"] == "dropped":
-            fr = [(0, {"o": 0, "x": x0, "y": y}), (t0, {"o": 0, "x": x0, "y": y}),
-                  (t0 + 0.25, {"o": 1, "x": x0, "y": y}), (t0 + 1.2, {"o": 1, "x": x0, "y": y}),
-                  (t0 + 1.5, {"o": 0, "x": x0, "y": y + 26})]
-            strike = (f'<g {self.kf([(0, {"o": 0}), (t0 + 0.55, {"o": 0}), (t0 + 0.7, {"o": 1}), (t0 + 1.5, {"o": 1}), (t0 + 1.6, {"o": 0})], "a")}>'
-                      f'<line x1="{-w / 2 - 6:.1f}" y1="-26" x2="{w / 2 + 6:.1f}" y2="26" stroke="{C["red"]}" stroke-width="5"/>'
-                      f'<text x="0" y="-34" class="sans" font-size="17" font-weight="700" fill="{C["red"]}" text-anchor="middle">{esc(e.get("drop_note", "drop"))}</text></g>')
-            a(f'<g {self.kf(fr, "a pk")}>{inner}{strike}</g>')
-            return
-        ta = e["ta"]
-        def at(t):
-            return x0 + (x1 - x0) * (t - t0) / e["tr"]
-        fr = [(0, {"o": 0, "x": x0, "y": y}), (t0, {"o": 0, "x": x0, "y": y}),
-              (t0 + 0.2, {"o": 1, "x": at(t0 + 0.2), "y": y}), (ta, {"o": 1, "x": x1, "y": y})]
-        if e["kind"] == "fake":
-            fr += [(ta + 0.35, {"o": 0, "x": x1, "y": y + 30})]
-        else:
-            fr += [(ta + 0.3, {"o": 0, "x": x1 + (12 if e.get("dir") != "back" else -12), "y": y})]
-        a(f'<g {self.kf(fr, "a pk")}>{inner}</g>')
+        a(f'<line class="{i}-sep" x1="0" y1="{y - 8}" x2="{W}" y2="{y - 8}"/>')
+        a(f'<text class="{i}-lbl" x="{LBL_X}" y="{y + 28}"><tspan class="{i}-k">буфер сервера</tspan></text>')
+        by = y + 10
+        # пустые места буфера
+        a(f'<rect class="{i}-slot" x="{self.cx(0) + 1}" y="{by}" width="{self.BN * self.cw - 2}" height="{CH}" rx="4"/>')
+        btape = s.get("buf_tape", s["tape"])
+        bname = s.get("buf_name", s.get("name_span"))
+        for r in s["rows"]:
+            fill = r.get("fills")
+            if not fill:
+                continue
+            # fills: (от, до) по буферу или [(от, до, сдвиг_в_ячейках), …] — кусок
+            # въезжает со сдвигом и встаёт на место (так байт OOB «вынимается»)
+            parts = [fill + (0,)] if isinstance(fill, tuple) else fill
+            for f0, f1, sh in parts:
+                t = r["t"] + 0.55
+                cells = self.cells(f0, btape[f0:f1], "rl", by, name=bname)
+                if sh:
+                    d = sh * self.cw
+                    cls = self.anim([(0, f"opacity:0;transform:translateX({d}px)"), (t, f"opacity:0;transform:translateX({d}px)"),
+                                     (t + 0.35, f"opacity:1;transform:translateX({d}px)"), (t + 0.9, f"opacity:1;transform:translateX({d}px)"),
+                                     (t + 1.4, "opacity:1;transform:translateX(0px)"), (self.T - 0.55, "opacity:1;transform:translateX(0px)"),
+                                     (self.T - 0.15, "opacity:0;transform:translateX(0px)")])
+                else:
+                    cls = self.appear(t)
+                a(f'<g class="{cls}">{cells}</g>')
+        if bname:
+            h0, h1 = bname
+            a(f'<line class="{i}-uline {self.anim([(0, "transform:scaleX(0)"), (self.t_done, "transform:scaleX(0)"), (self.t_done + 0.6, "transform:scaleX(1)"), (self.T - 0.55, "transform:scaleX(1);opacity:1"), (self.T - 0.15, "transform:scaleX(1);opacity:0")])}" '
+              f'x1="{self.cx(h0) + 1}" y1="{by + CH + 5}" x2="{self.cx(h1) - 1}" y2="{by + CH + 5}"/>')
+        res = s.get("result")
+        if res:
+            a(f'<g class="{self.appear(self.t_done + 0.4)}"><text class="{i}-srv" x="{SRV_X}" y="{by + 18}">{esc(res)}</text></g>')
+        return by + CH + 14
+
+    def notes(self, y):
+        i = self.id
+        for k, (who, text) in enumerate(self.s.get("notes", [])):
+            yy = y + 18 + k * 22
+            self.add(f'<g class="{self.appear(self.t_done + 0.7 + 0.25 * k)}"><text class="{i}-note" x="{LBL_X}" y="{yy}">'
+                     f'<tspan class="{i}-who">{esc(who)}</tspan> {esc(text)}</text></g>')
+        return y + 18 + len(self.s.get("notes", [])) * 22
+
+    # ── вывод ───────────────────────────────────────────────────────
+    def style(self):
+        i = self.id
+        R = f".{i}"
+        # (переменная темы, светлый запас, тёмный запас)
+        tokens = {
+            "fg": ("--dark", "#2b2b2b", "#ebebec"),
+            "fg2": ("--darkgray", "#4e4e4e", "#d4d4d4"),
+            "mute": ("--gray", "#8a8a8a", "#8c8c8c"),
+            "line": ("--lightgray", "#e5e5e5", "#393639"),
+            "acc": ("--secondary", "#1f7fb5", "#b2e1ff"),
+            "tint": ("--highlight", "rgba(178,225,255,.28)", "rgba(178,225,255,.12)"),
+            "bg": ("--light", "#faf8f8", "#161618"),
+        }
+        light = ";".join(f"--{k}:var({v},{lt})" for k, (v, lt, dk) in tokens.items())
+        dark = ";".join(f"--{k}:var({v},{dk})" for k, (v, lt, dk) in tokens.items())
+        mono = "var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace"
+        sans = "var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif"
+        head = "var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif"
+        rules = [
+            f"{R}{{{light}}}",
+            f"@media (prefers-color-scheme:dark){{{R}{{{dark}}}}}",
+            f"{R} .{i}-bg{{fill:var(--bg)}}",
+            f"{R} text{{font-family:{mono};font-size:13.5px;fill:var(--fg2)}}",
+            f"{R} .{i}-cap{{font-family:{head};font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--mute)}}",
+            f"{R} .{i}-tick{{font-size:11px;fill:var(--mute)}}",
+            f"{R} .{i}-rule{{stroke:var(--mute);stroke-width:1}}",
+            f"{R} .{i}-brace{{fill:none;stroke:var(--acc);stroke-width:1.3}}",
+            f"{R} .{i}-cut{{stroke:var(--acc);stroke-width:1;stroke-dasharray:3 4;opacity:.55}}",
+            f"{R} .{i}-win{{stroke:var(--fg2);stroke-width:1.4}}",
+            f"{R} .{i}-sep{{stroke:var(--line);stroke-width:1}}",
+            f"{R} .{i}-no{{fill:var(--mute)}}",
+            f"{R} .{i}-k{{fill:var(--fg);font-weight:600}}",
+            f"{R} .{i}-kfk{{fill:var(--mute);font-weight:600}}",
+            f"{R} .{i}-meta{{fill:var(--mute)}}",
+            f"{R} .{i}-arrow{{font-family:{sans};font-size:14px;fill:var(--fg2)}}",
+            f"{R} .{i}-rl{{fill:var(--tint);stroke:var(--acc);stroke-width:1}}",
+            f"{R} .{i}-fk{{fill:none;stroke:var(--mute);stroke-width:1;stroke-dasharray:2 2}}",
+            f"{R} .{i}-dim{{fill:none;stroke:var(--line);stroke-width:1}}",
+            f"{R} .{i}-mk{{fill:none;stroke:var(--fg);stroke-width:1.8}}",
+            f"{R} .{i}-slot{{fill:none;stroke:var(--line);stroke-width:1;stroke-dasharray:3 3}}",
+            f"{R} .{i}-ch{{font-size:14px;fill:var(--fg);text-anchor:middle}}",
+            f"{R} .{i}-ch-fk{{font-size:14px;fill:var(--mute);text-anchor:middle}}",
+            f"{R} .{i}-ch-mu{{font-size:14px;fill:var(--mute);text-anchor:middle}}",
+            f"{R} .{i}-strike{{stroke:var(--fg2);stroke-width:1.4;transform-box:fill-box;transform-origin:left center}}",
+            f"{R} .{i}-uline{{stroke:var(--acc);stroke-width:2;transform-box:fill-box;transform-origin:left center}}",
+            f"{R} .{i}-srv{{font-family:{sans};font-size:14px;fill:var(--fg)}}",
+            f"{R} .{i}-srv-no{{font-family:{sans};font-size:14px;fill:var(--mute)}}",
+            f"{R} .{i}-note{{font-family:{sans};font-size:14.5px;fill:var(--fg2)}}",
+            f"{R} .{i}-who{{font-family:{head};font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--acc)}}",
+            f"{R} .a{{animation-duration:{self.T}s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}}",
+            f"@media (prefers-reduced-motion:reduce){{{R} .a{{animation:none}}}}",
+            # обёртка при встраивании в страницу
+            f"figure.{i}-fig{{margin:1.6rem 0;overflow-x:auto}}",
+            f"figure.{i}-fig>svg{{display:block;width:100%;min-width:680px;height:auto}}",
+        ]
+        return "".join(rules + self.css)
 
     def render(self):
-        s = self.s
-        style = (
-            ".mono{font-family:ui-monospace,'JetBrains Mono','Cascadia Code','SF Mono',Consolas,'DejaVu Sans Mono',monospace}"
-            ".sans{font-family:Onest,Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans','DejaVu Sans',sans-serif}"
-            f".a{{animation-duration:{self.T}s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both}}"
-            "@media (prefers-reduced-motion:reduce){.a{animation:none!important}.pk{display:none}}"
-        )
+        s, i = self.s, self.id
         out = [
-            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">',
-            f'<title id="t">{esc(s["title"])}</title>',
-            f'<desc id="d">{esc(s["desc"])}</desc>',
-            "<style>" + style + "".join(self.css) + "</style>",
+            f'<svg xmlns="http://www.w3.org/2000/svg" class="{i}" viewBox="0 0 {W} {self.H}" width="{W}" height="{self.H}" role="img" aria-labelledby="{i}-t {i}-d">',
+            f'<title id="{i}-t">{esc(s["title"])}</title>',
+            f'<desc id="{i}-d">{esc(s["desc"])}</desc>',
+            f"<style>{self.style()}</style>",
+            f'<rect class="{i}-bg" x="0" y="0" width="{W}" height="{self.H}"/>',
         ]
         out += self.body
         out.append("</svg>")
         return "\n".join(out) + "\n"
 
 
-def P(text, n, cut=None, **kw):
-    d = {"text": text, "n": n}
-    if cut:
-        d["cut"] = cut
+# ── общий ClientHello: 26 байт в ASCII-виде, имя с 11-й позиции ─────
+TAPE = "···········youtube.com····"
+NAME = (11, 22)
+MIDSLD = 14          # середина «youtube»: you|tube
+SPECS = {}
+
+
+def R(no, label, meta, rng, kind="real", **kw):
+    d = {"no": f"#{no}" if isinstance(no, int) else no, "label": label, "meta": meta, "range": rng, "kind": kind}
     d.update(kw)
     return d
 
 
-def pk(text, part=None, kind="real", chip=None, fills=None, **kw):
-    col = PART_COL.get(part, C["ink"])
-    lab = [(CIRC[part] + " ", col), (text, C["ink"] if kind != "fake" else C["mut"])] if part else [(text, C["ink"] if kind != "fake" else C["mut"])]
-    e = {"label": kw.pop("label", lab), "part": part, "kind": kind, "fills": fills}
-    if chip is not None:
-        e["chip"] = chip
-    e.update(kw)
-    return e
+def A(no, label, meta, arrow, **kw):
+    """Строка без данных (SYN, SYN-ACK)."""
+    d = {"no": f"#{no}", "label": label, "meta": meta, "range": None, "arrow": arrow, "kind": "real"}
+    d.update(kw)
+    return d
 
 
-def chipc(part, fake=False, text=None):
-    col = C["mut"] if fake else PART_COL.get(part, C["ink"])
-    return [(text or CIRC[part], col)]
-
-
-LEG_FAKE = "сплошная рамка — настоящие данные · пунктир — фейк, который сервер отбросит"
-LEG_REAL = "каждый пакет — настоящий кусок того же ClientHello, фейков нет"
-
-SPECS = {}
+SPECS["fake"] = dict(
+    name="fake", tape=TAPE, name_span=NAME, len=26,
+    rows=[
+        R(1, "FAKE", "seq=0  blob", (0, 26), "fake", chars="···········www.w3.org·····", rejected=True, server="отброшен: md5"),
+        R(2, "ORIG", "seq=0  len=26", (0, 26), server="принят", fills=(0, 26)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "первым читает ClientHello с www.w3.org; если решение принято по нему, настоящий пакет уже не проверяется"),
+           ("сервер", "фейк отбрасывает по неверной подписи TCP MD5 (tcp_md5), принимает оригинал")],
+    title="fake: фейковый ClientHello перед оригиналом",
+    desc="Карта потока для fake с blob=fake_default_tls и tcp_md5: сначала уходит фейковый ClientHello с именем www.w3.org на тех же позициях потока, затем оригинал с youtube.com. Сервер отбрасывает фейк по неверной подписи TCP MD5 и принимает оригинал.",
+)
 
 SPECS["multisplit"] = dict(
-    name="multisplit", subtitle="режем по порядку",
-    cmd="--payload=tls_client_hello --lua-desync=multisplit:pos=1,midsld",
-    parts=[P("16", 1, cut="pos=1"), P("03 01 … SNI you", 2, cut="midsld"), P("tube.com …", 3)],
-    events=[pk("16", 1, chip=chipc(1), fills=1), pk("… you", 2, chip=chipc(2, text="② …you"), fills=2),
-            pk("tube.com …", 3, chip=chipc(3, text="③ tube.com…"), fills=3)],
-    slots=[{"text": "16", "n": 1}, {"text": "… you", "n": 2}, {"text": "tube.com …", "n": 3}],
-    dpi_verdict=["имя youtube.com разрезано", "между пакетами — сигнатура", "не нашлась, соединение идёт"],
-    result="собрано: … youtube.com … ✓",
-    legend=LEG_REAL,
-    title="multisplit: ClientHello разрезан на три TCP-сегмента",
-    desc="Анимация: Zapret 2 режет TLS ClientHello по позициям 1 и midsld на три сегмента и отправляет их по порядку. ТСПУ видит имя youtube.com разрезанным между пакетами и не находит сигнатуру, сервер собирает поток целиком.",
+    name="multisplit", tape=TAPE, name_span=NAME, len=26,
+    cuts=[(1, "1"), (MIDSLD, "midsld")],
+    rows=[
+        R(1, "PART1", "seq=0  len=1", (0, 1), server="принят", fills=(0, 1)),
+        R(2, "PART2", "seq=1  len=13", (1, 14), server="принят", fills=(1, 14)),
+        R(3, "PART3", "seq=14 len=12", (14, 26), server="принят", fills=(14, 26)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "имя разрезано между #2 и #3: целиком youtube.com нет ни в одном пакете"),
+           ("сервер", "складывает сегменты по seq и получает исходный ClientHello")],
+    title="multisplit: три сегмента по порядку",
+    desc="Карта потока для multisplit с pos=1,midsld: ClientHello уходит тремя сегментами по порядку — 1 байт, байты до середины имени, остаток. Имя youtube.com разрезано между вторым и третьим сегментом, сервер собирает поток по seq.",
 )
 
-
-M = C["mut"]
-RED = C["red"]
-AMB = C["amb"]
-INK = C["ink"]
-
-
-def fk(text, part=None, chip=None, **kw):
-    """Фейк: пунктирная рамка, серый текст."""
-    return pk(text, part, kind="fake", chip=chip, **kw)
-
-
-# ── fake ───────────────────────────────────────────────────────────
-SPECS["fake"] = dict(
-    name="fake", subtitle="сначала подсунуть подделку",
-    cmd="--payload=tls_client_hello --lua-desync=fake:blob=fake_default_tls:tcp_md5",
-    parts=[P("ClientHello · SNI youtube.com", 1)],
-    events=[fk("фейк · SNI www.w3.org", label=[("фейк · SNI www.w3.org", M)], chip=[("SNI www.w3.org", M)]),
-            pk("SNI youtube.com", 1, chip=[("SNI youtube.com", C["cy"])], fills=1)],
-    slots=[{"text": "ClientHello · youtube.com", "n": 1}],
-    dpi_verdict=["первым прочитал фейк с www.w3.org", "и мог решить, что поток разрешён —", "настоящий пакет идёт следом"],
-    srv_notes=[{"t": "fake", "text": "фейк: неверная подпись tcp_md5", "col": RED},
-               {"t": "fake", "text": "→ отброшен, настоящий принят", "col": RED}],
-    result="собрано: только настоящий ✓",
-    legend=LEG_FAKE,
-    title="fake: поддельный ClientHello перед настоящим",
-    desc="Анимация: перед настоящим ClientHello с именем youtube.com Zapret 2 отправляет фейк с именем www.w3.org и испорченной подписью tcp_md5. ТСПУ читает фейк первым, сервер его отбрасывает и принимает только настоящий пакет.",
-)
-
-# ── multidisorder ──────────────────────────────────────────────────
 SPECS["multidisorder"] = dict(
-    name="multidisorder", subtitle="режем и шлём с конца",
-    cmd="--payload=tls_client_hello --lua-desync=multidisorder:pos=midsld",
-    parts=[P("16 03 01 … SNI you", 1, cut="midsld"), P("tube.com …", 2)],
-    events=[pk("tube.com …", 2, chip=chipc(2, text="② tube.com…"), fills=2),
-            pk("16 03 01 … you", 1, chip=chipc(1, text="① …you"), fills=1)],
-    slots=[{"text": "16 03 01 … you", "n": 1}, {"text": "tube.com …", "n": 2}],
-    dpi_verdict=["конец пришёл раньше начала,", "а поток задом наперёд DPI", "обычно не пересобирает"],
-    srv_notes=[{"t": 0, "text": "② пришёл первым — ждёт в буфере", "col": C["dim"]},
-               {"t": 1, "text": "① встал перед ним по номеру seq", "col": C["dim"]}],
-    result="собрано: … youtube.com … ✓",
-    legend="части настоящие, но уходят в обратном порядке: сначала ②, потом ①",
-    title="multidisorder: части ClientHello в обратном порядке",
-    desc="Анимация: Zapret 2 режет ClientHello по позиции midsld на две части и отправляет сначала вторую, потом первую. ТСПУ получает поток задом наперёд, сервер расставляет части по номерам и собирает ClientHello целиком.",
+    name="multidisorder", tape=TAPE, name_span=NAME, len=26,
+    cuts=[(MIDSLD, "midsld")],
+    rows=[
+        R(1, "PART2", "seq=14 len=12", (14, 26), server="ждёт в буфере", fills=(14, 26)),
+        R(2, "PART1", "seq=0  len=14", (0, 14), server="принят", fills=(0, 14)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "конец запроса приходит раньше начала; без пересборки потока имени целиком не видно"),
+           ("сервер", "держит #1 в буфере и ставит #2 перед ним по seq")],
+    title="multidisorder: части в обратном порядке",
+    desc="Карта потока для multidisorder с pos=midsld: сначала уходит вторая часть ClientHello (seq=14), затем первая (seq=0). Сервер держит вторую часть в буфере и собирает поток по seq.",
 )
 
-# ── multidisorder_legacy ───────────────────────────────────────────
+L_TAPE = "············youtube.com·········"      # 32 ячейки по 25 байт = 800 байт
 SPECS["multidisorder_legacy"] = dict(
-    name="multidisorder_legacy", subtitle="с конца, но внутри пакета",
-    cmd="--lua-desync=multidisorder_legacy:pos=200,600   (ClientHello 800 байт = пакеты A 500 + B 300)",
-    bar_title="ClientHello в двух пакетах:",
-    parts=[P("A1 0–199", 1, cut="200"), P("A2 200–499", 2, pkt_edge=True), P("B1 500–599", 3, cut="600"), P("B2 600–799", 4)],
-    events=[pk("A2", 2, chip=chipc(2, text="② A2"), fills=2), pk("A1", 1, chip=chipc(1, text="① A1"), fills=1),
-            pk("B2", 4, chip=chipc(4, text="④ B2"), fills=4), pk("B1", 3, chip=chipc(3, text="③ B1"), fills=3)],
-    slots=[{"text": "A1", "n": 1}, {"text": "A2", "n": 2}, {"text": "B1", "n": 3}, {"text": "B2", "n": 4}],
-    dpi_verdict=["в каждом пакете конец", "пришёл раньше начала,", "а A по-прежнему раньше B"],
-    srv_notes=[{"t": 3, "text": "границы пакетов A и B сохранены", "col": C["dim"]}],
-    result="собрано: A1 A2 B1 B2 ✓",
-    legend="обратный порядок — только внутри каждого исходного пакета (A, затем B)",
+    name="multidisorder_legacy", tape=L_TAPE, name_span=(12, 23), len=800, cw=17,
+    cuts=[(8, "200"), (24, "600")], marks=[(20, "A|B 500")],
+    rows=[
+        R(1, "A2", "seq=200 len=300", (8, 20), server="ждёт в буфере", fills=(8, 20)),
+        R(2, "A1", "seq=0   len=200", (0, 8), server="принят", fills=(0, 8)),
+        R(3, "B2", "seq=600 len=200", (24, 32), server="ждёт в буфере", fills=(24, 32)),
+        R(4, "B1", "seq=500 len=100", (20, 24), server="принят", fills=(20, 24)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "ClientHello из двух пакетов A и B: задом наперёд части идут только внутри пакета, A по-прежнему раньше B"),
+           ("сервер", "собирает 0–800 по seq; новый multidisorder развернул бы весь поток: 600–800, 200–600, 0–200")],
     title="multidisorder_legacy: обратный порядок внутри каждого пакета",
-    desc="Анимация: ClientHello занимает два пакета A и B. multidisorder_legacy режет каждый пакет отдельно и отправляет части задом наперёд внутри пакета: A2, A1, затем B2, B1. Сервер собирает A1 A2 B1 B2.",
+    desc="Карта потока для multidisorder_legacy с pos=200,600: ClientHello длиной 800 байт пришёл от ядра двумя пакетами, A (0–499) и B (500–799). Каждый пакет режется отдельно и уходит задом наперёд: A2, A1, затем B2, B1.",
 )
 
-# ── fakedsplit / fakeddisorder ─────────────────────────────────────
-GARB = "▒▒▒▒▒▒"
+
 def _faked(order):
-    ev = []
+    rows, no = [], 1
     for part in order:
-        real_text = "16 03 01 … you" if part == 1 else "tube.com …"
-        ev += [fk(GARB, part, chip=chipc(part, text=CIRC[part])),
-               pk(real_text, part, chip=chipc(part, text=CIRC[part]), fills=part),
-               fk(GARB, part, chip=chipc(part, text=CIRC[part]))]
-    return ev
+        rng = (0, MIDSLD) if part == 1 else (MIDSLD, 26)
+        meta = f"seq={rng[0]:<2} len={rng[1] - rng[0]}"
+        for lab, kind in ((f"FAKE{part}", "fake"), (f"REAL{part}", "real"), (f"FAKE{part}", "fake")):
+            if kind == "fake":
+                rows.append(R(no, lab, meta, rng, "fake", rejected=True, server="отброшен: ack"))
+            else:
+                rows.append(R(no, lab, meta, rng, server="принят", fills=rng))
+            no += 1
+    return rows
 
-_FD_COMMON = dict(
-    parts=[P("16 03 01 … SNI you", 1, cut="midsld"), P("tube.com …", 2)],
-    slots=[{"text": "16 03 01 … you", "n": 1}, {"text": "tube.com …", "n": 2}],
-    dpi_blind=True,
-    srv_notes=[{"t": "fake", "text": "фейки: неверный ACK (tcp_ack=-66000)", "col": RED},
-               {"t": "fake", "text": "→ отброшены, настоящие части приняты", "col": RED}],
-    result="собрано: … youtube.com … ✓",
-    legend=LEG_FAKE,
-)
+
+_FD = dict(tape=TAPE, name_span=NAME, len=26, cuts=[(MIDSLD, "midsld")], result="поток собран")
+
 SPECS["fakedsplit"] = dict(
-    _FD_COMMON, name="fakedsplit", subtitle="каждая часть в окружении фейков",
-    cmd="--payload=tls_client_hello --lua-desync=fakedsplit:pos=midsld:tcp_ack=-66000:tcp_ts_up",
-    events=_faked([1, 2]),
-    dpi_verdict=["каждая часть пришла трижды", "с одним и тем же seq — какая", "копия настоящая, не понять"],
-    title="fakedsplit: части ClientHello вперемешку с фейками",
-    desc="Анимация: Zapret 2 режет ClientHello по midsld на две части и окружает каждую фейком того же размера и с тем же seq: фейк, часть 1, фейк, фейк, часть 2, фейк. ТСПУ видит по три копии каждой части, сервер отбрасывает фейки по неверному ACK.",
+    _FD, name="fakedsplit", rows=_faked([1, 2]),
+    notes=[("DPI", "три сегмента с seq=0 и три с seq=14: какая копия в каждой тройке настоящая, по пакетам не видно"),
+           ("сервер", "фейки отбрасывает по неверному ACK (tcp_ack=-66000), из REAL1 и REAL2 собирает исходный поток")],
+    title="fakedsplit: порядок отправки и сборка на сервере",
+    desc="Карта потока для fakedsplit с pos=midsld: шесть сегментов в порядке отправки — FAKE1, REAL1, FAKE1, FAKE2, REAL2, FAKE2. Фейки лежат на тех же позициях потока, что и настоящие части, и заполнены мусором X. Сервер отбрасывает фейки по неверному ACK и собирает ClientHello из двух настоящих частей.",
 )
+
 SPECS["fakeddisorder"] = dict(
-    _FD_COMMON, name="fakeddisorder", subtitle="фейки + обратный порядок",
-    cmd="--payload=tls_client_hello --lua-desync=fakeddisorder:pos=midsld:tcp_ack=-66000:tcp_ts_up",
-    events=_faked([2, 1]),
-    dpi_verdict=["по три копии каждой части,", "да ещё конец раньше начала —", "DPI не знает, что собирать"],
+    _FD, name="fakeddisorder", rows=_faked([2, 1]),
+    notes=[("DPI", "по три копии каждой части, и конец запроса приходит раньше начала"),
+           ("сервер", "фейки отбрасывает по неверному ACK (tcp_ack=-66000), REAL2 держит в буфере до прихода REAL1")],
     title="fakeddisorder: фейки и обратный порядок частей",
-    desc="Анимация: Zapret 2 режет ClientHello по midsld на две части и отправляет сначала вторую, потом первую, окружая каждую фейками с тем же seq. ТСПУ видит копии задом наперёд, сервер отбрасывает фейки и собирает ClientHello.",
+    desc="Карта потока для fakeddisorder с pos=midsld: сначала вторая часть ClientHello в окружении фейков (FAKE2, REAL2, FAKE2), затем первая (FAKE1, REAL1, FAKE1). Сервер отбрасывает фейки по неверному ACK и собирает поток по seq.",
 )
 
-# ── hostfakesplit ──────────────────────────────────────────────────
 SPECS["hostfakesplit"] = dict(
-    name="hostfakesplit", subtitle="режем точно по имени сайта",
-    cmd="--payload=tls_client_hello --lua-desync=hostfakesplit:tcp_md5",
-    parts=[P("16 03 01 … SNI", 1, cut="host"), P("youtube.com", 2, cut="endhost"), P("…", 3)],
-    events=[pk("… SNI", 1, chip=[("… SNI", INK)], fills=1),
-            fk("u9a7bk2.org", label=[("u9a7bk2.org", M)], chip=[("u9a7bk2.org", INK)]),
-            pk("youtube.com", 2, chip=[("youtube.com", INK)], fills=2),
-            fk("u9a7bk2.org", label=[("u9a7bk2.org", M)], chip=[("u9a7bk2.org", INK)]),
-            pk("…", 3, chip=[("…", INK)], fills=3)],
-    dpi_blind=True,
-    slots=[{"text": "… SNI", "n": 1}, {"text": "youtube.com", "n": 2}, {"text": "…", "n": 3}],
-    dpi_verdict=["на месте имени — три кандидата", "одной длины: какой настоящий?"],
-    srv_notes=[{"t": "fake", "text": "фейки: неверная подпись tcp_md5", "col": RED},
-               {"t": "fake", "text": "→ отброшены, имя собрано верно", "col": RED}],
-    result="собрано: … youtube.com … ✓",
-    legend=LEG_FAKE,
-    title="hostfakesplit: имя сайта в окружении фейковых имён",
-    desc="Анимация: Zapret 2 режет ClientHello по границам имени youtube.com и отправляет перед и после него фейковое имя u9a7bk2.org той же длины. ТСПУ видит несколько имён на одном месте потока, сервер отбрасывает фейки по неверной подписи tcp_md5.",
+    name="hostfakesplit", tape=TAPE, name_span=NAME, len=26,
+    cuts=[(11, "host"), (22, "endhost")],
+    rows=[
+        R(1, "BEFORE", "seq=0  len=11", (0, 11), server="принят", fills=(0, 11)),
+        R(2, "FAKE", "seq=11 len=11", (11, 22), "fake", chars="u9a7bk2.org", rejected=True, server="отброшен: md5"),
+        R(3, "HOST", "seq=11 len=11", (11, 22), server="принят", fills=(11, 22)),
+        R(4, "FAKE", "seq=11 len=11", (11, 22), "fake", chars="u9a7bk2.org", rejected=True, server="отброшен: md5"),
+        R(5, "AFTER", "seq=22 len=4", (22, 26), server="принят", fills=(22, 26)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "на месте имени три сегмента одной длины с одним seq: u9a7bk2.org, youtube.com, u9a7bk2.org"),
+           ("сервер", "фейковые имена отбрасывает по неверной подписи TCP MD5 (tcp_md5)")],
+    title="hostfakesplit: имя сайта между фейковыми именами",
+    desc="Карта потока для hostfakesplit с tcp_md5: ClientHello режется по границам имени, настоящее имя youtube.com уходит между двумя фейковыми именами u9a7bk2.org той же длины и с тем же seq. Сервер отбрасывает фейки по неверной подписи TCP MD5.",
 )
 
-# ── tcpseg ─────────────────────────────────────────────────────────
 SPECS["tcpseg"] = dict(
-    name="tcpseg", subtitle="сегмент с лишним байтом спереди",
-    cmd="--lua-desync=tcpseg:pos=0,-1:seqovl=1 --lua-desync=drop",
-    parts=[P("16 03 01 … SNI youtube.com …", 1)],
-    events=[pk("16 03 01 … youtube.com", 1, kind="dropped", drop_note="drop: оригинал не уйдёт", gap=1.7),
-            pk("", 1, label=[("▒", AMB), (" 16 03 01 … youtube.com", INK)], chip=[("▒", AMB), (" 16 03 01 …", INK)], fills=1)],
-    slots=[{"text": "16 03 01 … youtube.com", "n": 1}],
-    dpi_verdict=["поток начинается с лишнего", "байта ▒ — разбор ClientHello", "может сбиться"],
-    srv_notes=[{"t": 1, "text": "▒ лежит левее окна TCP → отрезан", "col": AMB}],
-    result="собрано: ClientHello целиком ✓",
-    legend="▒ — байт seqovl: seq сдвинут на 1 назад, сервер его отрежет",
+    name="tcpseg", tape=TAPE, name_span=NAME, len=26, neg=1, cw=21,
+    rows=[
+        R("–", "ORIG", "seq=0  len=26", (0, 26), "dropped", server="drop: не ушёл"),
+        R(1, "SEG", "seq=-1 len=27", (-1, 26), chars="X" + TAPE, mark=[-1], server="байт −1 отрезан", fills=(0, 26)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "поток начинается на байт раньше, и первый байт — мусор: разбор ClientHello может сбиться"),
+           ("сервер", "байт левее окна приёма отрезает, остальное принимает; оригинал выбросил инстанс drop")],
     title="tcpseg: ClientHello одним сегментом с seqovl",
-    desc="Анимация: второй инстанс drop выбрасывает оригинальный пакет, а tcpseg отправляет вместо него тот же ClientHello с одним лишним байтом спереди (seqovl=1). ТСПУ видит поток, начинающийся с мусора, сервер отрезает байт левее окна TCP.",
+    desc="Карта потока для tcpseg с pos=0,-1 и seqovl=1 в связке с drop: оригинальный пакет выбрасывается, вместо него уходит сегмент с seq=-1 и одним байтом мусора спереди. Сервер отрезает байт левее окна приёма и принимает ClientHello целиком.",
 )
 
-# ── oob ────────────────────────────────────────────────────────────
+O_TAPE = TAPE[:MIDSLD] + "·" + TAPE[MIDSLD:]     # байт OOB посреди имени
 SPECS["oob"] = dict(
-    name="oob", subtitle="байт «срочных данных» в имени",
-    cmd="--in-range=-s1 --lua-desync=oob:urp=midsld",
-    parts=[P("16 03 01 … SNI you", 1, cut="▮ сюда (urp=midsld)"), P("tube.com …", 1)],
-    events=[pk("", None, label=[("SYN · seq−1", INK)], chip=[("SYN", INK)], gap=TRAVEL + 0.2),
-            pk("", 1, label=[("… you", INK), ("▮", RED), ("tube.com … URG", INK)], chip=[("you", INK), ("▮", RED), ("tube.com", INK)], fills=1)],
-    slots=[{"text": "… youtube.com …", "n": 1}],
-    dpi_verdict=["в имени лишний байт:", "you▮tube.com — не youtube.com,", "сигнатура не совпала"],
-    srv_notes=[{"t": 0, "text": "SYN: seq на 1 меньше — место под байт", "col": C["dim"]},
-               {"t": 1, "text": "▮ помечен URG — вынут из потока", "col": RED}],
-    result="собрано: youtube.com ✓",
-    legend="▮ — байт Out-of-Band: флаг URG велит стеку сервера вынуть его из данных",
+    name="oob", tape=O_TAPE, name_span=(11, 23), len=27, cw=21,
+    cuts=[(MIDSLD, "urp=midsld")],
+    buf_tape=TAPE, buf_len=26, buf_name=NAME,
+    rows=[
+        A(1, "SYN", "seq−1", "SYN с номером на 1 меньше: место под лишний байт", server="принят"),
+        R(2, "DATA", "URG len=27", (0, 27), mark=[MIDSLD], server="байт URG вынут",
+          fills=[(0, MIDSLD, 0), (MIDSLD, 26, 1)]),
+    ],
+    result="поток собран",
+    notes=[("DPI", "в имени лишний байт: you·tube.com не совпадает с youtube.com"),
+           ("сервер", "байт с флагом URG вынимает из потока как срочные данные, имя смыкается")],
     title="oob: байт срочных данных внутри имени сайта",
-    desc="Анимация: oob сдвигает seq в SYN на единицу, а затем вставляет в середину имени youtube.com байт срочных данных с флагом URG. ТСПУ видит испорченное имя, TCP-стек сервера вынимает этот байт и получает исходный ClientHello.",
+    desc="Карта потока для oob с urp=midsld: сначала SYN с номером последовательности на единицу меньше, затем ClientHello с байтом срочных данных (флаг URG) посреди имени youtube.com. TCP-стек сервера вынимает этот байт, и имя смыкается.",
 )
 
-# ── syndata ────────────────────────────────────────────────────────
 SPECS["syndata"] = dict(
-    name="syndata", subtitle="данные прямо в SYN",
-    cmd="--lua-desync=syndata:blob=fake_default_tls",
-    server="youtube.com",
-    bar_title="первый пакет соединения:",
-    fake_flash=False,
-    parts=[P("SYN", None), P("+ фейковый ClientHello из blob", None)],
-    events=[fk("", label=[("SYN + ", INK), ("фейк www.w3.org", M)], chip=[("SYN + www.w3.org", M)], gap=TRAVEL + 0.2),
-            pk("", None, label=[("SYN-ACK", INK)], dir="back", nodpi=True, gap=TRAVEL + 0.2),
-            pk("SNI youtube.com", 1, chip=[("SNI youtube.com", C["cy"])], fills=1)],
-    slots=[{"text": "ClientHello · youtube.com", "n": 1}],
-    dpi_verdict=["мог принять данные из SYN", "за начало потока — и уже не", "искать имя в настоящем"],
-    srv_notes=[{"t": 0, "text": "SYN принят, данные из него", "col": C["dim"]},
-               {"t": 0, "text": "большинство стеков отбрасывает", "col": C["dim"]}],
-    result="соединение установлено ✓",
-    legend="пунктир — фейковые данные, приклеенные к первому пакету соединения (SYN)",
-    title="syndata: фейковые данные в SYN-пакете",
-    desc="Анимация: syndata добавляет в первый пакет соединения SYN фейковый ClientHello с именем www.w3.org. Сервер отвечает SYN-ACK и отбрасывает данные из SYN, а ТСПУ может принять их за начало потока. Затем уходит настоящий ClientHello.",
+    name="syndata", tape=TAPE, name_span=NAME, len=26,
+    rows=[
+        R(1, "SYN+DATA", "blob", (0, 26), "fake", chars="···········www.w3.org·····", rejected=True, server="SYN принят"),
+        A(2, "SYN-ACK", "← сервер", "ответ сервера, данные из SYN не подтверждены"),
+        R(3, "ORIG", "seq=0  len=26", (0, 26), server="принят", fills=(0, 26)),
+    ],
+    result="поток собран",
+    notes=[("DPI", "первые данные потока пришли в SYN; если DPI счёл их ClientHello, настоящий может не проверяться"),
+           ("сервер", "данные из SYN большинство TCP-стеков игнорирует и ждёт их заново после рукопожатия")],
+    title="syndata: фейковый ClientHello в SYN-пакете",
+    desc="Карта потока для syndata с blob=fake_default_tls: к SYN приклеен фейковый ClientHello с именем www.w3.org на тех же позициях потока. Сервер отвечает SYN-ACK, данные из SYN игнорирует, после рукопожатия принимает настоящий ClientHello.",
 )
 
 
 def main():
-    """python3 scripts/desync-anim.py [папка] [техника ...] — по умолчанию все в Zapret2/desync/attachments."""
     root = Path(__file__).resolve().parent.parent
     out = Path(sys.argv[1]) if len(sys.argv) > 1 else root / "Zapret2/desync/attachments"
     out.mkdir(parents=True, exist_ok=True)
-    names = sys.argv[2:] or list(SPECS)
-    for n in names:
-        svg = Svg(SPECS[n]).build()
+    for n in sys.argv[2:] or list(SPECS):
+        svg = Diagram(SPECS[n]).build()
         p = out / f"desync-anim-{n}.svg"
         p.write_text(svg, encoding="utf-8")
         print(p, len(svg))
