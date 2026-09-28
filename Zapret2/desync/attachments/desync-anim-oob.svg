@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 672" width="960" height="672" role="img" aria-labelledby="t d">
+<title id="t">oob: байт срочных данных внутри имени сайта</title>
+<desc id="d">Анимация: oob сдвигает seq в SYN на единицу, а затем вставляет в середину имени youtube.com байт срочных данных с флагом URG. ТСПУ видит испорченное имя, TCP-стек сервера вынимает этот байт и получает исходный ClientHello.</desc>
+<style>.mono{font-family:ui-monospace,'JetBrains Mono','Cascadia Code','SF Mono',Consolas,'DejaVu Sans Mono',monospace}.sans{font-family:Onest,Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans','DejaVu Sans',sans-serif}.a{animation-duration:8.01s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both}@media (prefers-reduced-motion:reduce){.a{animation:none!important}.pk{display:none}}@keyframes k1{0.0%{opacity:0}18.496%{opacity:0}19.995%{opacity:0.95}25.488%{opacity:0}45.533%{opacity:0}47.031%{opacity:0.95}52.524%{opacity:0}100%{opacity:0}}@keyframes k2{0.0%{opacity:0}19.245%{opacity:0}22.991%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k3{0.0%{opacity:0}46.282%{opacity:0}50.027%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k4{0.0%{opacity:0}50.652%{opacity:0}54.397%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k5{0.0%{opacity:0}53.149%{opacity:0}56.894%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k6{0.0%{opacity:0}55.645%{opacity:0}59.391%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k7{0.0%{opacity:0}55.111%{opacity:0}58.856%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k8{0.0%{opacity:0}31.0%{opacity:0}34.746%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k9{0.0%{opacity:0}55.111%{opacity:0}58.856%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k10{0.0%{opacity:0}63.226%{opacity:0}66.971%{opacity:1}91.261%{opacity:1}96.879%{opacity:0}100%{opacity:0}}@keyframes k11{0.0%{opacity:0;transform:translate(244.6px,292.0px)}7.491%{opacity:0;transform:translate(244.6px,292.0px)}9.988%{opacity:1;transform:translate(294.6px,292.0px)}31.0%{opacity:1;transform:translate(715.4px,292.0px)}34.746%{opacity:0;transform:translate(727.4px,292.0px)}100%{opacity:0;transform:translate(727.4px,292.0px)}}@keyframes k12{0.0%{opacity:0;transform:translate(303.2px,292.0px)}37.453%{opacity:0;transform:translate(303.2px,292.0px)}39.95%{opacity:1;transform:translate(353.2px,292.0px)}55.111%{opacity:1;transform:translate(656.8px,292.0px)}58.856%{opacity:0;transform:translate(668.8px,292.0px)}100%{opacity:0;transform:translate(668.8px,292.0px)}}</style>
+<rect x="1" y="1" width="958" height="670" rx="26" fill="#0b1020" stroke="#1f2a48" stroke-width="2"/>
+<text x="36" y="58" class="mono" font-size="30" font-weight="700" fill="#4fd1ff">oob</text>
+<text x="110" y="57" class="sans" font-size="19" fill="#8d99bd">байт «срочных данных» в имени</text>
+<text x="36" y="90" class="mono" font-size="15" fill="#7d8bb0">--in-range=-s1 --lua-desync=oob:urp=midsld</text>
+<line x1="150" y1="292" x2="810" y2="292" stroke="rgba(151,166,201,.4)" stroke-width="2" stroke-dasharray="6 10"/>
+<rect x="30" y="248" width="120" height="88" rx="16" fill="#111a33" stroke="#2d3b66" stroke-width="2"/>
+<text x="90.0" y="288" class="sans" font-size="20" font-weight="700" fill="#e8edff" text-anchor="middle">ваш ПК</text>
+<text x="90.0" y="316" class="mono" font-size="14" fill="#8d99bd" text-anchor="middle">Zapret 2</text>
+<rect x="810" y="248" width="120" height="88" rx="16" fill="#111a33" stroke="#2d3b66" stroke-width="2"/>
+<text x="870.0" y="288" class="sans" font-size="20" font-weight="700" fill="#e8edff" text-anchor="middle">сервер</text>
+<text x="870.0" y="316" class="mono" font-size="14" fill="#8d99bd" text-anchor="middle">youtube.com</text>
+<text x="480" y="214" class="sans" font-size="21" font-weight="800" letter-spacing="2" fill="#ff3b5c" text-anchor="middle">ТСПУ</text>
+<rect x="466" y="226" width="28" height="132" rx="8" fill="rgba(255,59,92,.14)" stroke="#ff3b5c" stroke-width="2"/>
+<g class="a pk" style="animation-name:k1"><rect x="466" y="226" width="28" height="132" rx="8" fill="rgba(255,176,32,.55)" stroke="#ffb020" stroke-width="5"/></g>
+<text x="36" y="384" class="sans" font-size="15" fill="#8d99bd">▮ — байт Out-of-Band: флаг URG велит стеку сервера вынуть его из данных</text>
+<text x="36" y="144" class="sans" font-size="16" fill="#8d99bd">что отправляет браузер:</text>
+<rect x="270.8" y="118" width="215.7" height="40" rx="6" fill="#4fd1ff" fill-opacity=".13" stroke="#4fd1ff" stroke-width="1.6"/>
+<text x="378.7" y="144.0" font-size="17" text-anchor="middle" class="mono"><tspan fill="#e8edff">16 03 01 … SNI you</tspan></text>
+<line x1="486.5" y1="110" x2="486.5" y2="166" stroke="#ff3b5c" stroke-width="2.4" stroke-dasharray="4 3"/>
+<text x="486.5" y="180" class="mono" font-size="13" fill="#ff3b5c" text-anchor="middle">▮ сюда (urp=midsld)</text>
+<rect x="486.5" y="118" width="131.4" height="40" rx="6" fill="#4fd1ff" fill-opacity=".13" stroke="#4fd1ff" stroke-width="1.6"/>
+<text x="552.2" y="144.0" font-size="17" text-anchor="middle" class="mono"><tspan fill="#e8edff">tube.com …</tspan></text>
+<rect x="30" y="420" width="440" height="232" rx="18" fill="#0f1730" stroke="#243056" stroke-width="1.6"/>
+<text x="50" y="452" class="sans" font-size="18" font-weight="700" fill="#ff3b5c">что видит ТСПУ</text>
+<rect x="490" y="420" width="440" height="232" rx="18" fill="#0f1730" stroke="#243056" stroke-width="1.6"/>
+<text x="510" y="452" class="sans" font-size="18" font-weight="700" fill="#37e39a">что собирает сервер</text>
+<g class="a fin" style="animation-name:k2"><g transform="translate(77.7,492)"><rect x="-27.7" y="-20.0" width="55.5" height="40" rx="11" fill="#0e1630" stroke="#e8edff" stroke-width="2.4"/><text x="0.0" y="7.0" font-size="18" text-anchor="middle" class="mono"><tspan fill="#e8edff">SYN</tspan></text></g></g>
+<g class="a fin" style="animation-name:k3"><g transform="translate(193.4,492)"><rect x="-78.0" y="-20.0" width="155.9" height="40" rx="11" fill="#0e1630" stroke="#4fd1ff" stroke-width="2.4"/><text x="0.0" y="7.0" font-size="18" text-anchor="middle" class="mono"><tspan fill="#e8edff">you</tspan><tspan fill="#ff3b5c">▮</tspan><tspan fill="#e8edff">tube.com</tspan></text></g></g>
+<g class="a fin" style="animation-name:k4"><text x="50" y="548" class="sans" font-size="18" font-weight="700" fill="#ffb020">в имени лишний байт:</text></g>
+<g class="a fin" style="animation-name:k5"><text x="50" y="575" class="sans" font-size="18" font-weight="400" fill="#e8edff">you▮tube.com — не youtube.com,</text></g>
+<g class="a fin" style="animation-name:k6"><text x="50" y="602" class="sans" font-size="18" font-weight="400" fill="#e8edff">сигнатура не совпала</text></g>
+<g transform="translate(605.7,492)"><rect x="-95.7" y="-20" width="191.4" height="40" rx="10" fill="none" stroke="#33406a" stroke-width="1.6" stroke-dasharray="4 4"/></g>
+<g class="a fin" style="animation-name:k7"><g transform="translate(605.7,492)"><rect x="-95.7" y="-20.0" width="191.4" height="40" rx="11" fill="#0e1630" stroke="#4fd1ff" stroke-width="2.4"/><text x="0.0" y="7.0" font-size="18" text-anchor="middle" class="mono"><tspan fill="#e8edff">… youtube.com …</tspan></text></g></g>
+<g class="a fin" style="animation-name:k8"><text x="510" y="552" class="sans" font-size="17" fill="#8d99bd">SYN: seq на 1 меньше — место под байт</text></g>
+<g class="a fin" style="animation-name:k9"><text x="510" y="579" class="sans" font-size="17" fill="#ff3b5c">▮ помечен URG — вынут из потока</text></g>
+<g class="a fin" style="animation-name:k10"><text x="510" y="628" class="sans" font-size="20" font-weight="700" fill="#37e39a">собрано: youtube.com ✓</text></g>
+<g class="a pk" style="animation-name:k11"><rect x="-86.6" y="-23.0" width="173.2" height="46" rx="11" fill="#0e1630" stroke="#e8edff" stroke-width="2.4"/><text x="0.0" y="7.0" font-size="21" text-anchor="middle" class="mono"><tspan fill="#e8edff">SYN · seq−1</tspan></text></g>
+<g class="a pk" style="animation-name:k12"><rect x="-145.2" y="-23.0" width="290.4" height="46" rx="11" fill="#0e1630" stroke="#4fd1ff" stroke-width="2.4"/><text x="0.0" y="7.0" font-size="21" text-anchor="middle" class="mono"><tspan fill="#e8edff">… you</tspan><tspan fill="#ff3b5c">▮</tspan><tspan fill="#e8edff">tube.com … URG</tspan></text></g>
+</svg>
