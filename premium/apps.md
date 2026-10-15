@@ -151,6 +151,7 @@ ZaStoGram ставится рядом с обычным Telegram. В одном 
 
 ## 📚 См. также
 
+- [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[premium/android|VPN на Android: ZapretKVN по шагам]] — со скриншотами каждого экрана.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — тарифы, оплата, выбор протокола.
 - [[premium/v2rayn|v2rayN и режим прокси]] — подробная настройка на Windows.

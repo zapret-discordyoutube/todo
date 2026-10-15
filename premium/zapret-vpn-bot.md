@@ -148,6 +148,7 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 
 ## 📚 См. также
 
+- [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, тарифы, выбор протокола, шаги со скриншотами.
 - [[premium/android|VPN на Android: ZapretKVN по шагам]] — установка, подписка, список приложений, Telegram.
 - [[premium/apps|Приложения для VPN]] — что поставить на каждое устройство, AWG 3.0 против AWG 2.0.

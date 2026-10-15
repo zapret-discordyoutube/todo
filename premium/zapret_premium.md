@@ -109,6 +109,7 @@ description: "Как привязать Zapret Premium к программе Zap
 
 ## 📚 См. также
 
+- [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[premium/premium|Что даёт Zapret Premium]] — темы, оформление, связь с тарифами.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, цены, VPN.
 - [[Zapret/download|Как скачать Zapret GUI]] — установка программы.

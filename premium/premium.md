@@ -78,6 +78,7 @@ Zapret GUI — программа для Windows, которая обходит 
 
 ## 📚 См. также
 
+- [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, цены, VPN, выбор протокола.
 - [[premium/zapret_premium|Как привязать Zapret Premium к программе]] — код привязки по шагам со скриншотами.
 - [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот]] — подписки, профиль Mihomo, приватность.

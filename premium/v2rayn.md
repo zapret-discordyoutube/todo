@@ -300,6 +300,7 @@ https://speedtest.selectel.ru/100MB
 ![[Pasted image 20260204184234.png]]
 
 ## 📚 См. также
+- [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, тарифы, выбор протокола и клиента
 - [[premium/zapret-vpn-bot|Zapret VPN-бот]] — как устроен бот и почему он не привязывает к клиенту
 
