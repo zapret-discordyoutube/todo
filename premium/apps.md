@@ -34,13 +34,15 @@ description: "Какое приложение поставить для Zapret V
 
 ## Сначала — какую ссылку брать в боте
 
+Протокол — стандарт интернета, а не часть Android или iPhone: любой из них открывает весь интернет, включая YouTube и Discord, на любой системе, где есть приложение с его поддержкой. От системы зависит только выбор приложения.
+
 Все ссылки входят в один тариф: советуем 💎 Vless MAX (199 ₽ в месяц), самый дешёвый с VPN — ⚡ MasterVless (99 ₽). Приложение умеет читать не каждую, поэтому сначала выберите приложение, а потом ссылку под него.
 
 | Что взять в боте | Что внутри | Какие приложения читают |
 |---|---|---|
 | 🔗 **Xray-подписка** | все ваши серверы VLESS одной ссылкой | ZapretKVN, Zapret KVN, v2rayNG, v2rayN, Happ, V2RayTun, V2Box |
 | ⚡ **Hysteria 2-подписка** | серверы Hysteria 2 — для игр и плохой сети | ZapretKVN, Zapret KVN, v2rayN 7.24.9+, Throne, Husi |
-| 🧭 **Mihomo-подписка** | VLESS и Hysteria 2 вместе, российские сайты напрямую | Clash Mi, FlClash, Clash Verge Rev, Clash Meta for Android |
+| 🧭 **Mihomo-подписка** | VLESS и Hysteria 2 вместе, российские сайты напрямую; работает на всех системах, не только на iPhone | Clash Mi, FlClash, Clash Verge Rev, Clash Meta for Android |
 | 🛡 **WireGuard-конфиг** | один сервер, файл `.conf` | WireGuard, AmneziaVPN, WG Tunnel, роутеры |
 | 🗝 **AWG 3.0-конфиг** | WireGuard с сильной маскировкой, файл `.conf` | AmneziaVPN 5.0.0.5+, Throne 1.2.2+, клиенты на ядре Mihomo 1.19.30+ |
 | 🔐 **AWG 2.0-конфиг** | прошлое поколение маскировки | AmneziaVPN, AmneziaWG, WG Tunnel, роутеры с AmneziaWG |

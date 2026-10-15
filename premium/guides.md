@@ -28,6 +28,8 @@ description: "Все инструкции Zapret VPN на одной стран�
 | Сколько стоит и какой тариф взять | [[Zapret/premium#Тарифы и цены\|Тарифы и цены]] — по умолчанию советуем 💎 Vless MAX |
 | Как пополнить баланс и купить тариф | [[Zapret/premium#Шаг 1. Пополните баланс\|Шаг 1: баланс]] и [[Zapret/premium#Шаг 2. Купите тариф\|Шаг 2: тариф]] |
 | VPN не работает | [[Zapret/premium#Если не работает\|Что делать, если не работает]] и [состояние серверов](https://status.zapret.moe) |
+| Сколько устройств можно подключить | [[Zapret/premium#Сколько устройств можно подключить\|Сколько устройств]] — все свои, лимита в тарифе нет |
+| Спросить человека, в том числе в личке | [[Zapret/premium#Где спросить и получить помощь\|Где спросить и получить помощь]] — тикет с любого тарифа, личные контакты с 🚀 MasterVless Plus |
 
 ## Приложения и устройства
 
@@ -41,6 +43,8 @@ description: "Все инструкции Zapret VPN на одной стран�
 | 💻 Mac и Linux | [[premium/apps#macOS и Linux\|Приложения для Mac и Linux]] |
 | AWG 3.0 или AWG 2.0, и что такое 3.1 | [[premium/apps#AWG 3.0 или AWG 2.0\|AWG 3.0 против AWG 2.0]] |
 | Какой протокол выбрать для игр | [[Zapret/premium#Какой VPN выбрать\|Какой VPN выбрать]] |
+| Hysteria 2 — для игр. Открывает ли она YouTube и Discord? | да, как любой протокол — [[Zapret/premium#Чем Hysteria 2 отличается от WireGuard\|Hysteria 2 и WireGuard]] |
+| Mihomo — только для iPhone? | нет, это формат подписки для всех систем — [[Zapret/premium#Mihomo — не только для iPhone\|Mihomo не только для iPhone]] |
 
 ## Telegram и Discord
 
@@ -50,6 +54,8 @@ description: "Все инструкции Zapret VPN на одной стран�
 | Как ZaStoGram обходит блокировку | [[mtproxy/telegram-wss-transport\|WSS для Telegram]] |
 | Discord через VPN без режима VPN на весь компьютер | [[premium/discord\|Discord через прокси]] |
 | Discord и YouTube бесплатно, без VPN | [[Zapret/discord\|Discord и Zapret]] и [[Zapret/download\|Как скачать Zapret GUI]] |
+| DNS и обход сайтов на Android без VPN | [[Zapret/android\|Обход блокировок на Android]] |
+| Сайт не открывается через Zapret GUI | [[Zapret/faq\|FAQ по Zapret]] |
 
 ## Подписка и бот
 
