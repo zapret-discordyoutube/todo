@@ -55,6 +55,8 @@ description: "Все инструкции Zapret VPN на одной стран�
 | Вопрос | Статья |
 |---|---|
 | Telegram без VPN | [[Zapret/premium#Только Telegram\|Только Telegram]] — клиент [ZaStoGram](https://t.me/zastogram) и прокси из бота |
+| ZapretKVN на Windows: где порт прокси и как вписать его в Telegram | [[Zapret/premium#Telegram и ZapretKVN на Windows в режиме «Прокси»\|Telegram и ZapretKVN в режиме «Прокси»]] — SOCKS5 `127.0.0.1:1390` |
+| Telegram при VPN: сообщения приходят, а картинки грузятся медленно | [[Zapret/premium#Telegram при включённом VPN\|Telegram при включённом VPN]] — обычно Telegram идёт мимо VPN |
 | Надо ли настраивать Telegram, когда включён VPN | [[Zapret/premium#Telegram при включённом VPN\|Telegram при включённом VPN]] — нет, работает сам |
 | Как ZaStoGram обходит блокировку | [[mtproxy/telegram-wss-transport\|WSS для Telegram]] |
 | Discord через VPN без режима VPN на весь компьютер | [[premium/discord\|Discord через прокси]] |
