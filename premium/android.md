@@ -224,6 +224,7 @@ ZapretKVN — самый простой вариант, но подписку м
 
 ## 📚 См. также
 
+- [[premium/glossary|📘 Что есть что]] — коротко обо всём и словарь терминов.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — тарифы, оплата, все устройства.
 - [[premium/apps|Приложения для VPN]] — v2rayNG, Happ, FlClash, Clash Mi, AmneziaVPN и другие по шагам.
