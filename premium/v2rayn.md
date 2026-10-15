@@ -260,7 +260,7 @@ youtu.be +proxy
 ![[IMG-20251106131618434.png]]
 
 > [!note] Телефоны
-> Для Android проще наш клиент [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android), для iPhone — Clash Mi с Mihomo-подпиской (см. [[Zapret/premium#Как подключить VPN за пять минут|гайд]]). Ниже — для тех, кто сознательно выбрал v2rayNG или V2RayTun.
+> Для Android проще наш клиент [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android), для iPhone — Clash Mi с Mihomo-подпиской (см. [[Zapret/premium#Шаг 3. Получите подписку в боте|гайд]]). Ниже — для тех, кто сознательно выбрал v2rayNG или V2RayTun.
 
 ## Android: v2rayNG
 
