@@ -41,7 +41,7 @@ description: "Какое приложение поставить для Zapret V
 | Что взять в боте | Что внутри | Какие приложения читают |
 |---|---|---|
 | 🔗 **Xray-подписка** | все ваши серверы VLESS одной ссылкой | ZapretKVN, Zapret KVN, v2rayNG, v2rayN, Happ, V2RayTun, V2Box |
-| ⚡ **Hysteria 2-подписка** | серверы Hysteria 2 — для игр и плохой сети | ZapretKVN, Zapret KVN, v2rayN 7.24.9+, Throne, Husi |
+| ⚡ **Hysteria 2-подписка** | серверы Hysteria 2 — весь интернет, быстрее на плохой сети и в играх | ZapretKVN, Zapret KVN, v2rayN 7.24.9+, Throne, Husi |
 | 🧭 **Mihomo-подписка** | VLESS и Hysteria 2 вместе, российские сайты напрямую; работает на всех системах, не только на iPhone | Clash Mi, FlClash, Clash Verge Rev, Clash Meta for Android |
 | 🛡 **WireGuard-конфиг** | один сервер, файл `.conf` | WireGuard, AmneziaVPN, WG Tunnel, роутеры |
 | 🗝 **AWG 3.0-конфиг** | WireGuard с сильной маскировкой, файл `.conf` | AmneziaVPN 5.0.0.5+, Throne 1.2.2+, клиенты на ядре Mihomo 1.19.30+ |

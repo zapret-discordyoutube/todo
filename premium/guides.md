@@ -44,7 +44,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 | 💻 Mac и Linux | [[premium/apps#macOS и Linux\|Приложения для Mac и Linux]] |
 | AWG 3.0 или AWG 2.0, и что такое 3.1 | [[premium/apps#AWG 3.0 или AWG 2.0\|AWG 3.0 против AWG 2.0]] |
 | Какой протокол выбрать для игр | [[Zapret/premium#Какой VPN выбрать\|Какой VPN выбрать]] |
-| Hysteria 2 — для игр. Открывает ли она YouTube и Discord? | да, как любой протокол — [[Zapret/premium#Чем Hysteria 2 отличается от WireGuard\|Hysteria 2 и WireGuard]] |
+| Hysteria 2 — только для игр? Идут ли через неё сайты, YouTube, Discord? | да, весь интернет; приоритета на игры нет — [[Zapret/premium#Чем Hysteria 2 отличается от WireGuard\|Hysteria 2 и WireGuard]] |
 | Mihomo — только для iPhone? | нет, это формат подписки для всех систем — [[Zapret/premium#Mihomo — не только для iPhone\|Mihomo не только для iPhone]] |
 
 ## Telegram и Discord
