@@ -67,7 +67,7 @@ flowchart TB
 | **Zapret Premium** | оформление Zapret GUI: фоны, новогодняя тема, плашка Premium; к VPN отношения не имеет | [[premium/premium\|что даёт Premium]] |
 | **ZapretKVN / Zapret KVN** | наше VPN-приложение: Android (ZapretKVN) и Windows (Zapret KVN) | [[premium/android\|Android по шагам]] |
 | **ZaStoGram** | наш Telegram-клиент для Android и Windows, обходит блокировку Telegram сам | [[premium/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
-| **status.zapret.moe** | открытая страница состояния всех серверов и протоколов | [status.zapret.moe](https://status.zapret.moe) |
+| **status.zapret.moe** | открытая страница состояния всех серверов и протоколов: у какого сервера сбой, насколько он надёжен за месяц, сколько на нём людей | [status.zapret.moe](https://status.zapret.moe), [[Zapret/premium#Что показывает status.zapret.moe\|как её читать]] |
 
 ## Бот и оплата
 

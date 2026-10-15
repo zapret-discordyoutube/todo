@@ -28,7 +28,9 @@ description: "Все инструкции Zapret VPN на одной стран�
 | Я новичок: что купить, что скачать, как подключить | [[Zapret/premium\|Гайд для новичка]] — навигация, четыре шага от оплаты до VPN, тарифы и цены |
 | Сколько стоит и какой тариф взять | [[Zapret/premium#Тарифы и цены\|Тарифы и цены]] — по умолчанию советуем 💎 Vless MAX |
 | Как пополнить баланс и купить тариф | [[Zapret/premium#Шаг 1. Пополните баланс\|Шаг 1: баланс]] и [[Zapret/premium#Шаг 2. Купите тариф\|Шаг 2: тариф]] |
+| Купил тариф — что дальше и куда писать с вопросами | [[Zapret/premium#Готово. Что дальше\|Готово. Что дальше]] — после покупки бот сам покажет «🚀 Подключить устройство» и «💬 Поддержка» |
 | VPN не работает | [[Zapret/premium#Если не работает\|Что делать, если не работает]] и [состояние серверов](https://status.zapret.moe) |
+| Что даёт страница и графики status.zapret.moe | [[Zapret/premium#Что показывает status.zapret.moe\|Что показывает status.zapret.moe]] — какой сервер со сбоем и какой надёжнее |
 | Сколько устройств можно подключить | [[Zapret/premium#Сколько устройств можно подключить\|Сколько устройств]] — все свои, лимита в тарифе нет |
 | Спросить человека, в том числе в личке | [[Zapret/premium#Где спросить и получить помощь\|Где спросить и получить помощь]] — тикет с любого тарифа, личные контакты с 🚀 MasterVless Plus |
 
@@ -41,6 +43,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 | 🤖 Android: YouTube работает, а Telegram или второй Telegram — нет | [[premium/android#Один Telegram работает, а второй нет\|Один Telegram работает, а второй нет]] |
 | 🍏 iPhone и iPad | [[premium/apps#iPhone и iPad\|Приложения для iPhone]] — Clash Mi и Mihomo-подписка |
 | 🖥 Windows: v2rayN, режим прокси, браузер | [[premium/v2rayn\|v2rayN и режим прокси]] |
+| 🖥 Windows спрашивает «частная или общедоступная сеть» | [[premium/apps#Windows\|Приложения для Windows]] — «Общедоступная» или как есть, на VPN не влияет |
 | 💻 Mac и Linux | [[premium/apps#macOS и Linux\|Приложения для Mac и Linux]] |
 | AWG 3.0 или AWG 2.0, и что такое 3.1 | [[premium/apps#AWG 3.0 или AWG 2.0\|AWG 3.0 против AWG 2.0]] |
 | Какой протокол выбрать для игр | [[Zapret/premium#Какой VPN выбрать\|Какой VPN выбрать]] |
@@ -52,6 +55,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 | Вопрос | Статья |
 |---|---|
 | Telegram без VPN | [[Zapret/premium#Только Telegram\|Только Telegram]] — клиент [ZaStoGram](https://t.me/zastogram) и прокси из бота |
+| Надо ли настраивать Telegram, когда включён VPN | [[Zapret/premium#Telegram при включённом VPN\|Telegram при включённом VPN]] — нет, работает сам |
 | Как ZaStoGram обходит блокировку | [[mtproxy/telegram-wss-transport\|WSS для Telegram]] |
 | Discord через VPN без режима VPN на весь компьютер | [[premium/discord\|Discord через прокси]] |
 | Discord и YouTube бесплатно, без VPN | [[Zapret/discord\|Discord и Zapret]] и [[Zapret/download\|Как скачать Zapret GUI]] |
