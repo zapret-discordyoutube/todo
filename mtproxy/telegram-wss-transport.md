@@ -20,7 +20,7 @@ aliases:
   - tg-ws-proxy что это
   - Медиа DC203 не грузится
 link: https://git.zapret.moe/zastogram/ZaStoGram
-image: mtproxy/attachments/telegram-wss-transport-header.webp
+image: mtproxy/attachments/telegram-wss-limits-header.jpg
 description: "Как ZaStoGram и tg-ws-proxy везут MTProto через WebSocket на kwsN.web.telegram.org: правила кадров, адреса релеев, запасные пути через Cloudflare."
 ---
 
@@ -29,7 +29,7 @@ description: "Как ZaStoGram и tg-ws-proxy везут MTProto через WebS
 
 # 🕸️ WSS для Telegram: MTProto внутри WebSocket
 
-![[telegram-wss-transport-header.webp]]
+![[telegram-wss-limits-header.jpg]]
 
 > [!info] О чём заметка
 > Как устроен транспорт, на котором ZaStoGram и мосты вроде tg-ws-proxy подключаются к Telegram без VPN: что именно уходит в сеть, какие правила ставит сервер, куда клиент идёт, когда веб-вход Telegram закрыт, и кто при этом видит трафик. Статья переписана 16 октября 2026 года по текущему коду; что из этого ломается на практике (стикеры, звонки, лимиты Cloudflare), разобрано в парной заметке [[mtproxy/telegram-wss-limits|Ограничения WSS: что не работает и почему]].
