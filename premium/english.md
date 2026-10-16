@@ -38,7 +38,7 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 2. Tap **«💳 Подписка и баланс»** (Plan and balance), then **«💰 Пополнить»** (Top up).
 3. Choose an amount or type it in digits, for example `199`.
 4. Tap the payment button, open the link it gives and pay with SBP (Russia's fast payment system) in your bank app.
-5. Come back to the bot: the money arrives by itself within seconds. If nothing changed after a minute, tap «🔄 Проверить оплату» (Check payment).
+5. Come back to the bot: the money arrives by itself within seconds. If nothing changed after a minute, tap «🔄 Проверить оплату» (Check payment): the card switches to «🔄 Проверяем оплату…» (checking) and a few seconds later shows the answer in the same card — paid, still processing or not paid. The bot sends a separate message once the money is credited.
 
 ## Step 2. Buy a plan
 
