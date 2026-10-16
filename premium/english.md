@@ -73,6 +73,18 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 
 On Windows, Zapret KVN has two modes. **«VPN (TUN)»** sends the whole computer through the VPN — choose it if unsure. **«Прокси»** (Proxy) covers only programs that use the system proxy.
 
+## Personal account website
+
+Your plan, balance, payments and subscription links with QR codes can also be viewed in a browser at [lk.zapret.moe](https://lk.zapret.moe). It is handy on a computer: point your phone's camera or app scanner at the QR code instead of copying the link. The site is in Russian and only shows information — topping up, buying and changing links stay in the bot.
+
+There is no password; you sign in from the bot:
+
+1. In the bot open «💳 Подписка и баланс» (Plan and balance) and tap «🌐 Личный кабинет» (Personal account).
+2. Tap «Открыть кабинет» (Open my account) on the device where you want to see the account.
+3. On the site press «Войти» (Sign in).
+
+The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Закрыть все входы» (Sign out everywhere) on the same bot card, then change your subscription links.
+
 ## Telegram
 
 Our Telegram client [ZaStoGram](https://t.me/zastogram) (Android and Windows) bypasses the Telegram block by itself, without a VPN. With the VPN on, the regular Telegram works too.
