@@ -8,7 +8,8 @@ aliases:
   - Zapret VPN in English
   - English guide Zapret VPN
   - How to connect Zapret VPN
-description: "Zapret VPN guide in English: the bot @zapretvpns_bot is in Russian, so this page names every button you need, translates it and walks you from payment to a working VPN."
+  - Zapret VPN bot English buttons
+description: "Zapret VPN guide in English: the bot @zapretvpns_bot speaks English; this page names every button you need and walks you from payment to a working VPN."
 ---
 
 > [!mirror] Backup mirror
@@ -17,52 +18,52 @@ description: "Zapret VPN guide in English: the bot @zapretvpns_bot is in Russian
 # 🇬🇧 Zapret VPN in English
 
 > [!info] In short
-> Zapret VPN is a personal VPN that works in Russia. You buy it in the Telegram bot [@zapretvpns_bot](https://t.me/zapretvpns_bot), get **one link**, paste it into a VPN app once — and the app gets all your servers from it. The bot is in Russian, so below every button is quoted exactly as it appears in the bot, with a translation in brackets.
+> Zapret VPN is a personal VPN that works in Russia. You buy it in the Telegram bot [@zapretvpns_bot](https://t.me/zapretvpns_bot), get **one link**, paste it into a VPN app once — and the app gets all your servers from it. The bot speaks English: below every button is quoted as the English bot shows it, with the Russian name in brackets in case your bot is in Russian.
 
-**Bot language.** The bot picks its language from your Telegram language by itself. To choose it manually, send /language or open «⚙️ Настройки» (Settings) → «🌐 Язык / Language».
+**Bot language.** The bot picks its language from your Telegram language by itself: if Telegram is in English, the bot answers in English. To choose it manually, send /language or open «⚙️ Settings» («⚙️ Настройки») → «🌐 Язык / Language». A few rare screens, such as the privacy policy, are still in Russian only.
 
 ## The whole path in four steps
 
 | Step | Where | What to tap | What you get |
 |---|---|---|---|
-| 1. Top up the balance | bot | «💳 Подписка и баланс» (Plan and balance) → «💰 Пополнить» (Top up) → amount → pay | money on your bot balance |
-| 2. Buy a plan | bot | «🛒 Купить / продлить» (Buy / renew) → plan → period → confirm | an active plan |
-| 3. Get your link | bot | «🚀 Подключить устройство» (Connect a device) → «🌐 Весь интернет (VPN)» (Whole internet) → your device → the subscription button | a link `https://…` |
+| 1. Top up the balance | bot | «💳 Plan and balance» → «💰 Top up» → amount → pay | money on your bot balance |
+| 2. Buy a plan | bot | «🛒 Buy / renew» → plan → period → confirm | an active plan |
+| 3. Get your link | bot | «🚀 Connect a device» → «🌐 Whole internet (VPN)» → your device → the subscription button | a link `https://…` |
 | 4. Turn on the VPN | app | add the link as a subscription, pick a server, connect | a working VPN |
 
 If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a month): it has 15 servers instead of 2 and all Telegram proxies.
 
 ## Step 1. Top up the balance
 
-1. Open [@zapretvpns_bot](https://t.me/zapretvpns_bot) and tap «Запустить» (Start).
-2. Tap **«💳 Подписка и баланс»** (Plan and balance), then **«💰 Пополнить»** (Top up).
+1. Open [@zapretvpns_bot](https://t.me/zapretvpns_bot) and tap «Start».
+2. Tap **«💳 Plan and balance»** («💳 Подписка и баланс»), then **«💰 Top up»** («💰 Пополнить»).
 3. Choose an amount or type it in digits, for example `199`.
 4. Tap the payment button, open the link it gives and pay with SBP (Russia's fast payment system) in your bank app.
-5. Come back to the bot: the money arrives by itself within seconds. If nothing changed after a minute, tap «🔄 Проверить оплату» (Check payment): the card switches to «🔄 Проверяем оплату…» (checking) and a few seconds later shows the answer in the same card — paid, still processing or not paid. The bot sends a separate message once the money is credited.
+5. Come back to the bot: the money arrives by itself within seconds. If nothing changed after a minute, tap «🔄 Check payment» («🔄 Проверить оплату»): the card switches to «🔄 Checking the payment…» and a few seconds later shows the answer in the same card — paid, still processing or not paid. The bot sends a separate message once the money is credited.
 
 ## Step 2. Buy a plan
 
-1. On the same screen tap **«🛒 Купить / продлить»** (Buy / renew).
+1. On the same screen tap **«🛒 Buy / renew»** («🛒 Купить / продлить»).
 2. Choose a plan — **💎 Vless MAX** if unsure — then the period.
-3. Confirm. The bot answers «✅ Подписка успешно оформлена!» (Plan activated) and shows the next step.
+3. Confirm. The bot answers «✅ Subscription successfully purchased!» («✅ Подписка успешно оформлена!») and shows the next step.
 
 ## Step 3. Get your link
 
-1. In the main menu tap the green button **«🚀 Подключить устройство»** (Connect a device).
-2. Tap **«🌐 Весь интернет (VPN)»** (Whole internet). («✈️ Только Telegram» means Telegram only — a proxy inside Telegram.)
+1. In the main menu tap the green button **«🚀 Connect a device»** («🚀 Подключить устройство»).
+2. Tap **«🌐 Whole internet (VPN)»** («🌐 Весь интернет (VPN)»). «✈️ Telegram only» («✈️ Только Telegram») gives a proxy inside Telegram instead.
 3. Choose your device. The bot names the app to install and gives one button for your link:
 
 | Your device | Install | Tap in the bot |
 |---|---|---|
-| 🤖 Android | [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), file `…-arm64-v8a.apk` | «🔗 Получить Xray-подписку» (Get Xray subscription) |
-| 🍏 iPhone, iPad | [Clash Mi](https://clashmi.app/download) | «🧭 Получить Mihomo-подписку» (Get Mihomo subscription) |
-| 🪟 Windows | [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) | «🔗 Получить Xray-подписку» (Get Xray subscription) |
-| 💻 Mac, Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | «🧭 Получить Mihomo-подписку» (Get Mihomo subscription) |
+| 🤖 Android | [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), file `…-arm64-v8a.apk` | «🔗 Get Xray subscription» («🔗 Получить Xray-подписку») |
+| 🍏 iPhone / iPad | [Clash Mi](https://clashmi.app/download) | «🧭 Get Mihomo subscription» («🧭 Получить Mihomo-подписку») |
+| 🪟 Windows | [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) | «🔗 Get Xray subscription» |
+| 💻 macOS / Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | «🧭 Get Mihomo subscription» |
 
 4. The bot shows a card with your link `https://…`. **Tap the link — Telegram copies it.**
 
 > [!warning] The link is personal
-> Anyone with your link can use your VPN. Do not post it in chats or show it on screenshots. If it leaked, open the subscription card → «⋯ Ещё» (More) → «♻️ Сменить ссылку» (Change link).
+> Anyone with your link can use your VPN. Do not post it in chats or show it on screenshots. If it leaked, open the subscription card → «⋯ More» («⋯ Ещё») → «♻️ Change link» («♻️ Сменить ссылку»).
 
 ## Step 4. Turn on the VPN
 
@@ -79,11 +80,11 @@ Your plan, balance, payments and subscription links with QR codes can also be vi
 
 There is no password; you sign in from the bot:
 
-1. In the bot open «💳 Подписка и баланс» (Plan and balance) and tap «🌐 Личный кабинет» (Personal account).
-2. Tap «Открыть кабинет» (Open my account) on the device where you want to see the account.
+1. In the bot open «💳 Plan and balance» and tap «🌐 Personal account» («🌐 Личный кабинет»).
+2. Tap «Open my account» («Открыть кабинет») on the device where you want to see the account.
 3. On the site press «Войти» (Sign in).
 
-The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Закрыть все входы» (Sign out everywhere) on the same bot card, then change your subscription links.
+The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Sign out everywhere» («🚪 Закрыть все входы») on the same bot card, then change your subscription links.
 
 ## Telegram
 
@@ -93,8 +94,8 @@ Our Telegram client [ZaStoGram](https://t.me/zastogram) (Android and Windows) by
 
 | Need | Where |
 |---|---|
-| ask a question | in the bot: «💬 Поддержка» (Support) → «🎫 Создать тикет» (Create ticket) — available on any plan |
-| direct contacts of the support team | «💬 Поддержка» → «Поддержка Premium» — from 🚀 MasterVless Plus, included in 💎 Vless MAX |
+| ask a question | in the bot: «💬 Support» («💬 Поддержка») → «🎫 Create ticket» («🎫 Создать тикет») — available on any plan |
+| direct contacts of the support team (Premium support) | «💬 Support» → «💬 Go to the group» or the support agent's button — from 🚀 MasterVless Plus, included in 💎 Vless MAX |
 | is a server down | [status.zapret.moe](https://status.zapret.moe) — live status of every server |
 | more details | the full guide in Russian: [[Zapret/premium\|Zapret VPN: how to buy and connect]] (your browser can translate it) |
 
