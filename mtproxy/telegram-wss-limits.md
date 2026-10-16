@@ -18,6 +18,7 @@ aliases:
   - WSS unavailable for this DC. Add a proxy
   - tg-ws-proxy не грузит медиа
   - Ограничения WSS транспорта Telegram
+image: mtproxy/attachments/telegram-wss-limits-header.jpg
 description: "Почему через WSS в ZaStoGram и tg-ws-proxy не грузятся стикеры и медиа, не идут звонки и встаёт DC203: закрытые релеи, туннель Cloudflare, лимит 429."
 ---
 
@@ -25,6 +26,8 @@ description: "Почему через WSS в ZaStoGram и tg-ws-proxy не гр�
 > Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/telegram-wss-limits](https://wiki.zapret.moe/mtproxy/telegram-wss-limits)
 
 # 🧯 Ограничения WSS для Telegram: что не работает и почему
+
+![[telegram-wss-limits-header.jpg]]
 
 > [!info] О чём заметка
 > Симптомы, с которыми сталкиваются пользователи WSS-транспорта в ZaStoGram и мостов вроде tg-ws-proxy, их причины и способы их проверить: не грузятся стикеры или медиа из части датацентров, загрузка идёт рывками, вход не проходит, звонки не соединяются. Как сам транспорт устроен — релеи, правила кадров, лестница запасных путей через Cloudflare, — разобрано в парной заметке [[mtproxy/telegram-wss-transport|WSS для Telegram: MTProto внутри WebSocket]]; здесь из неё берутся только выводы.
