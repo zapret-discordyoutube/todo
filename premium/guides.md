@@ -24,6 +24,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 
 | Вопрос | Статья |
 |---|---|
+| 🇬🇧 Guide in English — the bot is in Russian, every button translated | [[premium/english\|Zapret VPN in English]] |
 | Что вообще есть у проекта и что значат слова (подписка, ключ, VLESS, Hysteria, AWG, Mihomo…) | [[premium/glossary\|📘 Что есть что]] — всё за минуту и словарь |
 | Я новичок: что купить, что скачать, как подключить | [[Zapret/premium\|Гайд для новичка]] — навигация, четыре шага от оплаты до VPN, тарифы и цены |
 | Сколько стоит и какой тариф взять | [[Zapret/premium#Тарифы и цены\|Тарифы и цены]] — по умолчанию советуем 💎 Vless MAX |
