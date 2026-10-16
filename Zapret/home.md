@@ -1,5 +1,5 @@
 ---
-title: Zapret 2 (Запрет GUI) — обход блокировок рунета: YouTube и Discord без VPN
+title: "Zapret 2 (Запрет GUI) — обход блокировок рунета: YouTube и Discord без VPN"
 tags:
 link:
 aliases:
