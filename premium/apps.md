@@ -152,7 +152,7 @@ AWG 2.0 в боте остаётся, чтобы не отрезать тех, �
 | Android | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
 | Windows | канал [@zastogram](https://t.me/zastogram) или [страница выпусков ZaStoGram Desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop/releases/latest), файл `ZaStoGram-x64.exe` |
 
-ZaStoGram ставится рядом с обычным Telegram. В одном приложении можно держать до трёх аккаунтов (с Telegram Premium — до пяти), поэтому клоны Telegram не нужны. Голосовые звонки через WSS не передаются: для звонков нужен VPN. WSS и прокси из бота одновременно не работают: включите прокси — WSS выключится.
+ZaStoGram ставится рядом с обычным Telegram. В одном приложении можно держать до трёх аккаунтов (с Telegram Premium — до пяти), поэтому клоны Telegram не нужны. Голосовые звонки идут мимо WSS, напрямую: если они не соединяются, поможет VPN или пакетный обход zapret. WSS и прокси из бота одновременно не работают: при включённом прокси WSS приостанавливается, а после его выключения ZaStoGram сам возвращается на WSS.
 
 ## Источники
 
