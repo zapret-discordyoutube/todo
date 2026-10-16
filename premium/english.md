@@ -68,9 +68,11 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 ## Step 4. Turn on the VPN
 
 1. Open the app and add the link as a subscription: in ZapretKVN for Android «Серверы» → «Ссылка» → paste; in Zapret KVN for Windows — add a subscription by link; in Clash apps — «Profiles» → add by URL.
-2. If the server list is empty, refresh the subscription.
+2. If the server list is empty, refresh the subscription. An empty list explains itself: its entries say what to do, for example «⚠️ No keys yet — open the bot».
 3. Pick a server and press the big connect button. Android and iPhone ask for VPN permission the first time — allow it.
 4. Check: open YouTube or a site that does not open without a VPN.
+
+In Mihomo apps (Clash Mi, Clash Verge Rev) the choice is in the group «🌐 VPnBot»: «🛡 Stable» keeps the first working server, «⚡ By latency» picks the fastest one, «👆 Manual choice» is any server from the list. If your bot is in Russian, these groups have Russian names.
 
 On Windows, Zapret KVN has two modes. **«VPN (TUN)»** sends the whole computer through the VPN — choose it if unsure. **«Прокси»** (Proxy) covers only programs that use the system proxy.
 
