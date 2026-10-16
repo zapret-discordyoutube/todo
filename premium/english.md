@@ -19,6 +19,8 @@ description: "Zapret VPN guide in English: the bot @zapretvpns_bot is in Russian
 > [!info] In short
 > Zapret VPN is a personal VPN that works in Russia. You buy it in the Telegram bot [@zapretvpns_bot](https://t.me/zapretvpns_bot), get **one link**, paste it into a VPN app once — and the app gets all your servers from it. The bot is in Russian, so below every button is quoted exactly as it appears in the bot, with a translation in brackets.
 
+**Bot language.** The bot picks its language from your Telegram language by itself. To choose it manually, send /language or open «⚙️ Настройки» (Settings) → «🌐 Язык / Language».
+
 ## The whole path in four steps
 
 | Step | Where | What to tap | What you get |
