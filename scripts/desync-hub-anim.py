@@ -483,16 +483,16 @@ def fig_order():
 
 # ═══ 7. Обманки: где умирает фейк ═════════════════════════════════════
 def fig_fooling():
-    f = Fig("fooling", 586, 16, "Три способа сделать пакет, который читает DPI, но не принимает сервер",
+    f = Fig("fooling", 548, 16, "Три способа сделать пакет, который читает DPI, но не принимает сервер",
             "Фейковый пакет идёт к серверу через DPI. Первый способ: ip_ttl или ip_autottl — TTL заканчивается в пути, до сервера пакет не доходит. "
             "Второй: badsum или tcp_md5 — пакет доходит, но сервер отбрасывает его из-за неверной контрольной суммы или подписи. "
             "Третий: tcp_seq или tcp_ack — сервер отбрасывает пакет, потому что номера не сходятся с состоянием соединения.")
     nodes = [70, 190, 310, 430, 550, 670, 880]       # клиент, 4 роутера (между 2 и 3 — DPI), сервер
     kinds = ["c", "r", "r", "d", "r", "r", "s"]
     lanes = [
-        (138, "ip_ttl, ip_autottl", "TTL кончается в пути: до сервера пакет не доходит", 1.0),
-        (290, "badsum, tcp_md5", "пакет доходит, сервер отбрасывает: сумма или подпись не сходятся", 5.4),
-        (442, "tcp_seq, tcp_ack", "пакет доходит, сервер отбрасывает: номера не из этого соединения", 9.8),
+        (100, "ip_ttl, ip_autottl", "TTL кончается в пути: до сервера пакет не доходит", 1.0),
+        (252, "badsum, tcp_md5", "пакет доходит, сервер отбрасывает: сумма или подпись не сходятся", 5.4),
+        (404, "tcp_seq, tcp_ack", "пакет доходит, сервер отбрасывает: номера не из этого соединения", 9.8),
     ]
     for li, (y, name, sub, s) in enumerate(lanes):
         f.add(f.text(2, y - 62, name, "mk"))
@@ -534,7 +534,7 @@ def fig_fooling():
             f.g(f.chip(fx, y - 30, 76, 24, "фейк ✕", "bxr", "mk sm rej"), f.vis(tt[6] + 0.1, fade=0.2))
             msg = ["сервер отбросил:", "сумма или подпись неверны"] if li == 1 else ["сервер отбросил:", "номера не сходятся"]
             f.g(f.text(950, y + 48, msg[0], "rej tk r sm") + f.text(950, y + 66, msg[1], "rej sm r"), f.vis(tt[6] + 0.2))
-    f.g(f.text(2, 580, "Во всех трёх случаях DPI фейк разбирает, а серверу он не достаётся или не принимается.", "t"), f.vis(14.4))
+    f.g(f.text(2, 540, "Во всех трёх случаях DPI фейк разбирает, а серверу он не достаётся или не принимается.", "t"), f.vis(14.4))
     return f
 
 
@@ -727,13 +727,238 @@ def fig_autottl():
     return f
 
 
+# ═══ 12. Жизненный цикл: восемь стадий ════════════════════════════════
+def fig_lifecycle():
+    stages = [
+        ("Транспорт", "пакет TCP? (у multisplit — только TCP)", "иначе: отключиться от потока"),
+        ("Направление", "исходящий? противоположное не нужно", "иначе: отключиться от направления"),
+        ("Аргументы", "обязательные аргументы на месте?", "иначе: выйти с ошибкой"),
+        ("Данные", "что резать: blob → reasm_data → payload", "берётся первое, что есть"),
+        ("Три гварда", "данные есть, направление и payload подходят?", "иначе: ничего не делать"),
+        ("Replay", "это первый кусок запроса?", "не первый: дроп, данные уже ушли"),
+        ("Техника", "маркеры, части, фейки, отправка в сеть", "у каждой функции своя"),
+        ("Вердикт", "что сделать с оригиналом", "PASS · MODIFY · DROP"),
+    ]
+    RH, Y0 = 50, 64
+    H = Y0 + 8 * RH + 30
+    f = Fig("lifecycle", H, 13, "Восемь стадий desync-функции",
+            "Любая desync-функция по очереди проходит восемь стадий: проверка транспорта, направления, аргументов, выбор данных, три гварда, "
+            "развилка replay, собственно техника и вердикт. Отказ почти всегда происходит на одной из ранних стадий.")
+    f.add(f.text(70, 30, "стадия и что она проверяет", "cap"))
+    f.add(f.text(600, 30, "если не так", "cap"))
+    for k, (name, what, no) in enumerate(stages):
+        y = Y0 + k * RH
+        t = 0.6 + k * 1.0
+        last = k == 6
+        f.add(f.line(2, y, 950, y, "lf"))
+        f.g(f.rect(2, y + 2, 946, RH - 4, "bxa", rx=8), f.vis(t, t + 1.0, fade=0.25))
+        f.add(f'<circle class="{f.c("nd")}" cx="30" cy="{y + RH / 2}" r="15"/>')
+        f.g(f'<circle class="{f.c("nda")}" cx="30" cy="{y + RH / 2}" r="15"/>', f.vis(t, fade=0.25))
+        f.add(f.text(30, y + RH / 2 + 5, str(k + 1), "mk c"))
+        f.add(f.text(62, y + RH / 2 + 5, name, "tk" + (" acc" if last else "")))
+        f.add(f.text(200, y + RH / 2 + 5, what, "t"))
+        f.add(f.text(600, y + RH / 2 + 5, no, "mu sm"))
+        if k in (0, 1, 2, 4, 5):
+            f.g(f.text(578, y + RH / 2 + 5, "✕", "rej tk c"), f.vis(t + 0.1, t + 1.0, fade=0.2))
+    f.add(f.line(2, Y0 + 8 * RH, 950, Y0 + 8 * RH, "lf"))
+    f.g(f.text(2, Y0 + 8 * RH + 24, "Если техника «не работает», обычно пакет не дошёл до стадии 7: смотри, где функция остановилась.", "tk"), f.vis(9.4))
+    return f
+
+
+# ═══ 13. seqovl ═══════════════════════════════════════════════════════
+def fig_seqovl():
+    f = Fig("seqovl", 452, 15, "seqovl: лишние байты слева от окна приёма",
+            "Без seqovl сегмент начинается с seq=1000 — именно с него сервер ждёт данные. С seqovl=10 слева дописано 10 байт паттерна, а seq сдвинут на 990. "
+            "DPI читает сегмент целиком, вместе с паттерном; сервер выбрасывает байты левее 1000 как устаревшие и принимает реальную часть.")
+    X_P, X_R, X_E = 250, 410, 800
+    f.add(f.line(X_R, 40, X_R, 262, "lfd"))
+    f.add(f.text(X_R, 30, "сервер ждёт seq=1000", "acc tk c sm"))
+    # без seqovl
+    ya, yb = 84, 190
+    f.add(f.text(2, ya + 5, "без seqovl", "tk"))
+    f.add(f.rect(X_R, ya - 20, X_E - X_R, 40, "bxa"))
+    f.add(f.text((X_R + X_E) / 2, ya + 5, "реальная первая часть, seq=1000", "mk c sm"))
+    f.g(f.text(X_E + 10, ya + 5, "принят", "acc tk sm"), f.vis(1.4))
+    # с seqovl
+    f.add(f.text(2, yb + 5, "seqovl=10", "tk"))
+    f.add(f.rect(X_R, yb - 20, X_E - X_R, 40, "bxa"))
+    f.add(f.text((X_R + X_E) / 2, yb + 5, "реальная первая часть", "mk c sm"))
+    f.g(f.rect(X_P, yb - 20, X_R - X_P, 40, "bxd") + f.text((X_P + X_R) / 2, yb + 5, "паттерн, 10 байт", "mu c sm") +
+        f.text(X_P, yb - 30, "seq=990", "mk sm"),
+        f.go([(0, 60, 0, 0), (3.0, 60, 0, 0), (3.2, 60, 0, 0), (4.2, 0, 0, 1)]))
+    f.g(f.text(X_E + 10, yb - 3, "один обычный", "mu sm") + f.text(X_E + 10, yb + 15, "TCP-сегмент", "mu sm"), f.vis(4.4))
+    # кто что видит
+    f.g(f.line(X_P, 266, X_E, 266, "la") + f.line(X_P, 260, X_P, 272, "la") + f.line(X_E, 260, X_E, 272, "la") +
+        f.text((X_P + X_E) / 2, 292, "DPI читает сегмент целиком, от начала — и паттерн тоже", "acc tk c sm"), f.vis(6.0))
+    f.g(f.line(X_P, 320, X_R, 320, "lr") + f.text((X_P + X_R) / 2, 344, "левее 1000: выброшено", "rej tk c sm"), f.vis(8.0))
+    f.g(f.line(X_R, 320, X_E, 320, "la") + f.text((X_R + X_E) / 2, 344, "принято: сервер собрал нужные байты", "acc tk c sm"), f.vis(9.2))
+    f.add(f.text(2, 320, "сервер", "tk"))
+    f.add(f.text(2, 292, "DPI", "tk"))
+    f.g(f.text(2, 410, "Заголовки не искажены, пакет выглядит честным — этим seqovl отличается от fooling.", "t"), f.vis(10.6))
+    return f
+
+
+# ═══ 14. Нарезка на сегменты ══════════════════════════════════════════
+def fig_segments():
+    f = Fig("segments", 372, 14, "multisplit: pos=100,300,450 делит 600 байт на четыре сегмента",
+            "Данные длиной 600 байт режутся в позициях 100, 300 и 450 на четыре куска: 0–99, 100–299, 300–449, 450–599. "
+            "Сегменты уходят по порядку, seq каждого равен смещению его первого байта.")
+    X0, S = 150, 1.3
+    px = lambda b: X0 + b * S
+    f.add(f.text(2, 28, "данные запроса, 600 байт", "cap"))
+    f.add(f.rect(px(0), 44, 600 * S, 34, "bx", rx=5))
+    for b in (0, 100, 300, 450, 600):
+        f.add(f.text(px(b), 100, str(b), "mu sm c"))
+    cuts = [100, 300, 450]
+    for k, b in enumerate(cuts):
+        f.g(f.line(px(b), 36, px(b), 86, "la"), f.vis(0.8 + k * 0.5, fade=0.25))
+    f.g(f.text(px(300), 128, "разрезы pos=100,300,450", "acc tk c sm"), f.vis(2.0))
+    bounds = [0, 100, 300, 450, 600]
+    f.add(f.text(2, 160, "порядок отправки", "cap"))
+    for k in range(4):
+        a, b = bounds[k], bounds[k + 1]
+        y = 176 + k * 40
+        t = 3.0 + k * 1.1
+        f.g(f.rect(px(a) + 1, y, (b - a) * S - 2, 30, "bxa", rx=5) +
+            f.text(px(a) + (b - a) * S / 2, y + 20, f"{b - a} байт", "mk c sm") +
+            f.text(2, y + 20, f"сегмент {k + 1}", "tk sm") +
+            f.text(86, y + 20, f"seq={a}", "m mu sm"),
+            f.go([(0, 0, -150 + 0, 0), (t, 0, -34, 0), (t + 0.2, 0, -34, 1), (t + 0.9, 0, 0, 1)]))
+    f.g(f.text(2, 356, "Сервер складывает сегменты по seq и получает исходные 600 байт без пропусков.", "tk"), f.vis(8.2))
+    return f
+
+
+# ═══ 15. MSS ══════════════════════════════════════════════════════════
+def fig_mss():
+    f = Fig("mss", 320, 13, "Автосегментация по MSS: кусок больше MSS режется сам",
+            "Если кусок данных вместе с заголовками не помещается в MSS соединения, хелпер rawsend_payload_segmented дорезает его на под-сегменты "
+            "и увеличивает seq на длину предыдущего. Fooling достаётся всем под-сегментам одинаково, ip_id считается для каждого отдельно.")
+    X0, W_ = 40, 880
+    f.add(f.text(2, 28, "кусок данных от функции", "cap"))
+    f.add(f.rect(X0, 44, W_, 34, "bx", rx=5))
+    f.add(f.text(X0 + W_ / 2, 66, "больше, чем влезает в один сегмент", "mu c sm"))
+    mss = 300
+    parts = [(X0, mss, "seq = s"), (X0 + mss, mss, "seq = s + MSS"), (X0 + 2 * mss, W_ - 2 * mss, "seq = s + 2·MSS")]
+    for k in (1, 2):
+        f.g(f.line(X0 + k * mss, 36, X0 + k * mss, 86, "la") + f.text(X0 + k * mss, 106, "MSS", "acc tk c sm"), f.vis(1.0 + k * 0.4, fade=0.25))
+    f.add(f.text(2, 146, "что уходит в сеть", "cap"))
+    for k, (x, w, lab) in enumerate(parts):
+        y = 162
+        t = 3.0 + k * 1.0
+        f.g(f.rect(x + 1, y, w - 2, 34, "bxa", rx=5) + f.text(x + w / 2, y + 22, lab, "mk c sm") +
+            f.text(x + w / 2, y + 58, "то же fooling", "mu sm c") + f.text(x + w / 2, y + 78, "свой ip_id", "mu sm c"),
+            f.go([(0, 0, -40, 0), (t, 0, -40, 0), (t + 0.2, 0, -40, 1), (t + 0.8, 0, 0, 1)]))
+    f.g(f.text(2, 300, "Думать о размере сегментов не нужно: MSS берётся из desync.tcp_mss.", "tk"), f.vis(7.0))
+    return f
+
+
+# ═══ 16. reasm и replay ═══════════════════════════════════════════════
+def fig_reasm():
+    f = Fig("reasm", 392, 15, "reasm: большой ClientHello приходит несколькими пакетами",
+            "ClientHello не помещается в один TCP-сегмент и приходит тремя пакетами. nfqws2 придерживает их и собирает в reasm_data, затем перепроигрывает: "
+            "на первой части функция режет и отправляет весь собранный буфер, а вторую и третью части выбрасывает — их содержимое уже ушло.")
+    f.add(f.text(2, 28, "пришло из приложения", "cap"))
+    xs = [60, 160, 260]
+    for k in range(3):
+        f.g(f.chip(xs[k] + 40, 62, 84, 32, f"часть {k + 1}", "bxa", "mk sm"),
+            f.go([(0, -100, 0, 0), (0.5 + k * 0.8, -100, 0, 0), (0.6 + k * 0.8, -100, 0, 1), (1.4 + k * 0.8, 0, 0, 1)]))
+    f.g(f.text(2, 112, "ядро придерживает пакеты и собирает запрос", "tk sm"), f.vis(3.2))
+    f.g(f.rect(60, 128, 360, 40, "bxa") + f.text(240, 153, "reasm_data: запрос целиком", "mk c sm"), f.vis(3.6))
+    f.add(f.text(2, 212, "перепроигрывание (replay)", "cap"))
+    f.g(f.chip(100, 252, 100, 32, "часть 1", "bxa", "mk sm") + f.arrow(150, 252, 240, 252, "a") +
+        f.rect(240, 226, 190, 52, "bxa") + f.text(335, 247, "функция режет весь", "mk c sm") + f.text(335, 267, "reasm_data", "mk c sm"), f.vis(5.4))
+    for k in range(3):
+        f.g(f.chip(500 + k * 100, 252, 80, 32, f"кусок {k + 1}", "bxa", "mk sm"),
+            f.go([(0, -270 + k * 40, 0, 0), (7.0 + k * 0.5, -270 + k * 40, 0, 0), (7.1 + k * 0.5, -270 + k * 40, 0, 1), (7.9 + k * 0.5, 0, 0, 1)]))
+    f.g(f.text(500, 306, "уходят в сеть сразу", "acc tk sm"), f.vis(8.8))
+    f.g(f.chip(100, 340, 100, 32, "часть 2, 3", "bxr", "mk sm rej") + f.text(160, 345, "→ DROP: содержимое уже отправлено", "rej tk sm"), f.vis(10.2))
+    return f
+
+
+# ═══ 17. tls_mod ══════════════════════════════════════════════════════
+def fig_tlsmod():
+    f = Fig("tlsmod", 360, 20, "tls_mod: что меняется в фейковом ClientHello",
+            "Опции tls_mod правят поля фейкового ClientHello перед отправкой: rnd делает случайными Random и Session ID, rndsni и sni= заменяют имя сайта, "
+            "dupsid копирует Session ID из настоящего запроса, padencap раздувает padding extension под настоящий запрос.")
+    blocks = [("заголовки", 100, "hdr"), ("Random 32 Б", 120, "rnd"), ("Session ID", 110, "sid"),
+              ("другие расширения", 190, "ext"), ("SNI: имя сайта", 170, "sni"), ("padding", 100, "pad")]
+    X0, Y, H_ = 30, 120, 44
+    pos = {}
+    x = X0
+    for lab, w, key in blocks:
+        pos[key] = (x, w)
+        f.add(f.rect(x, Y, w, H_, "bx", rx=6) + f.text(x + w / 2, Y + 27, lab, "mk c sm" if key in ("rnd", "sid", "sni", "pad") else "mu c sm"))
+        x += w + 4
+    f.add(f.text(2, 28, "фейковый ClientHello", "cap"))
+    scen = [
+        (["rnd", "sid"], "rnd", "Random и Session ID заполнены случайными байтами"),
+        (["sni"], "rndsni", "имя сайта в SNI заменено случайным доменом"),
+        (["sni"], "sni=<домен>", "в SNI стоит ваш домен; длины внутри TLS пересчитаны"),
+        (["sid"], "dupsid", "Session ID скопирован из настоящего запроса (после rnd)"),
+        (["pad"], "padencap", "padding увеличен на длину настоящего запроса: он может выглядеть его частью"),
+    ]
+    for si, (keys, name, cap) in enumerate(scen):
+        t0 = 0.4 + si * 3.8
+        t1 = t0 + 3.6
+        f.g(f.text(2, 70, f"tls_mod={name}", "ml acc"), f.vis(t0, t1))
+        for key in keys:
+            bx, bw = pos[key]
+            f.g(f.rect(bx - 3, Y - 3, bw + 6, H_ + 6, "bxa", rx=8), f.vis(t0 + 0.3, t1, fade=0.3))
+        f.g(f.text(2, 244, cap, "tk"), f.vis(t0 + 0.5, t1))
+        if name == "dupsid":
+            bx, bw = pos["sid"]
+            f.g(f.rect(bx, 276, bw, 40, "bxa", rx=6) + f.text(bx + bw / 2, 301, "Session ID", "mk c sm") +
+                f.text(X0, 292, "настоящий запрос", "mu sm") + f.arrow(bx + bw / 2, 272, bx + bw / 2, Y + H_ + 8, "a"), f.vis(t0 + 0.9, t1))
+        if name == "padencap":
+            bx, bw = pos["pad"]
+            f.g(f.rect(bx + 6, 276, 190, 40, "bxa", rx=6) + f.text(bx + 101, 301, "настоящий запрос", "mk c sm") +
+                f.arrow(bx + bw / 2, 272, bx + bw / 2, Y + H_ + 8, "a"), f.vis(t0 + 0.9, t1))
+    f.g(f.text(2, 350, "Нет образца настоящего запроса (reasm_data) — tls_mod молча пропускается, и фейк уходит как есть.", "mu"), f.vis(0.2))
+    return f
+
+
+# ═══ 18. fakedsplit: шесть пакетов ════════════════════════════════════
+def fig_fakedsplit6():
+    f = Fig("fakedsplit6", 450, 16, "fakedsplit: каждая настоящая часть зажата между фейками",
+            "fakedsplit отправляет до шести пакетов: фейк первой части, настоящая первая часть, повтор фейка, фейк второй части, настоящая вторая часть, повтор фейка. "
+            "У трёх пакетов каждой тройки один и тот же seq, DPI не может понять, какой настоящий; сервер отбрасывает фейки и принимает настоящие части.")
+    X1, X2, X3 = 250, 520, 770
+    f.add(f.text(2, 28, "порядок отправки", "cap"))
+    f.add(f.text(X1, 28, "1-я часть", "cap"))
+    f.add(f.text(X2, 28, "2-я часть", "cap"))
+    f.add(f.text(950, 28, "сервер", "cap r"))
+    rows = [("фейк 1", "nofake1", 0, True), ("настоящая 1", "", 0, False), ("фейк 1, повтор", "nofake2", 0, True),
+            ("фейк 2", "nofake3", 1, True), ("настоящая 2", "", 1, False), ("фейк 2, повтор", "nofake4", 1, True)]
+    RH, Y0 = 46, 46
+    for k, (lab, flag, part, fake) in enumerate(rows):
+        y = Y0 + k * RH
+        t = 0.6 + k * 1.0
+        x = X1 if part == 0 else X2
+        w = 250
+        inner = f.text(2, y + 25, f"#{k + 1}", "mu") + f.text(34, y + 25, lab, "tk sm")
+        if flag:
+            inner += f.text(34, y + 41, flag, "m mu sm")
+        inner += f.rect(x, y + 4, w, 32, "bxd" if fake else "bxa", rx=5)
+        inner += f.text(x + w / 2, y + 25, "мусор X…X" if fake else "реальные данные", ("mu" if fake else "mk") + " c sm")
+        inner += f.text(950, y + 25, "отброшен: fooling" if fake else "принят", ("mu" if fake else "acc tk") + " r sm")
+        f.g(inner, f.vis(t, dx=-16))
+    for part, (ra, rb, label) in enumerate([(0, 2, "тройка с одним seq"), (3, 5, "тройка с одним seq")]):
+        y0 = Y0 + ra * RH + 2
+        y1 = Y0 + rb * RH + RH - 2
+        f.g(f.line(812, y0 + 4, 812, y1 - 4, "la") + f.line(806, y0 + 4, 812, y0 + 4, "la") + f.line(806, y1 - 4, 812, y1 - 4, "la"), f.vis(7.0 + part * 0.8))
+    f.g(f.text(2, Y0 + 6 * RH + 28, "DPI видит две тройки «повторов» и не может понять, какой пакет в каждой настоящий.", "tk"), f.vis(8.6))
+    f.g(f.text(2, Y0 + 6 * RH + 56, "Сервер выбрасывает фейки и склеивает настоящие части: получается исходный запрос.", "t"), f.vis(10.0))
+    return f
+
+
 def x2c(xs):
     return (xs[5] + xs[6]) / 2
 
 
 FIGS = {"flow": fig_flow, "contract": fig_contract, "verdict": fig_verdict, "map": fig_map, "syntax": fig_syntax,
         "order": fig_order, "fooling": fig_fooling, "markers": fig_markers, "seqack": fig_seqack, "tsup": fig_tsup,
-        "autottl": fig_autottl}
+        "autottl": fig_autottl, "lifecycle": fig_lifecycle, "seqovl": fig_seqovl, "segments": fig_segments,
+        "mss": fig_mss, "reasm": fig_reasm, "tlsmod": fig_tlsmod, "fakedsplit6": fig_fakedsplit6}
 
 
 def main(argv):
