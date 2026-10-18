@@ -139,6 +139,7 @@ description: "Как подключиться к VLESS+REALITY с телефон
 - [[xray/project-x|Project X (Xray-core)]] — обзор проекта и экосистемы клиентов/панелей
 - [[Clash/00-overview|Clash и mihomo]] — соседняя экосистема клиентов: ядро mihomo, его оболочки и маршрутизация по правилам
 - [[subscriptions/hwid-client-lock|HWID-привязка и запрет «чужих» клиентов]] — почему подписка иногда работает только в одном конкретном приложении и как это проверить
+- [[xray/happ-problems|Чем плох Happ]] — разбор претензий к самому рекомендуемому здесь клиенту: закрытый код, телеметрия, открытый API
 - [[VLESS/dpi-tls-june-2026|DPI TLS heuristics 2026]] — почему связку всё же иногда режут
 - 🔗 [happ.su](https://www.happ.su/main/ru) · [FAQ HAPP](https://www.happ.su/main/ru/faq) — официальная документация клиента
 - 🔗 [routing.happ.su](https://routing.happ.su/ru) — конструктор правил маршрутизации
