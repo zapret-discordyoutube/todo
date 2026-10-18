@@ -671,6 +671,309 @@ def fig_xhttp_modes():
     return f
 
 
+# ═══ Техники: прямой и обратный порядок ═══════════════════════════════
+def fig_z2_direction():
+    f = Fig("z2-direction", 330, 14, "multisplit шлёт куски по порядку, multidisorder — с конца",
+            "Запрос делится на четыре куска: 0–99, 100–299, 300–449 и 450–599. multisplit отправляет их 1, 2, 3, 4, multidisorder — 4, 3, 2, 1. "
+            "seq у каждого куска свой и верный, меняется только порядок отправки.")
+    X0, S = 150, 1.3
+    px = lambda b: X0 + b * S
+    parts = [(0, 100, 0), (100, 300, 100), (300, 450, 300), (450, 600, 450)]
+    f.add(f.text(2, 26, "запрос, 600 байт", "cap"))
+    for k, (a, b, seq) in enumerate(parts):
+        f.add(f.rect(px(a) + 1, 38, (b - a) * S - 2, 34, "bxa" if k % 2 == 0 else "bx", rx=5) + f.text(px(a) + (b - a) * S / 2, 60, f"{k + 1}", "mk c"))
+    f.add(f.text(2, 106, "порядок отправки по времени", "cap"))
+    f.add(f.arrow(250, 126, 950, 126, "f"))
+    slots = [300, 470, 640, 810]
+    for row, (name, order, y, t0) in enumerate([("multisplit", [1, 2, 3, 4], 150, 0.8), ("multidisorder", [4, 3, 2, 1], 232, 6.4)]):
+        f.add(f.text(2, y + 24, name, "mk"))
+        f.add(f.line(250, y + 20, 950, y + 20, "lfd"))
+        for k, part in enumerate(order):
+            a, b, seq = parts[part - 1]
+            t = t0 + k * 1.2
+            f.g(f.chip(slots[k], y + 20, 150, 40, f"кусок {part} · seq={seq}", "bxa", "mk sm"),
+                f.go([(0, -220, 0, 0), (t, -220, 0, 0), (t + 0.15, -220, 0, 1), (t + 0.8, 0, 0, 1)]))
+    f.g(f.text(2, 316, "У каждого куска свой seq: сервер соберёт запрос по номерам, как бы ни пришли куски.", "tk sm"), f.vis(11.6))
+    return f
+
+
+# ═══ Техники: что уходит в каком порядке ══════════════════════════════
+def fig_z2_orders():
+    f = Fig("z2-orders", 360, 16, "Четыре функции: что уходит и в каком порядке",
+            "multisplit отправляет часть 1 и часть 2 — только разрез. multidisorder — часть 2, затем часть 1. fakedsplit окружает каждую часть фейками: F1, часть 1, F2, потом F3, часть 2, F4. "
+            "fakeddisorder делает то же, но сначала вторая часть, потом первая.")
+    rows = [("multisplit", [("p", 1)], [("p", 2)], "только разрез"),
+            ("multidisorder", [("p", 2)], [("p", 1)], "разрез + обратный порядок"),
+            ("fakedsplit", [("f", "F1"), ("p", 1), ("f", "F2")], [("f", "F3"), ("p", 2), ("f", "F4")], "разрез + фейки"),
+            ("fakeddisorder", [("f", "F1"), ("p", 2), ("f", "F2")], [("f", "F3"), ("p", 1), ("f", "F4")], "разрез + фейки + обратный порядок")]
+    for r, (name, g1, g2, note) in enumerate(rows):
+        y = 42 + r * 74
+        t0 = 0.5 + r * 3.6
+        f.add(f.line(2, y - 20, 950, y - 20, "lf"))
+        f.g(f.text(2, y + 18, name, "mk"), f.vis(t0, fade=0.2))
+        x = 168
+        seq = 0
+        for gi, g in enumerate((g1, g2)):
+            for kind, lab in g:
+                w = 72 if kind == "f" else 104
+                txt = lab if kind == "f" else f"часть {lab}"
+                t = t0 + 0.3 + seq * 0.45
+                f.g(f.chip(x + w / 2, y + 12, w, 40, txt, "bxd" if kind == "f" else "bxa", "mk sm"), f.go([(0, -20, 0, 0), (t, -20, 0, 0), (t + 0.15, -20, 0, 1), (t + 0.5, 0, 0, 1)]))
+                x += w + 8
+                seq += 1
+            if gi == 0:
+                f.g(f.arrow(x + 2, y + 12, x + 34, y + 12, "f"), f.vis(t0 + 0.3 + seq * 0.45, fade=0.2)) if False else f.add(f.arrow(x + 2, y + 12, x + 34, y + 12, "f"))
+                x += 44
+        f.g(wrapped(f, 770, y + 4, note, "mu sm", 24, 17), f.vis(t0 + 0.6))
+    f.g(f.text(2, 346, "F — фейк: мусорные данные того же размера; сервер отбрасывает их за счёт fooling.", "mu sm"), f.vis(14.6))
+    return f
+
+
+# ═══ Техники: буфер сокета при seqovl в disorder ══════════════════════
+def fig_z2_seqovl_buffer():
+    f = Fig("z2-seqovl-buffer", 470, 20, "seqovl в disorder: ЧАСТЬ_1 перезаписывает паттерн в буфере",
+            "Сначала приходит ЧАСТЬ_2 с приклеенным слева паттерном на 49 байт, seq=50, длина 249: данные приложению не выдаются, нет непрерывности от нуля. "
+            "Затем ЧАСТЬ_1, seq=0, длина 100. Linux и BSD позднее перезаписывает раннее: паттерн уничтожен, 0–299 отдаются корректно. "
+            "Windows сохраняет раннее: байты 50–98 остаются от паттерна, приложение получает повреждённые данные.")
+    X0, S = 40, 2.9
+    px = lambda v: X0 + v * S
+    def ruler(y):
+        for v in (0, 50, 100, 300):
+            f.add(f.line(px(v), y - 6, px(v), y, "lm") + f.text(px(v), y - 10, str(v), "mu sm c"))
+    def block(a, b, y, cls, label, tcls="mk sm"):
+        return f.rect(px(a), y, (b - a) * S, 34, cls, rx=4) + f.text(px(a) + (b - a) * S / 2, y + 22, label, tcls + " c")
+    f.add(f.text(2, 24, "буфер сокета на сервере, позиции в байтах", "cap"))
+    # t1
+    y1 = 66
+    f.g(f.text(2, y1 - 18, "t1: приходит [PATTERN(49)][ЧАСТЬ_2(200)], seq=50, len=249", "tk sm"), f.vis(0.4))
+    ruler(y1 + 8)
+    f.add(f.rect(px(0), y1 + 14, 300 * S, 34, "bxd", rx=4))
+    f.g(block(50, 99, y1 + 14, "bxr", "PATTERN", "mk sm rej") + block(99, 300, y1 + 14, "bxa", "ЧАСТЬ_2 (200)"), f.go([(0, 0, 20, 0), (1.0, 0, 20, 0), (1.3, 0, 20, 1), (2.0, 0, 0, 1)]))
+    f.g(f.text(2, y1 + 72, "данные не выдаются приложению: нет непрерывной последовательности от 0", "mu sm"), f.vis(2.6))
+    # t2 Linux
+    y2 = 178
+    f.g(f.text(2, y2 - 18, "t2: приходит [ЧАСТЬ_1(100)], seq=0, len=100 — Linux и BSD: позднее перезаписывает", "tk sm"), f.vis(4.6))
+    f.g(f.rect(px(0), y2 + 14, 300 * S, 34, "bxd", rx=4) + block(0, 100, y2 + 14, "bxa", "ЧАСТЬ_1 (100)") + block(100, 300, y2 + 14, "bxa", "ЧАСТЬ_2 (200)"),
+        f.go([(0, 0, 20, 0), (5.2, 0, 20, 0), (5.5, 0, 20, 1), (6.2, 0, 0, 1)]))
+    f.g(f.text(2, y2 + 72, "паттерн перезаписан реальными данными: 0..299 непрерывно — приложение получает всё корректно", "acc tk sm"), f.vis(7.0))
+    # t2 Windows
+    y3 = 308
+    f.g(f.text(2, y3 - 18, "t2 на Windows: сохраняет раннее", "tk sm"), f.vis(10.4))
+    f.g(f.rect(px(0), y3 + 14, 300 * S, 34, "bxd", rx=4) + block(0, 50, y3 + 14, "bxa", "ЧАСТЬ_1 (50)") + block(50, 99, y3 + 14, "bxr", "PATTERN", "mk sm rej") +
+        block(99, 300, y3 + 14, "bxa", "ЧАСТЬ_2 (200)"), f.go([(0, 0, 20, 0), (11.0, 0, 20, 0), (11.3, 0, 20, 1), (12.0, 0, 0, 1)]))
+    f.g(f.text(2, y3 + 72, "байты 50..98 остались от паттерна — мусор: приложение получает повреждённые данные", "rej tk sm"), f.vis(13.0))
+    f.g(f.text(2, 458, "Поэтому seqovl в disorder не работает на Windows-серверах.", "mu sm"), f.vis(15.6))
+    return f
+
+
+# ═══ fakeddisorder: шесть пакетов ═════════════════════════════════════
+def fig_z2_fakeddisorder6():
+    f = Fig("z2-fakeddisorder6", 478, 22, "fakeddisorder: сначала вторая часть в тройке фейков, потом первая",
+            "100 байт режутся по midsld на часть 1 (39 байт, seq 0) и часть 2 (61 байт, seq 39). Уходят шесть пакетов: фейк, настоящая часть 2, фейк, затем фейк, настоящая часть 1, фейк. "
+            "С seqovl=10 перед настоящей частью 2 дописывается паттерн и seq становится 29. Флаги nofake2 и nofake4 убирают два фейка: остаётся четыре пакета.")
+    X0, S = 250, 5.0
+    px = lambda b: X0 + b * S
+    rows = [("фейк 2-й части", "nofake1", 1, True, 39), ("настоящая 2-я", "", 1, False, 39), ("фейк 2-й части", "nofake2", 1, True, 39),
+            ("фейк 1-й части", "nofake3", 0, True, 0), ("настоящая 1-я", "", 0, False, 0), ("фейк 1-й части", "nofake4", 0, True, 0)]
+    f.add(f.text(2, 26, "порядок отправки", "cap"))
+    f.add(f.text(px(0), 26, "часть 1 · 39 байт", "cap"))
+    f.add(f.text(px(39), 26, "часть 2 · 61 байт", "cap"))
+    f.add(f.text(950, 26, "сервер", "cap r"))
+    RH, Y0 = 48, 40
+    for k, (lab, flag, part, fake, seq) in enumerate(rows):
+        y = Y0 + k * RH
+        t = 0.6 + k * 0.9
+        a, b = (39, 100) if part == 1 else (0, 39)
+        inner = f.text(2, y + 22, f"#{k + 1}", "mu sm") + f.text(32, y + 20, lab, "tk sm")
+        inner += f.text(32, y + 38, f"seq {seq}" + (f" · {flag}" if flag else ""), "m mu sm")
+        inner += f.rect(px(a) + 1, y + 6, (b - a) * S - 2, 32, "bxd" if fake else "bxa", rx=5)
+        inner += f.text(px(a) + (b - a) * S / 2, y + 27, "мусор" if fake else "реальные данные", ("mu" if fake else "mk") + " c sm")
+        inner += f.text(950, y + 27, "отброшен: fooling" if fake else "принят", ("mu" if fake else "acc tk") + " r sm")
+        f.g(inner, f.vis(t, dx=-14))
+    # seqovl: паттерн слева от части 2 в пакете 2
+    y2 = Y0 + 1 * RH
+    f.g(f.rect(px(39) - 10 * S, y2 + 6, 10 * S - 1, 32, "bxr", rx=5) + f.text(px(39) - 5 * S, y2 + 27, "PAT", "mk rej c sm") + f.text(px(39) - 5 * S, y2 + 56, "seq 29", "mk rej c sm"), f.vis(8.0, 14.0, fade=0.3))
+    f.g(f.text(2, Y0 + 6 * RH + 30, "seqovl=10: к настоящей части 2 слева дописаны 10 байт паттерна, seq = 39 − 10 = 29; сервер их отбросит.", "tk sm"), f.vis(8.2, 14.2))
+    # nofake: пропуски
+    for k, nm in ((2, "nofake2"), (5, "nofake4")):
+        y = Y0 + k * RH
+        f.g(f.rect(0, y + 2, 952, RH - 4, "bxbg", rx=4) + f.rect(0, y + 2, 952, RH - 4, "bxd", rx=6) +
+            f.text(14, y + 29, f"#{k + 1} пропущен: {nm}", "mu tk sm"), f.vis(15.0, fade=0.3))
+    f.g(f.text(2, Y0 + 6 * RH + 30, "nofake2:nofake4 — два фейка не отправляются: вместо шести пакетов уходит четыре.", "tk sm"), f.vis(15.2))
+    f.g(f.text(2, 456, "opts_orig (настоящие части): только tcp_ts_up из fooling · opts_fake (фейки): весь fooling и reconstruct.", "mu sm"), f.vis(18.0))
+    return f
+
+
+# ═══ hostfakesplit: три варианта ══════════════════════════════════════
+HOSTFAKE = {
+    "base": ("базовый вариант: без midhost и disorder_after",
+             [("before_host", 260, "r"), ("hostname", 200, "h"), ("after_host", 280, "r")],
+             [("before_host", "r"), ("FAKE hostname", "f"), ("hostname", "r"), ("FAKE hostname", "f"), ("after_host", "r")], "5 сегментов: 3 настоящих и 2 фейка"),
+    "midhost": ("с midhost: имя делится на две части",
+                [("before_host", 220, "r"), ("host_part1", 110, "h"), ("host_part2", 110, "h"), ("after_host", 260, "r")],
+                [("before_host", "r"), ("FAKE hostname", "f"), ("host_part1", "r"), ("host_part2", "r"), ("FAKE hostname", "f"), ("after_host", "r")], "6 сегментов: 4 настоящих и 2 фейка"),
+    "disorder": ("с disorder_after: хвост в обратном порядке",
+                 [("before_host", 200, "r"), ("hostname", 170, "h"), ("after_1", 130, "r"), ("after_2", 130, "r")],
+                 [("before_host", "r"), ("FAKE hostname", "f"), ("hostname", "r"), ("FAKE hostname", "f"), ("after_2", "r"), ("after_1", "r")], "6 сегментов: хвост уходит в обратном порядке"),
+}
+
+
+def make_hostfake(key):
+    def fig():
+        name, payload, seg, note = HOSTFAKE[key]
+        f = Fig("z2-hostfake-" + key, 330, 11, "hostfakesplit — " + name,
+                "Запрос делится на до-хост, hostname и после-хост. Фейк с подставным именем окружает настоящее имя сайта; сегменты уходят в показанном порядке. " + note + ".")
+        f.add(f.text(2, 26, "запрос", "cap"))
+        x = 2
+        for lab, w, kind in payload:
+            f.add(f.rect(x, 38, w - 4, 38, "bxa" if kind == "h" else "bx", rx=5) + f.text(x + w / 2 - 2, 62, lab, ("mk" if kind == "h" else "mu") + " c sm"))
+            x += w
+        f.add(f.text(2, 118, "порядок отправки", "cap"))
+        for k, (lab, kind) in enumerate(seg):
+            cx = 72 + k * 154
+            t = 0.8 + k * 0.8
+            f.g(f.chip(cx, 160, 140, 40, lab, "bxd" if kind == "f" else "bxa", "mk sm") + f.text(cx, 202, str(k + 1), "mu sm c"), f.vis(t, dy=10, fade=0.25))
+        f.g(f.text(2, 246, note, "tk"), f.vis(6.0))
+        f.g(f.rect(2, 270, 18, 18, "bxa", rx=4) + f.text(30, 284, "настоящий сегмент", "t sm") + f.rect(250, 270, 18, 18, "bxd", rx=4) + f.text(278, 284, "фейк с fooling", "t sm"), f.vis(0.2))
+        f.g(f.text(2, 316, "Фейк несёт подставное имя на месте настоящего: DPI читает его, сервер выбрасывает пакет из-за fooling.", "mu sm"), f.vis(0.2))
+        return f
+    return fig
+
+
+# ═══ multidisorder_legacy: целиком или по пакетам ═════════════════════
+def fig_z2_md_legacy():
+    f = Fig("z2-md-legacy", 560, 22, "multidisorder: весь reasm против попакетной обработки",
+            "Два пакета от ядра A (500 байт) и B (300 байт) собраны в reasm на 800 байт, позиции разреза pos=200,600. Новый multidisorder режет весь reasm на три части и отправляет 3, 2, 1: "
+            "исходная сегментация потеряна. Legacy режет каждый пакет отдельно: A2, A1, B2, B1 — сегментация сохранена, обратный порядок только внутри пакета.")
+    X0, S = 150, 0.9
+    px = lambda b: X0 + b * S
+    f.add(f.text(2, 24, "от ядра пришло два пакета", "cap"))
+    f.add(f.rect(px(0) + 1, 36, 500 * S - 2, 30, "bx", rx=5) + f.text(px(250), 56, "пакет A · 500 байт", "mk c sm"))
+    f.add(f.rect(px(500) + 1, 36, 300 * S - 2, 30, "bxa", rx=5) + f.text(px(650), 56, "пакет B · 300 байт", "mk c sm"))
+    f.g(f.line(px(200), 30, px(200), 74, "la") + f.line(px(600), 30, px(600), 74, "la") + f.text(px(400), 92, "разрезы pos=200,600", "acc tk c sm"), f.vis(0.8))
+    # новый
+    f.add(f.line(2, 106, 950, 106, "lf"))
+    f.g(f.text(2, 132, "новый: режет весь reasm (800 байт)", "tk sm"), f.vis(2.0))
+    new = [(0, 200, "1 · seq 0", 3), (200, 600, "2 · seq 200", 2), (600, 800, "3 · seq 600", 1)]
+    for k, (a, b, lab, order) in enumerate(new):
+        t = 2.6 + (order - 1) * 0.0
+    for idx, (a, b, lab, order) in enumerate(sorted(new, key=lambda x: -x[0])):
+        t = 3.0 + idx * 1.1
+        y = 148 + idx * 38
+        f.g(f.rect(px(a) + 1, y, (b - a) * S - 2, 30, "bxa", rx=5) + f.text(px(a) + (b - a) * S / 2, y + 20, lab, "mk c sm") + f.text(2, y + 20, f"отправка {idx + 1}", "mu sm"),
+            f.go([(0, 0, -20, 0), (t, 0, -20, 0), (t + 0.2, 0, -20, 1), (t + 0.8, 0, 0, 1)]))
+    f.g(f.text(2, 276, "исходная сегментация 500 + 300 потеряна", "rej tk sm"), f.vis(7.0))
+    # legacy
+    f.add(f.line(2, 296, 950, 296, "lf"))
+    f.g(f.text(2, 322, "legacy: каждый пакет отдельно, обратный порядок внутри пакета", "tk sm"), f.vis(9.0))
+    leg = [(200, 500, "A2 · seq 200"), (0, 200, "A1 · seq 0"), (600, 800, "B2 · seq 600"), (500, 600, "B1 · 500")]
+    for idx, (a, b, lab) in enumerate(leg):
+        t = 9.8 + idx * 1.1
+        y = 338 + idx * 38
+        f.g(f.rect(px(a) + 1, y, (b - a) * S - 2, 30, "bxa" if a >= 500 else "bx", rx=5) + f.text(px(a) + (b - a) * S / 2, y + 20, lab, "mk c sm") + f.text(2, y + 20, f"отправка {idx + 1}", "mu sm"),
+            f.go([(0, 0, -20, 0), (t, 0, -20, 0), (t + 0.2, 0, -20, 1), (t + 0.8, 0, 0, 1)]))
+    f.g(f.text(2, 520, "сегментация 500 + 300 сохранена; между пакетами порядок прямой, обратный — только внутри каждого.", "acc tk sm"), f.vis(15.0))
+    f.g(wrapped(f, 2, 540, "Разрез по 600 для пакета A не попадает, для пакета B позиция пересчитывается в 100.", "mu sm", 98, 18), f.vis(17.0)) if False else None
+    return f
+
+
+# ═══ oob: лишний байт ═════════════════════════════════════════════════
+def fig_z2_oob_bytes():
+    f = Fig("z2-oob-bytes", 376, 14, "OOB-байт: сервер его удаляет, DPI читает как данные",
+            "В payload GET /path вставляется срочный OOB-байт 0x00 перед первым символом; в заголовке th_urp=0 и флаг URG. TCP-стек сервера вынимает OOB-байт и видит исходный запрос. "
+            "DPI его не удаляет и видит сдвинутую строку: сигнатура GET сломана.")
+    ch = ["G", "E", "T", " ", "/", "p", "a", "t", "h", "…"]
+    CW, X0 = 44, 220
+    def row(y, cells, tag, tcls="mk sm", oob_at=None, t=0.0, drop=None):
+        inner = f.text(2, y + 24, tag, "tk sm")
+        for k, c in enumerate(cells):
+            kind = "bxr" if c == "OOB" else "bx"
+            inner += f.rect(X0 + k * CW + 2, y, CW - 4, 36, kind, rx=5) + f.text(X0 + k * CW + CW / 2, y + 24, c, ("mk rej sm c" if c == "OOB" else "mk sm c"))
+        return inner
+    f.g(row(40, ch, "оригинальный payload"), f.vis(0.4))
+    f.g(row(110, ["OOB"] + ch, "после вставки OOB") + f.text(X0 + 22, 168, "th_urp=0, URG=1", "rej sm c"), f.vis(2.4, dy=10))
+    f.g(row(200, ch, "что видит сервер"), f.vis(5.2, dy=10))
+    f.g(f.text(X0, 254, "TCP-стек удалил OOB-байт: сервер видит исходный запрос", "acc tk sm"), f.vis(5.8))
+    f.g(row(292, ["0x00"] + ch, "что видит DPI"), f.vis(8.4, dy=10))
+    f.g(f.text(X0, 346, "OOB не удалён: «GET» сдвинут, сигнатура сломана", "rej tk sm"), f.vis(9.0))
+    return f
+
+
+# ═══ syndata: что делает функция с пакетом ════════════════════════════
+def fig_z2_syndata_flow():
+    f = Fig("z2-syndata-flow", 340, 12, "syndata: логика обработки пакета",
+            "Не TCP — instance cutoff, кроме ICMP. TCP с флагом SYN, но не SYN+ACK — копия диссекта, добавление payload, fooling, tls_mod, rawsend и VERDICT_DROP. "
+            "Любой другой TCP-пакет — instance cutoff: миссия завершена.")
+    f.add(f.rect(330, 10, 300, 44, "bxa") + f.text(480, 38, "Пакет пришёл в syndata", "tk c"))
+    f.add(f.arrow(480, 56, 480, 84, "f"))
+    f.add(f.rect(330, 88, 300, 44, "bx") + f.text(480, 116, "Это TCP?", "tk c"))
+    f.add(f.arrow(330, 110, 230, 110, "f") + f.text(280, 100, "нет", "mu sm c"))
+    f.add(f.rect(20, 88, 208, 44, "bx") + f.text(124, 108, "instance cutoff", "mk c sm") + f.text(124, 124, "(кроме ICMP)", "mu sm c"))
+    f.add(f.arrow(480, 134, 480, 162, "f") + f.text(500, 152, "да", "mu sm"))
+    f.add(f.rect(330, 166, 300, 44, "bx") + f.text(480, 194, "SYN, но не SYN+ACK?", "tk c"))
+    f.add(f.arrow(630, 188, 700, 188, "f") + f.text(666, 178, "да", "mu sm c"))
+    f.add(f.rect(704, 140, 254, 120, "bxa") + f.text(716, 164, "копия диссекта,", "mk sm") + f.text(716, 184, "добавить payload,", "mk sm") + f.text(716, 204, "fooling, tls_mod,", "mk sm") + f.text(716, 224, "rawsend", "mk sm") + f.text(716, 248, "VERDICT_DROP", "mk acc sm"))
+    f.add(f.arrow(480, 212, 480, 244, "f") + f.text(500, 234, "нет", "mu sm"))
+    f.add(f.rect(330, 248, 300, 44, "bx") + f.text(480, 268, "instance cutoff", "mk c sm") + f.text(480, 284, "миссия завершена", "mu sm c"))
+    f.g(f.rect(330, 88, 300, 44, "bxa"), f.vis(0.8, 2.4, fade=0.2))
+    f.g(f.rect(330, 166, 300, 44, "bxa"), f.vis(2.4, 4.0, fade=0.2))
+    f.g(f.rect(704, 140, 254, 120, "bxr") if False else f.rect(704, 140, 254, 120, "bxa"), f.vis(4.0, fade=0.2))
+    f.g(f.text(2, 326, "SYN проходит верхний путь; всё остальное функция отключает от потока.", "mu sm"), f.vis(6.0))
+    return f
+
+
+# ═══ tcpseg: два примера и вердикт ════════════════════════════════════
+def fig_z2_tcpseg_host():
+    f = Fig("z2-tcpseg-host", 200, 8, "tcpseg с pos=host,endhost: уходит только имя сайта",
+            "Payload состоит из заголовков, имени example.com и остального. Диапазон между host и endhost уходит отдельным сегментом, seq равен смещению host. Оригинальный пакет не блокируется: у tcpseg вердикта нет.")
+    f.add(f.text(2, 24, "payload, 600 байт", "cap"))
+    x = 150
+    for lab, w, k in [("заголовки", 250, "bx"), ("example.com", 160, "bxa"), ("остальное", 270, "bx")]:
+        f.add(f.rect(x, 36, w - 4, 34, k, rx=5) + f.text(x + w / 2 - 2, 58, lab, ("mk" if k == "bxa" else "mu") + " c sm"))
+        x += w
+    f.g(f.line(400, 30, 400, 78, "la") + f.line(560, 30, 560, 78, "la") + f.text(400, 94, "host", "acc tk c sm") + f.text(560, 94, "endhost", "acc tk c sm"), f.vis(0.6))
+    f.g(f.rect(400, 120, 156, 34, "bxa", rx=5) + f.text(478, 142, "example.com", "mk c sm") + f.text(2, 142, "уходит сегмент", "tk sm") + f.text(570, 142, "seq = смещение host, длина endhost − host", "m mu sm"),
+        f.go([(0, 0, -20, 0), (2.0, 0, -20, 0), (2.2, 0, -20, 1), (2.8, 0, 0, 1)]))
+    f.g(f.text(2, 186, "Оригинальный пакет не блокируется: у tcpseg вердикта нет.", "mu sm"), f.vis(4.0))
+    return f
+
+
+def fig_z2_tcpseg_seqovl():
+    f = Fig("z2-tcpseg-seqovl", 230, 9, "tcpseg с pos=0,midsld и seqovl=5: уходит начало с паттерном",
+            "Отправляется только начало payload — от первого байта до midsld. Перед ним дописаны 5 байт паттерна, seq на 5 меньше. Оригинальный пакет не блокируется: нужен drop.")
+    f.add(f.text(2, 24, "payload", "cap"))
+    x = 150
+    for lab, w, k in [("до midsld", 330, "bxa"), ("после midsld", 330, "bx")]:
+        f.add(f.rect(x, 36, w - 4, 34, k, rx=5) + f.text(x + w / 2 - 2, 58, lab, ("mk" if k == "bxa" else "mu") + " c sm"))
+        x += w
+    f.g(f.line(480, 30, 480, 78, "la") + f.text(480, 94, "midsld", "acc tk c sm"), f.vis(0.6))
+    f.g(f.rect(110, 120, 39, 34, "bxr", rx=4) + f.rect(150, 120, 326, 34, "bxa", rx=5) + f.text(313, 142, "до midsld", "mk c sm") + f.text(130, 142, "PAT", "mk rej c sm") +
+        f.text(2, 142, "уходит", "tk sm") + f.text(500, 142, "seq = −5, длина midsld + 5", "m mu sm"),
+        f.go([(0, 0, -20, 0), (2.0, 0, -20, 0), (2.2, 0, -20, 1), (2.8, 0, 0, 1)]))
+    f.g(f.text(2, 196, "Оригинальный пакет не блокируется: чтобы он не ушёл следом, нужен drop.", "mu sm"), f.vis(4.0))
+    return f
+
+
+def fig_z2_tcpseg_drop():
+    f = Fig("z2-tcpseg-drop", 330, 12, "tcpseg без drop и с drop",
+            "tcpseg отправляет сегмент и вердикта не выносит. Без drop цепочка заканчивается VERDICT_PASS по умолчанию, оригинал уходит тоже и сервер получает данные дважды. "
+            "С drop вердикт DROP блокирует оригинал: сервер получает только то, что отправил tcpseg.")
+    cases = [(34, "без drop", [("tcpseg", "отправил сегмент, вердикта нет"), ("больше нет инстансов", "VERDICT_PASS по умолчанию"), ("оригинал уходит", "сервер получает данные дважды")], "rej", 0.6),
+             (186, "с drop", [("tcpseg", "отправил сегмент, вердикта нет"), ("drop", "VERDICT_DROP"), ("оригинал заблокирован", "сервер получает только отправленное tcpseg")], "acc", 6.2)]
+    for y, name, steps, tone, t0 in cases:
+        f.g(f.text(2, y + 4, name, "tk"), f.vis(t0, fade=0.2))
+        for k, (a, b) in enumerate(steps):
+            x = 100 + k * 290
+            last = k == 2
+            kind = ("bxr" if tone == "rej" else "bxa") if last else "bx"
+            t = t0 + 0.4 + k * 0.9
+            f.g(f.rect(x, y - 20, 262, 70, kind, rx=8) + f.text(x + 12, y + 6, a, ("tk sm" if not last else ("rej tk sm" if tone == "rej" else "acc tk sm"))) + wrapped(f, x + 12, y + 28, b, "mu sm", 34, 17), f.vis(t, dx=-10, fade=0.25))
+            if k < 2:
+                f.g(f.arrow(x + 264, y + 10, x + 286, y + 10, "f"), f.vis(t + 0.4, fade=0.2))
+    f.g(f.text(2, 310, "Поэтому tcpseg почти всегда ставят в связке с drop, если оригинал не должен уйти следом.", "mu sm"), f.vis(10.6))
+    return f
+
+
 FIGS = {
     "z2-pipeline": (fig_z2_pipeline, "Zapret2/attachments"),
     "z2-profilepick": (fig_z2_profilepick, "Zapret2/attachments"),
@@ -691,6 +994,19 @@ FIGS = {
     "mtproxy-latency": (fig_mtproxy_latency, "mtproxy/attachments"),
     "tproxy-lifecycle": (fig_tproxy_lifecycle, "tproxy/attachments"),
     "xhttp-modes": (fig_xhttp_modes, "xray/attachments"),
+    "z2-direction": (fig_z2_direction, "Zapret2/desync/attachments"),
+    "z2-orders": (fig_z2_orders, "Zapret2/desync/attachments"),
+    "z2-seqovl-buffer": (fig_z2_seqovl_buffer, "Zapret2/desync/attachments"),
+    "z2-fakeddisorder6": (fig_z2_fakeddisorder6, "Zapret2/desync/attachments"),
+    "z2-hostfake-base": (make_hostfake("base"), "Zapret2/desync/attachments"),
+    "z2-hostfake-midhost": (make_hostfake("midhost"), "Zapret2/desync/attachments"),
+    "z2-hostfake-disorder": (make_hostfake("disorder"), "Zapret2/desync/attachments"),
+    "z2-md-legacy": (fig_z2_md_legacy, "Zapret2/desync/attachments"),
+    "z2-oob-bytes": (fig_z2_oob_bytes, "Zapret2/desync/attachments"),
+    "z2-syndata-flow": (fig_z2_syndata_flow, "Zapret2/desync/attachments"),
+    "z2-tcpseg-host": (fig_z2_tcpseg_host, "Zapret2/desync/attachments"),
+    "z2-tcpseg-seqovl": (fig_z2_tcpseg_seqovl, "Zapret2/desync/attachments"),
+    "z2-tcpseg-drop": (fig_z2_tcpseg_drop, "Zapret2/desync/attachments"),
 }
 
 

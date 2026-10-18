@@ -200,19 +200,7 @@ DPI же может:
 
 ### Логика обработки пакетов
 
-```
-Пакет пришёл в syndata
-  |
-  +-- Не TCP? --> instance_cutoff (кроме ICMP)
-  |
-  +-- TCP:
-       |
-       +-- Флаг SYN (не SYN+ACK)? --> deepcopy dis, добавить payload,
-       |                               apply_fooling, tls_mod,
-       |                               rawsend + VERDICT_DROP
-       |
-       +-- Не SYN? --> instance_cutoff (миссия завершена)
-```
+![[wiki-anim-z2-syndata-flow.svg|Схема: логика обработки пакета в syndata]]
 
 Ключевые моменты:
 

@@ -275,10 +275,8 @@ host + 1  <=  midhost  <=  endhost - 1
 
 **С midhost=midsld:**
 
-```
-  Сегмент 3a: [host → midhost-1]       (первая часть hostname)
-  Сегмент 3b: [midhost → endhost-1]    (вторая часть hostname)
-```
+- сегмент 3a: от `host` до `midhost-1` — первая часть hostname;
+- сегмент 3b: от `midhost` до `endhost-1` — вторая часть hostname.
 
 > [!note] Проще говоря
 > Обычно настоящее имя уходит одним сегментом. С `midhost` оно уходит двумя, и в каждом лежит только часть имени. Значения `midsld`, `sld`, `endsld` и `host+5` — те же маркеры, что описаны в разделе «[[Zapret2/desync/multisplit#Относительные маркеры|относительные маркеры]]», а `+5` — [[Zapret2/desync/multisplit#Арифметика маркеров|арифметика маркеров]]. `resolve_pos` — вызов, который превращает маркер в номер байта. Если позиция выходит за пределы имени, разреза не будет, см. нюанс [[#5. midhost за пределами hostname молча игнорируется|5]].
@@ -314,10 +312,8 @@ disorder_after_pos  >  pos[2] + 1
 
 **С disorder_after (порядок отправки перевернут!):**
 
-```
-  Сначала: [disorder_after → конец данных]    (последняя часть, отправлена ПЕРВОЙ)
-  Затем:   [endhost → disorder_after-1]       (средняя часть, отправлена ВТОРОЙ)
-```
+- сначала уходит последняя часть: от `disorder_after` до конца данных;
+- затем средняя: от `endhost` до `disorder_after-1`.
 
 > [!note] Проще говоря
 > «Хвост» — всё, что стоит в запросе после имени. `disorder_after` режет его ещё на две части и отправляет вторую раньше первой. Такой обратный порядок ([[Zapret2/desync/multidisorder#Обратный порядок отправки — суть disorder|Обратный порядок отправки — суть disorder]]) может помешать DPI, который ждёт данные по порядку. Отрицательные маркеры вроде `-1` и `-20` отсчитываются от конца данных ([[Zapret2/desync/multisplit#Типы маркеров|Типы маркеров]]). Про пустое значение см. нюанс [[#6. disorder_after с пустым значением = "-1"|6]].
@@ -538,47 +534,15 @@ Rawsend — отправка готовых сегментов в сеть са�
 
 ### Базовый вариант (без midhost, без disorder_after)
 
-```
-Payload: [....before_host....][..hostname..][....after_host....]
-                               ^host        ^endhost
-
-Отправка (5 сегментов, 3 реальных + 2 фейка):
-  1. [before_host]           — реальный, opts_orig
-  2. [FAKE hostname]         — фейк (fake1), opts_fake
-  3. [hostname]              — реальный, opts_orig
-  4. [FAKE hostname]         — фейк (fake2), opts_fake
-  5. [after_host]            — реальный, opts_orig
-```
+![[wiki-anim-z2-hostfake-base.svg|Анимация: базовый hostfakesplit — пять сегментов, фейк вокруг имени сайта]]
 
 ### С midhost (hostname делится на две части)
 
-```
-Payload: [....before_host....][..host_part1..][..host_part2..][....after_host....]
-                               ^host          ^midhost        ^endhost
-
-Отправка (6 сегментов, 4 реальных + 2 фейка):
-  1. [before_host]           — реальный, opts_orig
-  2. [FAKE hostname]         — фейк (fake1), opts_fake
-  3a.[host_part1]            — реальный (host → midhost-1), opts_orig
-  3b.[host_part2]            — реальный (midhost → endhost-1), opts_orig
-  4. [FAKE hostname]         — фейк (fake2), opts_fake
-  5. [after_host]            — реальный, opts_orig
-```
+![[wiki-anim-z2-hostfake-midhost.svg|Анимация: hostfakesplit с midhost — имя делится на две части, шесть сегментов]]
 
 ### С disorder_after (хвост в обратном порядке)
 
-```
-Payload: [....before_host....][..hostname..][..after_1..][..after_2..]
-                               ^host        ^endhost     ^disorder_after
-
-Отправка (6 сегментов, 4 реальных + 2 фейка):
-  1. [before_host]           — реальный, opts_orig
-  2. [FAKE hostname]         — фейк (fake1), opts_fake
-  3. [hostname]              — реальный, opts_orig
-  4. [FAKE hostname]         — фейк (fake2), opts_fake
-  5a.[after_2]               — реальный (disorder_after → конец), ПЕРВЫМ
-  5b.[after_1]               — реальный (endhost → disorder_after-1), ВТОРЫМ
-```
+![[wiki-anim-z2-hostfake-disorder.svg|Анимация: hostfakesplit с disorder_after — хвост уходит в обратном порядке]]
 
 ### Полный вариант (midhost + disorder_after + оба фейка)
 
