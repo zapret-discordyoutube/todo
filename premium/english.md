@@ -78,7 +78,7 @@ On Windows, Zapret KVN has two modes. **«VPN (TUN)»** sends the whole computer
 
 ## Personal account website
 
-Your plan, balance, payments and subscription links with QR codes can also be viewed in a browser at [lk.zapret.moe](https://lk.zapret.moe). It is handy on a computer: point your phone's camera or app scanner at the QR code instead of copying the link. The site is in Russian and only shows information — topping up, buying and changing links stay in the bot.
+Your plan, balance, payments and subscription links with QR codes can also be viewed in a browser at [lk.zapret.moe](https://lk.zapret.moe). It is handy on a computer: point your phone's camera or app scanner at the QR code instead of copying the link. The site is in Russian and only shows information — topping up, buying and changing links stay in the bot. The section buttons at the top of the page marked ↗ (plans, VPN, Telegram proxies, Zapret Premium, support, referrals, donation) open the bot right on that screen.
 
 There is no password; you sign in from the bot:
 
