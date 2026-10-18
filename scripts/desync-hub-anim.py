@@ -155,14 +155,14 @@ class Fig:
             (R, light),
             (None, f"@media (prefers-color-scheme:dark){{{R}{{{dark}}}}}"),
             (f"{R} .{i}-bg", "fill:var(--bg)"),
-            (f"{R} text", f"font-family:{sans};font-size:15px;fill:var(--fg2)"),
+            (f"{R} text", f"font-family:{sans};font-size:16px;fill:var(--fg2)"),
             (f"{R} .{i}-t", f"{halo}"),
             (f"{R} .{i}-tk", f"font-weight:600;fill:var(--fg);{halo}"),
-            (f"{R} .{i}-m", f"font-family:{mono};font-size:14px;{halo}"),
-            (f"{R} .{i}-mk", f"font-family:{mono};font-size:14px;font-weight:600;fill:var(--fg)"),
+            (f"{R} .{i}-m", f"font-family:{mono};font-size:14.5px;{halo}"),
+            (f"{R} .{i}-mk", f"font-family:{mono};font-size:14.5px;font-weight:600;fill:var(--fg)"),
             (f"{R} .{i}-ml", f"font-family:{mono};font-size:18px;font-weight:600;fill:var(--fg)"),
             (f"{R} .{i}-cap", f"font-family:{head};font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--mute)"),
-            (f"{R} .{i}-sm", "font-size:13.5px"),
+            (f"{R} .{i}-sm", "font-size:14.5px"),
             (f"{R} .{i}-mu", "fill:var(--mute)"),
             (f"{R} .{i}-fg", "fill:var(--fg)"),
             (f"{R} .{i}-acc", "fill:var(--acc)"),
@@ -506,7 +506,7 @@ def fig_fooling():
                 f.add(f'<polygon class="{f.c("nd")}" points="{x - 20},{y} {x - 10},{y - 15} {x + 10},{y - 15} {x + 20},{y} {x + 10},{y + 15} {x - 10},{y + 15}"/>')
                 f.add(f.text(x, y + 5, "DPI", "mk c sm"))
             elif kinds[k] == "c":
-                f.add(f.rect(x - 24, y - 15, 48, 30, "nd", rx=5))
+                f.add(f.rect(x - 30, y - 15, 60, 30, "nd", rx=5))
                 f.add(f.text(x, y + 5, "клиент", "mk c sm"))
             elif kinds[k] == "s":
                 f.add(f.rect(x - 28, y - 15, 56, 30, "nd", rx=5))
@@ -622,9 +622,9 @@ def fig_seqack():
     f.add(f.text(920, ly + 28, "номера байтов потока →", "mu sm r"))
     f.add(f.rect(430, ly - 26, 290, 52, "bxa", rx=6))
     f.add(f.text(575, ly + 82, "окно приёма сервера: сюда пускают", "acc tk c sm"))
-    f.g(f.chip(470, ly - 56, 190, 30, "настоящий: seq=1000", "bxa", "mk sm") + f.line(470, ly - 40, 470, ly - 6, "la"), f.go([(0, 0, -30, 0), (1.0, 0, -30, 0), (1.4, 0, -30, 1), (2.2, 0, 0, 1)]))
+    f.g(f.chip(480, ly - 56, 210, 30, "настоящий: seq=1000", "bxa", "mk sm") + f.line(470, ly - 40, 470, ly - 6, "la"), f.go([(0, 0, -30, 0), (1.0, 0, -30, 0), (1.4, 0, -30, 1), (2.2, 0, 0, 1)]))
     f.g(f.text(470, ly + 50, "принят", "acc tk c sm"), f.vis(2.4))
-    f.g(f.chip(150, ly - 56, 150, 30, "фейк: seq − 10000", "bxd", "mk sm") + f.line(150, ly - 40, 150, ly - 6, "lr"), f.go([(0, 0, -30, 0), (3.6, 0, -30, 0), (4.0, 0, -30, 1), (4.8, 0, 0, 1)]))
+    f.g(f.chip(150, ly - 56, 190, 30, "фейк: seq − 10000", "bxd", "mk sm") + f.line(150, ly - 40, 150, ly - 6, "lr"), f.go([(0, 0, -30, 0), (3.6, 0, -30, 0), (4.0, 0, -30, 1), (4.8, 0, 0, 1)]))
     f.g(f.text(150, ly + 30, "далеко за окном", "rej tk c sm") + f.text(150, ly + 50, "отброшен", "rej tk c sm"), f.vis(5.0))
     # панель 2: ack
     f.add(f.line(2, 236, 950, 236, "lf"))
@@ -761,7 +761,7 @@ def fig_lifecycle():
         if k in (0, 1, 2, 4, 5):
             f.g(f.text(578, y + RH / 2 + 5, "✕", "rej tk c"), f.vis(t + 0.1, t + 1.0, fade=0.2))
     f.add(f.line(2, Y0 + 8 * RH, 950, Y0 + 8 * RH, "lf"))
-    f.g(f.text(2, Y0 + 8 * RH + 24, "Если техника «не работает», обычно пакет не дошёл до стадии 7: смотри, где функция остановилась.", "tk"), f.vis(9.4))
+    f.g(f.text(2, Y0 + 8 * RH + 24, "Если техника «не работает», смотри, на какой стадии функция остановилась.", "tk"), f.vis(9.4))
     return f
 
 

@@ -52,6 +52,8 @@ description: "Транспорт XHTTP (SplitHTTP) в Xray: прокси-тра�
 
 ## Три режима работы
 
+![[wiki-anim-xhttp-modes.svg|Анимация: три режима XHTTP — packet-up, stream-up и stream-one]]
+
 Режим задаётся полем `mode`. Значение `auto` (по умолчанию) раскрывается так: обычно → `packet-up`; при включённом [[xray/reality|REALITY]] → `stream-one`; а если при REALITY задан отдельный канал скачивания (`downloadSettings`) → `stream-up`.
 
 ### packet-up — самый CDN-дружелюбный
