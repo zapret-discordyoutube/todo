@@ -46,7 +46,7 @@ flowchart TB
 | Что | Зачем | Где | Цена |
 |---|---|---|---|
 | **Zapret VPN** | настоящий VPN: открывает весь интернет на любом устройстве | серверы проекта | тариф от ⚡ MasterVless (99 ₽ в месяц), советуем 💎 Vless MAX (199 ₽) |
-| **Бот** [@zapretvpns_bot](https://t.me/zapretvpns_bot) | оплатить, получить ссылку-подписку, спросить поддержку | Telegram | бесплатно |
+| **Бот** [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) | оплатить, получить ссылку-подписку, спросить поддержку | Telegram | бесплатно |
 | **ZapretKVN** | приложение, в которое вставляют подписку и включают VPN | Android, Windows | бесплатно |
 | **ZaStoGram** | Telegram со встроенным обходом блокировки | Android, Windows | бесплатно |
 | **Zapret GUI** | бесплатный обход блокировок YouTube и Discord без VPN | Windows | бесплатно всегда |

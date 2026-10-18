@@ -18,7 +18,7 @@ description: "Zapret VPN guide in English: the bot @zapretvpns_bot speaks Englis
 # 🇬🇧 Zapret VPN in English
 
 > [!info] In short
-> Zapret VPN is a personal VPN that works in Russia. You buy it in the Telegram bot [@zapretvpns_bot](https://t.me/zapretvpns_bot), get **one link**, paste it into a VPN app once — and the app gets all your servers from it. The bot speaks English: below every button is quoted as the English bot shows it, with the Russian name in brackets in case your bot is in Russian.
+> Zapret VPN is a personal VPN that works in Russia. You buy it in the Telegram bot [@zapretvpns_bot](https://telegram.me/zapretvpns_bot), get **one link**, paste it into a VPN app once — and the app gets all your servers from it. The bot speaks English: below every button is quoted as the English bot shows it, with the Russian name in brackets in case your bot is in Russian.
 
 **Bot language.** The bot picks its language from your Telegram language by itself: if Telegram is in English, the bot answers in English. To choose it manually, send /language or open «⚙️ Settings» («⚙️ Настройки») → «🌐 Язык / Language». A few rare screens, such as the privacy policy, are still in Russian only.
 
@@ -35,7 +35,7 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 
 ## Step 1. Top up the balance
 
-1. Open [@zapretvpns_bot](https://t.me/zapretvpns_bot) and tap «Start».
+1. Open [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) and tap «Start».
 2. Tap **«💳 Plan and balance»** («💳 Подписка и баланс»), then **«💰 Top up»** («💰 Пополнить»).
 3. Choose an amount or type it in digits, for example `199`.
 4. Tap the payment button, open the link it gives and pay with SBP (Russia's fast payment system) in your bank app.

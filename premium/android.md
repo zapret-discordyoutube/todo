@@ -32,7 +32,7 @@ description: "Пошагово со скриншотами: что скачат�
 ## TL;DR
 
 - **Что скачать:** приложение [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) (файл `…-arm64-v8a.apk`) — для VPN, и [ZaStoGram](https://t.me/zastogram) — для Telegram. Оба бесплатные.
-- **Сколько стоит:** советуем тариф 💎 Vless MAX — **199 ₽ в месяц** (15 серверов и все прокси для Telegram). Подешевле — ⚡ MasterVless за 99 ₽ в месяц, на пробу — 9 ₽ за день. Покупается в боте [@zapretvpns_bot](https://t.me/zapretvpns_bot).
+- **Сколько стоит:** советуем тариф 💎 Vless MAX — **199 ₽ в месяц** (15 серверов и все прокси для Telegram). Подешевле — ⚡ MasterVless за 99 ₽ в месяц, на пробу — 9 ₽ за день. Покупается в боте [@zapretvpns_bot](https://telegram.me/zapretvpns_bot).
 - **Что сделать:** купить тариф → взять в боте **Xray-подписку** → в ZapretKVN «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа» → на «Главной» нажать большую кнопку.
 - **Важно:** ZapretKVN пускает через VPN **только отмеченные приложения**. Если YouTube работает, а Telegram (или второй Telegram) нет — отметьте его во вкладке «Маршруты» → «Выбрать приложения».
 
@@ -258,7 +258,7 @@ ZapretKVN — самый простой вариант, но подписку м
 
 - [ZapretKVN для Android](https://git.zapret.moe/zapretkvn/ZapretKVN-android) — исходный код и выпуски; поведение по умолчанию описано в `docs/README.md` репозитория.
 - [ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходный код Telegram-клиента, описание WSS-транспорта и выпуски.
-- Скриншоты ZapretKVN 0.5.4 и 0.5.5 сняты на эмуляторе Android 16 15 октября 2026 года; карточка подписки — в боте [@zapretvpns_bot](https://t.me/zapretvpns_bot).
+- Скриншоты ZapretKVN 0.5.4 и 0.5.5 сняты на эмуляторе Android 16 15 октября 2026 года; карточка подписки — в боте [@zapretvpns_bot](https://telegram.me/zapretvpns_bot).
 
 ## 📚 См. также
 
