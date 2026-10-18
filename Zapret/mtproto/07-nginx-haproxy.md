@@ -13,22 +13,7 @@ FakeTLS — это **НЕ настоящий TLS**. Nginx/HAProxy **не мог�
 
 **Subpath (`/mtproto`) — невозможен.** MTProto работает на уровне TCP, не HTTP. Нет понятия "path".
 
-```
-                      Порт 443
-                         |
-                  [nginx stream / haproxy]
-                  L4 TCP — ssl_preread / inspect
-                         |
-           ┌─────────────┴──────────────┐
-           |                            |
-  SNI = example.com              SNI пустой / неизвестный
-                                 (iOS, Android, Desktop)
-           |                            |
-           ▼                            ▼
- [127.0.0.1:8443]              [127.0.0.1:2443]
-   Nginx HTTPS                  MTProto Proxy
-   (реальный сайт)             (FakeTLS)
-```
+![[wiki-anim-nginx-split.svg|Схема: nginx stream разводит трафик по SNI на сайт и MTProto]]
 
 ## Проблема с SNI в Telegram-клиентах
 

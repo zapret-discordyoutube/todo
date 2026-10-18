@@ -1010,6 +1010,19 @@ FIGS = {
 }
 
 
+def _load(name, fname):
+    spec = importlib.util.spec_from_file_location(name, ROOT / "scripts" / fname)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+_more = _load("more", "wiki-anim-more.py")
+_builders_figs, B = _more.build(hub, wrapped)
+_specs = _load("specs", "wiki-anim-specs.py")
+_specs.register(FIGS, hub, wrapped, B)
+
+
 def main(argv):
     out_override = None
     names = []

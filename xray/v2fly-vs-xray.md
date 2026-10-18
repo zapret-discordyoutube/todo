@@ -59,18 +59,7 @@ description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core п�
 
 Диаграмма (пунктир — идейная связь, стрелка — code-fork):
 
-```
-Shadowsocks (2012, clowwindy)
-   ┆  идейный преемник (новый код, протокол VMess; НЕ форк)
-   ▼
-V2Ray / Project V (2015, Victoria/Darien Raymond)  — написан с нуля
-   │  code-fork / continuation (после исчезновения автора, 2019)
-   ▼
-v2fly/v2ray-core (2020, сообщество)  — сегодня это «V2Ray»
-   │  code-fork от коммита 9a03cc5 (лицензионный спор об XTLS, ноя. 2020)
-   ▼
-XTLS/Xray-core / Project X (2020, RPRX)  — VLESS, XTLS-Vision, REALITY, XHTTP
-```
+![[wiki-anim-xray-lineage.svg|Схема: родословная от Shadowsocks до Xray]]
 
 Итог для вашего вопроса «V2Ray — это форк?»: **сам V2Ray — не форк, а самостоятельный проект** (идейный наследник Shadowsocks). Форками являются v2fly (от оригинального v2ray-core) и Xray (от v2fly-core). Отсюда и вся общая кодовая база, разобранная ниже.
 

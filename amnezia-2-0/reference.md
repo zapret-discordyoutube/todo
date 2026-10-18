@@ -61,10 +61,7 @@ AmneziaWG (*AWG, АмнезияВГ 2.0, Амнезия ВПН VPN*) — мод�
 
 **Важно**: в коде **нет** перекрёстной валидации `Jmin <= Jmax` — параметры проверяются независимо. Если задать Jmin > Jmax, поведение непредсказуемо.
 
-```
-Пример: Jc=7, Jmin=50, Jmax=1000
-→ 7 пакетов, каждый 50-1000 байт случайных данных
-```
+Пример: `Jc=7`, `Jmin=50`, `Jmax=1000` — 7 пакетов, каждый 50–1000 байт случайных данных.
 
 ### 2. Padding — случайные байты перед пакетами
 
@@ -388,26 +385,12 @@ Deobfuscate: всегда true
 
 ### SendHandshakeInitiation() — полная последовательность
 
-```
-HANDSHAKE (каждые ~2 минуты, проверка RekeyTimeout):
+![[wiki-anim-awg-handshake.svg|Анимация: что уходит в сеть при handshake и передаче данных в AmneziaWG 2.0]]
+Каждые ~2 минуты (проверка `RekeyTimeout`) при handshake одним вызовом `peer.SendBuffers(sendBuffer)` уходит всё подряд:
 
-  ┌─────────────────────────────────────────────────────────────┐
-  │ 1. Signature packets: i1 → i2 → i3 → i4 → i5              │
-  │    (nil пропускаются, каждый — отдельный UDP-пакет)         │
-  ├─────────────────────────────────────────────────────────────┤
-  │ 2. Junk packets: Jc штук                                   │
-  │    Размер каждого: rand(Jmin..Jmax) байт                   │
-  │    Содержимое: crypto/rand.Read                             │
-  ├─────────────────────────────────────────────────────────────┤
-  │ 3. Handshake Init message:                                  │
-  │    a) CreateMessageInitiation() → msg.Type = H1.Generate()  │
-  │    b) binary.Write(LittleEndian, msg) → 148 байт            │
-  │    c) cookieGenerator.AddMacs(packet) → MAC1 + MAC2         │
-  │    d) Если S1 > 0: [S1 random bytes][packet]               │
-  │    Итого: S1 + 148 байт                                    │
-  └─────────────────────────────────────────────────────────────┘
-  Всё отправляется ОДНИМ вызовом peer.SendBuffers(sendBuffer)
-```
+1. Signature packets `i1 → i2 → i3 → i4 → i5`: nil пропускаются, каждый — отдельный UDP-пакет.
+2. Junk packets: `Jc` штук, размер каждого `rand(Jmin..Jmax)` байт, содержимое — `crypto/rand.Read`.
+3. Handshake Init message: `CreateMessageInitiation()` задаёт `msg.Type = H1.Generate()`; `binary.Write(LittleEndian, msg)` даёт 148 байт; `cookieGenerator.AddMacs(packet)` добавляет MAC1 и MAC2; если `S1 > 0`, перед пакетом идут S1 случайных байт. Итого S1 + 148 байт.
 
 ### SendHandshakeResponse() — отдельно
 
@@ -415,54 +398,34 @@ HANDSHAKE (каждые ~2 минуты, проверка RekeyTimeout):
 Они отправляются ТОЛЬКО с Init. Это подтверждено по коду: SendHandshakeResponse()
 не содержит ссылок на `device.ipackets` или `device.junk`.
 
-```
-  ┌─────────────────────────────────────────────────────────────┐
-  │ 4. Handshake Response message:                              │
-  │    a) CreateMessageResponse() → msg.Type = H2.Generate()    │
-  │    b) binary.Write(LittleEndian, msg) → 92 байта            │
-  │    c) BeginSymmetricSession() → деривация ключей            │
-  │    d) cookieGenerator.AddMacs(packet)                       │
-  │    e) Если S2 > 0: [S2 random bytes][packet]               │
-  │    f) SendBuffers([][]byte{packet}) — один пакет            │
-  │    Итого: S2 + 92 байта                                    │
-  └─────────────────────────────────────────────────────────────┘
-```
+Шаги `SendHandshakeResponse()`:
+
+1. `CreateMessageResponse()` задаёт `msg.Type = H2.Generate()`.
+2. `binary.Write(LittleEndian, msg)` даёт 92 байта.
+3. `BeginSymmetricSession()` выводит ключи.
+4. `cookieGenerator.AddMacs(packet)` добавляет MAC.
+5. Если `S2 > 0`, перед пакетом идут S2 случайных байт.
+6. `SendBuffers([][]byte{packet})` отправляет один пакет. Итого S2 + 92 байта.
 
 ### SendHandshakeCookie() — под нагрузкой
 
-```
-ПОД НАГРУЗКОЙ (DoS protection, редко):
-  ┌─────────────────────────────────────────────────────────────┐
-  │ 5. Cookie Reply:                                            │
-  │    a) msgType = H3.Generate()                               │
-  │    b) cookieChecker.CreateReply(..., msgType)               │
-  │    c) binary.Write → 64 байта                               │
-  │    d) Если S3 > 0: [S3 random bytes][packet]               │
-  │    Итого: S3 + 64 байта                                    │
-  │                                                             │
-  │    Отправляется через device.net.bind.Send() НАПРЯМУЮ       │
-  │    (не через peer queue, в отличие от Init/Response)        │
-  └─────────────────────────────────────────────────────────────┘
-```
+Шаги `SendHandshakeCookie()` (под нагрузкой, защита от DoS, редко):
+
+1. `msgType = H3.Generate()`.
+2. `cookieChecker.CreateReply(..., msgType)`.
+3. `binary.Write` даёт 64 байта.
+4. Если `S3 > 0`, перед пакетом идут S3 случайных байт. Итого S3 + 64 байта.
+
+Отправляется через `device.net.bind.Send()` напрямую, не через peer queue, в отличие от Init и Response.
 
 ### RoutineEncryption() + RoutineSequentialSender() — data трафик
 
-```
-DATA ТРАФИК (постоянно):
-  ┌─────────────────────────────────────────────────────────────┐
-  │ 6. Transport packet:                                        │
-  │    a) RoutineEncryption():                                  │
-  │       - H4.Generate() → первые 4 байта (little-endian)     │
-  │       - calculatePaddingSize() → выравнивание до 16 байт   │
-  │       - AEAD шифрование (ChaCha20-Poly1305)                │
-  │    b) RoutineSequentialSender():                            │
-  │       - Если НЕ keepalive И S4 > 0:                        │
-  │         сдвиг данных вправо на S4, random prefix            │
-  │    Итого: S4 + 16B header + encrypted payload + 16B align  │
-  │                                                             │
-  │    Keepalive: S4 НЕ применяется (len == MessageKeepaliveSize)│
-  └─────────────────────────────────────────────────────────────┘
-```
+Data-трафик (постоянно):
+
+1. `RoutineEncryption()`: `H4.Generate()` задаёт первые 4 байта (little-endian), `calculatePaddingSize()` выравнивает до 16 байт, затем AEAD-шифрование ChaCha20-Poly1305.
+2. `RoutineSequentialSender()`: если пакет не keepalive и `S4 > 0`, данные сдвигаются вправо на S4 байт и добавляется случайный префикс.
+
+Итого S4 + 16 байт заголовка + зашифрованная нагрузка + 16 байт выравнивания. У keepalive S4 не применяется (`len == MessageKeepaliveSize`).
 
 ### Приём пакетов — DeterminePacketTypeAndPadding()
 
@@ -812,83 +775,56 @@ amneziawg-go/device/
 Размеры верифицированы по структурам в `noise-protocol.go`:
 
 ### MessageInitiation — 148 байт
-```
-Offset  Size  Field
-──────  ────  ─────────────────────────────
-0       4     Type (uint32, H1 magic header)
-4       4     Sender (uint32, индекс отправителя)
-8       32    Ephemeral (NoisePublicKey)
-40      48    Static (NoisePublicKey 32 + Poly1305 Tag 16)
-88      28    Timestamp (TAI64N 12 + Poly1305 Tag 16)
-116     16    MAC1 (blake2s-128)
-132     16    MAC2 (blake2s-128)
-──────  ────
-        148   ИТОГО
-```
+![[wiki-anim-awg-messages.svg|Схема по масштабу: четыре сообщения AmneziaWG и размеры их полей]]
+| Offset | Size | Поле |
+|:--|:--|:--|
+| 0 | 4 | Type (uint32, магический заголовок H1) |
+| 4 | 4 | Sender (uint32, индекс отправителя) |
+| 8 | 32 | Ephemeral (NoisePublicKey) |
+| 40 | 48 | Static (NoisePublicKey 32 + тег Poly1305 16) |
+| 88 | 28 | Timestamp (TAI64N 12 + тег Poly1305 16) |
+| 116 | 16 | MAC1 (blake2s-128) |
+| 132 | 16 | MAC2 (blake2s-128) |
+| | **148** | **итого** |
 
 ### MessageResponse — 92 байта
-```
-Offset  Size  Field
-──────  ────  ─────────────────────────────
-0       4     Type (uint32, H2 magic header)
-4       4     Sender (uint32)
-8       4     Receiver (uint32)
-12      32    Ephemeral (NoisePublicKey)
-44      16    Empty (Poly1305 Tag, encrypted empty)
-60      16    MAC1 (blake2s-128)
-76      16    MAC2 (blake2s-128)
-──────  ────
-        92    ИТОГО
-```
+| Offset | Size | Поле |
+|:--|:--|:--|
+| 0 | 4 | Type (uint32, магический заголовок H2) |
+| 4 | 4 | Sender (uint32) |
+| 8 | 4 | Receiver (uint32) |
+| 12 | 32 | Ephemeral (NoisePublicKey) |
+| 44 | 16 | Empty (тег Poly1305, зашифрованная пустота) |
+| 60 | 16 | MAC1 (blake2s-128) |
+| 76 | 16 | MAC2 (blake2s-128) |
+| | **92** | **итого** |
 
 ### MessageCookieReply — 64 байта
-```
-Offset  Size  Field
-──────  ────  ─────────────────────────────
-0       4     Type (uint32, H3 magic header)
-4       4     Receiver (uint32)
-8       24    Nonce (XChaCha20-Poly1305 nonce)
-32      32    Cookie (blake2s-128 16 + Poly1305 Tag 16)
-──────  ────
-        64    ИТОГО
-```
+| Offset | Size | Поле |
+|:--|:--|:--|
+| 0 | 4 | Type (uint32, магический заголовок H3) |
+| 4 | 4 | Receiver (uint32) |
+| 8 | 24 | Nonce (nonce XChaCha20-Poly1305) |
+| 32 | 32 | Cookie (blake2s-128 16 + тег Poly1305 16) |
+| | **64** | **итого** |
 
 ### MessageTransport — 16+ байт (переменный)
-```
-Offset  Size      Field
-──────  ────────  ─────────────────────────────
-0       4         Type (uint32, H4 magic header)
-4       4         Receiver (uint32)
-8       8         Counter (uint64, nonce)
-16      variable  Ciphertext (encrypted payload + 16B Poly1305 auth tag)
-──────  ────────
-        16+       ИТОГО (заголовок фиксирован, payload переменный)
-```
+| Offset | Size | Поле |
+|:--|:--|:--|
+| 0 | 4 | Type (uint32, магический заголовок H4) |
+| 4 | 4 | Receiver (uint32) |
+| 8 | 8 | Counter (uint64, nonce) |
+| 16 | переменный | Ciphertext (зашифрованная нагрузка + тег Poly1305 16 байт) |
+| | **16+** | **итого**: заголовок фиксирован, нагрузка переменная |
 
 ### Полный wire-format transport пакета (с AWG обфускацией)
 
-```
 Порядок формирования (из кода):
 
-1. RoutineEncryption():
-   - Генерирует H4 header → записывает в buffer[0:16]
-   - calculatePaddingSize() → добавляет нули к payload (выравнивание до 16 байт)
-   - AEAD Seal(header, nonce, padded_payload, nil):
-     ciphertext = Encrypt(padded_payload) + 16B Poly1305 tag
-     Результат: [16B header][ciphertext][16B tag]
+1. `RoutineEncryption()` записывает заголовок H4 в `buffer[0:16]`, `calculatePaddingSize()` добавляет нули к нагрузке (выравнивание до 16 байт), затем `AEAD Seal(header, nonce, padded_payload, nil)` даёт шифртекст плюс тег Poly1305 16 байт: `[16B header][ciphertext][16B tag]`.
+2. `RoutineSequentialSender()`, если `S4 > 0` и пакет не keepalive: сдвигает весь зашифрованный пакет вправо на S4 байт и заполняет первые S4 байт случайными данными.
 
-2. RoutineSequentialSender() (если S4 > 0 и НЕ keepalive):
-   - Сдвигает весь зашифрованный пакет вправо на S4 байт
-   - Заполняет первые S4 байт случайными данными
-
-Итоговый пакет на проводе:
-┌──────────────┬──────────────────────────┬────────────────────────────┬───────────┐
-│ S4 random    │ WG Transport Header      │ encrypted(payload + align) │ Poly1305  │
-│ (S4 байт)   │ H4(4B) + recv(4B) + nonce│ (переменный)               │ (16B tag) │
-│              │ (8B) = 16 байт           │                            │           │
-└──────────────┴──────────────────────────┴────────────────────────────┴───────────┘
-               ↑ header (16B, LE)          ↑ ciphertext                            ↑
-```
+![[wiki-anim-awg2-wire.svg|Схема: Transport-пакет AmneziaWG 2.0 на проводе]]
 
 ### MessageKeepalive — 32 байта
 ```
@@ -971,13 +907,13 @@ func calculatePaddingSize(packetSize, mtu int) int {
 Применяется ПЕРЕД AEAD-шифрованием в `RoutineEncryption()`. S4 добавляется ПОСЛЕ.
 
 **Примеры вычислений:**
-```
-calculatePaddingSize(1480, 1500) = 8    # 1480 → 1488 (ближайшее кратное 16)
-calculatePaddingSize(1500, 1500) = 0    # ceil(1500/16)*16=1504 > MTU → cap to 1500, pad=0
-calculatePaddingSize(1501, 1500) = 15   # 1501 % 1500 = 1, ceil(1/16)*16=16, pad=15
-calculatePaddingSize(0, 1500)    = 0    # пустой payload (keepalive), 0 уже кратно 16
-calculatePaddingSize(100, 0)     = 12   # без MTU: ceil(100/16)*16=112, pad=12
-```
+| Вызов | Результат | Пояснение |
+|:--|:--|:--|
+| `calculatePaddingSize(1480, 1500)` | 8 | 1480 → 1488, ближайшее кратное 16 |
+| `calculatePaddingSize(1500, 1500)` | 0 | `ceil(1500/16)*16 = 1504` больше MTU, ограничено до 1500, паддинг 0 |
+| `calculatePaddingSize(1501, 1500)` | 15 | `1501 % 1500 = 1`, `ceil(1/16)*16 = 16`, паддинг 15 |
+| `calculatePaddingSize(0, 1500)` | 0 | пустая нагрузка (keepalive), 0 уже кратно 16 |
+| `calculatePaddingSize(100, 0)` | 12 | без MTU: `ceil(100/16)*16 = 112`, паддинг 12 |
 
 ### Нет unit-тестов для CPS
 Файл `obf_test.go` в репозитории **отсутствует**. Парсер CPS и все 8 обфускаторов не покрыты тестами. Это увеличивает риск скрытых багов (как `<ds>` Deobfuscate, игнорирующий ошибки).

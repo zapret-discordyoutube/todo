@@ -12,15 +12,7 @@ description: "Best practices для своего MTProto-прокси: подб�
 ### Критически важно: тот же ASN
 
 DPI проверяет соответствие SNI и IP:
-```
-ПЛОХО:  VPS IP = 167.235.x.x (Hetzner, AS24940)
-        SNI = www.google.com (AS15169)
-        → ASN не совпадают → подозрительно!
-
-ХОРОШО: VPS IP = 167.235.x.x (Hetzner, AS24940)
-        SNI = some-site.de (тоже Hetzner, AS24940)
-        → один ASN → нормально, shared hosting
-```
+![[wiki-anim-asn-match.svg|Схема: SNI и IP сервера должны принадлежать одному ASN]]
 
 ### RealiTLScanner — подбор домена
 

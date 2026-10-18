@@ -115,19 +115,7 @@ hostlist бесполезен — только ipset или фильтрация
 
 Это значит: **только первый TCP пакет с данными**.
 
-```
-TCP соединение MTProto:
-────────────────────────────────────────────────────────────►
-
-[SYN]     [SYN+ACK]     [ACK]     [DATA #1]          [DATA #2]     [DATA #3] ...
-  │           │           │           │                  │             │
-  │           │           │           │                  │             │
-  │           │           │           └── seq_last-seq0=1  └─────────────┴── seq_last-seq0 > 1
-  │           │           │               payload=mtproto_initial         payload=unknown
-  │           │           │               proto=mtproto                   proto=mtproto (сохранён)
-  │           │           │
-  └───────────┴───────────┴── payload=empty
-```
+![[wiki-anim-mtproto-conntrack.svg|Анимация: как распознаётся MTProto в потоке TCP]]
 
 ## Разница l7proto vs payload
 
@@ -462,23 +450,7 @@ winws --wf-tcp-out=443 \
 
 ## Как это работает
 
-```
-Пакет 1 (mtproto_initial):
-  ┌─────────────────────────────────────┐
-  │ Conntrack lookup по (ip:port)       │
-  │ ctrack->l7proto = UNKNOWN           │
-  │ → Детекция: IsMTProto() = true      │
-  │ → Сохранение: ctrack->l7proto = MTPROTO │
-  └─────────────────────────────────────┘
-
-Пакет 2 (зашифрованный мусор):
-  ┌─────────────────────────────────────┐
-  │ Conntrack lookup по (ip:port)       │
-  │ ctrack->l7proto = MTPROTO  ← уже!   │
-  │ → Детекция не нужна                 │
-  │ → l7proto = MTPROTO                 │
-  └─────────────────────────────────────┘
-```
+![[wiki-anim-mtproto-l7-cache.svg|Схема: conntrack запоминает протокол потока]]
 
 ## Ключ соединения
 

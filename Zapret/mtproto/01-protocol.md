@@ -41,19 +41,7 @@ description: "Протокол MTProto Proxy: режимы Classic, dd и FakeTL
 
 ## Как работает FakeTLS handshake
 
-```
-Клиент → Сервер: Фейковый TLS ClientHello (517 байт)
-  - SNI = домен из секрета (например, google.com)
-  - Random содержит HMAC-SHA256 дайджест для верификации секрета
-
-Сервер → Клиент: Фейковый ServerHello + ChangeCipherSpec
-  - Имитирует ответ реального TLS-сервера
-  - Размер ответа копирует реальный сертификат домена
-
-Далее: "Application Data" записи (тип 0x17)
-  - Внутри: зашифрованный MTProto трафик
-  - Макс. размер записи: 16408 байт
-```
+![[wiki-anim-faketls-handshake.svg|Анимация: FakeTLS handshake в MTProxy]]
 
 DPI видит обычное TLS 1.3 соединение к `google.com`.
 

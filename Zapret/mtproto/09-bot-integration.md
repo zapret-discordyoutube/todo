@@ -13,13 +13,7 @@ description: "Миграция Telegram-бота с SSH-управления MTP
 
 **Целевой стек:** telemt REST API вместо SSH+secrets.conf.
 
-```
-Текущий:
-  Бот → SSH → echo secret >> secrets.conf → systemctl restart mtproxy
-
-Целевой:
-  Бот → HTTP POST /v1/users → telemt применяет на лету (без рестарта)
-```
+![[wiki-anim-bot-apply.svg|Схема: как бот применяет секреты прокси — сейчас и в цели]]
 
 ## Миграция mtproto_service.py
 

@@ -58,14 +58,7 @@ OlcRTC делает именно это: он берёт сервис видео
 
 Полная цепочка на уровне туннеля выглядит так:
 
-```
-приложение
-  → SOCKS5 (127.0.0.1:8808)
-    → olcrtc cnc (клиент)
-      → WebRTC / SFU-сервис (Jitsi / Телемост / WbStream)
-        → olcrtc srv (сервер)
-          → интернет
-```
+![[wiki-anim-olcrtc-chain.svg|Схема: путь трафика через olcrtc, WebRTC и SFU-сервис]]
 
 А внутри самого туннеля данные проходят стадии: `SOCKS CONNECT → smux → XChaCha20-Poly1305 → engine → WebRTC/SFU`.
 
