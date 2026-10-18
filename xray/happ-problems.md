@@ -16,7 +16,7 @@ aliases:
   - Happ HandlerService уязвимость
 link: https://www.happ.su/main/ru
 description: "Чем плох клиент Happ: закрытый код, HWID по умолчанию, шифрованные подписки, открытый API и медленное обновление ядра. Каждая претензия проверена по первоисточникам."
-image: xray/attachments/happ-problems-header.png
+image: xray/attachments/happ-problems-header.jpg
 ---
 
 > [!mirror] Резервное зеркало
@@ -24,7 +24,7 @@ image: xray/attachments/happ-problems-header.png
 
 # 🔍 Чем плох Happ: что подтвердилось в претензиях к VPN-клиенту
 
-![[happ-problems-header.png]]
+![[happ-problems-header.jpg]]
 
 > [!info] О чём заметка
 > Happ — самый популярный клиент для Xray-подписок, и к нему накопилось много претензий: от «бэкдора» до «закрытого кода». Здесь каждая из них сверена с первоисточниками: сайтом и документацией Happ, его GitHub, разбором на Хабре и релизами за 2026 год. Общий разбор подписок и HWID — в [[subscriptions/hwid-client-lock]], как подключиться к VLESS через Happ — в [[xray/clients-and-routing]].
