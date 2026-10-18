@@ -386,6 +386,7 @@ Deobfuscate: всегда true
 ### SendHandshakeInitiation() — полная последовательность
 
 ![[wiki-anim-awg-handshake.svg|Анимация: что уходит в сеть при handshake и передаче данных в AmneziaWG 2.0]]
+
 Каждые ~2 минуты (проверка `RekeyTimeout`) при handshake одним вызовом `peer.SendBuffers(sendBuffer)` уходит всё подряд:
 
 1. Signature packets `i1 → i2 → i3 → i4 → i5`: nil пропускаются, каждый — отдельный UDP-пакет.
@@ -775,7 +776,9 @@ amneziawg-go/device/
 Размеры верифицированы по структурам в `noise-protocol.go`:
 
 ### MessageInitiation — 148 байт
+
 ![[wiki-anim-awg-messages.svg|Схема по масштабу: четыре сообщения AmneziaWG и размеры их полей]]
+
 | Offset | Size | Поле |
 |:--|:--|:--|
 | 0 | 4 | Type (uint32, магический заголовок H1) |

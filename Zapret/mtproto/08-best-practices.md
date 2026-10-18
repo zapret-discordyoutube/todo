@@ -12,6 +12,7 @@ description: "Best practices для своего MTProto-прокси: подб�
 ### Критически важно: тот же ASN
 
 DPI проверяет соответствие SNI и IP:
+
 ![[wiki-anim-asn-match.svg|Схема: SNI и IP сервера должны принадлежать одному ASN]]
 
 ### RealiTLScanner — подбор домена
