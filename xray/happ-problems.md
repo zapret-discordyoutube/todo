@@ -72,6 +72,8 @@ image: xray/attachments/happ-problems-header.jpg
 
 Разбор кода самого приложения (APK версии 4.7.1 для Android, декомпилирован 18 октября 2026) показывает ещё один канал, о котором политика конфиденциальности не упоминает вовсе. Помимо адреса подписки, Happ обращается к собственным доменам `ntp2-sync.com` и `time-ntp.com` — в запросах `install`, `remotepush` и `report` туда уходят HWID, версия и модель устройства, подписанные токеном; запрос `report` дополнительно прикладывает файл диагностики. Отдельный адрес `check.happ.su` отдаёт служебный файл настроек, который дублируется и внутри самого приложения. Названия доменов (служба синхронизации времени) не объясняют, зачем им нужен HWID устройства, тем более что по протоколу NTP приложение к ним не обращается вовсе: в коде нет ни одного NTP-клиента, только перечисленные выше HTTPS-запросы. То есть «время» в именах — лишь прикрытие. Документация этот механизм не описывает, поэтому назначение каждого запроса установлено только по тексту кода, а не по официальному объяснению.
 
+Часть этого подтверждает сам разработчик. В [обсуждении на форуме Xray (XTLS/BBS, issue № 8)](https://github.com/XTLS/BBS/issues/8), открытом 3 декабря 2025 года и не закрытом до сих пор, представитель Happ [письменно подтвердил](https://github.com/XTLS/BBS/issues/8#issuecomment-3610962174), что приложение передаёт на сервер идентификатор устройства (HWID) и токен Firebase или Apple APNs, а сбор подписок отрицает. Там же он пояснил, что всё это сделано для продавцов подписок: они могут менять адрес подписки или настройки приложения у пользователя через push-сообщение без его действий. Это согласуется с тем, что видно в коде: команды `update-subscription`, `set-settings` и `sub-change` в push-обработчике и запросы `install` и `report` с HWID. [Руководитель Xray-core при этом попросил](https://github.com/XTLS/BBS/issues/8#issuecomment-3610387018) описать, какие данные уходят и зачем, и сделать понятный выключатель; ответа на это в ветке нет. Остальные утверждения участников обсуждения (о том, что Happ «шлёт подписки», о сигнале для цензора при запуске, о схожем поведении v2rayTun и Streisand) являются их словами, мы их не проверяли.
+
 Чтобы это не выглядело голословно, вот сами участки декомпилированного кода (имена классов и переменных обфусцированы сборкой, но логика читается):
 
 ```java
@@ -330,6 +332,9 @@ new Request.Builder().url(url)
 - [RKS Global — технический документ с повторной проверкой, PDF](https://rks.global/files/research/russian_apps_search_for_vpn_ru.pdf)
 - [RFC 1928 — протокол SOCKS5](https://www.rfc-editor.org/rfc/rfc1928)
 - [RFC 1929 — проверка пароля в SOCKS5](https://www.rfc-editor.org/rfc/rfc1929)
+- [XTLS/BBS, issue № 8 — Malicious activity of closed-source xray clients?](https://github.com/XTLS/BBS/issues/8)
+- [XTLS/BBS #8: ответ представителя Happ про HWID, токен и push для продавцов, 4 декабря 2025](https://github.com/XTLS/BBS/issues/8#issuecomment-3610962174)
+- [XTLS/BBS #8: вопросы руководителя Xray-core к Happ, 4 декабря 2025](https://github.com/XTLS/BBS/issues/8#issuecomment-3610387018)
 - [Публичный проект расшифровки happ-decrypt](https://github.com/cylaro/happ-decrypt)
 - [App Store: Happ — Proxy Utility](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215)
 - [Google Play: Happ](https://play.google.com/store/apps/details?id=com.happproxy)
