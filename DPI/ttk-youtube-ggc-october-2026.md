@@ -20,7 +20,7 @@ aliases:
   - Что случилось с YouTube у ТТК
   - Zapret ТТК YouTube что делать
 description: "С 17 октября 2026 у абонентов ТТК видео на YouTube застывает на 144p: сетевой разбор кэшей Google в сети Транстелекома, версии причины и что делать в Zapret."
-image: DPI/attachments/ttk-youtube-ggc-october-2026-header.png
+image: DPI/attachments/ttk-youtube-ggc-october-2026-header.jpg
 link: https://github.com/Flowseal/zapret-discord-youtube/issues/18162
 ---
 
@@ -29,7 +29,7 @@ link: https://github.com/Flowseal/zapret-discord-youtube/issues/18162
 
 # 🦎 ТТК и YouTube: кэши Google (GGC) в сети Транстелекома отвечают, но видео встаёт (с 17 октября 2026)
 
-![[ttk-youtube-ggc-october-2026-header.png]]
+![[ttk-youtube-ggc-october-2026-header.jpg]]
 
 > [!info] О чём заметка
 > С утра 17 октября 2026 года абоненты ТТК (Транстелеком) в разных регионах пишут, что сайт YouTube открывается, а видео застывает на 144p или не стартует, и никакая стратегия [[Zapret/Zapret|Zapret]] не помогает. Заметка собирает хронику, скриншоты и записи трафика участников, собственные замеры от 20 октября 2026 года, разбор того, на каком уровне ломается передача и кто может быть причиной, и конкретные шаги в Zapret. Причина не установлена, и ни ТТК, ни Google, ни Роскомнадзор в найденных материалах её не объясняли. Подробности вынесены в две заметки: [[DPI/ggc-googlevideo-how-it-works|как устроены кэши Google и что показали прямые замеры]] и [[DPI/googlevideo-pcap-analysis-ttk-october-2026|разбор записей трафика]].
