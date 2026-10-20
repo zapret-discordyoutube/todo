@@ -70,6 +70,6 @@ URL заметки = путь в vault со слагами Quartz (пробел�
 
 Отдельное правило: **`Zapret/home.md` не трогать** — навигацию на главной ведёт владелец вручную.
 
-## Оформление ответа
+## Response format
 
-Правила оформления ответа общие для всех проектов: раздел «Оформление ответа» в `/home/codex-pve/AGENTS.md`. Прочитай его и соблюдай в каждом сеансе; менять правила только там.
+The response format rules are common to all projects: the "Response format" section in `/home/codex-pve/AGENTS.md`. Read it and follow it in every session; change the rules only there.
