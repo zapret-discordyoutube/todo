@@ -23,8 +23,8 @@ description: "Zapret на Windows 7 и 8: консольные версии с b
 Автозапуск поддерживается только вручную (через добавление в реестр или папку `Start Menu`)
 
 ## Zapret 2
-Доступно здесь — https://git.zapret.moe/zapretdiscordyoutube/zapret2-youtube-discord
+Доступно здесь — https://git2.zapret.moe/zapretdiscordyoutube/zapret2-youtube-discord
 ## Zapret 1
-Скачать файл можно [тут](https://t.me/bypassblock/666) или по [ссылке](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases/tag/win7).
+Скачать файл можно [тут](https://t.me/bypassblock/666) или по [ссылке](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/releases/tag/win7).
 
 ![[Pasted image 20251220221441.png]]

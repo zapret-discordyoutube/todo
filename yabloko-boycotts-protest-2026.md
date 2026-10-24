@@ -317,4 +317,4 @@ description: "Лето 2026: снятие «Яблока» с выборов ч�
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/yabloko-boycotts-protest-2026.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/yabloko-boycotts-protest-2026.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

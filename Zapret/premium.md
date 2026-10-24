@@ -98,9 +98,9 @@ description: "Гайд для новичка по Zapret VPN: навигация
 
 | У вас | Скачайте | Что взять в боте | Пошагово |
 |---|---|---|---|
-| 🤖 Android | [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), файл `…-arm64-v8a.apk` | Xray-подписку | [[premium/android\|инструкция со скриншотами]] |
+| 🤖 Android | [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), файл `…-arm64-v8a.apk` | Xray-подписку | [[premium/android\|инструкция со скриншотами]] |
 | 🍏 iPhone, iPad | [Clash Mi](https://clashmi.app/download) | Mihomo-подписку | [[premium/apps#iPhone и iPad\|приложения для iPhone]] |
-| 🖥 Windows | [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | [[premium/apps#Windows\|приложения для Windows]] |
+| 🖥 Windows | [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | [[premium/apps#Windows\|приложения для Windows]] |
 | 💻 Mac, Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Mihomo-подписку | [[premium/apps#macOS и Linux\|приложения для Mac и Linux]] |
 | ✈️ Telegram (Android, Windows) | [ZaStoGram](https://t.me/zastogram) — наш Telegram, работает и без VPN | ничего, он бесплатный | [[premium/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
 
@@ -222,8 +222,8 @@ flowchart LR
 
 | Устройство | Приложение | Что взять в боте | Если не подошло | Другие приложения |
 |---|---|---|---|---|
-| 🤖 Android | [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android) | Xray-подписку | Hysteria 2, Mihomo-подписку | v2rayNG, Happ, FlClash, Clash Mi, AmneziaVPN |
-| 🖥 Windows | [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | Hysteria 2, Mihomo-подписку | v2rayN, Happ, Clash Verge Rev, AmneziaVPN |
+| 🤖 Android | [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) | Xray-подписку | Hysteria 2, Mihomo-подписку | v2rayNG, Happ, FlClash, Clash Mi, AmneziaVPN |
+| 🖥 Windows | [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | Hysteria 2, Mihomo-подписку | v2rayN, Happ, Clash Verge Rev, AmneziaVPN |
 | 🍏 iPhone / iPad | [Clash Mi](https://clashmi.app/download) | Mihomo-подписку | WireGuard | Happ, V2RayTun, AmneziaVPN, WireGuard |
 | 💻 macOS / Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Mihomo-подписку | Xray-подписку, Hysteria 2 | Happ, V2Box, Throne, AmneziaVPN |
 | 📡 Роутер | прошивка с WireGuard | WireGuard-конфиг | AWG 2.0, если роутер поддерживает AmneziaWG; AWG 3.0 — если прошивка знает третье поколение | — |
@@ -332,7 +332,7 @@ flowchart LR
 
 ### ZapretKVN: приложение для VPN
 
-Наш клиент — [ZapretKVN для Android](https://git.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git.zapret.moe/zapretkvn/zapret-kvn). Подписки бота работают в любом совместимом приложении, но ZapretKVN лучше всего подходит под серверы проекта. Как настроить его на телефоне — в [[premium/android|пошаговой инструкции для Android]].
+Наш клиент — [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git2.zapret.moe/zapretkvn/zapret-kvn). Подписки бота работают в любом совместимом приложении, но ZapretKVN лучше всего подходит под серверы проекта. Как настроить его на телефоне — в [[premium/android|пошаговой инструкции для Android]].
 
 ### ZaStoGram: Telegram без VPN
 
@@ -830,8 +830,8 @@ Premium открывает в программе фоны «AMOLED — чёрн�
 ## Источники
 
 - [Бот @zapretvpns_bot](https://telegram.me/zapretvpns_bot) — тарифы, цены, правила доступа, мастер подключения, пополнение и все скриншоты сняты в боте 15 октября 2026 года
-- [ZapretKVN для Android](https://git.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git.zapret.moe/zapretkvn/zapret-kvn) — наши VPN-клиенты
-- [ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — наш Telegram-клиент со встроенным обходом блокировки
+- [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git2.zapret.moe/zapretkvn/zapret-kvn) — наши VPN-клиенты
+- [ZaStoGram](https://git2.zapret.moe/zastogram/ZaStoGram) — наш Telegram-клиент со встроенным обходом блокировки
 - [Clash Mi](https://clashmi.app/download) и [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) — клиенты для Mihomo-подписки
 - [status.zapret.moe](https://status.zapret.moe) — открытый статус серверов
 
@@ -849,4 +849,4 @@ Premium открывает в программе фоны «AMOLED — чёрн�
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/premium.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/premium.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

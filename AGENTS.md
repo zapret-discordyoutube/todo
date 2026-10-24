@@ -4,7 +4,7 @@ publish: false
 
 # AGENTS.md — правила работы с этим репозиторием
 
-Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git.zapret.moe`; материалы публикуются на сайт `https://wiki2.zapret.moe` (self-hosted Quartz 4, живёт на этом же хосте в `/srv/wiki-quartz`). Публикация привязана к Git: **каждый локальный коммит в vault автоматически пересобирает сайт** (systemd-юнит `wiki-rebuild.path` следит за `.git/logs/HEAD` и запускает `wiki-rebuild.service`). Отдельного шага «опубликовать» больше нет.
+Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git2.zapret.moe` (старое имя `git.zapret.moe` в России заблокировано); материалы публикуются на сайт `https://wiki2.zapret.moe` (self-hosted Quartz 4, живёт на этом же хосте в `/srv/wiki-quartz`). Публикация привязана к Git: **каждый локальный коммит в vault автоматически пересобирает сайт** (systemd-юнит `wiki-rebuild.path` следит за `.git/logs/HEAD` и запускает `wiki-rebuild.service`). Отдельного шага «опубликовать» больше нет.
 
 ## Git-процесс: коммитим прямо в `main`
 
@@ -35,7 +35,16 @@ publish: false
 
 ## Публикация на сайт (wiki2.zapret.moe)
 
-**Адрес вики — `wiki2.zapret.moe`** (решение владельца от 24 октября 2026). Старый домен `wiki.zapret.moe` в России заблокирован; nginx перенаправляет его на `wiki2.zapret.moe` (302), но читатель за блокировкой до редиректа не доходит. Поэтому во всех ссылках — в плашках `[!mirror]`, внутри статей, в постах для Telegram, на картинках и в Forgejo-футере — пиши только `wiki2.zapret.moe`. 24 октября 2026 года домен заменён во всём vault, в скиллах и в `baseUrl` Quartz. Если `wiki2` тоже заблокируют, заменяй домен так же — одним проходом по всему хранилищу — и обнови эту строку.
+**Адреса вики и git — `wiki2.zapret.moe` и `git2.zapret.moe`** (решение владельца от 24 октября 2026). Старые `wiki.zapret.moe` и `git.zapret.moe` в России заблокированы по имени; nginx уводит с них на рабочие имена, но читатель за блокировкой до редиректа не доходит. Поэтому во всех ссылках — в плашках `[!mirror]`, внутри статей, в постах для Telegram, на картинках и в Forgejo-футере — пиши только рабочие имена.
+
+Какое имя рабочее, решают не правила в тексте, а реестры хоста `/etc/zapret-wiki-domains.conf` и `/etc/zapret-git-domains.conf` (их ведут `zapret-*-domains` и `zapret-mirror-manager`, флаг `blocked`). Единая точка — `zapret-site-names`: `zapret-site-names link wiki` / `link git` печатает имя для ссылок, `zapret-site-names rewrite ФАЙЛ…` заменяет в файлах все заблокированные имена на рабочие, `zapret-site-names check ФАЙЛ…` их находит. На него опираются:
+
+- pre-commit хук vault (`.git/hooks/pre-commit`): коммит с заблокированным именем в добавленных строках отклоняется;
+- сборка Quartz: `baseUrl` и ссылки статей на заблокированные имена git и вики берутся из реестров (transformer `SiteLinks`);
+- `render.py` скилла `vault-chart` и `md2tghtml.py` скилла `vault-note`: заблокированное имя в HTML диаграммы или в посте заменяется на рабочее;
+- `wiki-rebuild` (robots.txt) и `wiki-indexnow`.
+
+Если заблокируют и `wiki2`/`git2`, контроллер сам пометит имя `blocked`, сборка вики и рендер переключатся сами; в тексте vault останется прогнать `zapret-site-names rewrite` по всем `.md` одним коммитом и перерендерить картинки, где имя впечатано в пиксели, — после этого обнови эту строку.
 
 Сайт — статический, собирается Quartz 4 прямо из этого vault (`npx quartz build -d /home/codex-pve/Privacy` в `/srv/wiki-quartz`). Запускать руками ничего не нужно: **любой коммит в vault триггерит пересборку** через `wiki-rebuild.path`. Принудительная пересборка без коммита: `sudo systemctl start wiki-rebuild.service` или `/usr/local/bin/wiki-rebuild`.
 

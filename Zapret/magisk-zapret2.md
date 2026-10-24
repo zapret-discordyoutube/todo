@@ -13,7 +13,7 @@ aliases:
   - Zapret2 Android
   - Zapret на Android через root
   - DPI-обход на Android с root
-link: https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2
+link: https://git2.zapret.moe/zapretdiscordyoutube/magisk-zapret2
 description: "Zapret2 как Magisk-модуль: системный обход DPI на Android с root — без VPN, для всех приложений сразу. Установка, стратегии, раздача по Wi-Fi."
 ---
 
@@ -51,9 +51,9 @@ Zapret2 применяет техники **desync** — рассылает сп
 Модуль ставится как обычный Magisk-модуль; опционально — приложение-менеджер с графическим интерфейсом.
 
 - [ ] Иметь **root**: [[root/Magisk|Magisk]] (или KernelSU) и ядро с поддержкой **NFQUEUE** (модуль показывает статус `NFQueue support: Supported`).
-- [ ] Скачать `zapret2-magisk-v*.zip` из [релизов репозитория](https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2/releases).
+- [ ] Скачать `zapret2-magisk-v*.zip` из [релизов репозитория](https://git2.zapret.moe/zapretdiscordyoutube/magisk-zapret2/releases).
 - [ ] Magisk → **Модули** → **Установить из хранилища** → выбрать zip → **перезагрузиться**.
-- [ ] *(Опционально, но удобно)* установить APK-менеджер `zapret2-control-v*.apk` — графическое управление стратегиями, хостлистами и логами. Проще всего ставить его из [F-Droid-репозитория Zapret Apps](https://git.zapret.moe/fdroid/repo) — клиент F-Droid сам предложит обновления и проверит подпись.
+- [ ] *(Опционально, но удобно)* установить APK-менеджер `zapret2-control-v*.apk` — графическое управление стратегиями, хостлистами и логами. Проще всего ставить его из [F-Droid-репозитория Zapret Apps](https://git2.zapret.moe/fdroid/repo) — клиент F-Droid сам предложит обновления и проверит подпись.
 - [ ] В менеджере запустить **DPI Bypass Service** и при желании включить **автозапуск (Start on boot)**.
 
 > [!note] Терминал вместо GUI
@@ -95,11 +95,11 @@ Zapret2 применяет техники **desync** — рассылает сп
 - [[root/ReSukiSU|ReSukiSU/KernelSU]] — альтернативный root (KernelSU тоже поддерживается)
 - [[Zapret/router|Роутер и раздача обхода]] — как раздавать разблокированный интернет дальше
 - [[Zapret/hostlist|Хостлисты]] — как формируются списки доменов для обхода
-- 🔗 [Репозиторий magisk-zapret2](https://git.zapret.moe/zapretdiscordyoutube/magisk-zapret2) — исходники, релизы, инструкции
-- 📦 [F-Droid-репозиторий Zapret Apps](https://git.zapret.moe/fdroid/repo) — подписанные APK (Zapret2 Control, Zapret KVN, ZaStoGram) с автообновлением через клиент F-Droid
+- 🔗 [Репозиторий magisk-zapret2](https://git2.zapret.moe/zapretdiscordyoutube/magisk-zapret2) — исходники, релизы, инструкции
+- 📦 [F-Droid-репозиторий Zapret Apps](https://git2.zapret.moe/fdroid/repo) — подписанные APK (Zapret2 Control, Zapret KVN, ZaStoGram) с автообновлением через клиент F-Droid
 - 🔗 [zapret (bol-van)](https://github.com/bol-van/zapret) — родительский проект DPI-обхода
 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/magisk-zapret2.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/magisk-zapret2.md) · [весь репозиторий](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

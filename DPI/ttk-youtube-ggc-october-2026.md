@@ -271,4 +271,4 @@ openssl s_client -connect 188.43.65.140:443 -servername ya.ru
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/DPI/ttk-youtube-ggc-october-2026.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/DPI/ttk-youtube-ggc-october-2026.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

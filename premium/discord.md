@@ -19,7 +19,7 @@ description: "Как пустить Discord на Windows через прокси
 # 🎧 Discord через Zapret VPN без режима VPN (TUN)
 
 > [!info] О чём заметка
-> Как направить приложение Discord на Windows через локальный прокси VPN-клиента [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) или v2rayN, не включая для этого VPN на весь компьютер. Так голос и стрим идут с минимальной задержкой, а остальные программы работают напрямую. Как получить VPN и подписку — в [[Zapret/premium|гайде для новичка]].
+> Как направить приложение Discord на Windows через локальный прокси VPN-клиента [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) или v2rayN, не включая для этого VPN на весь компьютер. Так голос и стрим идут с минимальной задержкой, а остальные программы работают напрямую. Как получить VPN и подписку — в [[Zapret/premium|гайде для новичка]].
 
 > [!tip] Простыми словами
 > Discord в России заблокирован. Проще всего включить VPN на весь компьютер — тогда Discord заработает сам. Эта статья для тех, кто хочет пустить через VPN только Discord, а всё остальное оставить напрямую.
@@ -109,4 +109,4 @@ description: "Как пустить Discord на Windows через прокси
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/discord.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/discord.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

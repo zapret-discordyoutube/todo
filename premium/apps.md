@@ -64,7 +64,7 @@ description: "Какое приложение поставить для Zapret V
 
 | Приложение | Ссылка из бота | Как добавить |
 |---|---|---|
-| ⭐ [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) — наш клиент | Xray- и Hysteria 2-подписка | «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа». [[premium/android\|Пошагово со скриншотами]] |
+| ⭐ [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) — наш клиент | Xray- и Hysteria 2-подписка | «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа». [[premium/android\|Пошагово со скриншотами]] |
 | [v2rayNG](https://github.com/2dust/v2rayNG/releases/latest) | Xray-подписка | меню ☰ → группы подписок → «+» → вставить адрес в поле URL → сохранить; на главном экране «⋮» → обновить подписку; включение — круглая кнопка внизу справа |
 | [Happ](https://play.google.com/store/apps/details?id=com.happproxy) (есть в Google Play) | Xray-подписка | «+» в правом верхнем углу → вставка из буфера обмена; включение — большая кнопка |
 | [FlClash](https://github.com/chen08209/FlClash) | Mihomo-подписка | «Профили» → «+» → по URL → вставить; затем кнопка запуска на главной |
@@ -93,7 +93,7 @@ description: "Какое приложение поставить для Zapret V
 
 | Приложение | Ссылка из бота | Как добавить |
 |---|---|---|
-| ⭐ [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) — наш клиент | Xray- и Hysteria 2-подписка | добавить подписку по ссылке, выбрать сервер, включить |
+| ⭐ [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) — наш клиент | Xray- и Hysteria 2-подписка | добавить подписку по ссылке, выбрать сервер, включить |
 | [v2rayN](https://github.com/2dust/v2rayN/releases/latest) | Xray- или Hysteria 2-подписка | «Подписки» → «Настройки подписок» → «Добавить» → URL; затем «Обновить подписки». [[premium/v2rayn\|Подробно со скриншотами]] |
 | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Mihomo-подписка | «Профили» → вставить ссылку → «Импорт»; включить системный прокси или TUN |
 | [Happ](https://github.com/Happ-proxy/happ-desktop/releases/latest) | Xray-подписка | «+» → из буфера обмена |
@@ -151,8 +151,8 @@ AWG 2.0 в боте остаётся, чтобы не отрезать тех, �
 
 | Платформа | Где скачать |
 |---|---|
-| Android | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
-| Windows | канал [@zastogram](https://t.me/zastogram) или [страница выпусков ZaStoGram Desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop/releases/latest), файл `ZaStoGram-x64.exe` |
+| Android | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git2.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
+| Windows | канал [@zastogram](https://t.me/zastogram) или [страница выпусков ZaStoGram Desktop](https://git2.zapret.moe/zastogram/ZaStoGram_desktop/releases/latest), файл `ZaStoGram-x64.exe` |
 
 ZaStoGram ставится рядом с обычным Telegram. В одном приложении можно держать до трёх аккаунтов (с Telegram Premium — до пяти), поэтому клоны Telegram не нужны. Голосовые звонки идут мимо WSS, напрямую: если они не соединяются, поможет VPN или пакетный обход zapret. WSS и прокси из бота одновременно не работают: при включённом прокси WSS приостанавливается, а после его выключения ZaStoGram сам возвращается на WSS.
 
@@ -160,7 +160,7 @@ ZaStoGram ставится рядом с обычным Telegram. В одном 
 
 - Списки совместимых приложений — тексты бота [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) на 15 октября 2026 года (карточки подписок, меню AWG 3.0, мастер подключения).
 - Версии AmneziaWG — разделы вики [[amnezia-2-0/amnezia-2-0|AmneziaWG 2.0]] и [[amnezia-3-0/amnezia-3-0|AmneziaWG 3.0]]; версия модуля на серверах — исходники компонента `awg-core` проекта.
-- [ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) и [ZaStoGram Desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop) — исходный код и выпуски.
+- [ZaStoGram](https://git2.zapret.moe/zastogram/ZaStoGram) и [ZaStoGram Desktop](https://git2.zapret.moe/zastogram/ZaStoGram_desktop) — исходный код и выпуски.
 
 ## 📚 См. также
 
@@ -174,4 +174,4 @@ ZaStoGram ставится рядом с обычным Telegram. В одном 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/apps.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/apps.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

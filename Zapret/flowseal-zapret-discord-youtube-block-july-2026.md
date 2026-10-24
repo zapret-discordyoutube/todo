@@ -179,7 +179,7 @@ Flowseal лично опубликовал зеркала последних р�
 Альтернативы, не зависящие от аккаунта Flowseal:
 
 - оригинальное ядро от bol-van — `github.com/bol-van/zapret2` (подробнее о репозиториях автора — в разделе про экосистему выше);
-- сборка [[Zapret2/Zapret2|Zapret2]] от youtubediscord (`git.zapret.moe/zapretdiscordyoutube/zapret2-youtube-discord`) — [[Zapret/download|официальные способы скачивания описаны здесь]];
+- сборка [[Zapret2/Zapret2|Zapret2]] от youtubediscord (`git2.zapret.moe/zapretdiscordyoutube/zapret2-youtube-discord`) — [[Zapret/download|официальные способы скачивания описаны здесь]];
 - официальные Telegram-каналы [[Zapret GUI]]: [t.me/bypassblock](https://t.me/bypassblock) (основной, установщик и новости), [t.me/zapretnetdiscordyoutube](https://t.me/zapretnetdiscordyoutube) (обновления), [t.me/zapretbypass_bot](https://t.me/zapretbypass_bot) (бот со сборкой), [t.me/runetvpnyoutubediscord](https://t.me/runetvpnyoutubediscord) (Android, macOS и другие системы).
 
 > [!danger] Главная опасность — фейковые «перезаливы Flowseal»
@@ -210,4 +210,4 @@ Flowseal лично опубликовал зеркала последних р�
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/flowseal-zapret-discord-youtube-block-july-2026.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/flowseal-zapret-discord-youtube-block-july-2026.md) · [весь репозиторий](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

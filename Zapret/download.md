@@ -58,7 +58,7 @@ description: "Пять способов скачать Zapret GUI для Windows
 
 ## Способ 4. Через Forgejo
 
-Откройте [страницу релизов в Forgejo](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases), выберите стабильный или предварительный выпуск и в блоке «Загрузки» скачайте файл установщика с расширением `.exe`. Файл `.sha256` рядом нужен только для проверки контрольной суммы.
+Откройте [страницу релизов в Forgejo](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/releases), выберите стабильный или предварительный выпуск и в блоке «Загрузки» скачайте файл установщика с расширением `.exe`. Файл `.sha256` рядом нужен только для проверки контрольной суммы.
 
 ![[zapret-forgejo-release-downloads-2026-08.png]]
 
@@ -66,7 +66,7 @@ description: "Пять способов скачать Zapret GUI для Windows
 
 ## Способ 5. Собрать Zapret самостоятельно
 
-Пройдите по ссылке: https://git.zapret.moe/zapretdiscordyoutube/zapretgui/src/branch/main/docs/build.md
+Пройдите по ссылке: https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/src/branch/main/docs/build.md
 
 ---
 

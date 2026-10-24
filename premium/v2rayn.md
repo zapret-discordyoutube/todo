@@ -263,7 +263,7 @@ youtu.be +proxy
 ![[IMG-20251106131618434.png]]
 
 > [!note] Телефоны
-> Для Android проще наш клиент [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android), для iPhone — Clash Mi с Mihomo-подпиской (см. [[Zapret/premium#Шаг 3. Получите подписку в боте|гайд]]). Ниже — для тех, кто сознательно выбрал v2rayNG или V2RayTun.
+> Для Android проще наш клиент [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android), для iPhone — Clash Mi с Mihomo-подпиской (см. [[Zapret/premium#Шаг 3. Получите подписку в боте|гайд]]). Ниже — для тех, кто сознательно выбрал v2rayNG или V2RayTun.
 
 ## Android: v2rayNG
 
@@ -310,4 +310,4 @@ https://speedtest.selectel.ru/100MB
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/v2rayn.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/v2rayn.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

@@ -9,7 +9,7 @@ aliases:
   - Changelog Zapret 21
   - История версий Zapret 21.0.0
   - Что нового в Zapret с 21.0.0.6
-link: https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases
+link: https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/releases
 description: "Changelog dev-сборок ZapretGUI 21.0.0.6–21.0.0.181 (апрель–июнь 2026): Telegram-прокси, профили, редактор списков, ускорения и фикс «краша интернета»."
 ---
 
@@ -593,4 +593,4 @@ Home-страница полностью удалена.
 - [[download|⬇️ Как скачать и установить из официального источника]]
 - [[Zapret/about|🔐 Что такое Zapret]]
 - [[discord-cdn-fix-fake-repos-june-2026|👾 Фейковые клоны Zapret с малварью]] — почему важно качать только из официального репозитория
-- 🔗 [Страница релизов в Forgejo](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/releases) — первоисточник changelog
+- 🔗 [Страница релизов в Forgejo](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/releases) — первоисточник changelog

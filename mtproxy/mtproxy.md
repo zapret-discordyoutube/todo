@@ -51,9 +51,9 @@ description: "Раздел о прокси для Telegram: MTProxy и FakeTLS, 
 ## 📚 См. также
 
 - [[DPI/DPI|Раздел DPI]] — как ТСПУ вообще анализирует соединения
-- 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — Telegram-клиент проекта: исходники Android-форка с WSS-транспортом и готовые сборки в релизах
+- 🔗 [zastogram/ZaStoGram](https://git2.zapret.moe/zastogram/ZaStoGram) — Telegram-клиент проекта: исходники Android-форка с WSS-транспортом и готовые сборки в релизах
 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/mtproxy/mtproxy.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/mtproxy/mtproxy.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

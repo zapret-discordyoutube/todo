@@ -31,7 +31,7 @@ description: "Пошагово со скриншотами: что скачат�
 
 ## TL;DR
 
-- **Что скачать:** приложение [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) (файл `…-arm64-v8a.apk`) — для VPN, и [ZaStoGram](https://t.me/zastogram) — для Telegram. Оба бесплатные.
+- **Что скачать:** приложение [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) (файл `…-arm64-v8a.apk`) — для VPN, и [ZaStoGram](https://t.me/zastogram) — для Telegram. Оба бесплатные.
 - **Сколько стоит:** советуем тариф 💎 Vless MAX — **199 ₽ в месяц** (15 серверов и все прокси для Telegram). Подешевле — ⚡ MasterVless за 99 ₽ в месяц, на пробу — 9 ₽ за день. Покупается в боте [@zapretvpns_bot](https://telegram.me/zapretvpns_bot).
 - **Что сделать:** купить тариф → взять в боте **Xray-подписку** → в ZapretKVN «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа» → на «Главной» нажать большую кнопку.
 - **Важно:** ZapretKVN пускает через VPN **только отмеченные приложения**. Если YouTube работает, а Telegram (или второй Telegram) нет — отметьте его во вкладке «Маршруты» → «Выбрать приложения».
@@ -51,7 +51,7 @@ description: "Пошагово со скриншотами: что скачат�
 
 ## Шаг 1. Скачайте и установите ZapretKVN
 
-Откройте [страницу выпусков ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) и скачайте файл под свой телефон:
+Откройте [страницу выпусков ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest) и скачайте файл под свой телефон:
 
 | Файл | Для какого телефона |
 |---|---|
@@ -179,7 +179,7 @@ description: "Пошагово со скриншотами: что скачат�
 | Работает без VPN при блокировке | нет | да, через встроенный WSS |
 | Прокси из бота (MTProxy, TeleMT) | работают не всегда стабильно | работают стабильнее всего |
 | Несколько аккаунтов | до 3, с Premium — больше | до 3, с Premium — до 5 |
-| Где скачать | Google Play | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
+| Где скачать | Google Play | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git2.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
 
 ZaStoGram ставится рядом с обычным Telegram и ничего в нём не меняет: войдите в те же аккаунты по номеру телефона. Если пользуетесь и ZapretKVN, отметьте ZaStoGram в списке приложений для VPN — тогда и звонки пойдут через VPN: голосовые звонки идут мимо WSS, напрямую (подробнее — [[mtproxy/telegram-wss-limits#Звонки|в разборе ограничений WSS]]).
 
@@ -258,8 +258,8 @@ ZapretKVN — самый простой вариант, но подписку м
 
 ## Источники
 
-- [ZapretKVN для Android](https://git.zapret.moe/zapretkvn/ZapretKVN-android) — исходный код и выпуски; поведение по умолчанию описано в `docs/README.md` репозитория.
-- [ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходный код Telegram-клиента, описание WSS-транспорта и выпуски.
+- [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) — исходный код и выпуски; поведение по умолчанию описано в `docs/README.md` репозитория.
+- [ZaStoGram](https://git2.zapret.moe/zastogram/ZaStoGram) — исходный код Telegram-клиента, описание WSS-транспорта и выпуски.
 - Скриншоты ZapretKVN 0.5.4 и 0.5.5 сняты на эмуляторе Android 16 15 октября 2026 года; карточка подписки — в боте [@zapretvpns_bot](https://telegram.me/zapretvpns_bot).
 
 ## 📚 См. также
@@ -274,4 +274,4 @@ ZapretKVN — самый простой вариант, но подписку м
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/android.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/android.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

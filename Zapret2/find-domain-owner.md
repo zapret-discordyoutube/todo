@@ -173,9 +173,9 @@ ASN — `AS16509 — Amazon.com, Inc.`, диапазон (Range) — `2a05:d014:
 
 ## Собрали адреса? Отправьте их, чтобы они попали в категории по умолчанию
 
-Если вы собрали рабочий набор IP-диапазонов и доменов для игры или сайта, им можно поделиться. Разработчики [[Zapret2|Zapret 2]] принимают такие списки через форму на git.zapret.moe и добавляют их в стандартные категории, чтобы следующим пользователям не пришлось собирать их заново:
+Если вы собрали рабочий набор IP-диапазонов и доменов для игры или сайта, им можно поделиться. Разработчики [[Zapret2|Zapret 2]] принимают такие списки через форму на git2.zapret.moe и добавляют их в стандартные категории, чтобы следующим пользователям не пришлось собирать их заново:
 
-👉 **[Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml)**
+👉 **[Форма отправки hostlist/ipset](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml)**
 
 Такие запросы приходят постоянно. В Telegram-группе помощи Zapret есть топик «Запрос ресурсов»: за январь–февраль 2026 там просили, среди прочего, `autodesk.com`, `ubisoft.com`, `support-valorant.riotgames.com`, `bandlab.com`, `anitype.app` и наборы доменов твич-смайлов (`7tv.app`, `betterttv.net`, `frankerfacez.com`). Каждый такой запрос проверяется методом из этой заметки: домены страницы → IP-адреса → владелец сети → диапазоны в списке нужной категории.
 
@@ -216,11 +216,11 @@ ASN — `AS16509 — Amazon.com, Inc.`, диапазон (Range) — `2a05:d014:
 - [[verify-strategy|Как проверить, заработала ли стратегия]] — честная проверка каждой попытки
 - [[symptom-not-cause|Почему «не работает» — это симптом]] — ложные выводы при переборе вслепую
 - [[Zapret/hosts|GEO-ограничения и файл hosts]] — когда сайт закрылся от региона сам
-- 🔗 [Форма отправки hostlist/ipset](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml) — поделиться собранными адресами
+- 🔗 [Форма отправки hostlist/ipset](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml) — поделиться собранными адресами
 - 🔗 [ipvfoobarbaz на GitHub](https://github.com/ziad8727/ipvfoobarbaz) — исходники расширения
 - 🔗 [ipinfo.io](https://ipinfo.io) — карточки IP-адресов: ASN, владелец, диапазон
 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-domain-owner.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-domain-owner.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

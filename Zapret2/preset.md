@@ -21,7 +21,7 @@ description: "Пресеты (конфиги) в Zapret2 GUI: как устро�
 Активный пресет заменяется в файл по пути `%AppData%\ZapretTwoDev\preset-zapret2.txt`. Он используется всегда и этот файл просто хранит активный пресет. Сам по себе пресетом не является. Все пресеты пользователя находятся в папке `presets`. По умолчанию используется пресет `Default`. Также существует стоковый пресет `Gaming`.
 
 > [!NOTE]
-> Вы можете обмениваться напрямую этими пресетами, чтобы быстро изменить настройки программы. Для этого есть специальный [раздел обращений](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues).
+> Вы можете обмениваться напрямую этими пресетами, чтобы быстро изменить настройки программы. Для этого есть специальный [раздел обращений](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues).
 
 
 > [!WARNING] Почему пресеты плохи?
@@ -785,4 +785,4 @@ start "zapret: http,https,quic" /min "%~dp0winws2.exe" ^
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/preset.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/preset.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

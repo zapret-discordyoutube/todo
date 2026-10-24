@@ -99,7 +99,7 @@ description: "Как подобрать стратегию Zapret 2 для иг�
 
 ## Куда деть собранные адреса ещё
 
-Полный список IP и портов игры — ценность не только для вас: его можно [отправить разработчикам Zapret2 GUI](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml), чтобы игру добавили в категории по умолчанию — правила оформления в [[Создание своей категории]]. Тогда следующим игрокам не придётся проходить этот путь.
+Полный список IP и портов игры — ценность не только для вас: его можно [отправить разработчикам Zapret2 GUI](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new?template=hostlist_ipset_request.yml), чтобы игру добавили в категории по умолчанию — правила оформления в [[Создание своей категории]]. Тогда следующим игрокам не придётся проходить этот путь.
 
 ## Лобовой вариант: пресеты «ALL TCP & UDP» — и связка с TCPView
 
@@ -222,4 +222,4 @@ description: "Как подобрать стратегию Zapret 2 для иг�
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-game-strategy.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/find-game-strategy.md) · [весь репозиторий](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

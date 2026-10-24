@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Статистика читателей wiki2.zapret.moe по логу nginx, без счётчиков и cookie.
+"""Статистика читателей вики (все её имена wiki*.zapret.moe) по логу nginx, без счётчиков и cookie.
 
 Лог /var/log/nginx/access.log общий с Forgejo и другими сайтами хоста, поэтому
 берутся только запросы страниц вики (слаги из собранного сайта). Для каждого
@@ -39,6 +39,9 @@ MAX_VIEWS = 120  # больше просмотров за день — тоже 
 MAX_REPEAT = 30  # одна страница чаще 30 раз за день — перезагрузка по таймеру, не чтение
 WINDOWS = (7, 30, 90)
 TOP_N = 20
+# все имена вики и git (wiki*.zapret.moe, git*.zapret.moe — реестры /etc/zapret-*-domains.conf)
+OWN_WIKI_HOST = re.compile(r"wiki\d*\.zapret\.moe")
+OWN_GIT_HOST = re.compile(r"git\d*\.zapret\.moe")
 SPARK_DAYS = 14
 
 MONTHS = {m.encode(): i + 1 for i, m in enumerate(
@@ -80,7 +83,7 @@ def site_index():
         except OSError:
             continue
         if m:
-            titles[slug] = re.sub(r"\s+—\s+wiki\.zapret\.moe$", "", m.group(1)).strip()
+            titles[slug] = re.sub(r"\s+—\s+wiki\d*\.zapret\.moe$", "", m.group(1)).strip()
     alias = {}
     stub = re.compile(r'http-equiv="refresh" content="0; url=\./([^"]+)"')
     for name in os.listdir(PUBLIC):
@@ -104,7 +107,7 @@ def ext_referrer(ref: str):
         pkg = ref[len("android-app://"):].split("/")[0].lower()
         return "Telegram" if ("telegram" in pkg or "ayugram" in pkg or "nekogram" in pkg) else "Другие сайты"
     host = (urlsplit(ref).hostname or "").lower()
-    if not host or host == "wiki2.zapret.moe":
+    if not host or OWN_WIKI_HOST.fullmatch(host):
         return None
     if host in ("t.me", "telegram.me", "telegram.org", "web.telegram.org", "telegra.ph") or "telegram" in host:
         return "Telegram"
@@ -114,7 +117,7 @@ def ext_referrer(ref: str):
         return "Google"
     if host.endswith(("bing.com", "duckduckgo.com", "ecosia.org", "search.brave.com", "startpage.com", "yahoo.com", "baidu.com")):
         return "Другие поисковики"
-    if host in ("git.zapret.moe", "github.com", "gitlab.com"):
+    if OWN_GIT_HOST.fullmatch(host) or host in ("github.com", "gitlab.com"):
         return "Git (Forgejo, GitHub)"
     if host == "publish.obsidian.md":
         return "Зеркало (Obsidian Publish)"

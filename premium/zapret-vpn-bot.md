@@ -51,7 +51,7 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 
 Здесь и лежит главное отличие от распространённой практики, поэтому разберём подробно.
 
-**Xray-подписка.** Одна личная ссылка со всеми серверами VLESS, доступными по вашему тарифу. Её понимают наши клиенты [ZapretKVN для Android](https://git.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git.zapret.moe/zapretkvn/zapret-kvn), а также v2rayN, Happ, V2RayTun и другие клиенты на Xray. Когда появляется новый сервер или старый меняет адрес, приложение подтягивает это само при обновлении подписки.
+**Xray-подписка.** Одна личная ссылка со всеми серверами VLESS, доступными по вашему тарифу. Её понимают наши клиенты [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git2.zapret.moe/zapretkvn/zapret-kvn), а также v2rayN, Happ, V2RayTun и другие клиенты на Xray. Когда появляется новый сервер или старый меняет адрес, приложение подтягивает это само при обновлении подписки.
 
 **Hysteria 2-подписка.** То же самое для серверов Hysteria 2 — в формате, который читают Zapret KVN, v2rayN (с версии 7.24.9), Throne и Husi. Clash-клиенты эту ссылку не читают: им нужна Mihomo-подписка.
 
@@ -169,4 +169,4 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/zapret-vpn-bot.md) · [весь репозиторий](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование и скачивание всего репозитория одним zip-архивом доступны в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/zapret-vpn-bot.md) · [весь репозиторий](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main).

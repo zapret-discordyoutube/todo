@@ -80,7 +80,7 @@ tnc 149.154.174.100 -Port 443
 
 Через туннель файл качается кусками по 8 КБ, до восьми кусков параллельно. После нескольких килобайт ответа соединение закрывается на границе пакета и открывается новое: Android делает это после 6 КБ, Desktop — после 4 КБ для файлов и 8 КБ для чата. Лимит повторов для одного запроса на Android поднят с 6 до 30, потому что после переключения в туннель видео в 3,5 МБ и архив в 35 КБ падали с ошибкой исчерпания повторов. Проще говоря: через туннель файл приходит множеством мелких порций по отдельным соединениям, поэтому медленнее, но приходит.
 
-Отдельный и неприятный случай — DC203. Из него Telegram отдаёт часть медиа аккаунтам без Premium, и веб-релея у этого датацентра нет совсем. До 16 октября 2026 года клиенты возили его только туннелем, поэтому, когда у воркеров кончался лимит, первыми вставали именно эти медиа и именно у пользователей без подписки. Так было и вечером 16 октября: два из трёх воркеров отвечали `429`, туннель ушёл на паузу, и Desktop пытался подключиться к DC203 напрямую, через закрытый TCP, — раз в несколько секунд, без результата. В тот же день выяснилось, что домены за Cloudflare несут и DC203 (`kws203.‹домен›` отвечает настоящим MTProto), и ZaStoGram с ZapretGUI [перевели его на них](https://git.zapret.moe/zastogram/ZaStoGram_desktop/commit/09fefd7e6eb2f5acb3e908fe5b9ef6590d6366f4): теперь лимит воркеров замедляет эти файлы, но не отключает. Отсюда частое заблуждение «у знакомого с Premium всё грузится, значит дело в подписке»: подписка здесь меняет только датацентр, из которого приходит файл.
+Отдельный и неприятный случай — DC203. Из него Telegram отдаёт часть медиа аккаунтам без Premium, и веб-релея у этого датацентра нет совсем. До 16 октября 2026 года клиенты возили его только туннелем, поэтому, когда у воркеров кончался лимит, первыми вставали именно эти медиа и именно у пользователей без подписки. Так было и вечером 16 октября: два из трёх воркеров отвечали `429`, туннель ушёл на паузу, и Desktop пытался подключиться к DC203 напрямую, через закрытый TCP, — раз в несколько секунд, без результата. В тот же день выяснилось, что домены за Cloudflare несут и DC203 (`kws203.‹домен›` отвечает настоящим MTProto), и ZaStoGram с ZapretGUI [перевели его на них](https://git2.zapret.moe/zastogram/ZaStoGram_desktop/commit/09fefd7e6eb2f5acb3e908fe5b9ef6590d6366f4): теперь лимит воркеров замедляет эти файлы, но не отключает. Отсюда частое заблуждение «у знакомого с Premium всё грузится, значит дело в подписке»: подписка здесь меняет только датацентр, из которого приходит файл.
 
 ## Лимиты Cloudflare: 429, 503 и 403
 
@@ -145,7 +145,7 @@ Android при включённом WSS сообщает серверу, что 
 - **«No certificate check is done — use only a relay you trust»** — предупреждение у полей своего релея в Desktop. Сертификат на деле проверяется по указанному имени.
 - **«WSS unavailable for this DC. Add a proxy.»** — уведомление Desktop. Оно появляется, только когда для датацентра нет ни одной ступени лестницы; для DC1–DC5 и DC203 маршрут есть всегда, так что увидеть его почти невозможно.
 - **«Telegram WSS транспорт: Официальный»** — подзаголовок экрана прокси в Android. Он отражает положение переключателя, а не то, что соединение действительно идёт через WSS.
-- **ZapretGUI** до 16 октября 2026 года помечал релеи DC1, DC3 и DC5 как неподтверждённые, а диагностика проверяла их на чужом адресе и сообщала «релея нет», хотя все они работают (замеры — в [[mtproxy/telegram-wss-transport|парной заметке]]). Исправлено [коммитом cb72426c](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/commit/cb72426c8de4d15da363968845ea8725fad7656e), в выпуске после 21.1.7.176.
+- **ZapretGUI** до 16 октября 2026 года помечал релеи DC1, DC3 и DC5 как неподтверждённые, а диагностика проверяла их на чужом адресе и сообщала «релея нет», хотя все они работают (замеры — в [[mtproxy/telegram-wss-transport|парной заметке]]). Исправлено [коммитом cb72426c](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/commit/cb72426c8de4d15da363968845ea8725fad7656e), в выпуске после 21.1.7.176.
 - **FAQ tg-ws-proxy** ([issue #389](https://github.com/Flowseal/tg-ws-proxy/issues/389)) написан под версию 1.7.2. Там сказано, что FakeTLS-секреты не поддерживаются, а в текущей версии они включаются через `--fake-tls-domain`.
 
 ## Мелочи у мостов
@@ -198,8 +198,8 @@ Android при включённом WSS сообщает серверу, что 
 - [tg-ws-proxy: код пула воркеров с отключённой паузой при 429](https://github.com/Flowseal/tg-ws-proxy/blob/main/proxy/pool.py)
 - [tg-ws-proxy: инструкция по своему домену за Cloudflare](https://github.com/Flowseal/tg-ws-proxy/blob/main/docs/RU/CfProxy.md)
 - [tg-ws-proxy: инструкция по своему воркеру Cloudflare](https://github.com/Flowseal/tg-ws-proxy/blob/main/docs/RU/CfWorker.md)
-- [ZapretGUI, коммит cb72426c от 16 октября 2026 года — релеи DC1–DC5 и два адреса у DC2/DC4](https://git.zapret.moe/zapretdiscordyoutube/zapretgui/commit/cb72426c8de4d15da363968845ea8725fad7656e)
-- [ZaStoGram Desktop, коммит 09fefd7e6e от 16 октября 2026 года — DC203 через домены за Cloudflare](https://git.zapret.moe/zastogram/ZaStoGram_desktop/commit/09fefd7e6eb2f5acb3e908fe5b9ef6590d6366f4)
+- [ZapretGUI, коммит cb72426c от 16 октября 2026 года — релеи DC1–DC5 и два адреса у DC2/DC4](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/commit/cb72426c8de4d15da363968845ea8725fad7656e)
+- [ZaStoGram Desktop, коммит 09fefd7e6e от 16 октября 2026 года — DC203 через домены за Cloudflare](https://git2.zapret.moe/zastogram/ZaStoGram_desktop/commit/09fefd7e6eb2f5acb3e908fe5b9ef6590d6366f4)
 - [Cloudflare Workers: лимиты бесплатного тарифа, 100 000 запросов в сутки и ошибка 1027](https://developers.cloudflare.com/workers/platform/limits/)
 
 ## 📚 См. также
@@ -212,10 +212,10 @@ Android при включённом WSS сообщает серверу, что 
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4 и SNI]] — второй класс блокировок, по почерку соединения
 - [[Zapret2/Zapret2|zapret]] — пакетный обход, который закрывает звонки
 - [[Zapret2/windivert|WinDivert и профили портов]] — какие UDP-порты нужны звонкам
-- 🔗 [zastogram/ZaStoGram](https://git.zapret.moe/zastogram/ZaStoGram) — исходники Android-клиента, сборки в [релизах](https://git.zapret.moe/zastogram/ZaStoGram/releases)
-- 🔗 [zastogram/ZaStoGram_desktop](https://git.zapret.moe/zastogram/ZaStoGram_desktop) — исходники Desktop-клиента
+- 🔗 [zastogram/ZaStoGram](https://git2.zapret.moe/zastogram/ZaStoGram) — исходники Android-клиента, сборки в [релизах](https://git2.zapret.moe/zastogram/ZaStoGram/releases)
+- 🔗 [zastogram/ZaStoGram_desktop](https://git2.zapret.moe/zastogram/ZaStoGram_desktop) — исходники Desktop-клиента
 
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/mtproxy/telegram-wss-limits.md) · [скачать весь репозиторий одним zip-архивом](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/mtproxy/telegram-wss-limits.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

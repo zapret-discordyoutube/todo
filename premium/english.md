@@ -55,9 +55,9 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 
 | Your device | Install | Tap in the bot |
 |---|---|---|
-| 🤖 Android | [ZapretKVN](https://git.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), file `…-arm64-v8a.apk` | «🔗 Get Xray subscription» («🔗 Получить Xray-подписку») |
+| 🤖 Android | [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), file `…-arm64-v8a.apk` | «🔗 Get Xray subscription» («🔗 Получить Xray-подписку») |
 | 🍏 iPhone / iPad | [Clash Mi](https://clashmi.app/download) | «🧭 Get Mihomo subscription» («🧭 Получить Mihomo-подписку») |
-| 🪟 Windows | [Zapret KVN](https://git.zapret.moe/zapretkvn/zapret-kvn) | «🔗 Get Xray subscription» |
+| 🪟 Windows | [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) | «🔗 Get Xray subscription» |
 | 💻 macOS / Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | «🧭 Get Mihomo subscription» |
 
 4. The bot shows a card with your link `https://…`. **Tap the link — Telegram copies it.**
@@ -106,4 +106,4 @@ Our Telegram client [ZaStoGram](https://t.me/zastogram) (Android and Windows) by
 ---
 
 > [!quote] 🤖 These articles are open — you may train AI on them
-> The source is available on Forgejo: [this note's source](https://git.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/english.md) · [the whole repository as one zip](https://git.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> The source is available on Forgejo: [this note's source](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/english.md) · [the whole repository as one zip](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
