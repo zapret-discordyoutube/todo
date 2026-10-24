@@ -15,7 +15,7 @@ description: "Настройка клиента Hysteria 2: config.yaml с SOCKS
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/config-client](https://wiki.zapret.moe/Hysteria/config-client)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/config-client](https://wiki2.zapret.moe/Hysteria/config-client)
 
 # 🦎 Hysteria 2 — конфиг клиента
 

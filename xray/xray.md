@@ -15,7 +15,7 @@ description: "Раздел о Project X и ядре Xray-core: протокол�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xray](https://wiki.zapret.moe/xray/xray)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/xray](https://wiki2.zapret.moe/xray/xray)
 
 # 🛰️ Xray, VLESS и REALITY — раздел
 

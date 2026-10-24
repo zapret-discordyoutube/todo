@@ -18,7 +18,7 @@ description: "Фильтры профиля в Zapret 2: --filter-tcp/udp, --fil
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/filter](https://wiki.zapret.moe/Zapret2/filter)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/filter](https://wiki2.zapret.moe/Zapret2/filter)
 
 # 🧯 Фильтры профиля в Zapret 2
 

@@ -23,7 +23,7 @@ description: "Почему через WSS в ZaStoGram и tg-ws-proxy не гр�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/telegram-wss-limits](https://wiki.zapret.moe/mtproxy/telegram-wss-limits)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/telegram-wss-limits](https://wiki2.zapret.moe/mtproxy/telegram-wss-limits)
 
 # 🧯 Ограничения WSS для Telegram: что не работает и почему
 

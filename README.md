@@ -3,6 +3,6 @@ description: "Служебная страница-заглушка вики zapr
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/README](https://wiki.zapret.moe/README)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/README](https://wiki2.zapret.moe/README)
 
 Всякая хуйня автора

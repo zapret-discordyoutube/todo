@@ -3,7 +3,7 @@ description: "Рабочий список задач проекта Zapret: пе
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-Todo](https://wiki.zapret.moe/Zapret/Zapret-Todo)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret-Todo](https://wiki2.zapret.moe/Zapret/Zapret-Todo)
 
 Кто нибудь знает, на айфон воркает?
 https://chromewebstore.google.com/detail/ttv-lol-pro/bpaoeijjlplfjbagceilcgbkcdjbomjd?pli=1

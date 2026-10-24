@@ -19,7 +19,7 @@ description: "Как работают passkeys (ключи доступа) FIDO2
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/passkeys](https://wiki.zapret.moe/FIDO/passkeys)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/passkeys](https://wiki2.zapret.moe/FIDO/passkeys)
 
 # 🗝️ Passkeys («ключи доступа»): беспарольный вход FIDO2
 

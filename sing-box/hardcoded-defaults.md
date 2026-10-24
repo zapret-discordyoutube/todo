@@ -13,7 +13,7 @@ description: "Справочник зашитых констант sing-box-exte
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/hardcoded-defaults](https://wiki.zapret.moe/sing-box/hardcoded-defaults)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/hardcoded-defaults](https://wiki2.zapret.moe/sing-box/hardcoded-defaults)
 
 # 🔩 Хардкод-константы и дефолты sing-box-extended
 

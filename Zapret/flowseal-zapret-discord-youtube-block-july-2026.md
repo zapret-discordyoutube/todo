@@ -20,7 +20,7 @@ description: "10 июля 2026 GitHub приостановил аккаунт Fl
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/flowseal-zapret-discord-youtube-block-july-2026](https://wiki.zapret.moe/Zapret/flowseal-zapret-discord-youtube-block-july-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/flowseal-zapret-discord-youtube-block-july-2026](https://wiki2.zapret.moe/Zapret/flowseal-zapret-discord-youtube-block-july-2026)
 
 # 🚫 [Flowseal (флоусил) заблокировали на GitHub — теневой бан аккаунта Flowseal и репозитория zapret-discord-youtube (июль 2026)](https://www.youtube.com/watch?v=AR90YnDX77U)
 

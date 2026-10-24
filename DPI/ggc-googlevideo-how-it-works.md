@@ -21,7 +21,7 @@ link: https://redirector.gvt1.com/report_mapping?di=no
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/ggc-googlevideo-how-it-works](https://wiki.zapret.moe/DPI/ggc-googlevideo-how-it-works)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/ggc-googlevideo-how-it-works](https://wiki2.zapret.moe/DPI/ggc-googlevideo-how-it-works)
 
 # 🦎 Кэши Google (GGC) у провайдера: как YouTube выбирает узел googlevideo.com и что показали прямые замеры
 

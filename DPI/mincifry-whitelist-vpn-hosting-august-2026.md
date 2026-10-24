@@ -24,7 +24,7 @@ link: https://pro.rbc.ru/demo/6a6f4c159a794723c09b298d
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/mincifry-whitelist-vpn-hosting-august-2026](https://wiki.zapret.moe/DPI/mincifry-whitelist-vpn-hosting-august-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/mincifry-whitelist-vpn-hosting-august-2026](https://wiki2.zapret.moe/DPI/mincifry-whitelist-vpn-hosting-august-2026)
 
 # 🧾 «Замаскированные» VPN и белый список: что Минцифры обсуждает с хостерами (3 августа 2026)
 

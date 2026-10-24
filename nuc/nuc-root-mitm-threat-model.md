@@ -20,7 +20,7 @@ description: "Что технически возможно, если поста�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/nuc-root-mitm-threat-model](https://wiki.zapret.moe/nuc/nuc-root-mitm-threat-model)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/nuc-root-mitm-threat-model](https://wiki2.zapret.moe/nuc/nuc-root-mitm-threat-model)
 
 # 🕳️ Что технически возможно через корень НУЦ: модель угроз HTTPS-перехвата
 

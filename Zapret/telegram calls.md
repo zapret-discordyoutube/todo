@@ -5,7 +5,7 @@ description: "Звонки в Telegram при работе zapret: ссылка 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/telegram-calls](https://wiki.zapret.moe/Zapret/telegram-calls)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/telegram-calls](https://wiki2.zapret.moe/Zapret/telegram-calls)
 
 ```embed
 title: "Fetching"

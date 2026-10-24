@@ -24,7 +24,7 @@ link: https://t.me/app_nova/253
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/gemini-tls-drop-claim-check-october-2026](https://wiki.zapret.moe/DPI/gemini-tls-drop-claim-check-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/gemini-tls-drop-claim-check-october-2026](https://wiki2.zapret.moe/DPI/gemini-tls-drop-claim-check-october-2026)
 
 # 🔎 «РКН обрывает Gemini по имени сайта»: проверка поста о блокировке нейросетей Google (октябрь 2026)
 

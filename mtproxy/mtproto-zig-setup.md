@@ -16,7 +16,7 @@ description: "Пошаговая настройка MTProxy на mtproto.zig: у
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproto-zig-setup](https://wiki.zapret.moe/mtproxy/mtproto-zig-setup)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/mtproto-zig-setup](https://wiki2.zapret.moe/mtproxy/mtproto-zig-setup)
 
 # 🛠️ Настройка MTProxy на mtproto.zig — пошагово и «что происходит на проводе»
 

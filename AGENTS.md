@@ -4,7 +4,7 @@ publish: false
 
 # AGENTS.md — правила работы с этим репозиторием
 
-Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git.zapret.moe`; материалы публикуются на сайт `https://wiki.zapret.moe` (self-hosted Quartz 4, живёт на этом же хосте в `/srv/wiki-quartz`). Публикация привязана к Git: **каждый локальный коммит в vault автоматически пересобирает сайт** (systemd-юнит `wiki-rebuild.path` следит за `.git/logs/HEAD` и запускает `wiki-rebuild.service`). Отдельного шага «опубликовать» больше нет.
+Это Obsidian-хранилище проекта ZapretKVN (приватность, обход DPI и цензуры). Его Git-репозиторий хранится в Forgejo: `zapretdiscordyoutube/todo` на `git.zapret.moe`; материалы публикуются на сайт `https://wiki2.zapret.moe` (self-hosted Quartz 4, живёт на этом же хосте в `/srv/wiki-quartz`). Публикация привязана к Git: **каждый локальный коммит в vault автоматически пересобирает сайт** (systemd-юнит `wiki-rebuild.path` следит за `.git/logs/HEAD` и запускает `wiki-rebuild.service`). Отдельного шага «опубликовать» больше нет.
 
 ## Git-процесс: коммитим прямо в `main`
 
@@ -33,11 +33,13 @@ publish: false
 
 Публикацию на сайт этот workflow не выполняет — сайт собирается локальным systemd-юнитом, см. ниже.
 
-## Публикация на сайт (wiki.zapret.moe)
+## Публикация на сайт (wiki2.zapret.moe)
+
+**Адрес вики — `wiki2.zapret.moe`** (решение владельца от 24 октября 2026). Старый домен `wiki.zapret.moe` в России заблокирован; nginx перенаправляет его на `wiki2.zapret.moe` (302), но читатель за блокировкой до редиректа не доходит. Поэтому во всех ссылках — в плашках `[!mirror]`, внутри статей, в постах для Telegram, на картинках и в Forgejo-футере — пиши только `wiki2.zapret.moe`. 24 октября 2026 года домен заменён во всём vault, в скиллах и в `baseUrl` Quartz. Если `wiki2` тоже заблокируют, заменяй домен так же — одним проходом по всему хранилищу — и обнови эту строку.
 
 Сайт — статический, собирается Quartz 4 прямо из этого vault (`npx quartz build -d /home/codex-pve/Privacy` в `/srv/wiki-quartz`). Запускать руками ничего не нужно: **любой коммит в vault триггерит пересборку** через `wiki-rebuild.path`. Принудительная пересборка без коммита: `sudo systemctl start wiki-rebuild.service` или `/usr/local/bin/wiki-rebuild`.
 
-URL заметки = путь в vault со слагами Quartz (пробелы → `-`, кириллица сохраняется): `Zapret/home.md` → `https://wiki.zapret.moe/Zapret/home`. Главная `/` — это alias `index` в frontmatter `Zapret/home.md`.
+URL заметки = путь в vault со слагами Quartz (пробелы → `-`, кириллица сохраняется): `Zapret/home.md` → `https://wiki2.zapret.moe/Zapret/home`. Главная `/` — это alias `index` в frontmatter `Zapret/home.md`.
 
 **Как исключить файл из публикации:** добавить в его frontmatter `publish: false` — фильтр `RemoveNoPublish` в Quartz не пропустит такую заметку на сайт, при этом она остаётся в Git. Так исключён сам `AGENTS.md`.
 
@@ -45,7 +47,7 @@ URL заметки = путь в vault со слагами Quartz (пробел�
 
 **При переименовании заметки** старый путь исчезает с сайта сам при следующей пересборке; чтобы старые внешние ссылки не ломались, можно добавить старый слаг в `aliases:` frontmatter — Quartz сделает редирект.
 
-**Зеркало на Obsidian Publish.** До 20 августа 2026 основной сайт жил на Obsidian Publish (`publish.obsidian.md/zapret`); теперь основная вики — wiki.zapret.moe, а Obsidian Publish остаётся резервным зеркалом и должен быть в актуальном состоянии. После коммита и пуша заливай изменения командами `obsidian publish:*` (порядок, исключения и настройки сайта — в разделе «Публикация в Obsidian Publish (зеркало)» скилла `.claude/skills/vault-note/SKILL.md`). Скрипт `scripts/publish-safe.sh` устарел и оставлен только как история. В ссылках на вики используй основной адрес wiki.zapret.moe, а не зеркало.
+**Зеркало на Obsidian Publish.** До 20 августа 2026 основной сайт жил на Obsidian Publish (`publish.obsidian.md/zapret`); теперь основная вики — wiki2.zapret.moe, а Obsidian Publish остаётся резервным зеркалом и должен быть в актуальном состоянии. После коммита и пуша заливай изменения командами `obsidian publish:*` (порядок, исключения и настройки сайта — в разделе «Публикация в Obsidian Publish (зеркало)» скилла `.claude/skills/vault-note/SKILL.md`). Скрипт `scripts/publish-safe.sh` устарел и оставлен только как история. В ссылках на вики используй основной адрес wiki2.zapret.moe, а не зеркало.
 
 ## Проверка перед публикацией
 

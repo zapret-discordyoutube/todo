@@ -17,7 +17,7 @@ description: "Чем XTLS и Vision (xtls-rprx-vision) отличаются от
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xtls-vision](https://wiki.zapret.moe/xray/xtls-vision)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/xtls-vision](https://wiki2.zapret.moe/xray/xtls-vision)
 
 # 🎯 XTLS и Vision: что это и чем отличается от VLESS и REALITY
 

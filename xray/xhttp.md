@@ -16,7 +16,7 @@ description: "Транспорт XHTTP (SplitHTTP) в Xray: прокси-тра�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/xhttp](https://wiki.zapret.moe/xray/xhttp)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/xhttp](https://wiki2.zapret.moe/xray/xhttp)
 
 # 📡 XHTTP: транспорт Xray, притворяющийся обычным веб-трафиком
 

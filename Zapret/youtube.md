@@ -7,7 +7,7 @@ description: "Три области обхода блокировки YouTube в
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/youtube](https://wiki.zapret.moe/Zapret/youtube)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/youtube](https://wiki2.zapret.moe/Zapret/youtube)
 
 # Как обойти блокировку YouTube
 По умолчанию в запрете включено 3 области для обхода Ютуба:

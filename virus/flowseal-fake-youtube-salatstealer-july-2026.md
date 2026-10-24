@@ -23,7 +23,7 @@ description: "Фейковый Flowseal на YouTube и в Telegram (FlowsealObh
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026](https://wiki.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026](https://wiki2.zapret.moe/virus/flowseal-fake-youtube-salatstealer-july-2026)
 
 # 🥗 [Фейковый «Flowseal» на YouTube (@Dey-K) раздаёт стилер SalatStealer — вирус под видом сборки флоусил (июль 2026)](https://www.youtube.com/watch?v=AR90YnDX77U&t=2s)
 

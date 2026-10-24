@@ -3,7 +3,7 @@ description: "Установка MTProxy Telemt (Rust) через Docker или 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/03-telemt](https://wiki.zapret.moe/Zapret/mtproto/03-telemt)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/03-telemt](https://wiki2.zapret.moe/Zapret/mtproto/03-telemt)
 
 # Telemt (Rust) — установка и настройка
 

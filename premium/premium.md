@@ -14,7 +14,7 @@ description: "Что даёт Zapret Premium в программе Zapret GUI, �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/premium](https://wiki.zapret.moe/premium/premium)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/premium](https://wiki2.zapret.moe/premium/premium)
 
 # ⭐ Zapret Premium: что даёт и как получить
 

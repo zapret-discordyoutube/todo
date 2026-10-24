@@ -3,7 +3,7 @@ description: "Готовый ipset-discord.txt для Zapret: список IP-п
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/ipset-discord](https://wiki.zapret.moe/ipset-discord)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/ipset-discord](https://wiki2.zapret.moe/ipset-discord)
 
 
 ```txt

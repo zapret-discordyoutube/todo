@@ -13,7 +13,7 @@ description: "Почему в Zapret2 --out-range n2<n3 попадает на Cl
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_start_cutoff](https://wiki.zapret.moe/Zapret/manual/zapret2_start_cutoff)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_start_cutoff](https://wiki2.zapret.moe/Zapret/manual/zapret2_start_cutoff)
 
 # Zapret2: start/cutoff и почему `n2<n3` “вдруг” попадает на ClientHello
 

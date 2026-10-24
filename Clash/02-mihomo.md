@@ -17,7 +17,7 @@ description: "mihomo (Clash.Meta) — форк ядра Clash от MetaCubeX: и
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/02-mihomo](https://wiki.zapret.moe/Clash/02-mihomo)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/02-mihomo](https://wiki2.zapret.moe/Clash/02-mihomo)
 
 # 🧩 mihomo (бывший Clash.Meta): как форк стал основным ядром
 

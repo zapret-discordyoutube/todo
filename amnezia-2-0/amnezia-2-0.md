@@ -14,7 +14,7 @@ description: "Раздел об AmneziaWG 2.0 — обфусцированном
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-2-0/amnezia-2-0](https://wiki.zapret.moe/amnezia-2-0/amnezia-2-0)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-2-0/amnezia-2-0](https://wiki2.zapret.moe/amnezia-2-0/amnezia-2-0)
 
 # 🛡️ AmneziaWG 2.0 — раздел
 

@@ -23,7 +23,7 @@ link: https://habr.com/ru/news/995606/
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/nsdi-domain-removal-2026](https://wiki.zapret.moe/DPI/nsdi-domain-removal-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/nsdi-domain-removal-2026](https://wiki2.zapret.moe/DPI/nsdi-domain-removal-2026)
 
 # 🔌 НСДИ как рубильник: домены YouTube и WhatsApp просто убрали из национальной системы доменных имён (февраль–март 2026)
 

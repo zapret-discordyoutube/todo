@@ -12,7 +12,7 @@ description: "Учебник Zapret2, часть 5: типы payload (http_req, 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_05](https://wiki.zapret.moe/Zapret/manual/zapret2_05)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_05](https://wiki2.zapret.moe/Zapret/manual/zapret2_05)
 
 # Zapret2 для новичков — 05: payload types, reasm/replay и маркеры
 

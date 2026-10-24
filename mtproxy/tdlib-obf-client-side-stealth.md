@@ -19,7 +19,7 @@ description: "tdlib-obf — форк TDLib с маскировкой MTProto п�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/tdlib-obf-client-side-stealth](https://wiki.zapret.moe/mtproxy/tdlib-obf-client-side-stealth)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/tdlib-obf-client-side-stealth](https://wiki2.zapret.moe/mtproxy/tdlib-obf-client-side-stealth)
 
 # 🦎 tdlib-obf — клиентский TDLib с маскировкой TLS-почерка под браузер
 

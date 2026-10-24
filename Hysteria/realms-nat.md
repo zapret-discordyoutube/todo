@@ -16,7 +16,7 @@ description: "Hysteria 2 Realms: сервер без белого IP за NAT и
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/realms-nat](https://wiki.zapret.moe/Hysteria/realms-nat)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/realms-nat](https://wiki2.zapret.moe/Hysteria/realms-nat)
 
 # 🦎 Hysteria 2 — Realms: сервер за NAT без белого IP
 

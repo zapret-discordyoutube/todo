@@ -16,7 +16,7 @@ description: "Справочник стратегии syndata в Zapret 2 (nfqws
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/syndata](https://wiki.zapret.moe/Zapret2/desync/syndata)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/syndata](https://wiki2.zapret.moe/Zapret2/desync/syndata)
 
 # `syndata` --- payload в TCP SYN (zapret2 / nfqws2)
 

@@ -15,7 +15,7 @@ description: "Как устроен Shadowsocks: почему stream-шифры 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/shadowsocks](https://wiki.zapret.moe/protocols/shadowsocks)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/shadowsocks](https://wiki2.zapret.moe/protocols/shadowsocks)
 
 # 🧦 Shadowsocks: как устроен самый старый живой прокси обхода
 

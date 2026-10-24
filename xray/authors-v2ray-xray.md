@@ -16,7 +16,7 @@ description: "Кто создал V2Ray и Xray: псевдонимы Victoria/D
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/authors-v2ray-xray](https://wiki.zapret.moe/xray/authors-v2ray-xray)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/authors-v2ray-xray](https://wiki2.zapret.moe/xray/authors-v2ray-xray)
 
 # 🕵️ Кто стоит за V2Ray и Xray: Victoria Raymond, Darien Raymond и RPRX
 

@@ -11,7 +11,7 @@ description: "Черновики раздела Zapret: незаконченны
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/ToDo](https://wiki.zapret.moe/Zapret/ToDo/ToDo)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ToDo/ToDo](https://wiki2.zapret.moe/Zapret/ToDo/ToDo)
 
 # 📝 ToDo — черновики и задачи раздела Zapret
 

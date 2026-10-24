@@ -7,7 +7,7 @@ description: "Пути установки Zapret 2 GUI на Windows: папки 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/path](https://wiki.zapret.moe/Zapret/path)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/path](https://wiki2.zapret.moe/Zapret/path)
 
 # Пути установки Zapret 2 GUI
 ## Stable ветка

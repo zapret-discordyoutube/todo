@@ -16,7 +16,7 @@ description: "Поможет ли zapret при блокировке DoH: обх
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/doh-cherez-zapret](https://wiki.zapret.moe/Zapret/doh-cherez-zapret)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/doh-cherez-zapret](https://wiki2.zapret.moe/Zapret/doh-cherez-zapret)
 
 # 🔐 Поможет ли zapret, если провайдер блокирует DoH (защищённый DNS)
 

@@ -24,7 +24,7 @@ description: "Гайд для новичка по Zapret VPN: навигация
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/premium](https://wiki.zapret.moe/Zapret/premium)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/premium](https://wiki2.zapret.moe/Zapret/premium)
 
 # 🧭 Zapret VPN: как купить и подключить — гайд для новичка
 [[home|На главную]]

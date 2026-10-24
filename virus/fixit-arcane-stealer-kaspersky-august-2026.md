@@ -21,7 +21,7 @@ description: "Fixit с fixitlab.cc — не обход блокировок, а 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/fixit-arcane-stealer-kaspersky-august-2026](https://wiki.zapret.moe/virus/fixit-arcane-stealer-kaspersky-august-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/fixit-arcane-stealer-kaspersky-august-2026](https://wiki2.zapret.moe/virus/fixit-arcane-stealer-kaspersky-august-2026)
 
 # 🪤 Fixit — приманка для стилера Arcane, а не обход блокировок. И где Касперский бывает прав
 

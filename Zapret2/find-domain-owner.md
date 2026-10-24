@@ -20,7 +20,7 @@ description: "Как узнать, на каком CDN живёт сайт (Akam
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/find-domain-owner](https://wiki.zapret.moe/Zapret2/find-domain-owner)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/find-domain-owner](https://wiki2.zapret.moe/Zapret2/find-domain-owner)
 
 # 🌐 Как узнать, какому CDN принадлежит домен, и найти его профиль в пресете
 

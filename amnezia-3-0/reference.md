@@ -23,7 +23,7 @@ description: "AmneziaWG 3.0 — обфусцированный WireGuard с ши
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/reference](https://wiki.zapret.moe/amnezia-3-0/reference)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-3-0/reference](https://wiki2.zapret.moe/amnezia-3-0/reference)
 
 # 🛡️ AmneziaWG 3.0 — шифрование заголовков поверх WireGuard
 

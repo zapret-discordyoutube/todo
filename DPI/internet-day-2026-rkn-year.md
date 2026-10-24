@@ -20,7 +20,7 @@ link: https://www.securitylab.ru/news/578108.php
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/internet-day-2026-rkn-year](https://wiki.zapret.moe/DPI/internet-day-2026-rkn-year)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/internet-day-2026-rkn-year](https://wiki2.zapret.moe/DPI/internet-day-2026-rkn-year)
 
 # 🎂 День интернета 2026: что Роскомнадзор и Минцифры сделали с интернетом за год
 

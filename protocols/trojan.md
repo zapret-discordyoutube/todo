@@ -14,7 +14,7 @@ description: "Протокол Trojan: прокси внутри настоящ�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/trojan](https://wiki.zapret.moe/protocols/trojan)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/trojan](https://wiki2.zapret.moe/protocols/trojan)
 
 # 🐴 Trojan: прокси, который притворяется обычным HTTPS-сайтом
 

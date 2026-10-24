@@ -20,7 +20,7 @@ description: "Развёртывание tproxy-server — WEB-прокси Tele
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-server-setup](https://wiki.zapret.moe/tproxy/tproxy-server-setup)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tproxy/tproxy-server-setup](https://wiki2.zapret.moe/tproxy/tproxy-server-setup)
 
 # 🛠 Установка tproxy-server: свой WEB-прокси на своём домене
 

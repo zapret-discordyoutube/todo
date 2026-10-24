@@ -18,7 +18,7 @@ description: "Как работает U2F-ключ: регистрация, вх
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/u2f](https://wiki.zapret.moe/FIDO/u2f)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/u2f](https://wiki2.zapret.moe/FIDO/u2f)
 
 # ✌️ U2F (Universal 2nd Factor): что это, история, механика, плюсы и минусы
 

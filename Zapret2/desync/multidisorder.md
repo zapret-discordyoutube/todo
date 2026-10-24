@@ -17,7 +17,7 @@ description: "Разбор multidisorder в zapret2/nfqws2: TCP-сегменты
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multidisorder](https://wiki.zapret.moe/Zapret2/desync/multidisorder)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/multidisorder](https://wiki2.zapret.moe/Zapret2/desync/multidisorder)
 
 # `multidisorder` — TCP-сегментация в обратном порядке (zapret2 / nfqws2)
 

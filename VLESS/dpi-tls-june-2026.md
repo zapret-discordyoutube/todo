@@ -17,7 +17,7 @@ description: "Как DPI «замораживает» VLESS+REALITY в июне 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS/dpi-tls-june-2026](https://wiki.zapret.moe/VLESS/dpi-tls-june-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/VLESS/dpi-tls-june-2026](https://wiki2.zapret.moe/VLESS/dpi-tls-june-2026)
 
 # 🧊 Как DPI «замораживает» VLESS+REALITY: разбор схемы ограничений (июнь 2026)
 

@@ -7,7 +7,7 @@ description: "Вирусная подделка под Zapret из Telegram-ка
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/cactuz](https://wiki.zapret.moe/virus/cactuz)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/cactuz](https://wiki2.zapret.moe/virus/cactuz)
 
 Ещё один вирусный Zapret — https://t.me/DiscordObxod3
 

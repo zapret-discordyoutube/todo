@@ -17,7 +17,7 @@ description: "MTProxy для Telegram и mtproto.zig: как работает Fa
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproto-zig](https://wiki.zapret.moe/mtproxy/mtproto-zig)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/mtproto-zig](https://wiki2.zapret.moe/mtproxy/mtproto-zig)
 
 # 🦎 MTProxy и mtproto.zig: что это, как работает и как пережить ТСПУ
 

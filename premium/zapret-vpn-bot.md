@@ -19,7 +19,7 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/zapret-vpn-bot](https://wiki.zapret.moe/premium/zapret-vpn-bot)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/zapret-vpn-bot](https://wiki2.zapret.moe/premium/zapret-vpn-bot)
 
 # 🤖 Zapret VPN-бот: устройство, подписка и свобода выбора клиента
 

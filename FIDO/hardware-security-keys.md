@@ -20,7 +20,7 @@ description: "Обзор аппаратных ключей FIDO2: линейки
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/hardware-security-keys](https://wiki.zapret.moe/FIDO/hardware-security-keys)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/hardware-security-keys](https://wiki2.zapret.moe/FIDO/hardware-security-keys)
 
 # 🔑 Физические ключи безопасности: YubiKey, открытые ключи и другие типы
 

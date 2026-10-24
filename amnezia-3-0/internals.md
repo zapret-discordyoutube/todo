@@ -22,7 +22,7 @@ description: "AmneziaWG 3.0 по исходникам: защита заголо
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/internals](https://wiki.zapret.moe/amnezia-3-0/internals)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-3-0/internals](https://wiki2.zapret.moe/amnezia-3-0/internals)
 
 # 🔬 AmneziaWG 3.0: внутреннее устройство протокола
 

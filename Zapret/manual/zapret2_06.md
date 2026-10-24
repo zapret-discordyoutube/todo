@@ -11,7 +11,7 @@ description: "Урок 06 по Zapret2: Lua pipeline — инстансы --lua-
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_06](https://wiki.zapret.moe/Zapret/manual/zapret2_06)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_06](https://wiki2.zapret.moe/Zapret/manual/zapret2_06)
 
 # Zapret2 для новичков — 06: Lua pipeline (инстансы, аргументы, дебаг)
 

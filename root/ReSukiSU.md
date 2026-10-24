@@ -15,7 +15,7 @@ description: "Обзор ReSukiSU — форка SukiSU/KernelSU для root ч�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/ReSukiSU](https://wiki.zapret.moe/root/ReSukiSU)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/ReSukiSU](https://wiki2.zapret.moe/root/ReSukiSU)
 
 # 🦎 ReSukiSU — форк SukiSU для root-доступа на Android
 

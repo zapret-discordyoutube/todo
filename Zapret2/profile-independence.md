@@ -19,7 +19,7 @@ description: "Влияют ли профили Zapret 2 друг на друга
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/profile-independence](https://wiki.zapret.moe/Zapret2/profile-independence)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/profile-independence](https://wiki2.zapret.moe/Zapret2/profile-independence)
 
 # 🧬 Влияют ли профили Zapret 2 друг на друга: одно соединение — один профиль
 

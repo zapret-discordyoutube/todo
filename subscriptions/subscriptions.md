@@ -12,7 +12,7 @@ description: "Раздел о платных VPN-подписках со сто�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/subscriptions/subscriptions](https://wiki.zapret.moe/subscriptions/subscriptions)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/subscriptions/subscriptions](https://wiki2.zapret.moe/subscriptions/subscriptions)
 
 # 🎫 Подписки на VPN-сервисы — раздел
 

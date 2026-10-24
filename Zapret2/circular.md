@@ -3,7 +3,7 @@ description: "Справочник Lua-оркестратора circular в Zapr
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/circular](https://wiki.zapret.moe/Zapret2/circular)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/circular](https://wiki2.zapret.moe/Zapret2/circular)
 
 # circular — оркестратор циклического переключения стратегий
 

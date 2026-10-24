@@ -20,7 +20,7 @@ description: "Планы РКН и Минцифры до 2030: блокиров�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/rkn-vpn-2030-roadmap](https://wiki.zapret.moe/DPI/rkn-vpn-2030-roadmap)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/rkn-vpn-2030-roadmap](https://wiki2.zapret.moe/DPI/rkn-vpn-2030-roadmap)
 
 # 🎯 Курс на 2030: официальные планы по VPN, фильтрации всего трафика и деанонимизации
 

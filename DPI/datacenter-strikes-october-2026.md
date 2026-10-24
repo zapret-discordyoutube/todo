@@ -24,7 +24,7 @@ link: https://meduza.io/feature/2026/10/14/pochemu-data-tsentry-okazalis-tak-uya
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/datacenter-strikes-october-2026](https://wiki.zapret.moe/DPI/datacenter-strikes-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/datacenter-strikes-october-2026](https://wiki2.zapret.moe/DPI/datacenter-strikes-october-2026)
 
 # 🔥 Удары по дата-центрам «Яндекса» и «Сбера»: почему ЦОД не защищены, при чём тут законы о локализации и что будет дальше (октябрь 2026)
 

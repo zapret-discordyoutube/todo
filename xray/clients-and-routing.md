@@ -19,7 +19,7 @@ description: "Как подключиться к VLESS+REALITY с телефон
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/clients-and-routing](https://wiki.zapret.moe/xray/clients-and-routing)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/clients-and-routing](https://wiki2.zapret.moe/xray/clients-and-routing)
 
 # 📱 Клиенты и маршрутизация: как подключиться к VLESS-серверу
 

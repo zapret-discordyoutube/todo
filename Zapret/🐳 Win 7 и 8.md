@@ -7,7 +7,7 @@ description: "Zapret на Windows 7 и 8: консольные версии с b
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/🐳-Win-7-и-8](https://wiki.zapret.moe/Zapret/%F0%9F%90%B3-Win-7-%D0%B8-8)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/🐳-Win-7-и-8](https://wiki2.zapret.moe/Zapret/%F0%9F%90%B3-Win-7-%D0%B8-8)
 
 [[home|На главную]]
 ## Консольные версии (без GUI, Win7)

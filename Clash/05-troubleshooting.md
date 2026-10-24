@@ -14,7 +14,7 @@ description: "Диагностика проблем Clash/mihomo: подписк
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/05-troubleshooting](https://wiki.zapret.moe/Clash/05-troubleshooting)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/05-troubleshooting](https://wiki2.zapret.moe/Clash/05-troubleshooting)
 
 # 🩺 Типичные проблемы и как их диагностировать
 

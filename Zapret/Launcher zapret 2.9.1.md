@@ -3,7 +3,7 @@ description: "Готовые пресеты winws.exe для Launcher for Zapret
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Launcher-zapret-2.9.1](https://wiki.zapret.moe/Zapret/Launcher-zapret-2.9.1)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Launcher-zapret-2.9.1](https://wiki2.zapret.moe/Zapret/Launcher-zapret-2.9.1)
 
 
 ```bash

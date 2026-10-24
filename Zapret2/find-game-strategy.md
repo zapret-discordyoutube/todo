@@ -19,7 +19,7 @@ description: "Как подобрать стратегию Zapret 2 для иг�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/find-game-strategy](https://wiki.zapret.moe/Zapret2/find-game-strategy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/find-game-strategy](https://wiki2.zapret.moe/Zapret2/find-game-strategy)
 
 # 🎮 Как найти и протестировать стратегию для игры (профиль + TCPView)
 

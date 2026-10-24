@@ -7,7 +7,7 @@ description: "FAQ по Zapret: как добавить сайт в hostlist, п�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/faq](https://wiki.zapret.moe/Zapret/faq)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/faq](https://wiki2.zapret.moe/Zapret/faq)
 
 # ❓ FAQ (часто задаваемые вопросы)
 [[home|На главную]]

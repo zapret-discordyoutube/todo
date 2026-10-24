@@ -14,7 +14,7 @@ description: "Сатирическая песня «Жу-жу-жу» от лиц
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/rkn-tan-zhu-zhu-zhu](https://wiki.zapret.moe/Zapret/rkn-tan-zhu-zhu-zhu)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/rkn-tan-zhu-zhu-zhu](https://wiki2.zapret.moe/Zapret/rkn-tan-zhu-zhu-zhu)
 
 # 🎤 РКН-тян — «Жу-жу-жу» (сатирическая песня)
 

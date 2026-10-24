@@ -13,7 +13,7 @@ description: "Карта протоколов обхода блокировок:
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/00-overview](https://wiki.zapret.moe/protocols/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/00-overview](https://wiki2.zapret.moe/protocols/00-overview)
 
 # 🗺️ Протоколы обхода блокировок: карта и оглавление
 

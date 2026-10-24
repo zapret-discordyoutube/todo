@@ -17,7 +17,7 @@ description: "История Project X и Xray-core: форк V2Ray, автор 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/project-x](https://wiki.zapret.moe/xray/project-x)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/project-x](https://wiki2.zapret.moe/xray/project-x)
 
 # 🛰️ Project X (Xray-core): что это за проект и откуда он взялся
 

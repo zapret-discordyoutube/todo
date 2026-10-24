@@ -20,7 +20,7 @@ description: "Как раздавать WEB-прокси Telegram (tproxy-server
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-in-bot](https://wiki.zapret.moe/tproxy/tproxy-in-bot)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tproxy/tproxy-in-bot](https://wiki2.zapret.moe/tproxy/tproxy-in-bot)
 
 # 🤖 Выдача WEB-прокси Telegram из своего бота
 

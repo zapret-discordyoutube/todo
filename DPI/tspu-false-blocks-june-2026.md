@@ -21,7 +21,7 @@ description: "Почему в июне 2026 легли сайты на Beget, Ti
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-false-blocks-june-2026](https://wiki.zapret.moe/DPI/tspu-false-blocks-june-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-false-blocks-june-2026](https://wiki2.zapret.moe/DPI/tspu-false-blocks-june-2026)
 
 # 💥 Как ТСПУ ломает легитимные сайты: сопутствующий ущерб борьбы с VPN (июнь 2026)
 

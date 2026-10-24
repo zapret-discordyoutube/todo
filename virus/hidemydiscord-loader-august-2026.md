@@ -21,7 +21,7 @@ description: "Разбор HideMyDiscord: «фикс дискорда» с hidem
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/hidemydiscord-loader-august-2026](https://wiki.zapret.moe/virus/hidemydiscord-loader-august-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/hidemydiscord-loader-august-2026](https://wiki2.zapret.moe/virus/hidemydiscord-loader-august-2026)
 
 # 🎣 HideMyDiscord: рабочий обход блокировок с загрузчиком в комплекте
 

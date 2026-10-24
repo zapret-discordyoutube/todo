@@ -3,7 +3,7 @@ description: "Сравнение 5 реализаций MTProto Proxy: telemt, m
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/02-implementations](https://wiki.zapret.moe/Zapret/mtproto/02-implementations)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/02-implementations](https://wiki2.zapret.moe/Zapret/mtproto/02-implementations)
 
 # 5 независимых реализаций MTProto Proxy
 

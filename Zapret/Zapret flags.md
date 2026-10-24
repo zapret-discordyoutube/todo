@@ -3,7 +3,7 @@ description: "Полный справочник флагов nfqws v72.2: --dpi-
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-flags](https://wiki.zapret.moe/Zapret/Zapret-flags)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret-flags](https://wiki2.zapret.moe/Zapret/Zapret-flags)
 
 
 ```bash

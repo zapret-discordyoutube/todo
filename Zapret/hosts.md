@@ -17,7 +17,7 @@ description: "Файл hosts против GEO-ограничений: как р�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/hosts](https://wiki.zapret.moe/Zapret/hosts)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/hosts](https://wiki2.zapret.moe/Zapret/hosts)
 
 # Ошибки GEO-ограничений или сайт сам себя заблокировал для РФ
 

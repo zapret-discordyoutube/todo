@@ -21,7 +21,7 @@ image: Zapret2/attachments/find-site-domains-header.webp
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/find-site-domains](https://wiki.zapret.moe/Zapret2/find-site-domains)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/find-site-domains](https://wiki2.zapret.moe/Zapret2/find-site-domains)
 
 # 🔎 Как найти домены сайта через F12 (вкладка «Сеть») для своего профиля Zapret 2
 

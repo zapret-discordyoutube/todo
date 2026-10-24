@@ -22,7 +22,7 @@ image: DPI/attachments/isp-licensing-27-regions-header.webp
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/isp-licensing-27-regions-september-2026](https://wiki.zapret.moe/DPI/isp-licensing-27-regions-september-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/isp-licensing-27-regions-september-2026](https://wiki2.zapret.moe/DPI/isp-licensing-27-regions-september-2026)
 
 # 🗺️ Реформа лицензирования связи: 27 регионов без местных провайдеров и 50 млн россиян под угрозой (сентябрь 2026)
 

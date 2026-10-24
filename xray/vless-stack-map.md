@@ -21,7 +21,7 @@ description: "Карта слоёв VLESS-стека: type, security, flow, encr
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/vless-stack-map](https://wiki.zapret.moe/xray/vless-stack-map)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/vless-stack-map](https://wiki2.zapret.moe/xray/vless-stack-map)
 
 # 🧩 Слои VLESS-стека: кто за что отвечает и что с чем работает
 

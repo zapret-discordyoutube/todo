@@ -3,7 +3,7 @@ description: "Развёртывание VPN-бота Telegram (vpnbot) на с�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ZapretVPN](https://wiki.zapret.moe/Zapret/ZapretVPN)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ZapretVPN](https://wiki2.zapret.moe/Zapret/ZapretVPN)
 
 
 ```

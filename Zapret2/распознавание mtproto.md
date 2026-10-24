@@ -7,7 +7,7 @@ description: "Как Zapret 2 распознаёт MTProto: AES-детект п�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/распознавание-mtproto](https://wiki.zapret.moe/Zapret2/%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-mtproto)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/распознавание-mtproto](https://wiki2.zapret.moe/Zapret2/%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-mtproto)
 
 **Zapret действительно распознаёт MTProto**:
 

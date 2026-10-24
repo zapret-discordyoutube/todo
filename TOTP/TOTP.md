@@ -13,7 +13,7 @@ description: "Раздел о TOTP и двухфакторной аутенти�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/TOTP/TOTP](https://wiki.zapret.moe/TOTP/TOTP)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/TOTP/TOTP](https://wiki2.zapret.moe/TOTP/TOTP)
 
 # 🔐 TOTP и двухфакторная аутентификация — раздел
 

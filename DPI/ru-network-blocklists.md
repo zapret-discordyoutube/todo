@@ -19,7 +19,7 @@ description: "Стоит ли блокировать российские ASN/CI
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/ru-network-blocklists](https://wiki.zapret.moe/DPI/ru-network-blocklists)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/ru-network-blocklists](https://wiki2.zapret.moe/DPI/ru-network-blocklists)
 
 # 🧱 Блокировка российских сетей (ASN/CIDR): приватность vs «чтобы не блокировали VPN»
 

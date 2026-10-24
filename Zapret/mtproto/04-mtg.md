@@ -3,7 +3,7 @@ description: "Установка MTProto-прокси mtg с FakeTLS через 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/04-mtg](https://wiki.zapret.moe/Zapret/mtproto/04-mtg)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/04-mtg](https://wiki2.zapret.moe/Zapret/mtproto/04-mtg)
 
 # MTG (Go) — установка и настройка
 

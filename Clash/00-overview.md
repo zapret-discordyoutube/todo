@@ -15,7 +15,7 @@ description: "Оглавление раздела о Clash и mihomo: что т�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/00-overview](https://wiki.zapret.moe/Clash/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/00-overview](https://wiki2.zapret.moe/Clash/00-overview)
 
 # 🧭 Clash и mihomo — обзор и оглавление
 

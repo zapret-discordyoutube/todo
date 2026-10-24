@@ -14,7 +14,7 @@ description: "Коротко обо всём и словарь Zapret VPN: чт�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/glossary](https://wiki.zapret.moe/premium/glossary)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/glossary](https://wiki2.zapret.moe/premium/glossary)
 
 # 📘 Что есть что: Zapret VPN коротко и словарь
 

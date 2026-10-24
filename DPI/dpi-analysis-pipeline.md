@@ -18,7 +18,7 @@ description: "Как ТСПУ анализирует соединение сло
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/dpi-analysis-pipeline](https://wiki.zapret.moe/DPI/dpi-analysis-pipeline)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/dpi-analysis-pipeline](https://wiki2.zapret.moe/DPI/dpi-analysis-pipeline)
 
 # 🔍 Как DPI анализирует соединение: воронка проверок (от SYN до ML)
 

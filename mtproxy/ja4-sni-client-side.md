@@ -18,7 +18,7 @@ description: "Почему смена JA4 и ротация SNI против д�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/ja4-sni-client-side](https://wiki.zapret.moe/mtproxy/ja4-sni-client-side)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/ja4-sni-client-side](https://wiki2.zapret.moe/mtproxy/ja4-sni-client-side)
 
 # 🪪 Кто может менять JA4/SNI и почему обход MTProxy — клиентский
 

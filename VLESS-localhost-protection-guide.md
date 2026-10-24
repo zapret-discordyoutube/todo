@@ -3,7 +3,7 @@ description: "Защита VPN-клиентов xray/sing-box от localhost-а�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS-localhost-protection-guide](https://wiki.zapret.moe/VLESS-localhost-protection-guide)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/VLESS-localhost-protection-guide](https://wiki2.zapret.moe/VLESS-localhost-protection-guide)
 
 # Практическое руководство: защита VPN от localhost-атаки
 

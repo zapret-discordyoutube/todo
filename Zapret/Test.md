@@ -3,7 +3,7 @@ description: "Официальные Telegram-каналы и чаты Zapret: �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Test](https://wiki.zapret.moe/Zapret/Test)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Test](https://wiki2.zapret.moe/Zapret/Test)
 
 
 ### 📂 Папка с нашими чатами: 

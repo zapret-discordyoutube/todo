@@ -19,7 +19,7 @@ description: "Справочник всех 17 параметров AmneziaWG 2.
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-2-0/reference](https://wiki.zapret.moe/amnezia-2-0/reference)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-2-0/reference](https://wiki2.zapret.moe/amnezia-2-0/reference)
 
 # AmneziaWG 2.0 — полный справочник параметров
 

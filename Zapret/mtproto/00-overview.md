@@ -4,7 +4,7 @@ description: "MTProto Proxy для Telegram: зачем нужен при зам
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/00-overview](https://wiki.zapret.moe/Zapret/mtproto/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/00-overview](https://wiki2.zapret.moe/Zapret/mtproto/00-overview)
 
 # MTProto Proxy — Полный гайд
 

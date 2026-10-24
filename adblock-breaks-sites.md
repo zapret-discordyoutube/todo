@@ -17,7 +17,7 @@ description: "Старый AdBlock ломает YouTube, ChatGPT, VK и подм
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/adblock-breaks-sites](https://wiki.zapret.moe/adblock-breaks-sites)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/adblock-breaks-sites](https://wiki2.zapret.moe/adblock-breaks-sites)
 
 # 🧩 AdBlock ломает сайты и маскируется под вирус
 

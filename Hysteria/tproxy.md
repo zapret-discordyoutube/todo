@@ -15,7 +15,7 @@ description: "Настройка TPROXY для Hysteria 2 на Linux: tcpTProxy 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/tproxy](https://wiki.zapret.moe/Hysteria/tproxy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/tproxy](https://wiki2.zapret.moe/Hysteria/tproxy)
 
 # 🦎 Hysteria 2 — прозрачный прокси (TPROXY)
 

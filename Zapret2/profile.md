@@ -20,7 +20,7 @@ description: "Что такое профиль в Zapret 2: чем отлича�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/profile](https://wiki.zapret.moe/Zapret2/profile)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/profile](https://wiki2.zapret.moe/Zapret2/profile)
 
 # 🧩 Что такое профиль в Zapret 2 и чем он отличается от пресета
 

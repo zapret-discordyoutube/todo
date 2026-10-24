@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Статистика читателей wiki.zapret.moe по логу nginx, без счётчиков и cookie.
+"""Статистика читателей wiki2.zapret.moe по логу nginx, без счётчиков и cookie.
 
 Лог /var/log/nginx/access.log общий с Forgejo и другими сайтами хоста, поэтому
 берутся только запросы страниц вики (слаги из собранного сайта). Для каждого
@@ -104,7 +104,7 @@ def ext_referrer(ref: str):
         pkg = ref[len("android-app://"):].split("/")[0].lower()
         return "Telegram" if ("telegram" in pkg or "ayugram" in pkg or "nekogram" in pkg) else "Другие сайты"
     host = (urlsplit(ref).hostname or "").lower()
-    if not host or host == "wiki.zapret.moe":
+    if not host or host == "wiki2.zapret.moe":
         return None
     if host in ("t.me", "telegram.me", "telegram.org", "web.telegram.org", "telegra.ph") or "telegram" in host:
         return "Telegram"

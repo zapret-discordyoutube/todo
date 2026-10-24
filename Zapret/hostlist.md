@@ -9,7 +9,7 @@ description: "Справочник фильтров по доменам в Zapre
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/hostlist](https://wiki.zapret.moe/Zapret/hostlist)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/hostlist](https://wiki2.zapret.moe/Zapret/hostlist)
 
 # 🌐 **[[filter|Фильтры]] по доменам (hostlist)**
 

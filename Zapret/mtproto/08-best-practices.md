@@ -3,7 +3,7 @@ description: "Best practices для своего MTProto-прокси: подб�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/08-best-practices](https://wiki.zapret.moe/Zapret/mtproto/08-best-practices)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/08-best-practices](https://wiki2.zapret.moe/Zapret/mtproto/08-best-practices)
 
 # Best Practices — домен, VPS, безопасность
 

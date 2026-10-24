@@ -16,7 +16,7 @@ description: "FIDO UAF — беспарольный вход по отпечат
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/uaf](https://wiki.zapret.moe/FIDO/uaf)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/uaf](https://wiki2.zapret.moe/FIDO/uaf)
 
 # 📱 UAF: беспарольная ветка FIDO 1.0, которая не взлетела
 

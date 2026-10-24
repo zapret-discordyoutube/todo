@@ -25,7 +25,7 @@ description: "Разбор блокировки 8.8.8.8 по TCP 3 июля 2026
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/google-dns-8888-block-july-2026](https://wiki.zapret.moe/DPI/google-dns-8888-block-july-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/google-dns-8888-block-july-2026](https://wiki2.zapret.moe/DPI/google-dns-8888-block-july-2026)
 
 # 🚫 Инцидент 3 июля 2026: 8.8.8.8 заблокирован по TCP (DoH/DoT) — «умерли» VPN; параллельно ложились серверы EA
 

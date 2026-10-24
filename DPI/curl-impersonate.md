@@ -18,7 +18,7 @@ description: "curl-impersonate имитирует TLS-отпечаток Chrome 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/curl-impersonate](https://wiki.zapret.moe/DPI/curl-impersonate)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/curl-impersonate](https://wiki2.zapret.moe/DPI/curl-impersonate)
 
 # 🥷 curl-impersonate — curl, притворяющийся браузером (проверка блокировок по TLS-отпечатку)
 

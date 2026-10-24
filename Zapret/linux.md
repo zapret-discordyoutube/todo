@@ -3,7 +3,7 @@ description: "Установка Zapret на Linux пятью способами
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/linux](https://wiki.zapret.moe/Zapret/linux)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/linux](https://wiki2.zapret.moe/Zapret/linux)
 
 # Установка Zapret на linux
 Всего существует несколько основных способов (в данном документе представлено 4):

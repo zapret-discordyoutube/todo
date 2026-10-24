@@ -16,7 +16,7 @@ description: "Что делает --wssize в zapret, почему он не р�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/wssize](https://wiki.zapret.moe/Zapret/wssize)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/wssize](https://wiki2.zapret.moe/Zapret/wssize)
 
 # 🪟 wssize в zapret — крайняя мера: без хостлистов, без l7-фильтра, в конце лога blockcheck
 

@@ -6,7 +6,7 @@ description: "Полный bat-скрипт YTDisBystro v3.5 для winws.exe: 1
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/YTDisBystro_v3.5](https://wiki.zapret.moe/Zapret/YTDisBystro_v3.5)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/YTDisBystro_v3.5](https://wiki2.zapret.moe/Zapret/YTDisBystro_v3.5)
 
 ```bash
 @echo off

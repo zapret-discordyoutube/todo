@@ -16,7 +16,7 @@ description: "Отзыв TLS-сертификатов мессенджера MAX
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/post-cert-danger-kratko-june-2026](https://wiki.zapret.moe/nuc/post-cert-danger-kratko-june-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/post-cert-danger-kratko-june-2026](https://wiki2.zapret.moe/nuc/post-cert-danger-kratko-june-2026)
 
 # 📵 Замочек погас: что случилось с сертификатами и почему это касается каждого
 

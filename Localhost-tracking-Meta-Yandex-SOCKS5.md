@@ -3,7 +3,7 @@ description: "Как Meta и Яндекс следят через localhost и �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5](https://wiki.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5](https://wiki2.zapret.moe/Localhost-tracking-Meta-Yandex-SOCKS5)
 
 # Localhost-атака: как Meta, Яндекс и шпионское ПО эксплуатируют loopback-интерфейс
 

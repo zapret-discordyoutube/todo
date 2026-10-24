@@ -20,7 +20,7 @@ description: "Почему сайт не открывается только в 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/browser-ja4-fingerprint-block](https://wiki.zapret.moe/DPI/browser-ja4-fingerprint-block)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/browser-ja4-fingerprint-block](https://wiki2.zapret.moe/DPI/browser-ja4-fingerprint-block)
 
 # 🕵️ Когда DPI блокирует сайт по JA4-отпечатку браузера: разбор кейса wireflow.space
 

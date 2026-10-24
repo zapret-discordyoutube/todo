@@ -17,7 +17,7 @@ description: "Функция hostfakesplit в zapret2/nfqws2: разрез TCP-�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/hostfakesplit](https://wiki.zapret.moe/Zapret2/desync/hostfakesplit)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/hostfakesplit](https://wiki2.zapret.moe/Zapret2/desync/hostfakesplit)
 
 # `hostfakesplit` — TCP-сегментация с фейковым hostname (zapret2 / nfqws2)
 

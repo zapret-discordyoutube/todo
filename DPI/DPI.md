@@ -15,7 +15,7 @@ description: "Раздел о DPI и ТСПУ: как устроена инсп�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/DPI](https://wiki.zapret.moe/DPI/DPI)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/DPI](https://wiki2.zapret.moe/DPI/DPI)
 
 # 🕵️ DPI и ТСПУ — раздел
 

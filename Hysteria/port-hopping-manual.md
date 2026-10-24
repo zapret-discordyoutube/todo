@@ -16,7 +16,7 @@ description: "Ручная настройка port hopping для сервера
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/port-hopping-manual](https://wiki.zapret.moe/Hysteria/port-hopping-manual)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/port-hopping-manual](https://wiki2.zapret.moe/Hysteria/port-hopping-manual)
 
 # 🦎 Hysteria 2 — port hopping вручную (DNAT)
 

@@ -21,7 +21,7 @@ description: "Продакшн-развёртывание telemt (Rust MTProxy) 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/11-telemt-server-setup](https://wiki.zapret.moe/Zapret/mtproto/11-telemt-server-setup)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/11-telemt-server-setup](https://wiki2.zapret.moe/Zapret/mtproto/11-telemt-server-setup)
 
 # 🚀 telemt — продакшн-развёртывание (3 инстанса + UFW + анти-DPI)
 

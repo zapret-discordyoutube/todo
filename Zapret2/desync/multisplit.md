@@ -16,7 +16,7 @@ description: "Полный разбор multisplit в Zapret 2 (nfqws2): TCP-с�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multisplit](https://wiki.zapret.moe/Zapret2/desync/multisplit)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/multisplit](https://wiki2.zapret.moe/Zapret2/desync/multisplit)
 
 # `multisplit` — последовательная TCP-сегментация (zapret2 / nfqws2)
 

@@ -12,7 +12,7 @@ description: "Раздел о противостоянии VLESS и DPI: по к
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/VLESS/VLESS](https://wiki.zapret.moe/VLESS/VLESS)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/VLESS/VLESS](https://wiki2.zapret.moe/VLESS/VLESS)
 
 # 🔷 VLESS и DPI — раздел
 

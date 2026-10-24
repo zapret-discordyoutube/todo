@@ -14,7 +14,7 @@ description: "Magisk — systemless-root для Android: как патчится
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/Magisk](https://wiki.zapret.moe/root/Magisk)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/Magisk](https://wiki2.zapret.moe/root/Magisk)
 
 # 🎭 Magisk — systemless-root и модули для Android
 

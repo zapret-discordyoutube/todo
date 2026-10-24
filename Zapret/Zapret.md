@@ -6,7 +6,7 @@ description: "Рабочий индекс раздела Zapret: ссылки н
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret](https://wiki.zapret.moe/Zapret/Zapret)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret](https://wiki2.zapret.moe/Zapret/Zapret)
 
 ```base
 views:

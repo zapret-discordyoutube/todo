@@ -14,7 +14,7 @@ description: "Какое приложение поставить для Zapret V
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/apps](https://wiki.zapret.moe/premium/apps)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/apps](https://wiki2.zapret.moe/premium/apps)
 
 # 📲 Приложения для Zapret VPN: что поставить и какую ссылку взять
 

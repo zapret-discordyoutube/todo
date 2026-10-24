@@ -16,7 +16,7 @@ description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core п�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/v2fly-vs-xray](https://wiki.zapret.moe/xray/v2fly-vs-xray)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/v2fly-vs-xray](https://wiki2.zapret.moe/xray/v2fly-vs-xray)
 
 # ⚔️ v2fly/v2ray-core против XTLS/Xray-core: чем отличаются два ядра
 

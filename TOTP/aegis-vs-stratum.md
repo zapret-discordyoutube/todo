@@ -20,7 +20,7 @@ description: "Сравнение Aegis и Stratum для TOTP на Android: ши
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/TOTP/aegis-vs-stratum](https://wiki.zapret.moe/TOTP/aegis-vs-stratum)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/TOTP/aegis-vs-stratum](https://wiki2.zapret.moe/TOTP/aegis-vs-stratum)
 
 # 🔐 Aegis и Stratum: что выбрать для TOTP и Яндекса
 

@@ -19,7 +19,7 @@ description: "Сертификаты Минцифры (НУЦ): откуда в�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/00-overview](https://wiki.zapret.moe/nuc/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/00-overview](https://wiki2.zapret.moe/nuc/00-overview)
 
 # 🏛️ Сертификаты Минцифры (НУЦ): что это, зачем их навязывают и чем опасна установка
 

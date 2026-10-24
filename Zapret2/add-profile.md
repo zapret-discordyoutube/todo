@@ -20,7 +20,7 @@ description: "Как добавить свой профиль в Zapret 2 GUI: �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/add-profile](https://wiki.zapret.moe/Zapret2/add-profile)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/add-profile](https://wiki2.zapret.moe/Zapret2/add-profile)
 
 # ➕ Как добавить свой профиль (сайт) в Zapret 2
 

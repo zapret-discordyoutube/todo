@@ -16,7 +16,7 @@ description: "Сравнение mihomo, sing-box и Xray-core: протокол
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/08-vs-sing-box](https://wiki.zapret.moe/Clash/08-vs-sing-box)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/08-vs-sing-box](https://wiki2.zapret.moe/Clash/08-vs-sing-box)
 
 # ⚖️ mihomo против sing-box, Xray и других ядер
 

@@ -13,7 +13,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/guides](https://wiki.zapret.moe/premium/guides)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/guides](https://wiki2.zapret.moe/premium/guides)
 
 # 📚 Все инструкции Zapret VPN
 

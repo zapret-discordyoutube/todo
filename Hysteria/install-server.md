@@ -14,7 +14,7 @@ description: "Установка сервера Hysteria 2 на Linux-VPS: оф�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/install-server](https://wiki.zapret.moe/Hysteria/install-server)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/install-server](https://wiki2.zapret.moe/Hysteria/install-server)
 
 # 🦎 Hysteria 2 — установка сервера
 

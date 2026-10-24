@@ -14,7 +14,7 @@ description: "Что такое wire-протокол простыми слов�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/wire-protocol-explained](https://wiki.zapret.moe/sing-box/wire-protocol-explained)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/wire-protocol-explained](https://wiki2.zapret.moe/sing-box/wire-protocol-explained)
 
 # 🧵 Что такое «wire-протокол» и почему один протокол реализуют дважды
 

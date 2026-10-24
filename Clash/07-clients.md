@@ -16,7 +16,7 @@ description: "Какие клиенты на ядре mihomo живы в 2026 �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/07-clients](https://wiki.zapret.moe/Clash/07-clients)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/07-clients](https://wiki2.zapret.moe/Clash/07-clients)
 
 # 🖥️ Клиенты на ядре Clash/mihomo: что живо, а что мертво
 

@@ -6,7 +6,7 @@ description: "Подборка ссылок по Zapret: обсуждения Fl
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-ссылки](https://wiki.zapret.moe/Zapret/Zapret-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret-ссылки](https://wiki2.zapret.moe/Zapret/Zapret-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8)
 
 ```embed
 title: "Flowseal zapret-discord-youtube · Discussions"

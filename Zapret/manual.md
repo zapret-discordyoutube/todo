@@ -15,7 +15,7 @@ description: "Учебник Zapret 2 для новичков: сетевой с
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual](https://wiki.zapret.moe/Zapret/manual)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual](https://wiki2.zapret.moe/Zapret/manual)
 
 ## Учебник (для новичков)
 

@@ -9,7 +9,7 @@ description: "IP-фильтры Zapret: параметры --ipset, --ipset-ip, 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ipset](https://wiki.zapret.moe/Zapret/ipset)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ipset](https://wiki2.zapret.moe/Zapret/ipset)
 
 # 🎯 **[[filter|Фильтры]] по IP адресам**
 

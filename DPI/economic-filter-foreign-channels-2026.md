@@ -23,7 +23,7 @@ image: DPI/attachments/economic-filter-foreign-channels-two-options.png
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/economic-filter-foreign-channels-2026](https://wiki.zapret.moe/DPI/economic-filter-foreign-channels-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/economic-filter-foreign-channels-2026](https://wiki2.zapret.moe/DPI/economic-filter-foreign-channels-2026)
 
 # 💸 Экономический фильтр: плата за зарубежный интернет и согласительный порядок на каналы (2026)
 

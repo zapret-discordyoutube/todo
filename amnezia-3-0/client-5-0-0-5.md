@@ -19,7 +19,7 @@ description: "Разбор AmneziaVPN 5.0.0.5: поддержка AWG 3, уда�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/client-5-0-0-5](https://wiki.zapret.moe/amnezia-3-0/client-5-0-0-5)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-3-0/client-5-0-0-5](https://wiki2.zapret.moe/amnezia-3-0/client-5-0-0-5)
 
 # 📦 AmneziaVPN 5.0.0.5 — что даёт обновление и что оно ломает
 

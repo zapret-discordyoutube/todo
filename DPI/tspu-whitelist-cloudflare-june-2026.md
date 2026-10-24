@@ -18,7 +18,7 @@ description: "Сбой 23 июня 2026: обновление ТСПУ снес�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-whitelist-cloudflare-june-2026](https://wiki.zapret.moe/DPI/tspu-whitelist-cloudflare-june-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-whitelist-cloudflare-june-2026](https://wiki2.zapret.moe/DPI/tspu-whitelist-cloudflare-june-2026)
 
 # 🧱 Инцидент 23 июня 2026 (не работает Дискорд, Твич заблокировали): при обновлении ТСПУ слетели «белые списки» Cloudflare
 *Twitch и Discord не работают в России их заблокировали в интернете обход блокировок Запрет 2*

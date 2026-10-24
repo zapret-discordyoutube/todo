@@ -19,7 +19,7 @@ description: "Можно ли заблокировать WEB-прокси Telegr
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-blocking](https://wiki.zapret.moe/tproxy/tproxy-blocking)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tproxy/tproxy-blocking](https://wiki2.zapret.moe/tproxy/tproxy-blocking)
 
 # 🛡 Можно ли заблокировать WEB-прокси Telegram и как именно
 

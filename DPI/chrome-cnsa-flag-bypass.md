@@ -18,7 +18,7 @@ description: "Сайт не открывается только в Chrome? Фл�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/chrome-cnsa-flag-bypass](https://wiki.zapret.moe/DPI/chrome-cnsa-flag-bypass)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/chrome-cnsa-flag-bypass](https://wiki2.zapret.moe/DPI/chrome-cnsa-flag-bypass)
 
 # 🧪 Обход блокировки сайтов флагом Chrome `cryptography-compliance-cnsa`
 

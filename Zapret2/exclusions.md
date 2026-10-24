@@ -23,7 +23,7 @@ description: "Как исключить сайт из Zapret 2: профиль �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/exclusions](https://wiki.zapret.moe/Zapret2/exclusions)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/exclusions](https://wiki2.zapret.moe/Zapret2/exclusions)
 
 # 🚫 Исключения в Zapret 2: почему такой кнопки нет и как они устроены на самом деле
 

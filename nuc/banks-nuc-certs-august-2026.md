@@ -17,7 +17,7 @@ description: "3 августа 2026 TrustAsia отозвала TLS-сертиф�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/banks-nuc-certs-august-2026](https://wiki.zapret.moe/nuc/banks-nuc-certs-august-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/banks-nuc-certs-august-2026](https://wiki2.zapret.moe/nuc/banks-nuc-certs-august-2026)
 
 # 🏦 3 августа 2026: TrustAsia отозвала сертификаты у российских банков — и те перешли на НУЦ
 

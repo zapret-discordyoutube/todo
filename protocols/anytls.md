@@ -15,7 +15,7 @@ description: "Протокол AnyTLS против детекта «TLS внут
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/anytls](https://wiki.zapret.moe/protocols/anytls)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/anytls](https://wiki2.zapret.moe/protocols/anytls)
 
 # 🧬 AnyTLS: протокол против детекта «TLS внутри TLS»
 

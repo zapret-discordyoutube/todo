@@ -18,7 +18,7 @@ description: "Маршрутизация Xray: правила RoutingObject, dom
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/routing](https://wiki.zapret.moe/xray/routing)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/routing](https://wiki2.zapret.moe/xray/routing)
 
 # 🧭 Маршрутизация в Xray: как трафик распределяется по outbound
 

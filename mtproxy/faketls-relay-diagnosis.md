@@ -16,7 +16,7 @@ description: "Как понять, релей MTProxy или клиент вин
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/faketls-relay-diagnosis](https://wiki.zapret.moe/mtproxy/faketls-relay-diagnosis)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/faketls-relay-diagnosis](https://wiki2.zapret.moe/mtproxy/faketls-relay-diagnosis)
 
 # 🔬 Релей или клиент: диагностика MTProxy, когда рабочий ключ не подключается
 

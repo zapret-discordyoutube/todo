@@ -3,7 +3,7 @@ description: "Протокол MTProto Proxy: режимы Classic, dd и FakeTL
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/01-protocol](https://wiki.zapret.moe/Zapret/mtproto/01-protocol)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/01-protocol](https://wiki2.zapret.moe/Zapret/mtproto/01-protocol)
 
 # Протокол MTProto Proxy
 

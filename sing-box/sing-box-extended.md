@@ -14,7 +14,7 @@ description: "Обзор sing-box-extended — форка sing-box с WARP, MASQ
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/sing-box-extended](https://wiki.zapret.moe/sing-box/sing-box-extended)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/sing-box-extended](https://wiki2.zapret.moe/sing-box/sing-box-extended)
 
 # 📦 sing-box-extended — форк sing-box с расширенными функциями
 

@@ -3,7 +3,7 @@ description: "Все Telegram-каналы команды Zapret: скачива
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ZapretTeam](https://wiki.zapret.moe/Zapret/ZapretTeam)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ZapretTeam](https://wiki2.zapret.moe/Zapret/ZapretTeam)
 
 📂 Папка с нашими чатами: 
 https://t.me/addlist/xjPs164MI7AxZWE6

@@ -16,7 +16,7 @@ description: "Что такое ядро Clash: rule-based маршрутиза�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/01-clash-core](https://wiki.zapret.moe/Clash/01-clash-core)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/01-clash-core](https://wiki2.zapret.moe/Clash/01-clash-core)
 
 # ⚙️ Ядро Clash: что это такое и как оно устроено
 

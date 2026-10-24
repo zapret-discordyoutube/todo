@@ -19,7 +19,7 @@ description: "Гипотеза: ТСПУ вычисляет прокси по «
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis](https://wiki.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis](https://wiki2.zapret.moe/DPI/tspu-h2-h3-fingerprint-hypothesis)
 
 # 🔬 Гипотеза: ТСПУ ловит прокси по «вечному HTTP/2» (отсутствию перехода на HTTP/3)
 

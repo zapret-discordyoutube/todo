@@ -17,7 +17,7 @@ description: "Как в Яндекс Браузере и Атоме встрое
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/embedded-trust](https://wiki.zapret.moe/nuc/embedded-trust)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/embedded-trust](https://wiki2.zapret.moe/nuc/embedded-trust)
 
 # 📦 Где доверие НУЦ уже встроено: «Яндекс Браузер», «Атом» и предустановка
 

@@ -14,7 +14,7 @@ description: "Почему с июня 2026 сайты на Beget, Timeweb и Se
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026](https://wiki.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026](https://wiki2.zapret.moe/DPI/post-pochemu-legli-ru-sajty-iyun-2026)
 
 # 📡 Почему с июня 2026 «легли» сайты на российских хостингах (спойлер: опять ТСПУ)
 

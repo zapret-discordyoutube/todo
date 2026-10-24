@@ -22,7 +22,7 @@ description: "Фактчек прогноза новой волны блокир
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026](https://wiki.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026](https://wiki2.zapret.moe/DPI/vpn-blocking-wave-forecast-summer-2026)
 
 # «Стабилизация временная»: насколько реален прогноз новой волны блокировок VPN
 

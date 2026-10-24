@@ -6,7 +6,7 @@ description: "Что нового в zapret v72.2: --wssize-forced-cutoff, ма�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-v72.2](https://wiki.zapret.moe/Zapret/Zapret-v72.2)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret-v72.2](https://wiki2.zapret.moe/Zapret/Zapret-v72.2)
 
 # 🆕 Новое в zapret v72.2
 

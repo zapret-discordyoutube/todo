@@ -26,7 +26,7 @@ description: "Fooling в Zapret: зачем fake-пакет должен «ум�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/ts-and-fooling](https://wiki.zapret.moe/Zapret2/ts-and-fooling)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/ts-and-fooling](https://wiki2.zapret.moe/Zapret2/ts-and-fooling)
 
 # 💀 `ts` и fooling: почему фейк должен умереть
 

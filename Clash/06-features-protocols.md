@@ -17,7 +17,7 @@ description: "Что умеет ядро mihomo (Clash.Meta) в 2026: прото
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/06-features-protocols](https://wiki.zapret.moe/Clash/06-features-protocols)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/06-features-protocols](https://wiki2.zapret.moe/Clash/06-features-protocols)
 
 # 🚀 Возможности и протоколы mihomo: что ядро умеет в 2026 году
 

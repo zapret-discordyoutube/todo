@@ -22,7 +22,7 @@ image: Zapret2/attachments/steam-header.webp
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/steam](https://wiki.zapret.moe/Zapret2/steam)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/steam](https://wiki2.zapret.moe/Zapret2/steam)
 
 # 🎮 Steam и Zapret 2: какие домены и порты нужны и как настроить профиль
 

@@ -21,7 +21,7 @@ link: https://www.kommersant.ru/doc/8971978
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/youtube-video-consumption-h1-2026](https://wiki.zapret.moe/DPI/youtube-video-consumption-h1-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/youtube-video-consumption-h1-2026](https://wiki2.zapret.moe/DPI/youtube-video-consumption-h1-2026)
 
 # 📈 YouTube в России в I полугодии 2026: +24% времени просмотра вопреки блокировке и как это вообще измерили
 

@@ -14,7 +14,7 @@ description: "Ошибки Hysteria 2 и их решение: timeout no recent 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/troubleshooting](https://wiki.zapret.moe/Hysteria/troubleshooting)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/troubleshooting](https://wiki2.zapret.moe/Hysteria/troubleshooting)
 
 # 🦎 Hysteria 2 — решение проблем
 

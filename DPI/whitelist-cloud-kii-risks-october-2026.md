@@ -23,7 +23,7 @@ link: https://www.forbes.ru/tekhnologii/570208-prognoz-neblagopriatnyj-eksperty-
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/whitelist-cloud-kii-risks-october-2026](https://wiki.zapret.moe/DPI/whitelist-cloud-kii-risks-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/whitelist-cloud-kii-risks-october-2026](https://wiki2.zapret.moe/DPI/whitelist-cloud-kii-risks-october-2026)
 
 # ☁️ Белые списки против облаков: почему рабочая группа по ИИ увидела в них риск для госсистем и КИИ (октябрь 2026)
 

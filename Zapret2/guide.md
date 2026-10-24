@@ -5,7 +5,7 @@ description: "Настройка Zapret 2 GUI для новичков: выбо�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/guide](https://wiki.zapret.moe/Zapret2/guide)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/guide](https://wiki2.zapret.moe/Zapret2/guide)
 
 # 🚀 Как настроить под себя [[Zapret2]] GUI (гайд на настройку)
 [[home|На главную]]

@@ -15,7 +15,7 @@ description: "Пошаговая установка Magisk: какой обра�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/Magisk-install](https://wiki.zapret.moe/root/Magisk-install)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/Magisk-install](https://wiki2.zapret.moe/root/Magisk-install)
 
 # 🛠️ Установка Magisk — патч boot/init_boot, Recovery, Samsung
 

@@ -3,7 +3,7 @@ description: "Ошибка «unknown player» в League of Legends на EUW/EUNE
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/League-of-Legends](https://wiki.zapret.moe/Zapret/League-of-Legends)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/League-of-Legends](https://wiki2.zapret.moe/Zapret/League-of-Legends)
 
 
 ```embed

@@ -15,7 +15,7 @@ description: "Hysteria 2 — прокси поверх QUIC с маскиров�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/00-overview](https://wiki.zapret.moe/Hysteria/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/00-overview](https://wiki2.zapret.moe/Hysteria/00-overview)
 
 # 🦎 Hysteria 2 — обзор и оглавление
 

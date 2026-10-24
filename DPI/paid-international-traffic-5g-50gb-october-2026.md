@@ -23,7 +23,7 @@ link: https://www.kommersant.ru/doc/9005972
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/paid-international-traffic-5g-50gb-october-2026](https://wiki.zapret.moe/DPI/paid-international-traffic-5g-50gb-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/paid-international-traffic-5g-50gb-october-2026](https://wiki2.zapret.moe/DPI/paid-international-traffic-5g-50gb-october-2026)
 
 # 💳 Плата за зарубежный трафик в 5G: лимит 50 ГБ, кто это продвигает и как это будут обходить (октябрь 2026)
 

@@ -17,7 +17,7 @@ description: "Что такое ГОСТ-TLS от НУЦ Минцифры: ши�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/gost-tls](https://wiki.zapret.moe/nuc/gost-tls)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/gost-tls](https://wiki2.zapret.moe/nuc/gost-tls)
 
 # 🧬 ГОСТ-TLS и КриптоПро: чем «вариант с шифрованием по ГОСТ» глубже обычного корня НУЦ
 

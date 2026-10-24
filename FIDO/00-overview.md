@@ -15,7 +15,7 @@ description: "Обзор раздела о FIDO2, WebAuthn, CTAP и passkeys: к
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/00-overview](https://wiki.zapret.moe/FIDO/00-overview)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/00-overview](https://wiki2.zapret.moe/FIDO/00-overview)
 
 # 🗂 FIDO и аппаратные ключи: обзор раздела
 

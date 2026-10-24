@@ -3,7 +3,7 @@ description: "Почему антивирусы ругаются на Zapret и 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/virus](https://wiki.zapret.moe/virus/virus)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/virus](https://wiki2.zapret.moe/virus/virus)
 
 
 [[home|На главную]]

@@ -18,7 +18,7 @@ description: "Что такое FIDO и почему вход по подпис�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/fido-history](https://wiki.zapret.moe/FIDO/fido-history)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/fido-history](https://wiki2.zapret.moe/FIDO/fido-history)
 
 # 🧬 Что такое FIDO: альянс, стандарты и их история
 

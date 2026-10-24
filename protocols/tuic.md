@@ -15,7 +15,7 @@ description: "Прокси-протокол TUIC поверх QUIC: 0-RTT пер
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/tuic](https://wiki.zapret.moe/protocols/tuic)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/tuic](https://wiki2.zapret.moe/protocols/tuic)
 
 # 🚄 TUIC: QUIC-прокси с нулевой задержкой на переподключении
 

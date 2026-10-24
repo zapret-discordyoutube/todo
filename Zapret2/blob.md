@@ -9,7 +9,7 @@ description: "Блобы в Zapret2/nfqws2: стандартные fake_default_
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/blob](https://wiki.zapret.moe/Zapret2/blob)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/blob](https://wiki2.zapret.moe/Zapret2/blob)
 
 # Блобы (Blobs) в [[Zapret2]]
 

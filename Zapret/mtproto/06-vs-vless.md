@@ -3,7 +3,7 @@ description: "Сравнение MTProto Proxy (FakeTLS) и VLESS+Reality: об�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/06-vs-vless](https://wiki.zapret.moe/Zapret/mtproto/06-vs-vless)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/06-vs-vless](https://wiki2.zapret.moe/Zapret/mtproto/06-vs-vless)
 
 # MTProxy vs VLESS — когда что использовать
 

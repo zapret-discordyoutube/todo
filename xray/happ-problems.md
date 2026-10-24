@@ -20,7 +20,7 @@ image: xray/attachments/happ-problems-header.jpg
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/happ-problems](https://wiki.zapret.moe/xray/happ-problems)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/happ-problems](https://wiki2.zapret.moe/xray/happ-problems)
 
 # 🔍 Чем плох Happ: что подтвердилось в претензиях к VPN-клиенту
 

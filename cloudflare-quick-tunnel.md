@@ -24,7 +24,7 @@ link: https://try.cloudflare.com/
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/cloudflare-quick-tunnel](https://wiki.zapret.moe/cloudflare-quick-tunnel)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/cloudflare-quick-tunnel](https://wiki2.zapret.moe/cloudflare-quick-tunnel)
 
 # 🚇 Quick Tunnel от Cloudflare: публичная ссылка на localhost одной командой (trycloudflare.com)
 

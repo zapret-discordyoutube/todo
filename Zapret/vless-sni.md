@@ -8,7 +8,7 @@ description: "Полный список SNI для VLESS в Zapret premium: micr
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/vless-sni](https://wiki.zapret.moe/Zapret/vless-sni)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/vless-sni](https://wiki2.zapret.moe/Zapret/vless-sni)
 
 ### Полный список `SNI` для vless [[Zapret/premium|premium]] представлен ниже:
 - `www.microsoft.com`

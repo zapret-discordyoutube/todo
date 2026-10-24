@@ -23,7 +23,7 @@ image: DPI/attachments/nsdi-only-ru-header.jpg
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/nsdi-only-ru-zones-scenario-october-2026](https://wiki.zapret.moe/DPI/nsdi-only-ru-zones-scenario-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/nsdi-only-ru-zones-scenario-october-2026](https://wiki2.zapret.moe/DPI/nsdi-only-ru-zones-scenario-october-2026)
 
 # 🧯 Что будет, если НСДИ оставит только .ru: проверка на 27 сайтах и что делать с DNS уже сейчас
 

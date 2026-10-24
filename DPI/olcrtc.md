@@ -20,7 +20,7 @@ description: "OlcRTC прячет трафик внутри WebRTC-звонка 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/olcrtc](https://wiki.zapret.moe/DPI/olcrtc)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/olcrtc](https://wiki2.zapret.moe/DPI/olcrtc)
 
 # 📞 OlcRTC — туннель через WebRTC-звонки для обхода белых списков
 

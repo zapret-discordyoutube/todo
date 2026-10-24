@@ -26,7 +26,7 @@ link: https://habr.com/ru/articles/1075272/
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026](https://wiki.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026](https://wiki2.zapret.moe/DPI/tspu-dns-nsdi-dnat-august-2026)
 
 # 🎣 Блокировка (перехват) DNS Google (8.8.8.8) и Cloudflare (1.1.1.1) через ТСПУ в России
 

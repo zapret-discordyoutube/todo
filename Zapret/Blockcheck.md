@@ -7,7 +7,7 @@ description: "Blockcheck — автоперебор всех стратегий 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Blockcheck](https://wiki.zapret.moe/Zapret/Blockcheck)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Blockcheck](https://wiki2.zapret.moe/Zapret/Blockcheck)
 
 [[home|На главную]]
 ## Blocheck - автоподбор стратегий Запрета

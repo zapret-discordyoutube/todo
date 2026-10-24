@@ -19,7 +19,7 @@ description: "Как найти сертификат Russian Trusted Root CA (Н
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/check-remove](https://wiki.zapret.moe/nuc/check-remove)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/check-remove](https://wiki2.zapret.moe/nuc/check-remove)
 
 # 🔎 Как проверить, установлен ли корень НУЦ, и как его удалить
 

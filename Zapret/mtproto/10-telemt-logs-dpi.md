@@ -3,7 +3,7 @@ description: "Чтение логов telemt 3.4.x: ошибка expected_64_got
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi](https://wiki.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi](https://wiki2.zapret.moe/Zapret/mtproto/10-telemt-logs-dpi)
 
 # telemt 3.4.x: чтение логов, TLS-фингерпринты и детект блокировок ТСПУ
 

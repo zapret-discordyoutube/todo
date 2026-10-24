@@ -14,7 +14,7 @@ description: "Как пустить Discord на Windows через прокси
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/discord](https://wiki.zapret.moe/premium/discord)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/discord](https://wiki2.zapret.moe/premium/discord)
 
 # 🎧 Discord через Zapret VPN без режима VPN (TUN)
 

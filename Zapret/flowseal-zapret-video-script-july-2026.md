@@ -3,7 +3,7 @@ description: "Сценарий видео о пропаже аккаунта Flo
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026](https://wiki.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026](https://wiki2.zapret.moe/Zapret/flowseal-zapret-video-script-july-2026)
 
 # Сценарий видео: Flowseal снесли с GitHub
 

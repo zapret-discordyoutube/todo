@@ -14,7 +14,7 @@ description: "Traffic Stats API в Hysteria 2: включение через tra
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/traffic-stats-api](https://wiki.zapret.moe/Hysteria/traffic-stats-api)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/traffic-stats-api](https://wiki2.zapret.moe/Hysteria/traffic-stats-api)
 
 # 🦎 Hysteria 2 — Traffic Stats API
 

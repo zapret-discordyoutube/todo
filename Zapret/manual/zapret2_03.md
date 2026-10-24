@@ -13,7 +13,7 @@ description: "Как Zapret2 перехватывает пакеты через 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_03](https://wiki.zapret.moe/Zapret/manual/zapret2_03)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_03](https://wiki2.zapret.moe/Zapret/manual/zapret2_03)
 
 # Zapret2 для новичков — 03: перехват пакетов и вердикты (NFQUEUE/WinDivert)
 

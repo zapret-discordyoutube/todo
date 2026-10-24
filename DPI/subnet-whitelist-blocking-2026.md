@@ -20,7 +20,7 @@ description: "Почему ТСПУ блокируют подсети Cloudflare
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/subnet-whitelist-blocking-2026](https://wiki.zapret.moe/DPI/subnet-whitelist-blocking-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/subnet-whitelist-blocking-2026](https://wiki2.zapret.moe/DPI/subnet-whitelist-blocking-2026)
 
 # 🕸️ Блок подсетей Cloudflare и Amazon по белому списку: почему Discord и Twitch — сопутствующие жертвы
 

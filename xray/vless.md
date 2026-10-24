@@ -16,7 +16,7 @@ description: "Устройство протокола VLESS: формат заг
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/vless](https://wiki.zapret.moe/xray/vless)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/vless](https://wiki2.zapret.moe/xray/vless)
 
 # 🔷 Протокол VLESS: устройство и возможности
 

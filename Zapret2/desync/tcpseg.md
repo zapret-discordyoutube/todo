@@ -16,7 +16,7 @@ description: "Справочник по функции tcpseg в Zapret2/nfqws2:
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/tcpseg](https://wiki.zapret.moe/Zapret2/desync/tcpseg)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/tcpseg](https://wiki2.zapret.moe/Zapret2/desync/tcpseg)
 
 # `tcpseg` -- отправка TCP-сегмента из диапазона (zapret2 / nfqws2)
 

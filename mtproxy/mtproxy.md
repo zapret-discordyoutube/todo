@@ -14,7 +14,7 @@ description: "Раздел о прокси для Telegram: MTProxy и FakeTLS, 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/mtproxy](https://wiki.zapret.moe/mtproxy/mtproxy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/mtproxy](https://wiki2.zapret.moe/mtproxy/mtproxy)
 
 # ✈️ MTProxy и Telegram-транспорты — раздел
 

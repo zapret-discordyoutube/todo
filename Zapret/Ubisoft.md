@@ -3,7 +3,7 @@ description: "Не работает Ubisoft Connect с Zapret: подборка 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Ubisoft](https://wiki.zapret.moe/Zapret/Ubisoft)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Ubisoft](https://wiki2.zapret.moe/Zapret/Ubisoft)
 
 
 ```embed

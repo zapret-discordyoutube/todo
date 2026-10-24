@@ -13,7 +13,7 @@ description: "Устройство форка sing-box-extended изнутри: 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/architecture](https://wiki.zapret.moe/sing-box/architecture)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/architecture](https://wiki2.zapret.moe/sing-box/architecture)
 
 # 🏗️ Архитектура sing-box-extended: как форк устроен изнутри
 

@@ -14,7 +14,7 @@ description: "Обзор раздела о root на Android: Magisk и KernelSU
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/root](https://wiki.zapret.moe/root/root)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/root](https://wiki2.zapret.moe/root/root)
 
 # 🔓 Root на Android — раздел
 

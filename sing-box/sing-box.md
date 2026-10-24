@@ -12,7 +12,7 @@ description: "Раздел о прокси-платформе sing-box и фор
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/sing-box](https://wiki.zapret.moe/sing-box/sing-box)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/sing-box](https://wiki2.zapret.moe/sing-box/sing-box)
 
 # 📦 sing-box и sing-box-extended — раздел
 

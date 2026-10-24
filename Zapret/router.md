@@ -8,7 +8,7 @@ description: "Zapret на роутере: пакеты OpenWRT от remittor, о
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/router](https://wiki.zapret.moe/Zapret/router)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/router](https://wiki2.zapret.moe/Zapret/router)
 
 # Zapret (Zapret2) для роутеров для прошивок OpenWRT и Keenetic
 *запрет для обхода блокировок discord и youtube, дискорда и ютуба, запретов нет, обход блокировки дискорд и ютуб*

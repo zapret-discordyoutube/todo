@@ -16,7 +16,7 @@ description: "Bypass Ultimate / discord-cdn-fix — сеть фейковых Gi
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026](https://wiki.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026](https://wiki2.zapret.moe/virus/discord-cdn-fix-fake-repos-june-2026)
 
 # 🪪 Bypass Ultimate / discord-cdn-fix — сеть клонов-репозиториев с малварью
 

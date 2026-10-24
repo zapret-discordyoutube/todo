@@ -16,7 +16,7 @@ description: "Как работает REALITY в Xray: маскировка пр
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/xray/reality](https://wiki.zapret.moe/xray/reality)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/xray/reality](https://wiki2.zapret.moe/xray/reality)
 
 # 🎭 REALITY: как прокси прикрывается настоящим чужим сайтом
 

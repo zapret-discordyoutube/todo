@@ -22,7 +22,7 @@ description: "Лето 2026: снятие «Яблока» с выборов ч�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/yabloko-boycotts-protest-2026](https://wiki.zapret.moe/yabloko-boycotts-protest-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/yabloko-boycotts-protest-2026](https://wiki2.zapret.moe/yabloko-boycotts-protest-2026)
 
 # 🍏 Снятие «Яблока» с выборов, бойкоты MAX и «Колобка»: лето 2026 как начало новой протестной волны
 

@@ -15,7 +15,7 @@ description: "NaiveProxy — прокси на сетевом стеке Chromiu
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/naiveproxy](https://wiki.zapret.moe/protocols/naiveproxy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/naiveproxy](https://wiki2.zapret.moe/protocols/naiveproxy)
 
 # 🥷 NaiveProxy: прокси, который копирует настоящий Chrome
 

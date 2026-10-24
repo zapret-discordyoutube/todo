@@ -3,7 +3,7 @@ description: "Comss.one DNS — бесплатный DNS-сервис: ссыл�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/Comss-DNS](https://wiki.zapret.moe/Zapret/ToDo/Comss-DNS)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ToDo/Comss-DNS](https://wiki2.zapret.moe/Zapret/ToDo/Comss-DNS)
 
 
 ```embed

@@ -3,7 +3,7 @@ description: "Подборка готовых .bat-стратегий winws.exe 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Zapret-GUI](https://wiki.zapret.moe/Zapret/Zapret-GUI)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Zapret-GUI](https://wiki2.zapret.moe/Zapret/Zapret-GUI)
 
 
 --dpi-desync-fake-tls-mod=sni=www.google.com

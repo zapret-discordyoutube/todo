@@ -19,7 +19,7 @@ description: "tsrman/tg — форк Telegram для Android с Firefox-подо
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/tsrman-tg-android-faketls](https://wiki.zapret.moe/mtproxy/tsrman-tg-android-faketls)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/tsrman-tg-android-faketls](https://wiki2.zapret.moe/mtproxy/tsrman-tg-android-faketls)
 
 # 📱 tsrman/tg — форк Telegram для Android со сменой JA4 на клиенте
 

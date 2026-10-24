@@ -3,7 +3,7 @@ description: "Режимы фильтрации WinDivert в Zapret 2 на Windo
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/windivert](https://wiki.zapret.moe/Zapret2/windivert)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/windivert](https://wiki2.zapret.moe/Zapret2/windivert)
 
 # Документация по режимам фильтрации (WinDivert)
 

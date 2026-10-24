@@ -16,7 +16,7 @@ description: "Установка root ReSukiSU на Android: где взять �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/ReSukiSU-install](https://wiki.zapret.moe/root/ReSukiSU-install)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/ReSukiSU-install](https://wiki2.zapret.moe/root/ReSukiSU-install)
 
 # 🛠️ Установка ReSukiSU — LKM, AnyKernel3 и ручной патч boot.img
 

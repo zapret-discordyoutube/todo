@@ -24,7 +24,7 @@ link: https://ntc.party/t/23690
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tunnel-detection-fix-split-ip](https://wiki.zapret.moe/tunnel-detection-fix-split-ip)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tunnel-detection-fix-split-ip](https://wiki2.zapret.moe/tunnel-detection-fix-split-ip)
 
 # 🧩 Разделение входного и выходного IP на VPS: как не дать приложениям «слить» адрес VPN-сервера (sing-box, 2026)
 

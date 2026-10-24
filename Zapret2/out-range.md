@@ -7,7 +7,7 @@ description: "Формат --out-range и --in-range в zapret2: префикс�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/out-range](https://wiki.zapret.moe/Zapret2/out-range)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/out-range](https://wiki2.zapret.moe/Zapret2/out-range)
 
 ## Формат `--out-range` / `--in-range`:
 

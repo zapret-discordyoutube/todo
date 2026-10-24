@@ -18,7 +18,7 @@ description: "Справочник по fakeddisorder в zapret2/nfqws2: раз�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/fakeddisorder](https://wiki.zapret.moe/Zapret2/desync/fakeddisorder)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/fakeddisorder](https://wiki2.zapret.moe/Zapret2/desync/fakeddisorder)
 
 # `fakeddisorder` — TCP-сегментация с фейками в обратном порядке (zapret2 / nfqws2)
 

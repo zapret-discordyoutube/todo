@@ -14,7 +14,7 @@ description: "Разбор протокола VMess: как устроен, по
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/vmess](https://wiki.zapret.moe/protocols/vmess)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/vmess](https://wiki2.zapret.moe/protocols/vmess)
 
 # 📮 VMess: протокол V2Ray, который проиграл собственному наследнику
 

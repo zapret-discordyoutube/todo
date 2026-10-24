@@ -8,7 +8,7 @@ description: "Обход блокировок YouTube и Discord на Android: M
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/android](https://wiki.zapret.moe/Zapret/android)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/android](https://wiki2.zapret.moe/Zapret/android)
 
 ![[Pasted image 20260131162140.png|900]]
 # 🤖 Дурилки трафика (DPI) для Android

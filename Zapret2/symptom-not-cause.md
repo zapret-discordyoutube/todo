@@ -18,7 +18,7 @@ description: "Почему «Запрет не работает» — симпт
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/symptom-not-cause](https://wiki.zapret.moe/Zapret2/symptom-not-cause)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/symptom-not-cause](https://wiki2.zapret.moe/Zapret2/symptom-not-cause)
 
 # 🩺 Почему «Запрет не работает» — это симптом, а не причина
 

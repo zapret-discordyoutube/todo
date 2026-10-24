@@ -6,7 +6,7 @@ description: "Bat-файл DiscordFix 5.1.7 для Zapret под Билайн, �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/DiscordFix_5.1.7](https://wiki.zapret.moe/Zapret/DiscordFix_5.1.7)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/DiscordFix_5.1.7](https://wiki2.zapret.moe/Zapret/DiscordFix_5.1.7)
 
 DiscordFix (для Билайн, Ростелеком, Инфолинк).bat
 ```bash

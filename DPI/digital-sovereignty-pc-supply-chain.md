@@ -24,7 +24,7 @@ link: https://pubs.usgs.gov/periodicals/mcs2026/
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/digital-sovereignty-pc-supply-chain](https://wiki.zapret.moe/DPI/digital-sovereignty-pc-supply-chain)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/digital-sovereignty-pc-supply-chain](https://wiki2.zapret.moe/DPI/digital-sovereignty-pc-supply-chain)
 
 # 🧩 Цифровой суверенитет невозможен: путь простого компьютера от лития до готовой детали
 

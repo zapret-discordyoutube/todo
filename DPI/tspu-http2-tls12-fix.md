@@ -19,7 +19,7 @@ description: "Как вернуть сайт из-под ложной блоки
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-http2-tls12-fix](https://wiki.zapret.moe/DPI/tspu-http2-tls12-fix)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-http2-tls12-fix](https://wiki2.zapret.moe/DPI/tspu-http2-tls12-fix)
 
 # 🛠️ Как починить сайт под ложной блокировкой ТСПУ: HTTP/2 Only + TLS 1.2
 

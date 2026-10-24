@@ -15,7 +15,7 @@ description: "Правила маршрутизации в Clash/mihomo: пор�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/04-rules](https://wiki.zapret.moe/Clash/04-rules)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/04-rules](https://wiki2.zapret.moe/Clash/04-rules)
 
 # 🧭 Правила маршрутизации: рецепты и отладка
 

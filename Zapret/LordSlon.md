@@ -6,7 +6,7 @@ description: "PR_CONNECT_RESET_ERROR на youtube.com и отвал сервис
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/LordSlon](https://wiki.zapret.moe/Zapret/LordSlon)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/LordSlon](https://wiki2.zapret.moe/Zapret/LordSlon)
 
 An error occurred during a connection to www.youtube.com. PR_CONNECT_RESET_ERROR
 В zen эта ошибка, так же похоже отвалились сервисы google. С телефона (приложения youtube) работает. Edge открывает youtube, но в аккаунт войти не могу (видимо блок авторизации google)

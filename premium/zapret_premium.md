@@ -15,7 +15,7 @@ description: "Как привязать Zapret Premium к программе Zap
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/zapret_premium](https://wiki.zapret.moe/premium/zapret_premium)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/zapret_premium](https://wiki2.zapret.moe/premium/zapret_premium)
 
 # 🔑 Как привязать Zapret Premium к программе
 

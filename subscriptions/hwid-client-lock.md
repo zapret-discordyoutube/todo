@@ -16,7 +16,7 @@ description: "Как продавцы VPN привязывают подписк�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/subscriptions/hwid-client-lock](https://wiki.zapret.moe/subscriptions/hwid-client-lock)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/subscriptions/hwid-client-lock](https://wiki2.zapret.moe/subscriptions/hwid-client-lock)
 
 # 🔒 HWID-привязка и запрет «чужих» клиентов: как продавцы ограничивают выбор
 

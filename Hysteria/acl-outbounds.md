@@ -16,7 +16,7 @@ description: "Настройка ACL в Hysteria 2: блокировка адр�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/acl-outbounds](https://wiki.zapret.moe/Hysteria/acl-outbounds)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/acl-outbounds](https://wiki2.zapret.moe/Hysteria/acl-outbounds)
 
 # 🦎 Hysteria 2 — ACL и маршрутизация трафика
 

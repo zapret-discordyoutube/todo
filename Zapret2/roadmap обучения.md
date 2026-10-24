@@ -14,7 +14,7 @@ description: "Учебный roadmap по Zapret2 (nfqws2/winws2): от осно
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/roadmap-обучения](https://wiki.zapret.moe/Zapret2/roadmap-%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/roadmap-обучения](https://wiki2.zapret.moe/Zapret2/roadmap-%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)
 
 # Zapret2: учебный roadmap “как это работает по коду”
 

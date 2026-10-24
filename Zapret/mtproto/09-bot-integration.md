@@ -3,7 +3,7 @@ description: "Миграция Telegram-бота с SSH-управления MTP
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/09-bot-integration](https://wiki.zapret.moe/Zapret/mtproto/09-bot-integration)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/09-bot-integration](https://wiki2.zapret.moe/Zapret/mtproto/09-bot-integration)
 
 # Интеграция MTProxy с Telegram-ботом
 

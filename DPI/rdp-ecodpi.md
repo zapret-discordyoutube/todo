@@ -28,7 +28,7 @@ description: "Кто делает ТСПУ: РДП.РУ и платформа Ec
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/rdp-ecodpi](https://wiki.zapret.moe/DPI/rdp-ecodpi)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/rdp-ecodpi](https://wiki2.zapret.moe/DPI/rdp-ecodpi)
 
 # 🏭 EcoDPI и компания РДП.РУ — «железо» российских ТСПУ
 

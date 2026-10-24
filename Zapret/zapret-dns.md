@@ -21,7 +21,7 @@ link: https://dns.zapret.moe/
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/zapret-dns](https://wiki.zapret.moe/Zapret/zapret-dns)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/zapret-dns](https://wiki2.zapret.moe/Zapret/zapret-dns)
 
 # 🛰️ Zapret DNS (dns.zapret.moe) — свой DNS-сервер проекта: ChatGPT, Gemini, Claude и Spotify из России без VPN
 

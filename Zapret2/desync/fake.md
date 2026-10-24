@@ -16,7 +16,7 @@ description: "Справочник по fake в zapret2/nfqws2: фейковый
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/fake](https://wiki.zapret.moe/Zapret2/desync/fake)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/fake](https://wiki2.zapret.moe/Zapret2/desync/fake)
 
 # `fake` — прямой фейк (zapret2 / nfqws2)
 

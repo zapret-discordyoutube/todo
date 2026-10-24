@@ -20,7 +20,7 @@ description: "Почему автоподбор Zapret говорит «рабо
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/verify-strategy](https://wiki.zapret.moe/Zapret2/verify-strategy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/verify-strategy](https://wiki2.zapret.moe/Zapret2/verify-strategy)
 
 # 🧪 Как проверить, заработала ли стратегия (и почему проверка часто обманывает)
 

@@ -3,7 +3,7 @@ description: "Готовый bat-конфиг Dronator 4.2 для zapret-discord
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/ToDo/Dronator-4.2](https://wiki.zapret.moe/Zapret/ToDo/Dronator-4.2)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/ToDo/Dronator-4.2](https://wiki2.zapret.moe/Zapret/ToDo/Dronator-4.2)
 
 
 ```bat

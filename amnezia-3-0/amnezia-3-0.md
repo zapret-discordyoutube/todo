@@ -15,7 +15,7 @@ description: "Раздел про AmneziaWG 3.0 — WireGuard с шифрова�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/amnezia-3-0/amnezia-3-0](https://wiki.zapret.moe/amnezia-3-0/amnezia-3-0)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/amnezia-3-0/amnezia-3-0](https://wiki2.zapret.moe/amnezia-3-0/amnezia-3-0)
 
 # 🛡️ AmneziaWG 3.0 — раздел
 

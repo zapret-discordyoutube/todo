@@ -18,7 +18,7 @@ description: "Флаг --lua-desync в Zapret 2: как вызываются Lua
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync](https://wiki.zapret.moe/Zapret2/desync)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync](https://wiki2.zapret.moe/Zapret2/desync)
 
 # 🧨 Десинхронизация: флаг `--lua-desync`
 

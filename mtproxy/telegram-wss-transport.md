@@ -25,7 +25,7 @@ description: "Как ZaStoGram и tg-ws-proxy везут MTProto через WebS
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/mtproxy/telegram-wss-transport](https://wiki.zapret.moe/mtproxy/telegram-wss-transport)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/mtproxy/telegram-wss-transport](https://wiki2.zapret.moe/mtproxy/telegram-wss-transport)
 
 # 🕸️ WSS для Telegram: MTProto внутри WebSocket
 

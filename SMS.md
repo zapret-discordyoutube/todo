@@ -8,7 +8,7 @@ description: "Почему SMS угрожают приватности — оп�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/SMS](https://wiki.zapret.moe/SMS)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/SMS](https://wiki2.zapret.moe/SMS)
 
 ## SMS
 ```embed

@@ -19,7 +19,7 @@ description: "Фильтр --payload в Zapret 2: чем тип payload отли
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/payload](https://wiki.zapret.moe/Zapret2/payload)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/payload](https://wiki2.zapret.moe/Zapret2/payload)
 
 # 🧩 Тип payload и распознавание протоколов
 

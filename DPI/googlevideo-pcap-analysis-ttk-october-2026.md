@@ -22,7 +22,7 @@ link: https://github.com/Flowseal/zapret-discord-youtube/issues/18162
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/googlevideo-pcap-analysis-ttk-october-2026](https://wiki.zapret.moe/DPI/googlevideo-pcap-analysis-ttk-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/googlevideo-pcap-analysis-ttk-october-2026](https://wiki2.zapret.moe/DPI/googlevideo-pcap-analysis-ttk-october-2026)
 
 # 🦎 Как читать pcap видеосоединения с узлом googlevideo: попадание в кэш, потери и поддельные пакеты Zapret
 

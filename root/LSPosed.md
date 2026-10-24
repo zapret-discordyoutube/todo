@@ -18,7 +18,7 @@ description: "Что такое LSPosed и Xposed: перехват методо
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/root/LSPosed](https://wiki.zapret.moe/root/LSPosed)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/root/LSPosed](https://wiki2.zapret.moe/root/LSPosed)
 
 # 🧩 LSPosed и Xposed — модификация приложений в рантайме
 

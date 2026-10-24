@@ -8,7 +8,7 @@ description: "Проверка блокировки сайта через curl.e
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/curl](https://wiki.zapret.moe/Zapret/curl)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/curl](https://wiki2.zapret.moe/Zapret/curl)
 
 Пример рабочий
 ```powershell

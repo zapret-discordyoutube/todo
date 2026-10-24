@@ -17,7 +17,7 @@ description: "Справочник multidisorder_legacy в Zapret2: попаке
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/multidisorder_legacy](https://wiki.zapret.moe/Zapret2/desync/multidisorder_legacy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/multidisorder_legacy](https://wiki2.zapret.moe/Zapret2/desync/multidisorder_legacy)
 
 # `multidisorder_legacy` --- попакетный обратный порядок TCP-сегментов (zapret2 / nfqws2)
 

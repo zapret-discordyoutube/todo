@@ -13,7 +13,7 @@ description: "Словарь терминов Clash/mihomo для новичко
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/09-glossary](https://wiki.zapret.moe/Clash/09-glossary)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/09-glossary](https://wiki2.zapret.moe/Clash/09-glossary)
 
 # 📖 Словарь терминов: что означают слова в интерфейсе и конфиге
 

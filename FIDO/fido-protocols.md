@@ -19,7 +19,7 @@ description: "Как работают U2F, FIDO2, WebAuthn и CTAP: путь з�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/fido-protocols](https://wiki.zapret.moe/FIDO/fido-protocols)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/fido-protocols](https://wiki2.zapret.moe/FIDO/fido-protocols)
 
 # ⚙️ Протоколы FIDO: U2F, FIDO2, WebAuthn, CTAP и passkeys
 

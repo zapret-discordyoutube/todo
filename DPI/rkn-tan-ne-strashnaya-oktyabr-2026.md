@@ -20,7 +20,7 @@ link: https://www.youtube.com/watch?v=YZAVL9WgrlE
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/rkn-tan-ne-strashnaya-oktyabr-2026](https://wiki.zapret.moe/DPI/rkn-tan-ne-strashnaya-oktyabr-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/rkn-tan-ne-strashnaya-oktyabr-2026](https://wiki2.zapret.moe/DPI/rkn-tan-ne-strashnaya-oktyabr-2026)
 
 # 🐝 РКН-тян не такая страшная, как кажется: что на самом деле блокируют в 2026 году
 

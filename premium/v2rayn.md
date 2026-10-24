@@ -14,7 +14,7 @@ description: "v2rayN для Zapret VPN: установка на Windows, реж�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/v2rayn](https://wiki.zapret.moe/premium/v2rayn)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/v2rayn](https://wiki2.zapret.moe/premium/v2rayn)
 
 # 🛠 v2rayN и режим прокси для Zapret VPN
 

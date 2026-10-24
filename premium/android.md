@@ -19,7 +19,7 @@ description: "Пошагово со скриншотами: что скачат�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/premium/android](https://wiki.zapret.moe/premium/android)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/android](https://wiki2.zapret.moe/premium/android)
 
 # 🤖 VPN на Android: ZapretKVN от установки до работающего YouTube и Telegram
 

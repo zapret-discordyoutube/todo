@@ -16,7 +16,7 @@ description: "Техника oob в zapret2: вставка TCP Out-of-Band ба
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/oob](https://wiki.zapret.moe/Zapret2/desync/oob)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/oob](https://wiki2.zapret.moe/Zapret2/desync/oob)
 
 # `oob` -- TCP Out-of-Band десинхронизация (zapret2 / nfqws2)
 

@@ -13,7 +13,7 @@ description: "Zapret VPN guide in English: the bot @zapretvpns_bot speaks Englis
 ---
 
 > [!mirror] Backup mirror
-> The main version of this page is on the wiki: [wiki.zapret.moe/premium/english](https://wiki.zapret.moe/premium/english)
+> The main version of this page is on the wiki: [wiki2.zapret.moe/premium/english](https://wiki2.zapret.moe/premium/english)
 
 # 🇬🇧 Zapret VPN in English
 

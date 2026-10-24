@@ -15,7 +15,7 @@ description: "Как работает алгоритм Brutal в Hysteria 2: ч�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/bandwidth-brutal](https://wiki.zapret.moe/Hysteria/bandwidth-brutal)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/bandwidth-brutal](https://wiki2.zapret.moe/Hysteria/bandwidth-brutal)
 
 # 🦎 Hysteria 2 — скорость и алгоритм Brutal
 

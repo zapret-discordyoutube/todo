@@ -15,7 +15,7 @@ description: "Как работает ShadowTLS и Restls: рукопожати�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/protocols/shadowtls](https://wiki.zapret.moe/protocols/shadowtls)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/protocols/shadowtls](https://wiki2.zapret.moe/protocols/shadowtls)
 
 # 🎭 ShadowTLS и Restls: маскировка чужим TLS-рукопожатием
 

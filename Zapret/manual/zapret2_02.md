@@ -12,7 +12,7 @@ description: "TCP для пользователей zapret2 простым яз�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_02](https://wiki.zapret.moe/Zapret/manual/zapret2_02)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_02](https://wiki2.zapret.moe/Zapret/manual/zapret2_02)
 
 # Zapret2 для новичков — 02: TCP (seq/ack, окно, MSS) понятным языком
 

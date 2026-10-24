@@ -3,7 +3,7 @@ description: "Какие данные Google собирает на Android: ме
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Privacy-Google](https://wiki.zapret.moe/Privacy-Google)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Privacy-Google](https://wiki2.zapret.moe/Privacy-Google)
 
 На обычном телефоне Android Google [соберет](https://www.reddit.com/r/CalyxOS/comments/l4jysu/what_data_is_google_services_collecting_without_a/) 
 1) все установленные приложения.

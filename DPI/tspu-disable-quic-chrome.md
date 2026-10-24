@@ -18,7 +18,7 @@ description: "Сайт виснет по таймауту из-за ТСПУ: к
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-disable-quic-chrome](https://wiki.zapret.moe/DPI/tspu-disable-quic-chrome)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-disable-quic-chrome](https://wiki2.zapret.moe/DPI/tspu-disable-quic-chrome)
 
 # 🚫 Отключение QUIC (HTTP/3) в браузере как обход таймаутов ТСПУ
 

@@ -20,7 +20,7 @@ description: "WEB-прокси Telegram (tproxy) — четвёртый тип �
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy](https://wiki.zapret.moe/tproxy/tproxy)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tproxy/tproxy](https://wiki2.zapret.moe/tproxy/tproxy)
 
 # 🌐 WEB-прокси Telegram: трафик, который едет внутри обычного сайта
 

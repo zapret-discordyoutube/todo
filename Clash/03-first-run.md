@@ -13,7 +13,7 @@ description: "Первый запуск Clash/mihomo: установка кли�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Clash/03-first-run](https://wiki.zapret.moe/Clash/03-first-run)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Clash/03-first-run](https://wiki2.zapret.moe/Clash/03-first-run)
 
 # 🚦 Первый запуск: от подписки до работающего интернета
 

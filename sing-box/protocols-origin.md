@@ -14,7 +14,7 @@ description: "Откуда в sing-box код VLESS, REALITY и Hysteria2: св�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/sing-box/protocols-origin](https://wiki.zapret.moe/sing-box/protocols-origin)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/sing-box/protocols-origin](https://wiki2.zapret.moe/sing-box/protocols-origin)
 
 # 🧬 Откуда в sing-box код протоколов: своя реализация или копия Xray
 

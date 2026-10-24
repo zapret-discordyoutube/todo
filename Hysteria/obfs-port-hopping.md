@@ -16,7 +16,7 @@ description: "Обфускация Salamander/Gecko и port hopping в Hysteria 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/obfs-port-hopping](https://wiki.zapret.moe/Hysteria/obfs-port-hopping)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/obfs-port-hopping](https://wiki2.zapret.moe/Hysteria/obfs-port-hopping)
 
 # 🦎 Hysteria 2 — обфускация и port hopping
 

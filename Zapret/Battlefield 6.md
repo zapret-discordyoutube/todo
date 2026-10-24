@@ -3,7 +3,7 @@ description: "Как починить мультиплеер Battlefield 6 пр�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Battlefield-6](https://wiki.zapret.moe/Zapret/Battlefield-6)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Battlefield-6](https://wiki2.zapret.moe/Zapret/Battlefield-6)
 
 
 ```embed

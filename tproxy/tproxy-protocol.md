@@ -19,7 +19,7 @@ description: "Разбор протокола WEB-прокси Telegram (tproxy)
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/tproxy/tproxy-protocol](https://wiki.zapret.moe/tproxy/tproxy-protocol)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/tproxy/tproxy-protocol](https://wiki2.zapret.moe/tproxy/tproxy-protocol)
 
 # 🔬 Как устроен WEB-прокси Telegram изнутри: пропуск, кадры и четыре режима доставки
 

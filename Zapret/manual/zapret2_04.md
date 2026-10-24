@@ -12,7 +12,7 @@ description: "Урок 04 учебника Zapret2: объект desync в Lua, 
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_04](https://wiki.zapret.moe/Zapret/manual/zapret2_04)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_04](https://wiki2.zapret.moe/Zapret/manual/zapret2_04)
 
 # Zapret2 для новичков — 04: dissect/reconstruct и что такое `desync`
 

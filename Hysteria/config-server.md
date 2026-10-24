@@ -15,7 +15,7 @@ description: "Рабочий config.yaml сервера Hysteria 2: сертиф
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Hysteria/config-server](https://wiki.zapret.moe/Hysteria/config-server)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Hysteria/config-server](https://wiki2.zapret.moe/Hysteria/config-server)
 
 # 🦎 Hysteria 2 — конфиг сервера
 

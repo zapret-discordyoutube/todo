@@ -17,7 +17,7 @@ description: "Техника fakedsplit в zapret2/nfqws2: разрез TCP payl
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret2/desync/fakedsplit](https://wiki.zapret.moe/Zapret2/desync/fakedsplit)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/desync/fakedsplit](https://wiki2.zapret.moe/Zapret2/desync/fakedsplit)
 
 # `fakedsplit` — TCP-сегментация с замешиванием фейков (zapret2 / nfqws2)
 

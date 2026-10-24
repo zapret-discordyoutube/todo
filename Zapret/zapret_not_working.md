@@ -9,7 +9,7 @@ description: "Что делать, если Zapret не работает: тип
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/zapret_not_working](https://wiki.zapret.moe/Zapret/zapret_not_working)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/zapret_not_working](https://wiki2.zapret.moe/Zapret/zapret_not_working)
 
 # ⛔ Что делать если [[Zapret2]] (Запрет2) не работает 
 ## Какая стратегия лучше всего? / У меня сломался Zapret после ваших обновлений

@@ -20,7 +20,7 @@ description: "Реформа лицензирования провайдеров
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/isp-licensing-reform-2026](https://wiki.zapret.moe/DPI/isp-licensing-reform-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/isp-licensing-reform-2026](https://wiki2.zapret.moe/DPI/isp-licensing-reform-2026)
 
 # 🏗️ Реформа лицензирования провайдеров (2026): рынок связи зачищают под контроль — и интернет от этого деградирует
 

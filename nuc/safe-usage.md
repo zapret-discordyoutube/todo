@@ -17,7 +17,7 @@ description: "Как открывать госсайты с сертификат
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/nuc/safe-usage](https://wiki.zapret.moe/nuc/safe-usage)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/nuc/safe-usage](https://wiki2.zapret.moe/nuc/safe-usage)
 
 # 🛡️ Как пользоваться сайтами с сертификатом Минцифры, не ставя корень НУЦ в систему
 

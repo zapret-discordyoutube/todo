@@ -17,7 +17,7 @@ description: "Как браузер общается с ключом безоп�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/ctap](https://wiki.zapret.moe/FIDO/ctap)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/ctap](https://wiki2.zapret.moe/FIDO/ctap)
 
 # 🔌 CTAP: как браузер разговаривает с аппаратным ключом
 

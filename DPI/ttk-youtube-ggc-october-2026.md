@@ -25,7 +25,7 @@ link: https://github.com/Flowseal/zapret-discord-youtube/issues/18162
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/ttk-youtube-ggc-october-2026](https://wiki.zapret.moe/DPI/ttk-youtube-ggc-october-2026)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/ttk-youtube-ggc-october-2026](https://wiki2.zapret.moe/DPI/ttk-youtube-ggc-october-2026)
 
 # 🦎 ТТК и YouTube: кэши Google (GGC) в сети Транстелекома отвечают, но видео встаёт (с 17 октября 2026)
 

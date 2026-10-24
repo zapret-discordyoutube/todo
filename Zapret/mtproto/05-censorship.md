@@ -3,7 +3,7 @@ description: "Как ТСПУ детектирует MTProto: сигнатуры
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/mtproto/05-censorship](https://wiki.zapret.moe/Zapret/mtproto/05-censorship)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/mtproto/05-censorship](https://wiki2.zapret.moe/Zapret/mtproto/05-censorship)
 
 # ТСПУ и обход цензуры в России
 

@@ -17,7 +17,7 @@ description: "Как работает WebAuthn: регистрация и вхо
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/FIDO/webauthn](https://wiki.zapret.moe/FIDO/webauthn)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/FIDO/webauthn](https://wiki2.zapret.moe/FIDO/webauthn)
 
 # 🌐 WebAuthn: браузерный API аутентификации FIDO2
 

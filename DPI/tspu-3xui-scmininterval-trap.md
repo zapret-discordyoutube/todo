@@ -19,7 +19,7 @@ description: "После обновления 3x-ui до 3.x.x отвалили�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/tspu-3xui-scmininterval-trap](https://wiki.zapret.moe/DPI/tspu-3xui-scmininterval-trap)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/tspu-3xui-scmininterval-trap](https://wiki2.zapret.moe/DPI/tspu-3xui-scmininterval-trap)
 
 # 🪤 Ловушка обновления 3x-ui: как `scMinPostsIntervalMs` триггерит ТСПУ
 

@@ -6,7 +6,7 @@ description: "Готовые cmd-конфиги winws (Zapret) для обход
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/Youtube-+-Discord](https://wiki.zapret.moe/Zapret/Youtube-%2B-Discord)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/Youtube-+-Discord](https://wiki2.zapret.moe/Zapret/Youtube-%2B-Discord)
 
 ```embed
 title: "🔴 Обход YouTube · Flowseal/zapret-discord-youtube · Discussion #251"

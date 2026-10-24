@@ -17,7 +17,7 @@ description: "Разбор концепта адаптивной мимикри�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/DPI/statistical-morphing-concept](https://wiki.zapret.moe/DPI/statistical-morphing-concept)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/DPI/statistical-morphing-concept](https://wiki2.zapret.moe/DPI/statistical-morphing-concept)
 
 # 🦎 Адаптивная мимикрия: статистический морфинг трафика (концепт)
 

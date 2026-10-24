@@ -15,7 +15,7 @@ description: "Сетевой стек L2–L7 простыми словами д
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki.zapret.moe/Zapret/manual/zapret2_01](https://wiki.zapret.moe/Zapret/manual/zapret2_01)
+> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/manual/zapret2_01](https://wiki2.zapret.moe/Zapret/manual/zapret2_01)
 
 # Zapret2 для новичков — 01: сетевой стек (L2–L7) простыми словами
 
