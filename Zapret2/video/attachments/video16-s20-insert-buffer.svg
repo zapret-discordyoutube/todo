@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v16-s20-insert-buffer" viewBox="0 0 960 470" width="960" height="470" role="img" aria-labelledby="v16-s20-insert-buffer-t v16-s20-insert-buffer-d">
+<title id="v16-s20-insert-buffer-t">Буфер первой вставки</title>
+<desc id="v16-s20-insert-buffer-d">Раскладка буфера первой вставки опыта t10: 156 байт, готовых ещё до отправки: 20 байт заголовка IP, 32 байта заголовка TCP и 104 байта данных, начало запроса (в журнале rawsend_dissect size=156; первые байты данных 16 03 01 00 F5). Вставка не приходит из очереди: окошко, то есть правило ядра, её не выбирало. Буфер целиком уходит в сырой сокет вызовом sendto(sock, data, len, ...) (nfq2/darkmagic.c:2032). Проверь себя: порядковый номер TCP лежит в заголовке TCP (в записи пакетов у первой вставки 1196648707), а заголовок уже внутри готового буфера, поэтому его выбрала программа, не ядро. У второй вставки номер 1196648811 = 1196648707 + 104: программа сдвигает номер на длину первой части (lua/zapret-lib.lua:1287).</desc>
+<style>.v16-s20-insert-buffer{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v16-s20-insert-buffer{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v16-s20-insert-buffer .bg{fill:var(--bg)}
+.v16-s20-insert-buffer text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v16-s20-insert-buffer .tk{font-weight:600;fill:var(--fg)}
+.v16-s20-insert-buffer .sm{font-size:14.5px}
+.v16-s20-insert-buffer .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v16-s20-insert-buffer .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v16-s20-insert-buffer .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v16-s20-insert-buffer .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v16-s20-insert-buffer .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v16-s20-insert-buffer .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v16-s20-insert-buffer .mu{fill:var(--mute)}.v16-s20-insert-buffer .fg{fill:var(--fg)}.v16-s20-insert-buffer .acc{fill:var(--acc)}.v16-s20-insert-buffer .rej{fill:var(--rej)}.v16-s20-insert-buffer .ok{fill:var(--ok)}.v16-s20-insert-buffer .amb{fill:var(--amb)}
+.v16-s20-insert-buffer .c{text-anchor:middle}.v16-s20-insert-buffer .r{text-anchor:end}.v16-s20-insert-buffer .ns{stroke:none}
+.v16-s20-insert-buffer .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v16-s20-insert-buffer .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v16-s20-insert-buffer .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v16-s20-insert-buffer .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v16-s20-insert-buffer .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v16-s20-insert-buffer .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v16-s20-insert-buffer .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v16-s20-insert-buffer .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v16-s20-insert-buffer .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v16-s20-insert-buffer .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v16-s20-insert-buffer .fa{fill:var(--tint);stroke:none}.v16-s20-insert-buffer .fr{fill:var(--rejt);stroke:none}.v16-s20-insert-buffer .fb{fill:var(--ambt);stroke:none}.v16-s20-insert-buffer .fo{fill:var(--okt);stroke:none}
+.v16-s20-insert-buffer .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v16-s20-insert-buffer .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v16-s20-insert-buffer .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v16-s20-insert-buffer .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v16-s20-insert-buffer .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v16-s20-insert-buffer .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v16-s20-insert-buffer .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v16-s20-insert-buffer .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v16-s20-insert-buffer .hf{fill:var(--fg2)}.v16-s20-insert-buffer .ha{fill:var(--acc)}.v16-s20-insert-buffer .hr{fill:var(--rej)}.v16-s20-insert-buffer .hm{fill:var(--mute)}.v16-s20-insert-buffer .hb{fill:var(--amb)}
+.v16-s20-insert-buffer .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v16-s20-insert-buffer .a{animation-duration:40s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v16-s20-insert-buffer .a{animation:none}.v16-s20-insert-buffer .tr{display:none}}
+@keyframes v16-s20-insert-buffer-k1{0.0%{opacity:0}3.75%{opacity:0}4.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e1{animation-name:v16-s20-insert-buffer-k1}@keyframes v16-s20-insert-buffer-k2{0.0%{opacity:0}8.75%{opacity:0}9.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e2{animation-name:v16-s20-insert-buffer-k2}@keyframes v16-s20-insert-buffer-k3{0.0%{opacity:0}13.75%{opacity:0}14.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e3{animation-name:v16-s20-insert-buffer-k3}@keyframes v16-s20-insert-buffer-k4{0.0%{opacity:0}16.25%{opacity:0}17.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e4{animation-name:v16-s20-insert-buffer-k4}@keyframes v16-s20-insert-buffer-k5{0.0%{opacity:0}20.0%{opacity:0}21.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e5{animation-name:v16-s20-insert-buffer-k5}@keyframes v16-s20-insert-buffer-k6{0.0%{opacity:0}23.75%{opacity:0}24.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e6{animation-name:v16-s20-insert-buffer-k6}@keyframes v16-s20-insert-buffer-k7{0.0%{opacity:0}30.0%{opacity:0}31.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e7{animation-name:v16-s20-insert-buffer-k7}@keyframes v16-s20-insert-buffer-k8{0.0%{opacity:0}31.25%{opacity:0}32.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e8{animation-name:v16-s20-insert-buffer-k8}@keyframes v16-s20-insert-buffer-k9{0.0%{opacity:0}45.0%{opacity:0}46.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e9{animation-name:v16-s20-insert-buffer-k9}@keyframes v16-s20-insert-buffer-k10{0.0%{opacity:0}55.0%{opacity:0}56.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e10{animation-name:v16-s20-insert-buffer-k10}@keyframes v16-s20-insert-buffer-k11{0.0%{opacity:0}67.5%{opacity:0}68.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e11{animation-name:v16-s20-insert-buffer-k11}@keyframes v16-s20-insert-buffer-k12{0.0%{opacity:0}77.5%{opacity:0}78.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v16-s20-insert-buffer .e12{animation-name:v16-s20-insert-buffer-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="470"/>
+<g><text class="cap" x="40" y="26">первая вставка опыта t10: готовый буфер в 156 байт</text></g>
+<g class="a e1"><rect class="bx" x="40" y="44" width="112.8" height="56" rx="4"/><text class="tk c ns" x="96.4" y="69">IP</text><text class="sm c ns" x="96.4" y="89">20 байт</text></g>
+<g class="a e2"><rect class="bxs" x="152.8" y="44" width="180.5" height="56" rx="4"/><text class="tk c ns" x="261.1" y="69">TCP</text><text class="sm c ns" x="261.1" y="89">32 байта</text></g>
+<g class="a e3"><rect class="bxb" x="333.3" y="44" width="586.7" height="56" rx="4"/><text class="tk c ns" x="626.7" y="69">данные</text><text class="sm c ns" x="626.7" y="89">104 байта: начало запроса</text></g>
+<g class="a e4"><path class="lm" d="M40 100L40 108"/><text class="ix" x="44" y="124">0</text><path class="lm" d="M152.8 100L152.8 108"/><text class="ix" x="156.8" y="124">20</text><path class="lm" d="M333.3 100L333.3 108"/><text class="ix" x="337.3" y="124">52</text><path class="lm" d="M920 100L920 108"/><text class="ix r" x="916" y="124">156</text><text class="ix mu" x="373.3" y="124">номера байтов буфера</text></g>
+<g class="a e5"><text class="sm" x="40" y="150">заголовок IP</text><text class="sm" x="214.8" y="150">заголовок TCP</text><text class="m" x="357.3" y="150">первые байты: 16 03 01 00 F5 ...</text></g>
+<g class="a e6"><text class="m" x="40" y="182">в журнале: rawsend_dissect repeats=1 size=156 ...</text><text class="ix r" x="908" y="182">nfq2/lua.c:3026</text></g>
+<g class="a e7"><rect class="bxb" x="175.4" y="44" width="22.6" height="56" rx="3"/><path class="lb" d="M186.7 100L186.7 214"/></g>
+<g class="a e8"><rect class="bxb" x="40" y="214" width="440" height="54" rx="6"/><text class="tk sm" x="54" y="238">порядковый номер TCP (seq)</text><text class="m" x="54" y="258">байты 4-7 заголовка TCP: 1196648707</text></g>
+<g class="a e9"><rect class="bx" x="40" y="292" width="880" height="50" rx="6"/><text class="mk" x="54" y="314">sendto(sock, data, len, 0, ...)</text><text class="ix" x="54" y="333">буфер data из 156 байт целиком уходит в сырой сокет · darkmagic.c:2032</text></g>
+<g class="a e10"><path class="lf" d="M484 241L530.0 241.0"/><polygon class="hf" points="540,241 530.0,246.0 530.0,236.0"/><rect class="bxo" x="544" y="214" width="376" height="54" rx="6"/><text class="tk" x="560" y="238">собрала программа, не ядро</text><text class="sm" x="560" y="258">заголовок уже внутри готового буфера</text></g>
+<g class="a e11"><text class="sm" x="40" y="372">у вставки 2 номер 1196648811 = 1196648707 + 104: сдвиг на длину первой части (zapret-lib.lua:1287)</text><text class="sm mu" x="40" y="392">числа из записи пакетов на интерфейсе клиента; вторая вставка устроена так же: IP 20, TCP 32, данные 146</text></g>
+<g class="a e12"><rect class="bxd" x="40" y="412" width="880" height="42" rx="8"/><text class="tk sm" x="54" y="438">вставка не приходит из очереди: окошко, то есть правило ядра, её не выбирало</text></g>
+</svg>
