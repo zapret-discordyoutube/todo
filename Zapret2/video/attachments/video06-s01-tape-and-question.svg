@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video06-s01-tape-and-question" viewBox="0 0 960 484" width="960" height="484" role="img" aria-labelledby="video06-s01-tape-and-question-t video06-s01-tape-and-question-d">
+<title id="video06-s01-tape-and-question-t">Лента, multisplit и вопрос</title>
+<desc id="video06-s01-tape-and-question-d">Приветствие в 250 байт с именем www.example.com на байтах с 97 по 111 и меткой midsld на байте 104: multisplit из прошлого выпуска отправляет сначала первые 104 байта, потом остальные 146, и игрушечный вахтёр, которого мы написали сами, не находит разорванное имя, а вопрос этого выпуска в том, что будет, если отправить сначала конец, 146 байт, и только потом начало, 104 байта.</desc>
+<style>.video06-s01-tape-and-question{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video06-s01-tape-and-question{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video06-s01-tape-and-question .bg{fill:var(--bg)}
+.video06-s01-tape-and-question text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video06-s01-tape-and-question .tk{font-weight:600;fill:var(--fg)}
+.video06-s01-tape-and-question .sm{font-size:14.5px}
+.video06-s01-tape-and-question .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video06-s01-tape-and-question .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video06-s01-tape-and-question .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video06-s01-tape-and-question .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video06-s01-tape-and-question .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video06-s01-tape-and-question .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video06-s01-tape-and-question .mu{fill:var(--mute)}.video06-s01-tape-and-question .fg{fill:var(--fg)}.video06-s01-tape-and-question .acc{fill:var(--acc)}.video06-s01-tape-and-question .rej{fill:var(--rej)}.video06-s01-tape-and-question .ok{fill:var(--ok)}.video06-s01-tape-and-question .amb{fill:var(--amb)}
+.video06-s01-tape-and-question .c{text-anchor:middle}.video06-s01-tape-and-question .r{text-anchor:end}.video06-s01-tape-and-question .ns{stroke:none}
+.video06-s01-tape-and-question .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video06-s01-tape-and-question .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video06-s01-tape-and-question .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video06-s01-tape-and-question .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video06-s01-tape-and-question .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video06-s01-tape-and-question .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video06-s01-tape-and-question .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.video06-s01-tape-and-question .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video06-s01-tape-and-question .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.video06-s01-tape-and-question .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.video06-s01-tape-and-question .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video06-s01-tape-and-question .fa{fill:var(--tint);stroke:none}.video06-s01-tape-and-question .fr{fill:var(--rejt);stroke:none}.video06-s01-tape-and-question .fb{fill:var(--ambt);stroke:none}.video06-s01-tape-and-question .fo{fill:var(--okt);stroke:none}
+.video06-s01-tape-and-question .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video06-s01-tape-and-question .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video06-s01-tape-and-question .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video06-s01-tape-and-question .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video06-s01-tape-and-question .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video06-s01-tape-and-question .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.video06-s01-tape-and-question .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video06-s01-tape-and-question .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video06-s01-tape-and-question .hf{fill:var(--fg2)}.video06-s01-tape-and-question .ha{fill:var(--acc)}.video06-s01-tape-and-question .hr{fill:var(--rej)}.video06-s01-tape-and-question .hm{fill:var(--mute)}.video06-s01-tape-and-question .hb{fill:var(--amb)}
+.video06-s01-tape-and-question .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.video06-s01-tape-and-question .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.video06-s01-tape-and-question .a{animation:none}.video06-s01-tape-and-question .tr{display:none}}
+.video06-s01-tape-and-question .big{font-size:20px;font-weight:600;fill:var(--fg)}.video06-s01-tape-and-question .mid{font-size:16px;font-weight:600;fill:var(--fg)}@keyframes video06-s01-tape-and-question-k1{0.0%{opacity:0}2.273%{opacity:0}3.295%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e1{animation-name:video06-s01-tape-and-question-k1}@keyframes video06-s01-tape-and-question-k2{0.0%{opacity:0}9.091%{opacity:0}10.114%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e2{animation-name:video06-s01-tape-and-question-k2}@keyframes video06-s01-tape-and-question-k3{0.0%{opacity:0}15.909%{opacity:0}16.932%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e3{animation-name:video06-s01-tape-and-question-k3}@keyframes video06-s01-tape-and-question-k4{0.0%{opacity:0}25.0%{opacity:0}26.023%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e4{animation-name:video06-s01-tape-and-question-k4}@keyframes video06-s01-tape-and-question-k5{0.0%{opacity:0}29.545%{opacity:0}30.568%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e5{animation-name:video06-s01-tape-and-question-k5}@keyframes video06-s01-tape-and-question-k6{0.0%{opacity:0}36.364%{opacity:0}37.386%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e6{animation-name:video06-s01-tape-and-question-k6}@keyframes video06-s01-tape-and-question-k7{0.0%{opacity:0}43.182%{opacity:0}44.205%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e7{animation-name:video06-s01-tape-and-question-k7}@keyframes video06-s01-tape-and-question-k8{0.0%{opacity:0}52.273%{opacity:0}53.295%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e8{animation-name:video06-s01-tape-and-question-k8}@keyframes video06-s01-tape-and-question-k9{0.0%{opacity:0}59.091%{opacity:0}60.114%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e9{animation-name:video06-s01-tape-and-question-k9}@keyframes video06-s01-tape-and-question-k10{0.0%{opacity:0}65.909%{opacity:0}66.932%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e10{animation-name:video06-s01-tape-and-question-k10}@keyframes video06-s01-tape-and-question-k11{0.0%{opacity:0}72.727%{opacity:0}73.75%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.video06-s01-tape-and-question .e11{animation-name:video06-s01-tape-and-question-k11}</style>
+<rect class="bg" x="0" y="0" width="960" height="484"/>
+<g><text class="cap" x="40" y="24">повтор: приветствие в 250 байт и метка midsld</text></g>
+<g class="a e1"><rect class="bx" x="40" y="66" width="880" height="34" rx="4"/><text class="ix mu" x="40" y="120">0</text><text class="ix mu r" x="920" y="120">250</text><text class="ix mu c" x="480" y="120">байты приветствия, смещения с нуля</text></g>
+<g class="a e2"><rect class="bxa" x="381.4" y="66" width="52.8" height="34" rx="0"/><path class="lm" d="M407.4 100L407.4 128"/><text class="sm tk r" x="415.4" y="142">имя www.example.com: байты 97–111</text></g>
+<g class="a e3"><path class="lr" d="M406.1 50L406.1 104"/><text class="sm tk" x="414.1" y="54">midsld: перед байтом 104</text></g>
+<g class="a e4"><text class="cap" x="40" y="176">multisplit из прошлого выпуска: куски по порядку</text></g>
+<g class="a e5"><rect class="bxa" x="40" y="186" width="366.1" height="32" rx="4"/><text class="sm tk" x="52" y="207">1-й: 104 байта, смещения 0–103</text></g>
+<g class="a e6"><rect class="bxb" x="406.1" y="222" width="513.9" height="32" rx="4"/><text class="sm tk" x="418.1" y="243">2-й: 146 байт, смещения 104–249</text></g>
+<g class="a e7"><rect class="bxd" x="40" y="264" width="880" height="52" rx="6"/><text class="sm tk" x="52" y="286">игрушечный вахтёр смотрит в одно место каждого пакета: имя разорвано, не нашёл</text><text class="sm mu" x="52" y="307">это наша модель, а не оборудование</text></g>
+<g class="a e8"><text class="big" x="40" y="352">а если отправить сначала конец, потом начало?</text></g>
+<g class="a e9"><rect class="bxb" x="406.1" y="368" width="513.9" height="32" rx="4"/><text class="sm tk" x="418.1" y="389">1-й: 146 байт, смещения 104–249</text></g>
+<g class="a e10"><rect class="bxa" x="40" y="404" width="366.1" height="32" rx="4"/><text class="sm tk" x="52" y="425">2-й: 104 байта, смещения 0–103</text></g>
+<g class="a e11"><text class="sm mu" x="40" y="466">что скажет получатель, когда пакет с поздними байтами придёт раньше пакета с ранними?</text></g>
+</svg>
