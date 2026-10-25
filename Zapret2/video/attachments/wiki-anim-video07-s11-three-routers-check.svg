@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v07-s11-three-routers-check" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="v07-s11-three-routers-check-t v07-s11-three-routers-check-d">
+<title id="v07-s11-three-routers-check-t">Три роутера: срок 3</title>
+<desc id="v07-s11-three-routers-check-d">Проверка на дороге из трёх роутеров при дельте 0: ответ сервера пришёл со сроком 61, значит переходов 64 минус 61 равно 3, срок подделки 3 плюс 0 даёт 3, подделка видна на точках c0, r0, r1 и r2, умирает на третьем роутере с ICMP типа 11 с адреса 10.9.2.2, а приложение сервера получает чистые 250 байт.</desc>
+<style>
+.v07-s11-three-routers-check{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v07-s11-three-routers-check{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v07-s11-three-routers-check .bg{fill:var(--bg)}
+.v07-s11-three-routers-check text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v07-s11-three-routers-check .tk{font-weight:600;fill:var(--fg)}
+.v07-s11-three-routers-check .sm{font-size:14.5px}
+.v07-s11-three-routers-check .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s11-three-routers-check .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v07-s11-three-routers-check .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s11-three-routers-check .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s11-three-routers-check .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v07-s11-three-routers-check .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v07-s11-three-routers-check .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s11-three-routers-check .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v07-s11-three-routers-check .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v07-s11-three-routers-check .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.v07-s11-three-routers-check .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v07-s11-three-routers-check .mu{fill:var(--mute)}.v07-s11-three-routers-check .fg{fill:var(--fg)}.v07-s11-three-routers-check .acc{fill:var(--acc)}.v07-s11-three-routers-check .rej{fill:var(--rej)}.v07-s11-three-routers-check .ok{fill:var(--ok)}.v07-s11-three-routers-check .amb{fill:var(--amb)}
+.v07-s11-three-routers-check .c{text-anchor:middle}.v07-s11-three-routers-check .r{text-anchor:end}.v07-s11-three-routers-check .ns{stroke:none}
+.v07-s11-three-routers-check .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v07-s11-three-routers-check .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s11-three-routers-check .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v07-s11-three-routers-check .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v07-s11-three-routers-check .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v07-s11-three-routers-check .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v07-s11-three-routers-check .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v07-s11-three-routers-check .pill{fill:var(--bg);stroke:none}
+.v07-s11-three-routers-check .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v07-s11-three-routers-check .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v07-s11-three-routers-check .fa{fill:var(--tint);stroke:none}.v07-s11-three-routers-check .fr{fill:var(--rejt);stroke:none}.v07-s11-three-routers-check .fb{fill:var(--ambt);stroke:none}.v07-s11-three-routers-check .fo{fill:var(--okt);stroke:none}
+.v07-s11-three-routers-check .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v07-s11-three-routers-check .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v07-s11-three-routers-check .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v07-s11-three-routers-check .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v07-s11-three-routers-check .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v07-s11-three-routers-check .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v07-s11-three-routers-check .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v07-s11-three-routers-check .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v07-s11-three-routers-check .hf{fill:var(--fg2)}.v07-s11-three-routers-check .ha{fill:var(--acc)}.v07-s11-three-routers-check .hr{fill:var(--rej)}.v07-s11-three-routers-check .hm{fill:var(--mute)}.v07-s11-three-routers-check .hb{fill:var(--amb)}.v07-s11-three-routers-check .ho{fill:var(--ok)}
+.v07-s11-three-routers-check .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v07-s11-three-routers-check .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v07-s11-three-routers-check .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.v07-s11-three-routers-check .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.v07-s11-three-routers-check .on{fill:var(--amb);stroke:var(--amb);stroke-width:1.4}
+.v07-s11-three-routers-check .off{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s11-three-routers-check .a{animation-duration:30s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v07-s11-three-routers-check .a{animation:none}.v07-s11-three-routers-check .tr{display:none}}
+@keyframes v07-s11-three-routers-check-k1{0%{opacity:0}1.333%{opacity:0}3.0%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e1{animation-name:v07-s11-three-routers-check-k1}@keyframes v07-s11-three-routers-check-k2{0%{opacity:0}6.667%{opacity:0}8.333%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e2{animation-name:v07-s11-three-routers-check-k2}@keyframes v07-s11-three-routers-check-k3{0%{opacity:0}20.0%{opacity:0}21.667%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e3{animation-name:v07-s11-three-routers-check-k3}@keyframes v07-s11-three-routers-check-k4{0%{opacity:0}30.0%{opacity:0}31.667%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e4{animation-name:v07-s11-three-routers-check-k4}@keyframes v07-s11-three-routers-check-k5{0%{opacity:0}43.333%{opacity:0}45.0%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e5{animation-name:v07-s11-three-routers-check-k5}@keyframes v07-s11-three-routers-check-k6{0%{opacity:0}53.333%{opacity:0}55.0%{opacity:1}94.667%{opacity:1}98.667%{opacity:0}100%{opacity:0}}.v07-s11-three-routers-check .e6{animation-name:v07-s11-three-routers-check-k6}</style>
+<rect class="bg" x="0" y="0" width="960" height="300"/>
+<g><text class="cap" x="10" y="22">Проверь себя: три роутера, ответ со сроком 61, дельта 0</text></g>
+<g class="a e1"><rect class="bx" x="10" y="40" width="110" height="60" rx="8"/><text class="tk c ns" x="65.0" y="66">клиент</text><rect class="bx" x="200" y="40" width="130" height="60" rx="8"/><text class="tk c ns" x="265.0" y="66">роутер 1</text><rect class="bx" x="400" y="40" width="130" height="60" rx="8"/><text class="tk c ns" x="465.0" y="66">роутер 2</text><rect class="bx" x="600" y="40" width="130" height="60" rx="8"/><text class="tk c ns" x="665.0" y="66">роутер 3</text><rect class="bx" x="820" y="40" width="130" height="60" rx="8"/><text class="tk c ns" x="885.0" y="66">сервер</text></g>
+<g class="a e2"><path class="la" d="M120 86L591.0 86.0"/><polygon class="ha" points="600,86 591.0,90.5 591.0,81.5"/><text class="sm tk acc c" x="160" y="78">срок 3</text><text class="sm tk acc c" x="365" y="78">срок 2</text><text class="sm tk acc c" x="565" y="78">срок 1</text><path class="lr" d="M610 74L630 98M610 98L630 74"/><text class="sm tk rej c ns" x="660" y="124">срок 0: умирает здесь</text></g>
+<g class="a e3"><path class="lmd" d="M665 108L665 130L65 130L65 106"/><text class="sm c" x="365" y="150">ICMP тип 11 с адреса 10.9.2.2</text></g>
+<g class="a e4"><rect class="bxd" x="10" y="172" width="940" height="36" rx="6"/><text class="mk ns" x="24" y="196">64 − 61 = 3 перехода, 3 + 0 = 3, срок подделки 3</text></g>
+<g class="a e5"><rect class="bxa" x="10" y="218" width="460" height="70" rx="8"/><text class="smk ns" x="22" y="242">видна на c0 r0 r1 r2</text><text class="sm ns" x="22" y="266">на сервере её нет</text></g>
+<g class="a e6"><rect class="bxo" x="490" y="218" width="460" height="70" rx="8"/><text class="smk ns" x="502" y="242">приложение сервера</text><text class="sm ns" x="502" y="266">250 байт, чисто</text></g>
+</svg>

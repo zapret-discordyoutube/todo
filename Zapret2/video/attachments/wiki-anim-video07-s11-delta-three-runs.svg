@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v07-s11-delta-three-runs" viewBox="0 0 960 506" width="960" height="506" role="img" aria-labelledby="v07-s11-delta-three-runs-t v07-s11-delta-three-runs-d">
+<title id="v07-s11-delta-three-runs-t">Дельта: три опыта</title>
+<desc id="v07-s11-delta-three-runs-d">Три опыта с дельтой на дороге из двух роутеров, где первый ответ сервера пришёл со сроком 62, то есть переходов два: при дельте минус один срок подделки 1 и она умирает на роутере 1 с ICMP от 10.1.0.2, при дельте 0 срок 2 и она умирает на роутере 2 с ICMP от 10.9.1.2, при дельте плюс один срок 3 и она доезжает до сервера, который принимает 680 байт, а клиент ждёт ответа; игрушечный инспектор на входе роутера 1 видит подделку во всех трёх опытах и разрешает соединение.</desc>
+<style>
+.v07-s11-delta-three-runs{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v07-s11-delta-three-runs{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v07-s11-delta-three-runs .bg{fill:var(--bg)}
+.v07-s11-delta-three-runs text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v07-s11-delta-three-runs .tk{font-weight:600;fill:var(--fg)}
+.v07-s11-delta-three-runs .sm{font-size:14.5px}
+.v07-s11-delta-three-runs .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s11-delta-three-runs .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v07-s11-delta-three-runs .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s11-delta-three-runs .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s11-delta-three-runs .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v07-s11-delta-three-runs .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v07-s11-delta-three-runs .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s11-delta-three-runs .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v07-s11-delta-three-runs .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v07-s11-delta-three-runs .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.v07-s11-delta-three-runs .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v07-s11-delta-three-runs .mu{fill:var(--mute)}.v07-s11-delta-three-runs .fg{fill:var(--fg)}.v07-s11-delta-three-runs .acc{fill:var(--acc)}.v07-s11-delta-three-runs .rej{fill:var(--rej)}.v07-s11-delta-three-runs .ok{fill:var(--ok)}.v07-s11-delta-three-runs .amb{fill:var(--amb)}
+.v07-s11-delta-three-runs .c{text-anchor:middle}.v07-s11-delta-three-runs .r{text-anchor:end}.v07-s11-delta-three-runs .ns{stroke:none}
+.v07-s11-delta-three-runs .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v07-s11-delta-three-runs .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s11-delta-three-runs .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v07-s11-delta-three-runs .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v07-s11-delta-three-runs .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v07-s11-delta-three-runs .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v07-s11-delta-three-runs .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v07-s11-delta-three-runs .pill{fill:var(--bg);stroke:none}
+.v07-s11-delta-three-runs .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v07-s11-delta-three-runs .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v07-s11-delta-three-runs .fa{fill:var(--tint);stroke:none}.v07-s11-delta-three-runs .fr{fill:var(--rejt);stroke:none}.v07-s11-delta-three-runs .fb{fill:var(--ambt);stroke:none}.v07-s11-delta-three-runs .fo{fill:var(--okt);stroke:none}
+.v07-s11-delta-three-runs .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v07-s11-delta-three-runs .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v07-s11-delta-three-runs .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v07-s11-delta-three-runs .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v07-s11-delta-three-runs .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v07-s11-delta-three-runs .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v07-s11-delta-three-runs .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v07-s11-delta-three-runs .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v07-s11-delta-three-runs .hf{fill:var(--fg2)}.v07-s11-delta-three-runs .ha{fill:var(--acc)}.v07-s11-delta-three-runs .hr{fill:var(--rej)}.v07-s11-delta-three-runs .hm{fill:var(--mute)}.v07-s11-delta-three-runs .hb{fill:var(--amb)}.v07-s11-delta-three-runs .ho{fill:var(--ok)}
+.v07-s11-delta-three-runs .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v07-s11-delta-three-runs .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v07-s11-delta-three-runs .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.v07-s11-delta-three-runs .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.v07-s11-delta-three-runs .on{fill:var(--amb);stroke:var(--amb);stroke-width:1.4}
+.v07-s11-delta-three-runs .off{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s11-delta-three-runs .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v07-s11-delta-three-runs .a{animation:none}.v07-s11-delta-three-runs .tr{display:none}}
+@keyframes v07-s11-delta-three-runs-k1{0%{opacity:0}0.909%{opacity:0}2.045%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e1{animation-name:v07-s11-delta-three-runs-k1}@keyframes v07-s11-delta-three-runs-k2{0%{opacity:0}2.727%{opacity:0}3.864%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e2{animation-name:v07-s11-delta-three-runs-k2}@keyframes v07-s11-delta-three-runs-k3{0%{opacity:0}5.0%{opacity:0}6.136%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e3{animation-name:v07-s11-delta-three-runs-k3}@keyframes v07-s11-delta-three-runs-k4{0%{opacity:0}7.955%{opacity:0}9.091%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e4{animation-name:v07-s11-delta-three-runs-k4}@keyframes v07-s11-delta-three-runs-k5{0%{opacity:0}9.773%{opacity:0}10.909%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e5{animation-name:v07-s11-delta-three-runs-k5}@keyframes v07-s11-delta-three-runs-k6{0%{opacity:0;transform:translate(130px,174px)}9.773%{opacity:0;transform:translate(130px,174px)}10.682%{opacity:1;transform:translate(130px,174px)}14.091%{opacity:1;transform:translate(350px,174px)}15.0%{opacity:0;transform:translate(350px,174px)}100%{opacity:0;transform:translate(350px,174px)}}.v07-s11-delta-three-runs .e6{animation-name:v07-s11-delta-three-runs-k6}@keyframes v07-s11-delta-three-runs-k7{0%{opacity:0}16.591%{opacity:0}17.727%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e7{animation-name:v07-s11-delta-three-runs-k7}@keyframes v07-s11-delta-three-runs-k8{0%{opacity:0}32.955%{opacity:0}34.091%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e8{animation-name:v07-s11-delta-three-runs-k8}@keyframes v07-s11-delta-three-runs-k9{0%{opacity:0}34.773%{opacity:0}35.909%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e9{animation-name:v07-s11-delta-three-runs-k9}@keyframes v07-s11-delta-three-runs-k10{0%{opacity:0;transform:translate(130px,290px)}34.773%{opacity:0;transform:translate(130px,290px)}35.682%{opacity:1;transform:translate(130px,290px)}42.5%{opacity:1;transform:translate(580px,290px)}43.409%{opacity:0;transform:translate(580px,290px)}100%{opacity:0;transform:translate(580px,290px)}}.v07-s11-delta-three-runs .e10{animation-name:v07-s11-delta-three-runs-k10}@keyframes v07-s11-delta-three-runs-k11{0%{opacity:0}42.955%{opacity:0}44.091%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e11{animation-name:v07-s11-delta-three-runs-k11}@keyframes v07-s11-delta-three-runs-k12{0%{opacity:0}57.955%{opacity:0}59.091%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e12{animation-name:v07-s11-delta-three-runs-k12}@keyframes v07-s11-delta-three-runs-k13{0%{opacity:0}59.773%{opacity:0}60.909%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e13{animation-name:v07-s11-delta-three-runs-k13}@keyframes v07-s11-delta-three-runs-k14{0%{opacity:0;transform:translate(130px,406px)}59.773%{opacity:0;transform:translate(130px,406px)}60.682%{opacity:1;transform:translate(130px,406px)}70.909%{opacity:1;transform:translate(810px,406px)}71.818%{opacity:0;transform:translate(810px,406px)}100%{opacity:0;transform:translate(810px,406px)}}.v07-s11-delta-three-runs .e14{animation-name:v07-s11-delta-three-runs-k14}@keyframes v07-s11-delta-three-runs-k15{0%{opacity:0}69.318%{opacity:0}70.455%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e15{animation-name:v07-s11-delta-three-runs-k15}@keyframes v07-s11-delta-three-runs-k16{0%{opacity:0}86.364%{opacity:0}87.5%{opacity:1}96.364%{opacity:1}99.091%{opacity:0}100%{opacity:0}}.v07-s11-delta-three-runs .e16{animation-name:v07-s11-delta-three-runs-k16}</style>
+<rect class="bg" x="0" y="0" width="960" height="506"/>
+<g><text class="cap" x="10" y="22">Срок подделки = число переходов + дельта</text></g>
+<g class="a e1"><rect class="bx" x="80.0" y="34" width="100" height="28" rx="8"/><text class="sm tk c ns" x="130" y="53">клиент</text><rect class="bx" x="250.0" y="34" width="220" height="28" rx="8"/><text class="sm tk c ns" x="360" y="53">роутер 1 + игрушка</text><rect class="bx" x="540.0" y="34" width="100" height="28" rx="8"/><text class="sm tk c ns" x="590" y="53">роутер 2</text><rect class="bx" x="770.0" y="34" width="100" height="28" rx="8"/><text class="sm tk c ns" x="820" y="53">сервер</text></g>
+<g class="a e2"><text class="sm" x="10" y="90">первый ответ сервера пришёл со сроком 62, старт 64: переходов 2</text></g>
+<g class="a e3"><text class="sm" x="10" y="110">игрушка на входе роутера 1 видит подделку в каждом опыте: РАЗРЕШЕНО</text></g>
+<g class="a e4"><text class="tk" x="10" y="142">дельта −1</text><text class="mk" x="170" y="142">переходы 2 + (−1) = 1, срок подделки 1</text></g>
+<g class="a e5"><path class="lm" d="M360 158L360 188"/><path class="lm" d="M590 158L590 188"/><path class="lm" d="M820 158L820 188"/><path class="la" d="M130 174L350 174"/><text class="sm acc tk c" x="245.0" y="166">срок 1</text><path class="lr" d="M346 164L366 184M346 184L366 164"/></g>
+<g class="a e6 tr"><circle class="dot" cx="0" cy="0" r="7"/></g>
+<g class="a e7"><rect class="bxo" x="10" y="190" width="940" height="38" rx="8"/><text class="sm tk ns" x="24" y="215">умирает на роутере 1, ICMP с 10.1.0.2</text><text class="sm ns" x="470" y="215">сервер: 250 Б, чисто · клиент: ответ получен</text></g>
+<g class="a e8"><text class="tk" x="10" y="258">дельта 0</text><text class="mk" x="170" y="258">переходы 2 + 0 = 2, срок подделки 2</text></g>
+<g class="a e9"><path class="lm" d="M360 274L360 304"/><path class="lm" d="M590 274L590 304"/><path class="lm" d="M820 274L820 304"/><path class="la" d="M130 290L580 290"/><text class="sm acc tk c" x="245.0" y="282">срок 2</text><text class="sm acc tk c" x="475.0" y="282">срок 1</text><path class="lr" d="M576 280L596 300M576 300L596 280"/></g>
+<g class="a e10 tr"><circle class="dot" cx="0" cy="0" r="7"/></g>
+<g class="a e11"><rect class="bxo" x="10" y="306" width="940" height="38" rx="8"/><text class="sm tk ns" x="24" y="331">умирает на роутере 2, ICMP с 10.9.1.2</text><text class="sm ns" x="470" y="331">сервер: 250 Б, чисто · клиент: ответ получен</text></g>
+<g class="a e12"><text class="tk" x="10" y="374">дельта +1</text><text class="mk" x="170" y="374">переходы 2 + 1 = 3, срок подделки 3</text></g>
+<g class="a e13"><path class="lm" d="M360 390L360 420"/><path class="lm" d="M590 390L590 420"/><path class="lm" d="M820 390L820 420"/><path class="la" d="M130 406L810 406"/><text class="sm acc tk c" x="245.0" y="398">срок 3</text><text class="sm acc tk c" x="475.0" y="398">срок 2</text><text class="sm acc tk c" x="705.0" y="398">срок 1</text><polygon class="ha" points="812,406 802,401 802,411"/></g>
+<g class="a e14 tr"><circle class="dot" cx="0" cy="0" r="7"/></g>
+<g class="a e15"><rect class="bxr" x="10" y="422" width="940" height="38" rx="8"/><text class="sm tk ns" x="24" y="447">доезжает до сервера при сроке 3</text><text class="sm ns" x="470" y="447">сервер: 680 Б · клиент ждёт 4 с и сдаётся</text></g>
+<g class="a e16"><text class="sm tk" x="10" y="488">шпаргалка: −1 первый из двух роутеров, 0 последний, +1 до сервера</text></g>
+</svg>

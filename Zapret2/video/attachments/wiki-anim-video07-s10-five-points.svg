@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v07-s10-five-points" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="v07-s10-five-points-t v07-s10-five-points-d">
+<title id="v07-s10-five-points-t">Итог первой части: пять пунктов</title>
+<desc id="v07-s10-five-points-d">Итог первой части выпуска в пяти строках: у подделки три задачи; без условия игрушка обманута, но сервер принимает подделку за данные, клиент отправил 250 байт, а сервер подтвердил 681; подделка копирует заголовки настоящего пакета, у обоих один ip id и один номер 1, и идёт первой; срок жизни кончается на роутере, где он равен нулю, и подделка доходит до сервера только при сроке не меньше числа роутеров плюс один; длину пути программа берёт из срока первого ответа сервера, 64 минус 62 дают 2 перехода, а проверяли это только на нашей игрушке и нашем сервере с Linux, и всё, что не проверяли, перечислено серым.</desc>
+<style>
+.v07-s10-five-points{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v07-s10-five-points{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v07-s10-five-points .bg{fill:var(--bg)}
+.v07-s10-five-points text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v07-s10-five-points .tk{font-weight:600;fill:var(--fg)}
+.v07-s10-five-points .sm{font-size:14.5px}
+.v07-s10-five-points .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s10-five-points .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v07-s10-five-points .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v07-s10-five-points .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s10-five-points .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v07-s10-five-points .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v07-s10-five-points .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v07-s10-five-points .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v07-s10-five-points .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v07-s10-five-points .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.v07-s10-five-points .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v07-s10-five-points .mu{fill:var(--mute)}.v07-s10-five-points .fg{fill:var(--fg)}.v07-s10-five-points .acc{fill:var(--acc)}.v07-s10-five-points .rej{fill:var(--rej)}.v07-s10-five-points .ok{fill:var(--ok)}.v07-s10-five-points .amb{fill:var(--amb)}
+.v07-s10-five-points .c{text-anchor:middle}.v07-s10-five-points .r{text-anchor:end}.v07-s10-five-points .ns{stroke:none}
+.v07-s10-five-points .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v07-s10-five-points .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s10-five-points .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v07-s10-five-points .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v07-s10-five-points .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v07-s10-five-points .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v07-s10-five-points .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v07-s10-five-points .pill{fill:var(--bg);stroke:none}
+.v07-s10-five-points .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v07-s10-five-points .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v07-s10-five-points .fa{fill:var(--tint);stroke:none}.v07-s10-five-points .fr{fill:var(--rejt);stroke:none}.v07-s10-five-points .fb{fill:var(--ambt);stroke:none}.v07-s10-five-points .fo{fill:var(--okt);stroke:none}
+.v07-s10-five-points .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v07-s10-five-points .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v07-s10-five-points .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v07-s10-five-points .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v07-s10-five-points .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v07-s10-five-points .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v07-s10-five-points .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v07-s10-five-points .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v07-s10-five-points .hf{fill:var(--fg2)}.v07-s10-five-points .ha{fill:var(--acc)}.v07-s10-five-points .hr{fill:var(--rej)}.v07-s10-five-points .hm{fill:var(--mute)}.v07-s10-five-points .hb{fill:var(--amb)}.v07-s10-five-points .ho{fill:var(--ok)}
+.v07-s10-five-points .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v07-s10-five-points .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v07-s10-five-points .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.v07-s10-five-points .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.v07-s10-five-points .on{fill:var(--amb);stroke:var(--amb);stroke-width:1.4}
+.v07-s10-five-points .off{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v07-s10-five-points .a{animation-duration:40s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v07-s10-five-points .a{animation:none}.v07-s10-five-points .tr{display:none}}
+@keyframes v07-s10-five-points-k1{0%{opacity:0}2.5%{opacity:0}3.75%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e1{animation-name:v07-s10-five-points-k1}@keyframes v07-s10-five-points-k2{0%{opacity:0}11.5%{opacity:0}12.75%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e2{animation-name:v07-s10-five-points-k2}@keyframes v07-s10-five-points-k3{0%{opacity:0}20.5%{opacity:0}21.75%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e3{animation-name:v07-s10-five-points-k3}@keyframes v07-s10-five-points-k4{0%{opacity:0}29.5%{opacity:0}30.75%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e4{animation-name:v07-s10-five-points-k4}@keyframes v07-s10-five-points-k5{0%{opacity:0}38.5%{opacity:0}39.75%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e5{animation-name:v07-s10-five-points-k5}@keyframes v07-s10-five-points-k6{0%{opacity:0}51.25%{opacity:0}52.5%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e6{animation-name:v07-s10-five-points-k6}@keyframes v07-s10-five-points-k7{0%{opacity:0}58.75%{opacity:0}60.0%{opacity:1}96.0%{opacity:1}99.0%{opacity:0}100%{opacity:0}}.v07-s10-five-points .e7{animation-name:v07-s10-five-points-k7}</style>
+<rect class="bg" x="0" y="0" width="960" height="560"/>
+<g><text class="cap" x="10" y="24">Что помнить из первой части выпуска</text></g>
+<g class="a e1"><rect class="bx" x="10" y="40" width="940" height="66" rx="8"/><circle class="bxa" cx="30" cy="73" r="11"/><text class="sm tk c ns" x="30" y="78">1</text><text class="tk ns" x="52" y="68">Три задачи подделки</text><text class="sm mu ns" x="52" y="91">правдоподобие, отказ получателя, безвредность</text><path class="lm" d="M506 50L506 96"/><text class="sm ns" x="522" y="68">проверено против игрушки на входе в роутер 1</text><text class="sm ns" x="522" y="91">и против одного получателя: сервера на Linux</text></g>
+<g class="a e2"><rect class="bx" x="10" y="114" width="940" height="66" rx="8"/><circle class="bxr" cx="30" cy="147" r="11"/><text class="sm tk c ns" x="30" y="152">2</text><text class="tk ns" x="52" y="142">Без условия подделка ломает соединение</text><text class="sm mu ns" x="52" y="165">игрушка обманута, сервер принял подделку за данные</text><path class="lm" d="M506 124L506 170"/><text class="sm ns" x="522" y="142">клиент отправил 250 байт, сервер подтвердил 681</text><text class="sm ns" x="522" y="165">то есть принял 680; ответа клиент не получил</text></g>
+<g class="a e3"><rect class="bx" x="10" y="188" width="940" height="66" rx="8"/><circle class="bxa" cx="30" cy="221" r="11"/><text class="sm tk c ns" x="30" y="226">3</text><text class="tk ns" x="52" y="216">Подделка копирует заголовки настоящего</text><text class="sm mu ns" x="52" y="239">идёт первой, помечена как своя, очередь не видит</text><path class="lm" d="M506 198L506 244"/><text class="sm ns" x="522" y="216">один ip id (191), один номер 1, одно окно 63</text><text class="sm ns" x="522" y="239">отличаются только данные: 680 байт вместо 250</text></g>
+<g class="a e4"><rect class="bx" x="10" y="262" width="940" height="66" rx="8"/><circle class="bxo" cx="30" cy="295" r="11"/><text class="sm tk c ns" x="30" y="300">4</text><text class="tk ns" x="52" y="290">Срок жизни кончается на роутере</text><text class="sm mu ns" x="52" y="313">доходит, если срок не меньше роутеров плюс 1</text><path class="lm" d="M506 272L506 318"/><text class="sm ns" x="522" y="290">роутер шлёт ICMP тип 11 «время истекло»</text><text class="sm ns" x="522" y="313">значение вне 0..255: ошибка, подделки нет</text></g>
+<g class="a e5"><rect class="bx" x="10" y="336" width="940" height="66" rx="8"/><circle class="bxo" cx="30" cy="369" r="11"/><text class="sm tk c ns" x="30" y="374">5</text><text class="tk ns" x="52" y="364">Длину пути берём из ответа сервера</text><text class="sm mu ns" x="52" y="387">старт 255, 128 или 64 угадываем и вычитаем</text><path class="lm" d="M506 346L506 392"/><text class="sm ns" x="522" y="364">пришёл срок 62, старт 64: 64 − 62 = 2 перехода</text><text class="sm ns" x="522" y="387">нет догадки, нет и числа</text></g>
+<g class="a e6"><rect class="bxd" x="10" y="420" width="940" height="100" rx="8"/><text class="cap" x="26" y="444">не проверяли: граница знаний</text><text class="sm mu ns" x="26" y="470">· получатель, кроме Linux 6.18</text><text class="sm mu ns" x="26" y="494">· настоящий инспектор: игрушка лишь модель</text><text class="sm mu ns" x="500" y="470">· асимметричные пути: туда и обратно по-разному</text><text class="sm mu ns" x="500" y="494">· роутер без ICMP или с подменой срока жизни</text></g>
+<g class="a e7"><text class="sm tk" x="10" y="540">о настоящем ТСПУ здесь ничего не утверждается: это опыты на игрушке и на нашем сервере</text></g>
+</svg>

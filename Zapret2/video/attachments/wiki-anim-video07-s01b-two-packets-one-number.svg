@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video07-s01b-two-packets-one-number" viewBox="0 0 960 470" width="960" height="470" role="img" aria-labelledby="video07-s01b-two-packets-one-number-t video07-s01b-two-packets-one-number-d">
+<title id="video07-s01b-two-packets-one-number-t">Два пакета, один номер</title>
+<desc id="video07-s01b-two-packets-one-number-d">Две ленты байтов с одним номером 1: настоящее приветствие в 250 байт с именем www.example.com на смещениях 97–111 и подделка в 680 байт с именем www.microsoft.com на смещениях 125–141, и на провод они уходят двумя пакетами подряд, сначала подделка, за ней настоящее, и в нашем тесте так было в 110 запусках из 110.</desc>
+<style>
+.video07-s01b-two-packets-one-number{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video07-s01b-two-packets-one-number{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video07-s01b-two-packets-one-number .bg{fill:var(--bg)}
+.video07-s01b-two-packets-one-number text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video07-s01b-two-packets-one-number .tk{font-weight:600;fill:var(--fg)}
+.video07-s01b-two-packets-one-number .sm{font-size:14.5px}
+.video07-s01b-two-packets-one-number .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video07-s01b-two-packets-one-number .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video07-s01b-two-packets-one-number .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video07-s01b-two-packets-one-number .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video07-s01b-two-packets-one-number .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video07-s01b-two-packets-one-number .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.video07-s01b-two-packets-one-number .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.video07-s01b-two-packets-one-number .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video07-s01b-two-packets-one-number .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.video07-s01b-two-packets-one-number .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.video07-s01b-two-packets-one-number .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video07-s01b-two-packets-one-number .mu{fill:var(--mute)}.video07-s01b-two-packets-one-number .fg{fill:var(--fg)}.video07-s01b-two-packets-one-number .acc{fill:var(--acc)}.video07-s01b-two-packets-one-number .rej{fill:var(--rej)}.video07-s01b-two-packets-one-number .ok{fill:var(--ok)}.video07-s01b-two-packets-one-number .amb{fill:var(--amb)}
+.video07-s01b-two-packets-one-number .c{text-anchor:middle}.video07-s01b-two-packets-one-number .r{text-anchor:end}.video07-s01b-two-packets-one-number .ns{stroke:none}
+.video07-s01b-two-packets-one-number .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.video07-s01b-two-packets-one-number .pill{fill:var(--bg);stroke:none}
+.video07-s01b-two-packets-one-number .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.video07-s01b-two-packets-one-number .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video07-s01b-two-packets-one-number .fa{fill:var(--tint);stroke:none}.video07-s01b-two-packets-one-number .fr{fill:var(--rejt);stroke:none}.video07-s01b-two-packets-one-number .fb{fill:var(--ambt);stroke:none}.video07-s01b-two-packets-one-number .fo{fill:var(--okt);stroke:none}
+.video07-s01b-two-packets-one-number .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video07-s01b-two-packets-one-number .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video07-s01b-two-packets-one-number .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video07-s01b-two-packets-one-number .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video07-s01b-two-packets-one-number .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video07-s01b-two-packets-one-number .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video07-s01b-two-packets-one-number .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video07-s01b-two-packets-one-number .hf{fill:var(--fg2)}.video07-s01b-two-packets-one-number .ha{fill:var(--acc)}.video07-s01b-two-packets-one-number .hr{fill:var(--rej)}.video07-s01b-two-packets-one-number .hm{fill:var(--mute)}.video07-s01b-two-packets-one-number .hb{fill:var(--amb)}.video07-s01b-two-packets-one-number .ho{fill:var(--ok)}
+.video07-s01b-two-packets-one-number .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.video07-s01b-two-packets-one-number .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.video07-s01b-two-packets-one-number .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.video07-s01b-two-packets-one-number .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.video07-s01b-two-packets-one-number .on{fill:var(--amb);stroke:var(--amb);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .off{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video07-s01b-two-packets-one-number .a{animation-duration:34s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.video07-s01b-two-packets-one-number .a{animation:none}.video07-s01b-two-packets-one-number .tr{display:none}}
+@keyframes video07-s01b-two-packets-one-number-k1{0%{opacity:0}4.412%{opacity:0}5.882%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e1{animation-name:video07-s01b-two-packets-one-number-k1}@keyframes video07-s01b-two-packets-one-number-k2{0%{opacity:0}13.235%{opacity:0}14.706%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e2{animation-name:video07-s01b-two-packets-one-number-k2}@keyframes video07-s01b-two-packets-one-number-k3{0%{opacity:0}22.059%{opacity:0}23.529%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e3{animation-name:video07-s01b-two-packets-one-number-k3}@keyframes video07-s01b-two-packets-one-number-k4{0%{opacity:0}32.353%{opacity:0}33.824%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e4{animation-name:video07-s01b-two-packets-one-number-k4}@keyframes video07-s01b-two-packets-one-number-k5{0%{opacity:0;transform:translate(-250px,0px)}35.294%{opacity:0;transform:translate(-250px,0px)}37.353%{opacity:1;transform:translate(0px,0px)}95.294%{opacity:1;transform:translate(0px,0px)}98.824%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.video07-s01b-two-packets-one-number .e5{animation-name:video07-s01b-two-packets-one-number-k5}@keyframes video07-s01b-two-packets-one-number-k6{0%{opacity:0;transform:translate(-250px,0px)}45.588%{opacity:0;transform:translate(-250px,0px)}47.647%{opacity:1;transform:translate(0px,0px)}95.294%{opacity:1;transform:translate(0px,0px)}98.824%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.video07-s01b-two-packets-one-number .e6{animation-name:video07-s01b-two-packets-one-number-k6}@keyframes video07-s01b-two-packets-one-number-k7{0%{opacity:0}32.353%{opacity:0}33.824%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e7{animation-name:video07-s01b-two-packets-one-number-k7}@keyframes video07-s01b-two-packets-one-number-k8{0%{opacity:0}58.824%{opacity:0}60.294%{opacity:1}95.294%{opacity:1}98.824%{opacity:0}100%{opacity:0}}.video07-s01b-two-packets-one-number .e8{animation-name:video07-s01b-two-packets-one-number-k8}</style>
+<rect class="bg" x="0" y="0" width="960" height="470"/>
+<g><text class="cap" x="40" y="24">два пакета претендуют на первый байт потока</text></g>
+<g class="a e1"><rect class="bxb" x="40" y="52" width="880" height="34" rx="0"/><text class="smk c" x="480" y="75">подделка: 680 байт, имя www.microsoft.com</text><rect class="fr" x="201.8" y="52" width="22.0" height="34" rx="0"/><rect class="bxn" x="201.8" y="52" width="22.0" height="34" rx="0"/><text class="sm mu" x="209.8" y="106">имя: смещения 125–141</text><text class="ix mu" x="40" y="128">номер 1</text><text class="ix mu r" x="920" y="128">680</text></g>
+<g class="a e2"><rect class="bxa" x="40" y="152" width="323.5" height="34" rx="0"/><text class="smk" x="192.9" y="175">настоящее: 250</text><rect class="fr" x="165.5" y="152" width="19.4" height="34" rx="0"/><rect class="bxn" x="165.5" y="152" width="19.4" height="34" rx="0"/><text class="sm mu" x="285.5" y="206">имя www.example.com: смещения 97–111</text><text class="ix mu" x="40" y="228">номер 1</text><text class="ix mu r" x="363.5" y="228">250</text></g>
+<g class="a e3"><text class="smk" x="387.5" y="175">← тот же номер 1: оба претендуют на первый байт</text></g>
+<g><text class="cap" x="40" y="282">на провод уходят два пакета подряд</text></g>
+<g class="a e4"><path class="lm" d="M40 346L907.0 346.0"/><polygon class="hm" points="916,346 907.0,350.5 907.0,341.5"/></g>
+<g class="a e5"><rect class="pill" x="560" y="316" width="330" height="60" rx="8"/><rect class="bxb" x="560" y="316" width="330" height="60" rx="8"/><text class="smk c" x="725" y="342">1-й: подделка · 680 байт</text><text class="sm c" x="725" y="364">PSH+ACK · номер 1</text></g>
+<g class="a e6"><rect class="pill" x="330" y="316" width="200" height="60" rx="8"/><rect class="bxa" x="330" y="316" width="200" height="60" rx="8"/><text class="smk c" x="430" y="342">2-й: настоящее · 250</text><text class="sm c" x="430" y="364">PSH+ACK · номер 1</text></g>
+<g class="a e7"><rect class="pill" x="40" y="316" width="100" height="60" rx="0"/><text class="sm tk" x="48" y="351">клиент</text></g>
+<g class="a e8"><text class="smk" x="40" y="410">в нашем тесте первой уходила подделка: в 110 запусках из 110</text><text class="sm mu" x="40" y="434">за ней идёт настоящее приветствие с тем же номером; оба пакета видны на сетевой карте клиента</text></g>
+</svg>
