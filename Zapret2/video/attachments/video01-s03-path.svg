@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v01-s03-path" viewBox="0 0 960 410" width="960" height="410" role="img" aria-labelledby="v01-s03-path-t v01-s03-path-d">
+<title id="v01-s03-path-t">Путь пакета в четырёх точках</title>
+<desc id="v01-s03-path-d">Один и тот же пакет в 316 байт снят в четырёх точках: c0 при выходе из клиента в момент 0,000 мс с временем жизни 64, r0 при входе в роутер через 0,002 мс с временем жизни 64, r1 при выходе из роутера через 0,005 мс с временем жизни 63 и s0 у сервера через 0,006 мс с временем жизни 63; роутер вычел единицу, весь путь занял шесть микросекунд.</desc>
+<style>.v01-s03-path{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#e5e5e5);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#23825a;--okt:rgba(35,130,90,.12)}@media (prefers-color-scheme:dark){.v01-s03-path{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#393639);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.12));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.13);--ok:#7fd1a6;--okt:rgba(127,209,166,.12)}}
+.v01-s03-path .bg{fill:var(--bg)}
+.v01-s03-path text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2)}
+.v01-s03-path .t{paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
+.v01-s03-path .tk{font-weight:600;fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
+.v01-s03-path .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
+.v01-s03-path .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v01-s03-path .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:18px;font-weight:600;fill:var(--fg)}
+.v01-s03-path .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v01-s03-path .sm{font-size:14.5px}
+.v01-s03-path .big{font-size:18px}
+.v01-s03-path .mu{fill:var(--mute)}
+.v01-s03-path .fg{fill:var(--fg)}
+.v01-s03-path .acc{fill:var(--acc)}
+.v01-s03-path .rej{fill:var(--rej)}
+.v01-s03-path .ok{fill:var(--ok)}
+.v01-s03-path .c{text-anchor:middle}
+.v01-s03-path .r{text-anchor:end}
+.v01-s03-path .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v01-s03-path .bxm{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v01-s03-path .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v01-s03-path .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v01-s03-path .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v01-s03-path .bxg{fill:var(--line);stroke:var(--mute);stroke-width:1.2}
+.v01-s03-path .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:4 4}
+.v01-s03-path .bxbg{fill:var(--bg);stroke:none}
+.v01-s03-path .lf{fill:none;stroke:var(--line);stroke-width:1.4}
+.v01-s03-path .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v01-s03-path .lmd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:4 5}
+.v01-s03-path .lr{fill:none;stroke:var(--rej);stroke-width:2}
+.v01-s03-path .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v01-s03-path .ld{fill:none;stroke:var(--fg2);stroke-width:2}
+.v01-s03-path .belt{fill:var(--line);stroke:var(--mute);stroke-width:1.2}
+.v01-s03-path .ln{stroke-dasharray:100}
+.v01-s03-path .hd-a{fill:var(--acc)}
+.v01-s03-path .hd-f{fill:var(--fg2)}
+.v01-s03-path .hd-r{fill:var(--rej)}
+.v01-s03-path .dot{fill:var(--acc)}
+.v01-s03-path .ring{fill:var(--bg);stroke:var(--acc);stroke-width:2.2}
+.v01-s03-path .beam{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-dasharray:3 3}
+.v01-s03-path .a{animation-duration:24s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v01-s03-path .a{animation:none}.v01-s03-path .tr{display:none}}
+figure.v01-s03-path-fig{margin:1.6rem 0;overflow-x:auto}figure.v01-s03-path-fig>svg{display:block;width:100%;min-width:680px;height:auto}
+@keyframes v01-s03-path-k1{0%{opacity:0;transform:translate(0px,0px)}0.833%{opacity:0;transform:translate(0px,0px)}2.917%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e1{animation-name:v01-s03-path-k1}@keyframes v01-s03-path-k2{0%{opacity:0;transform:translate(0px,0px)}1.667%{opacity:0;transform:translate(0px,0px)}3.75%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e2{animation-name:v01-s03-path-k2}@keyframes v01-s03-path-k3{0%{opacity:0;transform:translate(0px,0px)}2.5%{opacity:0;transform:translate(0px,0px)}4.583%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e3{animation-name:v01-s03-path-k3}@keyframes v01-s03-path-k4{0%{opacity:0;transform:translate(0px,0px)}3.333%{opacity:0;transform:translate(0px,0px)}5.417%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e4{animation-name:v01-s03-path-k4}@keyframes v01-s03-path-k5{0%{opacity:0;transform:translate(0px,0px)}7.5%{opacity:0;transform:translate(0px,0px)}9.583%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e5{animation-name:v01-s03-path-k5}@keyframes v01-s03-path-k6{0%{opacity:0;transform:translate(0px,0px)}15.833%{opacity:0;transform:translate(0px,0px)}17.917%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e6{animation-name:v01-s03-path-k6}@keyframes v01-s03-path-k7{0%{opacity:0;transform:translate(0px,0px)}25%{opacity:0;transform:translate(0px,0px)}27.083%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e7{animation-name:v01-s03-path-k7}@keyframes v01-s03-path-k8{0%{opacity:0;transform:translate(0px,0px)}33.333%{opacity:0;transform:translate(0px,0px)}35.417%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e8{animation-name:v01-s03-path-k8}@keyframes v01-s03-path-k9{0%{opacity:0;transform:translate(0px,0px)}18.333%{opacity:0;transform:translate(0px,0px)}20.417%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e9{animation-name:v01-s03-path-k9}@keyframes v01-s03-path-k10{0%{opacity:0;transform:translate(0px,0px)}26.667%{opacity:0;transform:translate(0px,0px)}28.75%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e10{animation-name:v01-s03-path-k10}@keyframes v01-s03-path-k11{0%{opacity:0;transform:translate(200px,80px)}5.417%{opacity:0;transform:translate(200px,80px)}6.667%{opacity:1;transform:translate(200px,80px)}15%{opacity:1;transform:translate(360px,80px)}17.917%{opacity:1;transform:translate(360px,80px)}24.167%{opacity:1;transform:translate(602px,80px)}26.667%{opacity:1;transform:translate(602px,80px)}32.5%{opacity:1;transform:translate(764px,80px)}35.833%{opacity:1;transform:translate(764px,80px)}37.5%{opacity:0;transform:translate(764px,80px)}100%{opacity:0;transform:translate(764px,80px)}}.v01-s03-path .e11{animation-name:v01-s03-path-k11}@keyframes v01-s03-path-k12{0%{opacity:0;transform:translate(0px,0px)}41.667%{opacity:0;transform:translate(0px,0px)}43.75%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e12{animation-name:v01-s03-path-k12}@keyframes v01-s03-path-k13{0%{opacity:0;transform:translate(0px,0px)}47.5%{opacity:0;transform:translate(0px,0px)}49.583%{opacity:1;transform:translate(0px,0px)}96.25%{opacity:1;transform:translate(0px,0px)}98.333%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v01-s03-path .e13{animation-name:v01-s03-path-k13}</style>
+<rect class="bg" x="0" y="0" width="960" height="410"/>
+<g class="a e1"><text class="cap" x="2" y="26">лаборатория: один пакет, четыре точки съёма</text></g>
+<path class="lm" d="M176 146H191"/><path class="lm" d="M209 146H351"/><path class="lm" d="M369 146H372"/><path class="lm" d="M588 146H593"/><path class="lm" d="M611 146H755"/><path class="lm" d="M773 146H784"/>
+<g class="a e2"><rect class="bxa" x="6" y="106" width="170" height="80" rx="7"/><text class="tk c" x="91" y="138">Клиент</text><text class="mk c" x="91" y="164">10.1.0.1</text></g>
+<g class="a e3"><rect class="bxm" x="372" y="106" width="216" height="80" rx="7"/><text class="tk c" x="480" y="138">Роутер</text><text class="mu sm c" x="480" y="164">пересылает по адресу</text></g>
+<g class="a e4"><rect class="bxa" x="784" y="106" width="170" height="80" rx="7"/><text class="tk c" x="869" y="138">Сервер</text><text class="mk c" x="869" y="164">10.2.0.2</text></g>
+<g class="a e5"><circle class="ring" cx="200" cy="146" r="9"/><text class="ml c" x="200" y="230">c0</text><text class="t sm c" x="200" y="254">выходит из клиента</text><text class="mk c" x="200" y="282">0,000 мс</text><text class="mk c" x="200" y="306">TTL 64</text></g>
+<g class="a e6"><circle class="ring" cx="360" cy="146" r="9"/><text class="ml c" x="360" y="230">r0</text><text class="t sm c" x="360" y="254">входит в роутер</text><text class="mk c" x="360" y="282">+0,002 мс</text><text class="mk c" x="360" y="306">TTL 64</text></g>
+<g class="a e7"><circle class="ring" cx="602" cy="146" r="9"/><text class="ml c" x="602" y="230">r1</text><text class="t sm c" x="602" y="254">выходит из роутера</text><text class="mk c" x="602" y="282">+0,005 мс</text><text class="mk c acc" x="602" y="306">TTL 63</text></g>
+<g class="a e8"><circle class="ring" cx="764" cy="146" r="9"/><text class="ml c" x="764" y="230">s0</text><text class="t sm c" x="764" y="254">достигает сервера</text><text class="mk c" x="764" y="282">+0,006 мс</text><text class="mk c acc" x="764" y="306">TTL 63</text></g>
+<g class="a e9"><path class="lmd" d="M360 58V132"/><text class="tk sm c" x="360" y="52">здесь мог бы стоять наблюдатель (модель)</text></g>
+<g class="a e10"><path class="la" d="M394 302H552"/><polygon class="hd-a" points="560,302 551,306.5 551,297.5"/><text class="tk acc sm c" x="477" y="294">роутер: TTL −1</text></g>
+<g class="a e11 tr"><rect class="bxbg" x="-36" y="-14" width="72" height="28" rx="6"/><rect class="bxa" x="-36" y="-14" width="72" height="28" rx="6"/><text class="tk c sm" x="0" y="5">316 байт</text></g>
+<g class="a e12"><path class="la" d="M200 330V338H764V330"/><text class="tk acc c" x="482" y="362">весь путь: 0,006 мс, это 6 микросекунд</text></g>
+<g class="a e13"><text class="t" x="2" y="394">Размер тот же, 316 байт; роутер только вычел единицу из времени жизни (TTL).</text></g>
+</svg>
