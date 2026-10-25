@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s05-csum" viewBox="0 0 960 674" width="960" height="674" role="img" aria-labelledby="v02-s05-csum-t v02-s05-csum-d">
+<title id="v02-s05-csum-t">Контрольная сумма IP вручную</title>
+<desc id="v02-s05-csum-d">Контрольная сумма заголовка IP считается вручную: десять слов по два байта (4500, 012e, fa05, 4000, 4006, 0000, 0a01, 0001, 0a02, 0002, поле суммы взято за ноль) складываются с бегущей суммой до 1d43f, лишняя единица переносится в конец (1 + d43f = d440), биты переворачиваются (d440 даёт 2bbf), и это число записано в заголовке; после роутера слово 4006 стало 3f06 (на 0100 меньше), сумма слов упала, а контрольная сумма выросла: 2bbf стала 2cbf; функция ip4_fix_checksum в nfq2/checksum.c:109 обнуляет поле и считает сумму заново по ip_hl × 4 байтам.</desc>
+<style>.v02-s05-csum{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s05-csum{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s05-csum .bg{fill:var(--bg)}
+.v02-s05-csum text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s05-csum .tk{font-weight:600;fill:var(--fg)}
+.v02-s05-csum .sm{font-size:14.5px}
+.v02-s05-csum .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s05-csum .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s05-csum .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s05-csum .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v02-s05-csum .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s05-csum .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s05-csum .mu{fill:var(--mute)}.v02-s05-csum .fg{fill:var(--fg)}.v02-s05-csum .acc{fill:var(--acc)}.v02-s05-csum .rej{fill:var(--rej)}.v02-s05-csum .ok{fill:var(--ok)}.v02-s05-csum .amb{fill:var(--amb)}
+.v02-s05-csum .c{text-anchor:middle}.v02-s05-csum .r{text-anchor:end}.v02-s05-csum .ns{stroke:none}
+.v02-s05-csum .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s05-csum .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s05-csum .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s05-csum .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s05-csum .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s05-csum .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s05-csum .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v02-s05-csum .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v02-s05-csum .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v02-s05-csum .big{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:22px;font-weight:600;fill:var(--fg)}
+.v02-s05-csum .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s05-csum .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s05-csum .fa{fill:var(--tint);stroke:none}.v02-s05-csum .fr{fill:var(--rejt);stroke:none}.v02-s05-csum .fb{fill:var(--ambt);stroke:none}.v02-s05-csum .fo{fill:var(--okt);stroke:none}
+.v02-s05-csum .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s05-csum .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s05-csum .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s05-csum .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s05-csum .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s05-csum .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v02-s05-csum .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s05-csum .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s05-csum .hf{fill:var(--fg2)}.v02-s05-csum .ha{fill:var(--acc)}.v02-s05-csum .hr{fill:var(--rej)}.v02-s05-csum .hm{fill:var(--mute)}.v02-s05-csum .hb{fill:var(--amb)}
+.v02-s05-csum .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v02-s05-csum .a{animation-duration:38s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v02-s05-csum .a{animation:none}.v02-s05-csum .tr{display:none}}
+@keyframes v02-s05-csum-k1{0.0%{opacity:0}2.632%{opacity:0}3.816%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e1{animation-name:v02-s05-csum-k1}@keyframes v02-s05-csum-k2{0.0%{opacity:0}5.0%{opacity:0}6.184%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e2{animation-name:v02-s05-csum-k2}@keyframes v02-s05-csum-k3{0.0%{opacity:0}7.368%{opacity:0}8.553%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e3{animation-name:v02-s05-csum-k3}@keyframes v02-s05-csum-k4{0.0%{opacity:0}9.737%{opacity:0}10.921%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e4{animation-name:v02-s05-csum-k4}@keyframes v02-s05-csum-k5{0.0%{opacity:0}12.105%{opacity:0}13.289%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e5{animation-name:v02-s05-csum-k5}@keyframes v02-s05-csum-k6{0.0%{opacity:0}14.474%{opacity:0}15.658%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e6{animation-name:v02-s05-csum-k6}@keyframes v02-s05-csum-k7{0.0%{opacity:0}16.842%{opacity:0}18.026%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e7{animation-name:v02-s05-csum-k7}@keyframes v02-s05-csum-k8{0.0%{opacity:0}19.211%{opacity:0}20.395%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e8{animation-name:v02-s05-csum-k8}@keyframes v02-s05-csum-k9{0.0%{opacity:0}21.579%{opacity:0}22.763%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e9{animation-name:v02-s05-csum-k9}@keyframes v02-s05-csum-k10{0.0%{opacity:0}23.947%{opacity:0}25.132%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e10{animation-name:v02-s05-csum-k10}@keyframes v02-s05-csum-k11{0.0%{opacity:0}30.263%{opacity:0}31.447%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e11{animation-name:v02-s05-csum-k11}@keyframes v02-s05-csum-k12{0.0%{opacity:0}38.158%{opacity:0}39.342%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e12{animation-name:v02-s05-csum-k12}@keyframes v02-s05-csum-k13{0.0%{opacity:0}46.053%{opacity:0}47.237%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e13{animation-name:v02-s05-csum-k13}@keyframes v02-s05-csum-k14{0.0%{opacity:0}51.316%{opacity:0}52.5%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e14{animation-name:v02-s05-csum-k14}@keyframes v02-s05-csum-k15{0.0%{opacity:0}56.579%{opacity:0}57.763%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e15{animation-name:v02-s05-csum-k15}@keyframes v02-s05-csum-k16{0.0%{opacity:0}73.684%{opacity:0}74.868%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e16{animation-name:v02-s05-csum-k16}@keyframes v02-s05-csum-k17{0.0%{opacity:0}80.263%{opacity:0}81.447%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e17{animation-name:v02-s05-csum-k17}@keyframes v02-s05-csum-k18{0.0%{opacity:0}84.211%{opacity:0}85.395%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e18{animation-name:v02-s05-csum-k18}@keyframes v02-s05-csum-k19{0.0%{opacity:0}89.474%{opacity:0}90.658%{opacity:1}95.526%{opacity:1}97.105%{opacity:0}100%{opacity:0}}.v02-s05-csum .e19{animation-name:v02-s05-csum-k19}</style>
+<rect class="bg" x="0" y="0" width="960" height="674"/>
+<g><text class="cap" x="40" y="26">Контрольная сумма заголовка IP: считаем вручную, слова по 2 байта</text></g>
+<g><text class="cap" x="48" y="56">слово</text><text class="cap r" x="290" y="56">сумма растёт</text><text class="cap" x="312" y="56">что это</text></g>
+<g class="a e1"><text class="mk" x="48" y="90">4500</text><text class="m r" x="290" y="90">= 4500</text><text class="sm mu" x="312" y="90">версия, длина, приоритет</text></g>
+<g class="a e2"><text class="mk" x="48" y="116">+ 012e</text><text class="m r" x="290" y="116">= 462e</text><text class="sm mu" x="312" y="116">длина пакета: 302</text></g>
+<g class="a e3"><text class="mk" x="48" y="142">+ fa05</text><text class="m r" x="290" y="142">= 14033</text><text class="sm mu" x="312" y="142">идентификатор</text></g>
+<g class="a e4"><text class="mk" x="48" y="168">+ 4000</text><text class="m r" x="290" y="168">= 18033</text><text class="sm mu" x="312" y="168">флаги: DF</text></g>
+<g class="a e5"><rect class="bxb" x="40" y="176" width="520" height="24" rx="0"/><text class="mk" x="48" y="194">+ 4006</text><text class="m r" x="290" y="194">= 1c039</text><text class="sm mu" x="312" y="194">TTL 40 и протокол 06</text></g>
+<g class="a e6"><text class="mk" x="48" y="220">+ 0000</text><text class="m r" x="290" y="220">= 1c039</text><text class="sm mu" x="312" y="220">сумма (на время счёта 0000)</text></g>
+<g class="a e7"><text class="mk" x="48" y="246">+ 0a01</text><text class="m r" x="290" y="246">= 1ca3a</text><text class="sm mu" x="312" y="246">отправитель, начало</text></g>
+<g class="a e8"><text class="mk" x="48" y="272">+ 0001</text><text class="m r" x="290" y="272">= 1ca3b</text><text class="sm mu" x="312" y="272">отправитель, конец</text></g>
+<g class="a e9"><text class="mk" x="48" y="298">+ 0a02</text><text class="m r" x="290" y="298">= 1d43d</text><text class="sm mu" x="312" y="298">получатель, начало</text></g>
+<g class="a e10"><text class="mk" x="48" y="324">+ 0002</text><text class="mk r" x="290" y="324">= 1d43f</text><text class="sm mu" x="312" y="324">получатель, конец</text></g>
+<g class="a e11"><rect class="bx" x="600" y="56" width="320" height="78" rx="8"/><text class="tk sm" x="614" y="80">1. Сумма десяти слов</text><text class="big" x="614" y="106">1d43f</text><text class="sm mu" x="614" y="126">это 5 цифр: лишняя 1 впереди</text></g>
+<g class="a e12"><rect class="bx" x="600" y="146" width="320" height="74" rx="8"/><text class="tk sm" x="614" y="170">2. Перенос в конец</text><text class="big" x="614" y="202">1 + d43f = d440</text></g>
+<g class="a e13"><rect class="bxa" x="600" y="232" width="320" height="130" rx="8"/><text class="tk sm" x="614" y="256">3. Переворот каждого бита</text><text class="m" x="614" y="282">d440 = 1101 0100 0100 0000</text></g>
+<g class="a e14"><text class="m" x="614" y="304">2bbf = 0010 1011 1011 1111</text></g>
+<g class="a e15"><text class="tk sm ok" x="614" y="340">в заголовке записано 2b bf ✓</text></g>
+<g class="a e16"><rect class="bx" x="40" y="384" width="880" height="128" rx="8"/><text class="tk sm" x="56" y="410">После роутера: TTL стал 63, слово 4006 стало 3f06, оно меньше на 0100 = 256</text><text class="sm" x="56" y="434">Сумма слов стала меньше на столько же, а после переворота битов контрольная сумма, наоборот, выросла:</text></g>
+<g class="a e17"><text class="big" x="56" y="472">2bbf → 2cbf</text><text class="sm" x="300" y="471">ровно это число в записи на выходе роутера и на сервере</text></g>
+<g class="a e18"><text class="sm mu" x="56" y="498">Контрольная сумма TCP не меняется (6970): она не охватывает время жизни.</text></g>
+<g class="a e19"><text class="tk sm" x="40" y="542">Так считает zapret2: nfq2/checksum.c</text><rect class="bx" x="40" y="552" width="880" height="96" rx="8"/><text class="ix" x="56" y="578">109</text><text class="mk" x="100" y="578">void ip4_fix_checksum(struct ip *ip)</text><text class="ix" x="56" y="602">111</text><text class="m" x="124" y="602">ip-&gt;ip_sum = 0;</text><text class="sm mu" x="560" y="602">поле суммы на время счёта нули</text><text class="ix" x="56" y="626">112</text><text class="m" x="124" y="626">ip-&gt;ip_sum = ip4_compute_csum(ip, ip-&gt;ip_hl &lt;&lt; 2);</text></g>
+</svg>

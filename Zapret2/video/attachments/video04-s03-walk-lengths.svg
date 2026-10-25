@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v04-s03-walk-lengths" viewBox="0 0 960 512" width="960" height="512" role="img" aria-labelledby="v04-s03-walk-lengths-t v04-s03-walk-lengths-d">
+<title id="v04-s03-walk-lengths-t">Ходьба по длинам до extlen</title>
+<desc id="v04-s03-walk-lengths-d">Как программа идёт по приветствию в 250 байт: заголовки 5 + 4 + 2 + 32 = 43 байта; на байте 43 длина идентификатора сессии 32 даёт прыжок 43 + 1 + 32 = 76; на байтах 76–77 длина наборов шифров 6 даёт 76 + 2 + 6 = 84; на байте 84 длина способов сжатия 1 даёт 84 + 1 + 1 = 86; на байтах 86–87 длина расширений 162, это метка extlen = 86. Сверху выдуманная игрушка: лента, где перед каждым блоком записано, сколько в нём байт.</desc>
+<style>
+.v04-s03-walk-lengths{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v04-s03-walk-lengths{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v04-s03-walk-lengths .bg{fill:var(--bg)}
+.v04-s03-walk-lengths text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v04-s03-walk-lengths .tk{font-weight:600;fill:var(--fg)}
+.v04-s03-walk-lengths .sm{font-size:14.5px}
+.v04-s03-walk-lengths .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v04-s03-walk-lengths .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v04-s03-walk-lengths .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v04-s03-walk-lengths .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg)}
+.v04-s03-walk-lengths .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v04-s03-walk-lengths .mu{fill:var(--mute)}.v04-s03-walk-lengths .fg{fill:var(--fg)}.v04-s03-walk-lengths .acc{fill:var(--acc)}.v04-s03-walk-lengths .rej{fill:var(--rej)}.v04-s03-walk-lengths .ok{fill:var(--ok)}.v04-s03-walk-lengths .amb{fill:var(--amb)}
+.v04-s03-walk-lengths .c{text-anchor:middle}.v04-s03-walk-lengths .r{text-anchor:end}
+.v04-s03-walk-lengths .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v04-s03-walk-lengths .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v04-s03-walk-lengths .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v04-s03-walk-lengths .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v04-s03-walk-lengths .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v04-s03-walk-lengths .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v04-s03-walk-lengths .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v04-s03-walk-lengths .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v04-s03-walk-lengths .bxda{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v04-s03-walk-lengths .pill{fill:var(--bg);stroke:none}
+.v04-s03-walk-lengths .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v04-s03-walk-lengths .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v04-s03-walk-lengths .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s03-walk-lengths .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v04-s03-walk-lengths .lad{fill:none;stroke:var(--acc);stroke-width:2;stroke-dasharray:5 4}
+.v04-s03-walk-lengths .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v04-s03-walk-lengths .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v04-s03-walk-lengths .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v04-s03-walk-lengths .hf{fill:var(--fg2)}.v04-s03-walk-lengths .ha{fill:var(--acc)}.v04-s03-walk-lengths .hr{fill:var(--rej)}.v04-s03-walk-lengths .hm{fill:var(--mute)}
+.v04-s03-walk-lengths .a{animation-duration:36s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v04-s03-walk-lengths .a{animation:none}.v04-s03-walk-lengths .tr{display:none}}
+@keyframes v04-s03-walk-lengths-k1{0.0%{opacity:0}0.833%{opacity:0}2.083%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e1{animation-name:v04-s03-walk-lengths-k1}
+@keyframes v04-s03-walk-lengths-k2{0.0%{opacity:0}0.833%{opacity:0}2.083%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e2{animation-name:v04-s03-walk-lengths-k2}
+@keyframes v04-s03-walk-lengths-k3{0.0%{opacity:0}2.222%{opacity:0}3.472%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e3{animation-name:v04-s03-walk-lengths-k3}
+@keyframes v04-s03-walk-lengths-k4{0.0%{opacity:0}6.667%{opacity:0}7.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e4{animation-name:v04-s03-walk-lengths-k4}
+@keyframes v04-s03-walk-lengths-k5{0.0%{opacity:0}12.5%{opacity:0}13.75%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e5{animation-name:v04-s03-walk-lengths-k5}
+@keyframes v04-s03-walk-lengths-k6{0.0%{opacity:0}12.5%{opacity:0}13.75%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e6{animation-name:v04-s03-walk-lengths-k6}
+@keyframes v04-s03-walk-lengths-k7{0.0%{opacity:0}16.667%{opacity:0}17.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e7{animation-name:v04-s03-walk-lengths-k7}
+@keyframes v04-s03-walk-lengths-k8{0.0%{opacity:0}20.833%{opacity:0}22.083%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e8{animation-name:v04-s03-walk-lengths-k8}
+@keyframes v04-s03-walk-lengths-k9{0.0%{opacity:0}30.556%{opacity:0}31.806%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e9{animation-name:v04-s03-walk-lengths-k9}
+@keyframes v04-s03-walk-lengths-k10{0.0%{opacity:0}40.278%{opacity:0}41.528%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e10{animation-name:v04-s03-walk-lengths-k10}
+@keyframes v04-s03-walk-lengths-k11{0.0%{opacity:0}50.0%{opacity:0}51.25%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e11{animation-name:v04-s03-walk-lengths-k11}
+@keyframes v04-s03-walk-lengths-k12{0.0%{opacity:0}59.722%{opacity:0}60.972%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e12{animation-name:v04-s03-walk-lengths-k12}
+@keyframes v04-s03-walk-lengths-k13{0.0%{opacity:0}20.833%{opacity:0}21.528%{opacity:1}30.0%{opacity:1}30.694%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e13{animation-name:v04-s03-walk-lengths-k13}
+@keyframes v04-s03-walk-lengths-k14{0.0%{opacity:0}30.556%{opacity:0}31.806%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e14{animation-name:v04-s03-walk-lengths-k14}
+@keyframes v04-s03-walk-lengths-k15{0.0%{opacity:0}30.556%{opacity:0}31.25%{opacity:1}39.722%{opacity:1}40.417%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e15{animation-name:v04-s03-walk-lengths-k15}
+@keyframes v04-s03-walk-lengths-k16{0.0%{opacity:0}40.278%{opacity:0}41.528%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e16{animation-name:v04-s03-walk-lengths-k16}
+@keyframes v04-s03-walk-lengths-k17{0.0%{opacity:0}40.278%{opacity:0}40.972%{opacity:1}49.444%{opacity:1}50.139%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e17{animation-name:v04-s03-walk-lengths-k17}
+@keyframes v04-s03-walk-lengths-k18{0.0%{opacity:0}50.0%{opacity:0}51.25%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e18{animation-name:v04-s03-walk-lengths-k18}
+@keyframes v04-s03-walk-lengths-k19{0.0%{opacity:0}50.0%{opacity:0}50.694%{opacity:1}59.167%{opacity:1}59.861%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e19{animation-name:v04-s03-walk-lengths-k19}
+@keyframes v04-s03-walk-lengths-k20{0.0%{opacity:0}59.722%{opacity:0}60.972%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e20{animation-name:v04-s03-walk-lengths-k20}
+@keyframes v04-s03-walk-lengths-k21{0.0%{opacity:0}59.722%{opacity:0}60.417%{opacity:1}77.778%{opacity:1}78.472%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e21{animation-name:v04-s03-walk-lengths-k21}
+@keyframes v04-s03-walk-lengths-k22{0.0%{opacity:0}69.444%{opacity:0}70.694%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v04-s03-walk-lengths .e22{animation-name:v04-s03-walk-lengths-k22}
+@keyframes v04-s03-walk-lengths-k23{0.0%{opacity:0;transform:translate(36px,206px)}20.833%{opacity:0;transform:translate(36px,206px)}21.389%{opacity:1;transform:translate(36px,206px)}29.167%{opacity:1;transform:translate(36px,206px)}31.389%{opacity:1;transform:translate(380px,206px)}38.889%{opacity:1;transform:translate(380px,206px)}41.111%{opacity:1;transform:translate(644px,206px)}48.611%{opacity:1;transform:translate(644px,206px)}50.833%{opacity:1;transform:translate(708px,206px)}58.333%{opacity:1;transform:translate(708px,206px)}60.556%{opacity:1;transform:translate(728px,206px)}75.0%{opacity:1;transform:translate(728px,206px)}75.833%{opacity:0;transform:translate(728px,206px)}100%{opacity:0;transform:translate(728px,206px)}}.v04-s03-walk-lengths .e23{animation-name:v04-s03-walk-lengths-k23}</style>
+<rect class="bg" x="0" y="0" width="960" height="512"/>
+<g class="a e1"><text class="cap" x="30" y="26">ходьба по длинам</text></g>
+<g class="a e2"><rect class="bxd" x="670" y="10" width="260" height="26" rx="6"/><text class="sm c" x="800" y="28">игрушка: выдуманный пример</text></g>
+<g class="a e3"><rect class="bxa" x="30" y="62" width="26" height="26" rx="4"/><text class="mk c" x="43" y="81">4</text><rect class="bx" x="58" y="62" width="26" height="26" rx="4"/><rect class="bx" x="86" y="62" width="26" height="26" rx="4"/><rect class="bx" x="114" y="62" width="26" height="26" rx="4"/><rect class="bx" x="142" y="62" width="26" height="26" rx="4"/><rect class="bxa" x="170" y="62" width="26" height="26" rx="4"/><text class="mk c" x="183" y="81">5</text><rect class="bx" x="198" y="62" width="26" height="26" rx="4"/><rect class="bx" x="226" y="62" width="26" height="26" rx="4"/><rect class="bx" x="254" y="62" width="26" height="26" rx="4"/><rect class="bx" x="282" y="62" width="26" height="26" rx="4"/><rect class="bx" x="310" y="62" width="26" height="26" rx="4"/></g>
+<g class="a e4"><path class="la" d="M43 60 Q106.5 32 170 60"/><polygon class="ha" points="170,60 161.9,54.0 169.9,49.9"/><text class="sm" x="340" y="74">читаем число (4), прыгаем через столько байт, читаем следующее (5)</text></g>
+<g class="a e5"><text class="cap" x="30" y="124">приветствие TLS: байты 0…111, счёт с нуля, 8 пикселей на байт</text></g>
+<g class="a e6"><rect class="bx" x="32" y="208" width="344" height="36" rx="3"/><text class="sm c" x="204" y="231">заголовки · 43 байта</text><rect class="bxa" x="376" y="208" width="8" height="36" rx="3"/><rect class="bxb" x="384" y="208" width="256" height="36" rx="3"/><text class="sm c" x="512" y="231">идентификатор сессии · 32</text><rect class="bxa" x="640" y="208" width="16" height="36" rx="3"/><rect class="bxb" x="656" y="208" width="48" height="36" rx="3"/><rect class="bxa" x="704" y="208" width="8" height="36" rx="3"/><rect class="bxb" x="712" y="208" width="8" height="36" rx="3"/><rect class="bxa" x="720" y="208" width="16" height="36" rx="3"/><rect class="bx" x="736" y="208" width="192" height="36" rx="3"/><text class="sm c" x="832" y="231">расширения 88…249</text></g>
+<g class="a e7"><rect class="bxa" x="32" y="283" width="18" height="18" rx="3"/><text class="sm" x="58" y="297">поле длины: читаем</text><rect class="bxb" x="242" y="283" width="18" height="18" rx="3"/><text class="sm" x="268" y="297">перепрыгиваем</text><rect class="bx" x="412" y="283" width="18" height="18" rx="3"/><text class="sm" x="438" y="297">остальные байты</text><text class="sm mu r" x="930" y="297">в байтах числа шестнадцатеричные</text></g>
+<g class="a e8"><rect class="bx" x="30" y="321" width="26" height="26" rx="13"/><text class="sm tk c" x="43" y="340">1</text><text class="sm" x="68" y="340">на байтах 0–42 лежат заголовки: 5 + 4 + 2 + 32 = 43</text></g>
+<g class="a e9"><rect class="bx" x="30" y="351" width="26" height="26" rx="13"/><text class="sm tk c" x="43" y="370">2</text><text class="sm" x="68" y="370">на байте 43 длина идентификатора сессии: байт 20 = 32, прыжок 43 + 1 + 32 = 76</text></g>
+<g class="a e10"><rect class="bx" x="30" y="381" width="26" height="26" rx="13"/><text class="sm tk c" x="43" y="400">3</text><text class="sm" x="68" y="400">на байтах 76–77 длина наборов шифров: 00 06 = 6, прыжок 76 + 2 + 6 = 84</text></g>
+<g class="a e11"><rect class="bx" x="30" y="411" width="26" height="26" rx="13"/><text class="sm tk c" x="43" y="430">4</text><text class="sm" x="68" y="430">на байте 84 длина способов сжатия: 01 = 1, прыжок 84 + 1 + 1 = 86</text></g>
+<g class="a e12"><rect class="bxa" x="30" y="441" width="26" height="26" rx="13"/><text class="sm tk c" x="43" y="460">5</text><text class="sm tk" x="68" y="460">на байтах 86–87 длина всех расширений: 00 a2 = 162, это метка extlen = 86</text></g>
+<g class="a e13 tr"><rect class="bxn" x="30" y="205" width="348" height="42" rx="4"/></g>
+<g class="a e14"><path class="lm" d="M376 244L376 252"/><text class="sm tk c" x="376" y="268">43</text><path class="la" d="M380 202 Q510.0 150 640 202"/><polygon class="ha" points="640,202 630.0,202.8 633.3,194.5"/><text class="sm tk acc c" x="510" y="160">+1+32</text></g>
+<g class="a e15 tr"><rect class="bxn" x="374" y="205" width="12" height="42" rx="3"/></g>
+<g class="a e16"><path class="lm" d="M640 244L640 252"/><text class="sm tk c" x="640" y="268">76</text><path class="la" d="M648 202 Q676.0 168 704 202"/><polygon class="ha" points="704,202 694.8,197.9 701.8,192.2"/><text class="sm tk acc c" x="676" y="168">+2+6</text></g>
+<g class="a e17 tr"><rect class="bxn" x="638" y="205" width="20" height="42" rx="3"/></g>
+<g class="a e18"><path class="lm" d="M704 244L704 252"/><text class="sm tk r" x="706" y="268">84</text><path class="la" d="M708 202 Q714.0 190 720 202"/><polygon class="ha" points="720,202 712.0,196.0 720.0,191.9"/><text class="sm tk acc" x="742" y="194">+1+1</text></g>
+<g class="a e19 tr"><rect class="bxn" x="702" y="205" width="12" height="42" rx="3"/></g>
+<g class="a e20"><path class="lm" d="M720 244L720 252"/><text class="sm tk start" x="722" y="268">86</text><path class="lf" d="M728 206L728 148"/><rect class="bxa" x="728" y="126" width="126" height="24" rx="5"/><text class="sm tk c" x="791" y="143">extlen = 86</text></g>
+<g class="a e21 tr"><rect class="bxn" x="718" y="205" width="20" height="42" rx="3"/></g>
+<g class="a e22"><text class="sm tk" x="30" y="500">По коду перепрыгиваются три части: идентификатор сессии, наборы шифров и способы сжатия.</text></g>
+<g class="a e23 tr"><polygon class="hr" points="0,0 -6,-11 6,-11"/></g>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s17-after-handshake" viewBox="0 0 960 476" width="960" height="476" role="img" aria-labelledby="v02-s17-after-handshake-t v02-s17-after-handshake-d">
+<title id="v02-s17-after-handshake-t">Что зашифровано после рукопожатия</title>
+<desc id="v02-s17-after-handshake-d">Что видно наблюдателю на пути: начало соединения (адреса, порты, размеры, время и открытое первое сообщение с названием сайта) и что скрыто после рукопожатия: данные страницы, адрес внутри сайта и запросы зашифрованы ключом, который знают только клиент и сервер; поэтому всё, что разбирает серия, касается самого начала соединения.</desc>
+<style>.v02-s17-after-handshake{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s17-after-handshake{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s17-after-handshake .bg{fill:var(--bg)}
+.v02-s17-after-handshake text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s17-after-handshake .tk{font-weight:600;fill:var(--fg)}
+.v02-s17-after-handshake .sm{font-size:14.5px}
+.v02-s17-after-handshake .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s17-after-handshake .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s17-after-handshake .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s17-after-handshake .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s17-after-handshake .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s17-after-handshake .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s17-after-handshake .mu{fill:var(--mute)}.v02-s17-after-handshake .fg{fill:var(--fg)}.v02-s17-after-handshake .acc{fill:var(--acc)}.v02-s17-after-handshake .rej{fill:var(--rej)}.v02-s17-after-handshake .ok{fill:var(--ok)}.v02-s17-after-handshake .amb{fill:var(--amb)}
+.v02-s17-after-handshake .hb{fill:var(--acc);font-weight:700}.v02-s17-after-handshake .hbr{fill:var(--rej);font-weight:700}.v02-s17-after-handshake .hbo{fill:var(--ok);font-weight:700}.v02-s17-after-handshake .hbb{fill:var(--amb);font-weight:700}
+.v02-s17-after-handshake .c{text-anchor:middle}.v02-s17-after-handshake .r{text-anchor:end}
+.v02-s17-after-handshake .nos{stroke:none}
+.v02-s17-after-handshake .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s17-after-handshake .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s17-after-handshake .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s17-after-handshake .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s17-after-handshake .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s17-after-handshake .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s17-after-handshake .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s17-after-handshake .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s17-after-handshake .bxdr{fill:none;stroke:var(--rej);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s17-after-handshake .fa{fill:var(--acc);stroke:none}
+.v02-s17-after-handshake .fo{fill:var(--ok);stroke:none}
+.v02-s17-after-handshake .fr{fill:var(--rej);stroke:none}
+.v02-s17-after-handshake .fb{fill:var(--amb);stroke:none}
+.v02-s17-after-handshake .fm{fill:var(--line);stroke:none}
+.v02-s17-after-handshake .fmu{fill:var(--mute);stroke:none}
+.v02-s17-after-handshake .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s17-after-handshake .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s17-after-handshake .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s17-after-handshake .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s17-after-handshake .lad{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s17-after-handshake .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s17-after-handshake .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s17-after-handshake .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s17-after-handshake .hf{fill:var(--fg2)}.v02-s17-after-handshake .ha{fill:var(--acc)}.v02-s17-after-handshake .hr{fill:var(--rej)}.v02-s17-after-handshake .hm{fill:var(--mute)}.v02-s17-after-handshake .ho{fill:var(--ok)}.v02-s17-after-handshake .hbm{fill:var(--amb)}
+.v02-s17-after-handshake .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s17-after-handshake .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v02-s17-after-handshake .gz{transform-box:fill-box;transform-origin:0 50%}
+.v02-s17-after-handshake .a{animation-duration:26s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v02-s17-after-handshake .a{animation:none}.v02-s17-after-handshake .tr{display:none}}
+@keyframes v02-s17-after-handshake-k1{0%{opacity:0}1.154%{opacity:0}2.885%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e1{animation-name:v02-s17-after-handshake-k1}@keyframes v02-s17-after-handshake-k2{0%{opacity:0}3.462%{opacity:0}5.192%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e2{animation-name:v02-s17-after-handshake-k2}@keyframes v02-s17-after-handshake-k3{0%{opacity:0}5.385%{opacity:0}7.115%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e3{animation-name:v02-s17-after-handshake-k3}@keyframes v02-s17-after-handshake-k4{0%{opacity:0}7.308%{opacity:0}9.038%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e4{animation-name:v02-s17-after-handshake-k4}@keyframes v02-s17-after-handshake-k5{0%{opacity:0}9.231%{opacity:0}10.962%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e5{animation-name:v02-s17-after-handshake-k5}@keyframes v02-s17-after-handshake-k6{0%{opacity:0}11.154%{opacity:0}12.885%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e6{animation-name:v02-s17-after-handshake-k6}@keyframes v02-s17-after-handshake-k7{0%{opacity:0}13.077%{opacity:0}14.808%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e7{animation-name:v02-s17-after-handshake-k7}@keyframes v02-s17-after-handshake-k8{0%{opacity:0}15%{opacity:0}16.731%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e8{animation-name:v02-s17-after-handshake-k8}@keyframes v02-s17-after-handshake-k9{0%{opacity:0}16.923%{opacity:0}18.654%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e9{animation-name:v02-s17-after-handshake-k9}@keyframes v02-s17-after-handshake-k10{0%{opacity:0}18.846%{opacity:0}20.577%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e10{animation-name:v02-s17-after-handshake-k10}@keyframes v02-s17-after-handshake-k11{0%{opacity:0}23.846%{opacity:0}25.577%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e11{animation-name:v02-s17-after-handshake-k11}@keyframes v02-s17-after-handshake-k12{0%{opacity:0}28.462%{opacity:0}30.192%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e12{animation-name:v02-s17-after-handshake-k12}@keyframes v02-s17-after-handshake-k13{0%{opacity:0}36.923%{opacity:0}38.654%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e13{animation-name:v02-s17-after-handshake-k13}@keyframes v02-s17-after-handshake-k14{0%{opacity:0}53.846%{opacity:0}55.577%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e14{animation-name:v02-s17-after-handshake-k14}@keyframes v02-s17-after-handshake-k15{0%{opacity:0}69.231%{opacity:0}70.962%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v02-s17-after-handshake .e15{animation-name:v02-s17-after-handshake-k15}</style>
+<rect class="bg" x="0" y="0" width="960" height="476"/>
+<g class="a e1"><text class="cap" x="10" y="22">один разговор клиента и сервера, пакеты по порядку</text></g>
+<g class="a e2"><rect class="bx" x="10" y="40" width="98" height="52" rx="7"/><text class="tk c sm" x="59" y="71">SYN</text></g>
+<g class="a e3"><rect class="bx" x="114" y="40" width="98" height="52" rx="7"/><text class="tk c sm" x="163" y="71">SYN+ACK</text></g>
+<g class="a e4"><rect class="bx" x="218" y="40" width="98" height="52" rx="7"/><text class="tk c sm" x="267" y="71">ACK</text></g>
+<g class="a e5"><rect class="bxa" x="322" y="40" width="98" height="52" rx="7"/><text class="tk c sm" x="371" y="71">ClientHello</text></g>
+<g class="a e6"><rect class="bxd" x="426" y="40" width="98" height="52" rx="7"/><text class="tk c" x="475" y="73">…</text></g>
+<g class="a e7"><rect class="bxs" x="530" y="40" width="98" height="52" rx="7"/><text class="sm mu c" x="589" y="76">данные</text><path class="lm" d="M542 60V57a5 5 0 0 1 10 0V60"/><rect class="bxs" x="538" y="60" width="18" height="13" rx="2"/></g>
+<g class="a e8"><rect class="bxs" x="634" y="40" width="98" height="52" rx="7"/><text class="sm mu c" x="693" y="76">данные</text><path class="lm" d="M646 60V57a5 5 0 0 1 10 0V60"/><rect class="bxs" x="642" y="60" width="18" height="13" rx="2"/></g>
+<g class="a e9"><rect class="bxs" x="738" y="40" width="98" height="52" rx="7"/><text class="sm mu c" x="797" y="76">данные</text><path class="lm" d="M750 60V57a5 5 0 0 1 10 0V60"/><rect class="bxs" x="746" y="60" width="18" height="13" rx="2"/></g>
+<g class="a e10"><rect class="bxs" x="842" y="40" width="98" height="52" rx="7"/><text class="sm mu c" x="901" y="76">данные</text><path class="lm" d="M854 60V57a5 5 0 0 1 10 0V60"/><rect class="bxs" x="850" y="60" width="18" height="13" rx="2"/></g>
+<g class="a e11"><path class="la" d="M10 106L420 106"/><path class="la" d="M10 100L10 106"/><path class="la" d="M420 100L420 106"/><text class="tk acc" x="10" y="128">начало: открыто</text></g>
+<g class="a e12"><path class="lm" d="M530 106L940 106"/><path class="lm" d="M530 100L530 106"/><path class="lm" d="M940 100L940 106"/><text class="tk" x="530" y="128">после рукопожатия: зашифровано</text></g>
+<g class="a e13"><rect class="bxa" x="10" y="160" width="462" height="200" rx="8"/><text class="tk" x="26" y="188">Наблюдатель на пути, как правило, видит</text><rect class="fa" x="26" y="208" width="8" height="8" rx="2"/><text x="44" y="218">адреса IP</text><rect class="fa" x="26" y="236" width="8" height="8" rx="2"/><text x="44" y="246">порты</text><rect class="fa" x="26" y="264" width="8" height="8" rx="2"/><text x="44" y="274">размеры пакетов</text><rect class="fa" x="26" y="292" width="8" height="8" rx="2"/><text x="44" y="302">время</text><rect class="fa" x="26" y="320" width="8" height="8" rx="2"/><text x="44" y="330">название сайта: из ClientHello или строки Host</text></g>
+<g class="a e14"><rect class="bxs" x="488" y="160" width="462" height="200" rx="8"/><text class="tk" x="504" y="188">Не видно: зашифровано ключом</text><text class="sm mu" x="504" y="208">его знают только клиент и сервер</text><rect class="fmu" x="504" y="232" width="8" height="8" rx="2"/><text x="522" y="242">данные страницы</text><rect class="fmu" x="504" y="262" width="8" height="8" rx="2"/><text x="522" y="272">адрес внутри сайта</text><rect class="fmu" x="504" y="292" width="8" height="8" rx="2"/><text x="522" y="302">ваши запросы</text><path class="lm" d="M908 182V179a5 5 0 0 1 10 0V182"/><rect class="bxs" x="904" y="182" width="18" height="13" rx="2"/></g>
+<g class="a e15"><rect class="bxb" x="10" y="384" width="940" height="66" rx="8"/><text class="tk" x="26" y="410">Поэтому всё, что мы разбираем в серии, касается самого начала соединения.</text><text class="sm" x="26" y="434">Открытыми остаются адреса, порты, размеры и время; название сайта видно в самом начале.</text></g>
+</svg>

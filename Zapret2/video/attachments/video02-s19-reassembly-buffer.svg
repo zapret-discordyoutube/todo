@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s19-reassembly" viewBox="0 0 960 512" width="960" height="512" role="img" aria-labelledby="v02-s19-reassembly-t v02-s19-reassembly-d">
+<title id="v02-s19-reassembly-t">Наблюдатель, собирающий поток</title>
+<desc id="v02-s19-reassembly-d">Наблюдатель, который собирает поток: для этого нужно помнить каждое соединение, начальные номера обеих сторон, класть пакеты в буфер по номерам, ждать недостающие куски и следить за повторами, причём для всех соединений сразу; в нашем примере пакет 1 (104 байта) ложится на места 1..104, пакет 2 (146 байт) на 105..250, и имя www.example.com лежит на местах 98..112 целиком, так что такому наблюдателю разрезание не мешает, а читающему пакеты по одному мешает; что делает настоящее оборудование, неизвестно.</desc>
+<style>.v02-s19-reassembly{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s19-reassembly{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s19-reassembly .bg{fill:var(--bg)}
+.v02-s19-reassembly text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s19-reassembly .tk{font-weight:600;fill:var(--fg)}
+.v02-s19-reassembly .sm{font-size:14.5px}
+.v02-s19-reassembly .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s19-reassembly .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s19-reassembly .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s19-reassembly .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s19-reassembly .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s19-reassembly .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s19-reassembly .mu{fill:var(--mute)}.v02-s19-reassembly .fg{fill:var(--fg)}.v02-s19-reassembly .acc{fill:var(--acc)}.v02-s19-reassembly .rej{fill:var(--rej)}.v02-s19-reassembly .ok{fill:var(--ok)}.v02-s19-reassembly .amb{fill:var(--amb)}
+.v02-s19-reassembly .hb{fill:var(--acc);font-weight:700}.v02-s19-reassembly .hbr{fill:var(--rej);font-weight:700}.v02-s19-reassembly .hbo{fill:var(--ok);font-weight:700}.v02-s19-reassembly .hbb{fill:var(--amb);font-weight:700}
+.v02-s19-reassembly .c{text-anchor:middle}.v02-s19-reassembly .r{text-anchor:end}
+.v02-s19-reassembly .nos{stroke:none}
+.v02-s19-reassembly .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s19-reassembly .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s19-reassembly .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s19-reassembly .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s19-reassembly .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s19-reassembly .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s19-reassembly .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s19-reassembly .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s19-reassembly .bxdr{fill:none;stroke:var(--rej);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s19-reassembly .fa{fill:var(--acc);stroke:none}
+.v02-s19-reassembly .fo{fill:var(--ok);stroke:none}
+.v02-s19-reassembly .fr{fill:var(--rej);stroke:none}
+.v02-s19-reassembly .fb{fill:var(--amb);stroke:none}
+.v02-s19-reassembly .fm{fill:var(--line);stroke:none}
+.v02-s19-reassembly .fmu{fill:var(--mute);stroke:none}
+.v02-s19-reassembly .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s19-reassembly .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s19-reassembly .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s19-reassembly .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s19-reassembly .lad{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s19-reassembly .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s19-reassembly .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s19-reassembly .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s19-reassembly .hf{fill:var(--fg2)}.v02-s19-reassembly .ha{fill:var(--acc)}.v02-s19-reassembly .hr{fill:var(--rej)}.v02-s19-reassembly .hm{fill:var(--mute)}.v02-s19-reassembly .ho{fill:var(--ok)}.v02-s19-reassembly .hbm{fill:var(--amb)}
+.v02-s19-reassembly .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s19-reassembly .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v02-s19-reassembly .gz{transform-box:fill-box;transform-origin:0 50%}
+.v02-s19-reassembly .a{animation-duration:36s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v02-s19-reassembly .a{animation:none}.v02-s19-reassembly .tr{display:none}}
+@keyframes v02-s19-reassembly-k1{0%{opacity:0}0.833%{opacity:0}2.083%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e1{animation-name:v02-s19-reassembly-k1}@keyframes v02-s19-reassembly-k2{0%{opacity:0}3.333%{opacity:0}4.583%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e2{animation-name:v02-s19-reassembly-k2}@keyframes v02-s19-reassembly-k3{0%{opacity:0}7.778%{opacity:0}9.028%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e3{animation-name:v02-s19-reassembly-k3}@keyframes v02-s19-reassembly-k4{0%{opacity:0}12.222%{opacity:0}13.472%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e4{animation-name:v02-s19-reassembly-k4}@keyframes v02-s19-reassembly-k5{0%{opacity:0}16.667%{opacity:0}17.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e5{animation-name:v02-s19-reassembly-k5}@keyframes v02-s19-reassembly-k6{0%{opacity:0}21.111%{opacity:0}22.361%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e6{animation-name:v02-s19-reassembly-k6}@keyframes v02-s19-reassembly-k7{0%{opacity:0}25.556%{opacity:0}26.806%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e7{animation-name:v02-s19-reassembly-k7}@keyframes v02-s19-reassembly-k8{0%{opacity:0}31.667%{opacity:0}32.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e8{animation-name:v02-s19-reassembly-k8}@keyframes v02-s19-reassembly-k9{0%{opacity:0}36.111%{opacity:0}37.361%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e9{animation-name:v02-s19-reassembly-k9}@keyframes v02-s19-reassembly-k10{0%{opacity:0}36.111%{opacity:0}37.361%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e10{animation-name:v02-s19-reassembly-k10}@keyframes v02-s19-reassembly-k11{0%{opacity:0;transform:translate(0px,150px)}39.444%{opacity:0;transform:translate(0px,150px)}40.278%{opacity:1;transform:translate(0px,150px)}44.167%{opacity:1;transform:translate(0px,0px)}96.944%{opacity:1;transform:translate(0px,0px)}98.611%{opacity:0;transform:translate(0px,150px)}100%{opacity:0;transform:translate(0px,150px)}}.v02-s19-reassembly .e11{animation-name:v02-s19-reassembly-k11}@keyframes v02-s19-reassembly-k12{0%{opacity:0;transform:translate(0px,150px)}47.222%{opacity:0;transform:translate(0px,150px)}48.056%{opacity:1;transform:translate(0px,150px)}51.944%{opacity:1;transform:translate(0px,0px)}96.944%{opacity:1;transform:translate(0px,0px)}98.611%{opacity:0;transform:translate(0px,150px)}100%{opacity:0;transform:translate(0px,150px)}}.v02-s19-reassembly .e12{animation-name:v02-s19-reassembly-k12}@keyframes v02-s19-reassembly-k13{0%{opacity:0}54.444%{opacity:0}55.694%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e13{animation-name:v02-s19-reassembly-k13}@keyframes v02-s19-reassembly-k14{0%{opacity:0}61.111%{opacity:0}62.361%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e14{animation-name:v02-s19-reassembly-k14}@keyframes v02-s19-reassembly-k15{0%{opacity:0}66.667%{opacity:0}67.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e15{animation-name:v02-s19-reassembly-k15}@keyframes v02-s19-reassembly-k16{0%{opacity:0}75%{opacity:0}76.25%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e16{animation-name:v02-s19-reassembly-k16}@keyframes v02-s19-reassembly-k17{0%{opacity:0}81.667%{opacity:0}82.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s19-reassembly .e17{animation-name:v02-s19-reassembly-k17}</style>
+<rect class="bg" x="0" y="0" width="960" height="512"/>
+<g class="a e1"><text class="cap" x="10" y="22">цена сборки потока и сама сборка</text><text class="tk sm" x="10" y="50">чтобы собрать поток, нужно:</text></g>
+<g class="a e2"><rect class="bx" x="10" y="62" width="330" height="36" rx="6"/><text class="sm" x="24" y="85">помнить каждое соединение</text></g>
+<g class="a e3"><rect class="bx" x="10" y="106" width="330" height="36" rx="6"/><text class="sm" x="24" y="129">запомнить стартовые номера сторон</text></g>
+<g class="a e4"><rect class="bx" x="10" y="150" width="330" height="36" rx="6"/><text class="sm" x="24" y="173">класть пакеты в буфер по номерам</text></g>
+<g class="a e5"><rect class="bx" x="10" y="194" width="330" height="36" rx="6"/><text class="sm" x="24" y="217">ждать недостающие куски</text></g>
+<g class="a e6"><rect class="bx" x="10" y="238" width="330" height="36" rx="6"/><text class="sm" x="24" y="261">следить за повторами и порядком</text></g>
+<g class="a e7"><rect class="bx" x="10" y="282" width="330" height="36" rx="6"/><text class="sm" x="24" y="305">всё это для каждого соединения сразу</text></g>
+<g class="a e8"><text class="sm tk" x="10" y="342">что делают настоящие устройства,</text><text class="sm tk" x="10" y="362">неизвестно: мы не утверждаем,</text><text class="sm tk" x="10" y="382">что какое-то собирает или нет</text></g>
+<g class="a e9"><text class="tk sm" x="370" y="50">буфер соединения: байты запроса, номера 1..250</text><rect class="bxd" x="370" y="90" width="580" height="38" rx="4"/></g>
+<g class="a e10"><text class="mt mu" x="370" y="148">1</text><text class="mt mu c" x="611.3" y="148">105</text><text class="mt mu r" x="950" y="148">250</text></g>
+<g class="a e11"><rect class="bxa" x="370" y="90" width="240.3" height="38" rx="4"/><text class="sm c tk" x="490.65" y="114">пакет 1: 1..104</text></g>
+<g class="a e12"><rect class="bxb" x="611.3" y="90" width="338.7" height="38" rx="4"/><text class="sm c tk" x="780.65" y="114">пакет 2: 105..250</text></g>
+<g class="a e13"><path class="lo" d="M610.8 82L610.8 136"/><text class="sm" x="370" y="170">стык: пакет 2 начался,</text><text class="sm" x="370" y="188">где кончился пакет 1</text></g>
+<g class="a e14"><rect class="bxn" x="595" y="84" width="34.8" height="50" rx="3"/><path class="lad" d="M595 136L595 198"/><path class="lad" d="M629.8 136L629.8 198"/><text class="sm hbo" x="641.8" y="176">www.example.com</text><text class="sm" x="641.8" y="196"><tspan>на местах </tspan><tspan class="hb">98..112</tspan><tspan> целиком</tspan></text></g>
+<g class="a e15"><text class="sm tk" x="370" y="258">Читающий поток находит имя, как в целом запросе.</text></g>
+<g class="a e16"><rect class="bxo" x="10" y="404" width="462" height="92" rx="8"/><text class="tk" x="26" y="430">Наблюдатель собирает поток</text><text class="sm" x="26" y="454">разрезание запроса ему не мешает,</text><text class="sm" x="26" y="474">нужны другие приёмы</text></g>
+<g class="a e17"><rect class="bxr" x="488" y="404" width="462" height="92" rx="8"/><text class="tk" x="504" y="430">Наблюдатель читает пакеты по одному</text><text class="sm" x="504" y="454">разрезание ему мешает: имени целиком</text><text class="sm" x="504" y="474">нет ни в одном пакете</text></g>
+</svg>

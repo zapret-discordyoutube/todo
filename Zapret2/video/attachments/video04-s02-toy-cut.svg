@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v04-s02-toy-cut" viewBox="0 0 960 350" width="960" height="350" role="img" aria-labelledby="v04-s02-toy-cut-t v04-s02-toy-cut-d">
+<title id="v04-s02-toy-cut-t">Позиция это номер байта</title>
+<desc id="v04-s02-toy-cut-d">Выдуманный пример: строка «To: Anna» из восьми байт с номерами 0–7. Разрез на позиции 4 ставится перед байтом с номером 4 и делит строку на «To: » и «Anna»: слева 4 байта, то есть столько, какой номер у разреза, справа 8 − 4 = 4 байта. Позиция −4 считается от конца (8 − 4 = 4) и даёт тот же разрез, а −1 это самый последний байт.</desc>
+<style>
+.v04-s02-toy-cut{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v04-s02-toy-cut{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v04-s02-toy-cut .bg{fill:var(--bg)}
+.v04-s02-toy-cut text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v04-s02-toy-cut .tk{font-weight:600;fill:var(--fg)}
+.v04-s02-toy-cut .sm{font-size:14.5px}
+.v04-s02-toy-cut .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v04-s02-toy-cut .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v04-s02-toy-cut .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v04-s02-toy-cut .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg)}
+.v04-s02-toy-cut .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v04-s02-toy-cut .mu{fill:var(--mute)}.v04-s02-toy-cut .fg{fill:var(--fg)}.v04-s02-toy-cut .acc{fill:var(--acc)}.v04-s02-toy-cut .rej{fill:var(--rej)}.v04-s02-toy-cut .ok{fill:var(--ok)}.v04-s02-toy-cut .amb{fill:var(--amb)}
+.v04-s02-toy-cut .c{text-anchor:middle}.v04-s02-toy-cut .r{text-anchor:end}
+.v04-s02-toy-cut .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v04-s02-toy-cut .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v04-s02-toy-cut .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v04-s02-toy-cut .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v04-s02-toy-cut .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v04-s02-toy-cut .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v04-s02-toy-cut .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v04-s02-toy-cut .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v04-s02-toy-cut .bxda{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v04-s02-toy-cut .pill{fill:var(--bg);stroke:none}
+.v04-s02-toy-cut .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v04-s02-toy-cut .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v04-s02-toy-cut .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s02-toy-cut .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v04-s02-toy-cut .lad{fill:none;stroke:var(--acc);stroke-width:2;stroke-dasharray:5 4}
+.v04-s02-toy-cut .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v04-s02-toy-cut .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v04-s02-toy-cut .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v04-s02-toy-cut .hf{fill:var(--fg2)}.v04-s02-toy-cut .ha{fill:var(--acc)}.v04-s02-toy-cut .hr{fill:var(--rej)}.v04-s02-toy-cut .hm{fill:var(--mute)}
+.v04-s02-toy-cut .a{animation-duration:26s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v04-s02-toy-cut .a{animation:none}.v04-s02-toy-cut .tr{display:none}}
+@keyframes v04-s02-toy-cut-k1{0.0%{opacity:0}1.154%{opacity:0}2.885%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e1{animation-name:v04-s02-toy-cut-k1}
+@keyframes v04-s02-toy-cut-k2{0.0%{opacity:0}3.077%{opacity:0}4.808%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e2{animation-name:v04-s02-toy-cut-k2}
+@keyframes v04-s02-toy-cut-k3{0.0%{opacity:0;transform:translate(0px,0px)}3.846%{opacity:0;transform:translate(0px,0px)}5.577%{opacity:1;transform:translate(0px,0px)}16.154%{opacity:1;transform:translate(0px,0px)}19.615%{opacity:1;transform:translate(36px,0px)}95.769%{opacity:1;transform:translate(36px,0px)}98.077%{opacity:0;transform:translate(36px,0px)}100%{opacity:0;transform:translate(36px,0px)}}.v04-s02-toy-cut .e3{animation-name:v04-s02-toy-cut-k3}
+@keyframes v04-s02-toy-cut-k4{0.0%{opacity:0}13.846%{opacity:0}15.577%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e4{animation-name:v04-s02-toy-cut-k4}
+@keyframes v04-s02-toy-cut-k5{0.0%{opacity:0}25.0%{opacity:0}26.731%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e5{animation-name:v04-s02-toy-cut-k5}
+@keyframes v04-s02-toy-cut-k6{0.0%{opacity:0}34.615%{opacity:0}36.346%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e6{animation-name:v04-s02-toy-cut-k6}
+@keyframes v04-s02-toy-cut-k7{0.0%{opacity:0}50.0%{opacity:0}51.731%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e7{animation-name:v04-s02-toy-cut-k7}
+@keyframes v04-s02-toy-cut-k8{0.0%{opacity:0}50.0%{opacity:0}51.731%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e8{animation-name:v04-s02-toy-cut-k8}
+@keyframes v04-s02-toy-cut-k9{0.0%{opacity:0}57.692%{opacity:0}59.423%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e9{animation-name:v04-s02-toy-cut-k9}
+@keyframes v04-s02-toy-cut-k10{0.0%{opacity:0}67.308%{opacity:0}69.038%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e10{animation-name:v04-s02-toy-cut-k10}
+@keyframes v04-s02-toy-cut-k11{0.0%{opacity:0}42.308%{opacity:0}44.038%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e11{animation-name:v04-s02-toy-cut-k11}
+@keyframes v04-s02-toy-cut-k12{0.0%{opacity:0}76.923%{opacity:0}78.654%{opacity:1}95.769%{opacity:1}98.077%{opacity:0}100%{opacity:0}}.v04-s02-toy-cut .e12{animation-name:v04-s02-toy-cut-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="350"/>
+<g class="a e1"><text class="cap" x="30" y="28">позиция — номер байта, перед которым разрез</text><rect class="bxd" x="746" y="10" width="184" height="26" rx="6"/><text class="sm c" x="838" y="28">выдуманный пример</text></g>
+<g class="a e2"><rect class="bx" x="40" y="104" width="70" height="50" rx="5"/><text class="ml c" x="75" y="136">T</text><text class="sm mu c" x="75" y="96">0</text><rect class="bx" x="110" y="104" width="70" height="50" rx="5"/><text class="ml c" x="145" y="136">o</text><text class="sm mu c" x="145" y="96">1</text><rect class="bx" x="180" y="104" width="70" height="50" rx="5"/><text class="ml c" x="215" y="136">:</text><text class="sm mu c" x="215" y="96">2</text><rect class="bx" x="250" y="104" width="70" height="50" rx="5"/><path class="lm" d="M276 124 L276 135 L294 135 L294 124"/><text class="sm mu c" x="285" y="96">3</text></g>
+<g class="a e3" transform="translate(36 0)"><rect class="bxa" x="320" y="104" width="70" height="50" rx="5"/><text class="ml c" x="355" y="136">A</text><text class="sm mu c" x="355" y="96">4</text><rect class="bxa" x="390" y="104" width="70" height="50" rx="5"/><text class="ml c" x="425" y="136">n</text><text class="sm mu c" x="425" y="96">5</text><rect class="bxa" x="460" y="104" width="70" height="50" rx="5"/><text class="ml c" x="495" y="136">n</text><text class="sm mu c" x="495" y="96">6</text><rect class="bxa" x="530" y="104" width="70" height="50" rx="5"/><text class="ml c" x="565" y="136">a</text><text class="sm mu c" x="565" y="96">7</text></g>
+<g class="a e4"><path class="lcut" d="M338 74L338 164"/><text class="sm tk rej c" x="338" y="66">режь на позиции 4</text></g>
+<g class="a e5"><path class="lm" d="M40 184v8h280v-8"/><text class="sm tk c" x="180" y="214">слева 4 байта = позиция</text></g>
+<g class="a e6"><path class="lm" d="M356 184v8h280v-8"/><text class="sm tk c" x="496" y="214">справа 8 − 4 = 4 байта</text></g>
+<g class="a e7"><text class="sm acc c" x="75" y="172">−8</text><text class="sm acc c" x="145" y="172">−7</text><text class="sm acc c" x="215" y="172">−6</text><text class="sm acc c" x="285" y="172">−5</text></g>
+<g class="a e8" transform="translate(36 0)"><text class="sm acc c" x="355" y="172">−4</text><text class="sm acc c" x="425" y="172">−3</text><text class="sm acc c" x="495" y="172">−2</text><text class="sm acc c" x="565" y="172">−1</text></g>
+<g class="a e9"><text class="sm tk" x="40" y="262">«минус четыре»: 8 − 4 = 4, тот же разрез, перед именем</text></g>
+<g class="a e10"><text class="sm tk" x="40" y="286">«минус один»: самый последний байт</text></g>
+<g class="a e11"><rect class="bxs" x="664" y="80" width="266" height="148" rx="8"/><text class="tk" x="678" y="104">позиция</text><text class="sm" x="678" y="130">номер байта, перед которым</text><text class="sm" x="678" y="152">разрез. Часть до него</text><text class="sm" x="678" y="174">кончается байтом раньше.</text><text class="sm" x="678" y="196">Число в настройке:</text><text class="sm" x="678" y="218">абсолютная позиция.</text></g>
+<g class="a e12"><text class="sm mu" x="40" y="328">Обычное число в настройке, например pos=4, зависит только от места в данных, а не от их содержимого.</text></g>
+</svg>

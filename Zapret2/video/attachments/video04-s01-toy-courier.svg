@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v04-s01-courier" viewBox="0 0 960 392" width="960" height="392" role="img" aria-labelledby="v04-s01-courier-t v04-s01-courier-d">
+<title id="v04-s01-courier-t">Курьер и два письма</title>
+<desc id="v04-s01-courier-d">Выдуманный пример: курьер режет два письма. Просьба «разрежь на четвёртом слове» подходит только первому письму («Добрый день, дорогая Анна»): во втором письме четвёртое слово «госпожа», разрез не у имени. Просьба «разрежь перед именем получателя» находит имя Анна в обоих письмах. Метка в настройке такая же просьба по смыслу.</desc>
+<style>
+.v04-s01-courier{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v04-s01-courier{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v04-s01-courier .bg{fill:var(--bg)}
+.v04-s01-courier text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v04-s01-courier .tk{font-weight:600;fill:var(--fg)}
+.v04-s01-courier .sm{font-size:14.5px}
+.v04-s01-courier .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v04-s01-courier .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v04-s01-courier .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v04-s01-courier .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg)}
+.v04-s01-courier .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v04-s01-courier .mu{fill:var(--mute)}.v04-s01-courier .fg{fill:var(--fg)}.v04-s01-courier .acc{fill:var(--acc)}.v04-s01-courier .rej{fill:var(--rej)}.v04-s01-courier .ok{fill:var(--ok)}.v04-s01-courier .amb{fill:var(--amb)}
+.v04-s01-courier .c{text-anchor:middle}.v04-s01-courier .r{text-anchor:end}
+.v04-s01-courier .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v04-s01-courier .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v04-s01-courier .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v04-s01-courier .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v04-s01-courier .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v04-s01-courier .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v04-s01-courier .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v04-s01-courier .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v04-s01-courier .bxda{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v04-s01-courier .pill{fill:var(--bg);stroke:none}
+.v04-s01-courier .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v04-s01-courier .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v04-s01-courier .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s01-courier .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v04-s01-courier .lad{fill:none;stroke:var(--acc);stroke-width:2;stroke-dasharray:5 4}
+.v04-s01-courier .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v04-s01-courier .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v04-s01-courier .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v04-s01-courier .hf{fill:var(--fg2)}.v04-s01-courier .ha{fill:var(--acc)}.v04-s01-courier .hr{fill:var(--rej)}.v04-s01-courier .hm{fill:var(--mute)}
+.v04-s01-courier .a{animation-duration:24s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v04-s01-courier .a{animation:none}.v04-s01-courier .tr{display:none}}
+@keyframes v04-s01-courier-k1{0.0%{opacity:0}1.25%{opacity:0}3.125%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e1{animation-name:v04-s01-courier-k1}
+@keyframes v04-s01-courier-k2{0.0%{opacity:0}3.333%{opacity:0}5.208%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e2{animation-name:v04-s01-courier-k2}
+@keyframes v04-s01-courier-k3{0.0%{opacity:0}5.833%{opacity:0}7.708%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e3{animation-name:v04-s01-courier-k3}
+@keyframes v04-s01-courier-k4{0.0%{opacity:0}10.0%{opacity:0}11.875%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e4{animation-name:v04-s01-courier-k4}
+@keyframes v04-s01-courier-k5{0.0%{opacity:0}16.667%{opacity:0}18.542%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e5{animation-name:v04-s01-courier-k5}
+@keyframes v04-s01-courier-k6{0.0%{opacity:0}21.667%{opacity:0}23.542%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e6{animation-name:v04-s01-courier-k6}
+@keyframes v04-s01-courier-k7{0.0%{opacity:0}35.0%{opacity:0}36.875%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e7{animation-name:v04-s01-courier-k7}
+@keyframes v04-s01-courier-k8{0.0%{opacity:0}37.5%{opacity:0}39.375%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e8{animation-name:v04-s01-courier-k8}
+@keyframes v04-s01-courier-k9{0.0%{opacity:0}40.833%{opacity:0}42.708%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e9{animation-name:v04-s01-courier-k9}
+@keyframes v04-s01-courier-k10{0.0%{opacity:0}45.833%{opacity:0}47.708%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e10{animation-name:v04-s01-courier-k10}
+@keyframes v04-s01-courier-k11{0.0%{opacity:0}50.833%{opacity:0}52.708%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e11{animation-name:v04-s01-courier-k11}
+@keyframes v04-s01-courier-k12{0.0%{opacity:0}64.583%{opacity:0}66.458%{opacity:1}95.417%{opacity:1}97.917%{opacity:0}100%{opacity:0}}.v04-s01-courier .e12{animation-name:v04-s01-courier-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="392"/>
+<g class="a e1"><text class="cap" x="30" y="28">курьер режет письма</text><rect class="bxd" x="746" y="10" width="184" height="26" rx="6"/><text class="sm c" x="838" y="28">выдуманный пример</text></g>
+<g class="a e2"><text class="tk" x="30" y="66">Просьба 1: «разрежь на четвёртом слове»</text></g>
+<g class="a e3"><text class="sm mu" x="30" y="103">письмо 1</text><rect class="bx" x="130" y="80" width="83.4" height="34" rx="5"/><text class="c" x="171.7" y="103">Добрый</text><rect class="bx" x="221.4" y="80" width="63.9" height="34" rx="5"/><text class="c" x="253.3" y="103">день,</text><rect class="bx" x="293.3" y="80" width="86.7" height="34" rx="5"/><text class="c" x="336.7" y="103">дорогая</text><rect class="bxa" x="388" y="80" width="64.8" height="34" rx="5"/><text class="c" x="420.4" y="103">Анна,</text><rect class="bx" x="460.8" y="80" width="63" height="34" rx="5"/><text class="c" x="492.3" y="103">пишу</text><rect class="bx" x="531.8" y="80" width="49.3" height="34" rx="5"/><text class="c" x="556.4" y="103">вам</text></g>
+<g class="a e4"><text class="sm mu" x="30" y="155">письмо 2</text><rect class="bx" x="130" y="132" width="83.4" height="34" rx="5"/><text class="c" x="171.7" y="155">Добрый</text><rect class="bx" x="221.4" y="132" width="63.9" height="34" rx="5"/><text class="c" x="253.3" y="155">день,</text><rect class="bx" x="293.3" y="132" width="112.3" height="34" rx="5"/><text class="c" x="349.4" y="155">уважаемая</text><rect class="bx" x="413.6" y="132" width="89.5" height="34" rx="5"/><text class="c" x="458.4" y="155">госпожа</text><rect class="bxa" x="511.1" y="132" width="64.8" height="34" rx="5"/><text class="c" x="543.5" y="155">Анна,</text><rect class="bx" x="583.9" y="132" width="63" height="34" rx="5"/><text class="c" x="615.4" y="155">пишу</text><rect class="bx" x="654.9" y="132" width="49.3" height="34" rx="5"/><text class="c" x="679.5" y="155">вам</text></g>
+<g class="a e5"><path class="lcut" d="M384 73L384 121"/><path class="lo" d="M721 97L727.3 104.2L739 89.8" stroke-linecap="round" stroke-linejoin="round"/><text class="sm tk ok" x="748" y="102">ножницы у имени</text></g>
+<g class="a e6"><path class="lcut" d="M409.6 125L409.6 173"/><path class="lr" d="M722 141L738 157M722 157L738 141"/><text class="sm tk rej" x="748" y="154">ножницы не у имени</text></g>
+<g class="a e7"><text class="tk" x="30" y="216">Просьба 2: «разрежь перед именем получателя»</text></g>
+<g class="a e8"><text class="sm mu" x="30" y="253">письмо 1</text><rect class="bx" x="130" y="230" width="83.4" height="34" rx="5"/><text class="c" x="171.7" y="253">Добрый</text><rect class="bx" x="221.4" y="230" width="63.9" height="34" rx="5"/><text class="c" x="253.3" y="253">день,</text><rect class="bx" x="293.3" y="230" width="86.7" height="34" rx="5"/><text class="c" x="336.7" y="253">дорогая</text><rect class="bxa" x="388" y="230" width="64.8" height="34" rx="5"/><text class="c" x="420.4" y="253">Анна,</text><rect class="bx" x="460.8" y="230" width="63" height="34" rx="5"/><text class="c" x="492.3" y="253">пишу</text><rect class="bx" x="531.8" y="230" width="49.3" height="34" rx="5"/><text class="c" x="556.4" y="253">вам</text></g>
+<g class="a e9"><text class="sm mu" x="30" y="305">письмо 2</text><rect class="bx" x="130" y="282" width="83.4" height="34" rx="5"/><text class="c" x="171.7" y="305">Добрый</text><rect class="bx" x="221.4" y="282" width="63.9" height="34" rx="5"/><text class="c" x="253.3" y="305">день,</text><rect class="bx" x="293.3" y="282" width="112.3" height="34" rx="5"/><text class="c" x="349.4" y="305">уважаемая</text><rect class="bx" x="413.6" y="282" width="89.5" height="34" rx="5"/><text class="c" x="458.4" y="305">госпожа</text><rect class="bxa" x="511.1" y="282" width="64.8" height="34" rx="5"/><text class="c" x="543.5" y="305">Анна,</text><rect class="bx" x="583.9" y="282" width="63" height="34" rx="5"/><text class="c" x="615.4" y="305">пишу</text><rect class="bx" x="654.9" y="282" width="49.3" height="34" rx="5"/><text class="c" x="679.5" y="305">вам</text></g>
+<g class="a e10"><path class="lcut" d="M384 223L384 271"/><path class="lo" d="M721 247L727.3 254.2L739 239.8" stroke-linecap="round" stroke-linejoin="round"/><text class="sm tk ok" x="748" y="252">ножницы у имени</text></g>
+<g class="a e11"><path class="lcut" d="M507.1 275L507.1 323"/><path class="lo" d="M721 299L727.3 306.2L739 291.8" stroke-linecap="round" stroke-linejoin="round"/><text class="sm tk ok" x="748" y="304">ножницы у имени</text></g>
+<g class="a e12"><rect class="bxa" x="30" y="340" width="900" height="40" rx="8"/><text class="tk c" x="480" y="365">Метка в настройке: просьба второго вида, «перед именем», а не «на четвёртом слове».</text></g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v04-s12-midsld-run" viewBox="0 0 960 440" width="960" height="440" role="img" aria-labelledby="v04-s12-midsld-run-t v04-s12-midsld-run-d">
+<title id="v04-s12-midsld-run-t">Запуск pos=midsld: настройка, журнал, провод</title>
+<desc id="v04-s12-midsld-run-d">Первый настоящий запуск, pos=midsld: метка даёт правило точки, 101 плюс 7 пополам, 104. Журнал: resolved split pos 104. На проводе два пакета: 104 байта с номера 1, кончаются на www.exa, и 146 байт с номера 105, начинаются с mple.com. Сервер собрал те же 250 байт.</desc>
+<style>
+.v04-s12-midsld-run{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v04-s12-midsld-run{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v04-s12-midsld-run .bg{fill:var(--bg)}
+.v04-s12-midsld-run text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v04-s12-midsld-run .tk{font-weight:600;fill:var(--fg)}
+.v04-s12-midsld-run .sm{font-size:14.5px}
+.v04-s12-midsld-run .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v04-s12-midsld-run .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v04-s12-midsld-run .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v04-s12-midsld-run .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v04-s12-midsld-run .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v04-s12-midsld-run .mu{fill:var(--mute)}.v04-s12-midsld-run .fg{fill:var(--fg)}.v04-s12-midsld-run .acc{fill:var(--acc)}.v04-s12-midsld-run .rej{fill:var(--rej)}.v04-s12-midsld-run .ok{fill:var(--ok)}.v04-s12-midsld-run .amb{fill:var(--amb)}
+.v04-s12-midsld-run .c{text-anchor:middle}.v04-s12-midsld-run .r{text-anchor:end}
+.v04-s12-midsld-run .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v04-s12-midsld-run .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v04-s12-midsld-run .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v04-s12-midsld-run .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v04-s12-midsld-run .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v04-s12-midsld-run .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v04-s12-midsld-run .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v04-s12-midsld-run .bxrd{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s12-midsld-run .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v04-s12-midsld-run .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v04-s12-midsld-run .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s12-midsld-run .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v04-s12-midsld-run .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v04-s12-midsld-run .lo{fill:none;stroke:var(--ok);stroke-width:2}
+.v04-s12-midsld-run .lcut{fill:none;stroke:var(--rej);stroke-width:1.6;stroke-dasharray:6 4}
+.v04-s12-midsld-run .hf{fill:var(--fg2)}.v04-s12-midsld-run .ha{fill:var(--acc)}.v04-s12-midsld-run .hr{fill:var(--rej)}.v04-s12-midsld-run .hm{fill:var(--mute)}.v04-s12-midsld-run .ho{fill:var(--ok)}
+.v04-s12-midsld-run .ico{fill:none;stroke:var(--fg2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.v04-s12-midsld-run .icof{fill:var(--fg2);stroke:none}
+.v04-s12-midsld-run .a{animation-duration:26s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v04-s12-midsld-run .a{animation:none}.v04-s12-midsld-run .tr{display:none}}
+@keyframes v04-s12-midsld-run-k1{0%{opacity:0;transform:translate(0px,0px)}1.54%{opacity:0;transform:translate(0px,0px)}3.46%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e1{animation-name:v04-s12-midsld-run-k1}
+@keyframes v04-s12-midsld-run-k2{0%{opacity:0;transform:translate(0px,0px)}3.85%{opacity:0;transform:translate(0px,0px)}5.77%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e2{animation-name:v04-s12-midsld-run-k2}
+@keyframes v04-s12-midsld-run-k3{0%{opacity:0;transform:translate(0px,0px)}7.69%{opacity:0;transform:translate(0px,0px)}9.62%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e3{animation-name:v04-s12-midsld-run-k3}
+@keyframes v04-s12-midsld-run-k4{0%{opacity:0;transform:translate(0px,0px)}13.08%{opacity:0;transform:translate(0px,0px)}15%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e4{animation-name:v04-s12-midsld-run-k4}
+@keyframes v04-s12-midsld-run-k5{0%{opacity:0;transform:translate(0px,0px)}18.46%{opacity:0;transform:translate(0px,0px)}20.38%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e5{animation-name:v04-s12-midsld-run-k5}
+@keyframes v04-s12-midsld-run-k6{0%{opacity:0;transform:translate(0px,0px)}23.08%{opacity:0;transform:translate(0px,0px)}25%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e6{animation-name:v04-s12-midsld-run-k6}
+@keyframes v04-s12-midsld-run-k7{0%{opacity:0;transform:translate(0px,0px)}25.38%{opacity:0;transform:translate(0px,0px)}27.31%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e7{animation-name:v04-s12-midsld-run-k7}
+@keyframes v04-s12-midsld-run-k8{0%{opacity:0;transform:translate(0px,0px)}28.46%{opacity:0;transform:translate(0px,0px)}30.38%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e8{animation-name:v04-s12-midsld-run-k8}
+@keyframes v04-s12-midsld-run-k9{0%{opacity:0;transform:translate(0px,0px)}31.54%{opacity:0;transform:translate(0px,0px)}33.46%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e9{animation-name:v04-s12-midsld-run-k9}
+@keyframes v04-s12-midsld-run-k10{0%{opacity:0;transform:translate(0px,0px)}38.46%{opacity:0;transform:translate(0px,0px)}40.38%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e10{animation-name:v04-s12-midsld-run-k10}
+@keyframes v04-s12-midsld-run-k11{0%{opacity:0;transform:translate(0px,0px)}40.77%{opacity:0;transform:translate(0px,0px)}42.69%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e11{animation-name:v04-s12-midsld-run-k11}
+@keyframes v04-s12-midsld-run-k12{0%{opacity:0;transform:translate(0px,0px)}48.46%{opacity:0;transform:translate(0px,0px)}50.38%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e12{animation-name:v04-s12-midsld-run-k12}
+@keyframes v04-s12-midsld-run-k13{0%{opacity:0;transform:translate(0px,0px)}53.85%{opacity:0;transform:translate(0px,0px)}55.77%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e13{animation-name:v04-s12-midsld-run-k13}
+@keyframes v04-s12-midsld-run-k14{0%{opacity:0;transform:translate(0px,0px)}63.46%{opacity:0;transform:translate(0px,0px)}65.38%{opacity:1;transform:translate(0px,0px)}94.12%{opacity:1;transform:translate(0px,0px)}97.65%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}.v04-s12-midsld-run .e14{animation-name:v04-s12-midsld-run-k14}
+</style>
+<rect class="bg" x="0" y="0" width="960" height="440"/>
+<g class="a e1"><text class="cap" x="40" y="24">запуск 1: pos=midsld (в нашем тесте)</text></g>
+<g class="a e2"><rect class="bx" x="40" y="40" width="150" height="62" rx="6"/><text class="sm c mu" x="115" y="66">метка</text><text class="ml c" x="115" y="89">midsld</text></g>
+<g class="a e3"><path class="lm" d="M194 71L216 71"/><polygon class="hm" points="224,71 215,75.5 215,66.5"/><rect class="bxa" x="228" y="40" width="400" height="62" rx="6"/><text class="sm" x="242" y="64">правило точки: example, начало 101, длина 7</text><text class="mk" x="242" y="90">101 + 7 / 2 = 101 + 3 = 104</text></g>
+<g class="a e4"><path class="lm" d="M632 71L654 71"/><polygon class="hm" points="662,71 653,75.5 653,66.5"/><rect class="bxn" x="666" y="40" width="254" height="62" rx="6"/><text class="sm c mu" x="793" y="66">разрез</text><text class="tk c" x="793" y="89">перед байтом 104</text></g>
+<g class="a e5"><text class="m" x="40" y="132">журнал: resolved split pos: 104</text></g>
+<g class="a e6"><rect class="bxa" x="40" y="184" width="366.08" height="40" rx="4"/><text class="sm" x="50" y="209">байты 0–103: 104 байта</text></g>
+<g class="a e7"><rect class="bxb" x="406.08" y="184" width="513.92" height="40" rx="4"/><text class="sm r" x="910" y="209">байты 104–249: 146 байт</text></g>
+<g class="a e8"><path class="lcut" d="M406.08 174L406.08 232"/><text class="mk c" x="406.08" y="170">104</text></g>
+<g class="a e9"><text class="m r" x="398.08" y="252">левая часть кончается «www.exa»</text><text class="m" x="414.08" y="252">правая начинается «mple.com»</text></g>
+<g class="a e10"><text class="cap" x="40" y="296">на проводе</text></g>
+<g class="a e11"><rect class="bxa" x="40" y="308" width="366.08" height="36" rx="5"/><text class="sm" x="50" y="331">пакет 1: 104 байта, с номера 1</text></g>
+<g class="a e12"><path class="lm" d="M60 346L60 364"/><polygon class="hm" points="60,372 55.5,363 64.5,363"/><text class="sm mu" x="72" y="366">следом</text></g>
+<g class="a e13"><rect class="bxb" x="406.08" y="372" width="513.92" height="36" rx="5"/><text class="sm" x="416.08" y="395">пакет 2: 146 байт, с номера 105 (104 + 1)</text></g>
+<g class="a e14"><text class="tk ok r" x="920" y="432">сервер собрал по номерам: 250 байт, равные оригиналу</text></g>
+</svg>

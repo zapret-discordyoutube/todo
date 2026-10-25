@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s12-before-after-keys" viewBox="0 0 960 440" width="960" height="440" role="img" aria-labelledby="v02-s12-before-after-keys-t v02-s12-before-after-keys-d">
+<title id="v02-s12-before-after-keys-t">До ключа и после ключа</title>
+<desc id="v02-s12-before-after-keys-d">Наши 250 байт запроса с номерами TCP от 1 до 250 и есть сообщение ClientHello, имя сайта в нём занимает байты 98–112 (с нуля 97–111); защищённое соединение делится на «до ключа» и «после ключа»: до ключа идёт рукопожатие TLS из трёх действий (клиент здоровается сообщением ClientHello, сервер отвечает и доказывает, кто он, стороны договариваются о ключе), и первое сообщение шифровать нечем, поэтому оно открыто; после ключа данные зашифрованы, и ключ знают только клиент и сервер.</desc>
+<style>.v02-s12-before-after-keys{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s12-before-after-keys{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s12-before-after-keys .bg{fill:var(--bg)}
+.v02-s12-before-after-keys text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s12-before-after-keys .tk{font-weight:600;fill:var(--fg)}
+.v02-s12-before-after-keys .sm{font-size:14.5px}
+.v02-s12-before-after-keys .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s12-before-after-keys .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s12-before-after-keys .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s12-before-after-keys .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s12-before-after-keys .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s12-before-after-keys .mu{fill:var(--mute)}.v02-s12-before-after-keys .fg{fill:var(--fg)}.v02-s12-before-after-keys .acc{fill:var(--acc)}.v02-s12-before-after-keys .rej{fill:var(--rej)}.v02-s12-before-after-keys .ok{fill:var(--ok)}.v02-s12-before-after-keys .amb{fill:var(--amb)}
+.v02-s12-before-after-keys .hb{fill:var(--acc);font-weight:700}.v02-s12-before-after-keys .hbr{fill:var(--rej);font-weight:700}.v02-s12-before-after-keys .hbo{fill:var(--ok);font-weight:700}.v02-s12-before-after-keys .hbb{fill:var(--amb);font-weight:700}
+.v02-s12-before-after-keys .c{text-anchor:middle}.v02-s12-before-after-keys .r{text-anchor:end}
+.v02-s12-before-after-keys .nos{stroke:none}
+.v02-s12-before-after-keys .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s12-before-after-keys .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s12-before-after-keys .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s12-before-after-keys .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s12-before-after-keys .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s12-before-after-keys .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s12-before-after-keys .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s12-before-after-keys .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s12-before-after-keys .fa{fill:var(--acc);stroke:none}
+.v02-s12-before-after-keys .fo{fill:var(--ok);stroke:none}
+.v02-s12-before-after-keys .fr{fill:var(--rej);stroke:none}
+.v02-s12-before-after-keys .fm{fill:var(--line);stroke:none}
+.v02-s12-before-after-keys .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s12-before-after-keys .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s12-before-after-keys .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s12-before-after-keys .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s12-before-after-keys .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s12-before-after-keys .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s12-before-after-keys .hf{fill:var(--fg2)}.v02-s12-before-after-keys .ha{fill:var(--acc)}.v02-s12-before-after-keys .hr{fill:var(--rej)}.v02-s12-before-after-keys .hm{fill:var(--mute)}.v02-s12-before-after-keys .ho{fill:var(--ok)}
+.v02-s12-before-after-keys .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s12-before-after-keys .a{animation-duration:36s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+.v02-s12-before-after-keys .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s12-before-after-keys .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v02-s12-before-after-keys .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v02-s12-before-after-keys .fb{fill:var(--ambt);stroke:none}
+.v02-s12-before-after-keys .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v02-s12-before-after-keys .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s12-before-after-keys .hb2{fill:var(--amb)}
+.v02-s12-before-after-keys .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+@media (prefers-reduced-motion:reduce){.v02-s12-before-after-keys .a{animation:none}.v02-s12-before-after-keys .tr{display:none}}
+@keyframes v02-s12-before-after-keys-k1{0.0%{opacity:0}0.833%{opacity:0}2.083%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e1{animation-name:v02-s12-before-after-keys-k1}@keyframes v02-s12-before-after-keys-k2{0.0%{opacity:0}2.222%{opacity:0}3.472%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e2{animation-name:v02-s12-before-after-keys-k2}@keyframes v02-s12-before-after-keys-k3{0.0%{opacity:0}6.111%{opacity:0}7.361%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e3{animation-name:v02-s12-before-after-keys-k3}@keyframes v02-s12-before-after-keys-k4{0.0%{opacity:0}11.667%{opacity:0}12.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e4{animation-name:v02-s12-before-after-keys-k4}@keyframes v02-s12-before-after-keys-k5{0.0%{opacity:0}19.444%{opacity:0}20.694%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e5{animation-name:v02-s12-before-after-keys-k5}@keyframes v02-s12-before-after-keys-k6{0.0%{opacity:0}22.222%{opacity:0}23.472%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e6{animation-name:v02-s12-before-after-keys-k6}@keyframes v02-s12-before-after-keys-k7{0.0%{opacity:0}27.778%{opacity:0}29.028%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e7{animation-name:v02-s12-before-after-keys-k7}@keyframes v02-s12-before-after-keys-k8{0.0%{opacity:0}41.667%{opacity:0}42.917%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e8{animation-name:v02-s12-before-after-keys-k8}@keyframes v02-s12-before-after-keys-k9{0.0%{opacity:0}50.0%{opacity:0}51.25%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e9{animation-name:v02-s12-before-after-keys-k9}@keyframes v02-s12-before-after-keys-k10{0.0%{opacity:0}33.333%{opacity:0}34.583%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e10{animation-name:v02-s12-before-after-keys-k10}@keyframes v02-s12-before-after-keys-k11{0.0%{opacity:0}58.333%{opacity:0}59.583%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e11{animation-name:v02-s12-before-after-keys-k11}@keyframes v02-s12-before-after-keys-k12{0.0%{opacity:0}63.889%{opacity:0}65.139%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e12{animation-name:v02-s12-before-after-keys-k12}@keyframes v02-s12-before-after-keys-k13{0.0%{opacity:0}77.778%{opacity:0}79.028%{opacity:1}96.944%{opacity:1}98.611%{opacity:0}100%{opacity:0}}.v02-s12-before-after-keys .e13{animation-name:v02-s12-before-after-keys-k13}</style>
+<rect class="bg" x="0" y="0" width="960" height="440"/>
+<g class="a e1"><text class="cap" x="10" y="24">наши 250 байт запроса: это и есть первое сообщение защищённого соединения</text></g>
+<g class="a e2"><rect class="bxa" x="10" y="36" width="940" height="30" rx="5"/><text class="mk" x="18" y="56">1</text><text class="mk r" x="942" y="56">250</text></g>
+<g class="a e3"><rect class="bxb" x="374.7" y="36" width="56.4" height="30" rx="3"/><text class="sm c" x="402.9" y="88">имя сайта: байты 98–112 (с нуля 97–111)</text></g>
+<g class="a e4"><text class="tk c" x="190" y="56">250 байт = ClientHello</text></g>
+<g class="a e5"><text class="cap" x="10" y="126">защищённое соединение делится на две части: до ключа и после ключа</text><rect class="bx" x="10" y="138" width="580" height="246" rx="10"/><rect class="bxo" x="660" y="138" width="290" height="246" rx="10"/></g>
+<g class="a e6"><rect class="pl" x="26" y="160" width="46" height="30" rx="3"/><path class="lm" d="M26 160L49 140L72 160"/><path class="lm" d="M26 190L44 174M72 190L54 174"/><text class="tk" x="88" y="166">До ключа: рукопожатие TLS</text><text class="sm mu" x="88" y="186">ключа ещё нет, шифровать нечем</text></g>
+<g class="a e7"><rect class="bxb" x="24" y="204" width="542" height="46" rx="8"/><circle class="dot" cx="48" cy="227" r="12"/><text class="tk c ns" x="48" y="232">1</text><text class="tk" x="72" y="224">Клиент здоровается: сообщение ClientHello</text><text class="sm mu" x="72" y="242">первый пакет с данными; что клиент умеет</text></g>
+<g class="a e8"><rect class="bx" x="24" y="260" width="542" height="46" rx="8"/><circle class="dot" cx="48" cy="283" r="12"/><text class="tk c ns" x="48" y="288">2</text><text class="tk" x="72" y="288">Сервер отвечает и доказывает, кто он</text></g>
+<g class="a e9"><rect class="bx" x="24" y="316" width="542" height="46" rx="8"/><circle class="dot" cx="48" cy="339" r="12"/><text class="tk c ns" x="48" y="344">3</text><text class="tk" x="72" y="344">Стороны договариваются о ключе</text></g>
+<g class="a e10"><rect class="bxr" x="428" y="226" width="130" height="20" rx="6"/><text class="sm c rej" x="493" y="241">не зашифрован</text></g>
+<g class="a e11"><path class="lf" d="M596 340L644.0 340.0"/><polygon class="hf" points="654,340 644.0,345.0 644.0,335.0"/><circle class="pl" cx="612" cy="300" r="9"/><path class="lf" d="M621 300H650M640 300V309M646 300V307"/><text class="sm c" x="625" y="334">ключ</text><text class="sm c mu" x="625" y="362">готов</text></g>
+<g class="a e12"><rect class="pl" x="684" y="208" width="50" height="38" rx="4"/><path class="lf" d="M692 208V196a17 17 0 0 1 34 0V208"/><circle cx="709" cy="224" r="5" class="hf"/><path class="lf" d="M709 227V236"/><text class="tk" x="678" y="166">После ключа: данные</text><text class="tk" x="678" y="272">Данные зашифрованы.</text><text class="sm" x="678" y="296">Ключ знают только клиент</text><text class="sm" x="678" y="316">и сервер. На пути виден</text><text class="sm" x="678" y="336">поток бессмысленных байтов.</text></g>
+<g class="a e13"><text class="tk" x="10" y="414">ClientHello идёт до появления ключа, поэтому открыт: чтобы прочитать, расшифровывать нечего.</text><text class="sm mu" x="10" y="436">Как правило, наблюдатель на пути может прочитать его; настоящее оборудование мы не разбираем.</text></g>
+</svg>

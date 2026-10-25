@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s16-big-hello" viewBox="0 0 960 456" width="960" height="456" role="img" aria-labelledby="v02-s16-big-hello-t v02-s16-big-hello-d">
+<title id="v02-s16-big-hello-t">Большой ClientHello на 1484 байта</title>
+<desc id="v02-s16-big-hello-d">Большой ClientHello в лаборатории, 1484 байта, в одном масштабе с коротким на 250 байт: заголовки те же (длина записи 1479, длина расширений 1396), но расширение key_share выросло с 38 до 1258 байт данных (две доли ключа: 1216 и 32 байта) и занимает байты 213..1474, а имя сайта осталось на тех же местах 97..111, потому что перед расширением имени всё то же.</desc>
+<style>.v02-s16-big-hello{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s16-big-hello{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s16-big-hello .bg{fill:var(--bg)}
+.v02-s16-big-hello text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s16-big-hello .tk{font-weight:600;fill:var(--fg)}
+.v02-s16-big-hello .sm{font-size:14.5px}
+.v02-s16-big-hello .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s16-big-hello .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s16-big-hello .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s16-big-hello .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s16-big-hello .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s16-big-hello .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s16-big-hello .mu{fill:var(--mute)}.v02-s16-big-hello .fg{fill:var(--fg)}.v02-s16-big-hello .acc{fill:var(--acc)}.v02-s16-big-hello .rej{fill:var(--rej)}.v02-s16-big-hello .ok{fill:var(--ok)}.v02-s16-big-hello .amb{fill:var(--amb)}
+.v02-s16-big-hello .hb{fill:var(--acc);font-weight:700}.v02-s16-big-hello .hbr{fill:var(--rej);font-weight:700}.v02-s16-big-hello .hbo{fill:var(--ok);font-weight:700}.v02-s16-big-hello .hbb{fill:var(--amb);font-weight:700}
+.v02-s16-big-hello .c{text-anchor:middle}.v02-s16-big-hello .r{text-anchor:end}
+.v02-s16-big-hello .nos{stroke:none}
+.v02-s16-big-hello .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s16-big-hello .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s16-big-hello .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s16-big-hello .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s16-big-hello .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s16-big-hello .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s16-big-hello .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s16-big-hello .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s16-big-hello .bxdr{fill:none;stroke:var(--rej);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s16-big-hello .fa{fill:var(--acc);stroke:none}
+.v02-s16-big-hello .fo{fill:var(--ok);stroke:none}
+.v02-s16-big-hello .fr{fill:var(--rej);stroke:none}
+.v02-s16-big-hello .fb{fill:var(--amb);stroke:none}
+.v02-s16-big-hello .fm{fill:var(--line);stroke:none}
+.v02-s16-big-hello .fmu{fill:var(--mute);stroke:none}
+.v02-s16-big-hello .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s16-big-hello .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s16-big-hello .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s16-big-hello .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s16-big-hello .lad{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v02-s16-big-hello .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s16-big-hello .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s16-big-hello .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s16-big-hello .hf{fill:var(--fg2)}.v02-s16-big-hello .ha{fill:var(--acc)}.v02-s16-big-hello .hr{fill:var(--rej)}.v02-s16-big-hello .hm{fill:var(--mute)}.v02-s16-big-hello .ho{fill:var(--ok)}.v02-s16-big-hello .hbm{fill:var(--amb)}
+.v02-s16-big-hello .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s16-big-hello .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.v02-s16-big-hello .gz{transform-box:fill-box;transform-origin:0 50%}
+.v02-s16-big-hello .a{animation-duration:27s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v02-s16-big-hello .a{animation:none}.v02-s16-big-hello .tr{display:none}}
+@keyframes v02-s16-big-hello-k1{0%{opacity:0}1.111%{opacity:0}2.778%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e1{animation-name:v02-s16-big-hello-k1}@keyframes v02-s16-big-hello-k2{0%{opacity:0}2.963%{opacity:0}4.63%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e2{animation-name:v02-s16-big-hello-k2}@keyframes v02-s16-big-hello-k3{0%{opacity:0}11.111%{opacity:0}12.778%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e3{animation-name:v02-s16-big-hello-k3}@keyframes v02-s16-big-hello-k4{0%{opacity:0}17.037%{opacity:0}18.704%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e4{animation-name:v02-s16-big-hello-k4}@keyframes v02-s16-big-hello-k5{0%{opacity:0}17.037%{opacity:0}18.704%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e5{animation-name:v02-s16-big-hello-k5}@keyframes v02-s16-big-hello-k6{0%{opacity:0}23.704%{opacity:0}25.37%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e6{animation-name:v02-s16-big-hello-k6}@keyframes v02-s16-big-hello-k7{0%{opacity:0;transform:scaleX(0)}33.333%{opacity:0;transform:scaleX(0)}33.63%{opacity:1;transform:scaleX(0)}39.259%{opacity:1;transform:scaleX(1)}95.926%{opacity:1;transform:scaleX(1)}98.148%{opacity:0;transform:scaleX(0)}100%{opacity:0;transform:scaleX(0)}}.v02-s16-big-hello .e7{animation-name:v02-s16-big-hello-k7}@keyframes v02-s16-big-hello-k8{0%{opacity:0}40%{opacity:0}41.667%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e8{animation-name:v02-s16-big-hello-k8}@keyframes v02-s16-big-hello-k9{0%{opacity:0}45.185%{opacity:0}46.852%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e9{animation-name:v02-s16-big-hello-k9}@keyframes v02-s16-big-hello-k10{0%{opacity:0}48.148%{opacity:0}49.815%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e10{animation-name:v02-s16-big-hello-k10}@keyframes v02-s16-big-hello-k11{0%{opacity:0}51.852%{opacity:0}53.519%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e11{animation-name:v02-s16-big-hello-k11}@keyframes v02-s16-big-hello-k12{0%{opacity:0}60.741%{opacity:0}62.407%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e12{animation-name:v02-s16-big-hello-k12}@keyframes v02-s16-big-hello-k13{0%{opacity:0}70.37%{opacity:0}72.037%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e13{animation-name:v02-s16-big-hello-k13}@keyframes v02-s16-big-hello-k14{0%{opacity:0}76.296%{opacity:0}77.963%{opacity:1}95.926%{opacity:1}98.148%{opacity:0}100%{opacity:0}}.v02-s16-big-hello .e14{animation-name:v02-s16-big-hello-k14}</style>
+<rect class="bg" x="0" y="0" width="960" height="456"/>
+<g class="a e1"><text class="cap" x="10" y="24">тот же ClientHello, но большой: байты в одном масштабе, нумерация с нуля</text></g>
+<g class="a e2"><text class="tk sm" x="30" y="56">короткое сообщение: 250 байт</text><rect class="bxs" x="30" y="66" width="53.4" height="26" rx="3"/><rect class="bxa" x="83.4" y="66" width="14.5" height="26" rx="3"/><rect class="bx" x="97.9" y="66" width="52.8" height="26" rx="3"/><rect class="bxb" x="150.7" y="66" width="25.5" height="26" rx="3"/><rect class="bx" x="176.2" y="66" width="5.4" height="26" rx="3"/><text class="sm" x="200" y="84"><tspan class="tk">key_share: </tspan><tspan class="hbb">38</tspan><tspan> байт данных, байты 199..240</tspan></text></g>
+<g class="a e3"><text class="tk sm" x="120" y="160">большое сообщение: 1484 байта</text><rect class="bxs" x="30" y="170" width="53.4" height="30" rx="3"/></g>
+<g class="a e4"><rect class="bxa" x="83.4" y="170" width="14.5" height="30" rx="3"/><rect class="bx" x="97.9" y="170" width="61.3" height="30" rx="3"/><rect class="bx" x="924.5" y="170" width="5.5" height="30" rx="2"/></g>
+<g class="a e5"><path class="lm" d="M30 200L30 206"/><path class="lm" d="M83.4 200L83.4 206"/><path class="lm" d="M97.9 200L97.9 206"/><path class="lm" d="M159.2 200L159.2 206"/><path class="lm" d="M930 200L930 206"/><text class="mt mu" x="30" y="232">0</text><text class="mt mu r" x="85.4" y="232">88</text><text class="mt mu" x="95.9" y="232">112</text><text class="mt mu r" x="156.2" y="232">213</text><text class="mt mu r" x="918" y="232">1484</text></g>
+<g class="a e6"><text class="sm" x="414" y="160"><tspan>запись </tspan><tspan class="hb">1479</tspan><tspan> = 1484 − 5, расширения </tspan><tspan class="hb">1396</tspan><tspan> = 1484 − 88</tspan></text></g>
+<g class="a e7 gz"><rect class="bxb" x="159.2" y="170" width="765.3" height="30" rx="3"/></g>
+<g class="a e8"><text class="tk sm" x="167.2" y="191">key_share: 1258 байт данных</text></g>
+<g class="a e9"><text class="tk sm" x="159.2" y="254">внутри key_share: две доли ключа</text><rect class="bx" x="159.2" y="262" width="3.6" height="28" rx="2"/><rect class="bxb" x="162.8" y="262" width="739.9" height="28" rx="3"/><rect class="bxb" x="902.7" y="262" width="21.8" height="28" rx="2"/><path class="lmd" d="M159.2 200L159.2 262"/><path class="lmd" d="M924.5 200L924.5 262"/></g>
+<g class="a e10"><text class="sm" x="172.8" y="282"><tspan>доля 1: ключ </tspan><tspan class="hbb">1216</tspan><tspan> байт</tspan></text></g>
+<g class="a e11"><path class="lm" d="M913.6 290L913.6 306"/><text class="sm r" x="950" y="324"><tspan>доля 2: ключ </tspan><tspan class="hbb">32</tspan><tspan> байта</tspan></text></g>
+<g class="a e12"><path class="lad" d="M88.8 92L88.8 170"/><path class="lad" d="M97.9 92L97.9 170"/><text class="sm" x="116" y="128"><tspan class="tk">имя сайта</tspan><tspan> по-прежнему на местах </tspan><tspan class="hb">97..111</tspan><tspan>: перед ним всё, как раньше</tspan></text></g>
+<g class="a e13"><rect class="bxa" x="10" y="372" width="462" height="66" rx="8"/><text class="tk" x="24" y="396">Имя не сдвинулось</text><text class="sm" x="24" y="418">всё до расширения имени такое же, как в коротком</text></g>
+<g class="a e14"><rect class="bxb" x="488" y="372" width="462" height="66" rx="8"/><text class="tk" x="502" y="396">Сдвинулись остальные расширения</text><text class="sm" x="502" y="418"><tspan>key_share начинается с </tspan><tspan class="hbb">213</tspan><tspan> вместо </tspan><tspan class="hbb">199</tspan></text></g>
+</svg>

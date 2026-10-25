@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s10-checksum-sum" viewBox="0 0 960 512" width="960" height="512" role="img" aria-labelledby="v02-s10-checksum-sum-t v02-s10-checksum-sum-d">
+<title id="v02-s10-checksum-sum-t">Контрольная сумма TCP</title>
+<desc id="v02-s10-checksum-sum-d">Контрольная сумма TCP нашего пакета: псевдозаголовок (адреса 10.1.0.1 и 10.2.0.2, протокол 6, длина 282) даёт 0x1526, заголовок TCP с обнулённой суммой даёт 0x5b1e9, 250 байт данных дают 0x20cf5a; сумма 0x269669, после переноса старших цифр 0x968f, после переворота битов 0x6970, и это в точности число из заголовка.</desc>
+<style>.v02-s10-checksum-sum{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s10-checksum-sum{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s10-checksum-sum .bg{fill:var(--bg)}
+.v02-s10-checksum-sum text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s10-checksum-sum .tk{font-weight:600;fill:var(--fg)}
+.v02-s10-checksum-sum .sm{font-size:14.5px}
+.v02-s10-checksum-sum .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s10-checksum-sum .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s10-checksum-sum .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s10-checksum-sum .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s10-checksum-sum .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s10-checksum-sum .mu{fill:var(--mute)}.v02-s10-checksum-sum .fg{fill:var(--fg)}.v02-s10-checksum-sum .acc{fill:var(--acc)}.v02-s10-checksum-sum .rej{fill:var(--rej)}.v02-s10-checksum-sum .ok{fill:var(--ok)}.v02-s10-checksum-sum .amb{fill:var(--amb)}
+.v02-s10-checksum-sum .hb{fill:var(--acc);font-weight:700}.v02-s10-checksum-sum .hbr{fill:var(--rej);font-weight:700}.v02-s10-checksum-sum .hbo{fill:var(--ok);font-weight:700}.v02-s10-checksum-sum .hbb{fill:var(--amb);font-weight:700}
+.v02-s10-checksum-sum .c{text-anchor:middle}.v02-s10-checksum-sum .r{text-anchor:end}
+.v02-s10-checksum-sum .nos{stroke:none}
+.v02-s10-checksum-sum .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s10-checksum-sum .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s10-checksum-sum .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s10-checksum-sum .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s10-checksum-sum .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s10-checksum-sum .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s10-checksum-sum .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s10-checksum-sum .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s10-checksum-sum .fa{fill:var(--acc);stroke:none}
+.v02-s10-checksum-sum .fo{fill:var(--ok);stroke:none}
+.v02-s10-checksum-sum .fr{fill:var(--rej);stroke:none}
+.v02-s10-checksum-sum .fm{fill:var(--line);stroke:none}
+.v02-s10-checksum-sum .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s10-checksum-sum .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s10-checksum-sum .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s10-checksum-sum .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s10-checksum-sum .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s10-checksum-sum .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s10-checksum-sum .hf{fill:var(--fg2)}.v02-s10-checksum-sum .ha{fill:var(--acc)}.v02-s10-checksum-sum .hr{fill:var(--rej)}.v02-s10-checksum-sum .hm{fill:var(--mute)}.v02-s10-checksum-sum .ho{fill:var(--ok)}
+.v02-s10-checksum-sum .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s10-checksum-sum .a{animation-duration:40s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v02-s10-checksum-sum .a{animation:none}.v02-s10-checksum-sum .tr{display:none}}
+@keyframes v02-s10-checksum-sum-k1{0.0%{opacity:0}0.75%{opacity:0}1.875%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e1{animation-name:v02-s10-checksum-sum-k1}@keyframes v02-s10-checksum-sum-k2{0.0%{opacity:0}2.5%{opacity:0}3.625%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e2{animation-name:v02-s10-checksum-sum-k2}@keyframes v02-s10-checksum-sum-k3{0.0%{opacity:0}6.0%{opacity:0}7.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e3{animation-name:v02-s10-checksum-sum-k3}@keyframes v02-s10-checksum-sum-k4{0.0%{opacity:0}12.5%{opacity:0}13.625%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e4{animation-name:v02-s10-checksum-sum-k4}@keyframes v02-s10-checksum-sum-k5{0.0%{opacity:0}16.0%{opacity:0}17.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e5{animation-name:v02-s10-checksum-sum-k5}@keyframes v02-s10-checksum-sum-k6{0.0%{opacity:0}21.0%{opacity:0}22.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e6{animation-name:v02-s10-checksum-sum-k6}@keyframes v02-s10-checksum-sum-k7{0.0%{opacity:0}24.5%{opacity:0}25.625%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e7{animation-name:v02-s10-checksum-sum-k7}@keyframes v02-s10-checksum-sum-k8{0.0%{opacity:0}30.0%{opacity:0}31.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e8{animation-name:v02-s10-checksum-sum-k8}@keyframes v02-s10-checksum-sum-k9{0.0%{opacity:0}38.5%{opacity:0}39.625%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e9{animation-name:v02-s10-checksum-sum-k9}@keyframes v02-s10-checksum-sum-k10{0.0%{opacity:0}47.0%{opacity:0}48.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e10{animation-name:v02-s10-checksum-sum-k10}@keyframes v02-s10-checksum-sum-k11{0.0%{opacity:0}56.0%{opacity:0}57.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e11{animation-name:v02-s10-checksum-sum-k11}@keyframes v02-s10-checksum-sum-k12{0.0%{opacity:0}66.0%{opacity:0}67.125%{opacity:1}97.25%{opacity:1}98.75%{opacity:0}100%{opacity:0}}.v02-s10-checksum-sum .e12{animation-name:v02-s10-checksum-sum-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="512"/>
+<g class="a e1"><text class="cap" x="10" y="24">контрольная сумма TCP нашего пакета: что складываем</text></g>
+<g class="a e2"><rect class="bx" x="10" y="38" width="300" height="138" rx="9"/><text class="tk" x="24" y="64">псевдозаголовок</text><text class="sm mu" x="24" y="88">10.1.0.1 → 10.2.0.2, протокол 6</text><text class="sm mu" x="24" y="108">длина 32 + 250 = 282</text></g>
+<g class="a e3"><rect class="bxa" x="24" y="122" width="272" height="40" rx="6"/><text class="ml c acc" x="160.0" y="149">0x1526</text></g>
+<g class="a e4"><rect class="bx" x="330" y="38" width="300" height="138" rx="9"/><text class="tk" x="344" y="64">заголовок TCP</text><text class="sm mu" x="344" y="88">32 байта, само поле суммы</text><text class="sm mu" x="344" y="108">на время счёта равно 0000</text></g>
+<g class="a e5"><rect class="bxa" x="344" y="122" width="272" height="40" rx="6"/><text class="ml c acc" x="480.0" y="149">0x5b1e9</text></g>
+<g class="a e6"><rect class="bx" x="650" y="38" width="300" height="138" rx="9"/><text class="tk" x="664" y="64">данные</text><text class="sm mu" x="664" y="88">250 байт = 125 пар байт</text><text class="sm mu" x="664" y="108">запрос клиента</text></g>
+<g class="a e7"><rect class="bxa" x="664" y="122" width="272" height="40" rx="6"/><text class="ml c acc" x="800.0" y="149">0x20cf5a</text></g>
+<g class="a e8"><rect class="bx" x="10" y="200" width="940" height="50" rx="8"/><rect class="bxa" x="22" y="211" width="28" height="28" rx="14"/><text class="mk c" x="36" y="231">1</text><text class="tk" x="64" y="231">сложить всё</text><text class="ml" x="340" y="232">0x1526 + 0x5b1e9 + 0x20cf5a = 0x269669</text></g>
+<g class="a e9"><rect class="bx" x="10" y="260" width="940" height="50" rx="8"/><rect class="bxa" x="22" y="271" width="28" height="28" rx="14"/><text class="mk c" x="36" y="291">2</text><text class="tk" x="64" y="291">перенести старшие цифры</text><text class="ml" x="340" y="292">0x26 + 0x9669 = 0x968f</text></g>
+<g class="a e10"><rect class="bx" x="10" y="320" width="940" height="50" rx="8"/><rect class="bxa" x="22" y="331" width="28" height="28" rx="14"/><text class="mk c" x="36" y="351">3</text><text class="tk" x="64" y="351">перевернуть биты</text><text class="ml" x="340" y="352">0xffff − 0x968f = 0x6970</text></g>
+<g class="a e11"><rect class="bxo" x="10" y="380" width="940" height="50" rx="8"/><rect class="bxa" x="22" y="391" width="28" height="28" rx="14"/><text class="mk c" x="36" y="411">4</text><text class="tk" x="64" y="411">сравнить с заголовком</text><text class="ml" x="340" y="412">0x6970 в поле: совпало</text></g>
+<g class="a e12"><rect class="bxb" x="10" y="444" width="940" height="56" rx="8"/><text class="tk" x="24" y="468">Адрес входит в сумму, хотя в заголовке TCP его нет: чужой пакет не пройдёт проверку.</text><text class="sm mu" x="24" y="490">Так считается и сумма IP, но TCP охватывает больше: заголовок, все данные и псевдозаголовок.</text></g>
+</svg>

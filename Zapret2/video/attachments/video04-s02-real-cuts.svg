@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v04-s02-real-cuts" viewBox="0 0 960 520" width="960" height="520" role="img" aria-labelledby="v04-s02-real-cuts-t v04-s02-real-cuts-d">
+<title id="v04-s02-real-cuts-t">Куда ляжет числовой разрез</title>
+<desc id="v04-s02-real-cuts-d">Куда ляжет разрез при числовой позиции на настоящем приветствии в 250 байт (в нашем тесте): pos=1 даёт части 1 и 249 байт, pos=249 даёт 249 и 1, pos=250 не меньше размера и разреза нет, остаётся один пакет в 250 байт; pos=-10 это 250 − 10 = 240 и части 240 и 10, pos=-1 даёт 249 и 1, без pos по умолчанию позиция 2 и части 2 и 248. На запросе HTTP в 81 байт pos=32 даёт 32 и 49 байт, а pos=104 лежит за краем запроса и разреза нет.</desc>
+<style>
+.v04-s02-real-cuts{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v04-s02-real-cuts{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v04-s02-real-cuts .bg{fill:var(--bg)}
+.v04-s02-real-cuts text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v04-s02-real-cuts .tk{font-weight:600;fill:var(--fg)}
+.v04-s02-real-cuts .sm{font-size:14.5px}
+.v04-s02-real-cuts .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v04-s02-real-cuts .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v04-s02-real-cuts .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v04-s02-real-cuts .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg)}
+.v04-s02-real-cuts .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v04-s02-real-cuts .mu{fill:var(--mute)}.v04-s02-real-cuts .fg{fill:var(--fg)}.v04-s02-real-cuts .acc{fill:var(--acc)}.v04-s02-real-cuts .rej{fill:var(--rej)}.v04-s02-real-cuts .ok{fill:var(--ok)}.v04-s02-real-cuts .amb{fill:var(--amb)}
+.v04-s02-real-cuts .c{text-anchor:middle}.v04-s02-real-cuts .r{text-anchor:end}
+.v04-s02-real-cuts .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v04-s02-real-cuts .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v04-s02-real-cuts .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v04-s02-real-cuts .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v04-s02-real-cuts .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v04-s02-real-cuts .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v04-s02-real-cuts .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v04-s02-real-cuts .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v04-s02-real-cuts .bxda{fill:none;stroke:var(--acc);stroke-width:1.6;stroke-dasharray:5 4}
+.v04-s02-real-cuts .pill{fill:var(--bg);stroke:none}
+.v04-s02-real-cuts .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v04-s02-real-cuts .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v04-s02-real-cuts .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v04-s02-real-cuts .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v04-s02-real-cuts .lad{fill:none;stroke:var(--acc);stroke-width:2;stroke-dasharray:5 4}
+.v04-s02-real-cuts .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v04-s02-real-cuts .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v04-s02-real-cuts .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v04-s02-real-cuts .hf{fill:var(--fg2)}.v04-s02-real-cuts .ha{fill:var(--acc)}.v04-s02-real-cuts .hr{fill:var(--rej)}.v04-s02-real-cuts .hm{fill:var(--mute)}
+.v04-s02-real-cuts .a{animation-duration:32s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v04-s02-real-cuts .a{animation:none}.v04-s02-real-cuts .tr{display:none}}
+@keyframes v04-s02-real-cuts-k1{0.0%{opacity:0}0.938%{opacity:0}2.344%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e1{animation-name:v04-s02-real-cuts-k1}
+@keyframes v04-s02-real-cuts-k2{0.0%{opacity:0}3.125%{opacity:0}4.531%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e2{animation-name:v04-s02-real-cuts-k2}
+@keyframes v04-s02-real-cuts-k3{0.0%{opacity:0}5.625%{opacity:0}7.031%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e3{animation-name:v04-s02-real-cuts-k3}
+@keyframes v04-s02-real-cuts-k4{0.0%{opacity:0}11.25%{opacity:0}12.656%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e4{animation-name:v04-s02-real-cuts-k4}
+@keyframes v04-s02-real-cuts-k5{0.0%{opacity:0}13.75%{opacity:0}15.156%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e5{animation-name:v04-s02-real-cuts-k5}
+@keyframes v04-s02-real-cuts-k6{0.0%{opacity:0}19.375%{opacity:0}20.781%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e6{animation-name:v04-s02-real-cuts-k6}
+@keyframes v04-s02-real-cuts-k7{0.0%{opacity:0}21.875%{opacity:0}23.281%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e7{animation-name:v04-s02-real-cuts-k7}
+@keyframes v04-s02-real-cuts-k8{0.0%{opacity:0}27.5%{opacity:0}28.906%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e8{animation-name:v04-s02-real-cuts-k8}
+@keyframes v04-s02-real-cuts-k9{0.0%{opacity:0}30.0%{opacity:0}31.406%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e9{animation-name:v04-s02-real-cuts-k9}
+@keyframes v04-s02-real-cuts-k10{0.0%{opacity:0}35.625%{opacity:0}37.031%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e10{animation-name:v04-s02-real-cuts-k10}
+@keyframes v04-s02-real-cuts-k11{0.0%{opacity:0}38.125%{opacity:0}39.531%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e11{animation-name:v04-s02-real-cuts-k11}
+@keyframes v04-s02-real-cuts-k12{0.0%{opacity:0}43.75%{opacity:0}45.156%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e12{animation-name:v04-s02-real-cuts-k12}
+@keyframes v04-s02-real-cuts-k13{0.0%{opacity:0}46.25%{opacity:0}47.656%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e13{animation-name:v04-s02-real-cuts-k13}
+@keyframes v04-s02-real-cuts-k14{0.0%{opacity:0}53.125%{opacity:0}54.531%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e14{animation-name:v04-s02-real-cuts-k14}
+@keyframes v04-s02-real-cuts-k15{0.0%{opacity:0}55.625%{opacity:0}57.031%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e15{animation-name:v04-s02-real-cuts-k15}
+@keyframes v04-s02-real-cuts-k16{0.0%{opacity:0}58.125%{opacity:0}59.531%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e16{animation-name:v04-s02-real-cuts-k16}
+@keyframes v04-s02-real-cuts-k17{0.0%{opacity:0}63.75%{opacity:0}65.156%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e17{animation-name:v04-s02-real-cuts-k17}
+@keyframes v04-s02-real-cuts-k18{0.0%{opacity:0}66.25%{opacity:0}67.656%{opacity:1}96.562%{opacity:1}98.438%{opacity:0}100%{opacity:0}}.v04-s02-real-cuts .e18{animation-name:v04-s02-real-cuts-k18}</style>
+<rect class="bg" x="0" y="0" width="960" height="520"/>
+<g class="a e1"><text class="cap" x="30" y="26">приветствие TLS, 250 байт: куда ляжет разрез (в нашем тесте)</text></g>
+<g class="a e2"><text class="mk" x="40" y="58">pos=1</text><text class="sm" x="150" y="58">две части: 1 байт и 249 байт</text><rect class="bxa" x="40" y="66" width="3.5" height="22" rx="3"/><rect class="bxb" x="43.5" y="66" width="876.5" height="22" rx="3"/><text class="sm tk c" x="481.8" y="82">249</text></g>
+<g class="a e3"><path class="lcut" d="M43.5 61L43.5 93"/></g>
+<g class="a e4"><text class="mk" x="40" y="112">pos=249</text><text class="sm" x="150" y="112">две части: 249 байт и 1 байт</text><rect class="bxa" x="40" y="120" width="876.5" height="22" rx="3"/><rect class="bxb" x="916.5" y="120" width="3.5" height="22" rx="3"/><text class="sm tk c" x="478.2" y="136">249</text></g>
+<g class="a e5"><path class="lcut" d="M916.5 115L916.5 147"/></g>
+<g class="a e6"><text class="mk" x="40" y="166">pos=250</text><text class="sm rej" x="150" y="166">не меньше размера: разреза нет, один пакет в 250 байт</text><rect class="bx" x="40" y="174" width="880" height="22" rx="3"/><text class="m c" x="480" y="190">журнал: no valid split positions</text></g>
+<g class="a e7"><path class="lcut" d="M920 169L920 201"/><path class="lr" d="M928 179L940 191M928 191L940 179"/></g>
+<g class="a e8"><text class="mk" x="40" y="220">pos=-10</text><text class="sm" x="150" y="220">250 − 10 = 240: части 240 и 10 байт</text><rect class="bxa" x="40" y="228" width="844.8" height="22" rx="3"/><rect class="bxb" x="884.8" y="228" width="35.2" height="22" rx="3"/><text class="sm tk c" x="462.4" y="244">240</text><text class="sm tk c" x="902.4" y="244">10</text></g>
+<g class="a e9"><path class="lcut" d="M884.8 223L884.8 255"/></g>
+<g class="a e10"><text class="mk" x="40" y="274">pos=-1</text><text class="sm" x="150" y="274">250 − 1 = 249: части 249 и 1 байт</text><rect class="bxa" x="40" y="282" width="876.5" height="22" rx="3"/><rect class="bxb" x="916.5" y="282" width="3.5" height="22" rx="3"/><text class="sm tk c" x="478.2" y="298">249</text></g>
+<g class="a e11"><path class="lcut" d="M916.5 277L916.5 309"/></g>
+<g class="a e12"><text class="mk" x="40" y="328">без pos</text><text class="sm" x="150" y="328">по умолчанию позиция 2: части 2 и 248 байт</text><rect class="bxa" x="40" y="336" width="7" height="22" rx="3"/><rect class="bxb" x="47" y="336" width="873" height="22" rx="3"/><text class="sm tk c" x="483.5" y="352">248</text></g>
+<g class="a e13"><path class="lcut" d="M47 331L47 363"/></g>
+<g class="a e14"><text class="cap" x="30" y="392">запрос HTTP, 81 байт, тот же масштаб (в нашем тесте)</text></g>
+<g class="a e15"><text class="mk" x="40" y="418">pos=32</text><text class="sm" x="150" y="418">перед именем сайта: части 32 и 49 байт (81 − 32 = 49)</text><rect class="bxa" x="40" y="426" width="112.6" height="22" rx="3"/><rect class="bxb" x="152.6" y="426" width="172.5" height="22" rx="3"/><text class="sm tk c" x="96.3" y="442">32</text><text class="sm tk c" x="238.9" y="442">49</text></g>
+<g class="a e16"><path class="lcut" d="M152.6 421L152.6 453"/></g>
+<g class="a e17"><text class="mk" x="40" y="472">pos=104</text><text class="sm rej" x="150" y="472">104 не меньше 81: за краем запроса, разреза нет</text><rect class="bx" x="40" y="480" width="285.1" height="22" rx="3"/><text class="sm c" x="182.56" y="496">запрос, 81 байт</text></g>
+<g class="a e18"><path class="lcut" d="M406.1 475L406.1 507"/><path class="lr" d="M414.1 485L426.1 497M414.1 497L426.1 485"/></g>
+</svg>

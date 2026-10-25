@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v02-s13-length-walk" viewBox="0 0 960 566" width="960" height="566" role="img" aria-labelledby="v02-s13-length-walk-t v02-s13-length-walk-d">
+<title id="v02-s13-length-walk-t">Длины и прыжки через содержимое</title>
+<desc id="v02-s13-length-walk-d">Длины вложены друг в друга и сходятся: 250 = 5 + 245 (длина записи 00 f5), 245 = 4 + 241 (длина сообщения 00 00 f1) и 250 = 88 + 162 (длина расширений 00 a2); чтобы добраться до расширений, программа читает длины и перепрыгивает через содержимое: по смещению 43 стоит 32, прыжок на 76; по 76–77 стоит 6, прыжок на 84; по 84 стоит 1, прыжок на 86; по 86–87 стоит 162, и расширения идут с 88 до конца данных; так же ходит и zapret2 (nfq2/protocol.c:524).</desc>
+<style>.v02-s13-length-walk{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v02-s13-length-walk{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v02-s13-length-walk .bg{fill:var(--bg)}
+.v02-s13-length-walk text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v02-s13-length-walk .tk{font-weight:600;fill:var(--fg)}
+.v02-s13-length-walk .sm{font-size:14.5px}
+.v02-s13-length-walk .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v02-s13-length-walk .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v02-s13-length-walk .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v02-s13-length-walk .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.v02-s13-length-walk .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v02-s13-length-walk .mu{fill:var(--mute)}.v02-s13-length-walk .fg{fill:var(--fg)}.v02-s13-length-walk .acc{fill:var(--acc)}.v02-s13-length-walk .rej{fill:var(--rej)}.v02-s13-length-walk .ok{fill:var(--ok)}.v02-s13-length-walk .amb{fill:var(--amb)}
+.v02-s13-length-walk .hb{fill:var(--acc);font-weight:700}.v02-s13-length-walk .hbr{fill:var(--rej);font-weight:700}.v02-s13-length-walk .hbo{fill:var(--ok);font-weight:700}.v02-s13-length-walk .hbb{fill:var(--amb);font-weight:700}
+.v02-s13-length-walk .c{text-anchor:middle}.v02-s13-length-walk .r{text-anchor:end}
+.v02-s13-length-walk .nos{stroke:none}
+.v02-s13-length-walk .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v02-s13-length-walk .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v02-s13-length-walk .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v02-s13-length-walk .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v02-s13-length-walk .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v02-s13-length-walk .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v02-s13-length-walk .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v02-s13-length-walk .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v02-s13-length-walk .fa{fill:var(--acc);stroke:none}
+.v02-s13-length-walk .fo{fill:var(--ok);stroke:none}
+.v02-s13-length-walk .fr{fill:var(--rej);stroke:none}
+.v02-s13-length-walk .fm{fill:var(--line);stroke:none}
+.v02-s13-length-walk .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v02-s13-length-walk .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v02-s13-length-walk .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v02-s13-length-walk .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v02-s13-length-walk .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v02-s13-length-walk .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v02-s13-length-walk .hf{fill:var(--fg2)}.v02-s13-length-walk .ha{fill:var(--acc)}.v02-s13-length-walk .hr{fill:var(--rej)}.v02-s13-length-walk .hm{fill:var(--mute)}.v02-s13-length-walk .ho{fill:var(--ok)}
+.v02-s13-length-walk .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.v02-s13-length-walk .a{animation-duration:46s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+.v02-s13-length-walk .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v02-s13-length-walk .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v02-s13-length-walk .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v02-s13-length-walk .fb{fill:var(--ambt);stroke:none}
+.v02-s13-length-walk .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v02-s13-length-walk .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v02-s13-length-walk .hb2{fill:var(--amb)}
+.v02-s13-length-walk .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+@media (prefers-reduced-motion:reduce){.v02-s13-length-walk .a{animation:none}.v02-s13-length-walk .tr{display:none}}
+@keyframes v02-s13-length-walk-k1{0.0%{opacity:0}0.652%{opacity:0}1.63%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e1{animation-name:v02-s13-length-walk-k1}@keyframes v02-s13-length-walk-k2{0.0%{opacity:0}2.174%{opacity:0}3.152%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e2{animation-name:v02-s13-length-walk-k2}@keyframes v02-s13-length-walk-k3{0.0%{opacity:0}10.87%{opacity:0}11.848%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e3{animation-name:v02-s13-length-walk-k3}@keyframes v02-s13-length-walk-k4{0.0%{opacity:0}19.565%{opacity:0}20.543%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e4{animation-name:v02-s13-length-walk-k4}@keyframes v02-s13-length-walk-k5{0.0%{opacity:0}26.087%{opacity:0}27.065%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e5{animation-name:v02-s13-length-walk-k5}@keyframes v02-s13-length-walk-k6{0.0%{opacity:0}30.435%{opacity:0}31.413%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e6{animation-name:v02-s13-length-walk-k6}@keyframes v02-s13-length-walk-k7{0.0%{opacity:0}32.609%{opacity:0}33.587%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e7{animation-name:v02-s13-length-walk-k7}@keyframes v02-s13-length-walk-k8{0.0%{opacity:0}39.13%{opacity:0}40.109%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e8{animation-name:v02-s13-length-walk-k8}@keyframes v02-s13-length-walk-k9{0.0%{opacity:0}52.174%{opacity:0}53.152%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e9{animation-name:v02-s13-length-walk-k9}@keyframes v02-s13-length-walk-k10{0.0%{opacity:0}65.217%{opacity:0}66.196%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e10{animation-name:v02-s13-length-walk-k10}@keyframes v02-s13-length-walk-k11{0.0%{opacity:0}78.261%{opacity:0}79.239%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e11{animation-name:v02-s13-length-walk-k11}@keyframes v02-s13-length-walk-k12{0.0%{opacity:0}41.304%{opacity:0}42.283%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e12{animation-name:v02-s13-length-walk-k12}@keyframes v02-s13-length-walk-k13{0.0%{opacity:0}54.348%{opacity:0}55.326%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e13{animation-name:v02-s13-length-walk-k13}@keyframes v02-s13-length-walk-k14{0.0%{opacity:0}67.391%{opacity:0}68.37%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e14{animation-name:v02-s13-length-walk-k14}@keyframes v02-s13-length-walk-k15{0.0%{opacity:0}80.435%{opacity:0}81.413%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e15{animation-name:v02-s13-length-walk-k15}@keyframes v02-s13-length-walk-k16{0.0%{opacity:0}86.957%{opacity:0}87.935%{opacity:1}97.609%{opacity:1}98.913%{opacity:0}100%{opacity:0}}.v02-s13-length-walk .e16{animation-name:v02-s13-length-walk-k16}</style>
+<rect class="bg" x="0" y="0" width="960" height="566"/>
+<g class="a e1"><text class="cap" x="10" y="24">длины вложены одна в другую, и сумма всегда сходится</text></g>
+<g class="a e2"><text class="m" x="10" y="44">запись: 250 = 5 + 245</text><rect class="bxa" x="10.0" y="50" width="18.8" height="28" rx="3"/><rect class="bxb" x="28.8" y="50" width="921.2" height="28" rx="3"/><text class="sm c" x="489.4" y="69">длина записи 00 f5 = 245</text></g>
+<g class="a e3"><text class="m" x="10" y="98">рукопожатие: 245 = 4 + 241</text><rect class="bxa" x="28.8" y="104" width="15.0" height="28" rx="3"/><rect class="bxb" x="43.8" y="104" width="906.2" height="28" rx="3"/><text class="sm c" x="496.9" y="123">длина сообщения 00 00 f1 = 241</text></g>
+<g class="a e4"><text class="m" x="10" y="152">расширения: 250 = 88 + 162</text><rect class="bxa" x="10.0" y="158" width="330.9" height="28" rx="3"/><rect class="bxb" x="340.9" y="158" width="609.1" height="28" rx="3"/><text class="sm c" x="645.5" y="177">длина расширений 00 a2 = 162</text><text class="sm c" x="175.4" y="177">88 байт до расширений</text></g>
+<g class="a e5"><text class="sm r mu" x="950" y="44">синий = заголовок, жёлтый = то, что покрывает длина</text></g>
+<g class="a e6"><text class="cap" x="10" y="238">как программа перепрыгивает до расширений</text></g>
+<g class="a e7"><rect class="bxa" x="10.0" y="290" width="40.8" height="30" rx="2"/><rect class="fs" x="51.4" y="290" width="119.7" height="30" rx="2"/><rect class="bxb" x="171.7" y="290" width="3.1" height="30" rx="2"/><rect class="fs" x="175.4" y="290" width="119.8" height="30" rx="2"/><rect class="bxb" x="295.8" y="290" width="6.9" height="30" rx="2"/><rect class="fs" x="303.3" y="290" width="21.9" height="30" rx="2"/><rect class="bxb" x="325.8" y="290" width="3.2" height="30" rx="2"/><rect class="fs" x="329.6" y="290" width="3.2" height="30" rx="2"/><rect class="bxb" x="333.4" y="290" width="6.9" height="30" rx="2"/><rect class="bxo" x="340.9" y="290" width="608.5" height="30" rx="2"/><text class="sm c" x="645.5" y="310">расширения: 162 байта</text><text class="sm c mu" x="111.5" y="310">случайное</text><text class="ix" x="10" y="338">0</text><text class="ix c" x="173.7" y="338">43</text><text class="ix c" x="295.8" y="338">76</text><text class="ix c" x="346.9" y="338">88</text><text class="ix r" x="950" y="338">250</text></g>
+<g class="a e8"><path class="la" d="M173.6 290 C173.6 244 295.8 244 295.8 290"/><circle class="dot" cx="234.7" cy="254" r="11"/><text class="tk c ns" x="234.7" y="259">1</text></g>
+<g class="a e9"><path class="la" d="M298.8 290 C298.8 260 325.8 260 325.8 290"/><circle class="dot" cx="312.8" cy="246" r="11"/><text class="tk c ns" x="312.8" y="251">2</text></g>
+<g class="a e10"><path class="la" d="M327.7 320 C327.7 340 333.4 340 333.4 320"/><circle class="dot" cx="331.6" cy="356" r="11"/><text class="tk c ns" x="331.6" y="361">3</text></g>
+<g class="a e11"><path class="lo" d="M340.9 290 V280 H950.0 V290"/><circle class="dot" cx="645.5" cy="268" r="11"/><text class="tk c ns" x="645.5" y="273">4</text></g>
+<g class="a e12"><circle class="dot" cx="22" cy="399" r="11"/><text class="tk c ns" x="22" y="404">1</text><text class="sm" x="44" y="404">по смещению 43 стоит 20, то есть 32: перепрыгиваем идентификатор сессии, попадаем на 76 (43 + 1 + 32)</text></g>
+<g class="a e13"><circle class="dot" cx="22" cy="427" r="11"/><text class="tk c ns" x="22" y="432">2</text><text class="sm" x="44" y="432">по 76–77 стоит 00 06, то есть 6: перепрыгиваем наборы шифров, попадаем на 84 (76 + 2 + 6)</text></g>
+<g class="a e14"><circle class="dot" cx="22" cy="455" r="11"/><text class="tk c ns" x="22" y="460">3</text><text class="sm" x="44" y="460">по 84 стоит 01: перепрыгиваем один байт способа сжатия, попадаем на 86 (84 + 1 + 1)</text></g>
+<g class="a e15"><circle class="dot" cx="22" cy="483" r="11"/><text class="tk c ns" x="22" y="488">4</text><text class="sm" x="44" y="488">по 86–87 стоит 00 a2 = 162: расширения идут с 88 до 249 (88 + 162 = 250, конец данных)</text></g>
+<g class="a e16"><text class="tk" x="10" y="526">Позиции дальнейших полей зависят от длины идентификатора сессии: её надо прочитать.</text><text class="sm mu" x="10" y="550">Так ходит и zapret2: nfq2/protocol.c:524, функция TLSFindExtLenOffsetInHandshake.</text></g>
+</svg>
