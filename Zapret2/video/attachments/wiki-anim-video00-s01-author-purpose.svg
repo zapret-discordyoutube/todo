@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="v00-s01-author-purpose" viewBox="0 0 960 600" width="960" height="600" role="img" aria-labelledby="v00-s01-author-purpose-t v00-s01-author-purpose-d">
-<title id="v00-s01-author-purpose-t">Что говорит автор: может помочь</title>
-<desc id="v00-s01-author-purpose-d">Слова автора из описания: средство работает у вас и не требует подключения сторонних серверов, может помочь с блокировками и замедлением сайтов и против сигнатурного анализа протоколов, а сам автор называет программу пакетным манипулятором, который меняет маленькие куски запроса, пакеты, на лету между вашим браузером и сетью.</desc>
+<title id="v00-s01-author-purpose-t">Что такое zapret2: может помочь</title>
+<desc id="v00-s01-author-purpose-d">Описание программы: средство работает у вас и не требует подключения сторонних серверов, может помочь с блокировками и замедлением сайтов и против сигнатурного анализа протоколов, а по сути это пакетный манипулятор, который меняет маленькие куски запроса, пакеты, на лету между вашим браузером и сетью.</desc>
 <style>.v00-s01-author-purpose{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
 @media (prefers-color-scheme:dark){.v00-s01-author-purpose{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
 .v00-s01-author-purpose .bg{fill:var(--bg)}
@@ -49,7 +49,7 @@
 <g class="a e11"><rect class="bxa" x="40" y="232" width="284" height="62" rx="8"/><circle class="fa" cx="64" cy="263" r="14"/><text class="mk c" x="64" y="268">1</text><text class="tk sm" x="86" y="258">работает у вас</text><text class="sm" x="86" y="280">чужой сервер не нужен</text></g>
 <g class="a e12"><rect class="bxa" x="338" y="232" width="284" height="62" rx="8"/><circle class="fa" cx="362" cy="263" r="14"/><text class="mk c" x="362" y="268">2</text><text class="tk sm" x="384" y="258">«может помочь»</text><text class="sm" x="384" y="280">не «обходит», не «снимает»</text></g>
 <g class="a e13"><rect class="bxa" x="636" y="232" width="284" height="62" rx="8"/><circle class="fa" cx="660" cy="263" r="14"/><text class="mk c" x="660" y="268">3</text><text class="tk sm" x="682" y="258">сигнатура протокола</text><text class="sm" x="682" y="280">узнаётся по виду</text></g>
-<g class="a e14"><text class="cap" x="40" y="330">сам автор называет программу пакетным манипулятором</text></g>
+<g class="a e14"><text class="cap" x="40" y="330">по сути это пакетный манипулятор</text></g>
 <g class="a e15"><rect class="bxa" x="762.8" y="316" width="157.2" height="24" rx="5"/><text class="cap acc" x="772.8" y="332.5">ДОКУМЕНТАЦИЯ</text></g>
 <g class="a e16"><rect class="bxd" x="40" y="344" width="680" height="150" rx="10"/></g>
 <g class="a e17"><text class="cap" x="56" y="366">ваше устройство или роутер</text></g>
@@ -70,5 +70,5 @@
 <g class="a e32"><path class="lf" d="M704 424L732 424"/><polygon class="hf" points="742,424 732,429 732,419"/></g>
 <g class="a e33"><rect class="bx" x="748" y="392" width="172" height="64" rx="8"/><text class="tk c" x="834" y="421">сеть и сайт</text><text class="sm c" x="834" y="441">принимают куски</text></g>
 <g class="a e34"><rect class="bxb" x="40" y="508" width="220.5" height="24" rx="5"/><text class="cap amb" x="50" y="524.5">ПО ОБЩИМ СВЕДЕНИЯМ</text><text class="sm" x="272.5" y="526">любой запрос уходит маленькими кусками, их называют пакетами</text></g>
-<g class="a e35"><text class="tk sm" x="40" y="560">Так автор описывает программу, а помогает ли она в конкретной сети, проверяют на месте.</text></g>
+<g class="a e35"><text class="tk sm" x="40" y="560">Так описана программа, а помогает ли она в конкретной сети, проверяют на месте.</text></g>
 </svg>
