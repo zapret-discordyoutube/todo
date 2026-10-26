@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video09-s02-lab-points-delay" viewBox="0 0 960 590" width="960" height="590" role="img" aria-labelledby="video09-s02-lab-points-delay-t video09-s02-lab-points-delay-d">
+<title id="video09-s02-lab-points-delay-t">Лаборатория с кругом в десять миллисекунд</title>
+<desc id="video09-s02-lab-points-delay-d">В лаборатории выпуска между клиентом и сервером стоит один роутер с четырьмя точками съёмки и задержкой в пять миллисекунд на каждом его выходе, поэтому круг занимает десять миллисекунд, и в нашем тесте SYN-ACK приходит к клиенту на 10,14 мс после SYN.</desc>
+<style>
+.video09-s02-lab-points-delay {--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video09-s02-lab-points-delay {--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video09-s02-lab-points-delay .bg{fill:var(--bg)}
+.video09-s02-lab-points-delay text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video09-s02-lab-points-delay .tk{font-weight:600;fill:var(--fg)}
+.video09-s02-lab-points-delay .sm{font-size:14.5px}
+.video09-s02-lab-points-delay .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s02-lab-points-delay .sm13{font-size:13px}
+.video09-s02-lab-points-delay .sm13k{font-size:13px;font-weight:600;fill:var(--fg)}
+.video09-s02-lab-points-delay .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video09-s02-lab-points-delay .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s02-lab-points-delay .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s02-lab-points-delay .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video09-s02-lab-points-delay .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.video09-s02-lab-points-delay .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s02-lab-points-delay .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video09-s02-lab-points-delay .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.video09-s02-lab-points-delay .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.video09-s02-lab-points-delay .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video09-s02-lab-points-delay .mu{fill:var(--mute)}.video09-s02-lab-points-delay .fg{fill:var(--fg)}.video09-s02-lab-points-delay .acc{fill:var(--acc)}.video09-s02-lab-points-delay .rej{fill:var(--rej)}.video09-s02-lab-points-delay .ok{fill:var(--ok)}.video09-s02-lab-points-delay .amb{fill:var(--amb)}
+.video09-s02-lab-points-delay .c{text-anchor:middle}.video09-s02-lab-points-delay .r{text-anchor:end}.video09-s02-lab-points-delay .ns{stroke:none}
+.video09-s02-lab-points-delay .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video09-s02-lab-points-delay .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video09-s02-lab-points-delay .bxbd{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4;stroke-dasharray:4 3}
+.video09-s02-lab-points-delay .fa{fill:var(--tint);stroke:none}.video09-s02-lab-points-delay .fr{fill:var(--rejt);stroke:none}.video09-s02-lab-points-delay .fb{fill:var(--ambt);stroke:none}.video09-s02-lab-points-delay .fo{fill:var(--okt);stroke:none}
+.video09-s02-lab-points-delay .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video09-s02-lab-points-delay .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video09-s02-lab-points-delay .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video09-s02-lab-points-delay .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video09-s02-lab-points-delay .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video09-s02-lab-points-delay .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video09-s02-lab-points-delay .lrd{fill:none;stroke:var(--rej);stroke-width:2;stroke-dasharray:5 4}
+.video09-s02-lab-points-delay .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video09-s02-lab-points-delay .lbd{fill:none;stroke:var(--amb);stroke-width:2;stroke-dasharray:6 4}
+.video09-s02-lab-points-delay .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video09-s02-lab-points-delay .hf{fill:var(--fg2)}.video09-s02-lab-points-delay .ha{fill:var(--acc)}.video09-s02-lab-points-delay .hr{fill:var(--rej)}.video09-s02-lab-points-delay .hm{fill:var(--mute)}.video09-s02-lab-points-delay .hb{fill:var(--amb)}.video09-s02-lab-points-delay .ho{fill:var(--ok)}
+.video09-s02-lab-points-delay .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.video09-s02-lab-points-delay .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.video09-s02-lab-points-delay .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.video09-s02-lab-points-delay .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.video09-s02-lab-points-delay .dote{fill:var(--bg);stroke:var(--mute);stroke-width:1.6}
+.video09-s02-lab-points-delay .hatch{fill:var(--amb);fill-opacity:.28;stroke:none}
+.video09-s02-lab-points-delay .nb{fill:var(--bg);stroke:none}
+
+.video09-s02-lab-points-delay .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@keyframes video09-s02-lab-points-delay-k1{0%{opacity:0}2.27%{opacity:0}3.41%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k2{0%{opacity:0}6.82%{opacity:0}7.95%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k3{0%{opacity:0}13.64%{opacity:0}14.77%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k4{0%{opacity:0}20.45%{opacity:0}21.59%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k5{0%{opacity:0}27.27%{opacity:0}28.41%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k6{0%{opacity:0}36.36%{opacity:0}37.5%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k7{0%{opacity:0}43.18%{opacity:0}44.32%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k8{0%{opacity:0}50%{opacity:0}51.14%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k9{0%{opacity:0}56.82%{opacity:0}57.95%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s02-lab-points-delay-k10{0%{opacity:0}65.91%{opacity:0}67.05%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}
+.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k1{animation-name:video09-s02-lab-points-delay-k1}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k2{animation-name:video09-s02-lab-points-delay-k2}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k3{animation-name:video09-s02-lab-points-delay-k3}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k4{animation-name:video09-s02-lab-points-delay-k4}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k5{animation-name:video09-s02-lab-points-delay-k5}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k6{animation-name:video09-s02-lab-points-delay-k6}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k7{animation-name:video09-s02-lab-points-delay-k7}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k8{animation-name:video09-s02-lab-points-delay-k8}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k9{animation-name:video09-s02-lab-points-delay-k9}.video09-s02-lab-points-delay .video09-s02-lab-points-delay-k10{animation-name:video09-s02-lab-points-delay-k10}
+@media (prefers-reduced-motion:reduce){.video09-s02-lab-points-delay .a{animation:none}.video09-s02-lab-points-delay .tr{display:none}}</style>
+<rect class="bg" x="0" y="0" width="960" height="590"/>
+<g><text class="cap" x="40" y="24">лаборатория выпуска: клиент, роутер, сервер и четыре точки съёмки</text></g>
+<g class="a video09-s02-lab-points-delay-k1"><rect class="bx" x="40" y="86" width="110" height="68" rx="8"/><text class="tk c" x="95" y="126">клиент</text><rect class="bx" x="390" y="86" width="180" height="68" rx="8"/><text class="tk c" x="480" y="108">роутер</text><rect class="bx" x="810" y="86" width="110" height="68" rx="8"/><text class="tk c" x="865" y="126">сервер</text><path class="lm" d="M150 120L390 120"/><path class="lm" d="M570 120L810 120"/></g>
+<g class="a video09-s02-lab-points-delay-k2"><circle class="dot" cx="170" cy="120" r="9"/><text class="smk c" x="170" y="100">c0</text><text class="sm13 mu c" x="170" y="176">на карте клиента,</text><text class="sm13 mu c" x="170" y="192">после программы</text><circle class="dot" cx="390" cy="120" r="9"/><text class="smk c" x="390" y="100">r0</text><text class="sm13 mu c" x="390" y="176">вход</text><text class="sm13 mu c" x="390" y="192">в роутер</text><circle class="dot" cx="570" cy="120" r="9"/><text class="smk c" x="570" y="100">r1</text><text class="sm13 mu c" x="570" y="176">выход</text><text class="sm13 mu c" x="570" y="192">из роутера</text><circle class="dot" cx="790" cy="120" r="9"/><text class="smk c" x="790" y="100">s0</text><text class="sm13 mu c" x="790" y="176">на карте</text><text class="sm13 mu c" x="790" y="192">сервера</text></g>
+<g class="a video09-s02-lab-points-delay-k3"><rect class="bxs" x="412" y="124" width="136" height="24" rx="5"/><text class="sm13k c" x="480" y="141">срок жизни − 1</text></g>
+<g class="a video09-s02-lab-points-delay-k4"><rect class="bxb" x="224" y="107" width="112" height="26" rx="6"/><text class="sm13k c amb ns" x="280" y="125">← +5 мс</text><rect class="bxb" x="624" y="107" width="112" height="26" rx="6"/><text class="sm13k c amb ns" x="680" y="125">+5 мс →</text><text class="smk c" x="480" y="222">задержка 5 мс на каждом выходе роутера: круг туда и обратно 10 мс</text></g>
+<g class="a video09-s02-lab-points-delay-k5"><path class="lr" d="M66 244L78 256M66 256L78 244"/><text class="sm" x="88" y="255">роутер вычитает 1 из срока жизни: пакет со сроком жизни 1 виден на r0 и дальше не идёт</text></g>
+<g class="a video09-s02-lab-points-delay-k6"><text class="cap" x="40" y="298">круг в десять миллисекунд: обычное рукопожатие</text><path class="lm" d="M80 374L800 374"/><path class="lm" d="M80 368L80 380"/><text class="ix c" x="80" y="398">0</text><path class="lm" d="M200 368L200 380"/><text class="ix c" x="200" y="398">2</text><path class="lm" d="M320 368L320 380"/><text class="ix c" x="320" y="398">4</text><path class="lm" d="M440 368L440 380"/><text class="ix c" x="440" y="398">6</text><path class="lm" d="M560 368L560 380"/><text class="ix c" x="560" y="398">8</text><path class="lm" d="M680 368L680 380"/><text class="ix c" x="680" y="398">10</text><path class="lm" d="M800 368L800 380"/><text class="ix c" x="800" y="398">12</text><text class="ix" x="808" y="378">мс</text></g>
+<g class="a video09-s02-lab-points-delay-k7"><circle class="dot" cx="80" cy="374" r="9"/><text class="smk c" x="80" y="350">SYN</text><text class="sm13k c" x="80" y="422">0 мс</text></g>
+<g class="a video09-s02-lab-points-delay-k8"><circle class="doto" cx="688.4" cy="374" r="9"/><text class="smk c" x="688.4" y="350">SYN-ACK</text><text class="sm13k c" x="688.4" y="422">10,14 мс</text></g>
+<g class="a video09-s02-lab-points-delay-k9"><path class="lb" d="M80 334C180 314 588.4 314 688.4 334"/><rect class="bxb" x="314.2" y="309" width="140" height="28" rx="6"/><text class="smk c amb ns" x="384.2" y="328">круг ≈ 10 мс</text></g>
+<g class="a video09-s02-lab-points-delay-k10"><rect class="bx" x="40" y="452" width="880" height="98" rx="8"/><text class="sm" x="56" y="472">в лаборатории прошлых выпусков сервер стоял рядом</text><text class="sm13" x="56" y="492">без задержки результаты опытов с данными в SYN нестабильны: счётчики ядра клиента показывают</text><text class="sm13" x="56" y="510">пакеты «недействительные» (invalid); почему так, по коду ядра не проверяли; с кругом 10 мс порядок один и тот же</text><text class="sm13 mu" x="56" y="530">по общим сведениям, в настоящей сети круг занимает десятки миллисекунд</text></g>
+</svg>

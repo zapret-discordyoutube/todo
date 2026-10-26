@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video09-s03-code-and-ack-check" viewBox="0 0 960 560" width="960" height="560" role="img" aria-labelledby="video09-s03-code-and-ack-check-t video09-s03-code-and-ack-check-d">
+<title id="video09-s03-code-and-ack-check-t">Код syndata и номер приветствия</title>
+<desc id="video09-s03-code-and-ack-check-d">В коде функции syndata проверка одна, у пакета стоит только SYN, дальше идёт копия пакета с блобом из шестнадцати нулей, отправка и выброс оригинала, а подтверждение сервера 1 равно 0 плюс 1 за сам SYN, и если бы сервер принял шестнадцать байт, оно было бы 17 и приветствие шло бы с номера 17.</desc>
+<style>
+.video09-s03-code-and-ack-check {--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video09-s03-code-and-ack-check {--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video09-s03-code-and-ack-check .bg{fill:var(--bg)}
+.video09-s03-code-and-ack-check text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video09-s03-code-and-ack-check .tk{font-weight:600;fill:var(--fg)}
+.video09-s03-code-and-ack-check .sm{font-size:14.5px}
+.video09-s03-code-and-ack-check .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s03-code-and-ack-check .sm13{font-size:13px}
+.video09-s03-code-and-ack-check .sm13k{font-size:13px;font-weight:600;fill:var(--fg)}
+.video09-s03-code-and-ack-check .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video09-s03-code-and-ack-check .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s03-code-and-ack-check .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s03-code-and-ack-check .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video09-s03-code-and-ack-check .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.video09-s03-code-and-ack-check .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s03-code-and-ack-check .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video09-s03-code-and-ack-check .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.video09-s03-code-and-ack-check .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.video09-s03-code-and-ack-check .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video09-s03-code-and-ack-check .mu{fill:var(--mute)}.video09-s03-code-and-ack-check .fg{fill:var(--fg)}.video09-s03-code-and-ack-check .acc{fill:var(--acc)}.video09-s03-code-and-ack-check .rej{fill:var(--rej)}.video09-s03-code-and-ack-check .ok{fill:var(--ok)}.video09-s03-code-and-ack-check .amb{fill:var(--amb)}
+.video09-s03-code-and-ack-check .c{text-anchor:middle}.video09-s03-code-and-ack-check .r{text-anchor:end}.video09-s03-code-and-ack-check .ns{stroke:none}
+.video09-s03-code-and-ack-check .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video09-s03-code-and-ack-check .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video09-s03-code-and-ack-check .bxbd{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4;stroke-dasharray:4 3}
+.video09-s03-code-and-ack-check .fa{fill:var(--tint);stroke:none}.video09-s03-code-and-ack-check .fr{fill:var(--rejt);stroke:none}.video09-s03-code-and-ack-check .fb{fill:var(--ambt);stroke:none}.video09-s03-code-and-ack-check .fo{fill:var(--okt);stroke:none}
+.video09-s03-code-and-ack-check .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video09-s03-code-and-ack-check .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video09-s03-code-and-ack-check .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video09-s03-code-and-ack-check .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video09-s03-code-and-ack-check .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video09-s03-code-and-ack-check .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video09-s03-code-and-ack-check .lrd{fill:none;stroke:var(--rej);stroke-width:2;stroke-dasharray:5 4}
+.video09-s03-code-and-ack-check .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video09-s03-code-and-ack-check .lbd{fill:none;stroke:var(--amb);stroke-width:2;stroke-dasharray:6 4}
+.video09-s03-code-and-ack-check .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video09-s03-code-and-ack-check .hf{fill:var(--fg2)}.video09-s03-code-and-ack-check .ha{fill:var(--acc)}.video09-s03-code-and-ack-check .hr{fill:var(--rej)}.video09-s03-code-and-ack-check .hm{fill:var(--mute)}.video09-s03-code-and-ack-check .hb{fill:var(--amb)}.video09-s03-code-and-ack-check .ho{fill:var(--ok)}
+.video09-s03-code-and-ack-check .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.video09-s03-code-and-ack-check .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.video09-s03-code-and-ack-check .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.video09-s03-code-and-ack-check .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.video09-s03-code-and-ack-check .dote{fill:var(--bg);stroke:var(--mute);stroke-width:1.6}
+.video09-s03-code-and-ack-check .hatch{fill:var(--amb);fill-opacity:.28;stroke:none}
+.video09-s03-code-and-ack-check .nb{fill:var(--bg);stroke:none}
+
+.video09-s03-code-and-ack-check .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@keyframes video09-s03-code-and-ack-check-k1{0%{opacity:0}2.27%{opacity:0}3.41%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k2{0%{opacity:0}6.82%{opacity:0}7.95%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k3{0%{opacity:0}12.5%{opacity:0}13.64%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k4{0%{opacity:0}18.18%{opacity:0}19.32%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k5{0%{opacity:0}23.86%{opacity:0}25%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k6{0%{opacity:0}29.55%{opacity:0}30.68%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k7{0%{opacity:0}35.23%{opacity:0}36.36%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k8{0%{opacity:0}40.91%{opacity:0}42.05%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k9{0%{opacity:0}45.45%{opacity:0}46.59%{opacity:1}56.82%{opacity:1}57.95%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k10{0%{opacity:0}56.82%{opacity:0}57.95%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k11{0%{opacity:0}65.91%{opacity:0}67.05%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s03-code-and-ack-check-k12{0%{opacity:0}75%{opacity:0}76.14%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}
+.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k1{animation-name:video09-s03-code-and-ack-check-k1}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k2{animation-name:video09-s03-code-and-ack-check-k2}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k3{animation-name:video09-s03-code-and-ack-check-k3}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k4{animation-name:video09-s03-code-and-ack-check-k4}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k5{animation-name:video09-s03-code-and-ack-check-k5}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k6{animation-name:video09-s03-code-and-ack-check-k6}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k7{animation-name:video09-s03-code-and-ack-check-k7}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k8{animation-name:video09-s03-code-and-ack-check-k8}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k9{animation-name:video09-s03-code-and-ack-check-k9}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k10{animation-name:video09-s03-code-and-ack-check-k10}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k11{animation-name:video09-s03-code-and-ack-check-k11}.video09-s03-code-and-ack-check .video09-s03-code-and-ack-check-k12{animation-name:video09-s03-code-and-ack-check-k12}
+@media (prefers-reduced-motion:reduce){.video09-s03-code-and-ack-check .a{animation:none}.video09-s03-code-and-ack-check .tr{display:none}}</style>
+<rect class="bg" x="0" y="0" width="960" height="560"/>
+<g><text class="cap" x="40" y="24">syndata в коде и проверка подтверждения</text></g>
+<g class="a video09-s03-code-and-ack-check-k1"><rect class="bx" x="40" y="36" width="880" height="196" rx="8"/><text class="sm13 mu" x="56" y="58">lua/zapret-antidpi.lua, строки 397-407</text></g>
+<g class="a video09-s03-code-and-ack-check-k2"><text class="ix" x="56" y="86">397</text><text class="cdh" x="100" y="86">if bitand(desync.dis.tcp.th_flags, TH_SYN + TH_ACK)==TH_SYN then</text><text class="sm13k acc" x="680" y="86">только SYN</text></g>
+<g class="a video09-s03-code-and-ack-check-k3"><text class="ix" x="56" y="110">398</text><text class="cdh" x="100" y="110">  local dis = deepcopy(desync.dis)</text><text class="sm13k acc" x="680" y="110">копия пакета</text></g>
+<g class="a video09-s03-code-and-ack-check-k4"><text class="ix" x="56" y="134">399</text><text class="cdh" x="100" y="134">  dis.payload = blob(desync, desync.arg.blob, "\x00\x00…")</text><text class="sm13k acc" x="680" y="134">блоб, по умолчанию 16 нулей</text></g>
+<g class="a video09-s03-code-and-ack-check-k5"><text class="sm13 mu" x="100" y="158">строки 400-404: условия и правка блоба, в следующих сценах</text><rect class="fs" x="92" y="143" width="560" height="21"/></g>
+<g class="a video09-s03-code-and-ack-check-k6"><text class="ix" x="56" y="182">406</text><text class="cdh" x="100" y="182">  if rawsend_dissect_ipfrag(dis, desync_opts(desync)) then</text><text class="sm13k acc" x="680" y="182">отправка копии</text></g>
+<g class="a video09-s03-code-and-ack-check-k7"><text class="ix" x="56" y="206">407</text><text class="cdh" x="100" y="206">    return VERDICT_DROP</text><text class="sm13k acc" x="680" y="206">оригинал выбросить</text></g>
+<g class="a video09-s03-code-and-ack-check-k8"><text class="tk" x="40" y="262">проверь себя: с какого номера пошло бы приветствие,</text><text class="tk" x="40" y="284">если бы сервер принял шестнадцать байт из SYN?</text></g>
+<g class="a video09-s03-code-and-ack-check-k9 tr"><rect class="bxd" x="602" y="308" width="318" height="56" rx="8"/><text class="big c" x="761" y="344">?</text></g>
+<g class="a video09-s03-code-and-ack-check-k10"><text class="smk" x="40" y="334">если бы приняли</text><text class="sm13 mu" x="40" y="352">гипотеза</text><rect class="bx" x="220" y="308" width="150" height="56" rx="8"/><text class="smk c" x="295" y="331">SYN</text><text class="sm13 c" x="295" y="351">номер 0</text><rect class="bxb" x="376" y="308" width="220" height="56" rx="8"/><text class="smk c" x="486" y="331">данные SYN: 16 байт</text><text class="sm13 c" x="486" y="351">номера 1…16</text><rect class="bxa" x="602" y="308" width="318" height="56" rx="8"/><text class="smk c" x="761" y="331">приветствие с номера 17</text><text class="sm13 c" x="761" y="351">0 + 1 + 16 = 17</text></g>
+<g class="a video09-s03-code-and-ack-check-k11"><text class="smk" x="40" y="418">в нашем тесте</text><text class="sm13 mu" x="40" y="436">на проводе</text><rect class="bx" x="220" y="392" width="150" height="56" rx="8"/><text class="smk c" x="295" y="415">SYN</text><text class="sm13 c" x="295" y="435">номер 0</text><rect class="bxa" x="376" y="392" width="544" height="56" rx="8"/><text class="smk c" x="648" y="415">приветствие с номера 1, 250 байт</text><text class="sm13 c" x="648" y="435">0 + 1 = 1</text></g>
+<g class="a video09-s03-code-and-ack-check-k12"><text class="tk" x="40" y="484">подтверждение сервера 1, номер приветствия 1: данные SYN в поток не попали</text><text class="sm13 mu" x="40" y="508">в нашем тесте сервер с Linux их не принял; по общим сведениям, сервер с быстрой отправкой данных в SYN</text><text class="sm13 mu" x="40" y="526">мог бы принять иначе, такой сервер мы не пробовали</text></g>
+</svg>

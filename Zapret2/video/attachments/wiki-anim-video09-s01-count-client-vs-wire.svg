@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video09-s01-count-client-vs-wire" viewBox="0 0 960 510" width="960" height="510" role="img" aria-labelledby="video09-s01-count-client-vs-wire-t video09-s01-count-client-vs-wire-d">
+<title id="video09-s01-count-client-vs-wire-t">Сколько пакетов у клиента</title>
+<desc id="video09-s01-count-client-vs-wire-d">Приветствие стоит четвёртым среди пакетов на проводе, но третьим среди пакетов самого клиента, потому что между SYN клиента и его ACK на проводе стоит SYN-ACK сервера, а в счёт клиента он не идёт.</desc>
+<style>
+.video09-s01-count-client-vs-wire {--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video09-s01-count-client-vs-wire {--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video09-s01-count-client-vs-wire .bg{fill:var(--bg)}
+.video09-s01-count-client-vs-wire text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video09-s01-count-client-vs-wire .tk{font-weight:600;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .sm{font-size:14.5px}
+.video09-s01-count-client-vs-wire .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .sm13{font-size:13px}
+.video09-s01-count-client-vs-wire .sm13k{font-size:13px;font-weight:600;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video09-s01-count-client-vs-wire .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s01-count-client-vs-wire .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video09-s01-count-client-vs-wire .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.video09-s01-count-client-vs-wire .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s01-count-client-vs-wire .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.video09-s01-count-client-vs-wire .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.video09-s01-count-client-vs-wire .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video09-s01-count-client-vs-wire .mu{fill:var(--mute)}.video09-s01-count-client-vs-wire .fg{fill:var(--fg)}.video09-s01-count-client-vs-wire .acc{fill:var(--acc)}.video09-s01-count-client-vs-wire .rej{fill:var(--rej)}.video09-s01-count-client-vs-wire .ok{fill:var(--ok)}.video09-s01-count-client-vs-wire .amb{fill:var(--amb)}
+.video09-s01-count-client-vs-wire .c{text-anchor:middle}.video09-s01-count-client-vs-wire .r{text-anchor:end}.video09-s01-count-client-vs-wire .ns{stroke:none}
+.video09-s01-count-client-vs-wire .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video09-s01-count-client-vs-wire .bxbd{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4;stroke-dasharray:4 3}
+.video09-s01-count-client-vs-wire .fa{fill:var(--tint);stroke:none}.video09-s01-count-client-vs-wire .fr{fill:var(--rejt);stroke:none}.video09-s01-count-client-vs-wire .fb{fill:var(--ambt);stroke:none}.video09-s01-count-client-vs-wire .fo{fill:var(--okt);stroke:none}
+.video09-s01-count-client-vs-wire .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video09-s01-count-client-vs-wire .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video09-s01-count-client-vs-wire .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video09-s01-count-client-vs-wire .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video09-s01-count-client-vs-wire .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video09-s01-count-client-vs-wire .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video09-s01-count-client-vs-wire .lrd{fill:none;stroke:var(--rej);stroke-width:2;stroke-dasharray:5 4}
+.video09-s01-count-client-vs-wire .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video09-s01-count-client-vs-wire .lbd{fill:none;stroke:var(--amb);stroke-width:2;stroke-dasharray:6 4}
+.video09-s01-count-client-vs-wire .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video09-s01-count-client-vs-wire .hf{fill:var(--fg2)}.video09-s01-count-client-vs-wire .ha{fill:var(--acc)}.video09-s01-count-client-vs-wire .hr{fill:var(--rej)}.video09-s01-count-client-vs-wire .hm{fill:var(--mute)}.video09-s01-count-client-vs-wire .hb{fill:var(--amb)}.video09-s01-count-client-vs-wire .ho{fill:var(--ok)}
+.video09-s01-count-client-vs-wire .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.video09-s01-count-client-vs-wire .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.video09-s01-count-client-vs-wire .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.video09-s01-count-client-vs-wire .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.video09-s01-count-client-vs-wire .dote{fill:var(--bg);stroke:var(--mute);stroke-width:1.6}
+.video09-s01-count-client-vs-wire .hatch{fill:var(--amb);fill-opacity:.28;stroke:none}
+.video09-s01-count-client-vs-wire .nb{fill:var(--bg);stroke:none}
+
+.video09-s01-count-client-vs-wire .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@keyframes video09-s01-count-client-vs-wire-k1{0%{opacity:0}2.27%{opacity:0}3.41%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k2{0%{opacity:0}6.82%{opacity:0}7.95%{opacity:1}20.45%{opacity:1}21.59%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k3{0%{opacity:0}20.45%{opacity:0}21.59%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k4{0%{opacity:0}27.27%{opacity:0}28.41%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k5{0%{opacity:0}31.82%{opacity:0}32.95%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k6{0%{opacity:0}36.36%{opacity:0}37.5%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}@keyframes video09-s01-count-client-vs-wire-k7{0%{opacity:0}47.73%{opacity:0}48.86%{opacity:1}96.36%{opacity:1}99.09%{opacity:0}100%{opacity:0}}
+.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k1{animation-name:video09-s01-count-client-vs-wire-k1}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k2{animation-name:video09-s01-count-client-vs-wire-k2}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k3{animation-name:video09-s01-count-client-vs-wire-k3}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k4{animation-name:video09-s01-count-client-vs-wire-k4}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k5{animation-name:video09-s01-count-client-vs-wire-k5}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k6{animation-name:video09-s01-count-client-vs-wire-k6}.video09-s01-count-client-vs-wire .video09-s01-count-client-vs-wire-k7{animation-name:video09-s01-count-client-vs-wire-k7}
+@media (prefers-reduced-motion:reduce){.video09-s01-count-client-vs-wire .a{animation:none}.video09-s01-count-client-vs-wire .tr{display:none}}</style>
+<rect class="bg" x="0" y="0" width="960" height="510"/>
+<g><text class="cap" x="40" y="24">каким по счёту стоит приветствие: на проводе и среди пакетов клиента</text></g>
+<g class="a video09-s01-count-client-vs-wire-k1"><text class="tk" x="40" y="64">пакеты на проводе</text><rect class="bxa" x="40" y="76" width="190" height="56" rx="8"/><text class="big" x="54" y="100">1</text><text class="tk" x="88" y="100">SYN</text><text class="sm13 mu" x="88" y="121">клиент → сервер</text><rect class="bxs" x="250" y="76" width="190" height="56" rx="8"/><text class="big" x="264" y="100">2</text><text class="tk" x="298" y="100">SYN-ACK</text><text class="sm13 mu" x="298" y="121">сервер → клиент</text><rect class="bxa" x="460" y="76" width="190" height="56" rx="8"/><text class="big" x="474" y="100">3</text><text class="tk" x="508" y="100">ACK</text><text class="sm13 mu" x="508" y="121">клиент → сервер</text><rect class="bxb" x="670" y="76" width="190" height="56" rx="8"/><text class="big" x="684" y="100">4</text><text class="tk" x="718" y="100">приветствие</text><text class="sm13 mu" x="718" y="121">250 байт, номер 1</text></g>
+<g class="a video09-s01-count-client-vs-wire-k2 tr"><text class="tk" x="40" y="182">проверь себя: каким по счёту будет приветствие среди пакетов самого клиента?</text><text class="tk" x="40" y="214">пакеты самого клиента</text><rect class="bxd" x="40" y="226" width="190" height="56" rx="8"/><text class="big c" x="135" y="262">?</text><rect class="bxd" x="460" y="226" width="190" height="56" rx="8"/><text class="big c" x="555" y="262">?</text><rect class="bxd" x="670" y="226" width="190" height="56" rx="8"/><text class="big c" x="765" y="262">?</text></g>
+<g class="a video09-s01-count-client-vs-wire-k3"><text class="tk" x="40" y="214">пакеты самого клиента</text><rect class="bxa" x="40" y="226" width="190" height="56" rx="8"/><text class="big" x="54" y="260">1</text><text class="tk" x="88" y="260">SYN</text><rect class="bxa" x="460" y="226" width="190" height="56" rx="8"/><text class="big" x="474" y="260">2</text><text class="tk" x="508" y="260">ACK</text><rect class="bxb" x="670" y="226" width="190" height="56" rx="8"/><text class="big" x="684" y="260">3</text><text class="tk" x="718" y="260">приветствие</text><rect class="bxd" x="250" y="226" width="190" height="56" rx="8"/><text class="sm13 mu c" x="345" y="251">в счёт клиента</text><text class="sm13 mu c" x="345" y="268">не идёт</text></g>
+<g class="a video09-s01-count-client-vs-wire-k4"><path class="lmd" d="M135 134L135 196"/><path class="lmd" d="M555 134L555 224"/><path class="lmd" d="M765 134L765 224"/></g>
+<g class="a video09-s01-count-client-vs-wire-k5"><rect class="bxb" x="664" y="70" width="202" height="218" rx="10"/></g>
+<g class="a video09-s01-count-client-vs-wire-k6"><text class="tk" x="40" y="324">на проводе 4, у клиента 3: SYN-ACK сервера стоит между SYN и ACK клиента</text><text class="sm mu" x="40" y="347">стратегии считают пакеты по сторонам: счёт клиента ведётся отдельно от счёта сервера</text></g>
+<g class="a video09-s01-count-client-vs-wire-k7"><text class="cap" x="40" y="392">договорённости о выражениях</text><rect class="bxo" x="40" y="404" width="280" height="66" rx="8"/><text class="tk" x="54" y="430">в нашем тесте</text><text class="sm13" x="54" y="452">настоящий запуск в лаборатории</text><rect class="bx" x="340" y="404" width="280" height="66" rx="8"/><text class="tk" x="354" y="430">по общим сведениям</text><text class="sm13" x="354" y="452">общее знание, не наш опыт</text><rect class="bxs" x="640" y="404" width="280" height="66" rx="8"/><text class="tk" x="654" y="430">ТСПУ: неизвестно</text><text class="sm13" x="654" y="452">про настоящее ничего не знаем</text></g>
+</svg>

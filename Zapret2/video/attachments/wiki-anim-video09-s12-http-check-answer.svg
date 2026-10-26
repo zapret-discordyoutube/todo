@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="video09-s12-http-check-answer" viewBox="0 0 960 360" width="960" height="360" role="img" aria-labelledby="video09-s12-http-check-answer-t video09-s12-http-check-answer-d">
+<title id="video09-s12-http-check-answer-t">Срочный байт в запросе HTTP</title>
+<desc id="video09-s12-http-check-answer-d">В запросе HTTP из 81 байта метка midsld даёт позицию 39, указатель срочности равен 40, пакет получается из 82 байт, а сервер читает 39 и 42 байта.</desc>
+<style>
+.video09-s12-http-check-answer {--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.video09-s12-http-check-answer {--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.video09-s12-http-check-answer .bg{fill:var(--bg)}
+.video09-s12-http-check-answer text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.video09-s12-http-check-answer .tk{font-weight:600;fill:var(--fg)}
+.video09-s12-http-check-answer .sm{font-size:14.5px}
+.video09-s12-http-check-answer .smk{font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s12-http-check-answer .sm13{font-size:13px}
+.video09-s12-http-check-answer .sm13k{font-size:13px;font-weight:600;fill:var(--fg)}
+.video09-s12-http-check-answer .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.video09-s12-http-check-answer .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.video09-s12-http-check-answer .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s12-http-check-answer .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.video09-s12-http-check-answer .cd{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.video09-s12-http-check-answer .cdh{white-space:pre;font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.video09-s12-http-check-answer .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.video09-s12-http-check-answer .mt{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px}
+.video09-s12-http-check-answer .big{font-size:26px;font-weight:700;fill:var(--fg)}
+.video09-s12-http-check-answer .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.video09-s12-http-check-answer .mu{fill:var(--mute)}.video09-s12-http-check-answer .fg{fill:var(--fg)}.video09-s12-http-check-answer .acc{fill:var(--acc)}.video09-s12-http-check-answer .rej{fill:var(--rej)}.video09-s12-http-check-answer .ok{fill:var(--ok)}.video09-s12-http-check-answer .amb{fill:var(--amb)}
+.video09-s12-http-check-answer .c{text-anchor:middle}.video09-s12-http-check-answer .r{text-anchor:end}.video09-s12-http-check-answer .ns{stroke:none}
+.video09-s12-http-check-answer .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.video09-s12-http-check-answer .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.video09-s12-http-check-answer .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.video09-s12-http-check-answer .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.video09-s12-http-check-answer .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.video09-s12-http-check-answer .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.video09-s12-http-check-answer .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.video09-s12-http-check-answer .bxbd{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4;stroke-dasharray:4 3}
+.video09-s12-http-check-answer .fa{fill:var(--tint);stroke:none}.video09-s12-http-check-answer .fr{fill:var(--rejt);stroke:none}.video09-s12-http-check-answer .fb{fill:var(--ambt);stroke:none}.video09-s12-http-check-answer .fo{fill:var(--okt);stroke:none}
+.video09-s12-http-check-answer .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.video09-s12-http-check-answer .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.video09-s12-http-check-answer .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.video09-s12-http-check-answer .la{fill:none;stroke:var(--acc);stroke-width:2}
+.video09-s12-http-check-answer .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.video09-s12-http-check-answer .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.video09-s12-http-check-answer .lrd{fill:none;stroke:var(--rej);stroke-width:2;stroke-dasharray:5 4}
+.video09-s12-http-check-answer .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.video09-s12-http-check-answer .lbd{fill:none;stroke:var(--amb);stroke-width:2;stroke-dasharray:6 4}
+.video09-s12-http-check-answer .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.video09-s12-http-check-answer .hf{fill:var(--fg2)}.video09-s12-http-check-answer .ha{fill:var(--acc)}.video09-s12-http-check-answer .hr{fill:var(--rej)}.video09-s12-http-check-answer .hm{fill:var(--mute)}.video09-s12-http-check-answer .hb{fill:var(--amb)}.video09-s12-http-check-answer .ho{fill:var(--ok)}
+.video09-s12-http-check-answer .dot{fill:var(--acc);stroke:var(--bg);stroke-width:2}
+.video09-s12-http-check-answer .dotr{fill:var(--rej);stroke:var(--bg);stroke-width:2}
+.video09-s12-http-check-answer .doto{fill:var(--ok);stroke:var(--bg);stroke-width:2}
+.video09-s12-http-check-answer .dotb{fill:var(--amb);stroke:var(--bg);stroke-width:2}
+.video09-s12-http-check-answer .hatch{fill:var(--amb);fill-opacity:.28;stroke:none}
+.video09-s12-http-check-answer .nb{fill:var(--bg);stroke:none}
+.video09-s12-http-check-answer .a{animation-duration:36s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}@keyframes video09-s12-http-check-answer-k1{0%{opacity:0}0.833%{opacity:0}2.222%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k2{0%{opacity:0}2.222%{opacity:0}3.611%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k3{0%{opacity:0}4.167%{opacity:0}5.556%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k4{0%{opacity:0}8.333%{opacity:0}9.722%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k5{0%{opacity:0}13.889%{opacity:0}15.278%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k6{0%{opacity:0;transform:translate(0px,8px)}16.667%{opacity:0;transform:translate(0px,8px)}18.056%{opacity:1;transform:translate(0px,0px)}95.556%{opacity:1;transform:translate(0px,0px)}98.889%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}@keyframes video09-s12-http-check-answer-k7{0%{opacity:0;transform:translate(0px,8px)}25%{opacity:0;transform:translate(0px,8px)}26.389%{opacity:1;transform:translate(0px,0px)}95.556%{opacity:1;transform:translate(0px,0px)}98.889%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}@keyframes video09-s12-http-check-answer-k8{0%{opacity:0;transform:translate(0px,8px)}33.333%{opacity:0;transform:translate(0px,8px)}34.722%{opacity:1;transform:translate(0px,0px)}95.556%{opacity:1;transform:translate(0px,0px)}98.889%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}@keyframes video09-s12-http-check-answer-k9{0%{opacity:0;transform:translate(0px,8px)}41.667%{opacity:0;transform:translate(0px,8px)}43.056%{opacity:1;transform:translate(0px,0px)}95.556%{opacity:1;transform:translate(0px,0px)}98.889%{opacity:0;transform:translate(0px,0px)}100%{opacity:0;transform:translate(0px,0px)}}@keyframes video09-s12-http-check-answer-k10{0%{opacity:0}52.778%{opacity:0}54.167%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k11{0%{opacity:0}58.333%{opacity:0}59.722%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}@keyframes video09-s12-http-check-answer-k12{0%{opacity:0}63.889%{opacity:0}65.278%{opacity:1}95.556%{opacity:1}98.889%{opacity:0}100%{opacity:0}}.video09-s12-http-check-answer .video09-s12-http-check-answer-k1{animation-name:video09-s12-http-check-answer-k1}.video09-s12-http-check-answer .video09-s12-http-check-answer-k2{animation-name:video09-s12-http-check-answer-k2}.video09-s12-http-check-answer .video09-s12-http-check-answer-k3{animation-name:video09-s12-http-check-answer-k3}.video09-s12-http-check-answer .video09-s12-http-check-answer-k4{animation-name:video09-s12-http-check-answer-k4}.video09-s12-http-check-answer .video09-s12-http-check-answer-k5{animation-name:video09-s12-http-check-answer-k5}.video09-s12-http-check-answer .video09-s12-http-check-answer-k6{animation-name:video09-s12-http-check-answer-k6}.video09-s12-http-check-answer .video09-s12-http-check-answer-k7{animation-name:video09-s12-http-check-answer-k7}.video09-s12-http-check-answer .video09-s12-http-check-answer-k8{animation-name:video09-s12-http-check-answer-k8}.video09-s12-http-check-answer .video09-s12-http-check-answer-k9{animation-name:video09-s12-http-check-answer-k9}.video09-s12-http-check-answer .video09-s12-http-check-answer-k10{animation-name:video09-s12-http-check-answer-k10}.video09-s12-http-check-answer .video09-s12-http-check-answer-k11{animation-name:video09-s12-http-check-answer-k11}.video09-s12-http-check-answer .video09-s12-http-check-answer-k12{animation-name:video09-s12-http-check-answer-k12}@media (prefers-reduced-motion:reduce){.video09-s12-http-check-answer .a{animation:none}.video09-s12-http-check-answer .tr{display:none}}</style>
+<rect class="bg" x="0" y="0" width="960" height="360"/>
+<g class="a video09-s12-http-check-answer-k1"><text class="cap" x="40" y="24">запрос HTTP, 81 байт, имя узла с 33-го байта, смещение 32</text></g>
+<g class="a video09-s12-http-check-answer-k2"><rect class="bx" x="40" y="40" width="880" height="70" rx="8"/></g>
+<g class="a video09-s12-http-check-answer-k3"><text class="cd" x="56" y="66">GET /index.html HTTP/1.1</text><text class="cd" x="56" y="90">Host: www.exa</text><text class="cd" x="157.79" y="90"></text></g>
+<g class="a video09-s12-http-check-answer-k4"><rect class="bxr" x="159.79" y="74" width="8" height="22" rx="2"/><text class="cd" x="171.79" y="90">mple.com</text><text class="sm13 mu" x="248.26" y="90">и ещё две строки заголовков</text></g>
+<g class="a video09-s12-http-check-answer-k5"><text class="cap" x="40" y="140">шаги</text></g>
+<g class="a video09-s12-http-check-answer-k6"><rect class="bx" x="40" y="152" width="208" height="72" rx="8"/><text class="sm c" x="144" y="176">метка midsld</text><text class="mk c" x="144" y="204">позиция 39 с нуля</text></g>
+<g class="a video09-s12-http-check-answer-k7"><rect class="bxa" x="264" y="152" width="208" height="72" rx="8"/><text class="sm c" x="368" y="176">указатель срочности</text><text class="mk c" x="368" y="204">39 + 1 = 40</text></g>
+<g class="a video09-s12-http-check-answer-k8"><rect class="bx" x="488" y="152" width="208" height="72" rx="8"/><text class="sm c" x="592" y="176">пакет</text><text class="mk c" x="592" y="204">81 + 1 = 82 байта</text></g>
+<g class="a video09-s12-http-check-answer-k9"><rect class="bx" x="712" y="152" width="208" height="72" rx="8"/><text class="sm c" x="816" y="176">сервер читает</text><text class="mk c" x="816" y="204">39 и 42 байта</text></g>
+<g class="a video09-s12-http-check-answer-k10"><rect class="bxo" x="40" y="244" width="140.4" height="28" rx="4"/><text class="mk c" x="110.2" y="263">39</text><rect class="bxo" x="182.4" y="244" width="151.2" height="28" rx="4"/><text class="mk c" x="258" y="263">42</text></g>
+<g class="a video09-s12-http-check-answer-k11"><text class="sm" x="40" y="292">сервер: подтверждение 83, чтения по 39 и 42 байта, всего 81</text></g>
+<g class="a video09-s12-http-check-answer-k12"><text class="smk" x="40" y="318">то же устройство, что с приветствием: указатель на единицу больше позиции метки</text></g>
+</svg>
