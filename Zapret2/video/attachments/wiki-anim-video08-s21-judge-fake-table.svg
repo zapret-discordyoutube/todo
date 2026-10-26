@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v08-s21-judge-fake-table" viewBox="0 0 960 580" width="960" height="580" role="img" aria-labelledby="v08-s21-judge-fake-table-t v08-s21-judge-fake-table-d">
+<title id="v08-s21-judge-fake-table-t">Судья, фейк и таблица без условия</title>
+<desc id="v08-s21-judge-fake-table-d">Повтор договорённостей: в роутере стоит наша игрушка-инспектор, а у сервера наш приёмник на Linux, и слово «сработало» значит, что приём обошёл игрушку, а данные дошли до сервера целыми; фейк с опцией MD5 или с испорченной суммой умирает в ядре получателя, а фейк со сроком жизни один умирает в роутере; с условием во всех трёх функциях приложение сервера читает 250 байт, равных оригиналу, а без условия в разрезе с фейками и в перемешивании с фейками приложение получает 250 нулевых байт, в имени между двойниками имя сайта заменено выдуманным, потому что двойник подменяет только 15 байт имени, а остальное приветствие настоящее.</desc>
+<style>.v08-s21-judge-fake-table{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v08-s21-judge-fake-table{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v08-s21-judge-fake-table .bg{fill:var(--bg)}
+.v08-s21-judge-fake-table text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v08-s21-judge-fake-table .tk{font-weight:600;fill:var(--fg)}
+.v08-s21-judge-fake-table .sm{font-size:14.5px}
+.v08-s21-judge-fake-table .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v08-s21-judge-fake-table .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v08-s21-judge-fake-table .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v08-s21-judge-fake-table .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v08-s21-judge-fake-table .big{font-size:22px}
+.v08-s21-judge-fake-table .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v08-s21-judge-fake-table .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v08-s21-judge-fake-table .mu{fill:var(--mute)}.v08-s21-judge-fake-table .fg{fill:var(--fg)}.v08-s21-judge-fake-table .acc{fill:var(--acc)}.v08-s21-judge-fake-table .rej{fill:var(--rej)}.v08-s21-judge-fake-table .ok{fill:var(--ok)}.v08-s21-judge-fake-table .amb{fill:var(--amb)}
+.v08-s21-judge-fake-table .c{text-anchor:middle}.v08-s21-judge-fake-table .r{text-anchor:end}.v08-s21-judge-fake-table .ns{stroke:none}
+.v08-s21-judge-fake-table .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v08-s21-judge-fake-table .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v08-s21-judge-fake-table .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v08-s21-judge-fake-table .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v08-s21-judge-fake-table .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v08-s21-judge-fake-table .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v08-s21-judge-fake-table .fa{fill:var(--tint);stroke:none}.v08-s21-judge-fake-table .fr{fill:var(--rejt);stroke:none}.v08-s21-judge-fake-table .fb{fill:var(--ambt);stroke:none}.v08-s21-judge-fake-table .fo{fill:var(--okt);stroke:none}
+.v08-s21-judge-fake-table .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v08-s21-judge-fake-table .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v08-s21-judge-fake-table .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v08-s21-judge-fake-table .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v08-s21-judge-fake-table .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v08-s21-judge-fake-table .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v08-s21-judge-fake-table .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v08-s21-judge-fake-table .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v08-s21-judge-fake-table .hf{fill:var(--fg2)}.v08-s21-judge-fake-table .ha{fill:var(--acc)}.v08-s21-judge-fake-table .hr{fill:var(--rej)}.v08-s21-judge-fake-table .hm{fill:var(--mute)}.v08-s21-judge-fake-table .hb{fill:var(--amb)}
+.v08-s21-judge-fake-table .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v08-s21-judge-fake-table .a{animation-duration:48s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v08-s21-judge-fake-table .a{animation:none}.v08-s21-judge-fake-table .tr{display:none}}
+.v08-s21-judge-fake-table .fl{fill:var(--bg);stroke:none}
+.v08-s21-judge-fake-table .bxw{fill:var(--bg);stroke:var(--amb);stroke-width:1.4;stroke-dasharray:5 4}
+.v08-s21-judge-fake-table .bxwa{fill:var(--bg);stroke:var(--acc);stroke-width:1.4;stroke-dasharray:5 4}
+.v08-s21-judge-fake-table .bxrd{fill:none;stroke:var(--rej);stroke-width:2.4;stroke-dasharray:6 4}
+.v08-s21-judge-fake-table .lbd{fill:none;stroke:var(--amb);stroke-width:2;stroke-dasharray:6 4}
+.v08-s21-judge-fake-table .bxz{fill:var(--mute);fill-opacity:.28;stroke:var(--mute);stroke-width:1.2}
+.v08-s21-judge-fake-table .bxoo{fill:var(--bg);stroke:var(--ok);stroke-width:2.2}
+.v08-s21-judge-fake-table .bxbb{fill:var(--bg);stroke:var(--amb);stroke-width:2.2}
+.v08-s21-judge-fake-table .bxrr{fill:var(--bg);stroke:var(--rej);stroke-width:2.2}
+.v08-s21-judge-fake-table .bxaa{fill:var(--bg);stroke:var(--acc);stroke-width:2.2}
+.v08-s21-judge-fake-table .ho{fill:var(--ok)}
+.v08-s21-judge-fake-table .bxah{fill:none;stroke:var(--acc);stroke-width:2.4}
+.v08-s21-judge-fake-table .bxrh{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v08-s21-judge-fake-table .bxwr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4;stroke-dasharray:5 4}
+@keyframes v08-s21-judge-fake-table-k1{0.0%{opacity:0}2.083%{opacity:0}3.021%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e1{animation-name:v08-s21-judge-fake-table-k1}@keyframes v08-s21-judge-fake-table-k2{0.0%{opacity:0}8.333%{opacity:0}9.271%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e2{animation-name:v08-s21-judge-fake-table-k2}@keyframes v08-s21-judge-fake-table-k3{0.0%{opacity:0}14.583%{opacity:0}15.521%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e3{animation-name:v08-s21-judge-fake-table-k3}@keyframes v08-s21-judge-fake-table-k4{0.0%{opacity:0}16.667%{opacity:0}17.604%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e4{animation-name:v08-s21-judge-fake-table-k4}@keyframes v08-s21-judge-fake-table-k5{0.0%{opacity:0}19.792%{opacity:0}20.729%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e5{animation-name:v08-s21-judge-fake-table-k5}@keyframes v08-s21-judge-fake-table-k6{0.0%{opacity:0}22.917%{opacity:0}23.854%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e6{animation-name:v08-s21-judge-fake-table-k6}@keyframes v08-s21-judge-fake-table-k7{0.0%{opacity:0}27.083%{opacity:0}28.021%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e7{animation-name:v08-s21-judge-fake-table-k7}@keyframes v08-s21-judge-fake-table-k8{0.0%{opacity:0}31.25%{opacity:0}32.188%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e8{animation-name:v08-s21-judge-fake-table-k8}@keyframes v08-s21-judge-fake-table-k9{0.0%{opacity:0}33.333%{opacity:0}34.271%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e9{animation-name:v08-s21-judge-fake-table-k9}@keyframes v08-s21-judge-fake-table-k10{0.0%{opacity:0}37.5%{opacity:0}38.438%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e10{animation-name:v08-s21-judge-fake-table-k10}@keyframes v08-s21-judge-fake-table-k11{0.0%{opacity:0}41.667%{opacity:0}42.604%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e11{animation-name:v08-s21-judge-fake-table-k11}@keyframes v08-s21-judge-fake-table-k12{0.0%{opacity:0}50.0%{opacity:0}50.938%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e12{animation-name:v08-s21-judge-fake-table-k12}@keyframes v08-s21-judge-fake-table-k13{0.0%{opacity:0}62.5%{opacity:0}63.438%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e13{animation-name:v08-s21-judge-fake-table-k13}@keyframes v08-s21-judge-fake-table-k14{0.0%{opacity:0}64.583%{opacity:0}65.521%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v08-s21-judge-fake-table .e14{animation-name:v08-s21-judge-fake-table-k14}</style>
+<rect class="bg" x="0" y="0" width="960" height="580"/>
+<g><text class="cap" x="40" y="22">повтор: двое участников, фейк с условием и что бывает без него</text></g>
+<g class="a e1"><rect class="bx" x="40" y="40" width="150" height="70" rx="8"/><text class="sm tk c" x="115" y="70">клиент</text><text class="ix c mu" x="115" y="90">шлёт приветствие</text><rect class="bx" x="250" y="40" width="460" height="70" rx="8"/><text class="cap" x="262" y="58">роутер</text><rect class="bxb" x="320" y="66" width="330" height="38" rx="6"/><text class="sm tk c" x="485" y="82">игрушечный инспектор</text><text class="ix c fg" x="485" y="98">наша модель, не оборудование</text><rect class="bx" x="750" y="40" width="170" height="70" rx="8"/><text class="sm tk c" x="835" y="70">сервер</text><text class="ix c mu" x="835" y="90">наш приёмник: Linux</text><path class="lf" d="M190 75L240.0 75.0"/><polygon class="hf" points="250,75 240.0,80.0 240.0,70.0"/><path class="lf" d="M710 75L740.0 75.0"/><polygon class="hf" points="750,75 740.0,80.0 740.0,70.0"/></g>
+<g class="a e2"><rect class="bxo" x="40" y="124" width="880" height="36" rx="8"/><text class="sm tk" x="54" y="147">сработало = обошли нашу игрушку, и данные дошли до сервера целыми</text></g>
+<g class="a e3"><text class="cap" x="40" y="190">фейк с условием: намеренный дефект, из-за него фейк не доходит до приложения</text></g>
+<g class="a e4"><rect class="bxb" x="40" y="200" width="280" height="56" rx="8"/><text class="sm tk" x="52" y="224">опция MD5</text><text class="sm" x="52" y="244">умирает в ядре получателя</text></g>
+<g class="a e5"><rect class="bxb" x="340" y="200" width="280" height="56" rx="8"/><text class="sm tk" x="352" y="224">испорченная сумма</text><text class="sm" x="352" y="244">умирает в ядре получателя</text></g>
+<g class="a e6"><rect class="bxb" x="640" y="200" width="280" height="56" rx="8"/><text class="sm tk" x="652" y="224">срок жизни один</text><text class="sm" x="652" y="244">умирает в роутере</text></g>
+<g class="a e7"><text class="sm mu" x="40" y="278">в выпуске «Фейк и его условия» дефект называется условием</text></g>
+<g class="a e8"><text class="cap" x="40" y="306">функция</text><text class="cap" x="350" y="306">с условием (MD5)</text><text class="cap" x="600" y="306">без условия</text><path class="lm" d="M40 314L920 314"/></g>
+<g class="a e9"><text class="mk" x="40" y="338">fakedsplit</text><text class="sm mu" x="40" y="356">«разрез с фейками»</text><rect class="bxo" x="344" y="322" width="240" height="36" rx="6"/><text class="sm" x="356" y="345">250 байт, равны оригиналу</text><rect class="bxr" x="594" y="322" width="326" height="36" rx="6"/><text class="sm" x="606" y="345">250 байт: все нули</text></g>
+<g class="a e10"><text class="mk" x="40" y="382">fakeddisorder</text><text class="sm mu" x="40" y="400">«перемешивание с фейками»</text><rect class="bxo" x="344" y="366" width="240" height="36" rx="6"/><text class="sm" x="356" y="389">250 байт, равны оригиналу</text><rect class="bxr" x="594" y="366" width="326" height="36" rx="6"/><text class="sm" x="606" y="389">250 байт: все нули</text></g>
+<g class="a e11"><text class="mk" x="40" y="426">hostfakesplit</text><text class="sm mu" x="40" y="444">«имя между двойниками»</text><rect class="bxo" x="344" y="410" width="240" height="36" rx="6"/><text class="sm" x="356" y="433">250 байт, равны оригиналу</text><rect class="bxr" x="594" y="410" width="326" height="36" rx="6"/><text class="sm" x="606" y="433">250 байт: имя заменено выдуманным</text></g>
+<g class="a e12"><text class="cap" x="40" y="472">проверь себя</text><text class="sm tk" x="190" y="472">в какой из трёх функций без условия не нули, а двойник имени, и почему?</text></g>
+<g class="a e13"><rect class="bxrd" x="36" y="406" width="888" height="44" rx="8"/></g>
+<g class="a e14"><text class="sm" x="40" y="500">в hostfakesplit: её двойник подменяет только 15 байт имени, остальное приветствие настоящее</text><text class="sm" x="40" y="522">в двух других фейк накрывает целую часть, и вместо неё приходят нули</text></g>
+</svg>
