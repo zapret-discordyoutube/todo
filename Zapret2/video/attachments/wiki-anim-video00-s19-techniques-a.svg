@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s19-techniques-a" viewBox="0 0 960 446" width="960" height="446" role="img" aria-labelledby="v00-s19-techniques-a-t v00-s19-techniques-a-d">
+<title id="v00-s19-techniques-a-t">Первые три приёма</title>
+<desc id="v00-s19-techniques-a-d">Первые три приёма идут цепочкой: метки нужны перед выпуском про разрезание на части, он нужен перед выпуском про перестановку, а выпуск про фейк и его условия объясняет, чем подделка должна отличаться от настоящего пакета, и от него стрелки лишь намечены дальше.</desc>
+<style>.v00-s19-techniques-a{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s19-techniques-a{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s19-techniques-a .bg{fill:var(--bg)}
+.v00-s19-techniques-a text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s19-techniques-a .tk{font-weight:600;fill:var(--fg)}
+.v00-s19-techniques-a .sm{font-size:14.5px}
+.v00-s19-techniques-a .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s19-techniques-a .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s19-techniques-a .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s19-techniques-a .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s19-techniques-a .big{font-size:22px}
+.v00-s19-techniques-a .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s19-techniques-a .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s19-techniques-a .mu{fill:var(--mute)}.v00-s19-techniques-a .fg{fill:var(--fg)}.v00-s19-techniques-a .acc{fill:var(--acc)}.v00-s19-techniques-a .rej{fill:var(--rej)}.v00-s19-techniques-a .ok{fill:var(--ok)}.v00-s19-techniques-a .amb{fill:var(--amb)}
+.v00-s19-techniques-a .c{text-anchor:middle}.v00-s19-techniques-a .r{text-anchor:end}.v00-s19-techniques-a .ns{stroke:none}
+.v00-s19-techniques-a .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s19-techniques-a .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s19-techniques-a .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s19-techniques-a .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s19-techniques-a .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s19-techniques-a .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s19-techniques-a .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s19-techniques-a .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s19-techniques-a .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s19-techniques-a .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s19-techniques-a .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s19-techniques-a .fa{fill:var(--tint);stroke:none}.v00-s19-techniques-a .fr{fill:var(--rejt);stroke:none}.v00-s19-techniques-a .fb{fill:var(--ambt);stroke:none}.v00-s19-techniques-a .fo{fill:var(--okt);stroke:none}
+.v00-s19-techniques-a .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s19-techniques-a .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s19-techniques-a .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s19-techniques-a .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s19-techniques-a .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s19-techniques-a .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s19-techniques-a .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s19-techniques-a .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s19-techniques-a .hf{fill:var(--fg2)}.v00-s19-techniques-a .ha{fill:var(--acc)}.v00-s19-techniques-a .hr{fill:var(--rej)}.v00-s19-techniques-a .hm{fill:var(--mute)}.v00-s19-techniques-a .hb{fill:var(--amb)}
+.v00-s19-techniques-a .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s19-techniques-a .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s19-techniques-a .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s19-techniques-a .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s19-techniques-a .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s19-techniques-a .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s19-techniques-a .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s19-techniques-a .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s19-techniques-a .inv{fill:var(--bg);stroke:none}
+.v00-s19-techniques-a .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s19-techniques-a .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s19-techniques-a .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s19-techniques-a .a{animation:none}.v00-s19-techniques-a .tr{display:none}}
+@keyframes v00-s19-techniques-a-k1{0.0%{opacity:0}1.364%{opacity:0}2.386%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e1{animation-name:v00-s19-techniques-a-k1}@keyframes v00-s19-techniques-a-k2{0.0%{opacity:0}4.545%{opacity:0}5.568%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e2{animation-name:v00-s19-techniques-a-k2}@keyframes v00-s19-techniques-a-k3{0.0%{opacity:0}15.909%{opacity:0}16.932%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e3{animation-name:v00-s19-techniques-a-k3}@keyframes v00-s19-techniques-a-k4{0.0%{opacity:0}27.273%{opacity:0}28.295%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e4{animation-name:v00-s19-techniques-a-k4}@keyframes v00-s19-techniques-a-k5{0.0%{opacity:0}3.182%{opacity:0}4.205%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e5{animation-name:v00-s19-techniques-a-k5}@keyframes v00-s19-techniques-a-k6{0.0%{opacity:0}13.636%{opacity:0}14.659%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e6{animation-name:v00-s19-techniques-a-k6}@keyframes v00-s19-techniques-a-k7{0.0%{opacity:0}31.818%{opacity:0}32.841%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e7{animation-name:v00-s19-techniques-a-k7}@keyframes v00-s19-techniques-a-k8{0.0%{opacity:0}34.091%{opacity:0}35.114%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e8{animation-name:v00-s19-techniques-a-k8}@keyframes v00-s19-techniques-a-k9{0.0%{opacity:0}36.364%{opacity:0}37.386%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s19-techniques-a .e9{animation-name:v00-s19-techniques-a-k9}</style>
+<rect class="bg" x="0" y="0" width="960" height="446"/>
+<g><text class="cap" x="24" y="24">приёмы: первые три выпуска</text></g>
+<g class="a e1"><rect class="bxa" x="24" y="42" width="191" height="26" rx="13.0"/><text class="sm tk c" x="119.5" y="60">«Где резать: метки»</text></g>
+<g class="a e2"><rect class="bxo" x="24" y="112" width="280" height="226" rx="8"/><text class="tk" x="38" y="140">«multisplit: резать на</text><text class="tk" x="38" y="160">части»</text><text class="sm mu" x="38" y="184">как одно приветствие</text><text class="sm mu" x="38" y="204">становится несколькими</text><text class="sm mu" x="38" y="224">пакетами и что лежит в</text><text class="sm mu" x="38" y="244">каждом?</text><text class="sm tk acc" x="38" y="272">после выпуска вы сможете:</text><text class="sm" x="38" y="294">сказать, что в каком пакете</text></g>
+<g class="a e3"><rect class="bxo" x="340" y="112" width="280" height="226" rx="8"/><text class="tk" x="354" y="140">«Перемешать: disorder»</text><text class="sm mu" x="354" y="164">что будет, если конец</text><text class="sm mu" x="354" y="184">отправить раньше начала?</text><text class="sm tk acc" x="354" y="212">после выпуска вы сможете:</text><text class="sm" x="354" y="234">прочесть в записи пакетов</text><text class="sm" x="354" y="254">ответ сервера с пометкой SACK</text><text class="sm" x="354" y="274">и понять, почему получатель</text><text class="sm" x="354" y="294">всё равно соберёт сообщение</text></g>
+<g class="a e4"><rect class="bxo" x="656" y="112" width="280" height="226" rx="8"/><text class="tk" x="670" y="140">«Фейк и его условия»</text><text class="sm mu" x="670" y="164">чем подделка должна</text><text class="sm mu" x="670" y="184">отличаться от настоящего</text><text class="sm mu" x="670" y="204">пакета, чтобы один читатель её</text><text class="sm mu" x="670" y="224">принял, а другой отбросил?</text><text class="sm tk acc" x="670" y="252">после выпуска вы сможете:</text><text class="sm" x="670" y="274">понять, какие обманки,</text><text class="sm" x="670" y="294">по-научному fooling, за что</text><text class="sm" x="670" y="314">отвечают</text></g>
+<g class="a e5"><path class="lf" d="M64 70L64.0 100.0"/><polygon class="hf" points="64,110 59.0,100.0 69.0,100.0"/><text class="sm mu" x="78" y="98">нужны перед</text></g>
+<g class="a e6"><path class="lf" d="M306 152L328.0 152.0"/><polygon class="hf" points="338,152 328.0,157.0 328.0,147.0"/></g>
+<g class="a e7"><path class="lmd" d="M642.5 338L642.5 364"/><path class="lmd" d="M843.5 338L843.5 364"/></g>
+<g class="a e8"><rect class="bxg" x="546" y="364" width="193" height="26" rx="13.0"/><text class="sm c" x="642.5" y="382">резать и подделывать</text><rect class="bxg" x="751" y="364" width="185" height="26" rx="13.0"/><text class="sm c" x="843.5" y="382">фокусы рукопожатия</text></g>
+<g class="a e9"><text class="sm mu" x="24" y="426">пунктиром намечено, куда ведёт фейк: подробнее в следующей части</text></g>
+</svg>

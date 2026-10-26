@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s20-two-groups" viewBox="0 0 960 390" width="960" height="390" role="img" aria-labelledby="v00-s20-two-groups-t v00-s20-two-groups-d">
+<title id="v00-s20-two-groups-t">Две группы выпусков</title>
+<desc id="v00-s20-two-groups-d">Инструменты нужны для практики и не требуют выпусков про приёмы, а блок под капотом необязателен и лучше смотреть его в конце, порядок и зависимости разберём дальше.</desc>
+<style>.v00-s20-two-groups{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s20-two-groups{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s20-two-groups .bg{fill:var(--bg)}
+.v00-s20-two-groups text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s20-two-groups .tk{font-weight:600;fill:var(--fg)}
+.v00-s20-two-groups .sm{font-size:14.5px}
+.v00-s20-two-groups .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s20-two-groups .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s20-two-groups .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s20-two-groups .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s20-two-groups .big{font-size:22px}
+.v00-s20-two-groups .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s20-two-groups .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s20-two-groups .mu{fill:var(--mute)}.v00-s20-two-groups .fg{fill:var(--fg)}.v00-s20-two-groups .acc{fill:var(--acc)}.v00-s20-two-groups .rej{fill:var(--rej)}.v00-s20-two-groups .ok{fill:var(--ok)}.v00-s20-two-groups .amb{fill:var(--amb)}
+.v00-s20-two-groups .c{text-anchor:middle}.v00-s20-two-groups .r{text-anchor:end}.v00-s20-two-groups .ns{stroke:none}
+.v00-s20-two-groups .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s20-two-groups .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s20-two-groups .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s20-two-groups .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s20-two-groups .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s20-two-groups .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s20-two-groups .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s20-two-groups .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s20-two-groups .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s20-two-groups .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s20-two-groups .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s20-two-groups .fa{fill:var(--tint);stroke:none}.v00-s20-two-groups .fr{fill:var(--rejt);stroke:none}.v00-s20-two-groups .fb{fill:var(--ambt);stroke:none}.v00-s20-two-groups .fo{fill:var(--okt);stroke:none}
+.v00-s20-two-groups .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s20-two-groups .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s20-two-groups .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s20-two-groups .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s20-two-groups .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s20-two-groups .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s20-two-groups .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s20-two-groups .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s20-two-groups .hf{fill:var(--fg2)}.v00-s20-two-groups .ha{fill:var(--acc)}.v00-s20-two-groups .hr{fill:var(--rej)}.v00-s20-two-groups .hm{fill:var(--mute)}.v00-s20-two-groups .hb{fill:var(--amb)}
+.v00-s20-two-groups .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s20-two-groups .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s20-two-groups .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s20-two-groups .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s20-two-groups .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s20-two-groups .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s20-two-groups .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s20-two-groups .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s20-two-groups .inv{fill:var(--bg);stroke:none}
+.v00-s20-two-groups .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s20-two-groups .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s20-two-groups .a{animation-duration:40s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s20-two-groups .a{animation:none}.v00-s20-two-groups .tr{display:none}}
+@keyframes v00-s20-two-groups-k1{0.0%{opacity:0}2.0%{opacity:0}3.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e1{animation-name:v00-s20-two-groups-k1}@keyframes v00-s20-two-groups-k2{0.0%{opacity:0}4.0%{opacity:0}5.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e2{animation-name:v00-s20-two-groups-k2}@keyframes v00-s20-two-groups-k3{0.0%{opacity:0}5.75%{opacity:0}6.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e3{animation-name:v00-s20-two-groups-k3}@keyframes v00-s20-two-groups-k4{0.0%{opacity:0}7.5%{opacity:0}8.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e4{animation-name:v00-s20-two-groups-k4}@keyframes v00-s20-two-groups-k5{0.0%{opacity:0}9.25%{opacity:0}10.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e5{animation-name:v00-s20-two-groups-k5}@keyframes v00-s20-two-groups-k6{0.0%{opacity:0}12.5%{opacity:0}13.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e6{animation-name:v00-s20-two-groups-k6}@keyframes v00-s20-two-groups-k7{0.0%{opacity:0}15.0%{opacity:0}16.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e7{animation-name:v00-s20-two-groups-k7}@keyframes v00-s20-two-groups-k8{0.0%{opacity:0}17.0%{opacity:0}18.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e8{animation-name:v00-s20-two-groups-k8}@keyframes v00-s20-two-groups-k9{0.0%{opacity:0}18.25%{opacity:0}19.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e9{animation-name:v00-s20-two-groups-k9}@keyframes v00-s20-two-groups-k10{0.0%{opacity:0}19.5%{opacity:0}20.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e10{animation-name:v00-s20-two-groups-k10}@keyframes v00-s20-two-groups-k11{0.0%{opacity:0}20.75%{opacity:0}21.875%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e11{animation-name:v00-s20-two-groups-k11}@keyframes v00-s20-two-groups-k12{0.0%{opacity:0}22.0%{opacity:0}23.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e12{animation-name:v00-s20-two-groups-k12}@keyframes v00-s20-two-groups-k13{0.0%{opacity:0}23.25%{opacity:0}24.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e13{animation-name:v00-s20-two-groups-k13}@keyframes v00-s20-two-groups-k14{0.0%{opacity:0}24.5%{opacity:0}25.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e14{animation-name:v00-s20-two-groups-k14}@keyframes v00-s20-two-groups-k15{0.0%{opacity:0}26.25%{opacity:0}27.375%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e15{animation-name:v00-s20-two-groups-k15}@keyframes v00-s20-two-groups-k16{0.0%{opacity:0}30.0%{opacity:0}31.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s20-two-groups .e16{animation-name:v00-s20-two-groups-k16}</style>
+<rect class="bg" x="0" y="0" width="960" height="390"/>
+<g><text class="cap" x="24" y="24">две группы: для практики и для интересующихся</text></g>
+<g class="a e1"><rect class="bxb" x="24" y="44" width="446" height="30" rx="8"/><text class="tk" x="38" y="65">для практики: инструменты</text></g>
+<g class="a e2"><rect class="bxb" x="24" y="82" width="446" height="32" rx="6"/><text class="sm" x="38" y="104">выпуск про blockcheck2</text></g>
+<g class="a e3"><rect class="bxb" x="24" y="120" width="446" height="32" rx="6"/><text class="sm" x="38" y="142">выпуск про автоматическую смену стратегий</text></g>
+<g class="a e4"><rect class="bxb" x="24" y="158" width="446" height="32" rx="6"/><text class="sm" x="38" y="180">выпуск про установку и запуск</text></g>
+<g class="a e5"><rect class="bxb" x="24" y="196" width="446" height="32" rx="6"/><text class="sm" x="38" y="218">выпуск про обфускацию</text></g>
+<g class="a e6"><text class="sm tk" x="24" y="256">не требуют выпусков про приёмы</text></g>
+<g class="a e7"><rect class="bxg" x="490" y="44" width="446" height="30" rx="8"/><text class="tk" x="504" y="65">«под капотом»: необязательно, в конце</text></g>
+<g class="a e8"><rect class="bxg" x="490" y="82" width="446" height="32" rx="6"/><text class="sm" x="504" y="104">«Внутри программы»</text></g>
+<g class="a e9"><rect class="bxg" x="490" y="120" width="446" height="32" rx="6"/><text class="sm" x="504" y="142">«От байтов к таблице»</text></g>
+<g class="a e10"><rect class="bxg" x="490" y="158" width="446" height="32" rx="6"/><text class="sm" x="504" y="180">«Память о соединении»</text></g>
+<g class="a e11"><rect class="bxg" x="490" y="196" width="446" height="32" rx="6"/><text class="sm" x="504" y="218">«Тип нагрузки и имя сайта»</text></g>
+<g class="a e12"><rect class="bxg" x="490" y="234" width="446" height="32" rx="6"/><text class="sm" x="504" y="256">«Профили: как программа выбирает»</text></g>
+<g class="a e13"><rect class="bxg" x="490" y="272" width="446" height="32" rx="6"/><text class="sm" x="504" y="294">«Lua внутри программы»</text></g>
+<g class="a e14"><rect class="bxg" x="490" y="310" width="446" height="32" rx="6"/><text class="sm" x="504" y="332">«Сборка и повторный проигрыш»</text></g>
+<g class="a e15"><text class="sm tk" x="490" y="370">выпуски про приёмы его не предполагают</text></g>
+<g class="a e16"><text class="sm mu" x="24" y="290">порядок и зависимости разберём дальше</text></g>
+</svg>

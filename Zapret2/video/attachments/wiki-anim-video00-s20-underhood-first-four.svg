@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s20-underhood-first-four" viewBox="0 0 960 296" width="960" height="296" role="img" aria-labelledby="v00-s20-underhood-first-four-t v00-s20-underhood-first-four-d">
+<title id="v00-s20-underhood-first-four-t">Первые четыре выпуска под капотом</title>
+<desc id="v00-s20-underhood-first-four-d">Первые четыре выпуска блока под капотом идут по пути пакета от перехвата до таблицы и памяти: правило ядра Linux, очередь и главный цикл, разбор пакета на поля и таблица для Lua, запись о соединении с ролями сторон и счётчиками, и узнавание приветствия, строки Host и QUIC с извлечением имени.</desc>
+<style>.v00-s20-underhood-first-four{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s20-underhood-first-four{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s20-underhood-first-four .bg{fill:var(--bg)}
+.v00-s20-underhood-first-four text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s20-underhood-first-four .tk{font-weight:600;fill:var(--fg)}
+.v00-s20-underhood-first-four .sm{font-size:14.5px}
+.v00-s20-underhood-first-four .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s20-underhood-first-four .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s20-underhood-first-four .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s20-underhood-first-four .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s20-underhood-first-four .big{font-size:22px}
+.v00-s20-underhood-first-four .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s20-underhood-first-four .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s20-underhood-first-four .mu{fill:var(--mute)}.v00-s20-underhood-first-four .fg{fill:var(--fg)}.v00-s20-underhood-first-four .acc{fill:var(--acc)}.v00-s20-underhood-first-four .rej{fill:var(--rej)}.v00-s20-underhood-first-four .ok{fill:var(--ok)}.v00-s20-underhood-first-four .amb{fill:var(--amb)}
+.v00-s20-underhood-first-four .c{text-anchor:middle}.v00-s20-underhood-first-four .r{text-anchor:end}.v00-s20-underhood-first-four .ns{stroke:none}
+.v00-s20-underhood-first-four .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s20-underhood-first-four .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s20-underhood-first-four .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s20-underhood-first-four .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s20-underhood-first-four .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s20-underhood-first-four .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s20-underhood-first-four .fa{fill:var(--tint);stroke:none}.v00-s20-underhood-first-four .fr{fill:var(--rejt);stroke:none}.v00-s20-underhood-first-four .fb{fill:var(--ambt);stroke:none}.v00-s20-underhood-first-four .fo{fill:var(--okt);stroke:none}
+.v00-s20-underhood-first-four .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s20-underhood-first-four .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s20-underhood-first-four .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s20-underhood-first-four .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s20-underhood-first-four .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s20-underhood-first-four .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s20-underhood-first-four .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s20-underhood-first-four .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s20-underhood-first-four .hf{fill:var(--fg2)}.v00-s20-underhood-first-four .ha{fill:var(--acc)}.v00-s20-underhood-first-four .hr{fill:var(--rej)}.v00-s20-underhood-first-four .hm{fill:var(--mute)}.v00-s20-underhood-first-four .hb{fill:var(--amb)}
+.v00-s20-underhood-first-four .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s20-underhood-first-four .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s20-underhood-first-four .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s20-underhood-first-four .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s20-underhood-first-four .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s20-underhood-first-four .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s20-underhood-first-four .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s20-underhood-first-four .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s20-underhood-first-four .inv{fill:var(--bg);stroke:none}
+.v00-s20-underhood-first-four .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s20-underhood-first-four .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s20-underhood-first-four .a{animation-duration:24s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s20-underhood-first-four .a{animation:none}.v00-s20-underhood-first-four .tr{display:none}}
+@keyframes v00-s20-underhood-first-four-k1{0.0%{opacity:0}4.167%{opacity:0}6.042%{opacity:1}92.917%{opacity:1}95.417%{opacity:0}100%{opacity:0}}.v00-s20-underhood-first-four .e1{animation-name:v00-s20-underhood-first-four-k1}@keyframes v00-s20-underhood-first-four-k2{0.0%{opacity:0}16.667%{opacity:0}18.542%{opacity:1}92.917%{opacity:1}95.417%{opacity:0}100%{opacity:0}}.v00-s20-underhood-first-four .e2{animation-name:v00-s20-underhood-first-four-k2}@keyframes v00-s20-underhood-first-four-k3{0.0%{opacity:0}29.167%{opacity:0}31.042%{opacity:1}92.917%{opacity:1}95.417%{opacity:0}100%{opacity:0}}.v00-s20-underhood-first-four .e3{animation-name:v00-s20-underhood-first-four-k3}@keyframes v00-s20-underhood-first-four-k4{0.0%{opacity:0}41.667%{opacity:0}43.542%{opacity:1}92.917%{opacity:1}95.417%{opacity:0}100%{opacity:0}}.v00-s20-underhood-first-four .e4{animation-name:v00-s20-underhood-first-four-k4}@keyframes v00-s20-underhood-first-four-k5{0.0%{opacity:0}58.333%{opacity:0}60.208%{opacity:1}92.917%{opacity:1}95.417%{opacity:0}100%{opacity:0}}.v00-s20-underhood-first-four .e5{animation-name:v00-s20-underhood-first-four-k5}</style>
+<rect class="bg" x="0" y="0" width="960" height="296"/>
+<g><text class="cap" x="24" y="24">под капотом: первые четыре, путь пакета от перехвата до таблицы и памяти</text></g>
+<g class="a e1"><rect class="bxg" x="24" y="48" width="207" height="204" rx="8"/><text class="sm tk" x="36" y="76">«Внутри программы»</text><text class="sm" x="36" y="104">правило ядра Linux,</text><text class="sm" x="36" y="124">очередь, главный</text><text class="sm" x="36" y="144">цикл, три ответа</text><text class="sm" x="36" y="164">программы, отправка</text><text class="sm" x="36" y="184">собственных пакетов с</text><text class="sm" x="36" y="204">меткой и защита от</text><text class="sm" x="36" y="224">петли</text></g>
+<g class="a e2"><rect class="bxg" x="259" y="48" width="207" height="204" rx="8"/><text class="sm tk" x="271" y="76">«От байтов к</text><text class="sm tk" x="271" y="96">таблице»</text><text class="sm" x="271" y="124">как пакет разбирается</text><text class="sm" x="271" y="144">на поля, превращается</text><text class="sm" x="271" y="164">в таблицу для Lua и</text><text class="sm" x="271" y="184">собирается обратно</text><path class="lf" d="M233 78L247.0 78.0"/><polygon class="hf" points="257,78 247.0,83.0 247.0,73.0"/></g>
+<g class="a e3"><rect class="bxg" x="494" y="48" width="207" height="204" rx="8"/><text class="sm tk" x="506" y="76">«Память о</text><text class="sm tk" x="506" y="96">соединении»</text><text class="sm" x="506" y="124">запись о соединении,</text><text class="sm" x="506" y="144">роли сторон и счётчики</text><path class="lf" d="M468 78L482.0 78.0"/><polygon class="hf" points="492,78 482.0,83.0 482.0,73.0"/></g>
+<g class="a e4"><rect class="bxg" x="729" y="48" width="207" height="204" rx="8"/><text class="sm tk" x="741" y="76">«Тип нагрузки и имя</text><text class="sm tk" x="741" y="96">сайта»</text><text class="sm" x="741" y="124">как программа узнаёт</text><text class="sm" x="741" y="144">приветствие, строку</text><text class="sm" x="741" y="164">Host в HTTP и QUIC и</text><text class="sm" x="741" y="184">достаёт имя</text><path class="lf" d="M703 78L717.0 78.0"/><polygon class="hf" points="727,78 717.0,83.0 717.0,73.0"/></g>
+<g class="a e5"><text class="sm mu" x="24" y="282">здесь путь пакета разбирают по шагам, а в вводном выпуске мы прошли его лишь бегло</text></g>
+</svg>

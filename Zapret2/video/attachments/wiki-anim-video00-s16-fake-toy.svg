@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s16-fake-toy" viewBox="0 0 960 636" width="960" height="636" role="img" aria-labelledby="v00-s16-fake-toy-t v00-s16-fake-toy-d">
+<title id="v00-s16-fake-toy-t">Подделка и игрушечный инспектор</title>
+<desc id="v00-s16-fake-toy-d">Подделка это отдельный пакет с ложной информацией, который получатель выбросит, а чужой читатель примет за настоящий, и в нашем тесте игрушечный инспектор, решающий по первому пакету с данными, без программы блокирует соединение и сервер получает ноль байт, а с подделкой впереди разрешает его и сервер получает настоящие 250 байт; это только игрушка, игрушечные инспекторы, проверяющие то же, что и получатель, подделку замечают и блокируют.</desc>
+<style>.v00-s16-fake-toy{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s16-fake-toy{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s16-fake-toy .bg{fill:var(--bg)}
+.v00-s16-fake-toy text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s16-fake-toy .tk{font-weight:600;fill:var(--fg)}
+.v00-s16-fake-toy .sm{font-size:14.5px}
+.v00-s16-fake-toy .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s16-fake-toy .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s16-fake-toy .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-fake-toy .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s16-fake-toy .big{font-size:22px}
+.v00-s16-fake-toy .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s16-fake-toy .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s16-fake-toy .mu{fill:var(--mute)}.v00-s16-fake-toy .fg{fill:var(--fg)}.v00-s16-fake-toy .acc{fill:var(--acc)}.v00-s16-fake-toy .rej{fill:var(--rej)}.v00-s16-fake-toy .ok{fill:var(--ok)}.v00-s16-fake-toy .amb{fill:var(--amb)}
+.v00-s16-fake-toy .c{text-anchor:middle}.v00-s16-fake-toy .r{text-anchor:end}.v00-s16-fake-toy .ns{stroke:none}
+.v00-s16-fake-toy .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s16-fake-toy .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s16-fake-toy .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s16-fake-toy .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s16-fake-toy .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s16-fake-toy .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s16-fake-toy .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s16-fake-toy .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s16-fake-toy .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-fake-toy .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s16-fake-toy .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s16-fake-toy .fa{fill:var(--tint);stroke:none}.v00-s16-fake-toy .fr{fill:var(--rejt);stroke:none}.v00-s16-fake-toy .fb{fill:var(--ambt);stroke:none}.v00-s16-fake-toy .fo{fill:var(--okt);stroke:none}
+.v00-s16-fake-toy .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-fake-toy .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s16-fake-toy .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s16-fake-toy .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s16-fake-toy .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s16-fake-toy .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s16-fake-toy .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s16-fake-toy .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s16-fake-toy .hf{fill:var(--fg2)}.v00-s16-fake-toy .ha{fill:var(--acc)}.v00-s16-fake-toy .hr{fill:var(--rej)}.v00-s16-fake-toy .hm{fill:var(--mute)}.v00-s16-fake-toy .hb{fill:var(--amb)}
+.v00-s16-fake-toy .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s16-fake-toy .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s16-fake-toy .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s16-fake-toy .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s16-fake-toy .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-fake-toy .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s16-fake-toy .inv{fill:var(--bg);stroke:none}
+.v00-s16-fake-toy .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s16-fake-toy .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s16-fake-toy .a{animation-duration:60s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s16-fake-toy .a{animation:none}.v00-s16-fake-toy .tr{display:none}}
+@keyframes v00-s16-fake-toy-k1{0.0%{opacity:0}1.667%{opacity:0}2.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e1{animation-name:v00-s16-fake-toy-k1}@keyframes v00-s16-fake-toy-k2{0.0%{opacity:0}3.333%{opacity:0}4.083%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e2{animation-name:v00-s16-fake-toy-k2}@keyframes v00-s16-fake-toy-k3{0.0%{opacity:0}13.333%{opacity:0}14.083%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e3{animation-name:v00-s16-fake-toy-k3}@keyframes v00-s16-fake-toy-k4{0.0%{opacity:0}20.0%{opacity:0}20.75%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e4{animation-name:v00-s16-fake-toy-k4}@keyframes v00-s16-fake-toy-k5{0.0%{opacity:0}21.667%{opacity:0}22.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e5{animation-name:v00-s16-fake-toy-k5}@keyframes v00-s16-fake-toy-k6{0.0%{opacity:0}23.667%{opacity:0}24.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e6{animation-name:v00-s16-fake-toy-k6}@keyframes v00-s16-fake-toy-k7{0.0%{opacity:0}25.667%{opacity:0}26.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e7{animation-name:v00-s16-fake-toy-k7}@keyframes v00-s16-fake-toy-k8{0.0%{opacity:0}26.667%{opacity:0}27.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e8{animation-name:v00-s16-fake-toy-k8}@keyframes v00-s16-fake-toy-k9{0.0%{opacity:0}31.667%{opacity:0}32.417%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e9{animation-name:v00-s16-fake-toy-k9}@keyframes v00-s16-fake-toy-k10{0.0%{opacity:0}33.333%{opacity:0}34.083%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e10{animation-name:v00-s16-fake-toy-k10}@keyframes v00-s16-fake-toy-k11{0.0%{opacity:0}45.0%{opacity:0}45.75%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e11{animation-name:v00-s16-fake-toy-k11}@keyframes v00-s16-fake-toy-k12{0.0%{opacity:0}60.0%{opacity:0}60.75%{opacity:1}97.167%{opacity:1}98.167%{opacity:0}100%{opacity:0}}.v00-s16-fake-toy .e12{animation-name:v00-s16-fake-toy-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="636"/>
+<g><text class="cap" x="24" y="24">семья третья: подделывать</text></g>
+<g><rect class="bxa" x="779" y="8" width="157" height="26" rx="13"/><text class="sm tk c" x="857.5" y="26">В НАШЕМ ТЕСТЕ</text></g>
+<g class="a e1"><rect class="bxb" x="24" y="40" width="196" height="26" rx="13.0"/><text class="sm tk c" x="122" y="58">пример выдуманный</text></g>
+<g class="a e2"><rect class="pl" x="24" y="78" width="170" height="56" rx="6"/><rect class="bxs" x="168" y="86" width="16" height="12" rx="2"/><path class="lm" d="M36 120L100.5 120"/><text class="sm tk" x="38" y="106">встретимся у</text><rect class="bxr" x="204" y="78" width="170" height="56" rx="6"/><rect class="bxs" x="348" y="86" width="16" height="12" rx="2"/><path class="lm" d="M216 120L280.5 120"/><text class="sm tk" x="218" y="106">ложный текст</text><rect class="pl" x="384" y="78" width="170" height="56" rx="6"/><rect class="bxs" x="528" y="86" width="16" height="12" rx="2"/><path class="lm" d="M396 120L460.5 120"/><text class="sm tk" x="398" y="106">фонтана</text><text class="sm" x="24" y="156">ложную открытку получатель выбросит,</text><text class="sm" x="24" y="176">а чужой читатель примет за настоящую</text></g>
+<g class="a e3"><rect class="bx" x="572" y="40" width="364" height="142" rx="8"/><rect class="bxa" x="586" y="50" width="163" height="26" rx="13.0"/><text class="sm tk c" x="667.5" y="68">ДОКУМЕНТАЦИЯ</text><text class="sm" x="586" y="112">«Фейки - это отдельные пакеты с ложной</text><text class="sm" x="586" y="132">информацией, которую DPI должен</text><text class="sm" x="586" y="152">принять, а сервер - нет»</text></g>
+<g class="a e4"><text class="sm tk" x="24" y="214">помните подделку с коротким сроком жизни: дальше роутера дошёл только пакет на 250 байт</text></g>
+<g class="a e5"><rect class="bxr" x="24" y="226" width="200" height="30" rx="6"/><text class="lgk" x="34" y="246">len=680 ttl=1</text></g>
+<g class="a e6"><rect class="bxb" x="270" y="226" width="220" height="30" rx="6"/><text class="lgk" x="280" y="246">ICMP type=11 code=0</text></g>
+<g class="a e7"><rect class="bxa" x="516" y="226" width="200" height="30" rx="6"/><text class="lgk" x="526" y="246">len=250 ttl=64</text></g>
+<g class="a e8"><path class="lm" d="M228 241L256.0 241.0"/><polygon class="hm" points="266,241 256.0,246.0 256.0,236.0"/><path class="lm" d="M494 241L502.0 241.0"/><polygon class="hm" points="512,241 502.0,246.0 502.0,236.0"/></g>
+<g class="a e9"><rect class="bxb" x="24" y="286" width="670" height="26" rx="13"/><text class="sm tk c" x="359" y="304">игрушечный инспектор из нашей лаборатории, не настоящее оборудование</text></g>
+<g class="a e10"><rect class="bx" x="24" y="322" width="444" height="214" rx="8"/><text class="sm tk" x="38" y="350">без программы</text><rect class="bxa" x="38" y="368" width="184" height="54" rx="6"/><text class="sm tk c" x="130" y="390">250 байт</text><text class="sm c" x="130" y="410">приветствие с именем</text><text class="sm" x="38" y="450">первый пакет с данными несёт имя:</text><rect class="bxr" x="38" y="460" width="180" height="26" rx="5"/><text class="lgk" x="48" y="478">connection BLOCKED</text><circle class="bxr" cx="54" cy="512" r="12"/><path class="lr" d="M50 508L58 516M58 508L50 516" style="stroke-linecap:round;stroke-width:2"/><text class="sm tk" x="76" y="517">сервер получил 0 байт</text></g>
+<g class="a e11"><rect class="bx" x="492" y="322" width="444" height="214" rx="8"/><text class="sm tk" x="506" y="350">с подделкой впереди</text><rect class="bxr" x="506" y="368" width="184" height="54" rx="6"/><text class="sm tk c" x="598" y="390">680 байт</text><text class="sm c" x="598" y="410">ложное приветствие</text><rect class="bxa" x="704" y="368" width="184" height="54" rx="6"/><text class="sm tk c" x="796" y="390">250 байт</text><text class="sm c" x="796" y="410">настоящее</text><text class="sm" x="506" y="450">первый пакет с данными без этого имени:</text><rect class="bxo" x="506" y="460" width="180" height="26" rx="5"/><text class="lgk" x="516" y="478">connection ALLOWED</text><circle class="bxo" cx="522" cy="512" r="12"/><path class="lo" d="M517 512L520.5 516L527 508" style="stroke-linecap:round;stroke-linejoin:round"/><text class="sm tk" x="544" y="517">сервер получил 250 байт</text></g>
+<g class="a e12"><rect class="gr" x="24" y="552" width="912" height="64" rx="8"/><text class="sm tk" x="40" y="578">игрушечные инспекторы нашей лаборатории, которые проверяют то же, что и получатель,</text><text class="sm tk" x="40" y="602">подделку замечают и блокируют: это только игрушка</text></g>
+</svg>

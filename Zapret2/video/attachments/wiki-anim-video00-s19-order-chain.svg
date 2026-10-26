@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s19-order-chain" viewBox="0 0 960 292" width="960" height="292" role="img" aria-labelledby="v00-s19-order-chain-t v00-s19-order-chain-d">
+<title id="v00-s19-order-chain-t">Порядок блоков курса</title>
+<desc id="v00-s19-order-chain-d">Курс идёт сначала основы, затем язык командной строки, затем приёмы, затем проверка своими руками, и всё это про то, как менять начало соединения, а инструменты и устройство программы изнутри стоят после них.</desc>
+<style>.v00-s19-order-chain{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s19-order-chain{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s19-order-chain .bg{fill:var(--bg)}
+.v00-s19-order-chain text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s19-order-chain .tk{font-weight:600;fill:var(--fg)}
+.v00-s19-order-chain .sm{font-size:14.5px}
+.v00-s19-order-chain .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s19-order-chain .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s19-order-chain .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s19-order-chain .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s19-order-chain .big{font-size:22px}
+.v00-s19-order-chain .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s19-order-chain .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s19-order-chain .mu{fill:var(--mute)}.v00-s19-order-chain .fg{fill:var(--fg)}.v00-s19-order-chain .acc{fill:var(--acc)}.v00-s19-order-chain .rej{fill:var(--rej)}.v00-s19-order-chain .ok{fill:var(--ok)}.v00-s19-order-chain .amb{fill:var(--amb)}
+.v00-s19-order-chain .c{text-anchor:middle}.v00-s19-order-chain .r{text-anchor:end}.v00-s19-order-chain .ns{stroke:none}
+.v00-s19-order-chain .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s19-order-chain .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s19-order-chain .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s19-order-chain .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s19-order-chain .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s19-order-chain .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s19-order-chain .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s19-order-chain .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s19-order-chain .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s19-order-chain .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s19-order-chain .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s19-order-chain .fa{fill:var(--tint);stroke:none}.v00-s19-order-chain .fr{fill:var(--rejt);stroke:none}.v00-s19-order-chain .fb{fill:var(--ambt);stroke:none}.v00-s19-order-chain .fo{fill:var(--okt);stroke:none}
+.v00-s19-order-chain .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s19-order-chain .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s19-order-chain .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s19-order-chain .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s19-order-chain .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s19-order-chain .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s19-order-chain .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s19-order-chain .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s19-order-chain .hf{fill:var(--fg2)}.v00-s19-order-chain .ha{fill:var(--acc)}.v00-s19-order-chain .hr{fill:var(--rej)}.v00-s19-order-chain .hm{fill:var(--mute)}.v00-s19-order-chain .hb{fill:var(--amb)}
+.v00-s19-order-chain .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s19-order-chain .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s19-order-chain .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s19-order-chain .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s19-order-chain .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s19-order-chain .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s19-order-chain .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s19-order-chain .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s19-order-chain .inv{fill:var(--bg);stroke:none}
+.v00-s19-order-chain .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s19-order-chain .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s19-order-chain .a{animation-duration:28s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s19-order-chain .a{animation:none}.v00-s19-order-chain .tr{display:none}}
+@keyframes v00-s19-order-chain-k1{0.0%{opacity:0}2.857%{opacity:0}4.464%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e1{animation-name:v00-s19-order-chain-k1}@keyframes v00-s19-order-chain-k2{0.0%{opacity:0}8.571%{opacity:0}10.179%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e2{animation-name:v00-s19-order-chain-k2}@keyframes v00-s19-order-chain-k3{0.0%{opacity:0}14.286%{opacity:0}15.893%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e3{animation-name:v00-s19-order-chain-k3}@keyframes v00-s19-order-chain-k4{0.0%{opacity:0}20.0%{opacity:0}21.607%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e4{animation-name:v00-s19-order-chain-k4}@keyframes v00-s19-order-chain-k5{0.0%{opacity:0}28.571%{opacity:0}30.179%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e5{animation-name:v00-s19-order-chain-k5}@keyframes v00-s19-order-chain-k6{0.0%{opacity:0}30.714%{opacity:0}32.321%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e6{animation-name:v00-s19-order-chain-k6}@keyframes v00-s19-order-chain-k7{0.0%{opacity:0}39.286%{opacity:0}40.893%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e7{animation-name:v00-s19-order-chain-k7}@keyframes v00-s19-order-chain-k8{0.0%{opacity:0}42.857%{opacity:0}44.464%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e8{animation-name:v00-s19-order-chain-k8}@keyframes v00-s19-order-chain-k9{0.0%{opacity:0}50.0%{opacity:0}51.607%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e9{animation-name:v00-s19-order-chain-k9}@keyframes v00-s19-order-chain-k10{0.0%{opacity:0}50.0%{opacity:0}51.607%{opacity:1}93.929%{opacity:1}96.071%{opacity:0}100%{opacity:0}}.v00-s19-order-chain .e10{animation-name:v00-s19-order-chain-k10}</style>
+<rect class="bg" x="0" y="0" width="960" height="292"/>
+<g><text class="cap" x="24" y="24">порядок блоков</text></g>
+<g class="a e1"><rect class="bxa" x="24" y="52" width="95" height="46" rx="10"/><text class="tk c" x="71.5" y="81">основы</text></g>
+<g class="a e2"><rect class="bxo" x="145" y="52" width="250" height="46" rx="10"/><text class="tk c" x="270" y="81">язык командной строки</text><path class="lf" d="M123 75L132.0 75.0"/><polygon class="hf" points="142,75 132.0,80.0 132.0,70.0"/></g>
+<g class="a e3"><rect class="bxo" x="421" y="52" width="100" height="46" rx="10"/><text class="tk c" x="471" y="81">приёмы</text><path class="lf" d="M399 75L408.0 75.0"/><polygon class="hf" points="418,75 408.0,80.0 408.0,70.0"/></g>
+<g class="a e4"><rect class="bxo" x="547" y="52" width="261" height="46" rx="10"/><text class="tk c" x="677.5" y="81">проверка своими руками</text><path class="lf" d="M525 75L534.0 75.0"/><polygon class="hf" points="544,75 534.0,80.0 534.0,70.0"/></g>
+<g class="a e5"><text class="tk" x="24" y="132">всё это про то, как менять начало соединения</text></g>
+<g class="a e6"><path class="lm" d="M24 106L24 114L808 114L808 106"/></g>
+<g class="a e7"><text class="sm tk" x="24" y="180">после них, когда нужно или интересно:</text></g>
+<g class="a e8"><rect class="bxg" x="24" y="194" width="300" height="46" rx="10"/><text class="tk c" x="174" y="223">инструменты</text><rect class="bxg" x="340" y="194" width="300" height="46" rx="10"/><text class="tk c" x="490" y="223">«под капотом»</text></g>
+<g class="a e9"></g>
+<g class="a e10"><text class="sm mu" x="24" y="270">порядок и зависимости между выпусками разберём в конце выпуска</text></g>
+</svg>

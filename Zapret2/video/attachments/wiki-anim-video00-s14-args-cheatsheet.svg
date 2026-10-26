@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s14-args-cheatsheet" viewBox="0 0 960 680" width="960" height="680" role="img" aria-labelledby="v00-s14-args-cheatsheet-t v00-s14-args-cheatsheet-d">
+<title id="v00-s14-args-cheatsheet-t">Общие аргументы стратегий</title>
+<desc id="v00-s14-args-cheatsheet-d">Шпаргалка общих аргументов стратегий: четыре главных, направление пакетов, обманки с примерами короткого времени жизни, опции MD5, испорченной контрольной суммы и сдвига номеров, повтор пакета и список меток, где резать, и ещё четыре, второй фильтр по виду данных, содержимое поддельного пакета, сохранение оригинала и перекрытие номеров, а читается строка так: имя стратегии, затем аргументы через двоеточие.</desc>
+<style>.v00-s14-args-cheatsheet{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s14-args-cheatsheet{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s14-args-cheatsheet .bg{fill:var(--bg)}
+.v00-s14-args-cheatsheet text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s14-args-cheatsheet .tk{font-weight:600;fill:var(--fg)}
+.v00-s14-args-cheatsheet .sm{font-size:14.5px}
+.v00-s14-args-cheatsheet .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s14-args-cheatsheet .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s14-args-cheatsheet .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s14-args-cheatsheet .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s14-args-cheatsheet .big{font-size:22px}
+.v00-s14-args-cheatsheet .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s14-args-cheatsheet .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s14-args-cheatsheet .mu{fill:var(--mute)}.v00-s14-args-cheatsheet .fg{fill:var(--fg)}.v00-s14-args-cheatsheet .acc{fill:var(--acc)}.v00-s14-args-cheatsheet .rej{fill:var(--rej)}.v00-s14-args-cheatsheet .ok{fill:var(--ok)}.v00-s14-args-cheatsheet .amb{fill:var(--amb)}
+.v00-s14-args-cheatsheet .c{text-anchor:middle}.v00-s14-args-cheatsheet .r{text-anchor:end}.v00-s14-args-cheatsheet .ns{stroke:none}
+.v00-s14-args-cheatsheet .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s14-args-cheatsheet .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s14-args-cheatsheet .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s14-args-cheatsheet .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s14-args-cheatsheet .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s14-args-cheatsheet .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s14-args-cheatsheet .fa{fill:var(--tint);stroke:none}.v00-s14-args-cheatsheet .fr{fill:var(--rejt);stroke:none}.v00-s14-args-cheatsheet .fb{fill:var(--ambt);stroke:none}.v00-s14-args-cheatsheet .fo{fill:var(--okt);stroke:none}
+.v00-s14-args-cheatsheet .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s14-args-cheatsheet .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s14-args-cheatsheet .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s14-args-cheatsheet .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s14-args-cheatsheet .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s14-args-cheatsheet .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s14-args-cheatsheet .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s14-args-cheatsheet .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s14-args-cheatsheet .hf{fill:var(--fg2)}.v00-s14-args-cheatsheet .ha{fill:var(--acc)}.v00-s14-args-cheatsheet .hr{fill:var(--rej)}.v00-s14-args-cheatsheet .hm{fill:var(--mute)}.v00-s14-args-cheatsheet .hb{fill:var(--amb)}
+.v00-s14-args-cheatsheet .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s14-args-cheatsheet .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s14-args-cheatsheet .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s14-args-cheatsheet .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s14-args-cheatsheet .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s14-args-cheatsheet .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s14-args-cheatsheet .inv{fill:var(--bg);stroke:none}
+.v00-s14-args-cheatsheet .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s14-args-cheatsheet .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s14-args-cheatsheet .a{animation-duration:48s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s14-args-cheatsheet .a{animation:none}.v00-s14-args-cheatsheet .tr{display:none}}
+@keyframes v00-s14-args-cheatsheet-k1{0.0%{opacity:0}2.083%{opacity:0}3.021%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e1{animation-name:v00-s14-args-cheatsheet-k1}@keyframes v00-s14-args-cheatsheet-k2{0.0%{opacity:0}4.167%{opacity:0}5.104%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e2{animation-name:v00-s14-args-cheatsheet-k2}@keyframes v00-s14-args-cheatsheet-k3{0.0%{opacity:0}6.25%{opacity:0}7.188%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e3{animation-name:v00-s14-args-cheatsheet-k3}@keyframes v00-s14-args-cheatsheet-k4{0.0%{opacity:0}14.583%{opacity:0}15.521%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e4{animation-name:v00-s14-args-cheatsheet-k4}@keyframes v00-s14-args-cheatsheet-k5{0.0%{opacity:0}16.667%{opacity:0}17.604%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e5{animation-name:v00-s14-args-cheatsheet-k5}@keyframes v00-s14-args-cheatsheet-k6{0.0%{opacity:0}25.0%{opacity:0}25.937%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e6{animation-name:v00-s14-args-cheatsheet-k6}@keyframes v00-s14-args-cheatsheet-k7{0.0%{opacity:0}29.167%{opacity:0}30.104%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e7{animation-name:v00-s14-args-cheatsheet-k7}@keyframes v00-s14-args-cheatsheet-k8{0.0%{opacity:0}35.417%{opacity:0}36.354%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e8{animation-name:v00-s14-args-cheatsheet-k8}@keyframes v00-s14-args-cheatsheet-k9{0.0%{opacity:0}41.667%{opacity:0}42.604%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e9{animation-name:v00-s14-args-cheatsheet-k9}@keyframes v00-s14-args-cheatsheet-k10{0.0%{opacity:0}56.25%{opacity:0}57.188%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e10{animation-name:v00-s14-args-cheatsheet-k10}@keyframes v00-s14-args-cheatsheet-k11{0.0%{opacity:0}58.333%{opacity:0}59.271%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e11{animation-name:v00-s14-args-cheatsheet-k11}@keyframes v00-s14-args-cheatsheet-k12{0.0%{opacity:0}64.583%{opacity:0}65.521%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e12{animation-name:v00-s14-args-cheatsheet-k12}@keyframes v00-s14-args-cheatsheet-k13{0.0%{opacity:0}70.833%{opacity:0}71.771%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e13{animation-name:v00-s14-args-cheatsheet-k13}@keyframes v00-s14-args-cheatsheet-k14{0.0%{opacity:0}77.083%{opacity:0}78.021%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e14{animation-name:v00-s14-args-cheatsheet-k14}@keyframes v00-s14-args-cheatsheet-k15{0.0%{opacity:0}87.5%{opacity:0}88.438%{opacity:1}96.458%{opacity:1}97.708%{opacity:0}100%{opacity:0}}.v00-s14-args-cheatsheet .e15{animation-name:v00-s14-args-cheatsheet-k15}</style>
+<rect class="bg" x="0" y="0" width="960" height="680"/>
+<g><text class="cap" x="24" y="24">аргументы стратегии: общая шпаргалка</text></g>
+<g class="a e1"><text class="sm tk" x="24" y="58">аргументы пишут сразу после имени стратегии, через двоеточие</text></g>
+<g class="a e2"><rect class="bx" x="24" y="70" width="114" height="26" rx="5"/><text class="lgk" x="30" y="88">--lua-desync=</text><rect class="bxo" x="142" y="70" width="43" height="26" rx="5"/><text class="lgk" x="148" y="88">fake</text><rect class="bxb" x="189" y="70" width="184" height="26" rx="5"/><text class="lgk" x="195" y="88">:blob=fake_default_tls</text><rect class="bxb" x="377" y="70" width="75" height="26" rx="5"/><text class="lgk" x="383" y="88">:tcp_md5</text></g>
+<g class="a e3"><path class="lm" d="M142 102L185 102"/><text class="sm mu c" x="163.5" y="122">имя стратегии</text><path class="lm" d="M189 102L452 102"/><text class="sm mu c" x="320.5" y="122">аргументы</text></g>
+<g class="a e4"><text class="sm tk" x="24" y="144">четыре главных, их разберём сейчас</text></g>
+<g class="a e5"><rect class="bxa" x="24" y="152" width="912" height="44" rx="8"/><text class="mk" x="40" y="179">dir</text><text class="sm" x="172" y="179">в какую сторону пакеты трогать: от клиента или к клиенту</text></g>
+<g class="a e6"><rect class="bxa" x="24" y="202" width="912" height="92" rx="8"/><text class="sm tk" x="40" y="229">обманки</text><text class="sm" x="172" y="229">по-научному fooling: изменения, после которых получатель пакет игнорирует</text></g>
+<g class="a e7"><rect class="bxb" x="172" y="242" width="190" height="40" rx="6"/><text class="lgk" x="180" y="258">ip_ttl</text><text class="sm" x="180" y="275">короткое время жизни</text><rect class="bxb" x="372" y="242" width="120" height="40" rx="6"/><text class="lgk" x="380" y="258">tcp_md5</text><text class="sm" x="380" y="275">опция MD5</text><rect class="bxb" x="502" y="242" width="275" height="40" rx="6"/><text class="lgk" x="510" y="258">badsum</text><text class="sm" x="510" y="275">испорченная контрольная сумма</text><rect class="bxb" x="787" y="242" width="130" height="40" rx="6"/><text class="lgk" x="795" y="258">tcp_seq</text><text class="sm" x="795" y="275">сдвиг номеров</text></g>
+<g class="a e8"><rect class="bxa" x="24" y="300" width="912" height="44" rx="8"/><text class="mk" x="40" y="327">repeats</text><text class="sm" x="172" y="327">отправить пакет несколько раз</text></g>
+<g class="a e9"><rect class="bxa" x="24" y="350" width="912" height="44" rx="8"/><text class="mk" x="40" y="377">pos</text><text class="sm" x="172" y="377">список меток, где резать, о них дальше</text></g>
+<g class="a e10"><text class="sm tk" x="24" y="422">ещё четыре, коротко</text></g>
+<g class="a e11"><rect class="bx" x="24" y="434" width="912" height="44" rx="8"/><text class="mk" x="40" y="461">payload</text><text class="sm" x="172" y="461">второй фильтр по виду данных: страховка от ошибки в строке</text></g>
+<g class="a e12"><rect class="bx" x="24" y="484" width="912" height="44" rx="8"/><text class="mk" x="40" y="511">blob</text><text class="sm" x="172" y="511">чем заполнить поддельный пакет</text></g>
+<g class="a e13"><rect class="bx" x="24" y="534" width="912" height="44" rx="8"/><text class="mk" x="40" y="561">nodrop</text><text class="sm" x="172" y="561">не выбрасывать оригинал, когда стратегия посылает свои куски</text></g>
+<g class="a e14"><rect class="bx" x="24" y="584" width="912" height="44" rx="8"/><text class="mk" x="40" y="611">seqovl</text><text class="sm" x="172" y="611">перекрытие номеров: сейчас нужно только название</text></g>
+<g class="a e15"><text class="sm tk" x="24" y="656">у отдельных стратегий есть и особые аргументы, но этого набора хватает, чтобы читать строку</text></g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s21-closing-next" viewBox="0 0 960 332" width="960" height="332" role="img" aria-labelledby="v00-s21-closing-next-t v00-s21-closing-next-d">
+<title id="v00-s21-closing-next-t">Итог и с чего начать</title>
+<desc id="v00-s21-closing-next-d">Итог вводного выпуска: помнить три способа говорить, просто, в нашем тесте и по общим сведениям, и правило, ради которого существует весь курс, результат нужно проверять самому, а сам курс начинается с выпуска письмо в сортировочном центре, где рассказана полная история одного запроса и показана наша лаборатория.</desc>
+<style>.v00-s21-closing-next{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s21-closing-next{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s21-closing-next .bg{fill:var(--bg)}
+.v00-s21-closing-next text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s21-closing-next .tk{font-weight:600;fill:var(--fg)}
+.v00-s21-closing-next .sm{font-size:14.5px}
+.v00-s21-closing-next .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s21-closing-next .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s21-closing-next .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s21-closing-next .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s21-closing-next .big{font-size:22px}
+.v00-s21-closing-next .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s21-closing-next .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s21-closing-next .mu{fill:var(--mute)}.v00-s21-closing-next .fg{fill:var(--fg)}.v00-s21-closing-next .acc{fill:var(--acc)}.v00-s21-closing-next .rej{fill:var(--rej)}.v00-s21-closing-next .ok{fill:var(--ok)}.v00-s21-closing-next .amb{fill:var(--amb)}
+.v00-s21-closing-next .c{text-anchor:middle}.v00-s21-closing-next .r{text-anchor:end}.v00-s21-closing-next .ns{stroke:none}
+.v00-s21-closing-next .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s21-closing-next .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s21-closing-next .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s21-closing-next .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s21-closing-next .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s21-closing-next .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s21-closing-next .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s21-closing-next .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s21-closing-next .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s21-closing-next .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s21-closing-next .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s21-closing-next .fa{fill:var(--tint);stroke:none}.v00-s21-closing-next .fr{fill:var(--rejt);stroke:none}.v00-s21-closing-next .fb{fill:var(--ambt);stroke:none}.v00-s21-closing-next .fo{fill:var(--okt);stroke:none}
+.v00-s21-closing-next .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s21-closing-next .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s21-closing-next .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s21-closing-next .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s21-closing-next .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s21-closing-next .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s21-closing-next .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s21-closing-next .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s21-closing-next .hf{fill:var(--fg2)}.v00-s21-closing-next .ha{fill:var(--acc)}.v00-s21-closing-next .hr{fill:var(--rej)}.v00-s21-closing-next .hm{fill:var(--mute)}.v00-s21-closing-next .hb{fill:var(--amb)}
+.v00-s21-closing-next .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s21-closing-next .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s21-closing-next .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s21-closing-next .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s21-closing-next .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s21-closing-next .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s21-closing-next .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s21-closing-next .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s21-closing-next .inv{fill:var(--bg);stroke:none}
+.v00-s21-closing-next .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s21-closing-next .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s21-closing-next .a{animation-duration:36s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s21-closing-next .a{animation:none}.v00-s21-closing-next .tr{display:none}}
+@keyframes v00-s21-closing-next-k1{0.0%{opacity:0}2.222%{opacity:0}3.472%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e1{animation-name:v00-s21-closing-next-k1}@keyframes v00-s21-closing-next-k2{0.0%{opacity:0}5.556%{opacity:0}6.806%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e2{animation-name:v00-s21-closing-next-k2}@keyframes v00-s21-closing-next-k3{0.0%{opacity:0}10.556%{opacity:0}11.806%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e3{animation-name:v00-s21-closing-next-k3}@keyframes v00-s21-closing-next-k4{0.0%{opacity:0}15.556%{opacity:0}16.806%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e4{animation-name:v00-s21-closing-next-k4}@keyframes v00-s21-closing-next-k5{0.0%{opacity:0}23.611%{opacity:0}24.861%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e5{animation-name:v00-s21-closing-next-k5}@keyframes v00-s21-closing-next-k6{0.0%{opacity:0}30.556%{opacity:0}31.806%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e6{animation-name:v00-s21-closing-next-k6}@keyframes v00-s21-closing-next-k7{0.0%{opacity:0}32.222%{opacity:0}33.472%{opacity:1}95.278%{opacity:1}96.944%{opacity:0}100%{opacity:0}}.v00-s21-closing-next .e7{animation-name:v00-s21-closing-next-k7}</style>
+<rect class="bg" x="0" y="0" width="960" height="332"/>
+<g><text class="cap" x="24" y="24">итог выпуска и с чего начинать</text></g>
+<g class="a e1"><rect class="bx" x="24" y="44" width="446" height="270" rx="8"/><text class="tk" x="40" y="72">помните три способа говорить</text></g>
+<g class="a e2"><rect class="bxa" x="40" y="90" width="79" height="28" rx="14"/><text class="sm tk c" x="79.5" y="109">просто</text><text class="sm" x="40" y="136">прочитано в программе или документации</text></g>
+<g class="a e3"><rect class="bxo" x="40" y="146" width="143" height="28" rx="14"/><text class="sm tk c" x="111.5" y="165">в нашем тесте</text><text class="sm" x="40" y="192">измерено в нашей лаборатории</text></g>
+<g class="a e4"><rect class="bxb" x="40" y="202" width="201" height="28" rx="14"/><text class="sm tk c" x="140.5" y="221">по общим сведениям</text><text class="sm" x="40" y="248">общее знание, не факт о настоящей системе</text></g>
+<g class="a e5"><rect class="bxr" x="40" y="264" width="414" height="36" rx="8"/><text class="tk c" x="247" y="288">результат нужно проверять самому</text></g>
+<g class="a e6"><rect class="bxa" x="490" y="44" width="446" height="270" rx="8"/><text class="tk" x="506" y="72">с чего начинать курс</text><rect class="bx" x="506" y="88" width="414" height="52" rx="8"/><text class="tk c" x="713" y="120">«Письмо в сортировочном центре»</text><text class="sm" x="506" y="172">полная история одного запроса</text><text class="sm" x="506" y="196">и наша лаборатория</text><text class="sm tk" x="506" y="246">каждый следующий выпуск опирается</text><text class="sm tk" x="506" y="268">на слова предыдущего</text></g>
+<g class="a e7"></g>
+</svg>

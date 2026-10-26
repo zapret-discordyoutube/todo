@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s21-two-paths" viewBox="0 0 960 508" width="960" height="508" role="img" aria-labelledby="v00-s21-two-paths-t v00-s21-two-paths-d">
+<title id="v00-s21-two-paths-t">Два пути по курсу</title>
+<desc id="v00-s21-two-paths-d">Есть два пути по курсу: путь для тех, кто хочет пользоваться, идёт через основы, пару про язык, разрезание на части, фейк, выпуск про blockcheck2 и выпуск про установку и запуск, а остальное по мере нужды, а путь для тех, кто хочет понять, идёт по всем выпускам по порядку, потом читаем и отлаживаем стратегии, а блок под капотом в самом конце, и это наше предложение, которое мы на зрителях не проверяли.</desc>
+<style>.v00-s21-two-paths{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s21-two-paths{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s21-two-paths .bg{fill:var(--bg)}
+.v00-s21-two-paths text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s21-two-paths .tk{font-weight:600;fill:var(--fg)}
+.v00-s21-two-paths .sm{font-size:14.5px}
+.v00-s21-two-paths .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s21-two-paths .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s21-two-paths .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s21-two-paths .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s21-two-paths .big{font-size:22px}
+.v00-s21-two-paths .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s21-two-paths .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s21-two-paths .mu{fill:var(--mute)}.v00-s21-two-paths .fg{fill:var(--fg)}.v00-s21-two-paths .acc{fill:var(--acc)}.v00-s21-two-paths .rej{fill:var(--rej)}.v00-s21-two-paths .ok{fill:var(--ok)}.v00-s21-two-paths .amb{fill:var(--amb)}
+.v00-s21-two-paths .c{text-anchor:middle}.v00-s21-two-paths .r{text-anchor:end}.v00-s21-two-paths .ns{stroke:none}
+.v00-s21-two-paths .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s21-two-paths .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s21-two-paths .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s21-two-paths .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s21-two-paths .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s21-two-paths .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s21-two-paths .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s21-two-paths .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s21-two-paths .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s21-two-paths .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s21-two-paths .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s21-two-paths .fa{fill:var(--tint);stroke:none}.v00-s21-two-paths .fr{fill:var(--rejt);stroke:none}.v00-s21-two-paths .fb{fill:var(--ambt);stroke:none}.v00-s21-two-paths .fo{fill:var(--okt);stroke:none}
+.v00-s21-two-paths .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s21-two-paths .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s21-two-paths .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s21-two-paths .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s21-two-paths .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s21-two-paths .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s21-two-paths .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s21-two-paths .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s21-two-paths .hf{fill:var(--fg2)}.v00-s21-two-paths .ha{fill:var(--acc)}.v00-s21-two-paths .hr{fill:var(--rej)}.v00-s21-two-paths .hm{fill:var(--mute)}.v00-s21-two-paths .hb{fill:var(--amb)}
+.v00-s21-two-paths .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s21-two-paths .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s21-two-paths .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s21-two-paths .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s21-two-paths .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s21-two-paths .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s21-two-paths .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s21-two-paths .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s21-two-paths .inv{fill:var(--bg);stroke:none}
+.v00-s21-two-paths .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s21-two-paths .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s21-two-paths .a{animation-duration:52s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s21-two-paths .a{animation:none}.v00-s21-two-paths .tr{display:none}}
+@keyframes v00-s21-two-paths-k1{0.0%{opacity:0}1.154%{opacity:0}2.019%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e1{animation-name:v00-s21-two-paths-k1}@keyframes v00-s21-two-paths-k2{0.0%{opacity:0}2.692%{opacity:0}3.558%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e2{animation-name:v00-s21-two-paths-k2}@keyframes v00-s21-two-paths-k3{0.0%{opacity:0}5.192%{opacity:0}6.058%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e3{animation-name:v00-s21-two-paths-k3}@keyframes v00-s21-two-paths-k4{0.0%{opacity:0}7.692%{opacity:0}8.558%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e4{animation-name:v00-s21-two-paths-k4}@keyframes v00-s21-two-paths-k5{0.0%{opacity:0}10.192%{opacity:0}11.058%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e5{animation-name:v00-s21-two-paths-k5}@keyframes v00-s21-two-paths-k6{0.0%{opacity:0}12.692%{opacity:0}13.558%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e6{animation-name:v00-s21-two-paths-k6}@keyframes v00-s21-two-paths-k7{0.0%{opacity:0}15.192%{opacity:0}16.058%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e7{animation-name:v00-s21-two-paths-k7}@keyframes v00-s21-two-paths-k8{0.0%{opacity:0}17.692%{opacity:0}18.558%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e8{animation-name:v00-s21-two-paths-k8}@keyframes v00-s21-two-paths-k9{0.0%{opacity:0}20.192%{opacity:0}21.058%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e9{animation-name:v00-s21-two-paths-k9}@keyframes v00-s21-two-paths-k10{0.0%{opacity:0}23.077%{opacity:0}23.942%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e10{animation-name:v00-s21-two-paths-k10}@keyframes v00-s21-two-paths-k11{0.0%{opacity:0}26.923%{opacity:0}27.788%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e11{animation-name:v00-s21-two-paths-k11}@keyframes v00-s21-two-paths-k12{0.0%{opacity:0}28.846%{opacity:0}29.712%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e12{animation-name:v00-s21-two-paths-k12}@keyframes v00-s21-two-paths-k13{0.0%{opacity:0}31.923%{opacity:0}32.788%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e13{animation-name:v00-s21-two-paths-k13}@keyframes v00-s21-two-paths-k14{0.0%{opacity:0}31.923%{opacity:0}32.788%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e14{animation-name:v00-s21-two-paths-k14}@keyframes v00-s21-two-paths-k15{0.0%{opacity:0}35.0%{opacity:0}35.865%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e15{animation-name:v00-s21-two-paths-k15}@keyframes v00-s21-two-paths-k16{0.0%{opacity:0}35.0%{opacity:0}35.865%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e16{animation-name:v00-s21-two-paths-k16}@keyframes v00-s21-two-paths-k17{0.0%{opacity:0}40.385%{opacity:0}41.25%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e17{animation-name:v00-s21-two-paths-k17}@keyframes v00-s21-two-paths-k18{0.0%{opacity:0}46.154%{opacity:0}47.019%{opacity:1}96.731%{opacity:1}97.885%{opacity:0}100%{opacity:0}}.v00-s21-two-paths .e18{animation-name:v00-s21-two-paths-k18}</style>
+<rect class="bg" x="0" y="0" width="960" height="508"/>
+<g><text class="cap" x="24" y="24">два пути по курсу</text></g>
+<g class="a e1"><rect class="bxa" x="24" y="40" width="446" height="32" rx="8"/><text class="tk" x="38" y="62">хочу пользоваться</text></g>
+<g class="a e2"><rect class="bx" x="24" y="80" width="446" height="38" rx="6"/><rect class="bxa" x="24" y="80" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="104">основы</text><text class="sm" x="162" y="105">«Письмо в сортировочном центре»</text></g>
+<g class="a e3"><rect class="bx" x="24" y="124" width="446" height="38" rx="6"/><rect class="bxa" x="24" y="124" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="148">основы</text><text class="sm" x="162" y="149">«Что видит наблюдатель»</text></g>
+<g class="a e4"><rect class="bx" x="24" y="168" width="446" height="38" rx="6"/><rect class="bxo" x="24" y="168" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="192">язык</text><text class="sm" x="162" y="193">«Читаем командную строку zapret2»</text></g>
+<g class="a e5"><rect class="bx" x="24" y="212" width="446" height="38" rx="6"/><rect class="bxo" x="24" y="212" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="236">язык</text><text class="sm" x="162" y="237">«Где резать: метки»</text></g>
+<g class="a e6"><rect class="bx" x="24" y="256" width="446" height="38" rx="6"/><rect class="bxo" x="24" y="256" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="280">приёмы</text><text class="sm" x="162" y="281">«multisplit: резать на части»</text></g>
+<g class="a e7"><rect class="bx" x="24" y="300" width="446" height="38" rx="6"/><rect class="bxo" x="24" y="300" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="324">приёмы</text><text class="sm" x="162" y="325">«Фейк и его условия»</text></g>
+<g class="a e8"><rect class="bx" x="24" y="344" width="446" height="38" rx="6"/><rect class="bxb" x="24" y="344" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="368">инструменты</text><text class="sm" x="162" y="369">выпуск про blockcheck2</text></g>
+<g class="a e9"><rect class="bx" x="24" y="388" width="446" height="38" rx="6"/><rect class="bxb" x="24" y="388" width="126" height="38" rx="6"/><text class="sm tk c" x="87" y="412">инструменты</text><text class="sm" x="162" y="413">выпуск про установку и запуск</text></g>
+<g class="a e10"><rect class="bxs" x="24" y="432" width="446" height="32" rx="6"/><text class="sm tk" x="38" y="453">остальное по мере нужды</text></g>
+<g class="a e11"><rect class="bxo" x="490" y="40" width="446" height="32" rx="8"/><text class="tk" x="504" y="62">хочу понять</text></g>
+<g class="a e12"><rect class="bx" x="490" y="80" width="446" height="52" rx="6"/><text class="sm tk" x="504" y="102">все выпуски по порядку</text><text class="sm mu" x="504" y="122">блоки подряд, один за другим</text></g>
+<g class="a e13"><rect class="bxo" x="490" y="148" width="446" height="52" rx="6"/><text class="sm tk" x="504" y="170">«Читаем и отлаживаем стратегии»</text><text class="sm mu" x="504" y="190">проверка своими руками</text></g>
+<g class="a e14"><path class="lf" d="M713 133L713.0 136.0"/><polygon class="hf" points="713,146 708.0,136.0 718.0,136.0"/></g>
+<g class="a e15"><rect class="bxg" x="490" y="216" width="446" height="52" rx="6"/><text class="sm tk" x="504" y="238">блок «под капотом»</text><text class="sm mu" x="504" y="258">в самом конце</text></g>
+<g class="a e16"><path class="lf" d="M713 201L713.0 204.0"/><polygon class="hf" points="713,214 708.0,204.0 718.0,204.0"/></g>
+<g class="a e17"><rect class="bxb" x="490" y="292" width="446" height="138" rx="8"/><text class="sm tk" x="504" y="318">если вы хорошо знаете TCP и TLS,</text><text class="sm tk" x="504" y="340">«Что видит наблюдатель» можно</text><text class="sm tk" x="504" y="362">смотреть выборочно</text><text class="sm" x="504" y="390">риск: дальше звучит словарь именно этого выпуска</text><text class="sm" x="504" y="414">сомневаетесь, с чего начать: начните с основ</text></g>
+<g class="a e18"><rect class="bxd" x="490" y="442" width="446" height="52" rx="8"/><text class="sm tk c" x="713" y="463">наше предложение,</text><text class="sm tk c" x="713" y="483">на зрителях мы его не проверяли</text></g>
+</svg>

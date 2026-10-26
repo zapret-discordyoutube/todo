@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s18-engine-four-cards" viewBox="0 0 960 462" width="960" height="462" role="img" aria-labelledby="v00-s18-engine-four-cards-t v00-s18-engine-four-cards-d">
+<title id="v00-s18-engine-four-cards-t">Что стоит вокруг программы</title>
+<desc id="v00-s18-engine-four-cards-d">Вокруг программы стоят четыре помощника, которые не обязательны, но делают её пригодной для жизни: проверка стратегий скриптом blockcheck2, ротация стратегий, установка со списками имён и журнал отладки.</desc>
+<style>.v00-s18-engine-four-cards{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s18-engine-four-cards{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s18-engine-four-cards .bg{fill:var(--bg)}
+.v00-s18-engine-four-cards text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s18-engine-four-cards .tk{font-weight:600;fill:var(--fg)}
+.v00-s18-engine-four-cards .sm{font-size:14.5px}
+.v00-s18-engine-four-cards .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s18-engine-four-cards .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s18-engine-four-cards .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s18-engine-four-cards .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s18-engine-four-cards .big{font-size:22px}
+.v00-s18-engine-four-cards .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s18-engine-four-cards .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s18-engine-four-cards .mu{fill:var(--mute)}.v00-s18-engine-four-cards .fg{fill:var(--fg)}.v00-s18-engine-four-cards .acc{fill:var(--acc)}.v00-s18-engine-four-cards .rej{fill:var(--rej)}.v00-s18-engine-four-cards .ok{fill:var(--ok)}.v00-s18-engine-four-cards .amb{fill:var(--amb)}
+.v00-s18-engine-four-cards .c{text-anchor:middle}.v00-s18-engine-four-cards .r{text-anchor:end}.v00-s18-engine-four-cards .ns{stroke:none}
+.v00-s18-engine-four-cards .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s18-engine-four-cards .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s18-engine-four-cards .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s18-engine-four-cards .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s18-engine-four-cards .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s18-engine-four-cards .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s18-engine-four-cards .fa{fill:var(--tint);stroke:none}.v00-s18-engine-four-cards .fr{fill:var(--rejt);stroke:none}.v00-s18-engine-four-cards .fb{fill:var(--ambt);stroke:none}.v00-s18-engine-four-cards .fo{fill:var(--okt);stroke:none}
+.v00-s18-engine-four-cards .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s18-engine-four-cards .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s18-engine-four-cards .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s18-engine-four-cards .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s18-engine-four-cards .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s18-engine-four-cards .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s18-engine-four-cards .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s18-engine-four-cards .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s18-engine-four-cards .hf{fill:var(--fg2)}.v00-s18-engine-four-cards .ha{fill:var(--acc)}.v00-s18-engine-four-cards .hr{fill:var(--rej)}.v00-s18-engine-four-cards .hm{fill:var(--mute)}.v00-s18-engine-four-cards .hb{fill:var(--amb)}
+.v00-s18-engine-four-cards .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s18-engine-four-cards .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s18-engine-four-cards .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s18-engine-four-cards .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s18-engine-four-cards .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s18-engine-four-cards .lgr{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--rej);stroke:none}
+.v00-s18-engine-four-cards .lga{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--ok);stroke:none}
+.v00-s18-engine-four-cards .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s18-engine-four-cards .inv{fill:var(--bg);stroke:none}
+.v00-s18-engine-four-cards .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s18-engine-four-cards .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s18-engine-four-cards .a{animation-duration:34s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s18-engine-four-cards .a{animation:none}.v00-s18-engine-four-cards .tr{display:none}}
+@keyframes v00-s18-engine-four-cards-k1{0.0%{opacity:0}2.353%{opacity:0}3.676%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e1{animation-name:v00-s18-engine-four-cards-k1}@keyframes v00-s18-engine-four-cards-k2{0.0%{opacity:0}8.824%{opacity:0}10.147%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e2{animation-name:v00-s18-engine-four-cards-k2}@keyframes v00-s18-engine-four-cards-k3{0.0%{opacity:0}9.706%{opacity:0}11.029%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e3{animation-name:v00-s18-engine-four-cards-k3}@keyframes v00-s18-engine-four-cards-k4{0.0%{opacity:0}19.118%{opacity:0}20.441%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e4{animation-name:v00-s18-engine-four-cards-k4}@keyframes v00-s18-engine-four-cards-k5{0.0%{opacity:0}20.0%{opacity:0}21.324%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e5{animation-name:v00-s18-engine-four-cards-k5}@keyframes v00-s18-engine-four-cards-k6{0.0%{opacity:0}29.412%{opacity:0}30.735%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e6{animation-name:v00-s18-engine-four-cards-k6}@keyframes v00-s18-engine-four-cards-k7{0.0%{opacity:0}30.294%{opacity:0}31.618%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e7{animation-name:v00-s18-engine-four-cards-k7}@keyframes v00-s18-engine-four-cards-k8{0.0%{opacity:0}39.706%{opacity:0}41.029%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e8{animation-name:v00-s18-engine-four-cards-k8}@keyframes v00-s18-engine-four-cards-k9{0.0%{opacity:0}40.588%{opacity:0}41.912%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e9{animation-name:v00-s18-engine-four-cards-k9}@keyframes v00-s18-engine-four-cards-k10{0.0%{opacity:0}52.941%{opacity:0}54.265%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e10{animation-name:v00-s18-engine-four-cards-k10}@keyframes v00-s18-engine-four-cards-k11{0.0%{opacity:0}50.0%{opacity:0}51.324%{opacity:1}95.0%{opacity:1}96.765%{opacity:0}100%{opacity:0}}.v00-s18-engine-four-cards .e11{animation-name:v00-s18-engine-four-cards-k11}</style>
+<rect class="bg" x="0" y="0" width="960" height="462"/>
+<g><text class="cap" x="24" y="24">вокруг движка: четыре помощника</text></g>
+<g class="a e1"><rect class="bxa" x="340" y="164" width="280" height="110" rx="10"/><text class="ml c" x="480" y="210">nfqws2</text><text class="sm tk c" x="480" y="236">движок: сама программа</text><text class="sm c" x="480" y="258">перехват, профили, вызовы Lua</text></g>
+<g class="a e2"><rect class="bx" x="24" y="44" width="300" height="108" rx="8"/><circle class="bx" cx="46" cy="70" r="12"/><text class="tk c ns" x="46" y="75">1</text><text class="tk" x="66" y="76">blockcheck2</text><text class="sm" x="40" y="106">скрипт, который по очереди</text><text class="sm" x="40" y="128">пробует стратегии и проверяет</text></g>
+<g class="a e3"><path class="lm" d="M324 108L340 170"/></g>
+<g class="a e4"><rect class="bx" x="636" y="44" width="300" height="108" rx="8"/><circle class="bx" cx="658" cy="70" r="12"/><text class="tk c ns" x="658" y="75">2</text><text class="tk" x="678" y="76">ротация стратегий</text><text class="sm" x="652" y="106">после неудач программа</text><text class="sm" x="652" y="128">берёт следующую стратегию сама</text></g>
+<g class="a e5"><path class="lm" d="M636 108L620 170"/></g>
+<g class="a e6"><rect class="bx" x="24" y="298" width="300" height="108" rx="8"/><circle class="bx" cx="46" cy="324" r="12"/><text class="tk c ns" x="46" y="329">3</text><text class="tk" x="66" y="330">установка и списки</text><text class="sm" x="40" y="360">файл настроек, установщик,</text><text class="sm" x="40" y="382">загрузчики списков имён</text></g>
+<g class="a e7"><path class="lm" d="M324 298L340 270"/></g>
+<g class="a e8"><rect class="bx" x="636" y="298" width="300" height="108" rx="8"/><circle class="bx" cx="658" cy="324" r="12"/><text class="tk c ns" x="658" y="329">4</text><text class="tk" x="678" y="330">журнал</text><text class="sm" x="652" y="360">что программа делала</text><text class="sm" x="652" y="382">с каждым пакетом</text></g>
+<g class="a e9"><path class="lm" d="M636 298L620 270"/></g>
+<g class="a e10"></g>
+<g class="a e11"><rect class="bxb" x="167" y="420" width="626" height="26" rx="13.0"/><text class="sm tk c" x="480" y="438">необязательно, но именно это делает программу пригодной для жизни</text></g>
+</svg>

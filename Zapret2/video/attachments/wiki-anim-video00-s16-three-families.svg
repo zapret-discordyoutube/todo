@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s16-three-families" viewBox="0 0 960 410" width="960" height="410" role="img" aria-labelledby="v00-s16-three-families-t v00-s16-three-families-d">
+<title id="v00-s16-three-families-t">Три основные семьи приёмов</title>
+<desc id="v00-s16-three-families-d">Три основные семьи приёмов: резать, то есть разделить приветствие на куски, перемешать, то есть отправить куски в другом порядке, и подделывать, то есть добавить ложный пакет, который получатель выбросит; семей несколько, потому что читатели бывают разные, это гипотеза, в наших игрушках она видна, и лекарства на все случаи нет.</desc>
+<style>.v00-s16-three-families{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s16-three-families{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s16-three-families .bg{fill:var(--bg)}
+.v00-s16-three-families text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s16-three-families .tk{font-weight:600;fill:var(--fg)}
+.v00-s16-three-families .sm{font-size:14.5px}
+.v00-s16-three-families .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s16-three-families .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s16-three-families .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-three-families .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s16-three-families .big{font-size:22px}
+.v00-s16-three-families .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s16-three-families .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s16-three-families .mu{fill:var(--mute)}.v00-s16-three-families .fg{fill:var(--fg)}.v00-s16-three-families .acc{fill:var(--acc)}.v00-s16-three-families .rej{fill:var(--rej)}.v00-s16-three-families .ok{fill:var(--ok)}.v00-s16-three-families .amb{fill:var(--amb)}
+.v00-s16-three-families .c{text-anchor:middle}.v00-s16-three-families .r{text-anchor:end}.v00-s16-three-families .ns{stroke:none}
+.v00-s16-three-families .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s16-three-families .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s16-three-families .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s16-three-families .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s16-three-families .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s16-three-families .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s16-three-families .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s16-three-families .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s16-three-families .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-three-families .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s16-three-families .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s16-three-families .fa{fill:var(--tint);stroke:none}.v00-s16-three-families .fr{fill:var(--rejt);stroke:none}.v00-s16-three-families .fb{fill:var(--ambt);stroke:none}.v00-s16-three-families .fo{fill:var(--okt);stroke:none}
+.v00-s16-three-families .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-three-families .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s16-three-families .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s16-three-families .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s16-three-families .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s16-three-families .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s16-three-families .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s16-three-families .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s16-three-families .hf{fill:var(--fg2)}.v00-s16-three-families .ha{fill:var(--acc)}.v00-s16-three-families .hr{fill:var(--rej)}.v00-s16-three-families .hm{fill:var(--mute)}.v00-s16-three-families .hb{fill:var(--amb)}
+.v00-s16-three-families .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s16-three-families .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s16-three-families .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s16-three-families .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s16-three-families .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-three-families .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s16-three-families .inv{fill:var(--bg);stroke:none}
+.v00-s16-three-families .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s16-three-families .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s16-three-families .a{animation-duration:44s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s16-three-families .a{animation:none}.v00-s16-three-families .tr{display:none}}
+@keyframes v00-s16-three-families-k1{0.0%{opacity:0}4.545%{opacity:0}5.568%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s16-three-families .e1{animation-name:v00-s16-three-families-k1}@keyframes v00-s16-three-families-k2{0.0%{opacity:0}18.182%{opacity:0}19.205%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s16-three-families .e2{animation-name:v00-s16-three-families-k2}@keyframes v00-s16-three-families-k3{0.0%{opacity:0}31.818%{opacity:0}32.841%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s16-three-families .e3{animation-name:v00-s16-three-families-k3}@keyframes v00-s16-three-families-k4{0.0%{opacity:0}50.0%{opacity:0}51.023%{opacity:1}96.136%{opacity:1}97.5%{opacity:0}100%{opacity:0}}.v00-s16-three-families .e4{animation-name:v00-s16-three-families-k4}</style>
+<rect class="bg" x="0" y="0" width="960" height="410"/>
+<g><text class="cap" x="24" y="24">три основные семьи на одном и том же приветствии</text></g>
+<g class="a e1"><rect class="bx" x="24" y="44" width="296" height="230" rx="10"/><text class="big tk fg" x="40" y="76">резать</text><rect class="bxa" x="40" y="104" width="106" height="56" rx="6"/><text class="sm tk c" x="93" y="128">104 байта</text><text class="sm c" x="93" y="148">байты 0–103</text><circle class="bx" cx="93" cy="94" r="10"/><text class="tk c ns" x="93" y="99">1</text><rect class="bxo" x="152" y="104" width="150" height="56" rx="6"/><text class="sm tk c" x="227" y="128">146 байт</text><text class="sm c" x="227" y="148">байты 104–249</text><circle class="bx" cx="227" cy="94" r="10"/><text class="tk c ns" x="227" y="99">2</text><text class="sm mu" x="40" y="196">порядок отправки: 1, 2</text><text class="sm tk" x="40" y="224">разделить приветствие</text><text class="sm tk" x="40" y="244">на куски</text></g>
+<g class="a e2"><rect class="bx" x="332" y="44" width="296" height="230" rx="10"/><text class="big tk fg" x="348" y="76">перемешать</text><rect class="bxo" x="348" y="104" width="150" height="56" rx="6"/><text class="sm tk c" x="423" y="128">146 байт</text><text class="sm c" x="423" y="148">байты 104–249</text><circle class="bx" cx="423" cy="94" r="10"/><text class="tk c ns" x="423" y="99">1</text><rect class="bxa" x="504" y="104" width="106" height="56" rx="6"/><text class="sm tk c" x="557" y="128">104 байта</text><text class="sm c" x="557" y="148">байты 0–103</text><circle class="bx" cx="557" cy="94" r="10"/><text class="tk c ns" x="557" y="99">2</text><text class="sm mu" x="348" y="196">порядок отправки: 1, 2</text><text class="sm tk" x="348" y="224">отправить куски</text><text class="sm tk" x="348" y="244">в другом порядке</text></g>
+<g class="a e3"><rect class="bx" x="640" y="44" width="296" height="230" rx="10"/><text class="big tk fg" x="656" y="76">подделывать</text><rect class="bxr" x="656" y="104" width="82" height="56" rx="6"/><text class="sm tk c" x="697" y="128">ложный</text><text class="sm c" x="697" y="148">пакет</text><circle class="bx" cx="697" cy="94" r="10"/><text class="tk c ns" x="697" y="99">1</text><rect class="bxa" x="744" y="104" width="168" height="56" rx="6"/><text class="sm tk c" x="828" y="128">настоящее</text><text class="sm c" x="828" y="148">250 байт целиком</text><circle class="bx" cx="828" cy="94" r="10"/><text class="tk c ns" x="828" y="99">2</text><text class="sm mu" x="656" y="196">порядок отправки: 1, 2</text><text class="sm tk" x="656" y="224">добавить ложный пакет,</text><text class="sm tk" x="656" y="244">который получатель выбросит</text></g>
+<g class="a e4"><rect class="bxa" x="24" y="292" width="912" height="90" rx="8"/><text class="big tk" x="40" y="322">семей несколько, потому что читатели бывают разные</text><text class="sm" x="40" y="350">это гипотеза, и в наших игрушках она видна</text><text class="sm tk" x="40" y="370">лекарства на все случаи нет</text></g>
+</svg>

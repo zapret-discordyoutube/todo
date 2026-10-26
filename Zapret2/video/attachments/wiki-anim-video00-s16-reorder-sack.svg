@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s16-reorder-sack" viewBox="0 0 960 616" width="960" height="616" role="img" aria-labelledby="v00-s16-reorder-sack-t v00-s16-reorder-sack-d">
+<title id="v00-s16-reorder-sack-t">Перемешивание и ответ сервера с пометкой SACK</title>
+<desc id="v00-s16-reorder-sack-d">Перемешивание отправляет куски приветствия в другом порядке, и в нашем тесте клиент сначала отправил конец в 146 байт, сервер ответил, что начала ещё нет, а вторую часть он уже держит, это видно по пометке SACK, потом пришли первые 104 байта, сервер подтвердил все 250 и программа сервера прочла их одним куском; по общим сведениям, читателя, который ждёт кусков по порядку, такая перестановка может сбить.</desc>
+<style>.v00-s16-reorder-sack{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s16-reorder-sack{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s16-reorder-sack .bg{fill:var(--bg)}
+.v00-s16-reorder-sack text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s16-reorder-sack .tk{font-weight:600;fill:var(--fg)}
+.v00-s16-reorder-sack .sm{font-size:14.5px}
+.v00-s16-reorder-sack .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s16-reorder-sack .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s16-reorder-sack .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-reorder-sack .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s16-reorder-sack .big{font-size:22px}
+.v00-s16-reorder-sack .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s16-reorder-sack .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s16-reorder-sack .mu{fill:var(--mute)}.v00-s16-reorder-sack .fg{fill:var(--fg)}.v00-s16-reorder-sack .acc{fill:var(--acc)}.v00-s16-reorder-sack .rej{fill:var(--rej)}.v00-s16-reorder-sack .ok{fill:var(--ok)}.v00-s16-reorder-sack .amb{fill:var(--amb)}
+.v00-s16-reorder-sack .c{text-anchor:middle}.v00-s16-reorder-sack .r{text-anchor:end}.v00-s16-reorder-sack .ns{stroke:none}
+.v00-s16-reorder-sack .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s16-reorder-sack .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s16-reorder-sack .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s16-reorder-sack .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s16-reorder-sack .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s16-reorder-sack .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s16-reorder-sack .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s16-reorder-sack .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s16-reorder-sack .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-reorder-sack .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s16-reorder-sack .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s16-reorder-sack .fa{fill:var(--tint);stroke:none}.v00-s16-reorder-sack .fr{fill:var(--rejt);stroke:none}.v00-s16-reorder-sack .fb{fill:var(--ambt);stroke:none}.v00-s16-reorder-sack .fo{fill:var(--okt);stroke:none}
+.v00-s16-reorder-sack .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-reorder-sack .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s16-reorder-sack .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s16-reorder-sack .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s16-reorder-sack .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s16-reorder-sack .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s16-reorder-sack .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s16-reorder-sack .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s16-reorder-sack .hf{fill:var(--fg2)}.v00-s16-reorder-sack .ha{fill:var(--acc)}.v00-s16-reorder-sack .hr{fill:var(--rej)}.v00-s16-reorder-sack .hm{fill:var(--mute)}.v00-s16-reorder-sack .hb{fill:var(--amb)}
+.v00-s16-reorder-sack .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s16-reorder-sack .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s16-reorder-sack .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s16-reorder-sack .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s16-reorder-sack .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-reorder-sack .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s16-reorder-sack .inv{fill:var(--bg);stroke:none}
+.v00-s16-reorder-sack .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s16-reorder-sack .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s16-reorder-sack .a{animation-duration:56s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s16-reorder-sack .a{animation:none}.v00-s16-reorder-sack .tr{display:none}}
+@keyframes v00-s16-reorder-sack-k1{0.0%{opacity:0}1.786%{opacity:0}2.589%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e1{animation-name:v00-s16-reorder-sack-k1}@keyframes v00-s16-reorder-sack-k2{0.0%{opacity:0}3.571%{opacity:0}4.375%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e2{animation-name:v00-s16-reorder-sack-k2}@keyframes v00-s16-reorder-sack-k3{0.0%{opacity:0}7.143%{opacity:0}7.946%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e3{animation-name:v00-s16-reorder-sack-k3}@keyframes v00-s16-reorder-sack-k4{0.0%{opacity:0}14.286%{opacity:0}15.089%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e4{animation-name:v00-s16-reorder-sack-k4}@keyframes v00-s16-reorder-sack-k5{0.0%{opacity:0}19.643%{opacity:0}20.446%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e5{animation-name:v00-s16-reorder-sack-k5}@keyframes v00-s16-reorder-sack-k6{0.0%{opacity:0}28.571%{opacity:0}29.375%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e6{animation-name:v00-s16-reorder-sack-k6}@keyframes v00-s16-reorder-sack-k7{0.0%{opacity:0}39.286%{opacity:0}40.089%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e7{animation-name:v00-s16-reorder-sack-k7}@keyframes v00-s16-reorder-sack-k8{0.0%{opacity:0}46.429%{opacity:0}47.232%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e8{animation-name:v00-s16-reorder-sack-k8}@keyframes v00-s16-reorder-sack-k9{0.0%{opacity:0}32.143%{opacity:0}32.946%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e9{animation-name:v00-s16-reorder-sack-k9}@keyframes v00-s16-reorder-sack-k10{0.0%{opacity:0}33.929%{opacity:0}34.732%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e10{animation-name:v00-s16-reorder-sack-k10}@keyframes v00-s16-reorder-sack-k11{0.0%{opacity:0}53.571%{opacity:0}54.375%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e11{animation-name:v00-s16-reorder-sack-k11}@keyframes v00-s16-reorder-sack-k12{0.0%{opacity:0}64.286%{opacity:0}65.089%{opacity:1}96.964%{opacity:1}98.036%{opacity:0}100%{opacity:0}}.v00-s16-reorder-sack .e12{animation-name:v00-s16-reorder-sack-k12}</style>
+<rect class="bg" x="0" y="0" width="960" height="616"/>
+<g><text class="cap" x="24" y="24">семья вторая: перемешать</text></g>
+<g><rect class="bxa" x="779" y="8" width="157" height="26" rx="13"/><text class="sm tk c" x="857.5" y="26">В НАШЕМ ТЕСТЕ</text></g>
+<g class="a e1"><rect class="bxb" x="24" y="40" width="196" height="26" rx="13.0"/><text class="sm tk c" x="122" y="58">пример выдуманный</text></g>
+<g class="a e2"><rect class="pl" x="24" y="78" width="200" height="60" rx="6"/><rect class="bxs" x="198" y="86" width="16" height="12" rx="2"/><path class="lm" d="M36 124L114 124"/><text class="sm tk" x="38" y="106">фонтана</text><rect class="pl" x="238" y="78" width="200" height="60" rx="6"/><rect class="bxs" x="412" y="86" width="16" height="12" rx="2"/><path class="lm" d="M250 124L328 124"/><text class="sm tk" x="252" y="106">встретимся у</text><text class="sm mu" x="24" y="156">открытка 2 лежит сверху</text><text class="sm mu" x="238" y="156">открытка 1</text></g>
+<g class="a e3"><text class="sm" x="470" y="102">в обычном TCP каждый кусок несёт</text><text class="sm" x="470" y="124">номер своего первого байта,</text><text class="sm tk" x="470" y="146">получатель сам сложит их по номерам</text></g>
+<g class="a e4"><text class="sm tk" x="24" y="182">живой пример из нашего теста</text><rect class="bxs" x="220" y="196" width="100" height="28" rx="6"/><text class="sm tk c" x="270" y="215">клиент</text><rect class="bxs" x="620" y="196" width="100" height="28" rx="6"/><text class="sm tk c" x="670" y="215">сервер</text><path class="lmd" d="M270 224L270 446"/><path class="lmd" d="M670 224L670 446"/></g>
+<g class="a e5"><path class="la" d="M274 262L656.0 262.0"/><polygon class="ha" points="666,262 656.0,267.0 656.0,257.0"/><rect class="bxa" x="381" y="231" width="178" height="24" rx="5"/><text class="lgk" x="388" y="248">[AP] rseq=105 len=146</text><text class="sm" x="24" y="254">сначала конец приветствия:</text><text class="sm" x="24" y="273">146 байт</text></g>
+<g class="a e6"><path class="lf" d="M666 316L284.0 316.0"/><polygon class="hf" points="274,316 284.0,311.0 284.0,321.0"/><rect class="bxb" x="361" y="285" width="218" height="24" rx="5"/><text class="lgk" x="368" y="302">[A] rseq=1 rack=1 ... SACK</text><text class="sm tk" x="690" y="308">жду начало, вторую часть</text><text class="sm tk" x="690" y="327">уже держу</text></g>
+<g class="a e7"><path class="la" d="M274 370L656.0 370.0"/><polygon class="ha" points="666,370 656.0,375.0 656.0,365.0"/><rect class="bxo" x="388.5" y="339" width="163" height="24" rx="5"/><text class="lgk" x="395.5" y="356">[AP] rseq=1 len=104</text><text class="sm" x="24" y="362">потом начало:</text><text class="sm" x="24" y="381">104 байта</text></g>
+<g class="a e8"><path class="lf" d="M666 424L284.0 424.0"/><polygon class="hf" points="274,424 284.0,419.0 284.0,429.0"/><rect class="bx" x="416" y="393" width="108" height="24" rx="5"/><text class="lgk" x="423" y="410">[A] rack=251</text><text class="sm tk" x="690" y="416">подтверждаю все</text><text class="sm tk" x="690" y="435">250 байт</text></g>
+<g class="a e9"></g>
+<g class="a e10"><text class="sm tk" x="24" y="466">пометка SACK: получатель сообщает, какие куски уже держит</text></g>
+<g class="a e11"><rect class="bxo" x="24" y="492" width="912" height="66" rx="8"/><text class="sm tk" x="40" y="518">программа сервера прочла 250 байт одним куском, как будто ничего не случилось</text><text class="lgk" x="40" y="544">SERVER conn 1 total 250 chunks [(250, 250)]</text><circle class="bxo" cx="906" cy="518" r="13"/><path class="lo" d="M901 518L904.5 522L911 514" style="stroke-linecap:round;stroke-linejoin:round"/></g>
+<g class="a e12"><rect class="bxb" x="24" y="574" width="228" height="26" rx="13.0"/><text class="sm tk c" x="138" y="592">ПО ОБЩИМ СВЕДЕНИЯМ</text><text class="sm" x="264" y="593">читателя, который ждёт кусков по порядку, такая перестановка может сбить</text></g>
+</svg>

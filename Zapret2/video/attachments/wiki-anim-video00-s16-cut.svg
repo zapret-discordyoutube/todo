@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s16-cut" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="v00-s16-cut-t v00-s16-cut-d">
+<title id="v00-s16-cut-t">Резка: один пакет становится двумя</title>
+<desc id="v00-s16-cut-d">Резка делит наше приветствие в 250 байт на два пакета, в первом 104 байта, во втором 146, как фраза на двух открытках, и в нашем тесте сервер получил все 250 байт, ровно столько, сколько ушло.</desc>
+<style>.v00-s16-cut{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s16-cut{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s16-cut .bg{fill:var(--bg)}
+.v00-s16-cut text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s16-cut .tk{font-weight:600;fill:var(--fg)}
+.v00-s16-cut .sm{font-size:14.5px}
+.v00-s16-cut .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px}
+.v00-s16-cut .mk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14.5px;font-weight:600;fill:var(--fg)}
+.v00-s16-cut .hx{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-cut .ix{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s16-cut .big{font-size:22px}
+.v00-s16-cut .ml{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:17px;font-weight:600;fill:var(--fg)}
+.v00-s16-cut .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s16-cut .mu{fill:var(--mute)}.v00-s16-cut .fg{fill:var(--fg)}.v00-s16-cut .acc{fill:var(--acc)}.v00-s16-cut .rej{fill:var(--rej)}.v00-s16-cut .ok{fill:var(--ok)}.v00-s16-cut .amb{fill:var(--amb)}
+.v00-s16-cut .c{text-anchor:middle}.v00-s16-cut .r{text-anchor:end}.v00-s16-cut .ns{stroke:none}
+.v00-s16-cut .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s16-cut .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s16-cut .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s16-cut .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s16-cut .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s16-cut .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s16-cut .pl{fill:var(--bg);stroke:var(--fg);stroke-width:1.6}
+.v00-s16-cut .fs{fill:var(--mute);fill-opacity:.22;stroke:none}
+.v00-s16-cut .bxg{fill:var(--mute);fill-opacity:.2;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-cut .bxn{fill:none;stroke:var(--fg);stroke-width:2}
+.v00-s16-cut .bxd{fill:none;stroke:var(--mute);stroke-width:1.3;stroke-dasharray:5 4}
+.v00-s16-cut .fa{fill:var(--tint);stroke:none}.v00-s16-cut .fr{fill:var(--rejt);stroke:none}.v00-s16-cut .fb{fill:var(--ambt);stroke:none}.v00-s16-cut .fo{fill:var(--okt);stroke:none}
+.v00-s16-cut .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s16-cut .lmd{fill:none;stroke:var(--mute);stroke-width:1.4;stroke-dasharray:5 4}
+.v00-s16-cut .la{fill:none;stroke:var(--acc);stroke-width:2}
+.v00-s16-cut .lf{fill:none;stroke:var(--fg2);stroke-width:2}
+.v00-s16-cut .lr{fill:none;stroke:var(--rej);stroke-width:2.4}
+.v00-s16-cut .lcut{fill:none;stroke:var(--rej);stroke-width:1.8;stroke-dasharray:6 4}
+.v00-s16-cut .lb{fill:none;stroke:var(--amb);stroke-width:2}
+.v00-s16-cut .lo{fill:none;stroke:var(--ok);stroke-width:2.4}
+.v00-s16-cut .hf{fill:var(--fg2)}.v00-s16-cut .ha{fill:var(--acc)}.v00-s16-cut .hr{fill:var(--rej)}.v00-s16-cut .hm{fill:var(--mute)}.v00-s16-cut .hb{fill:var(--amb)}
+.v00-s16-cut .fun{fill:var(--tint);stroke:var(--acc);stroke-width:1;stroke-opacity:.55}
+.v00-s16-cut .lg{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg2);stroke:none}
+.v00-s16-cut .lgc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--acc);stroke:none}
+.v00-s16-cut .lgl{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--ok);stroke:none}
+.v00-s16-cut .lgk{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;font-weight:600;fill:var(--fg);stroke:none}
+.v00-s16-cut .dk{fill:var(--fg2);stroke:var(--fg);stroke-width:1.4}
+.v00-s16-cut .inv{fill:var(--bg);stroke:none}
+.v00-s16-cut .invm{fill:var(--bg);fill-opacity:.8;stroke:none}
+.v00-s16-cut .gr{fill:var(--mute);fill-opacity:.12;stroke:var(--line);stroke-width:1.2}
+.v00-s16-cut .a{animation-duration:40s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s16-cut .a{animation:none}.v00-s16-cut .tr{display:none}}
+@keyframes v00-s16-cut-k1{0.0%{opacity:0}2.5%{opacity:0}3.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e1{animation-name:v00-s16-cut-k1}@keyframes v00-s16-cut-k2{0.0%{opacity:0}5.0%{opacity:0}6.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e2{animation-name:v00-s16-cut-k2}@keyframes v00-s16-cut-k3{0.0%{opacity:0}10.0%{opacity:0}11.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e3{animation-name:v00-s16-cut-k3}@keyframes v00-s16-cut-k4{0.0%{opacity:0}20.0%{opacity:0}21.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e4{animation-name:v00-s16-cut-k4}@keyframes v00-s16-cut-k5{0.0%{opacity:0}25.0%{opacity:0}26.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e5{animation-name:v00-s16-cut-k5}@keyframes v00-s16-cut-k6{0.0%{opacity:0}32.5%{opacity:0}33.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e6{animation-name:v00-s16-cut-k6}@keyframes v00-s16-cut-k7{0.0%{opacity:0}40.0%{opacity:0}41.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e7{animation-name:v00-s16-cut-k7}@keyframes v00-s16-cut-k8{0.0%{opacity:0}47.5%{opacity:0}48.625%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e8{animation-name:v00-s16-cut-k8}@keyframes v00-s16-cut-k9{0.0%{opacity:0}50.0%{opacity:0}51.125%{opacity:1}95.75%{opacity:1}97.25%{opacity:0}100%{opacity:0}}.v00-s16-cut .e9{animation-name:v00-s16-cut-k9}</style>
+<rect class="bg" x="0" y="0" width="960" height="420"/>
+<g><text class="cap" x="24" y="24">семья первая: резать</text></g>
+<g><rect class="bxa" x="779" y="8" width="157" height="26" rx="13"/><text class="sm tk c" x="857.5" y="26">В НАШЕМ ТЕСТЕ</text></g>
+<g class="a e1"><rect class="bxb" x="24" y="40" width="196" height="26" rx="13.0"/><text class="sm tk c" x="122" y="58">пример выдуманный</text></g>
+<g class="a e2"><rect class="pl" x="24" y="78" width="200" height="60" rx="6"/><rect class="bxs" x="198" y="86" width="16" height="12" rx="2"/><path class="lm" d="M36 124L114 124"/><text class="sm tk" x="38" y="106">встретимся у</text><rect class="pl" x="238" y="78" width="200" height="60" rx="6"/><rect class="bxs" x="412" y="86" width="16" height="12" rx="2"/><path class="lm" d="M250 124L328 124"/><text class="sm tk" x="252" y="106">фонтана</text></g>
+<g class="a e3"><text class="sm" x="470" y="102">фраза «встретимся у фонтана»</text><text class="sm" x="470" y="124">пришла на двух открытках</text></g>
+<g class="a e4"><text class="sm tk" x="24" y="180">наше приветствие, 250 байт: резка делит его на два пакета</text></g>
+<g class="a e5"><rect class="bxa" x="24" y="194" width="375.2" height="56" rx="6"/><text class="sm tk c" x="211.6" y="218">пакет 1</text><text class="sm c" x="211.6" y="238">104 байта, байты 0–103</text><text class="lgk c" x="211.6" y="270">104@0</text></g>
+<g class="a e6"><rect class="bxo" x="409.2" y="194" width="526.8" height="56" rx="6"/><text class="sm tk c" x="672.6" y="218">пакет 2</text><text class="sm c" x="672.6" y="238">146 байт, байты 104–249</text><text class="lgk c" x="672.6" y="270">146@104</text></g>
+<g class="a e7"><text class="sm mu" x="24" y="296">запись «длина@начало»: 104@0 это 104 байта, начиная с байта 0</text></g>
+<g class="a e8"><path class="lf" d="M480 304L480.0 322.0"/><polygon class="hf" points="480,332 475.0,322.0 485.0,322.0"/></g>
+<g class="a e9"><rect class="bxo" x="24" y="336" width="912" height="56" rx="8"/><text class="sm tk" x="40" y="370">сервер получил все 250 байт, ровно столько, сколько ушло</text><circle class="bxo" cx="906" cy="364" r="13"/><path class="lo" d="M901 364L904.5 368L911 360" style="stroke-linecap:round;stroke-linejoin:round"/></g>
+</svg>
