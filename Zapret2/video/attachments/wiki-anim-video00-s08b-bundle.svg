@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s08b-bundle" viewBox="0 0 960 590" width="960" height="590" role="img" aria-labelledby="v00-s08b-bundle-t v00-s08b-bundle-d">
+<title id="v00-s08b-bundle-t">Из чего состоит сборка с батниками</title>
+<desc id="v00-s08b-bundle-d">Схема сборки Flowseal для Ютуба и Дискорда по снимку её папки: батник это текстовый файл с одной командой запуска, которая запускает движок первой версии с длинной строкой настроек, а движок использует драйвер перехвата пакетов и двадцать три файла с заготовками подделок, рядом лежат папка со списками сайтов и ещё двадцать один такой же батник.</desc>
+<style>.v00-s08b-bundle{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s08b-bundle{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s08b-bundle .bg{fill:var(--bg)}
+.v00-s08b-bundle text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s08b-bundle .tk{font-weight:600;fill:var(--fg)}
+.v00-s08b-bundle .sm{font-size:14.5px}
+.v00-s08b-bundle .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;fill:var(--fg);stroke:none}
+.v00-s08b-bundle .mc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg);stroke:none}
+.v00-s08b-bundle .mm{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s08b-bundle .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s08b-bundle .mu{fill:var(--mute)}.v00-s08b-bundle .fg{fill:var(--fg)}.v00-s08b-bundle .acc{fill:var(--acc)}.v00-s08b-bundle .ok{fill:var(--ok)}.v00-s08b-bundle .amb{fill:var(--amb)}
+.v00-s08b-bundle .c{text-anchor:middle}.v00-s08b-bundle .ns{stroke:none}
+.v00-s08b-bundle .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s08b-bundle .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s08b-bundle .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s08b-bundle .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s08b-bundle .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s08b-bundle .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s08b-bundle .gr{fill:var(--mute);fill-opacity:.1;stroke:var(--line);stroke-width:1.2}
+.v00-s08b-bundle .ico{fill:none;stroke:var(--fg2);stroke-width:1.5;stroke-linejoin:round}
+.v00-s08b-bundle .icof{fill:var(--mute);fill-opacity:.35;stroke:var(--fg2);stroke-width:1.3;stroke-linejoin:round}
+.v00-s08b-bundle .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s08b-bundle .fl{stroke-dasharray:7 5;animation:v00-s08b-bundle-march .9s linear infinite}
+@keyframes v00-s08b-bundle-march{to{stroke-dashoffset:-12}}
+.v00-s08b-bundle .a{animation-duration:34s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s08b-bundle .a{animation:none}.v00-s08b-bundle .tr{display:none}.v00-s08b-bundle .fl{animation:none}}
+
+@keyframes v00-s08b-bundle-k1{0.0%{opacity:0}7.353%{opacity:0}9.706%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e1{animation-name:v00-s08b-bundle-k1}
+@keyframes v00-s08b-bundle-k2{0.0%{opacity:0}8.529%{opacity:0}10.882%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e2{animation-name:v00-s08b-bundle-k2}
+@keyframes v00-s08b-bundle-k3{0.0%{opacity:0}26.471%{opacity:0}28.824%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e3{animation-name:v00-s08b-bundle-k3}
+@keyframes v00-s08b-bundle-k4{0.0%{opacity:0}35.294%{opacity:0}37.647%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e4{animation-name:v00-s08b-bundle-k4}
+@keyframes v00-s08b-bundle-k5{0.0%{opacity:0}35.294%{opacity:0}37.647%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e5{animation-name:v00-s08b-bundle-k5}
+@keyframes v00-s08b-bundle-k6{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e6{animation-name:v00-s08b-bundle-k6}
+@keyframes v00-s08b-bundle-k7{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e7{animation-name:v00-s08b-bundle-k7}
+@keyframes v00-s08b-bundle-k8{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e8{animation-name:v00-s08b-bundle-k8}
+@keyframes v00-s08b-bundle-k9{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e9{animation-name:v00-s08b-bundle-k9}
+@keyframes v00-s08b-bundle-k10{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e10{animation-name:v00-s08b-bundle-k10}
+@keyframes v00-s08b-bundle-k11{0.0%{opacity:0}35.294%{opacity:0}37.647%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e11{animation-name:v00-s08b-bundle-k11}
+@keyframes v00-s08b-bundle-k12{0.0%{opacity:0}45.588%{opacity:0}47.941%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e12{animation-name:v00-s08b-bundle-k12}
+@keyframes v00-s08b-bundle-k13{0.0%{stroke-dasharray:1;stroke-dashoffset:1;opacity:1}14.706%{stroke-dasharray:1;stroke-dashoffset:1;opacity:1}22.353%{stroke-dasharray:1;stroke-dashoffset:0;opacity:1}92.941%{stroke-dasharray:1;stroke-dashoffset:0;opacity:1}96.471%{stroke-dasharray:1;stroke-dashoffset:0;opacity:0}100%{stroke-dasharray:1;stroke-dashoffset:1;opacity:0}}.v00-s08b-bundle .e13{animation-name:v00-s08b-bundle-k13}
+@keyframes v00-s08b-bundle-k14{0.0%{opacity:0}21.765%{opacity:0}23.235%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e14{animation-name:v00-s08b-bundle-k14}
+@keyframes v00-s08b-bundle-k15{0.0%{opacity:0}17.647%{opacity:0}20.0%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e15{animation-name:v00-s08b-bundle-k15}
+@keyframes v00-s08b-bundle-k16{0.0%{opacity:0}14.706%{opacity:0}17.059%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e16{animation-name:v00-s08b-bundle-k16}
+@keyframes v00-s08b-bundle-k17{0.0%{opacity:0}55.882%{opacity:0}58.235%{opacity:1}92.941%{opacity:1}96.471%{opacity:0}100%{opacity:0}}.v00-s08b-bundle .e17{animation-name:v00-s08b-bundle-k17}
+</style>
+<rect class="bg" x="0" y="0" width="960" height="590"/>
+<g><text class="cap" x="24" y="24">как устроена сборка с батниками</text></g>
+<g><rect class="bxa" x="616" y="8" width="320" height="26" rx="13"/><text class="sm tk c" x="776" y="26">сборка Flowseal · снимок 27.10.2026</text></g>
+<rect class="gr" x="24" y="46" width="392" height="438" rx="8"/>
+<g class="a e1"><rect class="bxb" x="34" y="412" width="370" height="28" rx="5"/></g>
+<g class="a e2"><rect class="bxb" x="34" y="442" width="370" height="28" rx="5"/></g>
+<g class="a e3"><rect class="bxa" x="34" y="112" width="370" height="28" rx="5"/></g>
+<g class="a e4"><rect class="bxo" x="34" y="142" width="370" height="28" rx="5"/></g>
+<g class="a e5"><rect class="bxo" x="34" y="172" width="370" height="28" rx="5"/></g>
+<g class="a e6"><rect class="bxo" x="34" y="232" width="370" height="28" rx="5"/></g>
+<g class="a e7"><rect class="bxo" x="34" y="262" width="370" height="28" rx="5"/></g>
+<g class="a e8"><rect class="bxo" x="34" y="292" width="370" height="28" rx="5"/></g>
+<g class="a e9"><rect class="bxo" x="34" y="322" width="370" height="28" rx="5"/></g>
+<g class="a e10"><rect class="bxo" x="34" y="352" width="370" height="28" rx="5"/></g>
+<g><path class="icof" d="M32 61h6l2 2.5h8v9.5h-16z"/><text class="m" x="54" y="71" style="">zapret-discord-youtube</text></g>
+<g><path class="icof" d="M56 91h6l2 2.5h8v9.5h-16z"/><text class="m" x="78" y="101" style="">bin</text></g>
+<g><path class="ico" d="M81 118h7l4 4v10h-11z"/><text class="m" x="102" y="131" style="font-weight:600;">winws.exe</text><text class="sm tk acc" x="191.60000000000002" y="131">движок первой версии</text></g>
+<g><path class="ico" d="M81 148h7l4 4v10h-11z"/><text class="m" x="102" y="161" style="">WinDivert.dll</text></g>
+<g><path class="ico" d="M81 178h7l4 4v10h-11z"/><text class="m" x="102" y="191" style="">WinDivert64.sys</text></g>
+<g><path class="ico" d="M81 208h7l4 4v10h-11z"/><text class="m" x="102" y="221" style="">cygwin1.dll</text></g>
+<g><path class="ico" d="M81 238h7l4 4v10h-11z"/><text class="m" x="102" y="251" style="">tls_clienthello_www_google_com.bin</text></g>
+<g><path class="ico" d="M81 268h7l4 4v10h-11z"/><text class="m" x="102" y="281" style="">quic_initial_www_google_com.bin</text></g>
+<g><path class="ico" d="M81 298h7l4 4v10h-11z"/><text class="m" x="102" y="311" style="">stun.bin</text></g>
+<g><path class="ico" d="M81 328h7l4 4v10h-11z"/><text class="m" x="102" y="341" style="">ACTIVE_DISCORD_UDP.bin</text></g>
+<text class="m" x="102" y="371" style="fill:var(--fg2)">…</text>
+<g><path class="icof" d="M56 391h6l2 2.5h8v9.5h-16z"/><text class="m" x="78" y="401" style="">lists</text><text class="sm mu" x="134.0" y="401">списки сайтов</text></g>
+<g><path class="ico" d="M57 418h7l4 4v10h-11z"/><text class="m" x="78" y="431" style="font-weight:600;">general.bat</text><text class="sm mu" x="184.4" y="431">готовая команда</text></g>
+<text class="m" x="78" y="461" style="fill:var(--fg2)">+ ещё 21 general (…).bat</text>
+<g class="a e11"><path class="lm" d="M408 145H414V197H408M414 171.0H424" style="stroke:var(--ok)"/><text class="sm tk ok" x="432" y="167.0">драйвер перехвата</text><text class="sm mu" x="432" y="187.0">его использует движок</text></g>
+<g class="a e12"><path class="lm" d="M408 235H414V377H408M414 306.0H424" style="stroke:var(--ok)"/><text class="sm tk ok" x="432" y="302.0">23 заготовки подделок</text><text class="sm mu" x="432" y="322.0">их использует движок</text></g>
+<path class="a e13" d="M406 426H884Q900 426 900 410V142Q900 126 884 126H424" pathLength="1" fill="none" style="stroke:var(--acc);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round"/>
+<g class="a e14"><path d="M406 126L424 117V135Z" style="fill:var(--acc);stroke:none"/></g>
+<g class="a e15"><rect class="bxa" x="640" y="232" width="244" height="84" rx="8"/><text class="mc" x="654" y="256" style="font-weight:600">start … winws.exe</text><text class="mc" x="654" y="276">--wf-tcp=… --dpi-desync=…</text><text class="sm tk" x="654" y="300">(строка 16 батника)</text></g>
+<g class="a e16"><text class="sm mu c" x="780" y="410">запускает</text></g>
+<g class="a e17"><rect class="bxb" x="160" y="508" width="640" height="46" rx="23"/><text class="tk c" x="480" y="537">батник = текстовый файл с одной командой запуска</text></g>
+</svg>

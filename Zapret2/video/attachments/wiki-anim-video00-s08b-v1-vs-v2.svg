@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="v00-s08b-v1-vs-v2" viewBox="0 0 960 430" width="960" height="430" role="img" aria-labelledby="v00-s08b-v1-vs-v2-t v00-s08b-v1-vs-v2-d">
+<title id="v00-s08b-v1-vs-v2-t">Одна стратегия в двух версиях</title>
+<desc id="v00-s08b-v1-vs-v2-d">Одна и та же стратегия для YouTube из документации записана дважды: для первой версии набором опций, где приёмы зашиты в Си, и для второй версии отдельными вызовами функций на Lua, а линии связывают одинаковые по смыслу части: fake с fake, multidisorder с multidisorder, разрез с позицией, повторы с повторами и обманку md5sig с tcp_md5.</desc>
+<style>.v00-s08b-v1-vs-v2{--fg:var(--dark,#2b2b2b);--fg2:var(--darkgray,#4e4e4e);--mute:var(--gray,#767676);--line:var(--lightgray,#d4d4d4);--acc:var(--secondary,#1f7fb5);--tint:var(--highlight,rgba(178,225,255,.28));--bg:var(--light,#faf8f8);--rej:#c4372b;--rejt:rgba(196,55,43,.10);--ok:#237a4b;--okt:rgba(35,122,75,.11);--amb:#a8610a;--ambt:rgba(168,97,10,.13)}
+@media (prefers-color-scheme:dark){.v00-s08b-v1-vs-v2{--fg:var(--dark,#ebebec);--fg2:var(--darkgray,#d4d4d4);--mute:var(--gray,#9a9a9a);--line:var(--lightgray,#4a474a);--acc:var(--secondary,#b2e1ff);--tint:var(--highlight,rgba(178,225,255,.14));--bg:var(--light,#161618);--rej:#ff8f80;--rejt:rgba(255,143,128,.14);--ok:#7fd9a1;--okt:rgba(127,217,161,.13);--amb:#f0b866;--ambt:rgba(240,184,102,.14)}}
+.v00-s08b-v1-vs-v2 .bg{fill:var(--bg)}
+.v00-s08b-v1-vs-v2 text{font-family:var(--bodyFont,'Source Sans 3'),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;fill:var(--fg2);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.v00-s08b-v1-vs-v2 .tk{font-weight:600;fill:var(--fg)}
+.v00-s08b-v1-vs-v2 .sm{font-size:14.5px}
+.v00-s08b-v1-vs-v2 .m{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:14px;fill:var(--fg);stroke:none}
+.v00-s08b-v1-vs-v2 .mc{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--fg);stroke:none}
+.v00-s08b-v1-vs-v2 .mm{font-family:var(--codeFont,'JetBrains Mono'),ui-monospace,'Cascadia Code',Consolas,monospace;font-size:13px;fill:var(--mute);stroke:none}
+.v00-s08b-v1-vs-v2 .cap{font-family:var(--headerFont,Inter),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+.v00-s08b-v1-vs-v2 .mu{fill:var(--mute)}.v00-s08b-v1-vs-v2 .fg{fill:var(--fg)}.v00-s08b-v1-vs-v2 .acc{fill:var(--acc)}.v00-s08b-v1-vs-v2 .ok{fill:var(--ok)}.v00-s08b-v1-vs-v2 .amb{fill:var(--amb)}
+.v00-s08b-v1-vs-v2 .c{text-anchor:middle}.v00-s08b-v1-vs-v2 .ns{stroke:none}
+.v00-s08b-v1-vs-v2 .bx{fill:var(--bg);stroke:var(--line);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .bxs{fill:var(--bg);stroke:var(--mute);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .bxa{fill:var(--tint);stroke:var(--acc);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .bxo{fill:var(--okt);stroke:var(--ok);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .bxb{fill:var(--ambt);stroke:var(--amb);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .bxr{fill:var(--rejt);stroke:var(--rej);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .gr{fill:var(--mute);fill-opacity:.1;stroke:var(--line);stroke-width:1.2}
+.v00-s08b-v1-vs-v2 .ico{fill:none;stroke:var(--fg2);stroke-width:1.5;stroke-linejoin:round}
+.v00-s08b-v1-vs-v2 .icof{fill:var(--mute);fill-opacity:.35;stroke:var(--fg2);stroke-width:1.3;stroke-linejoin:round}
+.v00-s08b-v1-vs-v2 .lm{fill:none;stroke:var(--mute);stroke-width:1.4}
+.v00-s08b-v1-vs-v2 .fl{stroke-dasharray:7 5;animation:v00-s08b-v1-vs-v2-march .9s linear infinite}
+@keyframes v00-s08b-v1-vs-v2-march{to{stroke-dashoffset:-12}}
+.v00-s08b-v1-vs-v2 .a{animation-duration:32s;animation-timing-function:cubic-bezier(.3,.6,.25,1);animation-iteration-count:infinite;animation-fill-mode:both}
+@media (prefers-reduced-motion:reduce){.v00-s08b-v1-vs-v2 .a{animation:none}.v00-s08b-v1-vs-v2 .tr{display:none}.v00-s08b-v1-vs-v2 .fl{animation:none}}
+
+@keyframes v00-s08b-v1-vs-v2-k1{0.0%{opacity:0}1.875%{opacity:0}4.375%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e1{animation-name:v00-s08b-v1-vs-v2-k1}
+@keyframes v00-s08b-v1-vs-v2-k2{0.0%{opacity:0}14.375%{opacity:0}16.875%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e2{animation-name:v00-s08b-v1-vs-v2-k2}
+@keyframes v00-s08b-v1-vs-v2-k3{0.0%{opacity:0}5.0%{opacity:0}7.5%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e3{animation-name:v00-s08b-v1-vs-v2-k3}
+@keyframes v00-s08b-v1-vs-v2-k4{0.0%{opacity:0}6.562%{opacity:0}9.063%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e4{animation-name:v00-s08b-v1-vs-v2-k4}
+@keyframes v00-s08b-v1-vs-v2-k5{0.0%{opacity:0}8.125%{opacity:0}10.625%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e5{animation-name:v00-s08b-v1-vs-v2-k5}
+@keyframes v00-s08b-v1-vs-v2-k6{0.0%{opacity:0}9.688%{opacity:0}12.188%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e6{animation-name:v00-s08b-v1-vs-v2-k6}
+@keyframes v00-s08b-v1-vs-v2-k7{0.0%{opacity:0}16.25%{opacity:0}18.75%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e7{animation-name:v00-s08b-v1-vs-v2-k7}
+@keyframes v00-s08b-v1-vs-v2-k8{0.0%{opacity:0}17.812%{opacity:0}20.312%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e8{animation-name:v00-s08b-v1-vs-v2-k8}
+@keyframes v00-s08b-v1-vs-v2-k9{0.0%{opacity:0}19.375%{opacity:0}21.875%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e9{animation-name:v00-s08b-v1-vs-v2-k9}
+@keyframes v00-s08b-v1-vs-v2-k10{0.0%{opacity:0}28.125%{opacity:0}30.938%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e10{animation-name:v00-s08b-v1-vs-v2-k10}
+@keyframes v00-s08b-v1-vs-v2-k11{0.0%{opacity:0}38.75%{opacity:0}41.562%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e11{animation-name:v00-s08b-v1-vs-v2-k11}
+@keyframes v00-s08b-v1-vs-v2-k12{0.0%{opacity:0}49.375%{opacity:0}52.188%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e12{animation-name:v00-s08b-v1-vs-v2-k12}
+@keyframes v00-s08b-v1-vs-v2-k13{0.0%{opacity:0}60.0%{opacity:0}62.812%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e13{animation-name:v00-s08b-v1-vs-v2-k13}
+@keyframes v00-s08b-v1-vs-v2-k14{0.0%{opacity:0}70.625%{opacity:0}73.438%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e14{animation-name:v00-s08b-v1-vs-v2-k14}
+@keyframes v00-s08b-v1-vs-v2-k15{0.0%{opacity:0}75.0%{opacity:0}77.5%{opacity:1}92.5%{opacity:1}96.25%{opacity:0}100%{opacity:0}}.v00-s08b-v1-vs-v2 .e15{animation-name:v00-s08b-v1-vs-v2-k15}
+</style>
+<rect class="bg" x="0" y="0" width="960" height="430"/>
+<g><text class="cap" x="24" y="24">одна стратегия для YouTube, две записи</text></g>
+<g><rect class="bxa" x="616" y="8" width="320" height="26" rx="13"/><text class="sm tk c" x="776" y="26">из документации · readme.md:330-372</text></g>
+<g class="a e1"><rect class="gr" x="24" y="40" width="912" height="116" rx="8"/><text class="sm tk fg" x="40" y="62">zapret: приёмы зашиты в Си, выбор из меню опций</text></g>
+<g class="a e2"><rect class="gr" x="24" y="270" width="912" height="100" rx="8"/><text class="sm tk fg" x="40" y="346">zapret2: каждый приём отдельный вызов функции на Lua</text></g>
+<g class="a e3"><rect class="bx" x="24" y="76" width="258" height="28" rx="6"/></g>
+<g class="a e4"><rect class="bx" x="286" y="76" width="227" height="28" rx="6"/></g>
+<g class="a e5"><rect class="bx" x="517" y="76" width="195" height="28" rx="6"/></g>
+<g class="a e6"><rect class="bx" x="682" y="114" width="258" height="28" rx="6"/></g>
+<g class="a e7"><rect class="bx" x="24" y="286" width="219" height="28" rx="6"/></g>
+<g class="a e8"><rect class="bx" x="253" y="286" width="312" height="28" rx="6"/></g>
+<g class="a e9"><rect class="bx" x="575" y="286" width="320" height="28" rx="6"/></g>
+<g class="a e10"><rect x="131.4" y="79" width="35.2" height="22" rx="4" style="fill:var(--tint);stroke:var(--acc);stroke-width:1.4"/><rect x="360.4" y="289" width="35.2" height="22" rx="4" style="fill:var(--tint);stroke:var(--acc);stroke-width:1.4"/><path class="fl" d="M149.0 104C149.0 195.0 378.0 195.0 378.0 286" fill="none" style="stroke:var(--acc);stroke-width:2.2"/><circle cx="149.0" cy="104" r="3.2" style="fill:var(--acc)"/><circle cx="378.0" cy="286" r="3.2" style="fill:var(--acc)"/></g>
+<g class="a e3"><text class="mc" x="32" y="95" xml:space="preserve">--dpi-desync=fake,multidisorder</text></g>
+<g class="a e4"><text class="mc" x="294" y="95" xml:space="preserve">--dpi-desync-fooling=md5sig</text></g>
+<g class="a e5"><text class="mc" x="525" y="95" xml:space="preserve">--dpi-desync-repeats=11</text></g>
+<g class="a e6"><text class="mc" x="690" y="133" xml:space="preserve">--dpi-desync-split-pos=1,midsld</text></g>
+<g class="a e7"><text class="mc" x="32" y="305" xml:space="preserve">--payload=tls_client_hello</text></g>
+<g class="a e8"><text class="mc" x="261" y="305" xml:space="preserve">--lua-desync=fake:…:tcp_md5:repeats=11</text></g>
+<g class="a e9"><text class="mc" x="583" y="305" xml:space="preserve">--lua-desync=multidisorder:pos=1,midsld</text></g>
+<g class="a e11"><rect x="170.4" y="79" width="105.4" height="22" rx="4" style="fill:var(--ambt);stroke:var(--amb);stroke-width:1.4"/><rect x="682.4" y="289" width="105.4" height="22" rx="4" style="fill:var(--ambt);stroke:var(--amb);stroke-width:1.4"/><path class="fl" d="M223.1 104C223.1 195.0 735.1 195.0 735.1 286" fill="none" style="stroke:var(--amb);stroke-width:2.2"/><circle cx="223.1" cy="104" r="3.2" style="fill:var(--amb)"/><circle cx="735.1" cy="286" r="3.2" style="fill:var(--amb)"/></g>
+<g class="a e3"><text class="mc" x="32" y="95" xml:space="preserve">--dpi-desync=fake,multidisorder</text></g>
+<g class="a e4"><text class="mc" x="294" y="95" xml:space="preserve">--dpi-desync-fooling=md5sig</text></g>
+<g class="a e5"><text class="mc" x="525" y="95" xml:space="preserve">--dpi-desync-repeats=11</text></g>
+<g class="a e6"><text class="mc" x="690" y="133" xml:space="preserve">--dpi-desync-split-pos=1,midsld</text></g>
+<g class="a e7"><text class="mc" x="32" y="305" xml:space="preserve">--payload=tls_client_hello</text></g>
+<g class="a e8"><text class="mc" x="261" y="305" xml:space="preserve">--lua-desync=fake:…:tcp_md5:repeats=11</text></g>
+<g class="a e9"><text class="mc" x="583" y="305" xml:space="preserve">--lua-desync=multidisorder:pos=1,midsld</text></g>
+<g class="a e12"><rect x="455.8" y="79" width="50.8" height="22" rx="4" style="fill:var(--line);stroke:var(--fg2);stroke-width:1.4"/><rect x="415.0" y="289" width="58.6" height="22" rx="4" style="fill:var(--line);stroke:var(--fg2);stroke-width:1.4"/><path class="fl" d="M481.2 104C481.2 195.0 444.3 195.0 444.3 286" fill="none" style="stroke:var(--fg2);stroke-width:2.2"/><circle cx="481.2" cy="104" r="3.2" style="fill:var(--fg2)"/><circle cx="444.3" cy="286" r="3.2" style="fill:var(--fg2)"/></g>
+<g class="a e3"><text class="mc" x="32" y="95" xml:space="preserve">--dpi-desync=fake,multidisorder</text></g>
+<g class="a e4"><text class="mc" x="294" y="95" xml:space="preserve">--dpi-desync-fooling=md5sig</text></g>
+<g class="a e5"><text class="mc" x="525" y="95" xml:space="preserve">--dpi-desync-repeats=11</text></g>
+<g class="a e6"><text class="mc" x="690" y="133" xml:space="preserve">--dpi-desync-split-pos=1,midsld</text></g>
+<g class="a e7"><text class="mc" x="32" y="305" xml:space="preserve">--payload=tls_client_hello</text></g>
+<g class="a e8"><text class="mc" x="261" y="305" xml:space="preserve">--lua-desync=fake:…:tcp_md5:repeats=11</text></g>
+<g class="a e9"><text class="mc" x="583" y="305" xml:space="preserve">--lua-desync=multidisorder:pos=1,midsld</text></g>
+<g class="a e13"><rect x="624.4" y="79" width="58.6" height="22" rx="4" style="fill:var(--rejt);stroke:var(--rej);stroke-width:1.4"/><rect x="477.4" y="289" width="58.6" height="22" rx="4" style="fill:var(--rejt);stroke:var(--rej);stroke-width:1.4"/><path class="fl" d="M653.7 104C653.7 195.0 506.7 195.0 506.7 286" fill="none" style="stroke:var(--rej);stroke-width:2.2"/><circle cx="653.7" cy="104" r="3.2" style="fill:var(--rej)"/><circle cx="506.7" cy="286" r="3.2" style="fill:var(--rej)"/></g>
+<g class="a e3"><text class="mc" x="32" y="95" xml:space="preserve">--dpi-desync=fake,multidisorder</text></g>
+<g class="a e4"><text class="mc" x="294" y="95" xml:space="preserve">--dpi-desync-fooling=md5sig</text></g>
+<g class="a e5"><text class="mc" x="525" y="95" xml:space="preserve">--dpi-desync-repeats=11</text></g>
+<g class="a e6"><text class="mc" x="690" y="133" xml:space="preserve">--dpi-desync-split-pos=1,midsld</text></g>
+<g class="a e7"><text class="mc" x="32" y="305" xml:space="preserve">--payload=tls_client_hello</text></g>
+<g class="a e8"><text class="mc" x="261" y="305" xml:space="preserve">--lua-desync=fake:…:tcp_md5:repeats=11</text></g>
+<g class="a e9"><text class="mc" x="583" y="305" xml:space="preserve">--lua-desync=multidisorder:pos=1,midsld</text></g>
+<g class="a e14"><rect x="789.4" y="117" width="74.2" height="22" rx="4" style="fill:var(--okt);stroke:var(--ok);stroke-width:1.4"/><rect x="791.6" y="289" width="27.4" height="22" rx="4" style="fill:var(--okt);stroke:var(--ok);stroke-width:1.4"/><path class="fl" d="M826.5 142C826.5 214.0 805.3 214.0 805.3 286" fill="none" style="stroke:var(--ok);stroke-width:2.2"/><circle cx="826.5" cy="142" r="3.2" style="fill:var(--ok)"/><circle cx="805.3" cy="286" r="3.2" style="fill:var(--ok)"/></g>
+<g class="a e3"><text class="mc" x="32" y="95" xml:space="preserve">--dpi-desync=fake,multidisorder</text></g>
+<g class="a e4"><text class="mc" x="294" y="95" xml:space="preserve">--dpi-desync-fooling=md5sig</text></g>
+<g class="a e5"><text class="mc" x="525" y="95" xml:space="preserve">--dpi-desync-repeats=11</text></g>
+<g class="a e6"><text class="mc" x="690" y="133" xml:space="preserve">--dpi-desync-split-pos=1,midsld</text></g>
+<g class="a e7"><text class="mc" x="32" y="305" xml:space="preserve">--payload=tls_client_hello</text></g>
+<g class="a e8"><text class="mc" x="261" y="305" xml:space="preserve">--lua-desync=fake:…:tcp_md5:repeats=11</text></g>
+<g class="a e9"><text class="mc" x="583" y="305" xml:space="preserve">--lua-desync=multidisorder:pos=1,midsld</text></g>
+<g class="a e15"><text class="sm mu" x="40" y="394">показаны только значимые части строк, остальное в них опущено</text><text class="sm mu" x="40" y="414">многоточие в записи для zapret2 заменяет имя заготовки</text></g>
+</svg>
