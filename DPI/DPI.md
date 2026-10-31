@@ -42,6 +42,7 @@ description: "Раздел о DPI и ТСПУ: как устроена инсп�
 - [[DPI/ggc-googlevideo-how-it-works|Кэши Google (GGC) у провайдера: как YouTube выбирает узел]] — устройство узлов googlevideo, имена, прямые замеры четырёх кэшей ТТК.
 - [[DPI/googlevideo-pcap-analysis-ttk-october-2026|Как читать pcap видеосоединения с узлом googlevideo]] — задержки ответов, повторные передачи, поддельные пакеты Zapret, скрипт проверки.
 - [[DPI/tspu-tls-ip-filter-tcp-window-october-2026|ТСПУ режет TLS с адресов Google и считает TCP-окно (конец октября 2026)]] — недоступные зарубежные узлы googlevideo, wssize 1:1 и его цена для скорости, случай dns.nextdns.io.
+- [[DPI/nextdns-doh-sni-block-october-2026|Блокировка NextDNS: ТСПУ режет DoH по имени dns.nextdns.io (с 27–28 октября 2026)]] — 34 сети из 36 по cheburcheck, второй пакет приветствия, почему blockcheck «находит» стратегии и что делать.
 - [[DPI/nsdi-only-ru-zones-scenario-october-2026|Что будет, если НСДИ оставит только .ru (октябрь 2026)]] — сценарий отключения зарубежных зон: замер на 27 российских сайтах, что может Роскомнадзор и как настроить DNS заранее.
 - [[DPI/gemini-tls-drop-claim-check-october-2026|«РКН обрывает Gemini по имени»: проверка поста (октябрь 2026)]] — замеры из 16 точек России и данные OONI не подтверждают блокировку; что на самом деле мешает открыть нейросети Google.
 - [[DPI/twitch-block-2026|Блокировка Twitch в России]] — почему не грузится именно плеер и как чинить через [[Zapret2/Zapret2|Zapret]].
