@@ -13,6 +13,7 @@ aliases:
   - Changelog Zapret 22.0.0.0
   - Запрет 2 стабильная версия 22
 description: "Все изменения Zapret 2 GUI 22.0.0.0 по сравнению с 21.1.1.7: новый BlockCheck, подбор стратегии, hosts и DNS, обновление по файлам, Telegram Proxy и новые пресеты."
+image: Zapret/attachments/zapret-22-poster.jpg
 link: https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/zapretgui/releases/tag/22.0.0.0
 ---
 
@@ -20,6 +21,8 @@ link: https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/zapretgui/releases/tag/
 > Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/Zapret/zapret-22-stable-october-2026](https://jzesawgjsz.zapret.moe/Zapret/zapret-22-stable-october-2026)
 
 # 🎃 Zapret 22.0.0.0: все изменения с версии 21.1.1.7
+
+![[zapret-22-poster.jpg]]
 
 > [!info] О чём заметка
 > Полный список изменений стабильной версии Zapret 2 GUI 22.0.0.0 (вышла 31 октября 2026 года) по сравнению с прошлой стабильной версией 21.1.1.7 (16 августа 2026 года). Заметка для тех, кто сидит на стабильном канале и не следил за Dev-версиями 21.1.7.x: что поменялось на экране, что программа теперь делает сама и что изменилось в обходе блокировок. Прошлый большой список изменений — в [[Zapret/changelog-21.0.0-dev-june-2026|changelog Zapret 21.0.0]].
