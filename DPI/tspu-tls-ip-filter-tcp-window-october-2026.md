@@ -20,6 +20,7 @@ aliases:
   - reasm cancelled because server window size is smaller than expected reasm size
   - dns.nextdns.io не работает через Zapret
 description: "Конец октября 2026: ТСПУ режет любой TLS с части адресов Google, читая ответ сервера в пределах TCP-окна. Почему помогает wssize 1:1 и чем он плох."
+image: DPI/attachments/tspu-tls-ip-filter-header.jpg
 link: https://ntc.party/t/zapret2-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5/21161
 ---
 
@@ -27,6 +28,8 @@ link: https://ntc.party/t/zapret2-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%
 > Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/DPI/tspu-tls-ip-filter-tcp-window-october-2026](https://jzesawgjsz.zapret.moe/DPI/tspu-tls-ip-filter-tcp-window-october-2026)
 
 # 🦎 ТСПУ режет TLS с адресов Google и считает TCP-окно: недоступные узлы googlevideo, wssize 1:1 и NextDNS (октябрь 2026)
+
+![[tspu-tls-ip-filter-header.jpg]]
 
 > [!info] О чём заметка
 > С 23 по 31 октября 2026 года участники [темы обсуждения zapret2 на форуме ntc.party](https://ntc.party/t/zapret2-%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5/21161) и разработчик zapret (ник bolvan) по кусочкам собирали картину нового поведения ТСПУ (Технические Средства Противодействия Угрозам, оборудование фильтрации Роскомнадзора у операторов). Часть зарубежных видеосерверов Google перестала открываться через [[Zapret2/Zapret2|Zapret 2]], хотя через VPN работает. Оказалось, что фильтр запрещает любой TLS с отдельных адресов и узнаёт TLS по ответу сервера, причём читает этот ответ только в пределах TCP-окна, которое объявил клиент. Здесь разобрано, что именно нашли, как это устроено, почему помогает крошечное окно `wssize 1:1` и чем за это приходится платить. Отдельным разделом идёт случай `dns.nextdns.io`, где тот же учёт окна ломает работу и Zapret, и самого фильтра.
