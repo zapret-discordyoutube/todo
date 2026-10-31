@@ -80,6 +80,7 @@ TCP window size — это поле в заголовке TCP-пакета, ко
 - [[Zapret2/desync/syndata|syndata]] — другая стратегия «нулевой фазы» с той же проблемой хостлистов и обходом через `--ipcache-hostname`
 - [[Zapret2/desync|desync-функции zapret2]] — lua-аналоги `wsize`/`wssize` в zapret2
 - [[Zapret/Zapret v72.2|Zapret v72.2]] — версия, где появился `--wssize-forced-cutoff`
+- [[DPI/tspu-tls-ip-filter-tcp-window-october-2026|ТСПУ режет TLS с адресов Google]] — октябрь 2026: `wssize 1:1` проходит фильтр по адресу, но окно остаётся в десятки раз меньше до конца соединения
 
 ---
 

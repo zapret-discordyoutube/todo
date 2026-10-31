@@ -141,6 +141,7 @@ link: https://redirector.gvt1.com/report_mapping?di=no
 - [[DPI/googlevideo-pcap-analysis-ttk-october-2026|Как читать pcap видеосоединения с узлом googlevideo]] — разбор записей трафика к узлу ТТК
 - [[Zapret/youtube|YouTube в Zapret]] — три области обхода и вкладка `GoogleVideo`
 - [[Zapret2/find-domain-owner|Как определить владельца домена или IP]] — как проверять подсеть узла
+- [[DPI/tspu-tls-ip-filter-tcp-window-october-2026|ТСПУ режет TLS с адресов Google]] — конец октября 2026: недоступны зарубежные узлы `74.125.x.x`, а российские кэши работают
 
 ---
 
