@@ -88,7 +88,7 @@ There is no password; you sign in from the bot:
 2. Tap «Open my account» («Открыть кабинет») on the device where you want to see the account.
 3. On the site press «Войти» (Sign in).
 
-The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Sign out everywhere» («🚪 Закрыть все входы») on the same bot card, then change your subscription links.
+The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Sign out everywhere» («🚪 Закрыть все входы») on the same bot card — or press «Выйти на всех устройствах» (Sign out on all devices) at the bottom of the cabinet menu — then change your subscription links.
 
 ## Telegram
 
