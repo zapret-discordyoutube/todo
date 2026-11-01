@@ -98,7 +98,7 @@ Our Telegram client [ZaStoGram](https://t.me/zastogram) (Android and Windows) by
 
 | Need | Where |
 |---|---|
-| ask a question | in the bot: «💬 Support» («💬 Поддержка») → «🎫 Create ticket» («🎫 Создать тикет») — available on any plan |
+| ask a question | in the bot: «💬 Support» («💬 Поддержка») → «🎫 Create ticket» («🎫 Создать тикет») — available on any plan. Leave an open ticket with «◀️ К тикетам» (back to tickets): «✅ Вопрос решён» (question resolved) closes the ticket itself after a confirmation, and support no longer sees it among those waiting for an answer. If the question comes back, write to the same ticket |
 | direct contacts of the support team (Premium support) | «💬 Support» → «💬 Go to the group» or the support agent's button — from 🚀 MasterVless Plus, included in 💎 Vless MAX |
 | is a server down | [status.zapret.moe](https://status.zapret.moe) — live status of every server |
 | more details | the full guide in Russian: [[Zapret/premium\|Zapret VPN: how to buy and connect]] (your browser can translate it) |
