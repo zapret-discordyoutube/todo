@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vault Note"
+  short_description: "Правила статей и локальных иллюстраций"
+  default_prompt: "Используй $vault-note для подготовки статьи с локальной обложкой и публикации по правилам этого хранилища."

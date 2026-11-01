@@ -15,4 +15,6 @@ Zapret/Dronatar.md
 Белые списки.md
 /Блокировки
 В сети связи «Билайна» заработали «белые списки» (whitelist-unlock) сервисов при ограничении мобильного интернета.md
-/.claude
+/.claude/*
+!/.claude/skills/
+__pycache__/

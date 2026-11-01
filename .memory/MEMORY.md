@@ -1,0 +1,12 @@
+- [Публиковать готовые статьи без вопроса](publish-finished-articles-without-asking.md) — vault Privacy: коммит, push и зеркало сразу, только свои файлы
+- [Пост для Telegram — через Artifact](telegram-post-delivery-via-artifact.md) — блок кода плюс HTML-страница; ссылка claude.ai/artifact всегда отдельной строкой
+- [Источники — ссылки внутри текста плюс список внизу](sources-as-inline-links-plus-list.md) — кликабельные ссылки на словах фразы, тот же набор списком перед «См. также»
+- [Реальные IP не в публичные репозитории](no-real-ips-in-public-repos.md) — адреса хостов только в закрытом pve-admin/servers.md, в публичном — заглушки
+- [Схемы по ходу текста, не ASCII](visuals-inline-not-ascii.md) — заменять ASCII-блоки анимациями; генератор scripts/wiki-anim*.py
+- [Модель телефона не писать](no-device-model-in-articles.md) — только «физический Android-телефон», ни в статье, ни в коммитах
+- [Статистика читателей на главной](wiki-stats-architecture.md) — wiki-stats.py → stats.json → HomeStats, журнал nginx общий с Forgejo
+- [Push по HTTP, не SSH](git-push-over-http.md) — Forgejo SSH выключен с 2026-10-20; обычный git push работает через помощник
+- [wiki-domain-wiki2](wiki-domain-wiki2.md) — Old site names blocked; working names only from zapret-links; never run rewrite over history notes
+- [vault-push-and-shared-dirs](vault-push-and-shared-dirs.md) — Push/Publish/todo only via sudo -u codex-pve; /tmp/claude-1001 ACL resets, use /var/tmp
+- [gptimage-prompts](gptimage-prompts.md) — Article cover = Zapret-tan/RKN-tan prompt; template+scenes+camera presets in vault gptimage/; RKN-emblem mug always
+- [article-deliverables](article-deliverables.md) — Every article = article + TG post + cover prompt; publish right away, cover in a later commit; ✔ DONE only after the cover

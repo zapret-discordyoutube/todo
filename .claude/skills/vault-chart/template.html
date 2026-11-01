@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<!--
+  Шаблон диаграммы vault-chart. Копируй в scratchpad, меняй DATA и тексты.
+  Рендер: python3 <скилл>/scripts/render.py chart.html chart.png --height 675
+  Холст 1200×675 CSS px (16:9), PNG ×2 = 2400×1350. Рендер с --height 675.
+  Пример — «Динамика видеохостингов» из DPI/youtube-video-consumption-h1-2026.md.
+-->
+<style>
+  :root {
+    /* Палитра vault на тёмном фоне, проверена validate_palette.js (dataviz). */
+    --bg:        #101418;  /* фон холста */
+    --ink:       #f1f3f5;  /* заголовок, главные подписи */
+    --ink-2:     #b9c0c7;  /* подзаголовок, подписи групп */
+    --muted:     #8a929b;  /* оси, источник, сноски */
+    --grid:      #262c33;  /* сетка, разделители */
+    --neutral:   #5c6570;  /* «остальные»: всё, о чём не говорит заголовок */
+    --accent:    #3987e5;  /* синий — главное, нейтральный тон */
+    --alarm:     #f0555a;  /* красный — падение, потеря, угроза: выделяй, когда это часть вывода */
+    --warn:      #c98500;  /* янтарный — вторая группа; рядом с красным только с прямыми подписями */
+  }
+  html, body { margin: 0; background: var(--bg); }
+  body {
+    width: 1200px; box-sizing: border-box; padding: 48px 64px 36px;
+    font-family: "Inter Variable", Inter, sans-serif; color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 { font-size: 40px; line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 10px; }
+  .sub { font-size: 22px; line-height: 1.35; color: var(--ink-2); margin: 0 0 18px; }
+  svg { display: block; overflow: visible; }
+  svg text { font-family: inherit; font-variant-numeric: tabular-nums; } /* только в данных: в прозе tnum разрежает дефисы */
+  .notes { margin-top: 14px; font-size: 16px; line-height: 1.45; color: var(--muted); }
+  .notes p { margin: 0; }
+</style>
+</head>
+<body>
+<h1>YouTube вырос вдвое сильнее российских площадок</h1>
+<p class="sub">Время просмотра в день на одного зрителя: I полугодие 2026 года к I полугодию 2025-го</p>
+<svg id="chart"></svg>
+<div class="notes">
+  <p>* Rutube — вместе с просмотрами во встроенном плеере на чужих сайтах и фоновыми.</p>
+  <p>Источник: Future Lab на основе Mediascope Cross Web, «Коммерсантъ», 22.09.2026</p>
+</div>
+<script>
+// Данные: [площадка, минут в 2025, минут в 2026, изменение в %]. Главный ряд — main: true.
+const DATA = [
+  { name: "YouTube",        a: 80,   b: 99,   pct: 24.0, main: true },
+  { name: "Start",          a: 26.7, b: 29.8, pct: 12.0 },
+  { name: "Okko",           a: 50.1, b: 53.6, pct: 7.0 },
+  { name: "Ivi",            a: 83,   b: 88,   pct: 6.0 },
+  { name: "«Яндекс Видео»", a: 31,   b: 32,   pct: 3.2 },
+  { name: "«Кинопоиск»",    a: 56,   b: 55,   pct: -1.8 },
+  { name: "Wink",           a: 61,   b: 59,   pct: -3.3 },
+  { name: "Rutube*",        a: 43,   b: 41,   pct: -4.7 },
+  { name: "Premier",        a: 59,   b: 47.5, pct: -20.0 },
+];
+
+const W = 1072;                     // 1200 − поля body
+const ROW = 43, BAR = 30, TOP = 38; // высота строки, толщина столбца, место под подпись нуля
+const NAMES = 230;                  // колонка названий
+const X0 = -22, X1 = 54;            // домен в %, линейный; справа запас под аннотацию
+const H = TOP + DATA.length * ROW;
+const x = v => NAMES + (v - X0) / (X1 - X0) * (W - NAMES);
+const fmt = (v, d = 1) => (v > 0 ? "+" : v < 0 ? "−" : "") +
+  Math.abs(v).toLocaleString("ru-RU", { maximumFractionDigits: d }) + "%";
+
+const svg = document.getElementById("chart");
+svg.setAttribute("width", W);
+svg.setAttribute("height", H);
+let s = "";
+
+// Нулевая линия с базой прямо на графике.
+s += `<line x1="${x(0)}" x2="${x(0)}" y1="${TOP - 8}" y2="${H}" stroke="var(--muted)" stroke-width="2"/>`;
+s += `<text x="${x(0)}" y="${TOP - 20}" text-anchor="middle" font-size="20" fill="var(--ink-2)">0 = столько же, сколько в 2025 году</text>`;
+
+DATA.forEach((d, i) => {
+  const cy = TOP + i * ROW + ROW / 2;
+  const x1 = x(Math.min(0, d.pct)), x2 = x(Math.max(0, d.pct));
+  // Синий — главный (YouTube), красный — просели, серый — остальные выросшие.
+  const fill = d.main ? "var(--accent)" : d.pct < 0 ? "var(--alarm)" : "var(--neutral)";
+  const ink = d.main ? "var(--ink)" : "var(--ink-2)";
+  const wt = d.main ? 700 : 400;
+  s += `<text x="0" y="${cy}" dominant-baseline="central" font-size="24" font-weight="${wt}" fill="${ink}">${d.name}</text>`;
+  s += `<rect x="${x1}" y="${cy - BAR / 2}" width="${x2 - x1}" height="${BAR}" rx="3" fill="${fill}"/>`;
+  const pos = d.pct >= 0;
+  const lx = pos ? x2 + 12 : x1 - 12;
+  s += `<text x="${lx}" y="${cy}" dominant-baseline="central" text-anchor="${pos ? "start" : "end"}" font-size="24" font-weight="${d.main ? 700 : 500}" fill="${ink}">${fmt(d.pct)}</text>`;
+  // Аннотация у главного элемента: абсолютные числа понятнее процента.
+  if (d.main) {
+    const tx = lx + 84;
+    s += `<text x="${tx}" y="${cy}" dominant-baseline="central" font-size="22" fill="var(--ink-2)">${d.a.toLocaleString("ru-RU")} → ${d.b.toLocaleString("ru-RU")} мин в день</text>`;
+  }
+});
+
+svg.innerHTML = s;
+</script>
+</body>
+</html>
