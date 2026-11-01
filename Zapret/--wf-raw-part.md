@@ -15,7 +15,7 @@ description: "Raw-фильтры WinDivert в Zapret: --wf-raw-part и --wf-raw,
 
 *Не путать их со встроенными [[filter|фильтрами]] Zapret!*
 
-Домены: делаются на уровне winws/winws2 через [[hostlist|--hostlist]] / [[hostlist#**`--hostlist-domains`** - Фиксированный список доменов|--hostlist-domains]].
+Домены: делаются на уровне winws/winws2 через [[hostlist|--hostlist]] / [[hostlist#Список прямо в строке|--hostlist-domains]].
 
 IP/подсети: можно фильтровать и в WinDivert‑фильтре (ip.DstAddr, ip.SrcAddr, ipv6.DstAddr, ipv6.SrcAddr), и (часто удобнее) через --ipset.
 

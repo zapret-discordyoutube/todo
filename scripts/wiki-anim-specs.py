@@ -323,3 +323,124 @@ def register(FIGS, hub, wrapped, B):
             f.g(f.rect(40, y, 560, 40, "bx", rx=8) + f.text(56, y + 25, s, "tk sm") + f.text(620, y + 25, "внутри свой TLS", "mu sm"), f.vis(0.6 + k * 0.9, dx=-10))
         return f
     add("mux", "VLESS/attachments", mux)
+
+    # ═══ Списки: hostlist и ipset (Zapret/hostlist, Zapret/ipset, Zapret2/filter) ═══
+    # Правила сверены с zapret2 nfq2/hostlist.c (SearchHostList, HostlistCheck_),
+    # nfq2/ipset.c (IpsetCheck_) и nfq2/desync.c (dp_match), ноябрь 2026.
+    def hostlist_walk():
+        f = Fig("hostlist-walk", 470, 20, "Как движок ищет сайт в списке: от точного имени к общему",
+                "Движок проверяет сам домен, затем родителей по очереди. Решает первая найденная запись: обычная — сайт в списке, "
+                "с восклицательным знаком — сайт не в этом списке, запись с крышкой на родительском уровне пропускается.")
+        lines = ["ru", "!torrents.ru", "^vk.com"]
+        f.add(f.text(2, 30, "файл списка", "cap"))
+        f.add(f.rect(2, 44, 250, 160, "bx", rx=10))
+        for k, ln in enumerate(lines):
+            f.add(f.text(24, 84 + k * 44, ln, "mk"))
+        f.add(f.text(300, 30, "сайт и шаги поиска", "cap"))
+        scen = [
+            ("mail.ru", [("mail.ru", "записи нет — дальше", "mu", None), ("ru", "запись «ru» — сайт в списке", "acc", 0)],
+             "mail.ru в списке: его поймала запись «ru»", "acc"),
+            ("www.torrents.ru", [("www.torrents.ru", "записи нет — дальше", "mu", None),
+                                 ("torrents.ru", "«!torrents.ru» — исключение, поиск окончен", "rej", 1)],
+             "не в этом списке: «!torrents.ru» найдено раньше, чем «ru»", "rej"),
+            ("m.vk.com", [("m.vk.com", "записи нет — дальше", "mu", None), ("vk.com", "«^vk.com» ловит только сам vk.com — дальше", "mu", 2),
+                          ("com", "записи нет — поиск окончен", "mu", None)],
+             "не в списке: «^» не распространяется на поддомены", "rej"),
+            ("vk.com", [("vk.com", "«^vk.com» — точное совпадение", "acc", 2)],
+             "vk.com в списке: для самого домена «^» совпадает", "acc"),
+        ]
+        for si, (host, steps, verdict, tone) in enumerate(scen):
+            t0 = 0.4 + si * 4.8
+            t1 = t0 + 4.5
+            f.g(f.chip(470, 66, 260, 34, host, "bxa", "mk sm"), f.vis(t0, t1))
+            for k, (name, what, cls, line) in enumerate(steps):
+                t = t0 + 0.6 + k * 0.9
+                y = 108 + k * 60
+                f.g(f.rect(300, y, 650, 48, "bx" if cls == "mu" else ("bxa" if cls == "acc" else "bxr"), rx=8)
+                    + f.text(318, y + 30, name, "mk sm") + f.text(520, y + 30, what, (cls + " sm") if cls != "mu" else "t sm"),
+                    f.vis(t, t1, dx=-10, fade=0.25))
+                if line is not None:
+                    f.g(f.rect(8, 58 + line * 44, 238, 38, "bxa" if cls != "rej" else "bxr", rx=6), f.vis(t, t1, fade=0.25))
+            f.g(f.text(300, 312, verdict, tone + " tk"), f.vis(t0 + 0.8 + len(steps) * 0.9, t1))
+        f.g(wrapped(f, 2, 360, "Порядок строк в файле не важен: «!torrents.ru» сильнее «ru», потому что поиск идёт от точного имени к общему "
+                    "и упирается в исключение раньше.", "t", 92), f.vis(0.2))
+        f.g(f.text(2, 440, "Пример из описания автора движка: «ru» и «!torrents.ru» — все сайты .ru, кроме torrents.ru.", "mu sm"), f.vis(0.2))
+        return f
+    add("hostlist-walk", "Zapret/attachments", hostlist_walk)
+
+    def hostlist_layers():
+        f = Fig("hostlist-layers", 440, 13, "Ваши записи идут первыми — поэтому они перебивают встроенные",
+                "Программа собирает итоговый файл списка: сначала строки пользователя из lists/user, затем встроенные из lists/base. "
+                "Домен в одном файле учитывается один раз, по первой записи, поэтому повтор встроенной строки отбрасывается вместе с префиксом.")
+        user = ["!youtube.com", "^vk.com"]
+        base = ["youtube.com", "vk.com", "ru"]
+        f.add(f.text(2, 30, "ваши записи · lists/user", "cap"))
+        f.add(f.text(2, 200, "встроенные · lists/base", "cap"))
+        f.add(f.text(560, 30, "итоговый файл для движка", "cap"))
+        f.add(f.rect(2, 44, 300, 110, "bx", rx=10) + f.rect(2, 214, 300, 150, "bx", rx=10) + f.rect(560, 44, 396, 320, "bx", rx=10))
+        for k, s in enumerate(user):
+            f.add(f.text(22, 84 + k * 44, s, "mk"))
+        for k, s in enumerate(base):
+            f.add(f.text(22, 254 + k * 44, s, "mk"))
+        order = [(s, "acc", "ваша запись — работает") for s in user] + [
+            ("youtube.com", "rej", "повтор — отброшен"), ("vk.com", "rej", "повтор — отброшен"), ("ru", "t", "новый — работает")]
+        for k, (s, cls, note) in enumerate(order):
+            y = 84 + k * 52
+            t = 0.8 + k * 1.3
+            f.g(f.text(582, y, s, "mk") + f.text(760, y, note, (cls + " sm") if cls != "t" else "mu sm"), f.go([(0, -300, 0, 0), (t, -300, 0, 0), (t + 0.1, -300, 0, 1), (t + 0.7, 0, 0, 1)]))
+            if cls == "rej":
+                f.g(f.line(578, y - 6, 578 + 9 * len(s) + 8, y - 6, "lr"), f.vis(t + 0.8, fade=0.2))
+        f.g(wrapped(f, 2, 398, "Вывод: ваша строка «!youtube.com» отключает встроенную «youtube.com», «^vk.com» сужает встроенную «vk.com» до самого домена.", "tk", 96), f.vis(8.0))
+        return f
+    add("hostlist-layers", "Zapret/attachments", hostlist_layers)
+
+    def ipset_check():
+        f = Fig("ipset-check", 450, 18, "Сначала исключения, потом включения: так профиль проверяет адрес",
+                "Профиль с --ipset-exclude=10.1.0.0/16 и --ipset=10.0.0.0/8,1.2.3.4. Адрес из исключений профиль не берёт, даже если он входит "
+                "во включающий список. Адрес вне включающего списка профиль тоже не берёт. Остальные профили проверяются дальше.")
+        f.add(f.text(2, 30, "условия профиля", "cap"))
+        f.add(f.rect(2, 44, 430, 70, "bx", rx=10) + f.text(20, 72, "1. исключения", "tk sm") + f.text(20, 98, "--ipset-exclude = 10.1.0.0/16", "m sm"))
+        f.add(f.rect(2, 132, 430, 70, "bx", rx=10) + f.text(20, 160, "2. включения", "tk sm") + f.text(20, 186, "--ipset = 10.0.0.0/8, 1.2.3.4", "m sm"))
+        f.add(f.text(480, 30, "адрес сервера", "cap"))
+        scen = [("10.5.6.7", [(0, "нет", "mu"), (1, "входит в 10.0.0.0/8", "acc")], "профиль берёт соединение", "acc"),
+                ("10.1.2.3", [(0, "входит в 10.1.0.0/16", "rej")], "профиль НЕ берёт: исключение сильнее, хотя адрес есть и в 10.0.0.0/8", "rej"),
+                ("1.2.3.4", [(0, "нет", "mu"), (1, "точное совпадение", "acc")], "профиль берёт соединение", "acc"),
+                ("8.8.8.8", [(0, "нет", "mu"), (1, "нет", "mu")], "профиль НЕ берёт: адреса нет во включающем списке", "rej")]
+        for si, (ip, steps, verdict, tone) in enumerate(scen):
+            t0 = 0.4 + si * 4.3
+            t1 = t0 + 4.0
+            f.g(f.chip(600, 66, 220, 34, ip, "bxa", "mk sm"), f.vis(t0, t1))
+            for k, (row, what, cls) in enumerate(steps):
+                t = t0 + 0.6 + k * 0.9
+                y = 44 + row * 88
+                f.g(f.rect(2, y, 430, 70, "bxa" if cls == "acc" else ("bxr" if cls == "rej" else "bxd"), rx=10), f.vis(t, t1, fade=0.2))
+                f.g(f.text(480, y + 62, ("✓ " if cls != "mu" else "✕ ") + what, (cls + " sm") if cls != "mu" else "mu sm"), f.vis(t, t1, fade=0.2))
+            f.g(wrapped(f, 2, 262, verdict, tone + " tk", 90), f.vis(t0 + 0.8 + len(steps) * 0.9, t1))
+        f.g(wrapped(f, 2, 330, "Адрес сервера известен с первого пакета соединения, поэтому решение по списку адресов принимается сразу, "
+                    "ещё до того, как движок узнает имя сайта. Если файлов несколько, хватит совпадения в любом.", "t", 92), f.vis(0.2))
+        return f
+    add("ipset-check", "Zapret/attachments", ipset_check)
+
+    def profile_lists_timing():
+        f = Fig("profile-lists-timing", 480, 16, "Профиль со списком сайтов ждёт имя сайта, профиль по адресам — нет",
+                "Пока в соединении не пришло приветствие TLS с именем сайта, профиль со списком сайтов в выборе не участвует, и первые пакеты достаются "
+                "профилю ниже. Когда имя появилось, движок пересматривает выбор, и соединение переходит к профилю со списком сайтов.")
+        prof = [("Профиль 1 · YouTube", "--hostlist=youtube.txt"), ("Профиль 2 · Все сайты (айпи)", "--ipset-exclude=ipset-ru.txt")]
+        for k, (a, b) in enumerate(prof):
+            y = 50 + k * 80
+            f.add(f.rect(2, y, 380, 64, "bx", rx=10) + f.text(18, y + 26, a, "tk sm") + f.text(18, y + 50, b, "m mu sm"))
+        f.add(f.text(2, 30, "профили пресета", "cap"))
+        f.add(f.text(420, 30, "пакеты одного соединения с youtube.com", "cap"))
+        pk = [("SYN", "имени нет"), ("SYN-ACK", "имени нет"), ("ACK", "имени нет"), ("TLS ClientHello", "имя: youtube.com"), ("данные", "имя известно")]
+        for k, (p, s) in enumerate(pk):
+            t = 0.6 + k * 2.6
+            y = 60 + k * 52
+            f.g(f.chip(520, y + 10, 190, 34, p, "bxa" if k >= 3 else "bx", "mk sm") + f.text(630, y + 16, s, "mu sm"), f.vis(t, dx=-10, fade=0.25))
+            owner = 0 if k >= 3 else 1
+            f.g(f.rect(2, 50 + owner * 80, 380, 64, "bxa", rx=10), f.vis(t + 0.4, t + 2.4 if k < 4 else None, fade=0.2))
+            f.g(f.text(800, y + 16, "→ профиль " + str(owner + 1), ("acc" if owner == 0 else "t") + " sm"), f.vis(t + 0.4, fade=0.2))
+        f.g(wrapped(f, 2, 360, "Пока имени нет, профиль 1 пропускается целиком, и первые пакеты обрабатывает профиль 2 своей стратегией. "
+                    "С приветствия TLS движок знает имя и отдаёт соединение профилю 1 — выбор пересматривается не больше двух раз.", "t", 92), f.vis(10.6))
+        f.g(f.text(2, 456, "Профиль по адресам (ipset) решает с первого пакета: адрес сервера известен сразу.", "mu sm"), f.vis(0.2))
+        return f
+    add("profile-lists-timing", "Zapret2/attachments", profile_lists_timing)
