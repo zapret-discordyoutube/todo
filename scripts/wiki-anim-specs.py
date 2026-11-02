@@ -444,3 +444,66 @@ def register(FIGS, hub, wrapped, B):
         f.g(f.text(2, 456, "Профиль по адресам (ipset) решает с первого пакета: адрес сервера известен сразу.", "mu sm"), f.vis(0.2))
         return f
     add("profile-lists-timing", "Zapret2/attachments", profile_lists_timing)
+
+    # ═══ Исключения: pass против exclude-списка, спасение сайта через «!» (Zapret2/exclusions) ═══
+    def excl_pass_vs_exclude():
+        f = Fig("excl-pass-vs-exclude", 470, 19, "pass забирает соединение, exclude-список только выпускает его из одного профиля",
+                "Сцена 1: профиль со стратегией pass и списком ru забирает mail.ru, поиск останавливается, пакеты идут без изменений. "
+                "Сцена 2: широкий профиль с --hostlist-exclude=ru не совпал, поиск идёт ниже, и второй широкий профиль применяет к mail.ru своё дурение. "
+                "Сцена 3: ниже никого нет, соединение достаётся скрытому no_action и тоже идёт без изменений.")
+        scenes = [
+            ("Сцена 1 · профиль pass", [("Исключения · pass", "--hostlist=ru-list.txt (ru)", "acc", "✓ совпал — забрал, ничего не делает"),
+                                        ("Все сайты · fake", "--filter-tcp=443", "mu", "до него поиск не дошёл")],
+             "mail.ru идёт без изменений: поиск остановился на первом профиле", "acc"),
+            ("Сцена 2 · exclude-список, ниже есть широкий профиль", [("Все сайты · fake", "--hostlist-exclude=ru-list.txt", "mu", "✕ не совпал: mail.ru в исключениях"),
+                                                                     ("Весь TLS · multisplit", "--filter-tcp=443", "rej", "✓ совпал — применяет дурение")],
+             "mail.ru всё равно «дурится»: исключение действовало только в одном профиле", "rej"),
+            ("Сцена 3 · exclude-список, ниже никого", [("Все сайты · fake", "--hostlist-exclude=ru-list.txt", "mu", "✕ не совпал: mail.ru в исключениях"),
+                                                       ("№ 0 · no_action (скрытый)", "фильтров нет", "acc", "✓ совпал — ничего не делает")],
+             "mail.ru идёт без изменений — его подобрал скрытый профиль в конце пресета", "acc"),
+        ]
+        for si, (title, rows, verdict, tone) in enumerate(scenes):
+            t0 = 0.4 + si * 6.0
+            t1 = t0 + 5.7
+            f.g(f.text(2, 30, title, "tk"), f.vis(t0, t1))
+            f.g(f.chip(800, 26, 230, 34, "mail.ru:443", "bxa", "mk sm"), f.vis(t0, t1))
+            for k, (a, b, cls, note) in enumerate(rows):
+                y = 66 + k * 92
+                t = t0 + 0.8 + k * 1.3
+                dashed = a.startswith("№ 0")
+                f.g(f.rect(2, y, 470, 70, "bxd" if dashed else "bx", rx=10) + f.text(20, y + 30, a, "tk sm") + f.text(20, y + 54, b, "m mu sm"), f.vis(t0, t1))
+                kind = "bxa" if cls == "acc" else ("bxr" if cls == "rej" else None)
+                if kind:
+                    f.g(f.rect(2, y, 470, 70, kind, rx=10), f.vis(t, t1, fade=0.2))
+                f.g(f.text(500, y + 42, note, (cls + " sm") if cls != "mu" else "mu sm"), f.vis(t, t1, fade=0.2))
+            f.g(wrapped(f, 2, 290, verdict, tone + " tk", 90), f.vis(t0 + 3.6, t1))
+        f.g(wrapped(f, 2, 372, "pass-профиль — жёсткая точка: соединение остаётся за ним. Exclude-список — мягкая: он выводит трафик только из своего профиля, "
+                    "и следующий подходящий профиль заберёт его со своей стратегией.", "t", 92), f.vis(0.2))
+        return f
+    add("excl-pass-vs-exclude", "Zapret2/attachments", excl_pass_vs_exclude)
+
+    def excl_bang_rescue():
+        f = Fig("excl-bang-rescue", 430, 14, "«!» возвращает заблокированный сайт из профиля-исключения в обход",
+                "Профиль «Исключения домены» со стратегией pass ловит всю зону ru, кроме строки !torrents.ru. mail.ru попадает в pass и идёт без изменений. "
+                "torrents.ru из этого списка исключён, поэтому профиль его не берёт, и соединение достаётся профилю «Все сайты» с обходом.")
+        rows = [("Исключения домены · pass", "ru  ·  su  ·  рф  ·  !torrents.ru"), ("Все сайты · стратегия обхода", "--filter-tcp=443")]
+        for k, (a, b) in enumerate(rows):
+            y = 50 + k * 92
+            f.add(f.rect(2, y, 470, 70, "bx", rx=10) + f.text(20, y + 30, a, "tk sm") + f.text(20, y + 54, b, "m mu sm"))
+        f.add(f.text(2, 30, "профили пресета", "cap"))
+        scen = [("mail.ru", 0, "✓ совпал через «ru» — pass, без изменений", "acc", "mail.ru не трогаем: он открывается и так"),
+                ("torrents.ru", 1, "✓ профиль 1 пропустил: «!torrents.ru» — обход", "acc", "torrents.ru заблокирован — и получает обход")]
+        for si, (host, win, note, cls, verdict) in enumerate(scen):
+            t0 = 0.4 + si * 6.5
+            t1 = t0 + 6.2
+            f.g(f.chip(800, 26, 230, 34, host + ":443", "bxa", "mk sm"), f.vis(t0, t1))
+            if win == 1:
+                f.g(f.rect(2, 50, 470, 70, "bxd", rx=10) + f.text(500, 92, "✕ «!torrents.ru» — не в этом списке", "rej sm"), f.vis(t0 + 0.8, t1, fade=0.2))
+            y = 50 + win * 92
+            f.g(f.rect(2, y, 470, 70, "bxa", rx=10) + f.text(500, y + 42, note if win == 0 else "✓ совпал — стратегия обхода", "acc sm"), f.vis(t0 + 0.8 + win * 1.3, t1, fade=0.2))
+            f.g(wrapped(f, 2, 270, verdict, "tk", 90), f.vis(t0 + 3.0, t1))
+        f.g(wrapped(f, 2, 330, "Строку «!torrents.ru» пишут в список самого профиля-исключения: исключение действует только внутри своего файла, "
+                    "поэтому дописывать её в другие профили не нужно.", "t", 92), f.vis(0.2))
+        f.g(f.text(2, 410, "Префикс «!» понимает движок winws2 с версии 1.0.7 (31 октября 2026); старый winws (Zapret 1) — нет.", "mu sm"), f.vis(0.2))
+        return f
+    add("excl-bang-rescue", "Zapret2/attachments", excl_bang_rescue)
