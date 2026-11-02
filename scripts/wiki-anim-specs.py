@@ -507,3 +507,28 @@ def register(FIGS, hub, wrapped, B):
         f.g(f.text(2, 410, "Префикс «!» понимает движок winws2 с версии 1.0.7 (31 октября 2026); старый winws (Zapret 1) — нет.", "mu sm"), f.vis(0.2))
         return f
     add("excl-bang-rescue", "Zapret2/attachments", excl_bang_rescue)
+
+    # ═══ payload: тип пакета против протокола соединения (Zapret2/payload) ═══
+    def payload_types():
+        f = Fig("payload-types", 470, 16, "Тип пакета меняется, протокол соединения — нет",
+                "Пакеты одного TLS-соединения: SYN и пустые ACK имеют тип empty, приветствие браузера — tls_client_hello, ответ сервера — tls_server_hello, "
+                "зашифрованные данные — unknown. Протокол соединения tls ставится на первом распознанном пакете и не меняется. "
+                "С --payload=tls_client_hello стратегия получает только приветствие браузера.")
+        pk = [("SYN", "→", "empty"), ("ClientHello", "→", "tls_client_hello"), ("ServerHello", "←", "tls_server_hello"),
+              ("данные", "→", "unknown"), ("данные", "←", "unknown"), ("ACK", "→", "empty")]
+        f.add(f.text(2, 30, "пакеты одного соединения с сайтом", "cap"))
+        f.add(f.text(430, 30, "тип пакета (l7payload)", "cap"))
+        f.add(f.text(720, 30, "протокол (l7proto)", "cap"))
+        for k, (name, d, typ) in enumerate(pk):
+            y = 50 + k * 54
+            t = 0.5 + k * 1.2
+            f.g(f.chip(150, y + 20, 260, 38, f"{d} {name}", "bxa" if typ.startswith("tls") else "bx", "mk sm"), f.vis(t, dx=-10, fade=0.25))
+            f.g(f.text(430, y + 26, typ, ("acc" if typ.startswith("tls") else "mu") + " m sm"), f.vis(t + 0.3, fade=0.2))
+            f.g(f.text(720, y + 26, "unknown" if k == 0 else "tls", ("mu" if k == 0 else "acc") + " m sm"), f.vis(t + 0.4, fade=0.2))
+        # выделение того, что попадёт в стратегию при --payload=tls_client_hello
+        f.g(f.rect(14, 50 + 54 - 2, 900, 44, "bxa", rx=8), f.vis(8.4, fade=0.3))
+        f.g(f.text(2, 392, "--payload=tls_client_hello: стратегия получает только выделенный пакет", "tk"), f.vis(8.4, fade=0.3))
+        f.g(wrapped(f, 2, 424, "Протокол tls держится на всём соединении, поэтому --filter-l7=tls выбирает профиль для всех его пакетов, "
+                    "а --payload внутри профиля отбирает из них нужные.", "mu sm", 110, 19), f.vis(9.2))
+        return f
+    add("payload-types", "Zapret2/attachments", payload_types)
