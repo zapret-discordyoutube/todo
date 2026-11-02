@@ -1,717 +1,159 @@
 ---
-date:
+date: 2026-11-01
 tags:
-link:
+  - zapret
+  - zapret2
+  - gui
+  - preset
+  - profile
 aliases:
   - пресет
   - конфиги
-description: "Пресеты (конфиги) в Zapret2 GUI: как устроен txt-файл с флагами winws2, блобы, профили для YouTube и Discord и полные примеры, включая Gaming."
+  - Что такое пресет Zapret 2
+  - Где лежат пресеты Zapret
+  - Почему пропали мои правки в пресете
+  - BuiltinVersion
+  - presets replaced
+  - Как обменяться пресетом
+description: "Пресет в Zapret 2: из чего состоит файл, как он попадает в движок, где лежат встроенные и свои пресеты, почему правка встроенного пресета может замениться — с примерами."
+image: Zapret2/attachments/preset-anatomy.png
+link: https://github.com/bol-van/zapret2/blob/master/docs/manual.md
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret2/preset](https://wiki2.zapret.moe/Zapret2/preset)
+> Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/Zapret2/preset](https://jzesawgjsz.zapret.moe/Zapret2/preset)
 
-# Что такое пресеты в [[Zapret2]] GUI?
-**Пресет** (*часто называемые конфигами*) — это `.txt` файл(ы) с перечислением всех [[основные флаги|флагов]] Zapret2, которые можно использовать как вместо так и вместе с GUI (*формат такой же как у `winws2.exe`, чтобы программы могли быстро считать и изменить настройки программы*). Они доступны в программе начиная с `Zapret2 v20.3` для режима Запрета 1 и Запрета 2.
+# 🗂 Пресет в Zapret 2: что внутри файла и как с ним работает программа
 
-Переход на них был оправдан тем чтобы быстрее разрабатывать новые пресеты, упростить обмен между людьми, а также привести и GUI и [[🐳 Win 7 и 8|консольный Zapret]] к одному виду.
+![[preset-anatomy.png]]
 
-Пресеты загружаются в ядро программы `winws2.exe` (для режима Zapret 2) или в `winws.exe` (для режима Zapret 1) через флаг `@<config_file>` — чтение опций командной строки из файла. все остальные опции из командной строки игнорируются.
+> [!info] О чём заметка
+> Что такое пресет (его ещё называют конфигом) в [[Zapret2/Zapret2|Zapret 2]] и программе Zapret GUI: из каких частей состоит файл, как его текст попадает в движок `winws2`, где лежат встроенные и ваши пресеты, что происходит с правкой встроенного пресета после обновления программы, как обмениваться пресетами и как тот же пресет выглядит в `.bat`-файле. Чем пресет отличается от профиля и как настраивать профили — в [[Zapret2/profile|заметке о профиле]].
 
-Активный пресет заменяется в файл по пути `%AppData%\ZapretTwoDev\preset-zapret2.txt`. Он используется всегда и этот файл просто хранит активный пресет. Сам по себе пресетом не является. Все пресеты пользователя находятся в папке `presets`. По умолчанию используется пресет `Default`. Также существует стоковый пресет `Gaming`.
+## TL;DR
 
-> [!NOTE]
-> Вы можете обмениваться напрямую этими пресетами, чтобы быстро изменить настройки программы. Для этого есть специальный [раздел обращений](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues).
-
-
-> [!WARNING] Почему пресеты плохи?
-> По умолчанию в пресетах жёстко захардкоржены стратегии для каждой фильтра, и как следовательно для хостлиста (*сайта*). Это приводит к тому что один сайт на пресете загружается, а второй перестаёт работать. А на пресете номер 2 работает второй сайт, но не работает первый. Это проблема решается путём изучение и подбора стратегия для каждой категории и хостлиста отдельно.
-> И называется она — прямой запуск. Подробнее о том, что настраивается внутри пресета — [[profile|что такое профиль]].
+- **Пресет** — один `.txt`-файл с настройками движка: общая шапка (библиотеки Lua, перехват, заготовки фейков) и профили — по одному на сайт или вид трафика. Во встроенном пресете `Default v1` 543 строки из 620 — это профили.
+- **Что написано, то и работает.** При запуске программа передаёт текст пресета движку как файл параметров, без комментариев, и ничего скрытого не добавляет.
+- **Где лежат:** в папке программы, `presets\winws2` — ваши пресеты, `presets\winws2_builtin` — встроенные (для режима Zapret 1 — `winws1` и `winws1_builtin`).
+- **Правка встроенного пресета** сохраняется копией. Когда выходит новая версия этого встроенного пресета (растёт `# BuiltinVersion:`), копия заменяется ею, а прежняя сохраняется в `presets\replaced`.
+- Если не открывается один сайт, перебирать пресеты не нужно: возьмите пресет, где работает больше всего, и смените стратегию в профиле этого сайта.
 
 ## Структура пресета
-Пресет делится на три логических части:
 
-### 1. Заголовок и метаданные
-```bash
-# Preset: 1
-# ActivePreset: 1
-# Modified: 2026-01-22T16:09:12.572985
+Пресет — обычный текстовый файл в кодировке UTF-8. Каждая строка — одна опция движка (`--имя=значение`), строки с `#` — комментарии. Формат тот же, что у командной строки `winws2.exe`, поэтому пресет можно читать как список флагов. Диаграмма в начале заметки показывает, из чего состоит реальный встроенный пресет `Default v1 (game filter)` версии 2.49: из 620 строк с опциями 77 приходятся на общую шапку, остальные 543 — на 77 профилей.
+
+### 1. Служебная шапка для программы
+
+```text
+# Preset: Default v1 (game filter)
+# BuiltinVersion: 2.49
+# IconColor: #a8c5ff
 ```
 
-Служебная информация для GUI — номер пресета, активен ли он, когда изменён.
+Это комментарии: движок их не читает, они нужны программе. `# Preset:` — имя пресета в списке, `# BuiltinVersion:` — номер версии встроенного пресета (о нём ниже), `# IconColor:` — цвет значка. У импортированного пресета есть ещё `# PresetKind: imported`. Старые строки `# ActivePreset:` и `# Modified:` из пресетов прошлых версий программа при сохранении убирает.
 
-### 2. Глобальные настройки
-```bash
---lua-init=@lua/zapret-lib.lua      # Библиотека хелперов
---lua-init=@lua/zapret-antidpi.lua  # Библиотека стратегий DPI-обхода
---lua-init=@lua/zapret-auto.lua     # Автоматизация и оркестрация
---lua-init=@lua/custom_funcs.lua    # Пользовательские функции
---lua-init=@lua/custom_diag.lua     # Диагностика
-```
+### 2. Общие настройки движка
 
-Это загрузка Lua-библиотек с готовыми функциями. Без них ничего работать не будет. Это нужно чтобы Вы не писали свои техники дурения, а использовали готовый набор. В частности это [[fake]], [[multisplit]], [[multidisorder]] и другие.
-
-Дополнительные служебные флаги чтобы кэшировать hostlist'ы, а также правильнее отслеживать количества пакетов:
-
-```bash
---ctrack-disable=0        # Включён connection tracking (отслеживание соединений)
---ipcache-lifetime=8400   # Кэш IP живёт 8400 секунд (~2.3 часа)
---ipcache-hostname=1      # Кэшировать hostname → IP
-```
-
-Далее следуют [[wf|глобальные фильтры WinDivert]], на языке [[Zapret2]] они имеют направление (`-in`, `-out`). По умолчанию (как правило) хватает только `-out`.
-
-```bash
---wf-tcp-out=80,443,1080,2053,2083,2087,2096,8443  # Перехват TCP на этих портах
---wf-udp-out=80,443                                  # Перехват UDP
---wf-raw-part=@windivert.filter/...                  # Дополнительные фильтры windivert
-```
-
-Порты:
-- `80` — HTTP
-- `443` — HTTPS/QUIC
-- `1080` — SOCKS (*часто использует Discord*)
-- `2053, 2083, 2087, 2096, 8443` — альтернативные порты Discord для загрузки медиа-контента
-
-### 3. [[blob|Блобы]] (заготовки данных)
-```bash
---blob=tls_google:@bin/tls_clienthello_www_google_com.bin
---blob=tls7:@bin/tls_clienthello_7.bin
---blob=fake_tls:@bin/fake_tls_1.bin
---blob=fake_default_udp:0x00000000000000000000000000000000
-```
-
-[[blob|Блоб]] — это заранее подготовленные данные (*для удобства в готовом пресете сразу перечисляются все блоб файлы. Это необязательно!*):
-- `tls_google` — настоящий TLS ClientHello от google.com (для TTL-спуфинга)
-- `tls1..tls18` — различные варианты ClientHello
-- `fake_tls_*` — поддельные пакеты для отправки в качестве фейков
-- `quic_*` — QUIC-пакеты
-- `0x00...` — просто нулевые байты (hex-формат)
-
-### 4. [[profile|Профили]] (стратегии обхода)
-После глобальных настроек идут профили, разделённые --new. Каждый профиль — отдельная стратегия для определённого трафика ([[Создание своей категории|категории]]).
-
-ВАЖНО — профиль выше имеет приоритет и перезаписывает конфликтующие настройки снизу. Профиля выполняются сверху вниз, если сверху что-то написано, а снизу написано другое — то что написано снизу будет игнорироваться если правила указывают на один и тот же домен или сайт.
-
-Профили могут быть любыми, однако для удобства по умолчанию в программе выставлен следующий порядок: `YouTube -> Discord -> Голосовой трафик -> Остальные https сайты -> Игры (протокол UDP)`.
-
-#### Профиль 1: YouTube (TCP)
-```bash
---filter-tcp=80,443
---hostlist=lists/youtube.txt
---out-range=-d8
---lua-desync=multisplit:pos=2,midsld-2:seqovl=1:seqovl_pattern=tls7
-```
-
-| Параметр | Значение |
-|----------|----------|
-| `--filter-tcp=80,443` | Применять только к TCP портам 80 и 443 |
-| `--hostlist=lists/youtube.txt` | Только для доменов из файла youtube.txt |
-| `--out-range=-d8` | Работать только на первых 8 пакетах с данными |
-| `--lua-desync=multisplit:...` | Техника разрезания пакета |
-
-**[[multisplit]]** разрезает пакет на части:
-- `pos=2,midsld-2` — позиции разреза: 2-й байт и середина домена второго уровня минус 2
-- `seqovl=1` — sequence overlap на 1 байт (смещение TCP sequence)
-- `seqovl_pattern=tls7` — паттерн для overlap берётся из блоба tls7
-
-#### Профиль 2: YouTube QUIC (UDP)
-```bash
---filter-udp=443
---ipset=lists/ipset-youtube.txt
---out-range=-n8
---payload=all
---lua-desync=fake:repeats=6:blob=fake_default_quic
-```
-
-Для QUIC нельзя фильтровать по домену (он зашифрован), поэтому используется **ipset** — список IP-адресов.
-
-**fake** — отправка фейковых пакетов:
-- `repeats=6` — отправить 6 фейков
-- `blob=fake_default_quic` — использовать стандартный QUIC-фейк
-
-#### Профиль 3: Googlevideo
-
-> [!WARNING] ВАЖНО!
-> Для CDN-серверов (`*.googlevideo.com`) используется отдельная стратегия. Подробнее об этом писали [здесь](https://t.me/bypassblock/1269). Это нужно чтобы применить разные техники дурения к разным серверам, чтобы не дать ТСПУ быстро распознать сигнатуры Zapret'a и уменьшить шанс на блокировку активной стратегии.
-
-```bash
---filter-tcp=80,443
---hostlist-domains=googlevideo.com
---out-range=-d8
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-```
-
-**[[multidisorder]]** — как [[multisplit]], но отправляет сегменты в **обратном порядке**. DPI часто ожидает пакеты по порядку и путается.
-
-Позиции разреза используют **маркеры**:
-- `host+2` — начало hostname + 2 байта
-- `sld+2` — начало домена второго уровня + 2
-- `sniext+1` — SNI extension + 1
-- `endhost-2` — конец hostname - 2
-
-#### Профиль 4: Discord (обычный)
-```bash
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist=lists/discord.txt
---out-range=-n10
---lua-desync=fake:blob=tls_google:repeats=6:tcp_ts=1000
---lua-desync=multidisorder_legacy:seqovl=652:seqovl_pattern=tls5
-```
-
-Комбинация двух техник `lua-desync` (*или же фаз, их можно выбирать несколько*):
-1. **fake** с `blob=tls_google` — отправить фейк, выглядящий как запрос к google.com
-2. **multidisorder_legacy** — старая версия disorder с большим seqovl=652
-
-#### Профиль 5: Discord Media (сложный)
-Это профиль для серверов с голосовыми каналами. Из-за специфичности их блокировки они также блокируются отдельно.
-
-```bash
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist-domains=discord.media
---out-range=-d8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multisplit:pos=1:repeats=10:tcp_ack=-66000:tcp_ts_up:ip_ttl=4:ip6_ttl=4
-```
-
-Три техники подряд:
-1. **send:repeats=2** — отправить оригинал 2 раза
-2. **[[syndata]]** — вложить данные в SYN-пакет с автоподбором TTL
-3. **multisplit** с низким TTL=4 (пакет дойдёт до ТСПУ, но не до сервера)
-
-Важно, почему эта связка работает. `multisplit` блокирует оригинальный пакет, а все его сегменты «мёртвые» (TTL=4 и неверный `tcp_ack`), поэтому сервер получает данные только из копий, которые до этого отправил `send`. Для DPI нарезанные сегменты — дополнительные фейки. Если убрать `send`, сервер не получит ClientHello, пока клиент не передаст его повторно, уже без обработки, — разбор и проверка на стенде в [[multidisorder#9. Fooling применяется ко ВСЕМ сегментам|multidisorder, нюанс 9]]. Та же схема (`send` + «мёртвый» `multidisorder`) используется ниже в «Примере 3», в профиле с `--ipset-ip=130.255.77.28`.
-
-#### Профиль 6: STUN/Discord голос (UDP)
-```bash
---filter-l7=stun,discord
---payload=stun,discord_ip_discovery
---out-range=-n8
---lua-desync=fake:blob=fake_default_udp
-```
-
-Для голосовых звонков Discord. Фильтрация по **протоколу L7** (уровень приложения):
-- `stun` — протокол для NAT traversal
-- `discord_ip_discovery` — специфичный протокол Discord
-
-#### Профиль 7-11: Остальные сервисы
-Аналогичные техники для:
-- Конкретного IP `130.255.77.28`
-- Списков `other.txt`, `russia-blacklist.txt`  
-- Порно-сайтов (`ipset-porn.txt`)
-- Танки X (`ipset-tankix.txt`)
-
-Основные техники (краткая справка)
-
-| Техника               | Описание                                       |
-| --------------------- | ---------------------------------------------- |
-| **[[fake]]**          | Отправить поддельный пакет перед настоящим     |
-| **[[multisplit]]**    | Разрезать пакет на части по указанным позициям |
-| **[[multidisorder]]** | Разрезать и отправить в обратном порядке       |
-| **[[syndata]]**       | Вложить данные в SYN-пакет                     |
-| **send**              | Просто отправить пакет (с модификациями)       |
-| **fakedsplit**        | Разрезать с замешиванием фейков между частями  |
-
-## Итоговый пример
-Итоговые ПОЛНЫЕ примеры `txt` файлов представлен ниже.
-
-### Пример 1
-```bash
-# Preset: 1
-# ActivePreset: 1
-# Modified: 2026-01-22T16:09:12.572985
-
+```text
 --lua-init=@lua/zapret-lib.lua
 --lua-init=@lua/zapret-antidpi.lua
 --lua-init=@lua/zapret-auto.lua
 --lua-init=@lua/custom_funcs.lua
 --lua-init=@lua/custom_diag.lua
+--lua-init=@lua/zapret-multishake.lua
+--lua-init=@lua/fakemultisplit.lua
+--lua-init=@lua/fakemultidisorder.lua
+
 --ctrack-disable=0
---ipcache-lifetime=8400
---ipcache-hostname=1
---wf-tcp-out=80,443,1080,2053,2083,2087,2096,8443
---wf-udp-out=80,443
+--ipcache-hostname=0
+
+--wf-tcp-out=80,443,1080,2053,2083,2087,2096,5050,8443,8080,45631
+--wf-udp-out=443-65535
 --wf-raw-part=@windivert.filter/windivert_part.discord_media.txt
---wf-raw-part=@windivert.filter/windivert_part.stun.txt
---wf-raw-part=@windivert.filter/windivert_part.wireguard.txt
---blob=tls_google:@bin/tls_clienthello_www_google_com.bin
---blob=tls1:@bin/tls_clienthello_1.bin
---blob=tls2:@bin/tls_clienthello_2.bin
---blob=tls2n:@bin/tls_clienthello_2n.bin
---blob=tls3:@bin/tls_clienthello_3.bin
---blob=tls4:@bin/tls_clienthello_4.bin
---blob=tls5:@bin/tls_clienthello_5.bin
---blob=tls6:@bin/tls_clienthello_6.bin
---blob=tls7:@bin/tls_clienthello_7.bin
---blob=tls8:@bin/tls_clienthello_8.bin
---blob=tls9:@bin/tls_clienthello_9.bin
---blob=tls10:@bin/tls_clienthello_10.bin
---blob=tls11:@bin/tls_clienthello_11.bin
---blob=tls12:@bin/tls_clienthello_12.bin
---blob=tls13:@bin/tls_clienthello_13.bin
---blob=tls14:@bin/tls_clienthello_14.bin
---blob=tls17:@bin/tls_clienthello_17.bin
---blob=tls18:@bin/tls_clienthello_18.bin
---blob=tls_sber:@bin/tls_clienthello_sberbank_ru.bin
---blob=tls_vk:@bin/tls_clienthello_vk_com.bin
---blob=tls_vk_kyber:@bin/tls_clienthello_vk_com_kyber.bin
---blob=tls_deepseek:@bin/tls_clienthello_chat_deepseek_com.bin
---blob=tls_max:@bin/tls_clienthello_max_ru.bin
---blob=tls_iana:@bin/tls_clienthello_iana_org.bin
---blob=tls_4pda:@bin/tls_clienthello_4pda_to.bin
---blob=tls_gosuslugi:@bin/tls_clienthello_gosuslugi_ru.bin
---blob=syndata3:@bin/tls_clienthello_3.bin
---blob=syn_packet:@bin/syn_packet.bin
---blob=dtls_w3:@bin/dtls_clienthello_w3_org.bin
---blob=quic_google:@bin/quic_initial_www_google_com.bin
---blob=quic_vk:@bin/quic_initial_vk_com.bin
---blob=quic1:@bin/quic_1.bin
---blob=quic2:@bin/quic_2.bin
---blob=quic3:@bin/quic_3.bin
---blob=quic4:@bin/quic_4.bin
---blob=quic5:@bin/quic_5.bin
---blob=quic6:@bin/quic_6.bin
---blob=quic7:@bin/quic_7.bin
---blob=quic_test:@bin/quic_test_00.bin
---blob=fake_tls:@bin/fake_tls_1.bin
---blob=fake_tls_1:@bin/fake_tls_1.bin
---blob=fake_tls_2:@bin/fake_tls_2.bin
---blob=fake_tls_3:@bin/fake_tls_3.bin
---blob=fake_tls_4:@bin/fake_tls_4.bin
---blob=fake_tls_5:@bin/fake_tls_5.bin
---blob=fake_tls_6:@bin/fake_tls_6.bin
---blob=fake_tls_7:@bin/fake_tls_7.bin
---blob=fake_tls_8:@bin/fake_tls_8.bin
---blob=fake_quic:@bin/fake_quic.bin
---blob=fake_quic_1:@bin/fake_quic_1.bin
---blob=fake_quic_2:@bin/fake_quic_2.bin
---blob=fake_quic_3:@bin/fake_quic_3.bin
---blob=fake_default_udp:0x00000000000000000000000000000000
---blob=http_req:@bin/http_iana_org.bin
---blob=hex_0e0e0f0e:0x0E0E0F0E
---blob=hex_0f0e0e0f:0x0F0E0E0F
---blob=hex_0f0f0f0f:0x0F0F0F0F
---blob=hex_00:0x00
-
---filter-tcp=80,443
---hostlist=lists/youtube.txt
---out-range=-d8
---lua-desync=multisplit:pos=2,midsld-2:seqovl=1:seqovl_pattern=tls7
-
---new
-
---filter-udp=443
---ipset=lists/ipset-youtube.txt
---out-range=-n8
---payload=all
---lua-desync=fake:repeats=6:blob=fake_default_quic
-
---new
-
---filter-tcp=80,443
---hostlist-domains=googlevideo.com
---out-range=-d8
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=443
---hostlist-domains=updates.discord.com
---out-range=-d10
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist=lists/discord.txt
---out-range=-n10
---lua-desync=fake:blob=tls_google:repeats=6:tcp_ts=1000
---lua-desync=multidisorder_legacy:seqovl=652:seqovl_pattern=tls5
-
---new
-
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist-domains=discord.media
---out-range=-d8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multisplit:pos=1:repeats=10:tcp_ack=-66000:tcp_ts_up:ip_ttl=4:ip6_ttl=4
-
---new
-
---filter-l7=stun,discord
---payload=stun,discord_ip_discovery
---out-range=-n8
---lua-desync=fake:blob=fake_default_udp
-
---new
-
---filter-tcp=80,443
---ipset-ip=130.255.77.28
---out-range=-d9
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=443
---hostlist-exclude=lists/netrogat.txt
---hostlist=lists/other.txt
---hostlist=lists/other2.txt
---hostlist=lists/russia-blacklist.txt
---out-range=-n10
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google
---lua-desync=fake:blob=tls_google:repeats=6:tcp_ts=1000
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=80,443
---ipset=lists/ipset-porn.txt
---out-range=-n8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google
---lua-desync=fake:blob=fake_default_http:repeats=4:ip_autottl=2,3-20:ip6_autottl=2,3-20:tcp_md5
---lua-desync=multidisorder:pos=host+1
-
---new
-
---filter-tcp=80,443
---ipset=lists/ipset-tankix.txt
---out-range=-n8
---lua-desync=fake:blob=fake_default_http:repeats=4:ip_autottl=2,3-20:ip6_autottl=2,3-20:tcp_md5
---lua-desync=multidisorder:pos=host+1
 ```
 
-### Пример 2
-```bash
-# Preset: 1
-# Created: 2026-01-21T19:15:55.706763
-# Modified: 2026-01-21T19:15:55.707605
-# Description: 
+- **`--lua-init`** загружает библиотеки, в которых написаны функции обхода. В пресетах Zapret 2 GUI блок из этих восьми строк обязателен: без него строки `--lua-desync` вызывать нечего. Если строк не хватает, программа восстанавливает блок при сохранении — это одно из немногих изменений текста, которые она делает сама.
+- **`--wf-…`** — фильтр [[wf|перехвата WinDivert]]: какие пакеты Windows вообще передаст движку. Соединение, которое сюда не попало, не увидит ни один профиль.
+- **`--ctrack-disable`** и **`--ipcache-hostname`** — общие настройки отслеживания соединений и запоминания имени сайта по адресу.
 
---lua-init=@lua/zapret-lib.lua
---lua-init=@lua/zapret-antidpi.lua
---lua-init=@lua/zapret-auto.lua
---lua-init=@lua/custom_funcs.lua
---lua-init=@lua/custom_diag.lua
---ctrack-disable=0
---ipcache-lifetime=8400
---ipcache-hostname=1
---wf-tcp-out=80,443,1080,2053,2083,2087,2096,8443
---wf-udp-out=80,443
---wf-raw-part=@windivert.filter/windivert_part.discord_media.txt
---wf-raw-part=@windivert.filter/windivert_part.stun.txt
---wf-raw-part=@windivert.filter/windivert_part.wireguard.txt
+### 3. Заготовки фейков: `--blob`
+
+```text
 --blob=tls_google:@bin/tls_clienthello_www_google_com.bin
---blob=tls1:@bin/tls_clienthello_1.bin
---blob=tls2:@bin/tls_clienthello_2.bin
---blob=tls2n:@bin/tls_clienthello_2n.bin
---blob=tls3:@bin/tls_clienthello_3.bin
---blob=tls4:@bin/tls_clienthello_4.bin
---blob=tls5:@bin/tls_clienthello_5.bin
---blob=tls6:@bin/tls_clienthello_6.bin
---blob=tls7:@bin/tls_clienthello_7.bin
---blob=tls8:@bin/tls_clienthello_8.bin
---blob=tls9:@bin/tls_clienthello_9.bin
---blob=tls10:@bin/tls_clienthello_10.bin
---blob=tls11:@bin/tls_clienthello_11.bin
---blob=tls12:@bin/tls_clienthello_12.bin
---blob=tls13:@bin/tls_clienthello_13.bin
---blob=tls14:@bin/tls_clienthello_14.bin
---blob=tls17:@bin/tls_clienthello_17.bin
---blob=tls18:@bin/tls_clienthello_18.bin
---blob=tls_sber:@bin/tls_clienthello_sberbank_ru.bin
---blob=tls_vk:@bin/tls_clienthello_vk_com.bin
---blob=tls_vk_kyber:@bin/tls_clienthello_vk_com_kyber.bin
---blob=tls_deepseek:@bin/tls_clienthello_chat_deepseek_com.bin
---blob=tls_max:@bin/tls_clienthello_max_ru.bin
---blob=tls_iana:@bin/tls_clienthello_iana_org.bin
---blob=tls_4pda:@bin/tls_clienthello_4pda_to.bin
---blob=tls_gosuslugi:@bin/tls_clienthello_gosuslugi_ru.bin
---blob=syndata3:@bin/tls_clienthello_3.bin
---blob=syn_packet:@bin/syn_packet.bin
---blob=dtls_w3:@bin/dtls_clienthello_w3_org.bin
 --blob=quic_google:@bin/quic_initial_www_google_com.bin
---blob=quic_vk:@bin/quic_initial_vk_com.bin
---blob=quic1:@bin/quic_1.bin
---blob=quic2:@bin/quic_2.bin
---blob=quic3:@bin/quic_3.bin
---blob=quic4:@bin/quic_4.bin
---blob=quic5:@bin/quic_5.bin
---blob=quic6:@bin/quic_6.bin
---blob=quic7:@bin/quic_7.bin
---blob=quic_test:@bin/quic_test_00.bin
---blob=fake_tls:@bin/fake_tls_1.bin
---blob=fake_tls_1:@bin/fake_tls_1.bin
---blob=fake_tls_2:@bin/fake_tls_2.bin
---blob=fake_tls_3:@bin/fake_tls_3.bin
---blob=fake_tls_4:@bin/fake_tls_4.bin
---blob=fake_tls_5:@bin/fake_tls_5.bin
---blob=fake_tls_6:@bin/fake_tls_6.bin
---blob=fake_tls_7:@bin/fake_tls_7.bin
---blob=fake_tls_8:@bin/fake_tls_8.bin
---blob=fake_quic:@bin/fake_quic.bin
---blob=fake_quic_1:@bin/fake_quic_1.bin
---blob=fake_quic_2:@bin/fake_quic_2.bin
---blob=fake_quic_3:@bin/fake_quic_3.bin
---blob=fake_default_udp:0x00000000000000000000000000000000
---blob=http_req:@bin/http_iana_org.bin
---blob=hex_0e0e0f0e:0x0E0E0F0E
---blob=hex_0f0e0e0f:0x0F0E0E0F
---blob=hex_0f0f0f0f:0x0F0F0F0F
---blob=hex_00:0x00
-
---filter-tcp=80,443
---hostlist=lists/youtube.txt
---out-range=-d8
---lua-desync=multisplit:pos=2,midsld-2:seqovl=1:seqovl_pattern=tls7
-
---new
-
---filter-udp=443
---ipset=lists/ipset-youtube.txt
---out-range=-n8
---payload=all
---lua-desync=fake:repeats=6:blob=fake_default_quic
-
---new
-
---filter-tcp=80,443
---hostlist-domains=googlevideo.com
---out-range=-d8
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=443
---hostlist-domains=updates.discord.com
---out-range=-d10
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist=lists/discord.txt
---out-range=-n10
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google
---lua-desync=fake:blob=tls7:tcp_ack=-66000:tcp_ts_up:tls_mod=rnd
---lua-desync=multisplit:seqovl=700:seqovl_pattern=tls_google:tcp_flags_unset=ack
-
---new
-
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---hostlist-domains=discord.media
---out-range=-d8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multisplit:pos=1:repeats=10:tcp_ack=-66000:tcp_ts_up:ip_ttl=4:ip6_ttl=4
-
---new
-
---filter-l7=stun,discord
---payload=stun,discord_ip_discovery
---out-range=-n8
---lua-desync=fake:blob=fake_default_udp
-
---new
-
---filter-tcp=80,443
---ipset-ip=130.255.77.28
---out-range=-d9
---lua-desync=multidisorder:pos=1,host+2,sld+2,sld+5,sniext+1,sniext+2,endhost-2:seqovl=1
-
---new
-
---filter-tcp=443
---hostlist-exclude=lists/netrogat.txt
---hostlist=lists/other.txt
---hostlist=lists/other2.txt
---hostlist=lists/russia-blacklist.txt
---out-range=-n10
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google
---lua-desync=hostfakesplit:host=ozon.ru:tcp_ts=-1000:tcp_md5:repeats=4
-
---new
-
---filter-tcp=80,443
---ipset=lists/ipset-tankix.txt
---out-range=-n8
---lua-desync=fake:blob=fake_default_http:repeats=4:ip_autottl=2,3-20:ip6_autottl=2,3-20:tcp_md5
---lua-desync=multidisorder:pos=host+1
 ```
 
-### Пример 3 (игровой для игр)
-```bash
-# Preset: Gaming
-# ActivePreset: Gaming
+`--blob` объявляет именованную заготовку пакета, на которую стратегии ссылаются через `blob=имя`. В `Default v1` таких строк 62. Когда вы выбираете готовую стратегию с новым фейком, программа сама дописывает его объявление в шапку — и вы увидите эту строку в тексте пресета. Подробнее — [[blob]].
 
---lua-init=@lua/zapret-lib.lua
---lua-init=@lua/zapret-antidpi.lua
---lua-init=@lua/zapret-auto.lua
---lua-init=@lua/custom_funcs.lua
---ipcache-lifetime=8400
---ipcache-hostname=1 
---wf-tcp-out=80,444-65535
---wf-udp-out=80,444-65535
---wf-raw-part=@windivert.filter/windivert_part.discord_media.txt
---wf-raw-part=@windivert.filter/windivert_part.stun.txt
---wf-raw-part=@windivert.filter/windivert_part.wireguard.txt
---blob=tls_google:@bin/tls_clienthello_www_google_com.bin
---blob=tls1:@bin/tls_clienthello_1.bin
---blob=tls2:@bin/tls_clienthello_2.bin
---blob=tls2n:@bin/tls_clienthello_2n.bin
---blob=tls3:@bin/tls_clienthello_3.bin
---blob=tls4:@bin/tls_clienthello_4.bin
---blob=tls5:@bin/tls_clienthello_5.bin
---blob=tls6:@bin/tls_clienthello_6.bin
---blob=tls7:@bin/tls_clienthello_7.bin
---blob=tls8:@bin/tls_clienthello_8.bin
---blob=tls9:@bin/tls_clienthello_9.bin
---blob=tls10:@bin/tls_clienthello_10.bin
---blob=tls11:@bin/tls_clienthello_11.bin
---blob=tls12:@bin/tls_clienthello_12.bin
---blob=tls13:@bin/tls_clienthello_13.bin
---blob=tls14:@bin/tls_clienthello_14.bin
---blob=tls17:@bin/tls_clienthello_17.bin
---blob=tls18:@bin/tls_clienthello_18.bin
---blob=tls_sber:@bin/tls_clienthello_sberbank_ru.bin
---blob=tls_vk:@bin/tls_clienthello_vk_com.bin
---blob=tls_vk_kyber:@bin/tls_clienthello_vk_com_kyber.bin
---blob=tls_deepseek:@bin/tls_clienthello_chat_deepseek_com.bin
---blob=tls_max:@bin/tls_clienthello_max_ru.bin
---blob=tls_iana:@bin/tls_clienthello_iana_org.bin
---blob=tls_4pda:@bin/tls_clienthello_4pda_to.bin
---blob=tls_gosuslugi:@bin/tls_clienthello_gosuslugi_ru.bin
---blob=syndata3:@bin/tls_clienthello_3.bin
---blob=syn_packet:@bin/syn_packet.bin
---blob=dtls_w3:@bin/dtls_clienthello_w3_org.bin
---blob=quic_google:@bin/quic_initial_www_google_com.bin
---blob=quic_vk:@bin/quic_initial_vk_com.bin
---blob=quic1:@bin/quic_1.bin
---blob=quic2:@bin/quic_2.bin
---blob=quic3:@bin/quic_3.bin
---blob=quic4:@bin/quic_4.bin
---blob=quic5:@bin/quic_5.bin
---blob=quic6:@bin/quic_6.bin
---blob=quic7:@bin/quic_7.bin
---blob=quic_test:@bin/quic_test_00.bin
---blob=fake_tls:@bin/fake_tls_1.bin
---blob=fake_tls_1:@bin/fake_tls_1.bin
---blob=fake_tls_2:@bin/fake_tls_2.bin
---blob=fake_tls_3:@bin/fake_tls_3.bin
---blob=fake_tls_4:@bin/fake_tls_4.bin
---blob=fake_tls_5:@bin/fake_tls_5.bin
---blob=fake_tls_6:@bin/fake_tls_6.bin
---blob=fake_tls_7:@bin/fake_tls_7.bin
---blob=fake_tls_8:@bin/fake_tls_8.bin
---blob=fake_quic:@bin/fake_quic.bin
---blob=fake_quic_1:@bin/fake_quic_1.bin
---blob=fake_quic_2:@bin/fake_quic_2.bin
---blob=fake_quic_3:@bin/fake_quic_3.bin
---blob=fake_default_udp:0x00000000000000000000000000000000
---blob=http_req:@bin/http_iana_org.bin
---blob=hex_0e0e0f0e:0x0E0E0F0E
---blob=hex_0f0e0e0f:0x0F0E0E0F
---blob=hex_0f0f0f0f:0x0F0F0F0F
---blob=hex_00:0x00
+### 4. Профили
 
---filter-tcp=80,443
---ipset=lists/ipset-youtube.txt
---out-range=-n8
+Всё, что ниже шапки, — профили, разделённые строкой `--new`. Каждый профиль отвечает за свою часть трафика: условия (порты, списки сайтов или адресов) решают, какие соединения ему достаются, а строки `--lua-desync` — что с ними делать.
+
+```text
+--name=GitHub · файлы и картинки
+--filter-tcp=443
+--hostlist=lists/githubusercontent.txt
+--out-range=-d8
 --lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multidisorder_legacy:pos=1,midsld
+--lua-desync=syndata:blob=stun_pat
+--lua-desync=tls_multisplit_sni:seqovl=652:seqovl_pattern=stun_pat
 
 --new
-
---filter-udp=443
---ipset=lists/ipset-youtube.txt
---out-range=-n8
---payload=all
---lua-desync=fake:repeats=6:blob=fake_default_quic
-
---new
-
---filter-tcp=80,443,1080,2053,2083,2087,2096,8443
---ipset=lists/ipset-discord.txt
---out-range=-n8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multidisorder_legacy:pos=1,midsld
-
---new
-
---filter-l7=stun,discord
---payload=stun,discord_ip_discovery
---out-range=-n8
---lua-desync=fake:blob=quic_google:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:payload=all:repeats=10
-
---new
-
---filter-tcp=80,443
---ipset=lists/ipset-telegram.txt
---out-range=-n8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=pass
-
---new
-
---filter-tcp=80,443
---ipset-ip=130.255.77.28
---out-range=-n20
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=fake:blob=tls14:tcp_ack=-66000:tcp_ts_up:ip_autottl=-1,3-20:ip6_autottl=-1,3-20:tls_mod=rnd,dupsid,sni=fonts.google.com
---lua-desync=multidisorder:pos=7,sld+1:tcp_ack=-66000:tcp_ts_up:ip_autottl=-1,3-20:ip6_autottl=-1,3-20
-
---new
-
---filter-tcp=80,443
---hostlist=lists/roblox.txt
---out-range=-n8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=fake:blob=tls_google:tcp_ts=1:repeats=8:payload=tls_client_hello
---lua-desync=multisplit:pos=1:seqovl=681:seqovl_pattern=tls_google:payload=tls_client_hello
-
---new
-
---filter-udp=443,49152-65535
---ipset=lists/ipset-roblox.txt
---out-range=-n8
---payload=all
---lua-desync=fake:blob=quic_google:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:payload=all:repeats=10
-
---new
-
---filter-tcp=80,443-65535
---ipset=lists/russia-youtube-rtmps.txt
---ipset=lists/ipset-all.txt
---ipset=lists/ipset-base.txt
---ipset=lists/ipset-discord.txt
---ipset-exclude=lists/ipset-dns.txt
---out-range=-n8
---lua-desync=send:repeats=2
---lua-desync=syndata:blob=tls_google:ip_autottl=-2,3-20
---lua-desync=multisplit:seqovl=700:seqovl_pattern=tls_google:tcp_flags_unset=ack
-
---new
-
---filter-udp=*
---ipset=lists/ipset-all.txt
---ipset=lists/ipset-base.txt
---ipset=lists/cloudflare-ipset.txt
---ipset=lists/ipset-cloudflare1.txt
---ipset=lists/ipset-cloudflare.txt
---ipset-exclude=lists/ipset-dns.txt
---out-range=-n8
---payload=all
---lua-desync=fake:blob=quic_google:ip_autottl=-2,3-20:ip6_autottl=-2,3-20:payload=all:repeats=10
 ```
+
+Профили проверяются сверху вниз, и соединение достаётся первому подходящему, поэтому порядок профилей в пресете важен. Выключенный в программе профиль остаётся в файле со строкой `--skip` — движок его пропускает. Как читать профиль строка за строкой — [[Zapret2/profile|профиль]], как выбирается профиль — [[Zapret2/filter|фильтры профиля]], что значит `-d8` — [[out-range]].
+
+## Как пресет попадает в движок
+
+Программа не держит настроек «где-то ещё»: работает ровно то, что записано в тексте пресета. При запуске она берёт текст выбранного пресета, убирает комментарии и пустые строки, делит строки на отдельные параметры и записывает их во временный файл параметров. Движок `winws2.exe` получает этот файл через `@файл` — так в руководстве движка называется чтение опций командной строки из файла ([руководство nfqws2](https://github.com/bol-van/zapret2/blob/master/docs/manual.md)).
+
+Перед настоящим запуском программа проверяет пресет тем же движком в режиме `--dry-run`: он разбирает все строки и сразу завершается, ничего не перехватывая. Ошибка в пресете (неизвестная опция, отсутствующий файл списка, один и тот же файл списка дважды в профиле) обнаруживается здесь, и программа пишет причину словами.
+
+Проще говоря: пресет — это и есть настройки. Если в тексте пресета чего-то нет, движок этого не получит.
+
+## Где лежат пресеты
+
+Все пресеты хранятся в папке, куда установлена программа (например, `C:\Zapret\Dev` у Dev-версии), в подпапке `presets`:
+
+| Папка | Что в ней |
+|---|---|
+| `presets\winws2_builtin` | встроенные пресеты режима Zapret 2 (136 на ноябрь 2026 года); приходят с программой и обновляются вместе с ней |
+| `presets\winws2` | ваши пресеты и копии правок встроенных |
+| `presets\winws1_builtin`, `presets\winws1` | то же для режима Zapret 1 (171 встроенный пресет) |
+| `presets\replaced` | последняя копия, заменённая при обновлении встроенного пресета |
+
+Кнопка «Папка пресетов» на странице «Мои пресеты» открывает папку ваших пресетов.
+
+## Правка встроенного пресета и его обновление
+
+Встроенные пресеты правят вместе с программой: обновляют стратегии под новые блокировки, добавляют профили. Чтобы эти исправления доходили до всех, у каждого встроенного пресета есть номер `# BuiltinVersion:`.
+
+![[wiki-anim-preset-builtin-update.svg|Анимация: правка встроенного пресета Default v1 2.49 сохраняется копией; после обновления до 2.50 копия уходит в presets\replaced, а её место занимает новая версия]]
+
+Как это работает:
+
+1. Вы меняете встроенный пресет — например, выбираете другую стратегию в профиле. Программа сохраняет вашу копию в `presets\winws2` под тем же именем, и дальше работает копия.
+2. Выходит обновление программы, и номер `# BuiltinVersion:` у этого встроенного пресета становится больше, чем в вашей копии.
+3. После запуска программа в фоне заменяет копию новой версией. Прежняя копия сохраняется в `presets\replaced\winws2\` (хранится одна, последняя), а вы получаете уведомление «Встроенные пресеты обновлены».
+
+Номер поднимают только у правок, которые должны дойти до всех: другие стратегии, списки, добавленные или убранные профили. Переименование профиля или правка комментария номер не меняет, и ваша копия остаётся. Пресеты с вашими собственными именами файлов и пресеты, обновляемые по ссылке, программа не трогает.
+
+> [!tip] Чтобы правки точно сохранились
+> Сделайте свой пресет: «Дублировать» встроенный пресет и работайте в дубле. У дубля другое имя файла, и обновления встроенных пресетов его не заменяют. Если правка уже заменилась, её прежний вариант лежит в `presets\replaced\winws2\`.
+
+## Обмен пресетами
+
+На странице «Мои пресеты» пресет можно экспортировать в `.zip` — архив кладёт рядом с пресетом и его файлы списков из папки `lists`, чтобы у получателя всё заработало сразу. При импорте программа добавляет в шапку `# PresetKind: imported`; если у вас уже есть список с тем же именем, но другим содержимым, список из архива сохраняется под новым именем, и ссылка в пресете меняется на него — это видно в тексте пресета. Готовые пресеты других пользователей можно найти через кнопку «Получить конфиги» на той же странице: она открывает раздел обмена пресетами и профилями на Forgejo.
+
+Пресет можно подключить и по ссылке: тогда программа сама обновляет его из источника, а ваше локальное имя сохраняется.
+
+## Как пользоваться пресетами
+
+Пресет — это набор стратегий, подобранных кем-то под своего провайдера. У вас блокировки могут быть устроены иначе, поэтому типичная картина такая: на одном пресете открывается YouTube, но не открывается Discord, на другом — наоборот. Перебирать пресеты целиком в поисках идеального — долго и часто бесполезно.
+
+Работает другой порядок. Возьмите пресет, на котором открывается больше всего нужного, как основу. Найдите профиль, в который попадает неработающий сайт, и смените стратегию только в нём — на странице «Профили пресета». Подробно — [[Zapret2/profile|профиль]], как проверить стратегию — [[verify-strategy]].
+
+Кнопка «Что это такое?» на странице «Мои пресеты» коротко объясняет то же самое прямо в программе.
 
 ## Тот же пресет в виде .bat-файла
 
@@ -782,7 +224,21 @@ start "zapret: http,https,quic" /min "%~dp0winws2.exe" ^
 > [!warning] Устаревшее имя payload в старых копиях примера
 > В ранних копиях этого примера в последнем профиле стояло `--payload=…,stun_binding_req,…`. Такой тип был в первых версиях `nfqws2`, но в v0.4 его убрали и заменили общим `stun` (запись «remove stun_binding_req, replace to stun» в `docs/changes.txt` репозитория zapret2). Текущие версии на неизвестное имя в `--payload` отвечают `Invalid payload filter` и завершаются сразу при запуске, поэтому в примере выше уже стоит `stun`. Список допустимых типов — в [[payload]].
 
+## Источники
+
+- [Руководство nfqws2, docs/manual.md — запуск с файлом параметров, профили и фильтры](https://github.com/bol-van/zapret2/blob/master/docs/manual.md)
+
+## 📚 См. также
+
+- [[Zapret2/profile|Профиль]] — из чего состоит профиль и как его настраивать
+- [[Zapret2/filter|Фильтры профиля]] — как движок выбирает профиль для соединения
+- [[Zapret/hostlist|hostlist]] и [[Zapret/ipset|ipset]] — списки сайтов и адресов, на которые ссылаются профили
+- [[blob]] — заготовки фейков из шапки пресета
+- [[wf|Фильтры захвата WinDivert]] — строки `--wf-…` в шапке
+- [[out-range]] — что значат `-d8` и другие диапазоны
+- [[verify-strategy|Как проверить стратегию]] — что делать после смены стратегии в профиле
+
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/preset.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret2/preset.md) · [скачать весь репозиторий одним zip-архивом](https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
