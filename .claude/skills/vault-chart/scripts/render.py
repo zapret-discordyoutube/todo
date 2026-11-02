@@ -65,6 +65,7 @@ addEventListener('load', () => document.fonts.ready.then(() => {
 def find_chrome():
     pats = [
         "~/.cache/ms-playwright/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell",
+        "~/.cache/ms-playwright/chromium_headless_shell-*/chrome-linux/headless_shell",
         "~/.cache/ms-playwright/chromium-*/chrome-linux64/chrome",
     ]
     for p in pats:

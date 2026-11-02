@@ -11,6 +11,6 @@ metadata:
 - Session runs as `ccw-ton08`; the vault's `origin` (ssh://…<forgejo-host>) rejects this user. Push works as `sudo -u codex-pve -H git push origin main` (codex-pve has an HTTP insteadOf + credential helper to <forgejo-host>:3000). Obsidian Publish CLI also only as codex-pve: `sudo -u codex-pve -H /home/codex-pve/.local/bin/obsidian vault=Privacy …` — inside a `while read` loop add `</dev/null` or sudo eats stdin.
 - The task-file dir `/home/codex-pve/.agent-todo/` is codex-pve-only: read/write via `sudo -u codex-pve`.
 - `/tmp/claude-1001` gets its ACL mask reset to 700, so codex-pve loses access to the scratchpad mid-session; for files codex-pve must read (e.g. running render.py/Chromium as codex-pve) use `/var/tmp/zapret-site-patch` (ACL for both users).
-- Chart rendering uses codex-pve's Chromium (`~codex-pve/.cache/ms-playwright/chromium_headless_shell-1243`); ccw-ton08 only has an older 1194 build that render.py doesn't find.
+- Chart rendering: codex-pve has Chromium `chromium_headless_shell-1243`; ccw-ton08 has only the older 1194 build (`chrome-linux/headless_shell` layout). Since 2026-11-02 render.py also looks for that layout, so it renders as ccw-ton08 too; before that it fell back to `/usr/bin/chromium` and failed with "Missing X server or $DISPLAY".
 
 Related: [[wiki-domain-wiki2]]

@@ -10,3 +10,4 @@
 - [vault-push-and-shared-dirs](vault-push-and-shared-dirs.md) — Push/Publish/todo only via sudo -u codex-pve; /tmp/claude-1001 ACL resets, use /var/tmp
 - [gptimage-prompts](gptimage-prompts.md) — Article cover = Zapret-tan/RKN-tan prompt; template+scenes+camera presets in vault gptimage/; RKN-emblem mug always
 - [article-deliverables](article-deliverables.md) — Every article = article + TG post + cover prompt; publish right away, cover in a later commit; ✔ DONE only after the cover
+- [reddit-via-arctic-shift](reddit-via-arctic-shift.md) — Reddit is 403 from this host; exact post/comment times and texts via Arctic Shift API
