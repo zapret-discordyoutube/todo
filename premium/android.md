@@ -177,7 +177,7 @@ description: "Пошагово со скриншотами: что скачат�
 | | Обычный Telegram | ZaStoGram |
 |---|---|---|
 | Работает без VPN при блокировке | нет | да, через встроенный WSS |
-| Прокси из бота (MTProxy, TeleMT) | работают не всегда стабильно | работают стабильнее всего |
+| Прокси из бота (MTProxy) | работают не всегда стабильно | работают стабильнее всего |
 | Несколько аккаунтов | до 3, с Premium — больше | до 3, с Premium — до 5 |
 | Где скачать | Google Play | канал [@zastogram](https://t.me/zastogram) или [страница выпусков](https://git2.zapret.moe/zastogram/ZaStoGram/releases/latest), файл `ZaStoGram-standalone-arm64-v8a.apk` |
 
