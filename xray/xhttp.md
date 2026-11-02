@@ -124,7 +124,7 @@ XHTTP — это транспорт уровня приложения (HTTP), а
 | `host` | Значение заголовка `Host` / SNI |
 | `headers` | Дополнительные HTTP-заголовки |
 | `scMaxEachPostBytes` | Макс. размер тела одного upload-POST (по умолчанию 1 000 000) |
-| `scMinPostsIntervalMs` | Мин. пауза между POST (по умолчанию 30 мс) |
+| `scMinPostsIntervalMs` | Мин. пауза между POST (по умолчанию 30 мс; явное «30» в конфиге ничего не меняет, см. [[DPI/tspu-3xui-scmininterval-trap\|«ловушку» 3x-ui]]) |
 | `scMaxBufferedPosts` | Глубина очереди пересборки (по умолчанию 30) |
 | `xPaddingBytes` | Диапазон длины паддинга (по умолчанию 100–1000) |
 | `noGRPCHeader` / `noSSEHeader` | Отключить маскировку под gRPC / SSE |
