@@ -305,6 +305,7 @@ link: https://meduza.io/feature/2026/10/14/pochemu-data-tsentry-okazalis-tak-uya
 
 ## 📚 См. также
 
+- [[DPI/sovereign-hosting-wipe-november-2026|Обнуление хостинга «Б.» и взлом панели VMmanager]] — продолжение осени 2026: после дронов — хакеры, стёртое облако и что делать владельцу сайта
 - [[DPI/economic-filter-foreign-channels-2026|Экономический фильтр: плата за зарубежный интернет]] — как государство ограничивает сами каналы связи с внешним миром.
 - [[DPI/nsdi-only-ru-zones-scenario-october-2026|Что будет, если НСДИ оставит только .ru]] — ещё один сценарий изоляции, на этот раз через DNS.
 - [[DPI/mincifry-whitelist-vpn-hosting-august-2026|«Замаскированные» VPN и белый список]] — что Минцифры требует от российских хостеров.

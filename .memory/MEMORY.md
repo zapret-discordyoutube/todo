@@ -11,3 +11,4 @@
 - [gptimage-prompts](gptimage-prompts.md) — Article cover = Zapret-tan/RKN-tan prompt; template+scenes+camera presets in vault gptimage/; RKN-emblem mug always
 - [article-deliverables](article-deliverables.md) — Every article = article + TG post + cover prompt; publish right away, cover in a later commit; ✔ DONE only after the cover
 - [reddit-via-arctic-shift](reddit-via-arctic-shift.md) — Reddit is 403 from this host; exact post/comment times and texts via Arctic Shift API
+- [satire-companies-by-letters](satire-companies-by-letters.md) — Satire articles: hosting providers by letters, sources still linked; satire tone over a real technical core
