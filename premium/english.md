@@ -84,7 +84,7 @@ The plan card counts the days left and turns red with a ringing bell when fewer 
 
 There is no password; you sign in from the bot:
 
-1. In the bot open «💳 Plan and balance» and tap «🌐 Personal account» («🌐 Личный кабинет»).
+1. In the bot open «💳 Plan and balance» and tap «🌐 Personal account» («🌐 Личный кабинет») — or just send the bot the /lk command.
 2. Tap «Open my account» («Открыть кабинет») on the device where you want to see the account.
 3. On the site press «Войти» (Sign in).
 
