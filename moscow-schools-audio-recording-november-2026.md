@@ -19,6 +19,7 @@ aliases:
   - Мостех панель микрофон аудиозапись уроков
   - ДИТ Москвы записывает уроки
 description: "Что известно о скрытой аудиозаписи на интерактивных панелях московских школ: пакет mesh-agent-lesson-log, сервер ДИТ, что проверено и как это убрать."
+image: attachments/moscow-schools-audio-recording-header.jpg
 link: https://zona.media/news/2026/11/03/shkola-proslushka
 ---
 
@@ -26,6 +27,8 @@ link: https://zona.media/news/2026/11/03/shkola-proslushka
 > Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/moscow-schools-audio-recording-november-2026](https://jzesawgjsz.zapret.moe/moscow-schools-audio-recording-november-2026)
 
 # 🎙 Прослушка в московских школах: что делает mesh-agent-lesson-log на интерактивных панелях и что в этом проверено
+
+![[moscow-schools-audio-recording-header.jpg]]
 
 > [!info] О чём заметка
 > 3 ноября 2026 года независимый исследователь опубликовал разбор пакета `mesh-agent-lesson-log`, который, по его данным, стоит на интерактивных панелях московских школ и по команде сервера записывает звук в классе. «Медиазона» скачала тот же пакет и подтвердила выводы разбора. Здесь собрано, что именно делает программа, чем отличаются две её версии, что проверено при подготовке заметки, а что остаётся утверждением авторов, и что с этим можно сделать.
