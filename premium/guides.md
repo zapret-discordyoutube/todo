@@ -52,7 +52,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 | 🤖 Android: YouTube работает, а Telegram или второй Telegram — нет | [[ZapretKVN/android#Один Telegram работает, а второй нет\|Один Telegram работает, а второй нет]] |
 | 🍏 iPhone и iPad | [[premium/apps#iPhone и iPad\|Приложения для iPhone]] — Clash Mi и Mihomo-подписка |
 | 🖥 Zapret KVN на Windows: «Прокси» или «VPN (TUN)», ошибка DNS, сайт открывается только в TUN | [[Zapret/premium#Zapret KVN на Windows: «Прокси» или «VPN (TUN)»\|Прокси или TUN]] — не знаете, что выбрать, берите TUN |
-| 🖥 Zapret KVN на Windows: что это, как его выключить, чем отличается от Zapret 2 GUI | [[ZapretKVN/zapret-kvn-windows\|Zapret KVN для Windows]] — крестик окна, кнопка подключения и выход из трея |
+| 🖥 Что такое Zapret KVN и Zapret 2 GUI, чем они отличаются и что выбрать | [[ZapretKVN/zapret-kvn-windows\|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — обзор для новичков |
 | 🖥 Windows: v2rayN, режим прокси, браузер | [[premium/v2rayn\|v2rayN и режим прокси]] |
 | 🖥 Windows спрашивает «частная или общедоступная сеть» | [[premium/apps#Windows\|Приложения для Windows]] — «Общедоступная» или как есть, на VPN не влияет |
 | 💻 Mac и Linux | [[premium/apps#macOS и Linux\|Приложения для Mac и Linux]] |
@@ -88,7 +88,7 @@ description: "Все инструкции Zapret VPN на одной стран�
 - [[Zapret/premium|Гайд для новичка]] — главная статья для тех, кто только начинает.
 - [[premium/apps|Приложения для VPN]] — что поставить на каждое устройство.
 - [[ZapretKVN/android|VPN на Android по шагам]] — ZapretKVN со скриншотами.
-- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows: что это и как выключить]] — устройство программы и выключение.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — обзор двух программ для новичков.
 
 ---
 

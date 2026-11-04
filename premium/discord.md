@@ -101,7 +101,7 @@ description: "Как пустить Discord на Windows через прокси
 
 ## 📚 См. также
 
-- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows]] — как устроена программа и чем выключение отличается от Zapret 2 GUI.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — обзор двух программ для Windows.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, тарифы, первое подключение.
 - [[premium/v2rayn|v2rayN и режим прокси]] — как работает режим прокси, настройка браузера и Spotify.

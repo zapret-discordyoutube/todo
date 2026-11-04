@@ -154,7 +154,7 @@ flowchart TB
 | Слово | Что значит |
 |---|---|
 | **Приложение, клиент** | программа на устройстве, которая включает VPN по вашей подписке или ключу |
-| **ZapretKVN, Zapret KVN** | наши клиенты для Android и Windows — [[ZapretKVN/android\|Android по шагам]], [[ZapretKVN/zapret-kvn-windows\|Windows и выключение]] |
+| **ZapretKVN, Zapret KVN** | наши клиенты для Android и Windows — [[ZapretKVN/android\|Android по шагам]], [[ZapretKVN/zapret-kvn-windows\|Windows и чем отличается от Zapret 2 GUI]] |
 | **v2rayN, v2rayNG, Happ, V2RayTun** | сторонние клиенты для Xray-подписки — [[premium/apps\|приложения по устройствам]] |
 | **Clash Mi, FlClash, Clash Verge Rev** | клиенты на движке Mihomo — для Mihomo-подписки |
 | **AmneziaVPN, AmneziaWG, WG Tunnel** | клиенты для конфигов AWG и WireGuard |

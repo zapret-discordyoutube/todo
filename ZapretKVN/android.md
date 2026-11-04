@@ -284,7 +284,7 @@ ZapretKVN — самый простой вариант, но подписку м
 - [[premium/glossary|📘 Что есть что]] — коротко обо всём и словарь терминов.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — тарифы, оплата, все устройства.
-- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows]] — версия для компьютера и чем выключение отличается от Zapret 2 GUI.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — версия для компьютера и сравнение с Zapret 2 GUI.
 - [[premium/apps|Приложения для VPN]] — v2rayNG, Happ, FlClash, Clash Mi, AmneziaVPN и другие по шагам.
 - [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот]] — подписки, маршруты, приватность.
 - [[mtproxy/telegram-wss-transport|WSS для Telegram]] — как ZaStoGram обходит блокировку без VPN.

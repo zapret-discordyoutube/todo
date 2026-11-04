@@ -100,7 +100,7 @@ description: "Какое приложение поставить для Zapret V
 | [Happ](https://github.com/Happ-proxy/happ-desktop/releases/latest) | Xray-подписка | «+» → из буфера обмена |
 | [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или WireGuard-конфиг | «+» → из файла |
 
-**Что такое Zapret KVN и как его выключить.** Программа состоит из двух частей, подключения через сервер и Zapret, и крестик окна не выключает ни одну из них: подробности и сравнение с Zapret 2 GUI — в заметке [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows]].
+**Что такое Zapret KVN и чем он отличается от Zapret 2 GUI.** Zapret KVN состоит из двух частей, подключения через сервер и встроенного Zapret, а Zapret 2 GUI занимается только обходом без сервера: что выбрать и почему, объясняет заметка [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]].
 
 **Режим «Прокси» или «VPN (TUN)».** В «VPN (TUN)» через сервер идёт весь компьютер, в «Прокси» — только программы, которые берут прокси. Не знаете, что выбрать, — берите TUN; подробно — [[Zapret/premium#Zapret KVN на Windows: «Прокси» или «VPN (TUN)»|чем они отличаются]].
 
@@ -180,7 +180,7 @@ ZaStoGram ставится рядом с обычным Telegram. В одном 
 - [[premium/glossary|📘 Что есть что]] — коротко обо всём и словарь терминов.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[ZapretKVN/android|VPN на Android: ZapretKVN по шагам]] — со скриншотами каждого экрана.
-- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows: что это и как выключить]] — как устроена программа и чем выключение отличается от Zapret 2 GUI.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — обзор двух программ для Windows для новичков.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — тарифы, оплата, выбор протокола.
 - [[premium/v2rayn|v2rayN и режим прокси]] — подробная настройка на Windows.
 - [[Clash/03-first-run|Первый запуск Clash/mihomo]] — как устроены клиенты на ядре Mihomo.

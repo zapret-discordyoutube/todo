@@ -157,7 +157,7 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — подписка, тарифы, выбор протокола, шаги со скриншотами.
 - [[ZapretKVN/android|VPN на Android: ZapretKVN по шагам]] — установка, подписка, список приложений, Telegram.
-- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows: что это и как выключить]] — клиент для компьютера.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]] — клиент для компьютера.
 - [[premium/apps|Приложения для VPN]] — что поставить на каждое устройство, AWG 3.0 против AWG 2.0.
 - [[premium/premium|Что даёт Zapret Premium]] — премиум-статус в программе Zapret GUI.
 - [[subscriptions/hwid-client-lock|HWID-привязка и запрет «чужих» клиентов]] — как устроены ограничения, которых здесь нет.
