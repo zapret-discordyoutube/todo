@@ -11,12 +11,15 @@ aliases:
   - Zapret KVN скачать и настроить
   - Zapret KVN Windows Android
 description: "Раздел о приложении Zapret KVN: устройство и выключение на Windows, установка и настройка на Android, сравнение с Zapret 2 GUI."
+image: ZapretKVN/attachments/zapret-kvn-windows-header.jpg
 ---
 
 > [!mirror] Резервное зеркало
 > Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/ZapretKVN/ZapretKVN](https://jzesawgjsz.zapret.moe/ZapretKVN/ZapretKVN)
 
 # 🛡 Zapret KVN: всё о приложении в одном месте
+
+![[zapret-kvn-windows-header.jpg]]
 
 > [!info] Что это за раздел
 > Zapret KVN — наше приложение для Windows и Android. Оно объединяет подключение через сервер (VPN или прокси) и обход блокировок без сервера. Здесь собраны материалы о самом приложении: как оно устроено, как его ставить, настраивать и выключать. Подписку для него выдаёт [[premium/zapret-vpn-bot|Zapret VPN-бот]], а оглавление всех инструкций сервиса лежит на странице [[premium/guides|«Все инструкции Zapret VPN»]].

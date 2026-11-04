@@ -16,6 +16,7 @@ aliases:
   - Выключил VPN, а Zapret работает
   - Zapret KVN и Zapret GUI одновременно
 description: "Что такое Zapret KVN для Windows, как он устроен и чем выключение VPN, крестик окна и выход из трея отличаются от Zapret 2 GUI."
+image: ZapretKVN/attachments/zapret-kvn-windows-header.jpg
 link: https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn
 ---
 
@@ -23,6 +24,8 @@ link: https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn
 > Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/ZapretKVN/zapret-kvn-windows](https://jzesawgjsz.zapret.moe/ZapretKVN/zapret-kvn-windows)
 
 # 🛡 Zapret KVN для Windows: что это, как устроен и чем выключение отличается от Zapret 2 GUI
+
+![[zapret-kvn-windows-header.jpg]]
 
 > [!info] О чём заметка
 > Zapret KVN — программа для Windows, которая объединяет подключение через сервер (VPN или прокси) и обход блокировок без сервера. Заметка объясняет, как она устроена, а главное — что именно останавливает каждое «выключение»: кнопка подключения, крестик окна, выход из трея. Отдельный раздел сравнивает это с Zapret 2 GUI, потому что на одном компьютере часто стоят обе программы. Версия для телефона разобрана в [[ZapretKVN/android|инструкции для Android]].
