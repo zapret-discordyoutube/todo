@@ -6,6 +6,7 @@ tags:
   - android
   - инструкция
 aliases:
+  - premium/android
   - ZapretKVN Android инструкция
   - Установил ZapretKVN что дальше
   - Zapret KVN apk как настроить
@@ -19,7 +20,7 @@ description: "Пошагово со скриншотами: что скачат�
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/premium/android](https://wiki2.zapret.moe/premium/android)
+> Актуальная версия этой страницы — на основной вики: [jzesawgjsz.zapret.moe/ZapretKVN/android](https://jzesawgjsz.zapret.moe/ZapretKVN/android)
 
 # 🤖 VPN на Android: ZapretKVN от установки до работающего YouTube и Telegram
 
@@ -283,6 +284,7 @@ ZapretKVN — самый простой вариант, но подписку м
 - [[premium/glossary|📘 Что есть что]] — коротко обо всём и словарь терминов.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[Zapret/premium|Zapret VPN и Zapret Premium: гайд для новичка]] — тарифы, оплата, все устройства.
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows]] — версия для компьютера и чем выключение отличается от Zapret 2 GUI.
 - [[premium/apps|Приложения для VPN]] — v2rayNG, Happ, FlClash, Clash Mi, AmneziaVPN и другие по шагам.
 - [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот]] — подписки, маршруты, приватность.
 - [[mtproxy/telegram-wss-transport|WSS для Telegram]] — как ZaStoGram обходит блокировку без VPN.
@@ -290,4 +292,4 @@ ZapretKVN — самый простой вариант, но подписку м
 ---
 
 > [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
-> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://git2.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/premium/android.md) · [скачать весь репозиторий одним zip-архивом](https://git2.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/ZapretKVN/android.md) · [скачать весь репозиторий одним zip-архивом](https://cwdnvtsqdc.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).

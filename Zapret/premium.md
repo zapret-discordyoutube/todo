@@ -48,7 +48,7 @@ description: "Гайд для новичка по Zapret VPN: навигация
 |---|---|
 | подключить VPN на телефон или компьютер | [[Zapret/premium#Часть 1. VPN за четыре шага\|Часть 1: четыре шага]] — от оплаты до работающего VPN |
 | узнать, сколько стоит и какой тариф брать | [[Zapret/premium#Тарифы и цены\|Тарифы и цены]] |
-| настроить Android по картинкам | [[premium/android\|VPN на Android: ZapretKVN по шагам]] |
+| настроить Android по картинкам | [[ZapretKVN/android\|VPN на Android: ZapretKVN по шагам]] |
 | найти приложение для своего устройства | [[premium/apps\|Приложения для VPN]] |
 | чтобы работал только Telegram | [[Zapret/premium#Только Telegram\|Только Telegram]] |
 | VPN для игр или выбрать протокол | [[Zapret/premium#Какой VPN выбрать\|Какой VPN выбрать]] |
@@ -98,11 +98,11 @@ description: "Гайд для новичка по Zapret VPN: навигация
 
 | У вас | Скачайте | Что взять в боте | Пошагово |
 |---|---|---|---|
-| 🤖 Android | [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), файл `…-arm64-v8a.apk` | Xray-подписку | [[premium/android\|инструкция со скриншотами]] |
+| 🤖 Android | [ZapretKVN](https://git2.zapret.moe/zapretkvn/ZapretKVN-android/releases/latest), файл `…-arm64-v8a.apk` | Xray-подписку | [[ZapretKVN/android\|инструкция со скриншотами]] |
 | 🍏 iPhone, iPad | [Clash Mi](https://clashmi.app/download) | Mihomo-подписку | [[premium/apps#iPhone и iPad\|приложения для iPhone]] |
-| 🖥 Windows | [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | [[premium/apps#Windows\|приложения для Windows]] |
+| 🖥 Windows | [Zapret KVN](https://git2.zapret.moe/zapretkvn/zapret-kvn) | Xray-подписку | [[ZapretKVN/zapret-kvn-windows\|Zapret KVN для Windows]], [[premium/apps#Windows\|приложения для Windows]] |
 | 💻 Mac, Linux | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Mihomo-подписку | [[premium/apps#macOS и Linux\|приложения для Mac и Linux]] |
-| ✈️ Telegram (Android, Windows) | [ZaStoGram](https://t.me/zastogram) — наш Telegram, работает и без VPN | ничего, он бесплатный | [[premium/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
+| ✈️ Telegram (Android, Windows) | [ZaStoGram](https://t.me/zastogram) — наш Telegram, работает и без VPN | ничего, он бесплатный | [[ZapretKVN/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
 
 Программа Zapret GUI для этого не нужна, и код из неё отправлять не надо.
 
@@ -255,7 +255,7 @@ flowchart LR
 
 | Приложение | Куда вставить | Подробно |
 |---|---|---|
-| ZapretKVN (Android) | «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа» | [[premium/android\|по шагам со скриншотами]] |
+| ZapretKVN (Android) | «Серверы» → «Ссылка» → вставить → «Загрузить preview» → «Один профиль-группа» | [[ZapretKVN/android\|по шагам со скриншотами]] |
 | Zapret KVN (Windows), v2rayN | добавить подписку по ссылке, обновить подписки | [[premium/v2rayn\|v2rayN со скриншотами]] |
 | Clash Mi, Clash Verge Rev, FlClash | «Профили» → добавить по ссылке | [[premium/apps\|по приложениям]] |
 | Happ, V2RayTun | «+» → вставить из буфера обмена | [[premium/apps\|по приложениям]] |
@@ -268,7 +268,7 @@ flowchart LR
 - [ ] Android и iPhone при первом включении спросят разрешение на VPN — разрешите.
 - [ ] Проверьте: с включённым VPN откройте YouTube или сайт, который без него не открывается.
 - [ ] В Zapret KVN на Windows выберите режим: «VPN (TUN)» — через VPN идёт весь компьютер, «Прокси» — только программы, которые берут системный прокси. Не знаете, что выбрать, — берите «VPN (TUN)» ([[Zapret/premium#Zapret KVN на Windows: «Прокси» или «VPN (TUN)»|чем они отличаются]]).
-- [ ] В ZapretKVN на Android через VPN идут только отмеченные приложения: проверьте список во вкладке «Маршруты» → «Выбрать приложения» ([[premium/android#Шаг 5. Проверьте, какие приложения идут через VPN|подробно]]).
+- [ ] В ZapretKVN на Android через VPN идут только отмеченные приложения: проверьте список во вкладке «Маршруты» → «Выбрать приложения» ([[ZapretKVN/android#Шаг 5. Проверьте, какие приложения идут через VPN|подробно]]).
 
 Значок ключа или надпись «VPN» в строке состояния телефона значит, что соединение есть.
 
@@ -335,11 +335,11 @@ flowchart LR
 
 ### ZapretKVN: приложение для VPN
 
-Наш клиент — [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git2.zapret.moe/zapretkvn/zapret-kvn). Подписки бота работают в любом совместимом приложении, но ZapretKVN лучше всего подходит под серверы проекта. Как настроить его на телефоне — в [[premium/android|пошаговой инструкции для Android]].
+Наш клиент — [ZapretKVN для Android](https://git2.zapret.moe/zapretkvn/ZapretKVN-android) и [Zapret KVN для Windows](https://git2.zapret.moe/zapretkvn/zapret-kvn). Подписки бота работают в любом совместимом приложении, но ZapretKVN лучше всего подходит под серверы проекта. Как настроить его на телефоне — в [[ZapretKVN/android|пошаговой инструкции для Android]].
 
 ### ZaStoGram: Telegram без VPN
 
-[ZaStoGram](https://t.me/zastogram) — наш клиент Telegram для Android и Windows. Внутри те же чаты и аккаунты, что в обычном Telegram, но он сам обходит блокировку через официальные веб-шлюзы Telegram и в большинстве сетей работает без VPN. Прокси из бота работают в нём стабильнее всего. Подробнее — в [[premium/android#ZaStoGram: Telegram, которому не нужен VPN|инструкции для Android]].
+[ZaStoGram](https://t.me/zastogram) — наш клиент Telegram для Android и Windows. Внутри те же чаты и аккаунты, что в обычном Telegram, но он сам обходит блокировку через официальные веб-шлюзы Telegram и в большинстве сетей работает без VPN. Прокси из бота работают в нём стабильнее всего. Подробнее — в [[ZapretKVN/android#ZaStoGram: Telegram, которому не нужен VPN|инструкции для Android]].
 
 ### Zapret GUI: обход без VPN
 
@@ -709,7 +709,7 @@ Mihomo-подписка отправляет российские сервисы
 | в Telegram уже включён прокси из бота | ничего: прокси работает и внутри VPN. Если Telegram застрял на «Соединение…», выключите прокси: на телефоне «Настройки» → «Данные и память» → «Прокси», на компьютере «Настройки» → «Продвинутые настройки» → «Тип соединения» |
 | ZapretKVN на Windows в режиме «Прокси», «Системный прокси Windows» выключен | Telegram идёт мимо VPN. Впишите в него прокси ZapretKVN — [[Zapret/premium#Telegram и ZapretKVN на Windows в режиме «Прокси»\|по шагам ниже]] — или включите «VPN (TUN)» |
 | v2rayN в режиме системного прокси | Telegram Desktop по умолчанию берёт системные настройки прокси и идёт через VPN. Если в «Типе соединения» прокси отключён, Telegram пойдёт мимо VPN — выберите там системные настройки прокси |
-| Android, ZapretKVN | Telegram должен быть отмечен во вкладке «Маршруты»; второй Telegram из «Двойных приложений» VPN не видит — [[premium/android#Один Telegram работает, а второй нет\|разбор]] |
+| Android, ZapretKVN | Telegram должен быть отмечен во вкладке «Маршруты»; второй Telegram из «Двойных приложений» VPN не видит — [[ZapretKVN/android#Один Telegram работает, а второй нет\|разбор]] |
 | нужен Telegram, который работает и без VPN | наш клиент [ZaStoGram](https://t.me/zastogram) для Android и Windows — [[Zapret/premium#Только Telegram\|Только Telegram]] |
 | сообщения приходят, а картинки и видео грузятся медленно или не отправляются, и смена сервера не помогает | почти всегда Telegram идёт мимо VPN, поэтому от сервера ничего и не зависит: без VPN в России Telegram часто плохо грузит картинки и видео. На Windows загляните в карточку «Приложения» на «Панели» ZapretKVN: если Telegram там нет, через VPN он не идёт — впишите в него прокси (строкой выше) или включите «VPN (TUN)». На Android отметьте Telegram в «Маршрутах». Если Telegram точно идёт через VPN, выключите в нём старый прокси из бота и попробуйте зарубежный сервер (Нидерланды, Финляндия, Германия): с российского сервера Telegram идёт через дополнительный зарубежный переход. Не помогло — тикет в «💬 Поддержка» |
 
@@ -743,7 +743,7 @@ Mihomo-подписка отправляет российские сервисы
 
 Если нужен только Telegram, VPN не обязателен.
 
-**Самый простой путь — наш клиент [ZaStoGram](https://t.me/zastogram)** (Android и Windows). Он сам обходит блокировку через официальные веб-шлюзы Telegram, поэтому ни VPN, ни прокси обычно не нужны, и он бесплатный. В одном приложении можно держать до трёх аккаунтов. Как поставить — в [[premium/android#ZaStoGram: Telegram, которому не нужен VPN|инструкции для Android]].
+**Самый простой путь — наш клиент [ZaStoGram](https://t.me/zastogram)** (Android и Windows). Он сам обходит блокировку через официальные веб-шлюзы Telegram, поэтому ни VPN, ни прокси обычно не нужны, и он бесплатный. В одном приложении можно держать до трёх аккаунтов. Как поставить — в [[ZapretKVN/android#ZaStoGram: Telegram, которому не нужен VPN|инструкции для Android]].
 
 **Прокси из бота.** MTProto-прокси (MTProto — собственный протокол Telegram) включается прямо в Telegram: нажимаете ссылку, Telegram спрашивает «Подключить прокси?» — и всё. Остальной интернет идёт как обычно. Выключить прокси можно в настройках Telegram → «Данные и память» → «Прокси». Стабильнее всего прокси работают в ZaStoGram.
 
@@ -789,7 +789,7 @@ Mihomo-подписка отправляет российские сервисы
 | VPN перестал подключаться | проверьте срок в «💳 Подписка и баланс»; обновите подписку в приложении |
 | не работает один сервер | выберите другой и посмотрите его состояние на status.zapret.moe |
 | не работает VLESS | попробуйте Hysteria 2 |
-| YouTube работает, а Telegram (или второй Telegram) — нет | в ZapretKVN отметьте приложение во вкладке «Маршруты»; копии в «Двойных приложениях» VPN не видят — [[premium/android#Один Telegram работает, а второй нет\|разбор]] |
+| YouTube работает, а Telegram (или второй Telegram) — нет | в ZapretKVN отметьте приложение во вкладке «Маршруты»; копии в «Двойных приложениях» VPN не видят — [[ZapretKVN/android#Один Telegram работает, а второй нет\|разбор]] |
 | не работает ничего | AWG 3.0 в AmneziaVPN 5.0.0.5+ — кнопка «🆘 Не подключается? AWG 3.0» в мастере |
 | Hysteria 2 на Windows нестабильна | временно выключите winws2 — движок обхода Zapret 2 на компьютере: он мешает этому протоколу |
 | v2rayN показывает ошибку у всех серверов при проверке | не верьте массовой проверке задержки; включите VPN и откройте сайт |
@@ -862,7 +862,8 @@ Premium открывает в программе фоны «AMOLED — чёрн�
 
 ## 📚 См. также
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей
-- [[premium/android|VPN на Android: ZapretKVN по шагам]] — установка, подписка, список приложений, Telegram и ZaStoGram
+- [[ZapretKVN/android|VPN на Android: ZapretKVN по шагам]] — установка, подписка, список приложений, Telegram и ZaStoGram
+- [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows: что это и как выключить]] — устройство программы, крестик, трей и сравнение с Zapret 2 GUI
 - [[premium/apps|Приложения для VPN]] — что поставить на каждое устройство, AWG 3.0 против AWG 2.0
 - [[premium/premium|Что даёт Zapret Premium]] — темы, оформление и связь с тарифами
 - [[premium/zapret_premium|Как привязать Zapret Premium]] — привязка программы к боту по шагам, ответы бота и статусы

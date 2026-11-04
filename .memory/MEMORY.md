@@ -12,3 +12,4 @@
 - [article-deliverables](article-deliverables.md) — Every article = article + TG post + cover prompt; publish right away, cover in a later commit; ✔ DONE only after the cover
 - [reddit-via-arctic-shift](reddit-via-arctic-shift.md) — Reddit is 403 from this host; exact post/comment times and texts via Arctic Shift API
 - [satire-companies-by-letters](satire-companies-by-letters.md) — Satire articles: hosting providers by letters, sources still linked; satire tone over a real technical core
+- [zapretkvn-folder](zapretkvn-folder.md) — Всё про Zapret KVN в папке ZapretKVN/; home.md ссылается на старый путь premium/android

@@ -68,8 +68,8 @@ flowchart TB
 | **Zapret GUI** | бесплатная программа для Windows на движке Zapret 2: обход YouTube, Discord и других сайтов без VPN | [[Zapret/download\|как скачать]] |
 | **Zapret VPN** | платный VPN на серверах проекта; доступ продаёт бот | весь [[Zapret/premium\|гайд]] |
 | **Zapret Premium** | оформление Zapret GUI: фоны, новогодняя тема, плашка Premium; к VPN отношения не имеет | [[premium/premium\|что даёт Premium]] |
-| **ZapretKVN / Zapret KVN** | наше VPN-приложение: Android (ZapretKVN) и Windows (Zapret KVN) | [[premium/android\|Android по шагам]] |
-| **ZaStoGram** | наш Telegram-клиент для Android и Windows, обходит блокировку Telegram сам | [[premium/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
+| **ZapretKVN / Zapret KVN** | наше VPN-приложение: Android (ZapretKVN) и Windows (Zapret KVN) | [[ZapretKVN/android\|Android по шагам]], [[ZapretKVN/zapret-kvn-windows\|Windows]] |
+| **ZaStoGram** | наш Telegram-клиент для Android и Windows, обходит блокировку Telegram сам | [[ZapretKVN/android#ZaStoGram: Telegram, которому не нужен VPN\|что это]] |
 | **status.zapret.moe** | открытая страница состояния всех серверов и протоколов: у какого сервера сбой, насколько он надёжен за месяц, сколько на нём людей | [status.zapret.moe](https://status.zapret.moe), [[Zapret/premium#Что показывает status.zapret.moe\|как её читать]] |
 
 ## Бот и оплата
@@ -154,7 +154,7 @@ flowchart TB
 | Слово | Что значит |
 |---|---|
 | **Приложение, клиент** | программа на устройстве, которая включает VPN по вашей подписке или ключу |
-| **ZapretKVN, Zapret KVN** | наши клиенты для Android и Windows — [[premium/android\|Android по шагам]] |
+| **ZapretKVN, Zapret KVN** | наши клиенты для Android и Windows — [[ZapretKVN/android\|Android по шагам]], [[ZapretKVN/zapret-kvn-windows\|Windows и выключение]] |
 | **v2rayN, v2rayNG, Happ, V2RayTun** | сторонние клиенты для Xray-подписки — [[premium/apps\|приложения по устройствам]] |
 | **Clash Mi, FlClash, Clash Verge Rev** | клиенты на движке Mihomo — для Mihomo-подписки |
 | **AmneziaVPN, AmneziaWG, WG Tunnel** | клиенты для конфигов AWG и WireGuard |
@@ -182,7 +182,7 @@ flowchart TB
 - [[Zapret/premium|Гайд для новичка]] — четыре шага от оплаты до работающего VPN.
 - [[premium/guides|📚 Все инструкции Zapret VPN]] — оглавление всех статей.
 - [[premium/apps|Приложения для VPN]] — что поставить на каждое устройство.
-- [[premium/android|VPN на Android по шагам]] — ZapretKVN со скриншотами.
+- [[ZapretKVN/android|VPN на Android по шагам]] — ZapretKVN со скриншотами.
 
 ---
 

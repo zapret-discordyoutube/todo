@@ -206,7 +206,7 @@ Android при включённом WSS сообщает серверу, что 
 
 - [[mtproxy/telegram-wss-transport|WSS для Telegram: MTProto внутри WebSocket]] — парная заметка: релеи, правила кадров, лестница запасных путей, кто видит трафик
 - [[mtproxy/mtproxy|Раздел MTProxy]] — обзор всех заметок про MTProxy, WSS и WEB-прокси
-- [[premium/android|ZaStoGram для Android]] — установка клиента и где в нём переключатель WSS
+- [[ZapretKVN/android|ZaStoGram для Android]] — установка клиента и где в нём переключатель WSS
 - [[Zapret/mtproto/00-overview|MTProto Proxy — полный гайд]] — классический MTProxy и его ограничения
 - [[mtproxy/faketls-relay-diagnosis|Релей или клиент: диагностика MTProxy]] — как понять, кто виноват, когда не подключается
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4 и SNI]] — второй класс блокировок, по почерку соединения

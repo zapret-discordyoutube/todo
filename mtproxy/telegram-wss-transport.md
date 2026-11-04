@@ -322,7 +322,7 @@ Android держит про запас по одному сокету на ка�
 
 - [[mtproxy/telegram-wss-limits|Ограничения WSS: что не работает и почему]] — парная заметка: закрытые релеи, медиа и CDN, звонки, лимиты Cloudflare, типичные диагнозы
 - [[mtproxy/mtproxy|Раздел MTProxy]] — обзор всех заметок про MTProxy, WSS и WEB-прокси
-- [[premium/android|ZaStoGram для Android]] — как поставить клиент и где в нём тумблер WSS
+- [[ZapretKVN/android|ZaStoGram для Android]] — как поставить клиент и где в нём тумблер WSS
 - [[Zapret/mtproto/00-overview|MTProto Proxy — полный гайд]] — классический MTProxy: протокол, реализации, блокировки
 - [[Zapret/mtproto/01-protocol|Протокол MTProxy: 3 режима и FakeTLS]] — откуда берутся теги `0xef`/`0xee`/`0xdd` и заголовок obfuscated2
 - [[mtproxy/ja4-sni-client-side|Кто может менять JA4 и SNI]] — обход по почерку соединения, а не по адресу
