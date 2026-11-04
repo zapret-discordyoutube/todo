@@ -567,7 +567,20 @@ Premium для программы Zapret GUI есть во всех тарифа
 
 ### Любой клиент, без привязки к устройству
 
-Бот не требует обязательного приложения и не привязывает подписку к железу телефона или компьютера (HWID — аппаратный идентификатор устройства). Подписки работают в нашем [[ZapretKVN/android|ZapretKVN для Android]] и [[ZapretKVN/zapret-kvn-windows|Zapret KVN для Windows]], в [[premium/v2rayn|v2rayN]], Happ и V2RayTun (какую ссылку в них вставлять, [[premium/apps|разобрано в заметке о приложениях]]), в [[Clash/07-clients|Clash-клиентах]], в [[amnezia-3-0/client-5-0-0-5|AmneziaVPN]] и [[premium/apps#Роутер|на роутере]]. Почему бот устроен именно так, объясняет заметка [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот]].
+Бот не требует обязательного приложения и не привязывает подписку к железу телефона или компьютера (HWID — аппаратный идентификатор устройства). Подойдёт любой клиент из таблицы: в каждой строке — какую ссылку взять в боте и где прочитать, как её добавить.
+
+| Клиент | Что брать в боте | Где подробно |
+|---|---|---|
+| ZapretKVN для Android | Xray- или Hysteria 2-подписка | [[ZapretKVN/android\|ZapretKVN: VPN на Android по шагам]] |
+| Zapret KVN для Windows | Xray- или Hysteria 2-подписка | [[ZapretKVN/zapret-kvn-windows\|Zapret KVN для Windows]] |
+| v2rayN | Xray- или Hysteria 2-подписка | [[premium/v2rayn\|v2rayN и режим прокси]] |
+| Happ, V2RayTun | Xray-подписка | [[premium/apps#Android\|таблица для Android]], [[premium/apps#iPhone и iPad\|таблица для iPhone]] |
+| Clash Mi, FlClash, Clash Verge | Mihomo-подписка | [[Clash/03-first-run\|первый запуск Clash]], [[Clash/07-clients\|список клиентов]] |
+| AmneziaVPN | AWG 3.0- или WireGuard-конфиг | [[amnezia-3-0/client-5-0-0-5\|AmneziaVPN 5.0.0.5]] |
+| Роутер | WireGuard- или AWG-конфиг | [[premium/apps#Роутер\|раздел о роутерах]] |
+
+> [!info] Как устроен бот изнутри
+> Почему бот не привязывает подписку к устройству, что он знает о вас и как собирается профиль Mihomo — в отдельной заметке [[premium/zapret-vpn-bot|Как устроен Zapret VPN-бот]].
 
 | Вопрос | Ответ |
 |---|---|
