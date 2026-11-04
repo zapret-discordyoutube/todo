@@ -1,5 +1,5 @@
 - [Публиковать готовые статьи без вопроса](publish-finished-articles-without-asking.md) — vault Privacy: коммит, push и зеркало сразу, только свои файлы
-- [Пост для Telegram — через Artifact](telegram-post-delivery-via-artifact.md) — блок кода плюс HTML-страница; ссылка claude.ai/artifact всегда отдельной строкой
+- [Пост для Telegram — путь к HTML-странице](telegram-post-delivery-via-artifact.md) — блок кода плюс путь в обратных кавычках (панель открывает любой файл); Artifact только если есть
 - [Источники — ссылки внутри текста плюс список внизу](sources-as-inline-links-plus-list.md) — кликабельные ссылки на словах фразы, тот же набор списком перед «См. также»
 - [Реальные IP не в публичные репозитории](no-real-ips-in-public-repos.md) — адреса хостов только в закрытом pve-admin/servers.md, в публичном — заглушки
 - [Схемы по ходу текста, не ASCII](visuals-inline-not-ascii.md) — заменять ASCII-блоки анимациями; генератор scripts/wiki-anim*.py
