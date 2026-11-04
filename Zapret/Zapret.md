@@ -26,7 +26,6 @@ views:
 ## [[Privacy]]
 
 [[windivert]]
-[[ZapretTeam]]
 [[Zapret flags]]
 [[wssize]]
 [[doh-cherez-zapret]]
@@ -213,7 +212,3 @@ image: "https://opengraph.githubassets.com/c68998f316cbaccf390d5edf04409f58c0ebd
 description: "Best Zapret. Contribute to Detoools/Zapret-Discord-YouTube development by creating an account on GitHub."
 url: "https://github.com/Detoools/Zapret-Discord-YouTube"
 ```
-
-
-[[ZapretTeam]]
-

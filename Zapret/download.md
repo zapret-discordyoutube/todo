@@ -77,7 +77,3 @@ description: "Пять способов скачать Zapret GUI для Windows
 -----
 
 ![[linux#Установка Zapret на linux]]
-
-----
-
-![[ZapretTeam]]
