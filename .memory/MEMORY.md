@@ -13,3 +13,4 @@
 - [reddit-via-arctic-shift](reddit-via-arctic-shift.md) — Reddit is 403 from this host; exact post/comment times and texts via Arctic Shift API
 - [satire-companies-by-letters](satire-companies-by-letters.md) — Satire articles: hosting providers by letters, sources still linked; satire tone over a real technical core
 - [zapretkvn-folder](zapretkvn-folder.md) — Всё про Zapret KVN в папке ZapretKVN/; home.md ссылается на старый путь premium/android
+- [Publish deep links 404 (2026-11-05)](publish-deeplink-404-2026-11-05.md) — mirror /zapret/<path> → /404 while site, files and plan were fine; Obsidian-side bug, diagnosis steps
