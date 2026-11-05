@@ -38,7 +38,7 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 1. Open [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) and tap «Start».
 2. Tap **«💳 Plan and balance»** («💳 Подписка и баланс»), then **«💰 Top up»** («💰 Пополнить»).
 3. Choose an amount or type it in digits, for example `199`.
-4. Tap the payment button, open the link it gives and pay with SBP (Russia's fast payment system) in your bank app.
+4. Tap a payment button, open the link it gives and pay with SBP (Russia's fast payment system) in your bank app. The bot offers two payment systems, Pally and Antilopay: either one credits the same balance, so if one does not open, use the other. The «💝 … (N ₽ + donation)» button adds a voluntary donation to the project; the «🔁 Antilopay … every month / every week» buttons turn on an automatic top-up that charges the linked account on schedule.
 5. Come back to the bot: the money arrives by itself within seconds. If nothing changed after a minute, tap «🔄 Check payment» («🔄 Проверить оплату»): the card switches to «🔄 Checking the payment…» and a few seconds later shows the answer in the same card — paid, still processing, not paid or declined by the bank. If the bank declined it, the bill is still valid: pay again with the same link, in SBP you can choose another bank. The bot sends a separate message once the money is credited.
 
 ## Step 2. Buy a plan
