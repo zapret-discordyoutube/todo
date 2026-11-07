@@ -169,6 +169,7 @@ DoH (*DNS over HTTPS*, [RFC 8484](https://www.rfc-editor.org/rfc/rfc8484)) и Do
 
 ## 📚 См. также
 
+- [[Zapret/dns-settings|Настройка DNS в Zapret GUI]] — как поставить Zapret DNS и любой другой сервер плиткой, как работает переключатель «Шифровать DNS (DoH)»
 - [[Zapret/hosts|GEO-ограничения и файл hosts]] — как выглядит гео-блокировка и как открыть сервис через `hosts`, в том числе профилем Zapret DNS.
 - [[Zapret/doh-cherez-zapret|Поможет ли Zapret, если блокируют DoH]] — что делать, если провайдер режет сам шифрованный DNS.
 - [[DPI/tspu-dns-nsdi-dnat-august-2026|Перехват DNS Google и Cloudflare через ТСПУ]] — почему обычный DNS в России ненадёжен.
