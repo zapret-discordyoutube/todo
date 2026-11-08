@@ -67,6 +67,10 @@ description: "Запрет GUI (Zapret 2) — бесплатный обход б
 - [[profile|Что такое профиль]] — чем профиль отличается от пресета и как фильтры выбирают трафик.
 - [[youtube|Блокировка YouTube]] — три области обхода: сайт, QUIC и GoogleVideo в плеере.
 
+## Обновление программы
+
+- [[Zapret/update-sharing|Раздача обновлений]] — как программа берёт файлы обновления у соседних компьютеров и что показывает страница «Кто подключается».
+
 ## Сообщество и поддержка
 
 Есть вопросы? Задайте их [в Forgejo](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new), в [группе помощи в Telegram](https://telegram.me/youtubenotwork) или [в Discord](https://discord.gg/kkcBDG2uws) — отвечают живые люди. Вы можете помочь вики, если запишетесь в [[Волонтёры|волонтёры]], или написать статью сами: сделайте форк [репозитория вики](https://git2.zapret.moe/zapretdiscordyoutube/todo) и пришлите пулл-реквест.
