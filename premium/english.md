@@ -45,7 +45,7 @@ If you don't know which plan to take — take **💎 Vless MAX** (199 ₽ a mont
 
 1. On the same screen tap **«🛒 Buy / renew»** («🛒 Купить / продлить»).
 2. Choose a plan — **💎 Vless MAX** if unsure — then the period.
-3. Confirm. The bot answers «✅ Subscription successfully purchased!» («✅ Подписка успешно оформлена!») and shows the next step.
+3. Confirm. The bot answers «✅ Subscription successfully purchased!» («✅ Подписка успешно оформлена!») and shows the next step. Usually this takes a couple of seconds. If the purchase has not finished yet, the bot shows «⏳ Purchase in progress» («⏳ Покупка обрабатывается»): do not tap again — there is no second charge, and the bot sends the result in a separate message. If the subscription could not be created, the charged amount goes back to your balance, and a message tells you so.
 
 ## Step 3. Get your link
 
