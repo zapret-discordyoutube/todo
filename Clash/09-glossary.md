@@ -80,9 +80,9 @@ description: "Словарь терминов Clash/mihomo для новичко
 
 **Протокол.** Как устроены данные внутри соединения: [[xray/vless|VLESS]], [[protocols/vmess|VMess]], [[protocols/trojan|Trojan]], [[protocols/shadowsocks|Shadowsocks]], [[protocols/tuic|TUIC]], Hysteria. Карта — в [[protocols/00-overview|обзоре протоколов]].
 
-**Транспорт.** Во что упаковано соединение: TCP, TLS, WebSocket, gRPC, HTTP/2, [[xray/xhttp|XHTTP]], QUIC.
+**Транспорт.** Во что упаковано соединение: TCP, WebSocket, gRPC, HTTP/2, [[xray/xhttp|XHTTP]], QUIC (набор зависит от ядра: в Xray HTTP/2 и QUIC как транспорты убраны). TLS и REALITY транспортом не считаются: это отдельный слой безопасности.
 
-**Маскировка.** Как всё это выглядит для наблюдателя: [[xray/reality|REALITY]], XTLS Vision, [[protocols/shadowtls|ShadowTLS]], набивка [[protocols/anytls|AnyTLS]], обфускации.
+**Защита и маскировка.** Как всё это выглядит для наблюдателя: [[xray/reality|REALITY]], [[protocols/shadowtls|ShadowTLS]], набивка [[protocols/anytls|AnyTLS]], обфускации. XTLS Vision сюда не относится: это не маскировка, а режим управления потоком (`flow`) внутри VLESS.
 
 **UUID.** Строка вида `b831381d-…`, которая опознаёт пользователя в VLESS и VMess. По сути — ваш пароль; не публикуйте её.
 

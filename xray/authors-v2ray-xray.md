@@ -130,7 +130,7 @@ description: "Кто создал V2Ray и Xray: псевдонимы Victoria/D
 - [[xray/v2fly-vs-xray|v2fly vs Xray]] — сравнение двух ядер по коду; там же — про нынешних мейнтейнеров v2fly (Shelikhoo)
 - [[xray/vless|Протокол VLESS]] — что RPRX создал вместо VMess
 - [[xray/vless-encryption|VLESS Encryption]] — постквантовое шифрование VLESS 2025 года; там же прямая позиция RPRX о том, для чего оно не предназначено
-- [[xray/vless-stack-map|Слои VLESS-стека]] — карта решений RPRX в одной таблице: транспорт, `security`, `flow`, `encryption`
+- [[xray-core/vless-stack-map|Словарь и карта слоёв]] — карта решений RPRX в одной таблице: транспорт, `security`, `flow`, `encryption`
 - [[xray/xtls-vision|XTLS и Vision]] — flow-технология RPRX; там же разведены три значения слова «XTLS»
 - [[xray/reality|REALITY]] — ещё одна разработка RPRX
 

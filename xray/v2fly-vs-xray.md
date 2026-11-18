@@ -65,7 +65,7 @@ description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core п�
 
 ## Протоколы и транспорты: кто на чём сфокусировался
 
-Это самое наглядное различие. Базовый набор общий (VMess, VLESS, Trojan, Shadowsocks, Shadowsocks-2022, SOCKS, HTTP, WireGuard, freedom, dokodemo; транспорты TCP, WebSocket, gRPC, mKCP, HTTPUpgrade, TLS с ECH). А дальше приоритеты расходятся.
+Это самое наглядное различие. Базовый набор общий (VMess, VLESS, Trojan, Shadowsocks, Shadowsocks-2022, SOCKS, HTTP, WireGuard, freedom, dokodemo; транспорты TCP, WebSocket, gRPC, mKCP, HTTPUpgrade; слой безопасности TLS, в том числе с ECH). А дальше приоритеты расходятся.
 
 | Возможность | v2ray-core | Xray-core |
 |---|---|---|

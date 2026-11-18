@@ -84,8 +84,8 @@ sing-box написан с нуля автором nekohasekai (SagerNet) пов
 - [[sing-box/architecture|Архитектура sing-box-extended]] — ядро, реестры, лимитеры, manager-подсистема, карта форков зависимостей
 - [[sing-box/hardcoded-defaults|Хардкод-константы и дефолты]] — порты, таймауты и магические числа из исходников
 - [[xray/project-x|Project X / Xray-core]] — родословная и экосистема Xray
-- [[xray/vless|Протокол VLESS]] и [[xray/xtls-vision|XTLS и Vision]] — сами протоколы, о чьих реализациях идёт речь
-- [[xray/reality|REALITY]] — протокол, реализованный в обоих ядрах независимо
+- [[xray/vless|Протокол VLESS]] и [[xray/xtls-vision|XTLS и Vision]] (режим потока `flow` этого протокола) — то, о чьих реализациях идёт речь
+- [[xray/reality|REALITY]] — слой безопасности на основе TLS, реализованный в обоих ядрах независимо
 - [[Hysteria/00-overview|Hysteria]] — официальная реализация apernet, с которой sing-box совместим
 - 🔗 [github.com/SagerNet/sing-box](https://github.com/SagerNet/sing-box) — оригинальный sing-box
 - 🔗 [github.com/XTLS/Xray-core](https://github.com/XTLS/Xray-core) — Xray-core

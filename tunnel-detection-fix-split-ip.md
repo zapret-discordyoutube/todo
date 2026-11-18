@@ -241,9 +241,9 @@ Tor на сервере запускается как обычный клиен�
 
 ![[tunnel-split-ip-fixes.png]]
 
-## Транспорт: Vision поверх TCP, без gRPC
+## Связка: Vision поверх TCP, без gRPC
 
-В прежней версии гайда рекомендовался транспорт «VLESS-XTLS-uTLS-REALITY-xudp-gRPC». Такое сочетание не работает: по [документации Xray](https://xtls.github.io/en/config/outbounds/vless.html) режим XTLS Vision доступен только поверх TCP с TLS или REALITY, а с gRPC его не используют. В sing-box `xudp` и так включён по умолчанию. Сам gRPC в Xray помечен как устаревший: разработчики [рекомендуют переходить на XHTTP](https://xtls.github.io/en/config/transports/grpc.html), но XHTTP есть только в Xray, в sing-box его нет. Практический выбор для схемы из этой заметки — VLESS + Vision + REALITY поверх TCP; подробнее о слоях стека — в [[xray/vless-stack-map|карте VLESS-стека]], о REALITY — в [[xray/reality|отдельной заметке]].
+В прежней версии гайда рекомендовалась связка «VLESS-XTLS-uTLS-REALITY-xudp-gRPC». Такое сочетание не работает: по [документации Xray](https://xtls.github.io/en/config/outbounds/vless.html) режим XTLS Vision доступен поверх TCP с TLS или REALITY (либо при включённом шифровании VLESS, тогда транспорт любой), а с gRPC без шифрования VLESS его не используют. В sing-box `xudp` и так включён по умолчанию. Сам gRPC в Xray помечен как устаревший: разработчики [рекомендуют переходить на XHTTP](https://xtls.github.io/en/config/transports/grpc.html), но XHTTP есть только в Xray, в sing-box его нет. Практический выбор для схемы из этой заметки — VLESS + Vision + REALITY поверх TCP; подробнее о слоях стека — в [[xray-core/vless-stack-map|карте VLESS-стека]], о REALITY — в [[xray/reality|отдельной заметке]].
 
 Автор исходной схемы советовал gRPC ради мультиплексирования против так называемой «сибирской блокировки». Её [описали на Хабре](https://habr.com/ru/articles/1044396/): соединения замораживаются на 120 секунд, если к одному SNI за минуту было больше трёх быстрых параллельных попыток TLS-подключения при подозрительной подсети и подозрительном отпечатке клиента. Отсюда разумный вывод — открывать меньше параллельных соединений, но это не делает gRPC обязательным. Разбор механизма есть в [[VLESS/dpi-tls-june-2026|заметке о «заморозке» VLESS+REALITY]].
 
