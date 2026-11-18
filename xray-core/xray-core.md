@@ -34,7 +34,7 @@ image: xray-core/attachments/xray-core-cover.jpg
 
 ## 📚 См. также
 
-- [[xray/xray|Раздел «Xray, VLESS и REALITY»]] — протоколы и практика подключения
+- [[xray/xray|Раздел «Xray, VLESS и REALITY»]] — протокол VLESS, слой безопасности REALITY и практика подключения
 - [[xray/vless|Протокол VLESS]] — устройство заголовка и поле `flow`
 - [[xray/routing|Маршрутизация в Xray]] — правила, балансировщики, geosite и geoip
 
