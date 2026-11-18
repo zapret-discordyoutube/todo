@@ -9,12 +9,15 @@ aliases:
   - Xray-core 26.11.9 документация
   - Xray-core как устроен
 description: "Оглавление документации по официальному ядру Xray-core 26.11.9: каталог компонентов и разница с предыдущей стабильной версией 26.3.27."
+image: xray-core/attachments/xray-core-cover.jpg
 ---
 
 > [!mirror] Резервное зеркало
 > Актуальная версия этой страницы — на основной вики: [pyzluhgrnw.osjcpjzipyb.click/xray-core/xray-core](https://pyzluhgrnw.osjcpjzipyb.click/xray-core/xray-core)
 
 # 📘 Документация Xray-core 26.11.9
+
+![[xray-core-cover.jpg]]
 
 > [!info] О чём раздел
 > Здесь описано только официальное ядро [XTLS/Xray-core](https://github.com/XTLS/Xray-core) версии 26.11.9 (тег от 9 ноября 2026): из каких частей оно состоит и что изменилось по сравнению с предыдущей стабильной версией. Протоколы и технологии (VLESS, REALITY, XTLS Vision, XHTTP, маршрутизация) подробно разобраны в соседнем разделе [[xray/xray|Xray, VLESS и REALITY]], а история проекта — в [[xray/project-x|заметке о Project X]].
