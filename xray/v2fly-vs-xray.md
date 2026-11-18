@@ -12,7 +12,7 @@ aliases:
   - Чем отличается v2ray от xray
   - v2fly/v2ray-core
 link: https://github.com/v2fly/v2ray-core
-description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core по исходникам: общий предок, эксклюзивы REALITY и XHTTP против QUIC и Hysteria2, лицензии, управление."
+description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core по исходникам: общий предок, эксклюзивы REALITY и XHTTP против QUIC и vlite, лицензии, управление."
 ---
 
 > [!mirror] Резервное зеркало
@@ -31,7 +31,7 @@ description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core п�
 - **Xray — форк v2ray-core примерно 2020 года.** Это видно в коде: тела базовых файлов (например `core.go`) до сих пор почти идентичны, различается брендинг и версия. Их DI-модель, реестр протоколов и набор `features/` — общее наследие.
 - **Одной строкой:** Xray — ужатое, «заточенное под обход блокировок» ядро v2ray плюс собственные антидетект-технологии; v2ray — то же наследие, но развитое в расширяемую платформу.
 - **Эксклюзивы Xray:** [[xray/reality|REALITY]], [[xray/xtls-vision|XTLS-Vision]] (`flow=xtls-rprx-vision`), VLESS encryption (пост-квантовое), XHTTP (splithttp), рабочий XUDP. Ничего из этого в v2ray нет вообще.
-- **Эксклюзивы v2ray:** вторая схема конфига JSONv5 и protobuf-JSON форматы, транспорты QUIC / HTTP-2 / DTLS / domain socket, протоколы Hysteria2 и vlite, платформенные приложения (подписки, REST API, менеджер инстансов, WebRTC).
+- **Эксклюзивы v2ray:** вторая схема конфига JSONv5 и protobuf-JSON форматы, транспорты QUIC / HTTP-2 / DTLS / domain socket, протокол vlite, платформенные приложения (подписки, REST API, менеджер инстансов, WebRTC).
 - **Лицензии разные:** v2ray — MIT, Xray — MPL-2.0. Кросс-импортов между кодовыми базами нет — они полностью развязаны.
 - **Управление:** v2fly — «community edition» с несколькими мейнтейнерами (ведущий — неанонимный Xiaokang Wang / Shelikhoo); Xray центрирован на одном авторе RPRX. Оба проекта живы в 2026 году.
 
@@ -78,13 +78,13 @@ description: "Сравнение ядер v2fly/v2ray-core и XTLS/Xray-core п�
 | QUIC (транспорт) | ✅ `transport/internet/quic` | ❌ |
 | HTTP/2 (h2) транспорт | ✅ `transport/internet/http` | ❌ |
 | DTLS, domain socket, tlsmirror | ✅ | ❌ |
-| Hysteria | ✅ Hysteria **2** (`proxy/hysteria2`) | ✅ Hysteria **1** (`proxy/hysteria`) |
+| Hysteria | ✅ Hysteria **2** (`proxy/hysteria2`) | ✅ Hysteria **2** (`proxy/hysteria`; в код добавлена в январе 2026, версия 2 указана в настройках явно) |
 | vlite | ✅ `proxy/vlite` | ❌ |
 | tun (проксирование через TUN) | ❌ | ✅ `proxy/tun` |
 
-Обратите внимание на строку Hysteria: у ядер она **разных версий** (v2ray — Hysteria2, Xray — Hysteria1), то есть это не «одно и то же».
+Обратите внимание на строку Hysteria: в обоих ядрах это Hysteria **2**, но реализации разные: v2ray держит её в `proxy/hysteria2`, а Xray с января 2026 — в `proxy/hysteria` и в отдельном транспорте `hysteria`, где работают маски Finalmask (Salamander, `udphop`, `realm`). Раньше эта заметка утверждала, что в Xray — Hysteria 1; это было неверно.
 
-Вывод по этому срезу: **весь фирменный антицензурный стек XTLS — REALITY, Vision, VLESS encryption, XHTTP, XUDP — существует только в Xray**. v2ray, наоборот, шире по «классическим» и универсальным транспортам (QUIC, HTTP/2, DTLS, доменные сокеты) и несёт собственные протоколы Hysteria2 и vlite.
+Вывод по этому срезу: **весь фирменный антицензурный стек XTLS — REALITY, Vision, VLESS encryption, XHTTP, XUDP — существует только в Xray**. v2ray, наоборот, шире по «классическим» и универсальным транспортам (QUIC, HTTP/2, DTLS, доменные сокеты) и несёт собственный протокол vlite.
 
 ## Конфигурация: v2ray-платформа против ужатого Xray
 

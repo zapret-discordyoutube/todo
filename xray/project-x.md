@@ -155,11 +155,12 @@ Xray-core — открытый проект на Go, весь код досту�
 | `proxy/proxy.go` | Логика XTLS-Vision: паддинг и обработка вложенного TLS |
 | `transport/internet/reality/` | Интеграция REALITY на стороне ядра (сам протокол — в отдельном репозитории [XTLS/REALITY](https://github.com/XTLS/REALITY)) |
 
-> [!note] Локальная копия для ресёрча — модуль vpnbot
-> В инфраструктуре vpnbot есть собственный управляющий модуль `xray_core` (локально: `G:\Privacy\vpnbot_codex\xray_core`, основной файл `manager.py`, ~2700 строк Python). Важно не путать: это **не исходники ядра Xray**, а обвязка над ним — менеджер, который по SSH управляет установленным на серверах Xray-core: правит файл managed-inbounds (`50_vpnbot_managed_inbounds.json`), валидирует конфиг, перезапускает сервис `vpnbot-xray.service`, ходит в gRPC-API ядра (`127.0.0.1:10085`) и в online-трекер соединений. По части VLESS модуль сам проставляет клиентам flow `xtls-rprx-vision`, когда inbound работает по TCP с security `reality`/`xtls` — то есть в нём видно, как описанные выше технологии применяются в реальной боевой инфраструктуре. Рядом в `vpnbot_codex` лежат и сервисы жизненного цикла VLESS-клиентов (`vless_revocation_service.py`, `vless_state_reconcile_service.py`, `user_vless_fingerprint_manager.py` и др.).
+Полную структуру репозитория (протоколы, транспорты, служебные модули `app`, командную строку) разбирает [[xray-core/components|каталог компонентов Xray-core]], а изменения последних месяцев — [[xray-core/changes-26-11-9|заметка о версии 26.11.9]].
 
 ## 📚 См. также
 
+- [[xray-core/components|Компоненты Xray-core]] — из чего состоит ядро версии 26.11.9
+- [[xray-core/changes-26-11-9|Что нового в Xray-core 26.11.9]] — разница с предыдущей стабильной версией 26.3.27
 - [[xray/v2fly-vs-xray|v2fly vs Xray]] — сравнение Xray-core с родительским v2ray-core по коду: что общего от форка, что разошлось
 - [[xray/authors-v2ray-xray|Кто стоит за V2Ray и Xray]] — авторы (RPRX, Victoria/Darien Raymond), разбор мифов о личности, «исчезновение» 2019
 - [[xray/vless|Протокол VLESS]] — подробное устройство и возможности протокола
