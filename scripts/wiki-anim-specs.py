@@ -177,11 +177,11 @@ def register(FIGS, hub, wrapped, B):
         "mtproxy/attachments"))
 
     add("vless-encryption-layers", "xray/attachments", lambda: chain(
-        "vless-encryption-layers", "VLESS Encryption — ещё один слой поверх открытого соединения",
-        "Приложение со своим TLS до сайта передаёт данные протоколу VLESS (версия, UUID, адрес назначения), затем идёт новый слой VLESS Encryption, который шифрует всё, что выше, "
-        "потом транспорт и слой безопасности.",
-        [("приложение", "браузер, его собственный TLS до сайта"), ("протокол VLESS", "версия, UUID, адрес назначения"), ("VLESS Encryption", "новый слой: шифрует всё, что выше"),
-         ("транспорт", "RAW TCP, XHTTP, WebSocket, gRPC, mKCP"), ("слой безопасности", "TLS, REALITY или none")],
+        "vless-encryption-layers", "VLESS Encryption — шифрование внутри протокола VLESS",
+        "Приложение со своим TLS до сайта передаёт данные протоколу VLESS. Поле encryption включает собственное шифрование протокола: оно закрывает и заголовок VLESS (версия, UUID, адрес назначения), "
+        "и данные ещё до того, как они попадут в транспорт и слой безопасности.",
+        [("приложение", "браузер, его собственный TLS до сайта"), ("протокол VLESS", "заголовок: версия, UUID, адрес назначения"), ("поле encryption", "шифрует заголовок и данные внутри протокола"),
+         ("транспорт", "поле method: raw, xhttp, ws, grpc, kcp и другие"), ("слой безопасности", "поле security: tls, reality или none")],
         "xray/attachments", vertical=True, accent=(2,)))
 
     add("xray-lineage", "xray/attachments", lambda: chain(
