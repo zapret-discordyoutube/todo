@@ -12,12 +12,15 @@ aliases:
   - VLESS wire format
   - Формат протокола VLESS
 description: "Протокол VLESS в Xray-core 26.11.9 по исходному коду: зачем он нужен, как соединение проходит через ядро, байты заголовка, UUID, команды TCP, UDP, Mux и Rvs, flow, fallbacks, XUDP, обратный прокси, шифрование, с чем он работает и где используется."
+image: xray-core/attachments/vless-protocol-cover.jpg
 ---
 
 > [!mirror] Резервное зеркало
 > Актуальная версия этой страницы — на основной вики: [rsewozdgoy.fuckingspeedtest.com/xray-core/vless-protocol](https://rsewozdgoy.fuckingspeedtest.com/xray-core/vless-protocol)
 
 # 🔷 Протокол VLESS в ядре Xray-core: по исходному коду
+
+![[vless-protocol-cover.jpg]]
 
 > [!info] О чём заметка
 > Полный разбор **протокола VLESS**, каким он реализован в официальном ядре [XTLS/Xray-core](https://github.com/XTLS/Xray-core) версии **26.11.9** (тег от 9 ноября 2026). Всё ниже сверено с каталогом `proxy/vless/` и соседними пакетами на этом теге. Заметка самодостаточна: все термины объясняются по ходу, другие статьи для чтения не нужны.
