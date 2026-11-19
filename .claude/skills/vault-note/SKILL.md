@@ -327,7 +327,7 @@ callout-а** одной длинной строкой; перенос на эк�
 
 ## Инвентаризация и публикация vault
 
-Сайт `https://wiki2.zapret.moe` (self-hosted Quartz 4) собирается из этого vault автоматически при каждом локальном коммите (systemd-юнит `wiki-rebuild.path` на хосте). Поэтому «опубликовано на сайте» = «закоммичено», а «опубликовано в Forgejo» = «запушено» — уточняй канал, если состояние расходится. Третий канал — зеркало на Obsidian Publish (`https://publish.obsidian.md/zapret`): оно **не** обновляется автоматически, туда нужно отдельно заливать изменения через Obsidian CLI (см. ниже). «Опубликовать» без уточнения = все три канала: коммит, push и `publish:add changed`.
+Сайт `https://wiki2.zapret.moe` (self-hosted Quartz 4) собирается из этого vault автоматически после каждого push в `main` (клон vault в CT 204 на US2-7 подтягивает `wiki-autopull` раз в минуту, затем срабатывает `wiki-rebuild.path`). Поэтому «опубликовано на сайте» = «запушено» (с задержкой до минуты), а один локальный коммит на сайт не попадает — уточняй канал, если состояние расходится. Третий канал — зеркало на Obsidian Publish (`https://publish.obsidian.md/zapretwiki`): оно **не** обновляется автоматически, туда нужно отдельно заливать изменения через Obsidian CLI (см. ниже). «Опубликовать» без уточнения = все три канала: коммит, push и `publish:add changed`.
 
 **Готовую новую статью публикуй сам, без вопроса «публиковать?»** (решение владелицы от 7 октября 2026): коммит только своих файлов в `main`, push, затем зеркало. Если в рабочем дереве есть чужие незакоммиченные правки или черновики, вместо `publish:add changed` заливай свои файлы по одному: `obsidian publish:add path=<путь>` для заметки, каждого её вложения и каждой затронутой соседней заметки — `changed` берёт файлы с диска и выгрузит чужое.
 
@@ -366,7 +366,7 @@ callout-а** одной длинной строкой; перенос на эк�
 
 ### Публикация в Obsidian Publish (зеркало)
 
-Второе зеркало вики — `https://publish.obsidian.md/zapret` (Obsidian Publish, siteId в `.obsidian/publish.json`). Публикуется через официальный Obsidian CLI: команда `obsidian` (обёртка `~/.local/bin/obsidian` → `/opt/Obsidian/obsidian-cli`) работает только при запущенном приложении — на этом хосте Obsidian постоянно крутится headless под `xvfb-run`.
+Второе зеркало вики — `https://publish.obsidian.md/zapretwiki` (Obsidian Publish, siteId в `.obsidian/publish.json`). **Slug `zapretwiki` с 19 ноября 2026, не `zapret`:** при slug `zapret` каждая прямая ссылка на страницу (`/zapret/<путь>`) перенаправлялась на `publish.obsidian.md/404`, хотя корень `/zapret` и навигация внутри сайта работали, а тот же сайт под другим slug открывался нормально (проверено и на старом сайте первого аккаунта, и на новом сайте второго, созданном 15 ноября). Обычный браузер мог показывать страницу из кэша, поэтому проверяй зеркало в приватном окне; ответ 200 у `curl` ничего не доказывает, потому что Publish отдаёт 200 на любой путь живого сайта. Публикуется через официальный Obsidian CLI: команда `obsidian` (обёртка `~/.local/bin/obsidian` → `/opt/Obsidian/obsidian-cli`) работает только при запущенном приложении — на этом хосте Obsidian постоянно крутится headless под `xvfb-run`.
 
 Порядок после коммита и пуша:
 
@@ -402,10 +402,10 @@ API options **перезаписывает объект целиком** — п�
 
 Прочие поддерживаемые ключи (в скобках — заводское значение): `logo` ("" — логотип в шапке), `googleAnalytics` (""), `navigationOrdering` ([]), `navigationHiddenItems` ([]); `defaultTheme` также принимает `light` и `system`; `slidingWindowMode` — режим «скользящих панелей», когда заметки открываются горизонтальным стеком рядом друг с другом, а не заменяют страницу. Отдельными API управляются пароль сайта (`apiGetPassword`/`apiAddPassword`/`apiDelPassword`), кастомный домен (`apiCustomUrl`) и slug (`publish.obsidian.md/api/slug`).
 
-**Восстановление сайта после истечения подписки.** Когда тариф Publish истекает, Obsidian удаляет сайт целиком: `publish:*` отвечают `Error: Site not found.`, `publish.obsidian.md/zapret` отдаёт 404, slug освобождается. После продления сайт сам не возвращается (так было 7 октября 2026). CLI создать сайт не умеет, UI-модалка в headless недоступна — всё делается из `obsidian eval` теми же запросами, что шлёт приложение (POST, JSON, токен — `JSON.parse(localStorage.getItem('obsidian-account')).token`, не выводить его в лог):
+**Восстановление сайта после истечения подписки.** Когда тариф Publish истекает, Obsidian удаляет сайт целиком: `publish:*` отвечают `Error: Site not found.`, `publish.obsidian.md/<slug>` отдаёт 404, slug освобождается. После продления сайт сам не возвращается (так было 7 октября 2026). CLI создать сайт не умеет, UI-модалка в headless недоступна — всё делается из `obsidian eval` теми же запросами, что шлёт приложение (POST, JSON, токен — `JSON.parse(localStorage.getItem('obsidian-account')).token`, не выводить его в лог):
 
-- `https://api.obsidian.md/publish/list` `{token}` — убедиться, что `sites` пуст; `https://publish.obsidian.md/api/site` `{token, slug:'zapret'}` — `NOTFOUND` значит slug свободен;
-- `https://api.obsidian.md/publish/create` `{token}` → `{id, host}`; затем `https://publish.obsidian.md/api/slug` `{token, id, host, slug:'zapret'}`;
+- `https://api.obsidian.md/publish/list` `{token}` — убедиться, что `sites` пуст; `https://publish.obsidian.md/api/site` `{token, slug:'zapretwiki'}` — `NOTFOUND` значит slug свободен (имя `zapret` не используй: на нём прямые ссылки отдают 404);
+- `https://api.obsidian.md/publish/create` `{token}` → `{id, host}`; затем `https://publish.obsidian.md/api/slug` `{token, id, host, slug:'zapretwiki'}`;
 - `app.internalPlugins.plugins.publish.instance.setup(id, host)` — записывает новый siteId в `.obsidian/publish.json`, `excluded` при этом сохраняется;
 - `apiOptions({...})` с полным набором настроек выше, затем `obsidian publish:add changed` (около 700 файлов, пара минут).
 
