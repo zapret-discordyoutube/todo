@@ -28,7 +28,7 @@ description: "Протокол AnyTLS против детекта «TLS внут
 - **Ответ AnyTLS**: настраиваемая **схема набивки** (padding), которая меняет размеры записей на уровне открытого текста до шифрования, плюс **мультиплексирование** нескольких потоков в одном TLS-соединении и **пул готовых сессий**, чтобы не создавать новое соединение на каждый запрос.
 - Набивка по умолчанию описана явно: первая порция фиксирована в 30 байт, дальше идут ступени 100–400 и 400–500 байт до восьмого уровня. Схему можно переопределить своей.
 - AnyTLS **не прикрывается чужим сайтом**: ему нужны свой домен и сертификат, как [[protocols/trojan|Trojan]], а не как [[xray/reality|REALITY]].
-- Поддерживается [[sing-box/sing-box-extended|sing-box]] и [[Clash/02-mihomo|mihomo]] (и как исходящий, и как входящий), в Xray-core обсуждался, но своей реализации там нет.
+- Поддерживается [[sing-box/sing-box-extended|sing-box]] и [[Clash/02-mihomo|mihomo]] (и как исходящий, и как входящий), в Xray-core обсуждался, но своей реализации там нет. В ZapretKVN для Windows он доступен через вшитый sing-box, но добавляется вставкой JSON, а не ссылкой (раздел «AnyTLS в ZapretKVN для Windows»).
 - Проект молодой: протокол дорос до второй версии в 2025 году, оценки эффективности пока предварительные — закладываться на него как на «серебряную пулю» рано.
 
 ## Проблема: почему «TLS внутри TLS» видно
@@ -71,6 +71,15 @@ description: "Протокол AnyTLS против детекта «TLS внут
 Реализации: эталонная **anytls-go**, а также порты на Rust. Из ядер AnyTLS поддерживают [[sing-box/sing-box-extended|sing-box]] и [[Clash/02-mihomo|mihomo]] — в последнем и как исходящее подключение, и как слушатель (то есть mihomo может быть сервером AnyTLS). В [[xray/project-x|Xray-core]] протокол обсуждался в issue-трекере, но собственной реализации нет — это как раз тот случай, когда список поддержки протоколов определяет выбор ядра.
 
 Настройка со стороны клиента минимальна: адрес, порт, пароль, домен для TLS и, при желании, своя схема набивки. Именно последнее отличает AnyTLS от большинства протоколов: **параметр маскировки вынесен в конфиг**, и его можно менять, не меняя протокол.
+
+### AnyTLS в ZapretKVN для Windows
+
+В ZapretKVN для Windows AnyTLS работает через вшитый sing-box: все протоколы, кроме VLESS, VMess, Trojan (их ведёт Xray), Hysteria 2 и WireGuard/AmneziaWG, приложение отдаёт sing-box. Это форк `shtorm-7/sing-box-extended`, по состоянию на коммит `bac62d3` приложения (21 ноября 2026 года) закреплена версия `v1.14.3-extended-2.7.3` ([core-release-freeze.json](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/core-release-freeze.json)). Исходящее подключение AnyTLS в sing-box есть с версии 1.12.0, отдельный тег сборки [документация](https://sing-box.sagernet.org/configuration/outbound/anytls/) не называет. В приложении AnyTLS учтён отдельно: у него есть настройка «Фрагментация TLS (AnyTLS, HTTP, ShadowTLS)», помеченная как эксперимент ([masking/singbox.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/xray_fluent/masking/singbox.py)), а разбор узла и сборка конфигурации покрыты тестами ([test_singbox_protocols.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/tests/test_singbox_protocols.py)).
+
+Узел добавляется вставкой (Ctrl+V) фрагмента настроек sing-box вида `{"type": "anytls", "server": ..., "server_port": ..., "password": ..., "tls": {"enabled": true}}`. Готовой ссылки `anytls://` в списке схем приложения нет ([subscription_parser.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/xray_fluent/importer/subscription_parser.py)). Через подписку в виде JSON такой узел тоже не придёт: фильтр пропускает только типы `vless`, `vmess`, `trojan`, `shadowsocks`, `socks`, `http`, `hysteria`, `hysteria2`, `tuic`, `wireguard` и отбрасывает остальные с предупреждением «неподдерживаемый sing-box type». Ручная вставка одиночного JSON идёт другим путём ([link_parser.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/xray_fluent/importer/link_parser.py)) и тип не фильтрует.
+
+> [!warning] Что не проверено
+> Это выводы из исходников и тестов приложения, живой запуск не делался. На Android-клиент вывод не распространяется: у него другое ядро, и его сборка не разбиралась.
 
 ## 📚 См. также
 
