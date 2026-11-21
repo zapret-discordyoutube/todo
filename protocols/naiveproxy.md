@@ -28,7 +28,7 @@ description: "NaiveProxy — прокси на сетевом стеке Chromiu
 - Транспорт — **туннель HTTP/2 (или HTTP/3) CONNECT** внутри обычного TLS-соединения к веб-серверу. Со стороны это выглядит как визит на сайт с постоянным соединением.
 - Защита от активного зондирования сделана **фронтингом приложения**: фронтенд-сервер (обычно Caddy с плагином forwardproxy) маршрутизирует запрос по заголовку авторизации — без верных данных посетитель получает обычный сайт.
 - **Набивка первых восьми чтений и записей** случайными 0–255 байтами сглаживает распределение длин пакетов; дальше трафик идёт без набивки ради скорости.
-- Поддержка в ядрах ограничена: **есть в [[sing-box/sing-box-extended|sing-box]]** (и входящий, и исходящий), **нет в [[Clash/02-mihomo|mihomo]] и [[xray/project-x|Xray-core]]**. Это тот случай, когда протокол диктует выбор ядра.
+- Поддержка в ядрах ограничена: **есть в [[sing-box/sing-box-extended|sing-box]]** (и входящий, и исходящий), **нет в [[Clash/02-mihomo|mihomo]] и [[xray/project-x|Xray-core]]**. Это тот случай, когда протокол диктует выбор ядра. В ZapretKVN для Windows он работает через вшитый sing-box, но добавляется только вставкой JSON, а не ссылкой (раздел «NaiveProxy в ZapretKVN для Windows»).
 - Цена подхода — вес и негибкость: клиент тянет за собой кусок Chromium, а сервер требует отдельной связки с веб-сервером.
 
 ## Логика: не имитировать браузер, а быть им
@@ -80,6 +80,15 @@ NaiveProxy — самый наглядный пример того, что **с�
 | [[xray/project-x\|Xray-core]] | Нет |
 
 Иначе говоря, если сервер выдаёт вам naive, вопрос «какое ядро удобнее» не стоит: подойдёт то, где протокол реализован. Никакие достоинства маршрутизации в mihomo этого не компенсируют. Подробнее логика выбора ядра — в [[Clash/08-vs-sing-box|сравнении mihomo, sing-box и Xray]].
+
+### NaiveProxy в ZapretKVN для Windows
+
+В ZapretKVN для Windows NaiveProxy работает через вшитый sing-box: все протоколы, кроме VLESS, VMess, Trojan (их ведёт Xray), Hysteria 2 и WireGuard/AmneziaWG, приложение отдаёт sing-box. Это не стандартный sing-box, а форк `shtorm-7/sing-box-extended`. По состоянию на коммит `bac62d3` приложения (21 ноября 2026 года) закреплена версия `v1.14.3-extended-2.7.3` ([core-release-freeze.json](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/core-release-freeze.json)). Исходящее подключение naive в sing-box есть с версии 1.13.0, на Windows оно требует `libcronet.dll` рядом с `sing-box.exe` ([документация sing-box](https://sing-box.sagernet.org/configuration/outbound/naive/)). Обе зависимости в сборке приложения выполнены: в списке тегов сборки есть `with_naive_outbound` ([meta.json](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/assets/sing-box-schema/meta.json)), а `libcronet.dll` берётся из архива релиза ядра ([core-lock.windows-x64.json](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/scripts/core-lock.windows-x64.json)). Значит, само ядро NaiveProxy исполнять умеет.
+
+Узел добавляется не готовой ссылкой, а вставкой (Ctrl+V) фрагмента настроек sing-box вида `{"type": "naive", ...}`. В списке известных схем ссылок приложения naive нет: `vless`, `vmess`, `trojan`, `ss`, `hysteria`, `hysteria2`, `hy2`, `tuic`, `socks`, `http` ([subscription_parser.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/xray_fluent/importer/subscription_parser.py)). Через подписку в виде JSON naive-узел тоже не придёт: фильтр пропускает только типы `vless`, `vmess`, `trojan`, `shadowsocks`, `socks`, `http`, `hysteria`, `hysteria2`, `tuic`, `wireguard`, а остальные отбрасывает с предупреждением «неподдерживаемый sing-box type». Ручная вставка одиночного JSON идёт другим путём ([link_parser.py](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/xray_fluent/importer/link_parser.py)) и тип не фильтрует. В документации приложения naive прямо названа среди протоколов, которые подключаются сырым JSON ([docs/README.md](https://cwdnvtsqdc.zapret.moe/zapretkvn/zapret-kvn/src/commit/bac62d3/docs/README.md)).
+
+> [!warning] Что не проверено
+> Это выводы из исходников: запуск naive-узла в приложении не проверялся, а в тестах приложения проверок для naive нет (для AnyTLS они есть). Проверка узла при импорте для naive ничего не требует, поэтому вставка JSON без `server`, `server_port` или учётных данных импорт пройдёт и упадёт только при запуске ядра. На Android-клиент вывод не распространяется: у него другое ядро, и его сборка не разбиралась.
 
 Отдельно существует и **оригинальный клиент** `naiveproxy` от автора — если ядро протокол не поддерживает, можно запускать его рядом и подключать к нему остальной софт через локальный порт. Это рабочий, но менее удобный вариант: маршрутизацией и правилами такой связке придётся управлять отдельно.
 
