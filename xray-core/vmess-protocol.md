@@ -19,12 +19,15 @@ aliases:
   - invalid user VMess ошибка
   - unknown security type VMess
 description: "Как устроен VMess в Xray-core 26.11.9: история от Shadowsocks до VLESS, заголовок и шифрование по байтам, защита от проб, где используют и как опознают."
+image: xray-core/attachments/vmess-protocol-cover.jpg
 ---
 
 > [!mirror] Резервное зеркало
 > Актуальная версия этой страницы — на основной вики: [rsewozdgoy.fuckingspeedtest.com/xray-core/vmess-protocol](https://rsewozdgoy.fuckingspeedtest.com/xray-core/vmess-protocol)
 
 # 🔶 Протокол VMess в ядре Xray-core: по исходному коду
+
+![[vmess-protocol-cover.jpg]]
 
 > [!info] О чём заметка
 > Полный разбор **протокола VMess**, каким он реализован в официальном ядре [XTLS/Xray-core](https://github.com/XTLS/Xray-core) версии **26.11.9** (тег от 9 ноября 2026). Статья идёт с нуля: сначала задача, которую решает любой прокси-протокол, потом история (откуда взялся VMess, при чём тут Shadowsocks и почему появился VLESS), потом устройство по байтам, путь соединения через ядро, защита от зондирования, использование и обнаружение. Всё о коде сверено с каталогом `proxy/vmess/` и соседними пакетами на этом теге.
