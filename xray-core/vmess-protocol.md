@@ -85,6 +85,25 @@ description: "Как устроен VMess в Xray-core 26.11.9: история �
 
 **Ответ вычисляется из запроса.** Сервер выводит ключи ответа хешем SHA-256 от ключа и вектора запроса, поэтому заранее договариваться о них не нужно. Он возвращает короткий зашифрованный заголовок (внутри — один случайный байт, который клиент выбрал в запросе, как подтверждение) и затем зашифрованные чанки.
 
+Всё вместе на одной схеме: кто кому что отправляет и в каком порядке.
+
+```mermaid
+sequenceDiagram
+    participant C as Клиент
+    participant S as Сервер
+    participant W as Сайт example.com
+    C->>S: метка auth ID: время, случайные байты, CRC32
+    C->>S: зашифрованные длина и заголовок: адрес и ключи данных
+    C->>S: первые данные чанком, вместе с заголовком
+    Note over S: опознаёт пользователя по метке, проверяет время и повтор
+    S->>W: обычное TCP-соединение к example.com:443
+    W-->>S: первые данные сайта
+    S-->>C: заголовок ответа и данные чанками
+    C->>S: следующие чанки данных
+    S->>W: расшифрованные данные
+    Note over C,S: конец потока обозначается пустым чанком
+```
+
 Вот почему VMess называют протоколом «со своим шифрованием»: в нём работает полный набор из шести свойств, и ему не нужен слой TLS под собой, чтобы скрыть содержимое. А вот чего у VMess нет: прямой связи с настоящим сайтом. Сервер, получив неверную метку, не может «прикинуться» веб-сервером; об этом подробно в разделе «Что делает сервер с плохим заголовком».
 
 ## Откуда взялся VMess
@@ -147,6 +166,9 @@ description: "Как устроен VMess в Xray-core 26.11.9: история �
 
 ### Линия времени
 
+![[vmess-timeline.png]]
+*Хронология по эпохам; подробная таблица с источниками — ниже.*
+
 | Дата | Событие | Проверка |
 |---|---|---|
 | 20 апреля 2012 | Первый коммит Shadowsocks (clowwindy) | git |
@@ -200,6 +222,9 @@ flowchart TD
     TROJAN -.-> ANY["AnyTLS<br/>2025"]
     TROJAN -.-> NAIVE["NaiveProxy<br/>2019"]
 ```
+
+![[vmess-family-tree.png]]
+*Вся ветка протоколов: четыре линии развития с датами и причинами появления каждого звена.*
 
 ### Слабость и ответ: почему появлялся каждый следующий протокол
 
@@ -386,6 +411,9 @@ flowchart LR
     SOUT --> TARGET["example.com:443"]
 ```
 
+![[vmess-connection-path.png]]
+*Путь одного запроса: клиент, сеть, сервер, сайт; что видит наблюдатель и что происходит с неопознанным соединением.*
+
 Что происходит в этом примере:
 
 1. Браузер подключается к входящему `socks` клиента. Входящее определяет, к какому адресу и порту хочет приложение (`example.com:443`).
@@ -421,6 +449,9 @@ flowchart LR
 
 Это главный раздел статьи. Он идёт в том порядке, в котором клиент собирает запрос; все размеры проверены по коду `proxy/vmess/aead/` и `proxy/vmess/encoding/`. Все числа длиннее одного байта записываются в сетевом порядке (big-endian): старший байт идёт первым. Например, число 4660 (`0x1234`) в сети выглядит как байты `12 34`, а не `34 12`. («По проводу» и «на проводе» ниже значит «в том виде, в каком байты идут по сети».)
 
+![[vmess-request-layout.png]]
+*Начало запроса VMess на проводе и размеры полей для домена example.com.*
+
 ### Ключ команд и вывод ключей
 
 Ключ команд (`cmdKey`) получают так: к 16 байтам UUID (именно к байтам, не к тексту) дописывают ASCII-строку `c48619fe-8f02-49e0-b9e9-edf763e17e21`, и от результата берут MD5 (`common/protocol/id.go`). Эту же строку-соль использовала самая первая версия VMess в 2015 году.
@@ -440,6 +471,9 @@ flowchart LR
 > Тестовых векторов (эталонных пар «вход — выход») для KDF в репозитории нет: тесты в `aead/*_test.go` лишь шифруют и расшифровывают круг. Описание вложенности следует тексту `kdf.go`; побайтовое совпадение с результатом работы ядра не пересчитывалось, а Go-тулчейна для запуска при проверке не было.
 
 **Nonce** (число для одного раза, см. раздел о задаче протокола) VMess получает из KDF от данных, уникальных для каждого соединения.
+
+![[vmess-key-derivation.png]]
+*Из одного UUID выводятся ключи для метки, длины и заголовка: цепочка HMAC-SHA256 с разными метками.*
 
 ### Auth ID: 16 байт «кто и когда»
 
@@ -634,6 +668,9 @@ Auth ID строится в `aead/authid.go`. До шифрования это 1
 ## Что делает сервер с плохим заголовком
 
 Если сервер на неверный заголовок отвечает как-то по-особому, активная проба (см. раздел о задаче протокола) его опознает. Поэтому реакция на плохой заголовок — часть дизайна. В 26.11.9 она устроена так (все номера — `proxy/vmess/inbound/inbound.go` и `encoding/server.go`).
+
+![[vmess-bad-header.png]]
+*Реакция сервера на плохой заголовок: все причины отказа ведут в одну ветку, ответа нет.*
 
 1. **Срок на рукопожатие.** Перед разбором сервер ставит срок чтения, по умолчанию 60 секунд (политика уровня 0; значение выровнено с `client_header_timeout` в nginx). Срок снимается только после успешного разбора.
 2. **Сначала 16 байт.** Сервер читает ровно 16 байт auth ID. Если ничего не приходит, соединение висит до 60 секунд; если пришло меньше 16 байт и сторона закрыла соединение, сразу ошибка «failed to read request header» (дренажа нет; если не пришло ни одного байта и это чистый конец потока, записи `rejected` в журнале доступа нет; если пришло от 1 до 15 байт, ошибка — «unexpected EOF», и запись `rejected` появляется).
@@ -923,6 +960,92 @@ VMess по-прежнему поддерживают четыре рассмот
 | `VMess vnext: "users" should have one and only one member…` | Запуск клиента | В записи `vnext` не ровно один пользователь (несколько или пустой список) |
 | `The feature VMess (with no Forward Secrecy, etc.) is deprecated…` | Запуск, любая сторона | Предупреждение, не ошибка |
 
+## Попробовать самому: учебный скрипт
+
+Чтобы увидеть формат своими глазами, ниже короткий скрипт на Python (нужен пакет `cryptography`). Он собирает начало запроса VMessAEAD для заданных UUID, домена и порта: ключ команд, метку auth ID, зашифрованные длину и заголовок. Это учебная модель, не клиент: она не отправляет ничего в сеть.
+
+```python
+#!/usr/bin/env python3
+"""Учебная модель начала запроса VMessAEAD, как её собирает Xray-core 26.11.9.
+Нужен пакет cryptography. Запуск: python3 vmess_demo.py <UUID> <домен> <порт>"""
+import hashlib, hmac, os, struct, sys, time, zlib
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+SALT = b"c48619fe-8f02-49e0-b9e9-edf763e17e21"   # соль для ключа команд
+
+
+def hmac_over(prev, key):
+    """HMAC-SHA256, где вместо SHA-256 стоит прежний «хеш» prev (блок 64 байта)."""
+    key = key.ljust(64, b"\0")
+    return lambda m: prev(bytes(b ^ 0x5C for b in key) + prev(bytes(b ^ 0x36 for b in key) + m))
+
+
+def kdf(key, *path):
+    """Вложенный HMAC: корень «VMess AEAD KDF», каждый элемент path — ещё один слой."""
+    h = lambda m: hmac.new(b"VMess AEAD KDF", m, hashlib.sha256).digest()
+    for p in path:
+        h = hmac_over(h, p)
+    return h(key)
+
+
+def fnv1a32(data):
+    x = 0x811C9DC5
+    for b in data:
+        x = ((x ^ b) * 0x01000193) & 0xFFFFFFFF
+    return x
+
+
+def build_request(user_uuid, host, port):
+    cmd_key = hashlib.md5(bytes.fromhex(user_uuid.replace("-", "")) + SALT).digest()
+
+    # Внутренний заголовок: что именно клиент просит у сервера.
+    body_iv, body_key = os.urandom(16), os.urandom(16)
+    pad = os.urandom(os.urandom(1)[0] % 16)                 # набивка 0–15 байт
+    name = host.encode()
+    inner = (bytes([1]) + body_iv + body_key              # версия, IV и ключ данных
+             + bytes([os.urandom(1)[0]])                   # V: проверочный байт ответа
+             + bytes([0x05])                               # Opt: чанки + маскирование длины
+             + bytes([len(pad) << 4 | 3])                  # набивка и шифр 3 = AES-128-GCM
+             + bytes([0, 1])                               # резерв, команда 1 = TCP
+             + struct.pack(">H", port)                     # порт идёт раньше адреса
+             + bytes([2, len(name)]) + name                # тип 2 = домен
+             + pad)
+    inner += struct.pack(">I", fnv1a32(inner))              # контрольная сумма FNV-1a
+
+    # Метка «кто и когда»: время, 4 случайных байта, CRC32, один блок AES-128.
+    raw = struct.pack(">q", int(time.time())) + os.urandom(4)
+    raw += struct.pack(">I", zlib.crc32(raw))
+    enc = Cipher(algorithms.AES(kdf(cmd_key, b"AES Auth ID Encryption")[:16]), modes.ECB()).encryptor()
+    auth_id = enc.update(raw) + enc.finalize()
+
+    nonce = os.urandom(8)                                   # nonce соединения
+    def seal(key_salt, iv_salt, data):
+        key = kdf(cmd_key, key_salt, auth_id, nonce)[:16]
+        iv = kdf(cmd_key, iv_salt, auth_id, nonce)[:12]
+        return AESGCM(key).encrypt(iv, data, auth_id)       # auth_id идёт как AAD
+    enc_len = seal(b"VMess Header AEAD Key_Length", b"VMess Header AEAD Nonce_Length",
+                   struct.pack(">H", len(inner)))
+    enc_hdr = seal(b"VMess Header AEAD Key", b"VMess Header AEAD Nonce", inner)
+    return auth_id + enc_len + nonce + enc_hdr
+
+
+if __name__ == "__main__":
+    uuid_, host, port = sys.argv[1], sys.argv[2], int(sys.argv[3])
+    req = build_request(uuid_, host, port)
+    print(len(req), "байт:", "16 + 18 + 8 +", len(req) - 42)
+    print(req.hex())
+```
+
+Запуск и вывод для примера из статьи (UUID из примера, `example.com`, порт 443; число байт каждый раз немного разное из-за случайной набивки):
+
+```text
+$ python3 vmess_demo.py b831381d-6324-4d53-ad4f-8cda48b30811 example.com 443
+116 байт: 16 + 18 + 8 + 74
+```
+
+**Как проверено.** Скрипт сверялся с настоящим кодом: запрос, собранный им, подали на вход функциям `NewAuthIDDecoder` и `OpenVMessAEADHeader` из пакета `proxy/vmess/aead` тега v26.11.9. Метка разобралась (время совпало с текущим), заголовок расшифровался без ошибки и содержал именно те поля, что собрал скрипт: версию 1, команду TCP, порт 443 и домен `example.com`. Выводы ключей (`cmdKey`, `KDF16` и многослойный `KDF`) совпали с Go-реализацией побайтно. Размер запроса для домена `example.com` по скрипту получается от 115 до 130 байт, как и в таблице раздела «Формат запроса».
+
 ## Где это в коде
 
 Пакет `proxy/vmess/` на теге v26.11.9:
@@ -937,6 +1060,49 @@ VMess по-прежнему поддерживают четыре рассмот
 | `inbound/`, `outbound/` | Обработчики сервера и клиента, прото-описания настроек. |
 
 Рядом лежат: JSON-конфигурация в `infra/conf/vmess.go`, команды, опции и вывод ключа команд в `common/protocol/{headers.go,id.go}`, разбор UUID в `common/uuid/uuid.go`, AEAD-чанки в `common/crypto/{auth.go,chunk.go}`, дренаж в `common/drain/drainer.go`, фильтр повторов в `common/antireplay/`, Mux в `common/mux/`, XUDP в `common/xudp/`, регистрация протокола в `main/distro/all/all.go`.
+
+### Два ключевых куска кода
+
+Вывод ключей (`proxy/vmess/aead/kdf.go`, тег v26.11.9): каждый элемент `path` оборачивает предыдущий HMAC ещё одним HMAC. Обёртка `hash2` нужна только затем, чтобы стандартная библиотека Go не отвергла «одинаковые» хеши (внутренний и внешний слой используют один и тот же объект).
+
+```go
+func KDF(key []byte, path ...string) []byte {
+	hmacf := hmac.New(sha256.New, []byte(KDFSaltConstVMessAEADKDF))
+
+	for _, v := range path {
+		first := true
+		hmacf = hmac.New(func() hash.Hash {
+			if first {
+				first = false
+				return hash2{hmacf}
+			}
+			return hmacf
+		}, []byte(v))
+	}
+	hmacf.Write(key)
+	return hmacf.Sum(nil)
+}
+```
+
+Построение метки auth ID (`proxy/vmess/aead/authid.go`): 8 байт времени, 4 случайных байта и CRC32 по этим 12 байтам, всё это шифруется одним блоком AES-128 на ключе, выведенном из ключа команд.
+
+```go
+func CreateAuthID(cmdKey []byte, time int64) [16]byte {
+	buf := bytes.NewBuffer(nil)
+	common.Must(binary.Write(buf, binary.BigEndian, time))
+	var zero uint32
+	common.Must2(io.CopyN(buf, rand3.Reader, 4))
+	zero = crc32.ChecksumIEEE(buf.Bytes())
+	common.Must(binary.Write(buf, binary.BigEndian, zero))
+	aesBlock := NewCipherFromKey(cmdKey)
+	if buf.Len() != 16 {
+		panic("Size unexpected")
+	}
+	var result [16]byte
+	aesBlock.Encrypt(result[:], buf.Bytes())
+	return result
+}
+```
 
 ## Откуда брать
 
