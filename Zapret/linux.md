@@ -6,6 +6,9 @@ description: "Установка Zapret на Linux пятью способами
 > Актуальная версия этой страницы — на основной вики: [wiki2.zapret.moe/Zapret/linux](https://wiki2.zapret.moe/Zapret/linux)
 
 # Установка Zapret на linux
+
+> [!tip] Есть версия с окном
+> Для Linux есть и обычное окно программы, как в Windows: пакет `.deb` или один файл AppImage. Установка и отличия от Windows — в заметке [[Zapret/zapret-linux-gui|Zapret 2 GUI на Linux]]. Ниже — консольные способы без окна.
 Всего существует несколько основных способов (в данном документе представлено 4):
 
 ## Способ 1. <a target="_blank" href="https://github.com/ImMALWARE/zapret-linux-easy">Однокнопочный zapret для Linux</a>

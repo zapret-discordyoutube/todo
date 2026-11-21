@@ -1,6 +1,5 @@
 ---
 date: 2026-11-15
-publish: false
 tags:
   - zapret
   - zapret-gui
@@ -15,15 +14,15 @@ description: "Zapret 2 GUI на Linux: установка пакета .deb ил
 ---
 
 > [!mirror] Резервное зеркало
-> Актуальная версия этой страницы — на основной вики: [jvsymvhifd.fuckingspeedtest.com/Zapret/zapret-linux-gui](https://jvsymvhifd.fuckingspeedtest.com/Zapret/zapret-linux-gui)
+> Актуальная версия этой страницы — на основной вики: [lqjlgfmldl.zapret.moe/Zapret/zapret-linux-gui](https://lqjlgfmldl.zapret.moe/Zapret/zapret-linux-gui)
 
 # 🐧 Zapret 2 GUI на Linux: установка, первый запуск и отличия от Windows
 
 > [!info] О чём заметка
 > Для Linux есть то же окно программы [[Zapret/home|Zapret 2 GUI]], что и в Windows: пресеты, стратегии, проверка блокировок, DNS и редактор hosts. Заметка рассказывает, как его поставить (пакет `.deb` или один файл AppImage), что происходит при первом запуске и что в Linux устроено иначе. Установка старых консольных скриптов описана в отдельной заметке [[Zapret/linux|Установка Zapret на Linux]].
 
-> [!warning] Статус: черновик
-> Страница скрыта до выхода первого выпуска с файлами для Linux. Скриншоты сняты 16 ноября 2026 на настоящем рабочем столе Debian 13 с KDE Plasma 6 (X11), версия программы 21.1.7.221.
+> [!warning] Пока только в Dev-сборках
+> Файлы для Linux выходят вместе с Dev-сборками (первая — 21.1.7.296) и лежат рядом с установщиком для Windows: на [странице выпусков](https://iianajhlkh.zapret.moe/zapretdiscordyoutube/zapretgui/releases) (отметка «Предварительный выпуск») и в [Telegram-канале Dev](https://t.me/zapretguidev). В стабильных выпусках файлов для Linux пока нет. Скриншоты сняты на настоящем рабочем столе Debian 13 с KDE Plasma 6 (X11), версия программы 21.1.7.221; с тех пор изменились значок и список режимов, о чём сказано в тексте ниже.
 
 ## TL;DR
 
@@ -41,7 +40,7 @@ Zapret перехватывает сетевые пакеты через меж�
 
 ## Способ 1. Пакет `.deb` (Debian и системы на его основе)
 
-1. Скачайте с [страницы выпуска](https://vzxbjtxqrg.fuckingspeedtest.com/zapretdiscordyoutube/zapretgui/releases) файл `zapretgui_<версия>_amd64.deb` и рядом файл с суммой `…deb.sha256`.
+1. Скачайте с [страницы выпусков](https://iianajhlkh.zapret.moe/zapretdiscordyoutube/zapretgui/releases) файл `zapretgui_<версия>_amd64.deb` и рядом файл с суммой `…deb.sha256`.
 2. Проверьте целостность: `sha256sum -c zapretgui_<версия>_amd64.deb.sha256`. Должно быть `OK`.
 3. Установите: `sudo apt install ./zapretgui_<версия>_amd64.deb`. Менеджер пакетов сам доставит недостающие зависимости.
 4. Выйдите из сеанса и войдите снова. Пакет добавил вас в группу `zapretgui`, а группы подхватываются только при новом входе. Без этого окно скажет «You are not in the zapretgui group» и не запустит обход.
@@ -125,3 +124,8 @@ Zapret перехватывает сетевые пакеты через меж�
 - [[Zapret/dns-settings|Настройка DNS в Zapret 2 GUI]] — страница DNS
 - [[Zapret/hosts|Редактор hosts]] — как работает редактор файла hosts
 - [[Zapret/Blockcheck|BlockCheck]] — проверка блокировок и поиск стратегии
+
+---
+
+> [!quote] 🤖 Эти статьи открыты — можно обучать на них ИИ
+> При желании вы можете натренировать ИИ на наших статьях. Исходное форматирование доступно в Forgejo: [исходник этой заметки](https://iianajhlkh.zapret.moe/zapretdiscordyoutube/todo/src/branch/main/Zapret/zapret-linux-gui.md) · [скачать весь репозиторий одним zip-архивом](https://iianajhlkh.zapret.moe/zapretdiscordyoutube/todo/archive/main.zip).
