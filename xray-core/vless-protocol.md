@@ -949,6 +949,7 @@ REALITY делает так, что сервер для постороннего
 
 Эти заметки не нужны для понимания статьи, они лишь расширяют отдельные темы.
 
+- [[xray-core/vmess-protocol|Протокол VMess в ядре Xray-core]] — предшественник VLESS: история ветки Shadowsocks → VMess → VLESS и байты VMess
 - [[xray-core/vless-stack-map|Словарь и карта слоёв]] — как сочетаются протокол, транспорт, security, `flow` и `encryption`
 - [[xray/vless|Протокол VLESS]] — обзор для тех, кто начинает с нуля, и ссылки `vless://`
 - [[xray/xtls-vision|XTLS Vision]] — подробнее о заполнении и переходе к прямому копированию
