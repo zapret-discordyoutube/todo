@@ -194,6 +194,7 @@ link: https://www.reddit.com/r/methodvpn/comments/1xli9de/
 - [[DPI/tspu-3xui-scmininterval-trap|«Ловушка» 3x-ui со scMinPostsIntervalMs]] — как июньская версия про «30» в конфиге не прошла проверку кодом
 - [[DPI/subnet-whitelist-blocking-2026|Блок подсетей по белому списку]] — почему страдают соседи по хостингу
 - [[DPI/tspu-inspectors-checkers-2026|Инспекторы ТСПУ]] — чем проверить, что оператор делает с соединениями
+- [[DPI/vps-full-ip-block-tspu-november-2026|Полная блокировка IP VPS на ТСПУ]] — что известно о банах адресов к 24 ноября и какие версии причин проверены
 - [[DPI/rkn-vpn-2030-roadmap|Курс на 2030]] — официальные планы по VPN и фильтрации трафика
 
 ---
