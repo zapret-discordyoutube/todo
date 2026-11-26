@@ -28,7 +28,7 @@ description: "Какое приложение поставить для Zapret V
 ## TL;DR
 
 - **Android:** ZapretKVN + Xray-подписка. Запасные: v2rayNG, Happ (Xray-подписка), FlClash (Mihomo-подписка).
-- **iPhone и iPad:** Clash Mi + Mihomo-подписка. Запасные: Happ, V2RayTun (Xray-подписка), WireGuard.
+- **iPhone и iPad:** Clash Mi + Mihomo-подписка. Запасные: Happ, V2RayTun (Xray-подписка).
 - **Windows:** Zapret KVN + Xray-подписка. Запасные: v2rayN, Happ (Xray-подписка), Clash Verge Rev (Mihomo-подписка).
 - **macOS и Linux:** Clash Verge Rev + Mihomo-подписка. Запасные: Happ, v2rayN, Throne.
 - **Ничего не подключается:** AWG 3.0 в AmneziaVPN 5.0.0.5 или новее. AWG 2.0 — прошлое поколение, оставлен для старых приложений и роутеров.
@@ -47,13 +47,12 @@ description: "Какое приложение поставить для Zapret V
 | 🔗 **Xray-подписка** | все ваши серверы VLESS одной ссылкой | ZapretKVN, Zapret KVN, v2rayNG, v2rayN, Happ, V2RayTun, V2Box |
 | ⚡ **Hysteria 2-подписка** | серверы Hysteria 2 — весь интернет, быстрее на плохой сети и в играх | ZapretKVN, Zapret KVN, v2rayN 7.24.9+, Throne, Husi |
 | 🧭 **Mihomo-подписка** | VLESS и Hysteria 2 вместе, российские сайты напрямую; работает на всех системах, не только на iPhone | Clash Mi, FlClash, Clash Verge Rev, Clash Meta for Android |
-| 🛡 **WireGuard-конфиг** | один сервер, файл `.conf` | WireGuard, AmneziaVPN, WG Tunnel, роутеры |
 | 🗝 **AWG 3.0-конфиг** | WireGuard с сильной маскировкой, файл `.conf` | AmneziaVPN 5.0.0.5+, Throne 1.2.2+, клиенты на ядре Mihomo 1.19.30+ |
 | 🔐 **AWG 2.0-конфиг** | прошлое поколение маскировки | AmneziaVPN, AmneziaWG, WG Tunnel, роутеры с AmneziaWG |
 
 Подписка (`https://…`) обновляется: новые серверы приходят по той же ссылке. Конфиг (файл `.conf`) — это один сервер, и обновлять его нужно вручную.
 
-Где это в боте: подписки — «🚀 Подключить устройство» или «🌐 VPN, WireGuard и Telegram» → нужный протокол; конфиги — «🌐 VPN, WireGuard и Telegram» → WireGuard, AWG 3.0 или AWG 2.0 → сервер со значком ➕: бот создаст ключ и пришлёт файл.
+Где это в боте: подписки — «🚀 Подключить устройство» или «🌐 VPN и Telegram» → нужный протокол; конфиги — «🌐 VPN и Telegram» → AWG 3.0 или AWG 2.0 → сервер со значком ➕: бот создаст ключ и пришлёт файл.
 
 ## Как скопировать ссылку из бота
 
@@ -70,8 +69,8 @@ description: "Какое приложение поставить для Zapret V
 | [Happ](https://play.google.com/store/apps/details?id=com.happproxy) (есть в Google Play) | Xray-подписка | «+» в правом верхнем углу → вставка из буфера обмена; включение — большая кнопка |
 | [FlClash](https://github.com/chen08209/FlClash) | Mihomo-подписка | «Профили» → «+» → по URL → вставить; затем кнопка запуска на главной |
 | [Clash Mi](https://clashmi.app/download) | Mihomo-подписка | добавить профиль по ссылке, выбрать его, включить |
-| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или WireGuard-конфиг | «+» → из файла → выбрать сохранённый `.conf` |
-| [WG Tunnel](https://www.wgtunnel.com/) | WireGuard- или AWG 2.0-конфиг | «+» → импорт из файла |
+| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или AWG 2.0-конфиг | «+» → из файла → выбрать сохранённый `.conf` |
+| [WG Tunnel](https://www.wgtunnel.com/) | AWG 2.0-конфиг | «+» → импорт из файла |
 
 Названия пунктов в чужих приложениях меняются от версии к версии; ищите «Подписки», «Профили», «Add subscription», «+».
 
@@ -85,8 +84,7 @@ description: "Какое приложение поставить для Zapret V
 | ⭐ [Clash Mi](https://clashmi.app/download) | Mihomo-подписка | добавить профиль по ссылке → выбрать → включить; iOS спросит разрешение на VPN-конфигурацию — разрешите |
 | [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215) / [Happ Plus](https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973) | Xray-подписка | «+» → вставка из буфера обмена → большая кнопка включения |
 | [V2RayTun](https://apps.apple.com/us/app/v2raytun/id6476628951) | Xray-подписка | «+» → импорт из буфера обмена |
-| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или WireGuard-конфиг | «+» → из файла (файл из Telegram: «Поделиться» → AmneziaVPN) |
-| [WireGuard](https://apps.apple.com/app/wireguard/id1441195209) | WireGuard-конфиг | «+» → «Создать из файла или архива» |
+| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или AWG 2.0-конфиг | «+» → из файла (файл из Telegram: «Поделиться» → AmneziaVPN) |
 
 В App Store России часть VPN-приложений недоступна; тогда их ставят с Apple ID другой страны. ZapretKVN и ZaStoGram для iPhone нет.
 
@@ -98,7 +96,7 @@ description: "Какое приложение поставить для Zapret V
 | [v2rayN](https://github.com/2dust/v2rayN/releases/latest) | Xray- или Hysteria 2-подписка | «Подписки» → «Настройки подписок» → «Добавить» → URL; затем «Обновить подписки». [[premium/v2rayn\|Подробно со скриншотами]] |
 | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | Mihomo-подписка | «Профили» → вставить ссылку → «Импорт»; включить системный прокси или TUN |
 | [Happ](https://github.com/Happ-proxy/happ-desktop/releases/latest) | Xray-подписка | «+» → из буфера обмена |
-| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или WireGuard-конфиг | «+» → из файла |
+| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или AWG 2.0-конфиг | «+» → из файла |
 
 **Что такое Zapret KVN и чем он отличается от Zapret 2 GUI.** Zapret KVN состоит из двух частей, подключения через сервер и встроенного Zapret, а Zapret 2 GUI занимается только обходом без сервера: что выбрать и почему, объясняет заметка [[ZapretKVN/zapret-kvn-windows|Zapret KVN и Zapret 2 GUI: что это и чем отличаются]].
 
@@ -144,14 +142,15 @@ Discord без VPN на весь компьютер — в заметке [[prem
 | [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?platform=mac) | Xray-подписка | «+» → из буфера обмена |
 | [V2Box](https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690?platform=mac) (macOS) | Xray-подписка | добавить подписку по ссылке |
 | [Throne](https://github.com/throneproj/Throne/releases/latest) | Hysteria 2-подписка, AWG 3.0 | добавить группу подписки по URL |
-| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или WireGuard-конфиг | «+» → из файла |
+| [AmneziaVPN](https://amnezia.org/downloads) | AWG 3.0- или AWG 2.0-конфиг | «+» → из файла |
 
 ## Роутер
 
 | Прошивка | Что взять в боте |
 |---|---|
-| с WireGuard (Keenetic, OpenWrt, MikroTik и др.) | WireGuard-конфиг |
 | с AmneziaWG | AWG 2.0-конфиг; AWG 3.0 — если прошивка уже знает третье поколение |
+
+Обычный WireGuard бот с 26 ноября 2026 года больше не выдаёт: роутеру без поддержки AmneziaWG новый конфиг взять негде. Ключи WireGuard, выданные раньше, работают до конца подписки.
 
 На роутер берите отдельный конфиг, а не подписку: прошивки подписки не читают. Каждому устройству — свой конфиг: один и тот же файл на двух устройствах сразу работать не будет.
 
