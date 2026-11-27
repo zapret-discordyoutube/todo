@@ -76,7 +76,8 @@ description: "Запрет GUI (Zapret 2) — бесплатный обход б
 Есть вопросы? Задайте их [в Forgejo](https://git2.zapret.moe/zapretdiscordyoutube/zapretgui/issues/new), в [группе помощи в Telegram](https://telegram.me/youtubenotwork) или [в Discord](https://discord.gg/kkcBDG2uws) — отвечают живые люди. Вы можете помочь вики, если запишетесь в [[Волонтёры|волонтёры]], или написать статью сами: сделайте форк [репозитория вики](https://git2.zapret.moe/zapretdiscordyoutube/todo) и пришлите пулл-реквест.
 
 - [Основной канал в Telegram](https://telegram.me/bypassblock) — новости и свежие сборки Zapret.
-- [VPN-канал в Telegram](https://telegram.me/vpndiscordyooutube) — всё про наш VPN.
+- [Новости VPN в Telegram](https://telegram.me/vpndiscordyooutube) — только новости: объявления, обновления, добавленные и убранные серверы.
+- [Группа Zapret KVN в Telegram](https://telegram.me/vpndpi) — наш клиент Zapret KVN: обсуждение, вопросы, обновления.
 - [Личный канал nerdpapers](https://t.me/nerdpapers) — канал автора проекта.
 - [YouTube-канал](https://www.youtube.com/channel/UCyEOuaB8EUwn1aU8a73_EWQ/) — видео и разборы.
 - [Сообщество в Discord](https://discord.com/invite/kkcBDG2uws) — общий чат проекта.

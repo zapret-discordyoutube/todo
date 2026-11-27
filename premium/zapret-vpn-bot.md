@@ -165,7 +165,7 @@ description: "Как устроен Zapret VPN в боте @zapretvpns_bot: по
 - [[Clash/04-rules|Правила маршрутизации: рецепты]] — как добавить раздельную маршрутизацию поверх профиля.
 - [[xray/vless|Протокол VLESS]] и [[xray/reality|REALITY]] — что работает под капотом основной связки.
 - [[premium/discord|Настройка Discord через VPN]] — частый частный случай.
-- 🔗 [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) — сам бот · [канал проекта](https://t.me/bypassblock) · [новости по KVN](https://t.me/vpndpi)
+- 🔗 [@zapretvpns_bot](https://telegram.me/zapretvpns_bot) — сам бот · [канал проекта](https://t.me/bypassblock) · [новости](https://t.me/vpndiscordyooutube) · [группа Zapret KVN](https://t.me/vpndpi)
 
 ---
 
