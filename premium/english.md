@@ -84,11 +84,13 @@ The plan card counts the days left and turns red with a ringing bell when fewer 
 
 There is no password; you sign in from the bot:
 
-1. In the bot open «💳 Plan and balance» and tap «🌐 Personal account» («🌐 Личный кабинет») — or just send the bot the /lk command.
-2. Tap «Open my account» («Открыть кабинет») on the device where you want to see the account.
-3. On the site press «Войти» (Sign in).
+1. In the bot open «💳 Plan and balance» and tap «🌐 Personal account» («🌐 Личный кабинет») — or just send the bot the /lk command. The command works only in a private chat with the bot: in a group or a channel the bot gives no sign-in link and asks you to write to it privately.
+2. The bot sends a card with two ways in; use either:
+   - «📱 Open as an app» («📱 Открыть как приложение») opens the account inside Telegram as a mini app, with no browser. The first time it asks «Войти как …» (Sign in as …) and shows the name of your Telegram account: press «Войти» only if it is you. If the name is someone else's, do not sign in — that is how a link to the app sent by a stranger cannot open another person's account for you. After that the app signs you in without asking while the sign-in lasts (30 days).
+   - «Open my account» («Открыть кабинет») is the ordinary link for a browser: tap it on the device where you want to see the account, and on the site press «Войти» (Sign in).
+3. The mini app works in Telegram on phones and computers. It does not open in Telegram Web (in a browser) — use «Open my account» there.
 
-The sign-in link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. If someone else saw the link or your open account, tap «🚪 Sign out everywhere» («🚪 Закрыть все входы») on the same bot card — or press «Выйти на всех устройствах» (Sign out on all devices) at the bottom of the cabinet menu — then change your subscription links.
+The «Open my account» link works once, for 5 minutes. Do not forward it: whoever opens it first gets into your account. A mini app launch is also single-use and valid for at most five minutes, and «🚪 Sign out everywhere» closes it too. If someone else saw the link or your open account, tap «🚪 Sign out everywhere» («🚪 Закрыть все входы») on the same bot card — or press «Выйти на всех устройствах» (Sign out on all devices) at the bottom of the cabinet menu — then change your subscription links.
 
 ## Telegram
 
