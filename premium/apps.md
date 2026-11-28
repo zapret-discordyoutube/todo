@@ -193,12 +193,12 @@ NaiveProxy (произносится «наив-прокси») — это пр�
 | Приложение | Ключ-строка и подписка NaiveProxy |
 |---|---|
 | **ZapretKVN** для Windows (с 0.8.127) и Android (с 0.6.66) | ✅ проверено нами: принимает и ключ, и подписку |
-| **Hiddify** (на ядре sing-box) | ⚠️ в коде есть разбор строк `naive+https://` и подписок списком (в том числе в Base64); не проверено у нас; параметр `insecure-concurrency` с дефисом не читается (будет значение по умолчанию); на iOS NaiveProxy отдельно сообщали об ошибке; ручной ввод адреса может ответить «Invalid URL» — пробуйте «Добавить из буфера» |
-| **Karing** (на ядре sing-box) | ⚠️ одиночную строку `naive+https://` пользователи импортировали из буфера на Android; подписка списком из таких строк не подтверждена |
-| **v2rayN** для Windows, Linux, macOS (с 7.20.4, апрель 2026) | ⚠️ NaiveProxy в списке изменений; ключ и подписка у нас не проверены |
-| **NekoBox** для Android | ⚠️ NaiveProxy только через отдельный плагин naive-plugin; импорт подписки не подтверждён |
-| **Throne** (Windows, Linux, macOS) | ⚠️ NaiveProxy в списке протоколов; импорт подписки не подтверждён |
-| **Shadowrocket** (iPhone) | ⚠️ NaiveProxy упомянут в обновлениях приложения; импорт подписки не подтверждён |
+| [**Hiddify**](https://github.com/hiddify/hiddify-app/releases) (на ядре sing-box) | ⚠️ в коде есть разбор строк `naive+https://` и подписок списком (в том числе в Base64); не проверено у нас; параметр `insecure-concurrency` с дефисом не читается (будет значение по умолчанию); на iOS NaiveProxy отдельно сообщали об ошибке; ручной ввод адреса может ответить «Invalid URL» — пробуйте «Добавить из буфера» |
+| [**Karing**](https://karing.app) (на ядре sing-box) | ⚠️ одиночную строку `naive+https://` пользователи импортировали из буфера на Android; подписка списком из таких строк не подтверждена |
+| [**v2rayN**](https://github.com/2dust/v2rayN/releases) для Windows, Linux, macOS (с 7.20.4, апрель 2026) | ⚠️ NaiveProxy в списке изменений; ключ и подписка у нас не проверены |
+| [**NekoBox**](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases) для Android | ⚠️ NaiveProxy только через отдельный плагин naive-plugin; импорт подписки не подтверждён |
+| [**Throne**](https://github.com/throneproj/Throne/releases) (Windows, Linux, macOS) | ⚠️ NaiveProxy в списке протоколов; импорт подписки не подтверждён |
+| [**Shadowrocket**](https://apps.apple.com/us/app/shadowrocket/id932747118) (iPhone) | ⚠️ NaiveProxy упомянут в обновлениях приложения; импорт подписки не подтверждён |
 | Clash Verge Rev и другие программы на ядре Mihomo | ❌ NaiveProxy не поддерживают (в описании ядра такого типа сервера нет) |
 | v2rayNG (официальная сборка), Streisand, Happ | ❌ NaiveProxy в списках их протоколов нет |
 | sing-box (официальные приложения SFA, SFI, SFM) | ❔ ядро умеет NaiveProxy только в части сборок; в приложениях не подтверждено |
